@@ -14,5 +14,5 @@ Canonical / permanent URL:
 Issues and change requests are managed here:  
 
 Issues:  __https://github.com/openhie/case-reporting-hiv-vn/issues__  
-Kanban board:  __https://github.com/openhie/case-reporting-hiv-vn/projects/12282571__  
+Kanban board:  __https://github.com/openhie/case-reporting-hiv-vn/projects/1__  
 
