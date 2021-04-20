@@ -1,12 +1,12 @@
-Empty IG
+Vietnam HIV Case Reporting Implementation Guide
 ---
-This is an empty IG
+This ImplementationGuide contains the work-in-progress artifacts for the Vietnam HIV Case Base Reporting
 <br> </br>
 ###
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://build.fhir.org/ig/openhie/case-reporting-hiv-vn/branches/main/index.html__  
+Continuous Build: __http://openhie.github.io/case-reporting-hiv-vn__  
 Canonical / permanent URL: 
 <br> </br>
 
