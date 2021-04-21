@@ -1,0 +1,197 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-occupation",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-occupation defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"cs-occupation-10\"> </a></td><td>Service workers exploited for sex work</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-occupation-4\"> </a></td><td>Drivers</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"cs-occupation-14\"> </a></td><td>Fishermen</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"cs-occupation-13\"> </a></td><td>Agricultural workers</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-occupation-6\"> </a></td><td>Intellectual</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-occupation-2\"> </a></td><td>Workers</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-occupation-3\"> </a></td><td>Officers and soldiers</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-occupation-5\"> </a></td><td>Public servants or workers with labor contracts</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-occupation-9\"> </a></td><td>Other occupation</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-occupation-7\"> </a></td><td>Students</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"cs-occupation-12\"> </a></td><td>Children</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"cs-occupation-11\"> </a></td><td>Children under 5</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"cs-occupation-16\"> </a></td><td>Workers without labor contract</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-occupation-8\"> </a></td><td>Out of work</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"cs-occupation-15\"> </a></td><td>Prisoners</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"cs-occupation-17\"> </a></td><td>Free</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>10</td><td>Nhân viên cơ sở kinh doanh dịch vụ dễ bị lợi dụng để hoạt động mại dâm</td></tr><tr><td>4</td><td>Lái xe</td></tr><tr><td>14</td><td>Ngư dân</td></tr><tr><td>13</td><td>Người làm nông nghiệp</td></tr><tr><td>6</td><td>Trí thức</td></tr><tr><td>2</td><td>Công nhân</td></tr><tr><td>3</td><td>Cán bộ, chiến sỹ thuộc lực lượng vũ trang nhân dân</td></tr><tr><td>5</td><td>Công chức, viên chức, người lao động có hợp đồng lao động theo quy định của pháp luật</td></tr><tr><td>9</td><td>Nghề khác</td></tr><tr><td>7</td><td>Học sinh, sinh viên</td></tr><tr><td>12</td><td>Trẻ em</td></tr><tr><td>11</td><td>Trẻ em dưới 5 tuổi</td></tr><tr><td>16</td><td>Lao động tự do</td></tr><tr><td>8</td><td>Thất nghiệp</td></tr><tr><td>15</td><td>Phạm nhân</td></tr><tr><td>17</td><td>Tự do</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-occupation",
+  "version": "0.1.0-test",
+  "name": "Occupations",
+  "status": "draft",
+  "date": "2021-04-21T19:07:18+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "10",
+      "display": "Service workers exploited for sex work",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Nhân viên cơ sở kinh doanh dịch vụ dễ bị lợi dụng để hoạt động mại dâm"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "display": "Drivers",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Lái xe"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "Fishermen",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Ngư dân"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "display": "Agricultural workers",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Người làm nông nghiệp"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "display": "Intellectual",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Trí thức"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "display": "Workers",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Công nhân"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "display": "Officers and soldiers",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Cán bộ, chiến sỹ thuộc lực lượng vũ trang nhân dân"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "display": "Public servants or workers with labor contracts",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Công chức, viên chức, người lao động có hợp đồng lao động theo quy định của pháp luật"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "display": "Other occupation",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Nghề khác"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "display": "Students",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Học sinh, sinh viên"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "Children",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Trẻ em"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "Children under 5",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Trẻ em dưới 5 tuổi"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "Workers without labor contract",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Lao động tự do"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "display": "Out of work",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Thất nghiệp"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "Prisoners",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Phạm nhân"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "Free",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Tự do"
+        }
+      ]
+    }
+  ]
+}

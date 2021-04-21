@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>XXXEXAMPLE.FHIR.UV.MYIG\MyIG Home Page - FHIR v4.0.1</title>
+    <title>OPENHIE.VN.CASE-REPORTING.HIV\MyIG Home Page - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -67,7 +67,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">xxxYour User Friendly Name for MyIG Here</span><br/>0.1.0-test - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">HIV Case-reporting for Vietnam</span><br/>0.1.0-test - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -148,45 +148,87 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">xxxYour User Friendly Name for MyIG Here - Local Development build (v0.1.0-test). See the <a href="xxxhttp://somewhere.org/fhir/uv/myig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">HIV Case-reporting for Vietnam - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>MyIG Home Page</h2>
   
-  <div lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Content</a></li><li><a href="#ip">Intellectual Property Considerations</a></li><li><a href="#disclaimer">Disclaimer</a></li></ul></div>
+  <div lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Summary</a></li><li><a href="#2">About This Implementation Guide</a></li><li><a href="#3">Intellectual Property Considerations</a></li><li><a href="#4">Disclaimer</a></li></ul></div>
   <a name="scope">   </a>
-	<p>
-    This is our FHIR Implementation Guide. It contains the specifications developed by our community. 
-   </p>
-	<blockquote class="stu-note">
-	<strong>This documentation and set of artefacts are still undergoing development.</strong>
-	This content is only for demonstrative purposes.
-	</blockquote>
-	<p>&nbsp;</p>
-  <a name="1"></a><h3>Content</h3> <a name="content">  </a>
-	<p></p>
 
-<p>This publication contains the full set of specifications...</p>
-<p></p>
-<p>There is also an overview of the projects and motivation for the specifications.</p>
-<p></p>
+  <p>
+    This is the FHIR Implementation Guide for Case Reporting containing the specifications developed by the OpenHIE community. 
+  </p>
 
-<a name="navigation">  </a>
-<p>The top menu allows quick navigation to the different sections, and a <a href="toc.html">Table of Contents</a>&nbsp;is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
-<p></p>
-	<a name="ip">  </a>
-	<h3>Intellectual Property Considerations</h3>
-	<p>
-    While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
+
+  <blockquote class="stu-note">
+    <ul>
+      <li>      <strong>This implementation guide and set of artifacts are still undergoing development.</strong> </li>
+      <li>    This content is only for demonstration purposes only. </li>
+      <li>     Providing Feedback: Please submit any issues via the Feedback link next to the appropriate section of the implementation guide </li>
+    </ul>
+  </blockquote>
+  
+
+  <a name="1"></a><h3>Summary</h3> <a name="summary">  </a>
+
+
+  <p>
+    This Implementation Guide contains the full set of specifications for the Vietnam HIV case reporting. It is based on the specifications provided by the <a href="https://openhie.github.io/case-reporting">Case Reporting Implementation Guide</a> and the baseline <a href="#">HIV Case Reporting Content specifications</a>, adding the Vietnam specific implementation aspects.
+  </p>
+  
+
+  <p>
+    This Implementation Guide is underpinned by supporting <a href="references.html">guidelines, policies and recommendations</a>
+  </p>
+  
+  <p><a name="ae80537e-4fd3-448e-b0a4-3555e463467c">​</a>
+    This Implementation Guide defines three <a href="actors.html">actors</a> involved in the submission of a case report into a case report repository.  These actors engage in the <a href="transactions.html">transactions</a> to submit, transform and store case reports into a case report repository.
+  </p>
+
+
+  <figure>
+      <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 739 317" zoomAndPan="magnify" preserveAspectRatio="none" width="739px" style="width:739px;height:317px;" contentScriptType="application/ecmascript" version="1.1" height="317px"><defs><filter width="300%" x="-1" y="-1" id="f78ickv9cqui2" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"></feColorMatrix><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"></feOffset><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"></feBlend></filter></defs><g>  <!-- MD5=[556c685c3f67b66002a68d50baf6b87f]
+entity CRS --><rect filter="url(#f78ickv9cqui2)" width="106" x="0" y="146.5938" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="10" font-size="14" textLength="86" y="169.5889" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="14" font-size="14" textLength="67" y="185.8857" font-family="sans-serif" fill="#000000">Submitter</text>  <!-- MD5=[17549a46b9157fffb22f2ba1e2e184fc]
+entity CRT --><rect filter="url(#f78ickv9cqui2)" width="108" x="278" y="146.5938" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="288" font-size="14" textLength="86" y="169.5889" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="292" font-size="14" textLength="84" y="185.8857" font-family="sans-serif" fill="#000000">Transformer</text>  <!-- MD5=[1740912d46fb7c339ac072f9579cf9ae]
+entity CRR --><rect filter="url(#f78ickv9cqui2)" width="106" x="547" y="146.5938" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="557" font-size="14" textLength="86" y="169.5889" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="561" font-size="14" textLength="74" y="185.8857" font-family="sans-serif" fill="#000000">Repository</text>  <!-- MD5=[ec7ae0bf730c6da16785858819ad3b18]
+entity CRI --><rect filter="url(#f78ickv9cqui2)" width="91" x="283.5" y="10.5938" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="293.5" font-size="14" textLength="71" y="33.5889" font-family="sans-serif" fill="#000000">Case Data</text><text lengthAdjust="spacing" x="297.5" font-size="14" textLength="58" y="49.8857" font-family="sans-serif" fill="#000000">Importer</text>  <!-- MD5=[ff8ff1b9124d8226c243bd0d10adfb7e]
+entity CRM --><rect filter="url(#f78ickv9cqui2)" width="92" x="540" y="252.5938" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="550" font-size="14" textLength="71" y="275.5889" font-family="sans-serif" fill="#000000">Case Data</text><text lengthAdjust="spacing" x="554" font-size="14" textLength="68" y="291.8857" font-family="sans-serif" fill="#000000">Converter</text>  <!-- MD5=[9b26d2ff2f193e6245bd37f76e41b17a]
+entity EHR --><rect filter="url(#f78ickv9cqui2)" width="93" x="8.5" y="265.0938" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="32.2969"></rect><rect width="93" x="4.5" y="261.0938" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="32.2969"></rect><text lengthAdjust="spacing" x="36.5" font-size="14" textLength="29" y="282.0889" font-family="sans-serif" fill="#000000">EHR</text>  <!-- MD5=[1194ee1088c4a1f787c0b58111daa5b9]
+entity CSV --><polygon filter="url(#f78ickv9cqui2)" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" points="5,19.0938,5,55.3906,101,55.3906,101,29.0938,91,19.0938,5,19.0938"></polygon><path d="M91,19.0938 L91,29.0938 L101,29.0938 " style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE"></path><text lengthAdjust="spacing" x="39" font-size="14" textLength="28" y="42.0889" font-family="sans-serif" fill="#000000">CSV</text><path d="M106.1345,173.0938 C155.3049,173.0938 228.0765,173.0938 277.6357,173.0938 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="277.6357,173.0938,268.6357,169.0938,272.6357,173.0938,268.6357,177.0938,277.6357,173.0938"></polygon><text lengthAdjust="spacing" x="120" font-size="13" textLength="144" y="166.1606" font-family="sans-serif" fill="#000000">1. Submit Case Report</text><path d="M101.7132,279.0938 C203.9939,279.0938 439.8968,279.0938 539.8767,279.0938 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="539.8767,279.0938,530.8767,275.0938,534.8767,279.0938,530.8767,283.0938,539.8767,279.0938"></polygon><text lengthAdjust="spacing" x="253.75" font-size="13" textLength="130" y="272.1606" font-family="sans-serif" fill="#000000">4. Provide case data</text><path d="M101.0755,37.0938 C152.3513,37.0938 232.9645,37.0938 283.3081,37.0938 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="283.3081,37.0938,274.3081,33.0938,278.3081,37.0938,274.3081,41.0938,283.3081,37.0938"></polygon><text lengthAdjust="spacing" x="135.25" font-size="13" textLength="118" y="30.1606" font-family="sans-serif" fill="#000000">3. Store case data</text><path d="M329.5713,63.6135 C330.1018,87.3053 330.8876,122.4056 331.4206,146.2125 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="331.4206,146.2125,335.2181,137.1253,331.3087,141.2138,327.2201,137.3043,331.4206,146.2125"></polygon><text lengthAdjust="spacing" x="341" font-size="13" textLength="62" y="94.6606" font-family="sans-serif" fill="#000000">1. Submit</text><text lengthAdjust="spacing" x="331" font-size="13" textLength="78" y="109.7935" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="372" font-size="13" textLength="0" y="124.9263" font-family="sans-serif" fill="#000000"></text><path d="M596.5393,199.8016 C594.3855,215.8018 591.6249,236.3089 589.4694,252.3212 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="596.5393,199.8016,591.3744,208.1875,595.8723,204.7569,599.3029,209.2548,596.5393,199.8016"></polygon><text lengthAdjust="spacing" x="598" font-size="13" textLength="133" y="230.6606" font-family="sans-serif" fill="#000000">2. Store Case Report</text><path d="M386.2338,173.0938 C433.0365,173.0938 500.2511,173.0938 546.7615,173.0938 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="546.7615,173.0938,537.7615,169.0938,541.7615,173.0938,537.7615,177.0938,546.7615,173.0938"></polygon><text lengthAdjust="spacing" x="400" font-size="13" textLength="133" y="166.1606" font-family="sans-serif" fill="#000000">2. Store Case Report</text></g></svg>
+    <figcaption>Actors and Transactions</figcaption>
+  </figure>
+
+
+
+
+  <a name="2"></a><h3>About This Implementation Guide</h3> <a name="about">  </a>
+  
+  <p>
+    This Implementation Guide is broken into the following levels of <a href="http://hl7.org/fhir/uv/cpg/2019Sep/documentation-approach.html">knowledge representation</a>:
+    <ul>
+      <li><a href="index.html">Level I: Narrative</a> Contains references to the guidance, guidlines, policies and recommemndations underpinning this Implementation Guide</li>
+      <li><a name="cb37a1d5-374a-4d0a-bd12-34dc218e39df">​</a><a href="requirements.html">Level II: Business Requirements</a> Contains the requirements for this Implementation Guide including the defintition of key concepts, user personas, use cases and workflows.
+      </li>
+      <li><a name="36c39fbf-6831-4b6d-8545-ad38dcd0761a">​</a><a href="data_exchange.html">Level III: Data Models and Exchange</a> Contains the data models and data exchange protocols defined in this Implementation Guide.</li>
+      <li><a name="3b161380-a2f0-4c1f-bfd2-ef856af1b377">​</a><a href="deployment.html">Level IV - ε: Deployment Guidance </a>
+      Contains <a href="instant_openhie.html">Instant OpenHIE</a> Technical Specifications relevant to this Implementation Guide and supporting guidance for adaptation in local environments.</li>
+    </ul>
+  </p>  
+
+
+
+  <a name="3"></a><h3>Intellectual Property Considerations</h3>  <a name="ip">  </a>
+  <p>
+    While this implementation guide and the underlying FHIR are licensed as public domain, this guide may include examples making use of terminologies such 
     as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
     any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
     licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
   </p>
 
-	<a name="disclaimer">  </a>
-	<h3>Disclaimer</h3>
-	<p>
+  <a name="4"></a><h3>Disclaimer</h3>  <a name="disclaimer">  </a>
+  <p>
     The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
     This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
-    No liability can be inferred from the use or misuse of this specification, or its consequences.
+    b  No liability can be inferred from the use or misuse of this specification, or its consequences.
   </p>
 </div>
 </div>
@@ -208,14 +250,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="736332db-3a18-4b70-b6ae-157050aac03b">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="xxxhttp://hl7.org/Special/committees/[something]">xxxYour Work Group</a>.  Package xxxexample.fhir.uv.myig#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 20, 2021 17:18+0000">2021-04-20</span>
+        <p>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 21, 2021 19:07+0000">2021-04-21</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                 <a style="color: #81BEF7" href="xxxhttp://somewhere.org/fhir/uv/myig/history.html" target="_blank">Version History</a> |
+                 <a style="color: #81BEF7" href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html" target="_blank">Version History</a> |
                  <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="assets/images/cc-by.png" alt="CC-BY" style="border-style: none;" height="17"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 

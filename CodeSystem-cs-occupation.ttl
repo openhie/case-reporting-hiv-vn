@@ -1,0 +1,190 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-occupation> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-occupation"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-occupation defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"cs-occupation-10\"> </a></td><td>Service workers exploited for sex work</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-occupation-4\"> </a></td><td>Drivers</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"cs-occupation-14\"> </a></td><td>Fishermen</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"cs-occupation-13\"> </a></td><td>Agricultural workers</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-occupation-6\"> </a></td><td>Intellectual</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-occupation-2\"> </a></td><td>Workers</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-occupation-3\"> </a></td><td>Officers and soldiers</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-occupation-5\"> </a></td><td>Public servants or workers with labor contracts</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-occupation-9\"> </a></td><td>Other occupation</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-occupation-7\"> </a></td><td>Students</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"cs-occupation-12\"> </a></td><td>Children</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"cs-occupation-11\"> </a></td><td>Children under 5</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"cs-occupation-16\"> </a></td><td>Workers without labor contract</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-occupation-8\"> </a></td><td>Out of work</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"cs-occupation-15\"> </a></td><td>Prisoners</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"cs-occupation-17\"> </a></td><td>Free</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>10</td><td>Nhân viên cơ sở kinh doanh dịch vụ dễ bị lợi dụng để hoạt động mại dâm</td></tr><tr><td>4</td><td>Lái xe</td></tr><tr><td>14</td><td>Ngư dân</td></tr><tr><td>13</td><td>Người làm nông nghiệp</td></tr><tr><td>6</td><td>Trí thức</td></tr><tr><td>2</td><td>Công nhân</td></tr><tr><td>3</td><td>Cán bộ, chiến sỹ thuộc lực lượng vũ trang nhân dân</td></tr><tr><td>5</td><td>Công chức, viên chức, người lao động có hợp đồng lao động theo quy định của pháp luật</td></tr><tr><td>9</td><td>Nghề khác</td></tr><tr><td>7</td><td>Học sinh, sinh viên</td></tr><tr><td>12</td><td>Trẻ em</td></tr><tr><td>11</td><td>Trẻ em dưới 5 tuổi</td></tr><tr><td>16</td><td>Lao động tự do</td></tr><tr><td>8</td><td>Thất nghiệp</td></tr><tr><td>15</td><td>Phạm nhân</td></tr><tr><td>17</td><td>Tự do</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-occupation"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
+  fhir:CodeSystem.name [ fhir:value "Occupations"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-04-21T19:07:18+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Service workers exploited for sex work" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nhân viên cơ sở kinh doanh dịch vụ dễ bị lợi dụng để hoạt động mại dâm" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Drivers" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Lái xe" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fishermen" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ngư dân" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Agricultural workers" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Người làm nông nghiệp" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intellectual" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Trí thức" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Workers" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Công nhân" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Officers and soldiers" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Cán bộ, chiến sỹ thuộc lực lượng vũ trang nhân dân" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Public servants or workers with labor contracts" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Công chức, viên chức, người lao động có hợp đồng lao động theo quy định của pháp luật" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other occupation" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nghề khác" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Students" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Học sinh, sinh viên" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Children" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Trẻ em" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Children under 5" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Trẻ em dưới 5 tuổi" ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "16" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Workers without labor contract" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Lao động tự do" ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Out of work" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Thất nghiệp" ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prisoners" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Phạm nhân" ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "17" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Free" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Tự do" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-occupation.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

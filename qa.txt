@@ -1,23 +1,265 @@
-﻿xxxYourComputableMyIGNameHere : Validation Results
+﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 4, warn = 1, info = 0
-IG Publisher Version: 1.1.66
-Generated Tue Apr 20 17:18:37 UTC 2021. FHIR version 4.0.1 for xxxexample.fhir.uv.myig#0.1.0-test (canonical = xxxhttp://somewhere.org/fhir/uv/myig)
+err = 46, warn = 21, info = 23
+IG Publisher Version: 1.1.67
+Generated Wed Apr 21 19:07:54 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
- Build Errors : 5 / 0 / 0
- /github/workspace/input/myig : 4 / 1 / 1
+ Build Errors : 38 / 8 / 1
+ /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-gender : 0 / 0 / 5
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-population : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-risk-behavior : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-transmission-route : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-occupation : 0 / 0 / 17
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-communication-preferences : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender-identity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-type-of-contact : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 6 / 0 / 6
+ /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 9 / 0 / 5
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 23 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-careplan : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cd4-observation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-condition : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnosis-observation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-factor : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-specimen : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVRapidTestResults : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VSSymptoms : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-ethnicity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-occupations : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-population : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-risk-behavior : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-transmission-route : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-patient-communication-preferences : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-patient-gender : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-patient-gender-identity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-contact : 0 / 0 / 1
+ /github/workspace/input/openhie.vn.case-reporting.hiv : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 192, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
-ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 227, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
-ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 180, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
-== /github/workspace/input/myig.xml ==
-ERROR: ImplementationGuide.where(url = 'xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig'): Conformance resource /github/workspace/input/myig.xml - the canonical URL (xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig) does not match the URL (xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig)
-ERROR: ImplementationGuide.url: Resource id/url mismatch: xxxexample.fhir.uv.myig/xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig
-INFORMATION: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-WARNING: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
-ERROR: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
-ERROR: /github/workspace/input/myig: URL Mismatch xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig vs xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig
+WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/uv/sdc/ImplementationGuide/sdc
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/exampleresponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/hiv-case-report-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/hiv-case-report-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-gender.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-gender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-occupation.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-occupation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 163, column 98: The link 'transactions.html' for "transactions" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 169, column 64: The link 'concepts.html#case_report' for "case report" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 171, column 100: The link 'concepts.html#case_report' for "maturity level" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 181, column 357: The link 'expected_actions.html#transform' for "three options" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/a at Line 189, column 182: The link 'transactions.html' for "transactions" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 214, column 12: The link 'requirements.html' for "Level II: Business Requirements" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 216, column 12: The link 'data_exchange.html' for "Level III: Data Models and Exchange" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 217, column 12: The link 'deployment.html' for "Level IV - ε: Deployment Guidance" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 218, column 17: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+== /github/workspace/fsh-generated/resources/Bundle-examplebundle.json ==
+INFORMATION: Bundle/examplebundle: Bundle/examplebundle: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
+INFORMATION: Bundle/examplebundle: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Condition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
+ERROR: Bundle/examplebundle: Bundle/examplebundle: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/examplebundle: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Condition).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/examplebundle: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Condition): Validate resource against profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-condition - listed in meta
+ERROR: Bundle/examplebundle: Bundle/examplebundle: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-gender.json ==
+INFORMATION: CodeSystem/cs-gender: CodeSystem/cs-gender: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cs-gender: CodeSystem/cs-gender: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-gender: CodeSystem/cs-gender: CodeSystem.concept[1].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-gender: CodeSystem/cs-gender: CodeSystem.concept[2].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-gender: CodeSystem/cs-gender: CodeSystem.concept[3].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations.json ==
+INFORMATION: CodeSystem/cs-hiv-occupations: CodeSystem/cs-hiv-occupations: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-population.json ==
+INFORMATION: CodeSystem/cs-hiv-population: CodeSystem/cs-hiv-population: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-risk-behavior.json ==
+INFORMATION: CodeSystem/cs-hiv-risk-behavior: CodeSystem/cs-hiv-risk-behavior: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-transmission-route.json ==
+INFORMATION: CodeSystem/cs-hiv-transmission-route: CodeSystem/cs-hiv-transmission-route: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-occupation.json ==
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[1].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[2].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[3].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[4].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[5].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[6].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[7].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[8].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[9].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[10].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[11].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[12].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[13].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[14].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-occupation: CodeSystem/cs-occupation: CodeSystem.concept[15].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-communication-preferences.json ==
+INFORMATION: CodeSystem/cs-patient-communication-preferences: CodeSystem/cs-patient-communication-preferences: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender.json ==
+INFORMATION: CodeSystem/cs-patient-gender: CodeSystem/cs-patient-gender: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender-identity.json ==
+INFORMATION: CodeSystem/cs-patient-gender-identity: CodeSystem/cs-patient-gender-identity: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/CodeSystem-type-of-contact.json ==
+INFORMATION: CodeSystem/type-of-contact: CodeSystem/type-of-contact: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/Patient-test-hiv-patient.json ==
+INFORMATION: Patient/test-hiv-patient: Patient/test-hiv-patient: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+WARNING: Patient/test-hiv-patient: Patient/test-hiv-patient: Patient.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Patient/test-hiv-patient: Patient/test-hiv-patient: Patient: Validate resource against profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient - listed in meta
+== /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json ==
+ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json - the canonical URL (http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire) does not match the URL (http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire)
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[1].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[2].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: ext-1: 'Must have either extensions or value[x], not both' failed
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' definition is for a simple extension, so it must contain a value, not extensions
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[3].item[0].item[3].answerValueSet: Canonical URLs must be absolute URLs if they are not fragment references (HIVRapidTestResults) 
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: Profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract, Element matches more than one slice - rootContext, itemContext
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[0].item[1].item[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire: URL Mismatch http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire vs http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire
+== /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire.json ==
+ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire.json - the canonical URL (http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/vn-hiv-csv-import-questionnaire) does not match the URL (http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire)
+INFORMATION: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
+ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource'  ( (unmatched: PregnancyOutcomeCodes,BirthDefects,ChildHIVStatus))
+ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire: que-2: 'The link ids for groups and questions must be unique within the questionnaire' failed
+INFORMATION: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.contained[0].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.contained[1].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.contained[2].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.extension[0]: ext-1: 'Must have either extensions or value[x], not both' failed
+ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' definition is for a simple extension, so it must contain a value, not extensions
+ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.item[9]: Questionnaire.item.linkId: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Questionnaire)
+INFORMATION: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta
+ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.extension[0]: Profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract, Element matches more than one slice - rootContext, itemContext
+ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.item[9]: Questionnaire.item.linkId: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract)
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire: URL Mismatch http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/vn-hiv-csv-import-questionnaire vs http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire
+== /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse.json ==
+ERROR: QuestionnaireResponse.item[2].item[2]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[2])
+ERROR: QuestionnaireResponse.item[2].item[3]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[3])
+ERROR: QuestionnaireResponse.item[2].item[4]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[4])
+ERROR: QuestionnaireResponse.item[2].item[5]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[5])
+ERROR: QuestionnaireResponse.item[2].item[6]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[6])
+ERROR: QuestionnaireResponse.item[2].item[7]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[7])
+ERROR: QuestionnaireResponse.item[2].item[8].item[0]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[8].item[0])
+ERROR: QuestionnaireResponse.item[2].item[8].item[2]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[8].item[2])
+INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
+WARNING: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.meta.tag[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse - listed in meta
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[1].answer[0].value.ofType(date): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type date
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[0].item[0].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[0].item[1].item[0].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[0].item[1].item[1].answer[0].value.ofType(integer): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type integer
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[0].item[1].item[2].item[0].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[0].item[1].item[2].item[1].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[0].item[1].item[3].item[0].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[0].item[1].item[3].item[1].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[1].item[0].answer[0].value.ofType(date): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type date
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[1].item[1].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[1].item[2].answer[0].value.ofType(date): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type date
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[1].item[3].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[2].item[0].answer[0].value.ofType(date): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type date
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[2].item[1].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+== /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary.json ==
+INFORMATION: StructureDefinition/arv-therapy-summary: StructureDefinition/arv-therapy-summary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/arv-therapy-summary'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity.json ==
+INFORMATION: StructureDefinition/ethnicity: StructureDefinition/ethnicity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place.json ==
+INFORMATION: StructureDefinition/ext-specimen-collection-place: StructureDefinition/ext-specimen-collection-place: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-specimen-collection-place'): The Implementation Guide contains no examples for this extension
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-careplan.json ==
+INFORMATION: StructureDefinition/hiv-arv-careplan: StructureDefinition/hiv-arv-careplan: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-arv-careplan'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cd4-observation.json ==
+INFORMATION: StructureDefinition/hiv-cd4-observation: StructureDefinition/hiv-cd4-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-cd4-observation'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-condition.json ==
+INFORMATION: StructureDefinition/hiv-condition: StructureDefinition/hiv-condition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-condition'): The Implementation Guide contains no explicitly linked examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnosis-observation.json ==
+INFORMATION: StructureDefinition/hiv-diagnosis-observation: StructureDefinition/hiv-diagnosis-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-diagnosis-observation'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+INFORMATION: StructureDefinition/hiv-patient: StructureDefinition/hiv-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result.json ==
+INFORMATION: StructureDefinition/hiv-recency-result: StructureDefinition/hiv-recency-result: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-recency-result'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-factor.json ==
+INFORMATION: StructureDefinition/hiv-risk-factor: StructureDefinition/hiv-risk-factor: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-risk-factor'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-specimen.json ==
+INFORMATION: StructureDefinition/hiv-specimen: StructureDefinition/hiv-specimen: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-specimen'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load.json ==
+INFORMATION: StructureDefinition/hiv-viral-load: StructureDefinition/hiv-viral-load: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-viral-load'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status.json ==
+INFORMATION: StructureDefinition/pregnancy-status: StructureDefinition/pregnancy-status: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/pregnancy-status'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/ValueSet-HIVRapidTestResults.json ==
+INFORMATION: ValueSet/HIVRapidTestResults: ValueSet/HIVRapidTestResults: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-VSSymptoms.json ==
+INFORMATION: ValueSet/VSSymptoms: ValueSet/VSSymptoms: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-ethnicity.json ==
+INFORMATION: ValueSet/vs-ethnicity: ValueSet/vs-ethnicity: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-occupations.json ==
+INFORMATION: ValueSet/vs-hiv-occupations: ValueSet/vs-hiv-occupations: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-population.json ==
+INFORMATION: ValueSet/vs-hiv-population: ValueSet/vs-hiv-population: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-risk-behavior.json ==
+INFORMATION: ValueSet/vs-hiv-risk-behavior: ValueSet/vs-hiv-risk-behavior: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-transmission-route.json ==
+INFORMATION: ValueSet/vs-hiv-transmission-route: ValueSet/vs-hiv-transmission-route: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-patient-communication-preferences.json ==
+INFORMATION: ValueSet/vs-patient-communication-preferences: ValueSet/vs-patient-communication-preferences: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-patient-gender.json ==
+INFORMATION: ValueSet/vs-patient-gender: ValueSet/vs-patient-gender: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-patient-gender-identity.json ==
+INFORMATION: ValueSet/vs-patient-gender-identity: ValueSet/vs-patient-gender-identity: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-contact.json ==
+INFORMATION: ValueSet/vs-type-of-contact: ValueSet/vs-type-of-contact: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/input/openhie.vn.case-reporting.hiv.xml ==
+INFORMATION: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed

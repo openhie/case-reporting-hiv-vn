@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Bundle/examplebundle> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "examplebundle"];
+  fhir:Bundle.type [ fhir:value "collection"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.resource [
+       a fhir:Condition;
+       fhir:Resource.id [ fhir:value "test-hiv-condition" ];
+       fhir:Resource.meta [
+         fhir:Meta.profile [
+           fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-condition";
+           fhir:index 0;
+           fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-condition>
+         ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href=\"Patient-test-hiv-patient.html\">Generated Summary: id: ARV001, id: P000001, id: NI000001; John Johnson; birthDate: 1970-01-01</a></p><p><b>recordedDate</b>: 2020-11-12</p></div>"
+       ];
+       fhir:Condition.subject [
+         fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Patient/test-hiv-patient>;
+         fhir:Reference.reference [ fhir:value "Patient/test-hiv-patient" ]
+       ];
+       fhir:Condition.recordedDate [ fhir:value "2020-11-12"^^xsd:date ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Bundle/examplebundle.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
