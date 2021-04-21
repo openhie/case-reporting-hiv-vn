@@ -1,38 +1,73 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
   <a name="scope">  </a>
-	<p>
-    This is our FHIR Implementation Guide. It contains the specifications developed by our community. 
-   </p>
-	<blockquote class="stu-note">
-	<strong>This documentation and set of artefacts are still undergoing development.</strong>
-	This content is only for demonstrative purposes.
-	</blockquote>
-	<p> </p>
-  <h3>Content</h3> <a name="content"> </a>
-	<p/>
 
-<p>This publication contains the full set of specifications...</p>
-<p></p>
-<p>There is also an overview of the projects and motivation for the specifications.</p>
-<p></p>
+  <p>
+    This is the FHIR Implementation Guide for Case Reporting containing the specifications developed by the OpenHIE community. 
+  </p>
 
-<a name="navigation"> </a>
-<p>The top menu allows quick navigation to the different sections, and a <a href="toc.html">Table of Contents</a> is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
-<p></p>
-	<a name="ip"> </a>
-	<h3>Intellectual Property Considerations</h3>
-	<p>
-    While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
+
+  <blockquote class="stu-note">
+    <ul>
+      <li>      <strong>This implementation guide and set of artifacts are still undergoing development.</strong> </li>
+      <li>    This content is only for demonstration purposes only. </li>
+      <li>     Providing Feedback: Please submit any issues via the Feedback link next to the appropriate section of the implementation guide </li>
+    </ul>
+  </blockquote>
+  
+
+  <h3>Summary</h3> <a name="summary"> </a>
+
+
+  <p>
+    This Implementation Guide contains the full set of specifications for the Vietnam HIV case reporting. It is based on the specifications provided by the <a href="https://openhie.github.io/case-reporting">Case Reporting Implementation Guide</a> and the baseline <a href="#">HIV Case Reporting Content specifications</a>, adding the Vietnam specific implementation aspects.
+  </p>
+  
+
+  <p>
+    This Implementation Guide is underpinned by supporting <a href="references.html">guidelines, policies and recommendations</a>
+  </p>
+  
+  <p>
+    This Implementation Guide defines three <a href="actors.html">actors</a> involved in the submission of a case report into a case report repository.  These actors engage in the <a href="transactions.html">transactions</a> to submit, transform and store case reports into a case report repository.
+  </p>
+
+
+  <figure>
+    {% include actors_transactions.svg %}
+    <figcaption>Actors and Transactions</figcaption>
+  </figure>
+
+
+
+
+  <h3>About This Implementation Guide</h3> <a name="about"> </a>
+  
+  <p>
+    This Implementation Guide is broken into the following levels of <a href="http://hl7.org/fhir/uv/cpg/2019Sep/documentation-approach.html">knowledge representation</a>:
+    <ul>
+      <li><a href="index.html">Level I: Narrative</a> Contains references to the guidance, guidlines, policies and recommemndations underpinning this Implementation Guide</li>
+      <li><a href="requirements.html">Level II: Business Requirements</a> Contains the requirements for this Implementation Guide including the defintition of key concepts, user personas, use cases and workflows.
+      </li>
+      <li><a href="data_exchange.html">Level III: Data Models and Exchange</a> Contains the data models and data exchange protocols defined in this Implementation Guide.</li>
+      <li><a href="deployment.html">Level IV - ε: Deployment Guidance </a>
+      Contains <a href="instant_openhie.html">Instant OpenHIE</a> Technical Specifications relevant to this Implementation Guide and supporting guidance for adaptation in local environments.</li>
+    </ul>
+  </p>  
+
+
+
+  <h3>Intellectual Property Considerations</h3>  <a name="ip"> </a>
+  <p>
+    While this implementation guide and the underlying FHIR are licensed as public domain, this guide may include examples making use of terminologies such 
     as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
     any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
     licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
   </p>
 
-	<a name="disclaimer"> </a>
-	<h3>Disclaimer</h3>
-	<p>
+  <h3>Disclaimer</h3>  <a name="disclaimer"> </a>
+  <p>
     The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
     This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
-    No liability can be inferred from the use or misuse of this specification, or its consequences.
+    b  No liability can be inferred from the use or misuse of this specification, or its consequences.
   </p>
-</div>
+</div>  

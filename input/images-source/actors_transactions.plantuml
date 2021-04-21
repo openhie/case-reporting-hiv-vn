@@ -1,0 +1,36 @@
+@startuml
+skinparam componentStyle rectangle
+
+'!include ./style.iuml
+!pragma graphviz_dot smetana
+skinparam linetype ortho
+
+agent [Case Report\n Submitter] as CRS
+agent [Case Report\n Transformer] as CRT
+agent [Case Report\n Repository] as CRR
+agent "Case Data\n Importer" as CRI
+agent "Case Data\n Converter" as CRM
+collections "      EHR      " as EHR
+file  "      CSV      " as CSV
+
+
+CRS -[hidden]d-> EHR
+CRS -[hidden]u-> CSV
+EHR -[hidden]u-> CRS
+CSV -[hidden]d-> CRS
+'CRM -[hidden]u-> CRR 
+
+CRS -r-> CRT : " 1. Submit Case Report "
+
+EHR -r-> CRM : "                                   4. Provide case data                                    "
+
+CSV -r-> CRI : "      3. Store case data     "
+
+CRI -d-> CRT : " 1. Submit\nCase Report\n "
+
+CRM -u-> CRR : " 2. Store Case Report"
+
+CRT -r-> CRR : " 2. Store Case Report "
+
+
+@enduml
