@@ -85,7 +85,7 @@ Description:    "The specimen used for the result"
 
 Extension:  SpecimenCollectionPlace
 Id: ext-specimen-collection-place
-Title: "Ethnicity"
+Title: "Specimen Collection Place"
 Description: "Specimen Collection Place."
 * value[x] only CodeableConcept or Reference
 * valueCodeableConcept from Ethnicity (extensible)
