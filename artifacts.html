@@ -11,7 +11,6 @@
     <link href="fhir.css" rel="stylesheet"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
@@ -140,7 +139,7 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">  <!-- segment-content -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -200,14 +199,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Questionnaire-hiv-case-report-questionnaire.html"
-                     title="Questionnaire/hiv-case-report-questionnaire">Questionnaire/hiv-case-report-questionnaire</a>
+                  <a href="Questionnaire-vn-hiv-csv-import-questionnaire.html"
+                     title="Questionnaire/vn-hiv-csv-import-questionnaire">Questionnaire/vn-hiv-csv-import-questionnaire</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Questionnaire-vn-hiv-csv-import-questionnaire.html"
-                     title="Questionnaire/vn-hiv-csv-import-questionnaire">Questionnaire/vn-hiv-csv-import-questionnaire</a>
+                  <a href="Questionnaire-hiv-case-report-questionnaire.html"
+                     title="Questionnaire/hiv-case-report-questionnaire">Questionnaire/hiv-case-report-questionnaire</a>
                </td>
             </tr>
          </tbody>
@@ -233,29 +232,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-risk-factor.html"
+                     title="StructureDefinition/hiv-risk-factor">HIV Risk Behavior</a>
+               </td>
+               <td>
+<p>This profile allows the exchange of patient’s risk behaviors</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-hiv-diagnosis-observation.html"
                      title="StructureDefinition/hiv-diagnosis-observation">HIV Recency result</a>
                </td>
                <td>
 <p>This profile allows the exchange of a patient’s hiv recency test</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-pregnancy-status.html"
-                     title="StructureDefinition/pregnancy-status">Pregnancy status</a>
-               </td>
-               <td>
-<p>Pregnancy status.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-viral-load.html"
-                     title="StructureDefinition/hiv-viral-load">HIV viral load</a>
-               </td>
-               <td>
-<p>HIV viral load.</p>
 </td>
             </tr>
             <tr>
@@ -269,11 +259,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-arv-careplan.html"
-                     title="StructureDefinition/hiv-arv-careplan">ARVCarePlan</a>
+                  <a href="StructureDefinition-hiv-specimen.html"
+                     title="StructureDefinition/hiv-specimen">HIV specimen</a>
                </td>
                <td>
-<p>This profile allows the exchange of a patient’s ARV treatment</p>
+<p>The specimen used for the result</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-viral-load.html"
+                     title="StructureDefinition/hiv-viral-load">HIV viral load</a>
+               </td>
+               <td>
+<p>HIV viral load.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-pregnancy-status.html"
+                     title="StructureDefinition/pregnancy-status">Pregnancy status</a>
+               </td>
+               <td>
+<p>Pregnancy status.</p>
 </td>
             </tr>
             <tr>
@@ -287,11 +295,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-risk-factor.html"
-                     title="StructureDefinition/hiv-risk-factor">HIV Risk Behavior</a>
+                  <a href="StructureDefinition-hiv-arv-careplan.html"
+                     title="StructureDefinition/hiv-arv-careplan">ARVCarePlan</a>
                </td>
                <td>
-<p>This profile allows the exchange of patient’s risk behaviors</p>
+<p>This profile allows the exchange of a patient’s ARV treatment</p>
 </td>
             </tr>
             <tr>
@@ -310,15 +318,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>ART therapy summary.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-specimen.html"
-                     title="StructureDefinition/hiv-specimen">HIV specimen</a>
-               </td>
-               <td>
-<p>The specimen used for the result</p>
 </td>
             </tr>
          </tbody>
@@ -365,20 +364,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-HIVRapidTestResults.html"
-                     title="ValueSet/HIVRapidTestResults">HIVRapidTestResults</a>
+                  <a href="ValueSet-vs-ethnicity.html" title="ValueSet/vs-ethnicity">Ethnicity</a>
                </td>
                <td>
-<p>HIV rapid test result codes</p>
+<p>Ethnicity</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-vs-hiv-transmission-route.html"
-                     title="ValueSet/vs-hiv-transmission-route">HIV Transmission Route</a>
+                  <a href="ValueSet-VSSymptoms.html" title="ValueSet/VSSymptoms">Symptoms</a>
                </td>
                <td>
-<p>Valueset - Route of HIV transmission</p>
+<p>Symptoms associated with HIV case</p>
 </td>
             </tr>
             <tr>
@@ -388,6 +385,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Valueset - Patient Communication Preferences</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-patient-gender.html"
+                     title="ValueSet/vs-patient-gender">Patient Gender</a>
+               </td>
+               <td>
+<p>Valueset - patient genders</p>
 </td>
             </tr>
             <tr>
@@ -419,19 +425,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-vs-patient-gender.html"
-                     title="ValueSet/vs-patient-gender">Patient Gender</a>
+                  <a href="ValueSet-vs-hiv-pregnancy-status.html"
+                     title="ValueSet/vs-hiv-pregnancy-status">HIV Pregnancy Status</a>
                </td>
                <td>
-<p>Valueset - patient genders</p>
+<p>Valueset - Pregnancy Status</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-VSSymptoms.html" title="ValueSet/VSSymptoms">Symptoms</a>
+                  <a href="ValueSet-vs-hiv-transmission-route.html"
+                     title="ValueSet/vs-hiv-transmission-route">HIV Transmission Route</a>
                </td>
                <td>
-<p>Symptoms associated with HIV case</p>
+<p>Valueset - Route of HIV transmission</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-HIVRapidTestResults.html"
+                     title="ValueSet/HIVRapidTestResults">HIVRapidTestResults</a>
+               </td>
+               <td>
+<p>HIV rapid test result codes</p>
 </td>
             </tr>
             <tr>
@@ -452,14 +468,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Valueset - Occupations relevant for HIV</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-ethnicity.html" title="ValueSet/vs-ethnicity">Ethnicity</a>
-               </td>
-               <td>
-<p>Ethnicity</p>
-</td>
-            </tr>
          </tbody>
       </table>
    </p>
@@ -474,46 +482,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-cs-hiv-occupations.html"
-                     title="CodeSystem/cs-hiv-occupations">Occupations relevant for HIV</a>
-               </td>
-               <td>
-<p>CodeSystem Occupations for HIV</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-cs-patient-gender-identity.html"
-                     title="CodeSystem/cs-patient-gender-identity">Patient Gender Identity</a>
-               </td>
-               <td>
-<p>A list of genders that the patient may identify with</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-cs-gender.html" title="CodeSystem/cs-gender">CodeSystem/cs-gender</a>
+                  <a href="CodeSystem-cs-occupation.html" title="CodeSystem/cs-occupation">CodeSystem/cs-occupation</a>
                </td>
                <td>
 
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-cs-hiv-risk-behavior.html"
-                     title="CodeSystem/cs-hiv-risk-behavior">Risk Behavior</a>
-               </td>
-               <td>
-<p>CodeSystem - Behavior associated with risk of HIV transmission</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-cs-hiv-population.html"
-                     title="CodeSystem/cs-hiv-population">Population groups</a>
-               </td>
-               <td>
-<p>CodeSystem - Population groups - Subjects to be tested for HIV</p>
 </td>
             </tr>
             <tr>
@@ -527,11 +499,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-type-of-contact.html"
-                     title="CodeSystem/type-of-contact">Type of contact or relationship</a>
+                  <a href="CodeSystem-cs-hiv-risk-behavior.html"
+                     title="CodeSystem/cs-hiv-risk-behavior">Risk Behavior</a>
                </td>
                <td>
-<p>Type of contact or relationship</p>
+<p>CodeSystem - Behavior associated with risk of HIV transmission</p>
 </td>
             </tr>
             <tr>
@@ -545,7 +517,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-cs-occupation.html" title="CodeSystem/cs-occupation">CodeSystem/cs-occupation</a>
+                  <a href="CodeSystem-cs-patient-gender.html"
+                     title="CodeSystem/cs-patient-gender">Patient Gender</a>
+               </td>
+               <td>
+<p>The genders for patients</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-hiv-occupations.html"
+                     title="CodeSystem/cs-hiv-occupations">Occupations relevant for HIV</a>
+               </td>
+               <td>
+<p>CodeSystem Occupations for HIV</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-pregnancy-status.html"
+                     title="CodeSystem/cs-pregnancy-status">CodeSystem/cs-pregnancy-status</a>
                </td>
                <td>
 
@@ -553,11 +544,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-cs-patient-gender.html"
-                     title="CodeSystem/cs-patient-gender">Patient Gender</a>
+                  <a href="CodeSystem-cs-hiv-population.html"
+                     title="CodeSystem/cs-hiv-population">Population groups</a>
                </td>
                <td>
-<p>The genders for patients</p>
+<p>CodeSystem - Population groups - Subjects to be tested for HIV</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-gender.html" title="CodeSystem/cs-gender">CodeSystem/cs-gender</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-patient-gender-identity.html"
+                     title="CodeSystem/cs-patient-gender-identity">Patient Gender Identity</a>
+               </td>
+               <td>
+<p>A list of genders that the patient may identify with</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-type-of-contact.html"
+                     title="CodeSystem/type-of-contact">Type of contact or relationship</a>
+               </td>
+               <td>
+<p>Type of contact or relationship</p>
 </td>
             </tr>
          </tbody>
@@ -574,12 +591,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-examplebundle.html" title="Bundle/examplebundle">Example Bundle - examplebundle</a>
+                  <a href="Patient-test-hiv-patient.html" title="Patient/test-hiv-patient">Example Patient - test-hiv-patient</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-test-hiv-patient.html" title="Patient/test-hiv-patient">Example Patient - test-hiv-patient</a>
+                  <a href="Observation-a-pregnancy-status.html"
+                     title="Observation/a-pregnancy-status">Example Observation - a-pregnancy-status</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-examplebundle.html" title="Bundle/examplebundle">Example Bundle - examplebundle</a>
                </td>
             </tr>
          </tbody>
@@ -625,7 +648,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 21, 2021 19:07+0000">2021-04-21</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 7, 2021 21:05+0000">2021-05-07</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

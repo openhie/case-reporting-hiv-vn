@@ -77,6 +77,13 @@
     "name": "CSPatientGenderIdentity"
   },
   {
+    "id": "cs-pregnancy-status",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-status",
+    "version": "0.1.0-test",
+    "name": "HIV Pregnancy Status"
+  },
+  {
     "id": "type-of-contact",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/type-of-contact",
@@ -215,6 +222,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-population",
     "version": "0.1.0-test",
     "name": "HIVPopulation"
+  },
+  {
+    "id": "vs-hiv-pregnancy-status",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-pregnancy-status",
+    "version": "0.1.0-test",
+    "name": "HIVPregnancyStatus"
   },
   {
     "id": "vs-hiv-risk-behavior",

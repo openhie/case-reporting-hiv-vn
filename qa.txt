@@ -1,11 +1,11 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 46, warn = 21, info = 23
-IG Publisher Version: 1.1.67
-Generated Wed Apr 21 19:07:54 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+err = 48, warn = 24, info = 28
+IG Publisher Version: 1.1.68
+Generated Fri May 07 21:06:13 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
- Build Errors : 38 / 8 / 1
+ Build Errors : 39 / 10 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/CodeSystem-cs-gender : 0 / 0 / 5
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations : 0 / 0 / 1
@@ -16,7 +16,9 @@ Generated Wed Apr 21 19:07:54 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-communication-preferences : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender-identity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-pregnancy-status : 0 / 1 / 6
  /github/workspace/fsh-generated/resources/CodeSystem-type-of-contact : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-a-pregnancy-status : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 6 / 0 / 6
  /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 9 / 0 / 5
@@ -33,12 +35,13 @@ Generated Wed Apr 21 19:07:54 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-factor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-specimen : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-HIVRapidTestResults : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-VSSymptoms : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-ethnicity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-occupations : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-population : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-pregnancy-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-risk-behavior : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-transmission-route : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-communication-preferences : 0 / 0 / 1
@@ -50,51 +53,54 @@ Generated Wed Apr 21 19:07:54 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
 == n/a ==
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/uv/sdc/ImplementationGuide/sdc
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-occupation.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-occupation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/exampleresponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-pregnancy-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/hiv-case-report-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/hiv-case-report-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-gender.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-gender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-occupation.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-occupation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 166, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 163, column 98: The link 'transactions.html' for "transactions" cannot be resolved
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 169, column 64: The link 'concepts.html#case_report' for "case report" cannot be resolved
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 171, column 100: The link 'concepts.html#case_report' for "maturity level" cannot be resolved
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 181, column 357: The link 'expected_actions.html#transform' for "three options" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/a at Line 189, column 182: The link 'transactions.html' for "transactions" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 214, column 12: The link 'requirements.html' for "Level II: Business Requirements" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 216, column 12: The link 'data_exchange.html' for "Level III: Data Models and Exchange" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 217, column 12: The link 'deployment.html' for "Level IV - ε: Deployment Guidance" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 218, column 17: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 170, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 172, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 170, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 172, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 170, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 172, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 170, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 172, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 170, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 172, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 170, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 172, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 162, column 98: The link 'transactions.html' for "transactions" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 168, column 64: The link 'concepts.html#case_report' for "case report" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 170, column 100: The link 'concepts.html#case_report' for "maturity level" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 180, column 357: The link 'expected_actions.html#transform' for "three options" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/a at Line 188, column 182: The link 'transactions.html' for "transactions" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 213, column 12: The link 'requirements.html' for "Level II: Business Requirements" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 215, column 12: The link 'data_exchange.html' for "Level III: Data Models and Exchange" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 216, column 12: The link 'deployment.html' for "Level IV - ε: Deployment Guidance" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 217, column 17: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 == /github/workspace/fsh-generated/resources/Bundle-examplebundle.json ==
 INFORMATION: Bundle/examplebundle: Bundle/examplebundle: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
 INFORMATION: Bundle/examplebundle: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Condition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
@@ -140,8 +146,21 @@ INFORMATION: CodeSystem/cs-patient-communication-preferences: CodeSystem/cs-pati
 INFORMATION: CodeSystem/cs-patient-gender: CodeSystem/cs-patient-gender: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender-identity.json ==
 INFORMATION: CodeSystem/cs-patient-gender-identity: CodeSystem/cs-patient-gender-identity: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-pregnancy-status.json ==
+INFORMATION: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+WARNING: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+INFORMATION: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: CodeSystem.concept[1].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: CodeSystem.concept[2].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: CodeSystem.concept[3].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: CodeSystem.concept[4].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 == /github/workspace/fsh-generated/resources/CodeSystem-type-of-contact.json ==
 INFORMATION: CodeSystem/type-of-contact: CodeSystem/type-of-contact: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/Observation-a-pregnancy-status.json ==
+INFORMATION: Observation/a-pregnancy-status: Observation/a-pregnancy-status: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+WARNING: Observation/a-pregnancy-status: Observation/a-pregnancy-status: Observation.code.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Observation/a-pregnancy-status: Observation/a-pregnancy-status: Observation: Validate resource against profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/pregnancy-status - listed in meta
+ERROR: Observation/a-pregnancy-status: Observation/a-pregnancy-status: Observation.code: None of the codings provided are in the value set http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-pregnancy-status (http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-pregnancy-status), and a coding from this value set is required) (codes = null#unborn)
 == /github/workspace/fsh-generated/resources/Patient-test-hiv-patient.json ==
 INFORMATION: Patient/test-hiv-patient: Patient/test-hiv-patient: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
 WARNING: Patient/test-hiv-patient: Patient/test-hiv-patient: Patient.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -237,7 +256,6 @@ INFORMATION: StructureDefinition/hiv-viral-load: StructureDefinition/hiv-viral-l
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-viral-load'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status.json ==
 INFORMATION: StructureDefinition/pregnancy-status: StructureDefinition/pregnancy-status: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/pregnancy-status'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/ValueSet-HIVRapidTestResults.json ==
 INFORMATION: ValueSet/HIVRapidTestResults: ValueSet/HIVRapidTestResults: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-VSSymptoms.json ==
@@ -248,6 +266,8 @@ INFORMATION: ValueSet/vs-ethnicity: ValueSet/vs-ethnicity: ValueSet: Validate re
 INFORMATION: ValueSet/vs-hiv-occupations: ValueSet/vs-hiv-occupations: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-population.json ==
 INFORMATION: ValueSet/vs-hiv-population: ValueSet/vs-hiv-population: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-pregnancy-status.json ==
+INFORMATION: ValueSet/vs-hiv-pregnancy-status: ValueSet/vs-hiv-pregnancy-status: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-risk-behavior.json ==
 INFORMATION: ValueSet/vs-hiv-risk-behavior: ValueSet/vs-hiv-risk-behavior: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-transmission-route.json ==
