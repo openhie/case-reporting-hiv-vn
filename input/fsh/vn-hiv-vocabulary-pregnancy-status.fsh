@@ -1,20 +1,21 @@
 
-Instance: pregnancy-status
+Instance: cs-pregnancy-status
 InstanceOf: CodeSystem
 Title: "HIV Pregnancy Status"
 Usage: #example
 Description:  "CodeSystem - HIV Pregnancy Status"
-* name = "VN Snomed CT"
+* name = "HIV Pregnancy Status"
 * status = #draft
 * content = #complete
-* insert Code(1, Unborn, Chưa sinh)
-* insert Code(2, Born, Đã sinh)
-* insert Code(3, Miscarried, Bị xảy thai)
-* insert Code(4, Abortion, Đã phá thai)
-* insert Code(5, Unknown, Không rõ)
+
+* insert Code(unborn, Unborn, Chưa sinh)
+* insert Code(born, Born, Đã sinh)
+* insert Code(miscarried, Miscarried, Bị xảy thai)
+* insert Code(abortion, Abortion, Đã phá thai)
+* insert Code(unknown, Unknown, Không rõ)
 
 CodeSystem:  HIVPregnancyStatus
-Id: pregnancy-status
+Id: cs-pregnancy-status
 Title: "HIV Pregnancy Status"
 Description: "CodeSystem - Pregnancy Status"
 * #1 "Unborn" "Unborn"
