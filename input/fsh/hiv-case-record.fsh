@@ -165,12 +165,5 @@ Description:    "ART therapy summary."
 //* code from HIVRecencyResults
 
 
-Profile:        PregnancyStatus
-Parent:         Observation
-Id:             pregnancy-status
-Title:          "Pregnancy status"
-Description:    "Pregnancy status."
-//* code from HIVRecencyResults
-
 
 
