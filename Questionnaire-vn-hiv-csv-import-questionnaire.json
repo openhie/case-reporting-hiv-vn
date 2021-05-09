@@ -28,7 +28,24 @@
       "resourceType": "ValueSet",
       "id": "ChildHIVStatus",
       "name": "ChildHIVStatus",
-      "status": "draft"
+      "status": "draft",
+      "compose": {
+        "include": [
+          {
+            "concept": [
+              {
+                "code": "0"
+              },
+              {
+                "code": "1"
+              },
+              {
+                "code": "unknown"
+              }
+            ]
+          }
+        ]
+      }
     }
   ],
   "extension": [
@@ -43,7 +60,7 @@
   "subjectType": [
     "Patient"
   ],
-  "date": "2021-05-09T17:59:51+00:00",
+  "date": "2021-05-09T19:45:51+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {

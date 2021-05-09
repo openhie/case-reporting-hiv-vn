@@ -201,6 +201,19 @@
       <id value="ChildHIVStatus"/>
       <name value="ChildHIVStatus"/>
       <status value="draft"/>
+      <compose>
+        <include>
+          <concept>
+            <code value="0"/>
+          </concept>
+          <concept>
+            <code value="1"/>
+          </concept>
+          <concept>
+            <code value="unknown"/>
+          </concept>
+        </include>
+      </compose>
     </ValueSet>
   </contained>
   <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext"/>
@@ -209,7 +222,7 @@
   <name value="CSVImportQuestionnaire"/>
   <status value="draft"/>
   <subjectType value="Patient"/>
-  <date value="2021-05-09T17:59:51+00:00"/>
+  <date value="2021-05-09T19:45:51+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>

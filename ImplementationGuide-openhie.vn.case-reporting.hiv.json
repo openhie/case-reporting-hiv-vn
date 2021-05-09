@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam",
   "status": "draft",
   "experimental": false,
-  "date": "2021-05-09T17:59:51+00:00",
+  "date": "2021-05-09T19:45:51+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -502,6 +502,17 @@
         },
         "name": "Symptoms",
         "description": "Symptoms associated with HIV case"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/HIVPregnancyOutcomeCodes"
+        }
       },
       {
         "extension": [

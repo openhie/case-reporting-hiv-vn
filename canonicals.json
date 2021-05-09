@@ -196,6 +196,13 @@
     "name": "Ethnicity"
   },
   {
+    "id": "HIVPregnancyOutcomeCodes",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/HIVPregnancyOutcomeCodes",
+    "version": "0.1.0-test",
+    "name": "HIVPregnancyOutcomeCodes"
+  },
+  {
     "id": "HIVRapidTestResults",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/HIVRapidTestResults",
@@ -228,7 +235,7 @@
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-pregnancy-status",
     "version": "0.1.0-test",
-    "name": "HIVPregnancyStatus"
+    "name": "VSHIVPregnancyStatus"
   },
   {
     "id": "vs-hiv-risk-behavior",

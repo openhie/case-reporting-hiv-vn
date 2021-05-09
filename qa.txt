@@ -1,11 +1,11 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 54, warn = 26, info = 83
+err = 66, warn = 38, info = 83
 IG Publisher Version: 1.1.68
-Generated Sun May 09 18:00:34 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Sun May 09 19:46:35 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
- Build Errors : 40 / 11 / 1
+ Build Errors : 41 / 12 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/CodeSystem-cs-gender : 0 / 0 / 5
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations : 0 / 0 / 1
@@ -21,9 +21,9 @@ Generated Sun May 09 18:00:34 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/CodeSystem-type-of-contact : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-a-pregnancy-status : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 1 / 1 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 6 / 0 / 6
- /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 9 / 0 / 5
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 25 / 1 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 11 / 9 / 6
+ /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 11 / 1 / 5
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 27 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-careplan : 0 / 1 / 1
@@ -37,6 +37,7 @@ Generated Sun May 09 18:00:34 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vs-vn-ethnicity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVPregnancyOutcomeCodes : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-HIVRapidTestResults : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-VSSymptoms : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-occupations : 0 / 0 / 1
@@ -58,6 +59,8 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-occupation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/HIVPregnancyOutcomeCodes.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/HIVPregnancyOutcomeCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -79,10 +82,10 @@ ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVS
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 172, column 8: The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 170, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 172, column 8: The link 'ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_HIVPregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 170, column 8: The link 'ValueSet-hiv-case-report-questionnaire_HIVPregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_HIVPregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 8: The link 'ValueSet-hiv-case-report-questionnaire_HIVPregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_HIVPregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 8: The link 'ValueSet-hiv-case-report-questionnaire_HIVPregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_HIVPregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 172, column 8: The link 'ValueSet-hiv-case-report-questionnaire_HIVPregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 170, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
@@ -233,11 +236,25 @@ ERROR: Patient/test-hiv-patient: Patient/test-hiv-patient: Patient.identifier[3]
 ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json - the canonical URL (http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire) does not match the URL (http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire)
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(ValueSet).compose.include[0]: vsd-1: 'A value set include/exclude SHALL have a value set or a system' failed
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(ValueSet).compose.include[0]: vsd-2: 'A value set with concepts or filters SHALL include a system' failed
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(ValueSet).compose[0].include[0]: No System specified, so Concepts and Filters can''t be checked
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[1].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[2].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[2].ofType(ValueSet).compose.include[0]: vsd-1: 'A value set include/exclude SHALL have a value set or a system' failed
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[2].ofType(ValueSet).compose.include[0]: vsd-2: 'A value set with concepts or filters SHALL include a system' failed
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[2].ofType(ValueSet).compose[0].include[0]: No System specified, so Concepts and Filters can''t be checked
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: ext-1: 'Must have either extensions or value[x], not both' failed
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' definition is for a simple extension, so it must contain a value, not extensions
-ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[3].item[0].item[3].answerValueSet: Canonical URLs must be absolute URLs if they are not fragment references (HIVRapidTestResults) 
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[3].item[0].item[3].answerValueSet: Canonical URLs must be absolute URLs if they are not fragment references (HIVRecencyTestResults) 
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[3].item[1].item[1].answerValueSet: Canonical URLs must be absolute URLs if they are not fragment references (HIVRecencyTestResults) 
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[1].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[2].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[5].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[6].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[7].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: Profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract, Element matches more than one slice - rootContext, itemContext
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[0].item[1].item[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract
@@ -250,6 +267,9 @@ ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-i
 INFORMATION: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.contained[0].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.contained[1].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.contained[2].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.contained[2].ofType(ValueSet).compose.include[0]: vsd-1: 'A value set include/exclude SHALL have a value set or a system' failed
+ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.contained[2].ofType(ValueSet).compose.include[0]: vsd-2: 'A value set with concepts or filters SHALL include a system' failed
+WARNING: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.contained[2].ofType(ValueSet).compose[0].include[0]: No System specified, so Concepts and Filters can''t be checked
 ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.extension[0]: ext-1: 'Must have either extensions or value[x], not both' failed
 ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' definition is for a simple extension, so it must contain a value, not extensions
 ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire.item[9]: Questionnaire.item.linkId: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Questionnaire)
@@ -268,8 +288,10 @@ ERROR: QuestionnaireResponse.item[2].item[8].item[0]: The property item must be 
 ERROR: QuestionnaireResponse.item[2].item[8].item[2]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[8].item[2])
 INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
 WARNING: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.meta.tag[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0].item[0].item[0]: LinkId 'health_insurance_code' not found in questionnaire
-ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0].item[0].item[0]: LinkId 'passport_nr' not found in questionnaire
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0].item[0]: Structural Error: item with linkid id_cccd is in the wrong place
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0].item[0].item[0]: If text exists, it must match the questionnaire definition for linkId id_cccd
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0].item[0].item[0]: Items not of type group should not have items outside answers (use answer.item not .item)
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0]: If text exists, it must match the questionnaire definition for linkId hiv-diagnosis
 INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse - listed in meta
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[1].answer[0].value.ofType(date): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type date
@@ -322,6 +344,11 @@ WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.cas
 INFORMATION: StructureDefinition/pregnancy-status: StructureDefinition/pregnancy-status: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-vs-vn-ethnicity.json ==
 INFORMATION: StructureDefinition/vs-vn-ethnicity: StructureDefinition/vs-vn-ethnicity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /github/workspace/fsh-generated/resources/ValueSet-HIVPregnancyOutcomeCodes.json ==
+INFORMATION: ValueSet/HIVPregnancyOutcomeCodes: ValueSet/HIVPregnancyOutcomeCodes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: ValueSet/HIVPregnancyOutcomeCodes: ValueSet/HIVPregnancyOutcomeCodes: ValueSet.compose.include[0]: vsd-1: 'A value set include/exclude SHALL have a value set or a system' failed
+ERROR: ValueSet/HIVPregnancyOutcomeCodes: ValueSet/HIVPregnancyOutcomeCodes: ValueSet.compose.include[0]: vsd-2: 'A value set with concepts or filters SHALL include a system' failed
+WARNING: ValueSet/HIVPregnancyOutcomeCodes: ValueSet/HIVPregnancyOutcomeCodes: ValueSet.compose[0].include[0]: No System specified, so Concepts and Filters can''t be checked
 == /github/workspace/fsh-generated/resources/ValueSet-HIVRapidTestResults.json ==
 INFORMATION: ValueSet/HIVRapidTestResults: ValueSet/HIVRapidTestResults: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-VSSymptoms.json ==

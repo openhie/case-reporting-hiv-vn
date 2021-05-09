@@ -37,7 +37,22 @@
      fhir:index 2;
      fhir:Resource.id [ fhir:value "ChildHIVStatus" ];
      fhir:ValueSet.name [ fhir:value "ChildHIVStatus" ];
-     fhir:ValueSet.status [ fhir:value "draft" ]
+     fhir:ValueSet.status [ fhir:value "draft" ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "0" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "unknown" ]
+         ]
+       ]
+     ]
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -51,7 +66,7 @@
      fhir:value "Patient";
      fhir:index 0
   ];
-  fhir:Questionnaire.date [ fhir:value "2021-05-09T17:59:51+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2021-05-09T19:45:51+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "OpenHIE"];
   fhir:Questionnaire.contact [
      fhir:index 0;
