@@ -69,16 +69,14 @@ Id: vs-vn-ethnicity
 Title: "Ethnicity"
 Description: "Ethnicity."
 * value[x] only CodeableConcept
-* valueCodeableConcept from Ethnicity (extensible)
+* valueCodeableConcept from VietnamEthnicity (extensible)
 
 Extension:  SpecimenCollectionPlace
 Id: ext-specimen-collection-place
 Title: "Specimen Collection Place"
 Description: "Specimen Collection Place."
 * value[x] only CodeableConcept or Reference
-* valueCodeableConcept from Ethnicity (extensible)
-
-
+* valueCodeableConcept from VietnamEthnicity (extensible)
 
 Profile:        HIVRiskFactor
 Parent:         Condition
