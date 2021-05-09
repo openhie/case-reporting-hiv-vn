@@ -93,20 +93,6 @@ Description:  "Symptoms associated with HIV case"
 * SCT#248427009 "Sốt kéo dài"
 
 
-
-
-
-
-ValueSet: Ethnicity
-//Usage: #definition
-Id: vs-ethnicity
-Title: "Ethnicity"
-Description:  "Ethnicity"
-* ^status = #draft
-//* codes from system $ethnicity
-
-
-
 CodeSystem:  CSPatientGender
 Id: cs-patient-gender
 Title: "Patient Gender"
