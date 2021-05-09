@@ -8,13 +8,15 @@ InstanceOf: HIVPatient
 * name[+].text = "John Johnson"
 
 * identifier[art].value = "ARV001"
-* identifier[passport].value = "P000001"
-* identifier[insurance].value = "NI000001"
+* identifier[soHoChieu].value = "P000001"
+* identifier[theBHXH].value = "NN-00909000"
+* identifier[theBHXH].value = "0111111"
+* identifier[theCCCD].value = "00123456876"
+
 * address[Temporary].line = "31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000"
 * address[Permanent].line = "3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward"
-* extension[Ethnicity].valueCodeableConcept = #2037-0
+* extension[Ethnicity].valueCodeableConcept = #kinh
 * birthDate = "1970"
-
 
 Instance: test-hiv-condition
 InstanceOf: HIVCondition
