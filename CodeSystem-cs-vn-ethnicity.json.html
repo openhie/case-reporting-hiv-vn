@@ -1,0 +1,853 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>OPENHIE.VN.CASE-REPORTING.HIV\ - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.35"}
+    h3,h4,h5,h6{--heading-prefix:"6.35"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HIV Case-reporting for Vietnam</span><br/>0.1.0-test - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a href="downloads.html">Downloads</a></li>
+		</ul>
+	</li>
+</ul>      
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b></b></li>
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HIV Case-reporting for Vietnam - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-cs-vn-ethnicity.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-vn-ethnicity.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">:  - JSON Representation</h2>
+
+<p><a href="CodeSystem-cs-vn-ethnicity.json" no-download="true">Raw json</a> | <a href="CodeSystem-cs-vn-ethnicity.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json"><code>
+{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "cs-vn-ethnicity",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;kinh&lt;a name=\&quot;cs-vn-ethnicity-kinh\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kinh&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tay&lt;a name=\&quot;cs-vn-ethnicity-tay\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tày&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;thai&lt;a name=\&quot;cs-vn-ethnicity-thai\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thái&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hoa&lt;a name=\&quot;cs-vn-ethnicity-hoa\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hoa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;khome&lt;a name=\&quot;cs-vn-ethnicity-khome\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Khơ-me&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;muong&lt;a name=\&quot;cs-vn-ethnicity-muong\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mường&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;nung&lt;a name=\&quot;cs-vn-ethnicity-nung\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nùng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hmong&lt;a name=\&quot;cs-vn-ethnicity-hmong\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hông&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dao&lt;a name=\&quot;cs-vn-ethnicity-dao\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dao&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;giarai&lt;a name=\&quot;cs-vn-ethnicity-giarai\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gia Rai&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ngai&lt;a name=\&quot;cs-vn-ethnicity-ngai\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngái&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ede&lt;a name=\&quot;cs-vn-ethnicity-ede\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ê đê&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;bana&lt;a name=\&quot;cs-vn-ethnicity-bana\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ba-na&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;xodang&lt;a name=\&quot;cs-vn-ethnicity-xodang\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Xơ đăng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;sanchay&lt;a name=\&quot;cs-vn-ethnicity-sanchay\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sán Chay&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;coho&lt;a name=\&quot;cs-vn-ethnicity-coho\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cơ-ho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cham&lt;a name=\&quot;cs-vn-ethnicity-cham\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chăm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;sandiu&lt;a name=\&quot;cs-vn-ethnicity-sandiu\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sán Dìu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hre&lt;a name=\&quot;cs-vn-ethnicity-hre\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hrê&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;mnong&lt;a name=\&quot;cs-vn-ethnicity-mnong\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mnông&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;raglai&lt;a name=\&quot;cs-vn-ethnicity-raglai\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ra-glai&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;xtieng&lt;a name=\&quot;cs-vn-ethnicity-xtieng\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Xtiêng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vankieu&lt;a name=\&quot;cs-vn-ethnicity-vankieu\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bru-Vân Kiều&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tho&lt;a name=\&quot;cs-vn-ethnicity-tho\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thổ&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;giay&lt;a name=\&quot;cs-vn-ethnicity-giay\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Giáy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cotu&lt;a name=\&quot;cs-vn-ethnicity-cotu\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cơ-tu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;gietrieng&lt;a name=\&quot;cs-vn-ethnicity-gietrieng\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gié-Triêng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ma&lt;a name=\&quot;cs-vn-ethnicity-ma\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mạ&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;khomu&lt;a name=\&quot;cs-vn-ethnicity-khomu\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Khơ-mú&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;co&lt;a name=\&quot;cs-vn-ethnicity-co\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Co&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;taoi&lt;a name=\&quot;cs-vn-ethnicity-taoi\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ta-ôi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;choro&lt;a name=\&quot;cs-vn-ethnicity-choro\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chơ-ro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;khang&lt;a name=\&quot;cs-vn-ethnicity-khang\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kháng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;xinhmun&lt;a name=\&quot;cs-vn-ethnicity-xinhmun\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Xinh-mun&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hanhi&lt;a name=\&quot;cs-vn-ethnicity-hanhi\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hà Nhì&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;churu&lt;a name=\&quot;cs-vn-ethnicity-churu\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chu-ru&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lao&lt;a name=\&quot;cs-vn-ethnicity-lao\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lào&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lachi&lt;a name=\&quot;cs-vn-ethnicity-lachi\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;La Chi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;laha&lt;a name=\&quot;cs-vn-ethnicity-laha\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;La Ha&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;phula&lt;a name=\&quot;cs-vn-ethnicity-phula\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Phù Lá&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lahu&lt;a name=\&quot;cs-vn-ethnicity-lahu\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;La Hủ&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lu&lt;a name=\&quot;cs-vn-ethnicity-lu\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lự&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lolo&lt;a name=\&quot;cs-vn-ethnicity-lolo\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lô lô&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;chut&lt;a name=\&quot;cs-vn-ethnicity-chut\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chứt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;mang&lt;a name=\&quot;cs-vn-ethnicity-mang\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mảng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pathen&lt;a name=\&quot;cs-vn-ethnicity-pathen\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pà Thẻn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;colao&lt;a name=\&quot;cs-vn-ethnicity-colao\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cơ Lao&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cong&lt;a name=\&quot;cs-vn-ethnicity-cong\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cống&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;boy&lt;a name=\&quot;cs-vn-ethnicity-boy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bố Y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;sila&lt;a name=\&quot;cs-vn-ethnicity-sila\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Si La&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pupeo&lt;a name=\&quot;cs-vn-ethnicity-pupeo\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pu Péo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;brao&lt;a name=\&quot;cs-vn-ethnicity-brao\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Brâu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;odu&lt;a name=\&quot;cs-vn-ethnicity-odu\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ơ Đu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;romam&lt;a name=\&quot;cs-vn-ethnicity-romam\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rơ-măm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;unk&lt;a name=\&quot;cs-vn-ethnicity-unk\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Không rõ&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;vi&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kinh&lt;/td&gt;&lt;td&gt;Kinh&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tay&lt;/td&gt;&lt;td&gt;Tày&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;thai&lt;/td&gt;&lt;td&gt;Thái&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hoa&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;khome&lt;/td&gt;&lt;td&gt;Khơ-me&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;muong&lt;/td&gt;&lt;td&gt;Mường&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nung&lt;/td&gt;&lt;td&gt;Nùng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hmong&lt;/td&gt;&lt;td&gt;Hông&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;dao&lt;/td&gt;&lt;td&gt;Dao&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;giarai&lt;/td&gt;&lt;td&gt;Gia Rai&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ngai&lt;/td&gt;&lt;td&gt;Ngái&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ede&lt;/td&gt;&lt;td&gt;Ê đê&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;bana&lt;/td&gt;&lt;td&gt;Ba-na&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;xodang&lt;/td&gt;&lt;td&gt;Xơ đăng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sanchay&lt;/td&gt;&lt;td&gt;Sán Chay&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;coho&lt;/td&gt;&lt;td&gt;Cơ-ho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;cham&lt;/td&gt;&lt;td&gt;Chăm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sandiu&lt;/td&gt;&lt;td&gt;Sán Dìu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hre&lt;/td&gt;&lt;td&gt;Hrê&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;mnong&lt;/td&gt;&lt;td&gt;Mnông&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;raglai&lt;/td&gt;&lt;td&gt;Ra-glai&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;xtieng&lt;/td&gt;&lt;td&gt;Xtiêng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;vankieu&lt;/td&gt;&lt;td&gt;Bru-Vân Kiều&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tho&lt;/td&gt;&lt;td&gt;Thổ&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;giay&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;cotu&lt;/td&gt;&lt;td&gt;Cơ-tu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;gietrieng&lt;/td&gt;&lt;td&gt;Gié-Triêng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ma&lt;/td&gt;&lt;td&gt;Mạ&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;khomu&lt;/td&gt;&lt;td&gt;Khơ-mú&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;co&lt;/td&gt;&lt;td&gt;Co&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;taoi&lt;/td&gt;&lt;td&gt;Ta-ôi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;choro&lt;/td&gt;&lt;td&gt;Chơ-ro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;khang&lt;/td&gt;&lt;td&gt;Kháng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;xinhmun&lt;/td&gt;&lt;td&gt;Xinh-mun&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hanhi&lt;/td&gt;&lt;td&gt;Hà Nhì&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;churu&lt;/td&gt;&lt;td&gt;Chu-ru&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lao&lt;/td&gt;&lt;td&gt;Lào&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lachi&lt;/td&gt;&lt;td&gt;La Chi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;laha&lt;/td&gt;&lt;td&gt;La Ha&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;phula&lt;/td&gt;&lt;td&gt;Phù Lá&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lahu&lt;/td&gt;&lt;td&gt;La Hủ&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lu&lt;/td&gt;&lt;td&gt;Lự&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lolo&lt;/td&gt;&lt;td&gt;Lô lô&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;chut&lt;/td&gt;&lt;td&gt;Chứt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;mang&lt;/td&gt;&lt;td&gt;Mảng&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;pathen&lt;/td&gt;&lt;td&gt;Pà Thẻn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;colao&lt;/td&gt;&lt;td&gt;Cơ Lao&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;cong&lt;/td&gt;&lt;td&gt;Cống&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;boy&lt;/td&gt;&lt;td&gt;Bố Y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sila&lt;/td&gt;&lt;td&gt;Si La&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;pupeo&lt;/td&gt;&lt;td&gt;Pu Péo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;brao&lt;/td&gt;&lt;td&gt;Brâu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;odu&lt;/td&gt;&lt;td&gt;Ơ Đu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;romam&lt;/td&gt;&lt;td&gt;Rơ-măm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;unk&lt;/td&gt;&lt;td&gt;Không rõ&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.0-test",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "Vietnam Ethnicity",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2021-05-09T17:59:51+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "OpenHIE",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "001"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "kinh",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kinh",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Kinh"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tay",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tày",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Tày"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "thai",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Thái",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Thái"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "hoa",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hoa",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "khome",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Khơ-me",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Khơ-me"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "muong",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mường",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Mường"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "nung",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nùng",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Nùng"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "hmong",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hông",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Hông"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "dao",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dao",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dao"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "giarai",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Gia Rai",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Gia Rai"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ngai",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngái",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Ngái"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ede",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ê đê",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Ê đê"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "bana",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ba-na",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Ba-na"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "xodang",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Xơ đăng",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Xơ đăng"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "sanchay",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sán Chay",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Sán Chay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "coho",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cơ-ho",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Cơ-ho"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cham",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chăm",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chăm"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "sandiu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sán Dìu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Sán Dìu"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "hre",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hrê",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Hrê"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "mnong",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mnông",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Mnông"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "raglai",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ra-glai",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Ra-glai"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "xtieng",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Xtiêng",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Xtiêng"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "vankieu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bru-Vân Kiều",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Bru-Vân Kiều"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tho",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Thổ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Thổ"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "giay",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Giáy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cotu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cơ-tu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Cơ-tu"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "gietrieng",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Gié-Triêng",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Gié-Triêng"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ma",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mạ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Mạ"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "khomu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Khơ-mú",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Khơ-mú"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "co",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Co",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Co"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "taoi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ta-ôi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Ta-ôi"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "choro",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chơ-ro",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chơ-ro"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "khang",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kháng",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Kháng"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "xinhmun",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Xinh-mun",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Xinh-mun"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "hanhi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hà Nhì",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Hà Nhì"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "churu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chu-ru",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chu-ru"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "lao",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lào",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Lào"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "lachi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "La Chi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "La Chi"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "laha",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "La Ha",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "La Ha"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "phula",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Phù Lá",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Phù Lá"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "lahu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "La Hủ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "La Hủ"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "lu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lự",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Lự"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "lolo",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lô lô",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Lô lô"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "chut",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chứt",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chứt"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "mang",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mảng",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Mảng"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "pathen",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pà Thẻn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Pà Thẻn"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "colao",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cơ Lao",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Cơ Lao"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cong",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cống",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Cống"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "boy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bố Y",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Bố Y"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "sila",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Si La",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Si La"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "pupeo",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pu Péo",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Pu Péo"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "brao",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Brâu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Brâu"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "odu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ơ Đu",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Ơ Đu"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "romam",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rơ-măm",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Rơ-măm"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "unk",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Không rõ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "vi-VN",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Không rõ"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 9, 2021 17:59+0000">2021-05-09</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

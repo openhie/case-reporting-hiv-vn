@@ -1,0 +1,539 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-vn-ethnicity"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">kinh<a name=\"cs-vn-ethnicity-kinh\"> </a></td><td>Kinh</td></tr><tr><td style=\"white-space:nowrap\">tay<a name=\"cs-vn-ethnicity-tay\"> </a></td><td>Tày</td></tr><tr><td style=\"white-space:nowrap\">thai<a name=\"cs-vn-ethnicity-thai\"> </a></td><td>Thái</td></tr><tr><td style=\"white-space:nowrap\">hoa<a name=\"cs-vn-ethnicity-hoa\"> </a></td><td>Hoa</td></tr><tr><td style=\"white-space:nowrap\">khome<a name=\"cs-vn-ethnicity-khome\"> </a></td><td>Khơ-me</td></tr><tr><td style=\"white-space:nowrap\">muong<a name=\"cs-vn-ethnicity-muong\"> </a></td><td>Mường</td></tr><tr><td style=\"white-space:nowrap\">nung<a name=\"cs-vn-ethnicity-nung\"> </a></td><td>Nùng</td></tr><tr><td style=\"white-space:nowrap\">hmong<a name=\"cs-vn-ethnicity-hmong\"> </a></td><td>Hông</td></tr><tr><td style=\"white-space:nowrap\">dao<a name=\"cs-vn-ethnicity-dao\"> </a></td><td>Dao</td></tr><tr><td style=\"white-space:nowrap\">giarai<a name=\"cs-vn-ethnicity-giarai\"> </a></td><td>Gia Rai</td></tr><tr><td style=\"white-space:nowrap\">ngai<a name=\"cs-vn-ethnicity-ngai\"> </a></td><td>Ngái</td></tr><tr><td style=\"white-space:nowrap\">ede<a name=\"cs-vn-ethnicity-ede\"> </a></td><td>Ê đê</td></tr><tr><td style=\"white-space:nowrap\">bana<a name=\"cs-vn-ethnicity-bana\"> </a></td><td>Ba-na</td></tr><tr><td style=\"white-space:nowrap\">xodang<a name=\"cs-vn-ethnicity-xodang\"> </a></td><td>Xơ đăng</td></tr><tr><td style=\"white-space:nowrap\">sanchay<a name=\"cs-vn-ethnicity-sanchay\"> </a></td><td>Sán Chay</td></tr><tr><td style=\"white-space:nowrap\">coho<a name=\"cs-vn-ethnicity-coho\"> </a></td><td>Cơ-ho</td></tr><tr><td style=\"white-space:nowrap\">cham<a name=\"cs-vn-ethnicity-cham\"> </a></td><td>Chăm</td></tr><tr><td style=\"white-space:nowrap\">sandiu<a name=\"cs-vn-ethnicity-sandiu\"> </a></td><td>Sán Dìu</td></tr><tr><td style=\"white-space:nowrap\">hre<a name=\"cs-vn-ethnicity-hre\"> </a></td><td>Hrê</td></tr><tr><td style=\"white-space:nowrap\">mnong<a name=\"cs-vn-ethnicity-mnong\"> </a></td><td>Mnông</td></tr><tr><td style=\"white-space:nowrap\">raglai<a name=\"cs-vn-ethnicity-raglai\"> </a></td><td>Ra-glai</td></tr><tr><td style=\"white-space:nowrap\">xtieng<a name=\"cs-vn-ethnicity-xtieng\"> </a></td><td>Xtiêng</td></tr><tr><td style=\"white-space:nowrap\">vankieu<a name=\"cs-vn-ethnicity-vankieu\"> </a></td><td>Bru-Vân Kiều</td></tr><tr><td style=\"white-space:nowrap\">tho<a name=\"cs-vn-ethnicity-tho\"> </a></td><td>Thổ</td></tr><tr><td style=\"white-space:nowrap\">giay<a name=\"cs-vn-ethnicity-giay\"> </a></td><td>Giáy</td></tr><tr><td style=\"white-space:nowrap\">cotu<a name=\"cs-vn-ethnicity-cotu\"> </a></td><td>Cơ-tu</td></tr><tr><td style=\"white-space:nowrap\">gietrieng<a name=\"cs-vn-ethnicity-gietrieng\"> </a></td><td>Gié-Triêng</td></tr><tr><td style=\"white-space:nowrap\">ma<a name=\"cs-vn-ethnicity-ma\"> </a></td><td>Mạ</td></tr><tr><td style=\"white-space:nowrap\">khomu<a name=\"cs-vn-ethnicity-khomu\"> </a></td><td>Khơ-mú</td></tr><tr><td style=\"white-space:nowrap\">co<a name=\"cs-vn-ethnicity-co\"> </a></td><td>Co</td></tr><tr><td style=\"white-space:nowrap\">taoi<a name=\"cs-vn-ethnicity-taoi\"> </a></td><td>Ta-ôi</td></tr><tr><td style=\"white-space:nowrap\">choro<a name=\"cs-vn-ethnicity-choro\"> </a></td><td>Chơ-ro</td></tr><tr><td style=\"white-space:nowrap\">khang<a name=\"cs-vn-ethnicity-khang\"> </a></td><td>Kháng</td></tr><tr><td style=\"white-space:nowrap\">xinhmun<a name=\"cs-vn-ethnicity-xinhmun\"> </a></td><td>Xinh-mun</td></tr><tr><td style=\"white-space:nowrap\">hanhi<a name=\"cs-vn-ethnicity-hanhi\"> </a></td><td>Hà Nhì</td></tr><tr><td style=\"white-space:nowrap\">churu<a name=\"cs-vn-ethnicity-churu\"> </a></td><td>Chu-ru</td></tr><tr><td style=\"white-space:nowrap\">lao<a name=\"cs-vn-ethnicity-lao\"> </a></td><td>Lào</td></tr><tr><td style=\"white-space:nowrap\">lachi<a name=\"cs-vn-ethnicity-lachi\"> </a></td><td>La Chi</td></tr><tr><td style=\"white-space:nowrap\">laha<a name=\"cs-vn-ethnicity-laha\"> </a></td><td>La Ha</td></tr><tr><td style=\"white-space:nowrap\">phula<a name=\"cs-vn-ethnicity-phula\"> </a></td><td>Phù Lá</td></tr><tr><td style=\"white-space:nowrap\">lahu<a name=\"cs-vn-ethnicity-lahu\"> </a></td><td>La Hủ</td></tr><tr><td style=\"white-space:nowrap\">lu<a name=\"cs-vn-ethnicity-lu\"> </a></td><td>Lự</td></tr><tr><td style=\"white-space:nowrap\">lolo<a name=\"cs-vn-ethnicity-lolo\"> </a></td><td>Lô lô</td></tr><tr><td style=\"white-space:nowrap\">chut<a name=\"cs-vn-ethnicity-chut\"> </a></td><td>Chứt</td></tr><tr><td style=\"white-space:nowrap\">mang<a name=\"cs-vn-ethnicity-mang\"> </a></td><td>Mảng</td></tr><tr><td style=\"white-space:nowrap\">pathen<a name=\"cs-vn-ethnicity-pathen\"> </a></td><td>Pà Thẻn</td></tr><tr><td style=\"white-space:nowrap\">colao<a name=\"cs-vn-ethnicity-colao\"> </a></td><td>Cơ Lao</td></tr><tr><td style=\"white-space:nowrap\">cong<a name=\"cs-vn-ethnicity-cong\"> </a></td><td>Cống</td></tr><tr><td style=\"white-space:nowrap\">boy<a name=\"cs-vn-ethnicity-boy\"> </a></td><td>Bố Y</td></tr><tr><td style=\"white-space:nowrap\">sila<a name=\"cs-vn-ethnicity-sila\"> </a></td><td>Si La</td></tr><tr><td style=\"white-space:nowrap\">pupeo<a name=\"cs-vn-ethnicity-pupeo\"> </a></td><td>Pu Péo</td></tr><tr><td style=\"white-space:nowrap\">brao<a name=\"cs-vn-ethnicity-brao\"> </a></td><td>Brâu</td></tr><tr><td style=\"white-space:nowrap\">odu<a name=\"cs-vn-ethnicity-odu\"> </a></td><td>Ơ Đu</td></tr><tr><td style=\"white-space:nowrap\">romam<a name=\"cs-vn-ethnicity-romam\"> </a></td><td>Rơ-măm</td></tr><tr><td style=\"white-space:nowrap\">unk<a name=\"cs-vn-ethnicity-unk\"> </a></td><td>Không rõ</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>kinh</td><td>Kinh</td></tr><tr><td>tay</td><td>Tày</td></tr><tr><td>thai</td><td>Thái</td></tr><tr><td>hoa</td><td/></tr><tr><td>khome</td><td>Khơ-me</td></tr><tr><td>muong</td><td>Mường</td></tr><tr><td>nung</td><td>Nùng</td></tr><tr><td>hmong</td><td>Hông</td></tr><tr><td>dao</td><td>Dao</td></tr><tr><td>giarai</td><td>Gia Rai</td></tr><tr><td>ngai</td><td>Ngái</td></tr><tr><td>ede</td><td>Ê đê</td></tr><tr><td>bana</td><td>Ba-na</td></tr><tr><td>xodang</td><td>Xơ đăng</td></tr><tr><td>sanchay</td><td>Sán Chay</td></tr><tr><td>coho</td><td>Cơ-ho</td></tr><tr><td>cham</td><td>Chăm</td></tr><tr><td>sandiu</td><td>Sán Dìu</td></tr><tr><td>hre</td><td>Hrê</td></tr><tr><td>mnong</td><td>Mnông</td></tr><tr><td>raglai</td><td>Ra-glai</td></tr><tr><td>xtieng</td><td>Xtiêng</td></tr><tr><td>vankieu</td><td>Bru-Vân Kiều</td></tr><tr><td>tho</td><td>Thổ</td></tr><tr><td>giay</td><td/></tr><tr><td>cotu</td><td>Cơ-tu</td></tr><tr><td>gietrieng</td><td>Gié-Triêng</td></tr><tr><td>ma</td><td>Mạ</td></tr><tr><td>khomu</td><td>Khơ-mú</td></tr><tr><td>co</td><td>Co</td></tr><tr><td>taoi</td><td>Ta-ôi</td></tr><tr><td>choro</td><td>Chơ-ro</td></tr><tr><td>khang</td><td>Kháng</td></tr><tr><td>xinhmun</td><td>Xinh-mun</td></tr><tr><td>hanhi</td><td>Hà Nhì</td></tr><tr><td>churu</td><td>Chu-ru</td></tr><tr><td>lao</td><td>Lào</td></tr><tr><td>lachi</td><td>La Chi</td></tr><tr><td>laha</td><td>La Ha</td></tr><tr><td>phula</td><td>Phù Lá</td></tr><tr><td>lahu</td><td>La Hủ</td></tr><tr><td>lu</td><td>Lự</td></tr><tr><td>lolo</td><td>Lô lô</td></tr><tr><td>chut</td><td>Chứt</td></tr><tr><td>mang</td><td>Mảng</td></tr><tr><td>pathen</td><td>Pà Thẻn</td></tr><tr><td>colao</td><td>Cơ Lao</td></tr><tr><td>cong</td><td>Cống</td></tr><tr><td>boy</td><td>Bố Y</td></tr><tr><td>sila</td><td>Si La</td></tr><tr><td>pupeo</td><td>Pu Péo</td></tr><tr><td>brao</td><td>Brâu</td></tr><tr><td>odu</td><td>Ơ Đu</td></tr><tr><td>romam</td><td>Rơ-măm</td></tr><tr><td>unk</td><td>Không rõ</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
+  fhir:CodeSystem.name [ fhir:value "Vietnam Ethnicity"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-05-09T17:59:51+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "kinh" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kinh" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Kinh" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "tay" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tày" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Tày" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "thai" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Thái" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Thái" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "hoa" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hoa" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "khome" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Khơ-me" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Khơ-me" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "muong" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mường" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mường" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "nung" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nùng" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nùng" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "hmong" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hông" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Hông" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "dao" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dao" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dao" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "giarai" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gia Rai" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Gia Rai" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "ngai" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngái" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ngái" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "ede" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ê đê" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ê đê" ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "bana" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ba-na" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ba-na" ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "xodang" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Xơ đăng" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Xơ đăng" ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "sanchay" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sán Chay" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Sán Chay" ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "coho" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cơ-ho" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Cơ-ho" ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "cham" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chăm" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chăm" ]
+     ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "sandiu" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sán Dìu" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Sán Dìu" ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "hre" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hrê" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Hrê" ]
+     ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "mnong" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mnông" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mnông" ]
+     ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "raglai" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ra-glai" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ra-glai" ]
+     ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "xtieng" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Xtiêng" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Xtiêng" ]
+     ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "vankieu" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bru-Vân Kiều" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Bru-Vân Kiều" ]
+     ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "tho" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Thổ" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Thổ" ]
+     ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "giay" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Giáy" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ]
+     ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "cotu" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cơ-tu" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Cơ-tu" ]
+     ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "gietrieng" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gié-Triêng" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Gié-Triêng" ]
+     ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "ma" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mạ" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mạ" ]
+     ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "khomu" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Khơ-mú" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Khơ-mú" ]
+     ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "co" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Co" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Co" ]
+     ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "taoi" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ta-ôi" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ta-ôi" ]
+     ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "choro" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chơ-ro" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chơ-ro" ]
+     ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "khang" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kháng" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Kháng" ]
+     ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "xinhmun" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Xinh-mun" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Xinh-mun" ]
+     ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "hanhi" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hà Nhì" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Hà Nhì" ]
+     ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "churu" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chu-ru" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chu-ru" ]
+     ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "lao" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lào" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Lào" ]
+     ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "lachi" ];
+     fhir:CodeSystem.concept.display [ fhir:value "La Chi" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "La Chi" ]
+     ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "laha" ];
+     fhir:CodeSystem.concept.display [ fhir:value "La Ha" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "La Ha" ]
+     ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "phula" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Phù Lá" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Phù Lá" ]
+     ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "lahu" ];
+     fhir:CodeSystem.concept.display [ fhir:value "La Hủ" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "La Hủ" ]
+     ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "lu" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lự" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Lự" ]
+     ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "lolo" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lô lô" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Lô lô" ]
+     ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "chut" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chứt" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chứt" ]
+     ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "mang" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mảng" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mảng" ]
+     ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "pathen" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pà Thẻn" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pà Thẻn" ]
+     ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "colao" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cơ Lao" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Cơ Lao" ]
+     ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "cong" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cống" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Cống" ]
+     ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "boy" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bố Y" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Bố Y" ]
+     ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "sila" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Si La" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Si La" ]
+     ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "pupeo" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pu Péo" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pu Péo" ]
+     ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "brao" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Brâu" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Brâu" ]
+     ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "odu" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ơ Đu" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ơ Đu" ]
+     ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "romam" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rơ-măm" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Rơ-măm" ]
+     ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "unk" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Không rõ" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Không rõ" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

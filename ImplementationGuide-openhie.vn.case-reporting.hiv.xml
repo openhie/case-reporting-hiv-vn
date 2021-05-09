@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-05-07T22:01:16+00:00"/>
+  <date value="2021-05-09T17:59:51+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -260,13 +260,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-ethnicity"/>
+        <reference value="StructureDefinition/vs-vn-ethnicity"/>
       </reference>
       <name value="Ethnicity"/>
-      <description value="Ethnicity"/>
+      <description value="Ethnicity."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -287,6 +287,16 @@
       </reference>
       <name value="Specimen Collection Place"/>
       <description value="Specimen Collection Place."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-vn-ethnicity"/>
+      </reference>
+      <name value="Vietnam Ethnicity"/>
+      <description value="Valueset - Vietnam Ethnicity"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -492,16 +502,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ethnicity"/>
-      </reference>
-      <name value="Ethnicity"/>
-      <description value="Ethnicity."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -509,6 +509,14 @@
       </reference>
       <name value="Pregnancy status"/>
       <description value="Pregnancy status."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-vn-ethnicity"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

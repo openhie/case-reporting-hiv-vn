@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity> a fhir:ValueSet;
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-ethnicity> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "vs-ethnicity"];
+  fhir:Resource.id [ fhir:value "vs-vn-ethnicity"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-vn-ethnicity.html\"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"];
+  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-ethnicity"];
   fhir:ValueSet.version [ fhir:value "0.1.0-test"];
-  fhir:ValueSet.name [ fhir:value "Ethnicity"];
-  fhir:ValueSet.title [ fhir:value "Ethnicity"];
-  fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-05-07T22:01:16+00:00"^^xsd:dateTime];
+  fhir:ValueSet.name [ fhir:value "VietnamEthnicity"];
+  fhir:ValueSet.title [ fhir:value "Vietnam Ethnicity"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-05-09T17:59:51+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "OpenHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Ethnicity"];
+  fhir:ValueSet.description [ fhir:value "Valueset - Vietnam Ethnicity"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -35,11 +35,17 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity" ]
+     ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity.ttl> a owl:Ontology;
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-ethnicity.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

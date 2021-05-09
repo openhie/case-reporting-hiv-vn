@@ -5,16 +5,16 @@
   "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ethnicity",
-      "title": "Ethnicity",
+      "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-specimen-collection-place",
+      "title": "Specimen Collection Place",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-specimen-collection-place",
-      "title": "Specimen Collection Place",
+      "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/vs-vn-ethnicity",
+      "title": "Ethnicity",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
@@ -121,11 +121,11 @@
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext": [
       "Questionnaire"
     ],
-    "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ethnicity": [
-      "Patient"
-    ],
     "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-specimen-collection-place": [
       "Specimen"
+    ],
+    "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/vs-vn-ethnicity": [
+      "Patient"
     ]
   }
 }

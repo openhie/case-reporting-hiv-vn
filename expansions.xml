@@ -1,41 +1,489 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="86da0ee8-74cb-4afd-85d8-8e4a854d1b0e"/>
+  <id value="b837f890-eac6-4790-89cf-97d8ab1419fb"/>
   <meta>
-    <lastUpdated value="2021-05-07T22:01:16.004+00:00"/>
+    <lastUpdated value="2021-05-09T17:59:51.705+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+    <fullUrl value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-ethnicity"/>
     <resource>
       <ValueSet>
-        <id value="vs-ethnicity"/>
+        <id value="vs-vn-ethnicity"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
+            <p>This value set contains 55 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-vn-ethnicity.html">Vietnam Ethnicity v0.1.0-test (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-vn-ethnicity.html">
+                <code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity</code>
+              </a>
+            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
-                </td>
-                <td>
                   <b>Display</b>
                 </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-kinh"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-kinh">kinh</a>
+                </td>
+                <td>Kinh</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-tay"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-tay">tay</a>
+                </td>
+                <td>Tày</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-thai"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-thai">thai</a>
+                </td>
+                <td>Thái</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-hoa"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-hoa">hoa</a>
+                </td>
+                <td>Hoa</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-khome"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-khome">khome</a>
+                </td>
+                <td>Khơ-me</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-muong"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-muong">muong</a>
+                </td>
+                <td>Mường</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-nung"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-nung">nung</a>
+                </td>
+                <td>Nùng</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-hmong"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-hmong">hmong</a>
+                </td>
+                <td>Hông</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-dao"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-dao">dao</a>
+                </td>
+                <td>Dao</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-giarai"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-giarai">giarai</a>
+                </td>
+                <td>Gia Rai</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-ngai"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-ngai">ngai</a>
+                </td>
+                <td>Ngái</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-ede"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-ede">ede</a>
+                </td>
+                <td>Ê đê</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-bana"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-bana">bana</a>
+                </td>
+                <td>Ba-na</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-xodang"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-xodang">xodang</a>
+                </td>
+                <td>Xơ đăng</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-sanchay"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-sanchay">sanchay</a>
+                </td>
+                <td>Sán Chay</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-coho"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-coho">coho</a>
+                </td>
+                <td>Cơ-ho</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-cham"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-cham">cham</a>
+                </td>
+                <td>Chăm</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-sandiu"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-sandiu">sandiu</a>
+                </td>
+                <td>Sán Dìu</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-hre"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-hre">hre</a>
+                </td>
+                <td>Hrê</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-mnong"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-mnong">mnong</a>
+                </td>
+                <td>Mnông</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-raglai"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-raglai">raglai</a>
+                </td>
+                <td>Ra-glai</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-xtieng"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-xtieng">xtieng</a>
+                </td>
+                <td>Xtiêng</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-vankieu"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-vankieu">vankieu</a>
+                </td>
+                <td>Bru-Vân Kiều</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-tho"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-tho">tho</a>
+                </td>
+                <td>Thổ</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-giay"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-giay">giay</a>
+                </td>
+                <td>Giáy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-cotu"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-cotu">cotu</a>
+                </td>
+                <td>Cơ-tu</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-gietrieng"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-gietrieng">gietrieng</a>
+                </td>
+                <td>Gié-Triêng</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-ma"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-ma">ma</a>
+                </td>
+                <td>Mạ</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-khomu"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-khomu">khomu</a>
+                </td>
+                <td>Khơ-mú</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-co"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-co">co</a>
+                </td>
+                <td>Co</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-taoi"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-taoi">taoi</a>
+                </td>
+                <td>Ta-ôi</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-choro"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-choro">choro</a>
+                </td>
+                <td>Chơ-ro</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-khang"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-khang">khang</a>
+                </td>
+                <td>Kháng</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-xinhmun"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-xinhmun">xinhmun</a>
+                </td>
+                <td>Xinh-mun</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-hanhi"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-hanhi">hanhi</a>
+                </td>
+                <td>Hà Nhì</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-churu"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-churu">churu</a>
+                </td>
+                <td>Chu-ru</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-lao"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-lao">lao</a>
+                </td>
+                <td>Lào</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-lachi"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-lachi">lachi</a>
+                </td>
+                <td>La Chi</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-laha"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-laha">laha</a>
+                </td>
+                <td>La Ha</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-phula"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-phula">phula</a>
+                </td>
+                <td>Phù Lá</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-lahu"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-lahu">lahu</a>
+                </td>
+                <td>La Hủ</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-lu"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-lu">lu</a>
+                </td>
+                <td>Lự</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-lolo"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-lolo">lolo</a>
+                </td>
+                <td>Lô lô</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-chut"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-chut">chut</a>
+                </td>
+                <td>Chứt</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-mang"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-mang">mang</a>
+                </td>
+                <td>Mảng</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-pathen"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-pathen">pathen</a>
+                </td>
+                <td>Pà Thẻn</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-colao"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-colao">colao</a>
+                </td>
+                <td>Cơ Lao</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-cong"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-cong">cong</a>
+                </td>
+                <td>Cống</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-boy"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-boy">boy</a>
+                </td>
+                <td>Bố Y</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-sila"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-sila">sila</a>
+                </td>
+                <td>Si La</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-pupeo"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-pupeo">pupeo</a>
+                </td>
+                <td>Pu Péo</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-brao"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-brao">brao</a>
+                </td>
+                <td>Brâu</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-odu"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-odu">odu</a>
+                </td>
+                <td>Ơ Đu</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-romam"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-romam">romam</a>
+                </td>
+                <td>Rơ-măm</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-vn-ethnicity-unk"> </a>
+                  <a href="CodeSystem-cs-vn-ethnicity.html#cs-vn-ethnicity-unk">unk</a>
+                </td>
+                <td>Không rõ</td>
+                <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+        <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-ethnicity"/>
         <version value="0.1.0-test"/>
-        <name value="Ethnicity"/>
-        <title value="Ethnicity"/>
-        <status value="draft"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <name value="VietnamEthnicity"/>
+        <title value="Vietnam Ethnicity"/>
+        <status value="active"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -43,7 +491,7 @@
             <value value="http://ohie.org"/>
           </telecom>
         </contact>
-        <description value="Ethnicity"/>
+        <description value="Valueset - Vietnam Ethnicity"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -51,12 +499,292 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1dc60251-ba8e-4335-94f6-39958803541f"/>
-          <timestamp value="2021-05-07T22:01:34+00:00"/>
+          <identifier value="urn:uuid:47233f70-804f-464e-8a41-5d1a8efe8119"/>
+          <timestamp value="2021-05-09T18:00:13+00:00"/>
+          <total value="55"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="kinh"/>
+            <display value="Kinh"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="tay"/>
+            <display value="T&#xE0;y"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="thai"/>
+            <display value="Th&#xE1;i"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="hoa"/>
+            <display value="Hoa"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="khome"/>
+            <display value="Kh&#x1A1;-me"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="muong"/>
+            <display value="M&#x1B0;&#x1EDD;ng"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="nung"/>
+            <display value="N&#xF9;ng"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="hmong"/>
+            <display value="H&#xF4;ng"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="dao"/>
+            <display value="Dao"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="giarai"/>
+            <display value="Gia Rai"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="ngai"/>
+            <display value="Ng&#xE1;i"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="ede"/>
+            <display value="&#xCA; &#x111;&#xEA;"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="bana"/>
+            <display value="Ba-na"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="xodang"/>
+            <display value="X&#x1A1; &#x111;&#x103;ng"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="sanchay"/>
+            <display value="S&#xE1;n Chay"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="coho"/>
+            <display value="C&#x1A1;-ho"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="cham"/>
+            <display value="Ch&#x103;m"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="sandiu"/>
+            <display value="S&#xE1;n D&#xEC;u"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="hre"/>
+            <display value="Hr&#xEA;"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="mnong"/>
+            <display value="Mn&#xF4;ng"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="raglai"/>
+            <display value="Ra-glai"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="xtieng"/>
+            <display value="Xti&#xEA;ng"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="vankieu"/>
+            <display value="Bru-V&#xE2;n Ki&#x1EC1;u"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="tho"/>
+            <display value="Th&#x1ED5;"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="giay"/>
+            <display value="Gi&#xE1;y"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="cotu"/>
+            <display value="C&#x1A1;-tu"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="gietrieng"/>
+            <display value="Gi&#xE9;-Tri&#xEA;ng"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="ma"/>
+            <display value="M&#x1EA1;"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="khomu"/>
+            <display value="Kh&#x1A1;-m&#xFA;"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="co"/>
+            <display value="Co"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="taoi"/>
+            <display value="Ta-&#xF4;i"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="choro"/>
+            <display value="Ch&#x1A1;-ro"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="khang"/>
+            <display value="Kh&#xE1;ng"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="xinhmun"/>
+            <display value="Xinh-mun"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="hanhi"/>
+            <display value="H&#xE0; Nh&#xEC;"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="churu"/>
+            <display value="Chu-ru"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="lao"/>
+            <display value="L&#xE0;o"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="lachi"/>
+            <display value="La Chi"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="laha"/>
+            <display value="La Ha"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="phula"/>
+            <display value="Ph&#xF9; L&#xE1;"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="lahu"/>
+            <display value="La H&#x1EE7;"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="lu"/>
+            <display value="L&#x1EF1;"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="lolo"/>
+            <display value="L&#xF4; l&#xF4;"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="chut"/>
+            <display value="Ch&#x1EE9;t"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="mang"/>
+            <display value="M&#x1EA3;ng"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="pathen"/>
+            <display value="P&#xE0; Th&#x1EBB;n"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="colao"/>
+            <display value="C&#x1A1; Lao"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="cong"/>
+            <display value="C&#x1ED1;ng"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="boy"/>
+            <display value="B&#x1ED1; Y"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="sila"/>
+            <display value="Si La"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="pupeo"/>
+            <display value="Pu P&#xE9;o"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="brao"/>
+            <display value="Br&#xE2;u"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="odu"/>
+            <display value="&#x1A0; &#x110;u"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="romam"/>
+            <display value="R&#x1A1;-m&#x103;m"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+            <code value="unk"/>
+            <display value="Kh&#xF4;ng r&#xF5;"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -104,7 +832,7 @@
         <name value="VSSymptoms"/>
         <title value="Symptoms"/>
         <status value="active"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -120,8 +848,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b8fdc228-5449-49ed-afe0-6232de6c0ef5"/>
-          <timestamp value="2021-05-07T22:01:35+00:00"/>
+          <identifier value="urn:uuid:10683c9d-f783-4070-afa6-844140000791"/>
+          <timestamp value="2021-05-09T18:00:14+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -197,7 +925,7 @@
         <name value="PatientCommunicationPreferences"/>
         <title value="Patient Communication Preferences"/>
         <status value="active"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -213,8 +941,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ee5302e5-3254-437b-9abf-ca65a97c5fcc"/>
-          <timestamp value="2021-05-07T22:01:37+00:00"/>
+          <identifier value="urn:uuid:9eee0748-fbef-4a0a-924c-e97d8a6f3666"/>
+          <timestamp value="2021-05-09T18:00:15+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -239,10 +967,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+    <fullUrl value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
     <resource>
       <ValueSet>
-        <id value="vs-ethnicity"/>
+        <id value="PregnancyOutcomeCodes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -262,29 +990,13 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+        <url value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
         <version value="0.1.0-test"/>
-        <name value="Ethnicity"/>
-        <title value="Ethnicity"/>
+        <name value="PregnancyOutcomeCodes"/>
         <status value="draft"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
-        <publisher value="OpenHIE"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://ohie.org"/>
-          </telecom>
-        </contact>
-        <description value="Ethnicity"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1dc60251-ba8e-4335-94f6-39958803541f"/>
-          <timestamp value="2021-05-07T22:01:34+00:00"/>
+          <identifier value="urn:uuid:5194c88c-7171-45f2-9421-6707da2b5a64"/>
+          <timestamp value="2021-05-09T18:00:15+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -294,10 +1006,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+    <fullUrl value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
     <resource>
       <ValueSet>
-        <id value="vs-ethnicity"/>
+        <id value="PregnancyOutcomeCodes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -317,29 +1029,13 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+        <url value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
         <version value="0.1.0-test"/>
-        <name value="Ethnicity"/>
-        <title value="Ethnicity"/>
+        <name value="PregnancyOutcomeCodes"/>
         <status value="draft"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
-        <publisher value="OpenHIE"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://ohie.org"/>
-          </telecom>
-        </contact>
-        <description value="Ethnicity"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1dc60251-ba8e-4335-94f6-39958803541f"/>
-          <timestamp value="2021-05-07T22:01:34+00:00"/>
+          <identifier value="urn:uuid:5194c88c-7171-45f2-9421-6707da2b5a64"/>
+          <timestamp value="2021-05-09T18:00:15+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -349,10 +1045,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+    <fullUrl value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
     <resource>
       <ValueSet>
-        <id value="vs-ethnicity"/>
+        <id value="PregnancyOutcomeCodes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -372,29 +1068,13 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+        <url value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
         <version value="0.1.0-test"/>
-        <name value="Ethnicity"/>
-        <title value="Ethnicity"/>
+        <name value="PregnancyOutcomeCodes"/>
         <status value="draft"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
-        <publisher value="OpenHIE"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://ohie.org"/>
-          </telecom>
-        </contact>
-        <description value="Ethnicity"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1dc60251-ba8e-4335-94f6-39958803541f"/>
-          <timestamp value="2021-05-07T22:01:34+00:00"/>
+          <identifier value="urn:uuid:5194c88c-7171-45f2-9421-6707da2b5a64"/>
+          <timestamp value="2021-05-09T18:00:15+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -472,7 +1152,7 @@
         <name value="PatientGender"/>
         <title value="Patient Gender"/>
         <status value="active"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -488,8 +1168,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:47e6b44c-3e16-4b14-8dae-946bc40f0f12"/>
-          <timestamp value="2021-05-07T22:01:37+00:00"/>
+          <identifier value="urn:uuid:b8b89a3a-d50e-4179-996c-5c92864756a2"/>
+          <timestamp value="2021-05-09T18:00:15+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -592,7 +1272,7 @@
         <name value="TypeOfContact"/>
         <title value="Type of contact or relationship"/>
         <status value="active"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -608,8 +1288,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bcf13a95-4ffc-4e40-90bf-e6541f386ccf"/>
-          <timestamp value="2021-05-07T22:01:37+00:00"/>
+          <identifier value="urn:uuid:ce678329-eb8e-4d8d-8a1e-3bcf1846b8d3"/>
+          <timestamp value="2021-05-09T18:00:15+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -776,7 +1456,7 @@
         <name value="HIVOccupations"/>
         <title value="Occupations relevant for HIV"/>
         <status value="active"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -792,8 +1472,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aba2b609-1150-4b36-9332-9861102818dc"/>
-          <timestamp value="2021-05-07T22:01:38+00:00"/>
+          <identifier value="urn:uuid:9682aeb6-92e6-480e-be28-d3f4a37820d6"/>
+          <timestamp value="2021-05-09T18:00:15+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -960,7 +1640,7 @@
         <name value="PatientGenderIdentity"/>
         <title value="Patient Gender Identity"/>
         <status value="active"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -976,8 +1656,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d8174da6-3fe4-4689-8b06-488213a12236"/>
-          <timestamp value="2021-05-07T22:01:38+00:00"/>
+          <identifier value="urn:uuid:3b43ffb7-b0d6-4a33-b91d-2f4f44c4a10f"/>
+          <timestamp value="2021-05-09T18:00:16+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1103,7 +1783,7 @@
         <name value="HIVPregnancyStatus"/>
         <title value="HIV Pregnancy Status"/>
         <status value="active"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1119,8 +1799,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:985904d2-5e84-414c-b99b-fb82e3086d93"/>
-          <timestamp value="2021-05-07T22:01:39+00:00"/>
+          <identifier value="urn:uuid:543bef61-71ec-4041-891a-2a2e8cb4e3fb"/>
+          <timestamp value="2021-05-09T18:00:16+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1160,10 +1840,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+    <fullUrl value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
     <resource>
       <ValueSet>
-        <id value="vs-ethnicity"/>
+        <id value="PregnancyOutcomeCodes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1183,29 +1863,13 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+        <url value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
         <version value="0.1.0-test"/>
-        <name value="Ethnicity"/>
-        <title value="Ethnicity"/>
+        <name value="PregnancyOutcomeCodes"/>
         <status value="draft"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
-        <publisher value="OpenHIE"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://ohie.org"/>
-          </telecom>
-        </contact>
-        <description value="Ethnicity"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1dc60251-ba8e-4335-94f6-39958803541f"/>
-          <timestamp value="2021-05-07T22:01:34+00:00"/>
+          <identifier value="urn:uuid:5194c88c-7171-45f2-9421-6707da2b5a64"/>
+          <timestamp value="2021-05-09T18:00:15+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1215,10 +1879,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+    <fullUrl value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
     <resource>
       <ValueSet>
-        <id value="vs-ethnicity"/>
+        <id value="PregnancyOutcomeCodes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1238,29 +1902,13 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+        <url value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
         <version value="0.1.0-test"/>
-        <name value="Ethnicity"/>
-        <title value="Ethnicity"/>
+        <name value="PregnancyOutcomeCodes"/>
         <status value="draft"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
-        <publisher value="OpenHIE"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://ohie.org"/>
-          </telecom>
-        </contact>
-        <description value="Ethnicity"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1dc60251-ba8e-4335-94f6-39958803541f"/>
-          <timestamp value="2021-05-07T22:01:34+00:00"/>
+          <identifier value="urn:uuid:5194c88c-7171-45f2-9421-6707da2b5a64"/>
+          <timestamp value="2021-05-09T18:00:15+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1270,10 +1918,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+    <fullUrl value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
     <resource>
       <ValueSet>
-        <id value="vs-ethnicity"/>
+        <id value="PregnancyOutcomeCodes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1293,29 +1941,13 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity"/>
+        <url value="http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes"/>
         <version value="0.1.0-test"/>
-        <name value="Ethnicity"/>
-        <title value="Ethnicity"/>
+        <name value="PregnancyOutcomeCodes"/>
         <status value="draft"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
-        <publisher value="OpenHIE"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://ohie.org"/>
-          </telecom>
-        </contact>
-        <description value="Ethnicity"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1dc60251-ba8e-4335-94f6-39958803541f"/>
-          <timestamp value="2021-05-07T22:01:34+00:00"/>
+          <identifier value="urn:uuid:5194c88c-7171-45f2-9421-6707da2b5a64"/>
+          <timestamp value="2021-05-09T18:00:15+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1393,7 +2025,7 @@
         <name value="HIVTransmissionRoute"/>
         <title value="HIV Transmission Route"/>
         <status value="active"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1409,8 +2041,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a59a4631-fd5c-4d4b-8760-09957d214623"/>
-          <timestamp value="2021-05-07T22:01:40+00:00"/>
+          <identifier value="urn:uuid:a69d0b0f-db55-42c9-a7fb-3f200feb9dc1"/>
+          <timestamp value="2021-05-09T18:00:17+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1511,7 +2143,7 @@
         <name value="HIVRapidTestResults"/>
         <title value="HIVRapidTestResults"/>
         <status value="draft"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1527,8 +2159,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7e107441-cc97-4a1f-8e2d-5c433f5682fc"/>
-          <timestamp value="2021-05-07T22:01:41+00:00"/>
+          <identifier value="urn:uuid:89b7224e-1512-47b8-8074-33655238a4a7"/>
+          <timestamp value="2021-05-09T18:00:18+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1643,7 +2275,7 @@
         <name value="HIVRiskBehavior"/>
         <title value="Risk Behavior"/>
         <status value="active"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1659,8 +2291,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8701193c-72bb-4ecf-8569-f66cf988054d"/>
-          <timestamp value="2021-05-07T22:01:41+00:00"/>
+          <identifier value="urn:uuid:8bfc2a9d-26e6-4a69-b385-613001a317f4"/>
+          <timestamp value="2021-05-09T18:00:18+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1808,7 +2440,7 @@
         <name value="HIVPopulation"/>
         <title value="Occupations relevant for HIV"/>
         <status value="active"/>
-        <date value="2021-05-07T22:01:16+00:00"/>
+        <date value="2021-05-09T17:59:51+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1824,8 +2456,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1fdd6c22-07a9-45c9-bfd2-c0d23f6a267d"/>
-          <timestamp value="2021-05-07T22:01:42+00:00"/>
+          <identifier value="urn:uuid:fd8d92fd-325f-4d49-97c5-975d5f73b0f5"/>
+          <timestamp value="2021-05-09T18:00:19+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>

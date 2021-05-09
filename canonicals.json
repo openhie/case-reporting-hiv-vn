@@ -84,6 +84,13 @@
     "name": "HIV Pregnancy Status"
   },
   {
+    "id": "cs-vn-ethnicity",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity",
+    "version": "0.1.0-test",
+    "name": "Vietnam Ethnicity"
+  },
+  {
     "id": "type-of-contact",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/type-of-contact",
@@ -103,13 +110,6 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/arv-therapy-summary",
     "version": "0.1.0-test",
     "name": "ARVTherapySummary"
-  },
-  {
-    "id": "ethnicity",
-    "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ethnicity",
-    "version": "0.1.0-test",
-    "name": "Ethnicity"
   },
   {
     "id": "ext-specimen-collection-place",
@@ -189,6 +189,13 @@
     "name": "PregnancyStatus"
   },
   {
+    "id": "vs-vn-ethnicity",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/vs-vn-ethnicity",
+    "version": "0.1.0-test",
+    "name": "Ethnicity"
+  },
+  {
     "id": "HIVRapidTestResults",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/HIVRapidTestResults",
@@ -201,13 +208,6 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/VSSymptoms",
     "version": "0.1.0-test",
     "name": "VSSymptoms"
-  },
-  {
-    "id": "vs-ethnicity",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-ethnicity",
-    "version": "0.1.0-test",
-    "name": "Ethnicity"
   },
   {
     "id": "vs-hiv-occupations",
@@ -271,5 +271,12 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-type-of-contact",
     "version": "0.1.0-test",
     "name": "TypeOfContact"
+  },
+  {
+    "id": "vs-vn-ethnicity",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-ethnicity",
+    "version": "0.1.0-test",
+    "name": "VietnamEthnicity"
   }
 ]

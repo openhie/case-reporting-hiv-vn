@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam",
   "status": "draft",
   "experimental": false,
-  "date": "2021-05-07T22:01:16+00:00",
+  "date": "2021-05-09T17:59:51+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -403,14 +403,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "StructureDefinition:extension"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-ethnicity"
+          "reference": "StructureDefinition/vs-vn-ethnicity"
         },
         "name": "Ethnicity",
-        "description": "Ethnicity"
+        "description": "Ethnicity."
       },
       {
         "extension": [
@@ -437,6 +437,19 @@
         },
         "name": "Specimen Collection Place",
         "description": "Specimen Collection Place."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-vn-ethnicity"
+        },
+        "name": "Vietnam Ethnicity",
+        "description": "Valueset - Vietnam Ethnicity"
       },
       {
         "extension": [
@@ -707,19 +720,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/ethnicity"
-        },
-        "name": "Ethnicity",
-        "description": "Ethnicity."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -728,6 +728,17 @@
         },
         "name": "Pregnancy status",
         "description": "Pregnancy status."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-vn-ethnicity"
+        }
       },
       {
         "extension": [

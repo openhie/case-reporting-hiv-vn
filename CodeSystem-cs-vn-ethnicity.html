@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>OPENHIE.VN.CASE-REPORTING.HIV\ - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.35"}
+    h3,h4,h5,h6{--heading-prefix:"6.35"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HIV Case-reporting for Vietnam</span><br/>0.1.0-test - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a href="downloads.html">Downloads</a></li>
+		</ul>
+	</li>
+</ul>      
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b></b></li>
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HIV Case-reporting for Vietnam - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-vn-ethnicity.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-vn-ethnicity.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: </h2>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+    <b>Summary</b>
+  </p>
+
+  <table class="grid">
+<tbody>
+<tr><td>Defining URL:</td><td>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity</td></tr>
+ <tr><td>Version:</td><td>0.1.0-test</td></tr>
+ <tr><td>Name:</td><td>Vietnam Ethnicity</td></tr>
+ <tr><td>Status:</td><td>Draft as of 2021-05-09T17:59:51+00:00</td></tr>
+ <tr><td>Publisher:</td><td>OpenHIE</td></tr>
+ <tr><td>Content:</td><td>Complete: All the concepts defined by the code system are included in the code system resource</td></tr>
+ <tr><td>Source Resource:</td><td><a href="CodeSystem-cs-vn-ethnicity.xml.html">XML</a> / <a href="CodeSystem-cs-vn-ethnicity.json.html">JSON</a> / <a href="CodeSystem-cs-vn-ethnicity.ttl.html">Turtle</a></td></tr>
+</tbody></table>
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-vs-vn-ethnicity.html">VietnamEthnicity</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">kinh<a name="cs-vn-ethnicity-kinh"> </a></td><td>Kinh</td></tr><tr><td style="white-space:nowrap">tay<a name="cs-vn-ethnicity-tay"> </a></td><td>Tày</td></tr><tr><td style="white-space:nowrap">thai<a name="cs-vn-ethnicity-thai"> </a></td><td>Thái</td></tr><tr><td style="white-space:nowrap">hoa<a name="cs-vn-ethnicity-hoa"> </a></td><td>Hoa</td></tr><tr><td style="white-space:nowrap">khome<a name="cs-vn-ethnicity-khome"> </a></td><td>Khơ-me</td></tr><tr><td style="white-space:nowrap">muong<a name="cs-vn-ethnicity-muong"> </a></td><td>Mường</td></tr><tr><td style="white-space:nowrap">nung<a name="cs-vn-ethnicity-nung"> </a></td><td>Nùng</td></tr><tr><td style="white-space:nowrap">hmong<a name="cs-vn-ethnicity-hmong"> </a></td><td>Hông</td></tr><tr><td style="white-space:nowrap">dao<a name="cs-vn-ethnicity-dao"> </a></td><td>Dao</td></tr><tr><td style="white-space:nowrap">giarai<a name="cs-vn-ethnicity-giarai"> </a></td><td>Gia Rai</td></tr><tr><td style="white-space:nowrap">ngai<a name="cs-vn-ethnicity-ngai"> </a></td><td>Ngái</td></tr><tr><td style="white-space:nowrap">ede<a name="cs-vn-ethnicity-ede"> </a></td><td>Ê đê</td></tr><tr><td style="white-space:nowrap">bana<a name="cs-vn-ethnicity-bana"> </a></td><td>Ba-na</td></tr><tr><td style="white-space:nowrap">xodang<a name="cs-vn-ethnicity-xodang"> </a></td><td>Xơ đăng</td></tr><tr><td style="white-space:nowrap">sanchay<a name="cs-vn-ethnicity-sanchay"> </a></td><td>Sán Chay</td></tr><tr><td style="white-space:nowrap">coho<a name="cs-vn-ethnicity-coho"> </a></td><td>Cơ-ho</td></tr><tr><td style="white-space:nowrap">cham<a name="cs-vn-ethnicity-cham"> </a></td><td>Chăm</td></tr><tr><td style="white-space:nowrap">sandiu<a name="cs-vn-ethnicity-sandiu"> </a></td><td>Sán Dìu</td></tr><tr><td style="white-space:nowrap">hre<a name="cs-vn-ethnicity-hre"> </a></td><td>Hrê</td></tr><tr><td style="white-space:nowrap">mnong<a name="cs-vn-ethnicity-mnong"> </a></td><td>Mnông</td></tr><tr><td style="white-space:nowrap">raglai<a name="cs-vn-ethnicity-raglai"> </a></td><td>Ra-glai</td></tr><tr><td style="white-space:nowrap">xtieng<a name="cs-vn-ethnicity-xtieng"> </a></td><td>Xtiêng</td></tr><tr><td style="white-space:nowrap">vankieu<a name="cs-vn-ethnicity-vankieu"> </a></td><td>Bru-Vân Kiều</td></tr><tr><td style="white-space:nowrap">tho<a name="cs-vn-ethnicity-tho"> </a></td><td>Thổ</td></tr><tr><td style="white-space:nowrap">giay<a name="cs-vn-ethnicity-giay"> </a></td><td>Giáy</td></tr><tr><td style="white-space:nowrap">cotu<a name="cs-vn-ethnicity-cotu"> </a></td><td>Cơ-tu</td></tr><tr><td style="white-space:nowrap">gietrieng<a name="cs-vn-ethnicity-gietrieng"> </a></td><td>Gié-Triêng</td></tr><tr><td style="white-space:nowrap">ma<a name="cs-vn-ethnicity-ma"> </a></td><td>Mạ</td></tr><tr><td style="white-space:nowrap">khomu<a name="cs-vn-ethnicity-khomu"> </a></td><td>Khơ-mú</td></tr><tr><td style="white-space:nowrap">co<a name="cs-vn-ethnicity-co"> </a></td><td>Co</td></tr><tr><td style="white-space:nowrap">taoi<a name="cs-vn-ethnicity-taoi"> </a></td><td>Ta-ôi</td></tr><tr><td style="white-space:nowrap">choro<a name="cs-vn-ethnicity-choro"> </a></td><td>Chơ-ro</td></tr><tr><td style="white-space:nowrap">khang<a name="cs-vn-ethnicity-khang"> </a></td><td>Kháng</td></tr><tr><td style="white-space:nowrap">xinhmun<a name="cs-vn-ethnicity-xinhmun"> </a></td><td>Xinh-mun</td></tr><tr><td style="white-space:nowrap">hanhi<a name="cs-vn-ethnicity-hanhi"> </a></td><td>Hà Nhì</td></tr><tr><td style="white-space:nowrap">churu<a name="cs-vn-ethnicity-churu"> </a></td><td>Chu-ru</td></tr><tr><td style="white-space:nowrap">lao<a name="cs-vn-ethnicity-lao"> </a></td><td>Lào</td></tr><tr><td style="white-space:nowrap">lachi<a name="cs-vn-ethnicity-lachi"> </a></td><td>La Chi</td></tr><tr><td style="white-space:nowrap">laha<a name="cs-vn-ethnicity-laha"> </a></td><td>La Ha</td></tr><tr><td style="white-space:nowrap">phula<a name="cs-vn-ethnicity-phula"> </a></td><td>Phù Lá</td></tr><tr><td style="white-space:nowrap">lahu<a name="cs-vn-ethnicity-lahu"> </a></td><td>La Hủ</td></tr><tr><td style="white-space:nowrap">lu<a name="cs-vn-ethnicity-lu"> </a></td><td>Lự</td></tr><tr><td style="white-space:nowrap">lolo<a name="cs-vn-ethnicity-lolo"> </a></td><td>Lô lô</td></tr><tr><td style="white-space:nowrap">chut<a name="cs-vn-ethnicity-chut"> </a></td><td>Chứt</td></tr><tr><td style="white-space:nowrap">mang<a name="cs-vn-ethnicity-mang"> </a></td><td>Mảng</td></tr><tr><td style="white-space:nowrap">pathen<a name="cs-vn-ethnicity-pathen"> </a></td><td>Pà Thẻn</td></tr><tr><td style="white-space:nowrap">colao<a name="cs-vn-ethnicity-colao"> </a></td><td>Cơ Lao</td></tr><tr><td style="white-space:nowrap">cong<a name="cs-vn-ethnicity-cong"> </a></td><td>Cống</td></tr><tr><td style="white-space:nowrap">boy<a name="cs-vn-ethnicity-boy"> </a></td><td>Bố Y</td></tr><tr><td style="white-space:nowrap">sila<a name="cs-vn-ethnicity-sila"> </a></td><td>Si La</td></tr><tr><td style="white-space:nowrap">pupeo<a name="cs-vn-ethnicity-pupeo"> </a></td><td>Pu Péo</td></tr><tr><td style="white-space:nowrap">brao<a name="cs-vn-ethnicity-brao"> </a></td><td>Brâu</td></tr><tr><td style="white-space:nowrap">odu<a name="cs-vn-ethnicity-odu"> </a></td><td>Ơ Đu</td></tr><tr><td style="white-space:nowrap">romam<a name="cs-vn-ethnicity-romam"> </a></td><td>Rơ-măm</td></tr><tr><td style="white-space:nowrap">unk<a name="cs-vn-ethnicity-unk"> </a></td><td>Không rõ</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>kinh</td><td>Kinh</td></tr><tr><td>tay</td><td>Tày</td></tr><tr><td>thai</td><td>Thái</td></tr><tr><td>hoa</td><td></td></tr><tr><td>khome</td><td>Khơ-me</td></tr><tr><td>muong</td><td>Mường</td></tr><tr><td>nung</td><td>Nùng</td></tr><tr><td>hmong</td><td>Hông</td></tr><tr><td>dao</td><td>Dao</td></tr><tr><td>giarai</td><td>Gia Rai</td></tr><tr><td>ngai</td><td>Ngái</td></tr><tr><td>ede</td><td>Ê đê</td></tr><tr><td>bana</td><td>Ba-na</td></tr><tr><td>xodang</td><td>Xơ đăng</td></tr><tr><td>sanchay</td><td>Sán Chay</td></tr><tr><td>coho</td><td>Cơ-ho</td></tr><tr><td>cham</td><td>Chăm</td></tr><tr><td>sandiu</td><td>Sán Dìu</td></tr><tr><td>hre</td><td>Hrê</td></tr><tr><td>mnong</td><td>Mnông</td></tr><tr><td>raglai</td><td>Ra-glai</td></tr><tr><td>xtieng</td><td>Xtiêng</td></tr><tr><td>vankieu</td><td>Bru-Vân Kiều</td></tr><tr><td>tho</td><td>Thổ</td></tr><tr><td>giay</td><td></td></tr><tr><td>cotu</td><td>Cơ-tu</td></tr><tr><td>gietrieng</td><td>Gié-Triêng</td></tr><tr><td>ma</td><td>Mạ</td></tr><tr><td>khomu</td><td>Khơ-mú</td></tr><tr><td>co</td><td>Co</td></tr><tr><td>taoi</td><td>Ta-ôi</td></tr><tr><td>choro</td><td>Chơ-ro</td></tr><tr><td>khang</td><td>Kháng</td></tr><tr><td>xinhmun</td><td>Xinh-mun</td></tr><tr><td>hanhi</td><td>Hà Nhì</td></tr><tr><td>churu</td><td>Chu-ru</td></tr><tr><td>lao</td><td>Lào</td></tr><tr><td>lachi</td><td>La Chi</td></tr><tr><td>laha</td><td>La Ha</td></tr><tr><td>phula</td><td>Phù Lá</td></tr><tr><td>lahu</td><td>La Hủ</td></tr><tr><td>lu</td><td>Lự</td></tr><tr><td>lolo</td><td>Lô lô</td></tr><tr><td>chut</td><td>Chứt</td></tr><tr><td>mang</td><td>Mảng</td></tr><tr><td>pathen</td><td>Pà Thẻn</td></tr><tr><td>colao</td><td>Cơ Lao</td></tr><tr><td>cong</td><td>Cống</td></tr><tr><td>boy</td><td>Bố Y</td></tr><tr><td>sila</td><td>Si La</td></tr><tr><td>pupeo</td><td>Pu Péo</td></tr><tr><td>brao</td><td>Brâu</td></tr><tr><td>odu</td><td>Ơ Đu</td></tr><tr><td>romam</td><td>Rơ-măm</td></tr><tr><td>unk</td><td>Không rõ</td></tr></table></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 9, 2021 17:59+0000">2021-05-09</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
