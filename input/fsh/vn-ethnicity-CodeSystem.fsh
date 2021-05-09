@@ -69,7 +69,7 @@ Description:  "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recog
 * #romam "Rơ-măm"
 * #unk "Không rõ"
 
-ValueSet: VietnamEthnicity
+ValueSet: VSVietnamEthnicity
 Id: vs-vn-ethnicity
 Title: "Vietnam Ethnicity"
 Description:  "Valueset - Vietnam Ethnicity"

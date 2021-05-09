@@ -32,18 +32,20 @@ Description:    """
 
 
 * identifier contains
-    soCMTND 0..* and
+    art 0..* and
     theCCCD 0..* and
+    soCMTND 0..* and
     theBHXH 0..* and
     soHoChieu 0..* and
-    MaBenhNhan 0..* and
-    BanglaiXe 0..* and
-
-* identifier[soCMTND].system 1..1
-* identifier[soCMTND].system = "https://basespecs.vn/NamingSystem/NationalID" (exactly)
-* identifier[theCCCD].value 1..1
+    BanglaiXe 0..*
+* identifier[art].system 1..1
+* identifier[art].system = "https://basespecs.vn/NamingSystem/ARTIdentifiers" (exactly)
+* identifier[art].value 1..1
 * identifier[theCCCD].system 1..1
 * identifier[theCCCD].system = "https://basespecs.vn/NamingSystem/NationalID" (exactly)
+* identifier[theCCCD].value 1..1
+* identifier[soCMTND].system 1..1
+* identifier[soCMTND].system = "https://basespecs.vn/NamingSystem/NationalID" (exactly)
 * identifier[soCMTND].value 1..1
 * identifier[theBHXH].system 1..1
 * identifier[theBHXH].system = "https://basespecs.vn/NamingSystem/InsuranceNumbers" (exactly)
@@ -51,9 +53,6 @@ Description:    """
 * identifier[soHoChieu].system 1..1
 * identifier[soHoChieu].system = "https://basespecs.vn/NamingSystem/PassportNumbers" (exactly)
 * identifier[soHoChieu].value 1..1
-* identifier[MaBenhNhan].system 1..1
-* identifier[MaBenhNhan].system = "https://basespecs.vn/NamingSystem/HIVinfoID" (exactly)
-* identifier[MaBenhNhan].value 1..1
 * identifier[BanglaiXe].system 1..1
 * identifier[BanglaiXe].system = "https://basespecs.vn/NamingSystem/DriverID" (exactly)
 * identifier[BanglaiXe].value 1..1
@@ -66,7 +65,7 @@ Description:    """
 * address[Permanent].use = #home (exactly)
 
 Extension: Ethnicity
-Id: ethnicity
+Id: vs-vn-ethnicity
 Title: "Ethnicity"
 Description: "Ethnicity."
 * value[x] only CodeableConcept

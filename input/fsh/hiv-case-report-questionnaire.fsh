@@ -130,7 +130,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].text   = "Ethnicity"
 * item[=].item[=].item[=].item[=].type   = #choice
 //* item[=].item[=].item[=].item[=].prefix = "4"
-* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-ethnicity)
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-ethnicity)
 
 * item[=].item[=].item[=].item[+].linkId = "gender"
 * item[=].item[=].item[=].item[=].text   = "Gender"
@@ -155,15 +155,30 @@ Usage: #definition
 //* item[=].item[=].item[=].item[=].prefix = "7"
 //* item[=].item[=].item[=].item[=].answerValueSet    = Canonical($vs-iso3166-1-2)
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "health_insurance_code"
+* item[=].item[=].item[=].item[=].item[+].linkId = "theCCCD"
 * item[=].item[=].item[=].item[=].item[=].text   = "Health insurance code"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "7.1"
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "passport_nr"
-* item[=].item[=].item[=].item[=].item[=].text   = "Passport Number"
+* item[=].item[=].item[=].item[=].item[+].linkId = "theBHXH"
+* item[=].item[=].item[=].item[=].item[=].text   = "Health insurance code"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "7.2"
+
+* item[=].item[=].item[=].item[=].item[+].linkId = "soHoChieu"
+* item[=].item[=].item[=].item[=].item[=].text   = "Passport Number"
+* item[=].item[=].item[=].item[=].item[=].type   = #string
+//* item[=].item[=].item[=].item[=].item[=].prefix   = "7.3"
+
+* item[=].item[=].item[=].item[=].item[+].linkId = "BanglaiXe"
+* item[=].item[=].item[=].item[=].item[=].text   = "Driver Licese"
+* item[=].item[=].item[=].item[=].item[=].type   = #string
+//* item[=].item[=].item[=].item[=].item[=].prefix   = "7.4"
+
+* item[=].item[=].item[=].item[=].item[+].linkId = "soCMTND"
+* item[=].item[=].item[=].item[=].item[=].text   = "Old national ID"
+* item[=].item[=].item[=].item[=].item[=].type   = #string
+//* item[=].item[=].item[=].item[=].item[=].prefix   = "7.5"
 
 * item[=].item[=].item[=].item[+].linkId = "residence"
 * item[=].item[=].item[=].item[=].text   = "Residence"
