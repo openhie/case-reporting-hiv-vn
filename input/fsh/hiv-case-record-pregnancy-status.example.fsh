@@ -8,8 +8,10 @@ InstanceOf: PregnancyStatus
 
 * component[time][+].code = SCT#248957007
 * component[time][=].valueDateTime = "2013-03-05T15:30:10+07:00"
+
 * component[time][+].code = SCT#31676001
 * component[time][=].valueDateTime = "2013-04-05T15:30:10+07:00"
+
 * component[time][+].code = CSHIVCommon#birthDateOfChild
 * component[time][=].valueDateTime = "2013-04-05T15:30:10+07:00"
 

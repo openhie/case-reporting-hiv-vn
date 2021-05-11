@@ -86,8 +86,6 @@ Description:    """
     This profile allows the exchange of patient's risk behaviors"""
 
 
-
-
 Profile:        HIVSpecimen
 Parent:         Specimen
 Id:             hiv-specimen
@@ -98,16 +96,12 @@ Description:    "The specimen used for the result"
 * collection.collectedDateTime MS
 
 
-
-
 Profile:        HIVCondition
 Parent:         Condition
 Id:             hiv-condition
 Title:          "HIV Condition"
 Description:    """ 
     This profile allows the exchange of a patient's hiv diagnosis"""
-
-
 
 Profile:        HIVDiagnosisObservation
 Parent:         Observation
@@ -122,29 +116,6 @@ Description:    """
 * effectiveDateTime MS
 //result valueCodeableConcept? - valueBoolean?
 //* contained[0] only HIVSpecimen
-
-
-Profile:        HIVRecencyResult
-Parent:         Observation
-Id:             hiv-recency-result
-Title:          "HIV Recency result"
-Description:    """ 
-    This profile allows the exchange of a patient's hiv recency test"""
-* code from HIVRapidTestResults
-* specimen MS
-//date of specimencollection
-//place of specimencollection
-* effectiveDateTime MS
-//result valueCodeableConcept? - valueBoolean?
-//* contained[0] only HIVSpecimen
-
-
-Profile:        CD4Observation
-Parent:         Observation
-Id:             hiv-cd4-observation
-Title:          "CD4Observation"
-Description:    """ 
-    This profile allows the exchange of a patient's CD$ test and results"""
 
 
 Profile:        ARVCarePlan
