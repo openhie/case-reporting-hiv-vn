@@ -145,7 +145,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HIV Case-reporting for Vietnam - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
   
 
 
@@ -196,7 +196,7 @@
  <tr><td>Version:</td><td>0.1.0-test</td></tr>
  <tr><td>Name:</td><td>CSHIVOccupations</td></tr>
  <tr><td>Title:</td><td>Occupations relevant for HIV</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-05-10T16:53:10+00:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-05-11T22:16:57+00:00</td></tr>
  <tr><td>Definition:</td><td><p>CodeSystem Occupations for HIV</p>
 </td></tr>
  <tr><td>Publisher:</td><td>OpenHIE</td></tr>
@@ -244,12 +244,12 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 10, 2021 16:53+0000">2021-05-10</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 11, 2021 22:16+0000">2021-05-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                 
+                 <a style="color: #81BEF7" target="_blank" href="https://github.com/openhie/case-reporting-hiv-vn/projects/1">Issues</a> |
                  <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
@@ -278,6 +278,93 @@ anchors.add()</script>
   
   <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+      <script type="text/javascript">
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* <![CDATA[ */
+            parameterFieldId = 'entry.'+parseInt(1353807103).toString()
+            parameterVariableName = 'pageTitle'
+/* ]]> */
+
+            switch (parameterVariableName) {
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '&';
+            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* <![CDATA[ */
+            parameterFieldId = 'entry.'+parseInt(247644557).toString()
+            parameterVariableName = 'sectionName'
+/* ]]> */
+
+            switch (parameterVariableName) {
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '&';
+            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+            
+          
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a/>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        })
+      </script>  
+    
+  
 
 
 
