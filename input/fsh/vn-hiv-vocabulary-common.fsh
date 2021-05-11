@@ -16,16 +16,7 @@ Id: cs-hiv-common
 Title: "Common code for CS HIV"
 * #birthDateOfChild "the child birth day" "Ngày sinh của con"
 
-
-CodeSystem: CSCustomLanguages
-Id: cd-custom-language
-Title: "Custom language"
-Description: "Additional language for urn:ietf:bcp:47"
-* #vi-VN "VietNam" "VietNam"
-
-
-ValueSet: VSCustomLanguages
-Title: "Language"
-Description:  "Define valueset to add Vietnamese"
-* include codes from system CSCustomLanguages
-* CSCustomLanguages#vi-VN
+ValueSet: VSCommonDate
+Id: vs-common-date
+Description: "Define common event date"
+* SCT#399445004
