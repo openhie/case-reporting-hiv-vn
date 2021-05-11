@@ -3,7 +3,7 @@ Parent:         Observation
 Id:             pregnancy-status
 Title:          "Pregnancy status"
 Description:    "Pregnancy status."
-* code from HIVPregnancyStatus
+* code from VSHIVPregnancyStatus
 
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"

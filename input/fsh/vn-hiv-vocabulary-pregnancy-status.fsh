@@ -6,7 +6,6 @@ Description:  "CodeSystem - HIV Pregnancy Status"
 * name = "HIV Pregnancy Status"
 * status = #draft
 * content = #complete
-
 * insert Code(unborn, Unborn, Chưa sinh)
 * insert Code(born, Born, Đã sinh)
 * insert Code(miscarried, Miscarried, Bị xảy thai)
@@ -24,13 +23,11 @@ Description: "CodeSystem - Pregnancy Status"
 * #5 "Unknown" "Unknown"
 
 
-ValueSet: HIVPregnancyStatus
+ValueSet: VSHIVPregnancyStatus
 Id: vs-hiv-pregnancy-status
 Title: "HIV Pregnancy Status"
 Description:  "Valueset - Pregnancy Status"
 * include codes from system CSHIVPregnancyStatus
-
-
 
 Instance: cs-arv-treatment-status
 InstanceOf: CodeSystem
@@ -65,3 +62,4 @@ Description:  "Date component of pregnancy associated with HIV case"
 * SCT#248957007 "Kỳ kinh nguyệt cuối"
 * SCT#31676001 "Ngày xét nghiệm HIV của con"
 * CSHIVCommon#birthDateOfChild "Ngày sinh của con"
+
