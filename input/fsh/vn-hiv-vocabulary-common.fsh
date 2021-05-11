@@ -17,15 +17,15 @@ Title: "Common code for CS HIV"
 * #birthDateOfChild "the child birth day" "Ngày sinh của con"
 
 
-CodeSystem: CustomLanguage
+CodeSystem: CSCustomLanguages
 Id: cd-custom-language
 Title: "Custom language"
 Description: "Additional language for urn:ietf:bcp:47"
 * #vi-VN "VietNam" "VietNam"
 
 
-ValueSet: VSLanguage
+ValueSet: VSCustomLanguages
 Title: "Language"
 Description:  "Define valueset to add Vietnamese"
-* include codes from system CommonLanguage
-* CustomLanguage#vi-VN
+* include codes from system CSCustomLanguages
+* CSCustomLanguages#vi-VN

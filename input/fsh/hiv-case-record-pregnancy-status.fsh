@@ -11,7 +11,8 @@ Description:    "Pregnancy status."
 * component ^slicing.description = "Slice based on the type of component"
 * component contains
     time 0..* and
-    arvTreatmentStatusForChild 0..1
+    arvTreatmentStatusForChild 0..1 and
+    hivTestResultForChild 0..1
 
 * component[time].code 1..1
 * component[time].code only CodeableConcept
