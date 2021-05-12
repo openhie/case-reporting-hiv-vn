@@ -12,11 +12,11 @@ Title:          "HIV Patient"
 Description:    """ 
     This Patient profile allows the exchange of patient information, including all the data associated with HIV patients"""
 * extension contains
-    Ethnicity named species 0..1 and
+    VietnamEthnicity named species 0..1 and
     $CommPreference named comm-preference 0..1 MS and
     $GenderIdentity named genderIdentity 0..1 MS
 
-* extension[Ethnicity] MS
+* extension[VietnamEthnicity] MS
 * birthDate MS
 * name MS
 
@@ -64,10 +64,10 @@ Description:    """
 ///* address[Temporary].use = #temp (exactly)
 //* address[Permanent].use = #home (exactly)
 
-Extension: Ethnicity
-Id: vs-vn-ethnicity
-Title: "Ethnicity"
-Description: "Ethnicity."
+Extension: VietnamEthnicity
+Id: ext-vn-ethnicity
+Title: "Vietnam Ethnicity "
+Description: "Vietnam Ethnicity"
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSVietnamEthnicity (extensible)
 
@@ -76,7 +76,7 @@ Id: ext-specimen-collection-place
 Title: "Specimen Collection Place"
 Description: "Specimen Collection Place."
 * value[x] only CodeableConcept or Reference
-* valueCodeableConcept from VSVietnamEthnicity (extensible)
+* valueCodeableConcept from VSAdministrativeAddress (extensible)
 
 Profile:        HIVRiskFactor
 Parent:         Condition

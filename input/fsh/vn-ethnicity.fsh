@@ -2,7 +2,7 @@ CodeSystem:  CSVietnamEthnicity
 Id: cs-vn-ethnicity
 Title: "CodeSystem Vietnam Ethnicity"
 Description:  "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recognized by the Vietnamese government"
-//* codes from system $ethnicity
+
 * #kinh "Kinh" "Kinh People are a Southeast Asian ethnic group originally native to modern-day Northern Vietnam"
 * #tay "Tày"
 * #thai "Thái"

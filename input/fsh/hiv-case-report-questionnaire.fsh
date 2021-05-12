@@ -145,8 +145,8 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].prefix = "3"
 
-* item[=].item[=].item[=].item[+].linkId = "ethnicity"
-* item[=].item[=].item[=].item[=].text   = "Ethnicity"
+* item[=].item[=].item[=].item[+].linkId = "ethnic"
+* item[=].item[=].item[=].item[=].text   = "Vietnam Ethnicity"
 * item[=].item[=].item[=].item[=].type   = #choice
 //* item[=].item[=].item[=].item[=].prefix = "4"
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-ethnicity)
