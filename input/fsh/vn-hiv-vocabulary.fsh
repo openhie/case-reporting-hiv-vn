@@ -142,6 +142,7 @@ Description:  "Type of contact or relationship"
 
 
 ValueSet: HIVRapidTestResults
+Id: vs-hiv-rapidtestresults
 Title: "HIVRapidTestResults"
 Description: "HIV rapid test result codes"
 * ^status = #draft
@@ -157,8 +158,8 @@ CodeSystem:  CSHIVRiskPopulation
 Id: cs-hiv-population
 Title: "Population groups"
 Description: "CodeSystem - Population groups - Subjects to be tested for HIV"
-* #1 "Injection drug users" "Injecting drug users" 
-* #2 "FSW" "Female sex workers" 
+* #1 "Người tiêm chích ma túy" "Injecting drug users"
+* #2 "Nữ bán dâm" "Female sex workers"
 * #3 "Mang thai" "Pregnant women"
 * #4 "Người hiến máu tình nguyện" "Blood donors"
 * #5 "Bệnh nhân lao" "TB patients"
