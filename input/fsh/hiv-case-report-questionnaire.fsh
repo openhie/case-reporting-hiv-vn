@@ -14,14 +14,23 @@ Usage: #inline
 
 
 
-Instance: PregnancyOutcomeCodes
+Instance: HIVPregnancyOutcomeCodes
 InstanceOf: ValueSet
 Description: "Pregnancy Outcome Codes"
 Title: "Pregnancy Outcome Codes"
-Usage: #inline
-* name = "PregnancyOutcomeCodes"
+// Usage: #inline
+* name = "HIVPregnancyOutcomeCodes"
 * status = #draft
-
+* compose.include[+].concept[+].code = #1 
+* compose.include[=].concept[=].display = "Unborn" 
+* compose.include[=].concept[+].code = #2 
+* compose.include[=].concept[=].display = "Born" 
+* compose.include[=].concept[+].code = #3 
+* compose.include[=].concept[=].display = "Miscarried" 
+* compose.include[=].concept[+].code = #4 
+* compose.include[=].concept[=].display = "Abortion" 
+* compose.include[=].concept[+].code = #5 
+* compose.include[=].concept[=].display = "Unknown" 
 
 Instance: BirthDefects
 InstanceOf: ValueSet
@@ -39,11 +48,12 @@ Title: "Child HIV Status"
 Usage: #inline
 * name = "ChildHIVStatus"
 * status = #draft
-
+* compose.include[+].concept[+].code = #0
+* compose.include[=].concept[+].code = #1
+* compose.include[=].concept[+].code = #unknown
 
 
 //============================================================
-
 
 
 Instance: hiv-case-report-questionnaire
@@ -69,7 +79,7 @@ Usage: #definition
 
 //* contained[+] = HIVRiskPopulation
 //* contained[+] = HIVRiskBehavior
-* contained[+] = PregnancyOutcomeCodes
+* contained[+] = HIVPregnancyOutcomeCodes
 * contained[+] = BirthDefects
 * contained[+] = ChildHIVStatus
 //* contained[+] = HIVTransmissionRoute
@@ -141,22 +151,24 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "birth_year"
 * item[=].item[=].item[=].item[=].text   = "Year of Birth"
 * item[=].item[=].item[=].item[=].type   = #integer
-//* item[=].item[=].item[=].item[=].prefix = "6"
-
 * item[=].item[=].item[=].item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/regex"
 * item[=].item[=].item[=].item[=].extension.valueString = "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00))"
+//* item[=].item[=].item[=].item[=].prefix = "6"
 
 
-
-
-* item[=].item[=].item[=].item[+].linkId = "id_cccd"
+* item[=].item[=].item[=].item[+].linkId = "identification"
 * item[=].item[=].item[=].item[=].text   = "Identification"
 * item[=].item[=].item[=].item[=].type   = #group
 //* item[=].item[=].item[=].item[=].prefix = "7"
 //* item[=].item[=].item[=].item[=].answerValueSet    = Canonical($vs-iso3166-1-2)
 
+<<<<<<< HEAD
 * item[=].item[=].item[=].item[=].item[+].linkId = "theCCCD"
 * item[=].item[=].item[=].item[=].item[=].text   = "Vietnam National ID"
+=======
+* item[=].item[=].item[=].item[=].item[+].linkId = "id_cccd"
+* item[=].item[=].item[=].item[=].item[=].text   = "Health insurance number"
+>>>>>>> f3231036b36e97596b470e17839cba45af5328e0
 * item[=].item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "7.1"
 
@@ -226,7 +238,7 @@ Usage: #definition
 
 
 * item[=].item[+].linkId = "hiv-diagnosis"
-* item[=].item[=].text   = "HIV Diagnosis"
+* item[=].item[=].text   = "HIV Testing"
 * item[=].item[=].type   = #group
 //* item[=].item[=].prefix   = "11"
 
@@ -279,7 +291,8 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.testResult"
 * item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "HIVRapidTestResults"
+* item[=].item[=].item[=].item[=].answerValueSet = "HIVRecencyTestResults"
+
 //* item[=].item[=].item[=].item[=].prefix   = "12.1.4"
 
 
@@ -294,9 +307,9 @@ Usage: #definition
 //* item[=].item[=].item[=].item[=].prefix   = "12.2.1"
 
 * item[=].item[=].item[=].item[+].linkId = "recency.testResult"
-* item[=].item[=].item[=].item[=].text   = "VL recency test result"
-* item[=].item[=].item[=].item[=].type   = #integer
-//* item[=].item[=].item[=].item[=].answerValueSet = "HIVRapidTestResults"
+* item[=].item[=].item[=].item[=].text   = "VL recent infection conclusion"
+* item[=].item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].item[=].answerValueSet = "HIVRecencyTestResults"
 //* item[=].item[=].item[=].item[=].prefix   = "12.2.2"
 
 
@@ -328,7 +341,7 @@ Usage: #definition
 
 
 * item[=].item[+].linkId = "cd4DuringART"
-* item[=].item[=].text   = "CD4 test during ART"
+* item[=].item[=].text   = "CD4 test during ART (first time and follow-up)"
 * item[=].item[=].type   = #group
 //* item[=].item[=].prefix   = "14"
 
@@ -354,7 +367,7 @@ Usage: #definition
 
 
 * item[=].item[+].linkId = "vl4DuringART"
-* item[=].item[=].text   = "Viral Load test during ART"
+* item[=].item[=].text   = "Routine Viral Load test during ART (First time and follow-up)"
 * item[=].item[=].type   = #group
 //* item[=].item[=].prefix   = "15"
 
@@ -573,12 +586,14 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "19.2.2.1"
 
-// * item[=].item[=].item[=].item[=].item[+].linkId = "hcv.treatmentStartDate"
-// * item[=].item[=].item[=].item[=].item[=].text   = "Date of HBV treatment start"
-// * item[=].item[=].item[=].item[=].item[=].type   = #date
-// * item[=].item[=].item[=].item[=].item[+].linkId = "hcv.treatmentEndDate"
-// * item[=].item[=].item[=].item[=].item[=].text   = "Date HBV treatment completed"
-// * item[=].item[=].item[=].item[=].item[=].type   = #date
+* item[=].item[=].item[=].item[=].item[+].linkId = "hcv.treatmentStartDate"
+* item[=].item[=].item[=].item[=].item[=].text   = "Date of HBV treatment start"
+* item[=].item[=].item[=].item[=].item[=].type   = #date
+
+* item[=].item[=].item[=].item[=].item[+].linkId = "hcv.treatmentEndDate"
+* item[=].item[=].item[=].item[=].item[=].text   = "Date HBV treatment completed"
+* item[=].item[=].item[=].item[=].item[=].type   = #date
+
 * item[=].item[=].item[=].item[=].item[+].linkId = "hcv.placeProvided"
 * item[=].item[=].item[=].item[=].item[=].text   = "Place HBV treatment provided"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
@@ -619,46 +634,69 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "pregnancyOutcomeCode"
 * item[=].item[=].item[=].item[=].text   = "Pregnancy Outcome code"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "#PregnancyOutcomeCodes"
+* item[=].item[=].item[=].item[=].answerValueSet = "#HIVPregnancyOutcomeCodes"
 //* item[=].item[=].item[=].item[=].prefix   = "20.5.1"
+
 
 * item[=].item[=].item[=].item[+].linkId = "childDateOfBirth"
 * item[=].item[=].item[=].item[=].text   = "Date of child birth"
 * item[=].item[=].item[=].item[=].type   = #date
+* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 //* item[=].item[=].item[=].item[=].prefix   = "20.5.2"
 
 * item[=].item[=].item[=].item[+].linkId = "gestationAtDelivery"
 * item[=].item[=].item[=].item[=].text   = "Gestational age at delivery (weeks)"
 * item[=].item[=].item[=].item[=].type   = #decimal
 //* item[=].item[=].item[=].item[=].prefix   = "19.5.3"
+* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 
 * item[=].item[=].item[=].item[+].linkId = "birthWeight"
 * item[=].item[=].item[=].item[=].text   = "Weight at birth (kg)"
 * item[=].item[=].item[=].item[=].type   = #decimal
 //* item[=].item[=].item[=].item[=].prefix   = "20.5.4"
+* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 
 * item[=].item[=].item[=].item[+].linkId = "birtDefects"
 * item[=].item[=].item[=].item[=].text   = "Birth defects"
-* item[=].item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].item[=].type   = #open-choice
 * item[=].item[=].item[=].item[=].answerValueSet = "#BirthDefects"
 //* item[=].item[=].item[=].item[=].prefix   = "20.5.5"
+* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 
-* item[=].item[=].item[=].item[+].linkId = "hivStatus"
-* item[=].item[=].item[=].item[=].text   = "HIV status"
+* item[=].item[=].item[=].item[+].linkId = "child-hivStatus"
+* item[=].item[=].item[=].item[=].text   = "Child HIV status"
 * item[=].item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].item[=].answerValueSet = "#ChildHIVStatus"
 //* item[=].item[=].item[=].item[=].prefix   = "20.5.6"
+* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 
 
 * item[=].item[=].item[=].item[+].linkId = "childHIVDiagnosisDate"
 * item[=].item[=].item[=].item[=].text   = "HIV diagnosis date"
 * item[=].item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].item[=].prefix   = "20.5.7"
+* item[=].item[=].item[=].item[=].enableWhen.question = "child-hivStatus"
+* item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
+
 
 * item[=].item[=].item[=].item[+].linkId = "childARTStartDate"
 * item[=].item[=].item[=].item[=].text   = "ART start date"
 * item[=].item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].item[=].prefix   = "20.5.8"
+* item[=].item[=].item[=].item[=].enableWhen.question = "child-hivStatus"
+* item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
 
 
 
@@ -674,5 +712,5 @@ Usage: #definition
 
 * item[=].item[=].item[+].linkId = "causeOfDeath"
 * item[=].item[=].item[=].text   = "Cause of death"
-* item[=].item[=].item[=].type   = #string
+* item[=].item[=].item[=].type   = #open-choice
 //* item[=].item[=].item[=].prefix   = "21.2"
