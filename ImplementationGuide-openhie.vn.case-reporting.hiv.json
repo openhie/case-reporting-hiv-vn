@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam",
   "status": "draft",
   "experimental": false,
-  "date": "2021-05-12T07:09:35+00:00",
+  "date": "2021-05-12T08:21:05+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -353,17 +353,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-occupation"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -414,19 +403,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/vs-vn-ethnicity"
-        },
-        "name": "Ethnicity",
-        "description": "Ethnicity."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -466,6 +442,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-vn-administrativeaddress"
+        },
+        "name": "Vietnam Administrative Address",
+        "description": "Thông tin địa danh hành chính - Theo ban hành Danh mục Dân tộc của Tổng cục thống kê"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -485,7 +474,7 @@
         "reference": {
           "reference": "ValueSet/vs-vn-ethnicity"
         },
-        "name": "Vietnam Ethnicity",
+        "name": "Valueset Vietnam Ethnicity",
         "description": "Valueset - Vietnam Ethnicity"
       },
       {
@@ -617,6 +606,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ext-vn-ethnicity"
+        },
+        "name": "Vietnam Ethnicity ",
+        "description": "Vietnam Ethnicity"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -667,14 +669,53 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/vs-vn-regimen"
+        },
+        "name": "CodeSystem Vietnam HIV Regimen",
+        "description": "CodeSystem - Vietnam HIV Regimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-vn-regimen"
+        },
+        "name": "ValueSet Vietnam HIV Regimen",
+        "description": "ValueSet - Vietnam HIV Regimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-vn-regimenlevel"
+        },
+        "name": "CodeSystem Vietnam HIV Regimen Level ",
+        "description": "CodeSystem - Vietnam HIV Regimen Level"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
         "reference": {
           "reference": "ValueSet/vs-hiv-occupations"
         },
-        "name": "Occupations relevant for HIV",
-        "description": "Valueset - Occupations relevant for HIV"
+        "name": "Occupation",
+        "description": "Valueset - Occupation"
       },
       {
         "extension": [
@@ -760,19 +801,6 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-hiv-occupations"
-        },
-        "name": "Occupations relevant for HIV",
-        "description": "CodeSystem Occupations for HIV"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
           "reference": "CodeSystem/cs-pregnancy-status"
         }
       },
@@ -793,12 +821,38 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-vn-regimenlevel"
+        },
+        "name": "ValueSet Vietnam HIV Regimen Level ",
+        "description": "ValueSet - Vietnam HIV Regimen Level"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Questionnaire"
           }
         ],
         "reference": {
           "reference": "Questionnaire/hiv-case-report-questionnaire"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-rapidtestresults"
+        },
+        "name": "HIVRapidTestResults",
+        "description": "HIV rapid test result codes"
       },
       {
         "extension": [
@@ -848,7 +902,9 @@
         ],
         "reference": {
           "reference": "CodeSystem/cs-vn-ethnicity"
-        }
+        },
+        "name": "CodeSystem Vietnam Ethnicity",
+        "description": "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recognized by the Vietnamese government"
       },
       {
         "extension": [
@@ -875,19 +931,6 @@
         },
         "name": "Population groups",
         "description": "CodeSystem - Population groups - Subjects to be tested for HIV"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/HIVRapidTestResults"
-        },
-        "name": "HIVRapidTestResults",
-        "description": "HIV rapid test result codes"
       },
       {
         "extension": [
@@ -938,6 +981,19 @@
         },
         "name": "ARVCarePlan",
         "description": "This profile allows the exchange of a patient's ARV treatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vn-administrative-address"
+        },
+        "name": "Vietnam Administrative Address",
+        "description": "Vietnam Administrative Address."
       },
       {
         "extension": [
@@ -1014,8 +1070,8 @@
         "reference": {
           "reference": "ValueSet/vs-hiv-population"
         },
-        "name": "Occupations relevant for HIV",
-        "description": "Valueset - Occupations relevant for HIV"
+        "name": "Risk Population relevant for HIV",
+        "description": "Valueset - Risk population relevant for HIV"
       },
       {
         "extension": [

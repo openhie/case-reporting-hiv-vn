@@ -3,13 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cs-vn-ethnicity"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">kinh<a name="cs-vn-ethnicity-kinh"> </a></td><td>Kinh</td></tr><tr><td style="white-space:nowrap">tay<a name="cs-vn-ethnicity-tay"> </a></td><td>Tày</td></tr><tr><td style="white-space:nowrap">thai<a name="cs-vn-ethnicity-thai"> </a></td><td>Thái</td></tr><tr><td style="white-space:nowrap">hoa<a name="cs-vn-ethnicity-hoa"> </a></td><td>Hoa</td></tr><tr><td style="white-space:nowrap">khome<a name="cs-vn-ethnicity-khome"> </a></td><td>Khơ-me</td></tr><tr><td style="white-space:nowrap">muong<a name="cs-vn-ethnicity-muong"> </a></td><td>Mường</td></tr><tr><td style="white-space:nowrap">nung<a name="cs-vn-ethnicity-nung"> </a></td><td>Nùng</td></tr><tr><td style="white-space:nowrap">hmong<a name="cs-vn-ethnicity-hmong"> </a></td><td>Hông</td></tr><tr><td style="white-space:nowrap">dao<a name="cs-vn-ethnicity-dao"> </a></td><td>Dao</td></tr><tr><td style="white-space:nowrap">giarai<a name="cs-vn-ethnicity-giarai"> </a></td><td>Gia Rai</td></tr><tr><td style="white-space:nowrap">ngai<a name="cs-vn-ethnicity-ngai"> </a></td><td>Ngái</td></tr><tr><td style="white-space:nowrap">ede<a name="cs-vn-ethnicity-ede"> </a></td><td>Ê đê</td></tr><tr><td style="white-space:nowrap">bana<a name="cs-vn-ethnicity-bana"> </a></td><td>Ba-na</td></tr><tr><td style="white-space:nowrap">xodang<a name="cs-vn-ethnicity-xodang"> </a></td><td>Xơ đăng</td></tr><tr><td style="white-space:nowrap">sanchay<a name="cs-vn-ethnicity-sanchay"> </a></td><td>Sán Chay</td></tr><tr><td style="white-space:nowrap">coho<a name="cs-vn-ethnicity-coho"> </a></td><td>Cơ-ho</td></tr><tr><td style="white-space:nowrap">cham<a name="cs-vn-ethnicity-cham"> </a></td><td>Chăm</td></tr><tr><td style="white-space:nowrap">sandiu<a name="cs-vn-ethnicity-sandiu"> </a></td><td>Sán Dìu</td></tr><tr><td style="white-space:nowrap">hre<a name="cs-vn-ethnicity-hre"> </a></td><td>Hrê</td></tr><tr><td style="white-space:nowrap">mnong<a name="cs-vn-ethnicity-mnong"> </a></td><td>Mnông</td></tr><tr><td style="white-space:nowrap">raglai<a name="cs-vn-ethnicity-raglai"> </a></td><td>Ra-glai</td></tr><tr><td style="white-space:nowrap">xtieng<a name="cs-vn-ethnicity-xtieng"> </a></td><td>Xtiêng</td></tr><tr><td style="white-space:nowrap">vankieu<a name="cs-vn-ethnicity-vankieu"> </a></td><td>Bru-Vân Kiều</td></tr><tr><td style="white-space:nowrap">tho<a name="cs-vn-ethnicity-tho"> </a></td><td>Thổ</td></tr><tr><td style="white-space:nowrap">giay<a name="cs-vn-ethnicity-giay"> </a></td><td>Giáy</td></tr><tr><td style="white-space:nowrap">cotu<a name="cs-vn-ethnicity-cotu"> </a></td><td>Cơ-tu</td></tr><tr><td style="white-space:nowrap">gietrieng<a name="cs-vn-ethnicity-gietrieng"> </a></td><td>Gié-Triêng</td></tr><tr><td style="white-space:nowrap">ma<a name="cs-vn-ethnicity-ma"> </a></td><td>Mạ</td></tr><tr><td style="white-space:nowrap">khomu<a name="cs-vn-ethnicity-khomu"> </a></td><td>Khơ-mú</td></tr><tr><td style="white-space:nowrap">co<a name="cs-vn-ethnicity-co"> </a></td><td>Co</td></tr><tr><td style="white-space:nowrap">taoi<a name="cs-vn-ethnicity-taoi"> </a></td><td>Ta-ôi</td></tr><tr><td style="white-space:nowrap">choro<a name="cs-vn-ethnicity-choro"> </a></td><td>Chơ-ro</td></tr><tr><td style="white-space:nowrap">khang<a name="cs-vn-ethnicity-khang"> </a></td><td>Kháng</td></tr><tr><td style="white-space:nowrap">xinhmun<a name="cs-vn-ethnicity-xinhmun"> </a></td><td>Xinh-mun</td></tr><tr><td style="white-space:nowrap">hanhi<a name="cs-vn-ethnicity-hanhi"> </a></td><td>Hà Nhì</td></tr><tr><td style="white-space:nowrap">churu<a name="cs-vn-ethnicity-churu"> </a></td><td>Chu-ru</td></tr><tr><td style="white-space:nowrap">lao<a name="cs-vn-ethnicity-lao"> </a></td><td>Lào</td></tr><tr><td style="white-space:nowrap">lachi<a name="cs-vn-ethnicity-lachi"> </a></td><td>La Chi</td></tr><tr><td style="white-space:nowrap">laha<a name="cs-vn-ethnicity-laha"> </a></td><td>La Ha</td></tr><tr><td style="white-space:nowrap">phula<a name="cs-vn-ethnicity-phula"> </a></td><td>Phù Lá</td></tr><tr><td style="white-space:nowrap">lahu<a name="cs-vn-ethnicity-lahu"> </a></td><td>La Hủ</td></tr><tr><td style="white-space:nowrap">lu<a name="cs-vn-ethnicity-lu"> </a></td><td>Lự</td></tr><tr><td style="white-space:nowrap">lolo<a name="cs-vn-ethnicity-lolo"> </a></td><td>Lô lô</td></tr><tr><td style="white-space:nowrap">chut<a name="cs-vn-ethnicity-chut"> </a></td><td>Chứt</td></tr><tr><td style="white-space:nowrap">mang<a name="cs-vn-ethnicity-mang"> </a></td><td>Mảng</td></tr><tr><td style="white-space:nowrap">pathen<a name="cs-vn-ethnicity-pathen"> </a></td><td>Pà Thẻn</td></tr><tr><td style="white-space:nowrap">colao<a name="cs-vn-ethnicity-colao"> </a></td><td>Cơ Lao</td></tr><tr><td style="white-space:nowrap">cong<a name="cs-vn-ethnicity-cong"> </a></td><td>Cống</td></tr><tr><td style="white-space:nowrap">boy<a name="cs-vn-ethnicity-boy"> </a></td><td>Bố Y</td></tr><tr><td style="white-space:nowrap">sila<a name="cs-vn-ethnicity-sila"> </a></td><td>Si La</td></tr><tr><td style="white-space:nowrap">pupeo<a name="cs-vn-ethnicity-pupeo"> </a></td><td>Pu Péo</td></tr><tr><td style="white-space:nowrap">brao<a name="cs-vn-ethnicity-brao"> </a></td><td>Brâu</td></tr><tr><td style="white-space:nowrap">odu<a name="cs-vn-ethnicity-odu"> </a></td><td>Ơ Đu</td></tr><tr><td style="white-space:nowrap">romam<a name="cs-vn-ethnicity-romam"> </a></td><td>Rơ-măm</td></tr><tr><td style="white-space:nowrap">unk<a name="cs-vn-ethnicity-unk"> </a></td><td>Không rõ</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>kinh</td><td>Kinh</td></tr><tr><td>tay</td><td>Tày</td></tr><tr><td>thai</td><td>Thái</td></tr><tr><td>hoa</td><td/></tr><tr><td>khome</td><td>Khơ-me</td></tr><tr><td>muong</td><td>Mường</td></tr><tr><td>nung</td><td>Nùng</td></tr><tr><td>hmong</td><td>Hông</td></tr><tr><td>dao</td><td>Dao</td></tr><tr><td>giarai</td><td>Gia Rai</td></tr><tr><td>ngai</td><td>Ngái</td></tr><tr><td>ede</td><td>Ê đê</td></tr><tr><td>bana</td><td>Ba-na</td></tr><tr><td>xodang</td><td>Xơ đăng</td></tr><tr><td>sanchay</td><td>Sán Chay</td></tr><tr><td>coho</td><td>Cơ-ho</td></tr><tr><td>cham</td><td>Chăm</td></tr><tr><td>sandiu</td><td>Sán Dìu</td></tr><tr><td>hre</td><td>Hrê</td></tr><tr><td>mnong</td><td>Mnông</td></tr><tr><td>raglai</td><td>Ra-glai</td></tr><tr><td>xtieng</td><td>Xtiêng</td></tr><tr><td>vankieu</td><td>Bru-Vân Kiều</td></tr><tr><td>tho</td><td>Thổ</td></tr><tr><td>giay</td><td/></tr><tr><td>cotu</td><td>Cơ-tu</td></tr><tr><td>gietrieng</td><td>Gié-Triêng</td></tr><tr><td>ma</td><td>Mạ</td></tr><tr><td>khomu</td><td>Khơ-mú</td></tr><tr><td>co</td><td>Co</td></tr><tr><td>taoi</td><td>Ta-ôi</td></tr><tr><td>choro</td><td>Chơ-ro</td></tr><tr><td>khang</td><td>Kháng</td></tr><tr><td>xinhmun</td><td>Xinh-mun</td></tr><tr><td>hanhi</td><td>Hà Nhì</td></tr><tr><td>churu</td><td>Chu-ru</td></tr><tr><td>lao</td><td>Lào</td></tr><tr><td>lachi</td><td>La Chi</td></tr><tr><td>laha</td><td>La Ha</td></tr><tr><td>phula</td><td>Phù Lá</td></tr><tr><td>lahu</td><td>La Hủ</td></tr><tr><td>lu</td><td>Lự</td></tr><tr><td>lolo</td><td>Lô lô</td></tr><tr><td>chut</td><td>Chứt</td></tr><tr><td>mang</td><td>Mảng</td></tr><tr><td>pathen</td><td>Pà Thẻn</td></tr><tr><td>colao</td><td>Cơ Lao</td></tr><tr><td>cong</td><td>Cống</td></tr><tr><td>boy</td><td>Bố Y</td></tr><tr><td>sila</td><td>Si La</td></tr><tr><td>pupeo</td><td>Pu Péo</td></tr><tr><td>brao</td><td>Brâu</td></tr><tr><td>odu</td><td>Ơ Đu</td></tr><tr><td>romam</td><td>Rơ-măm</td></tr><tr><td>unk</td><td>Không rõ</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">kinh<a name="cs-vn-ethnicity-kinh"> </a></td><td>Kinh</td><td>Kinh People are a Southeast Asian ethnic group originally native to modern-day Northern Vietnam</td></tr><tr><td style="white-space:nowrap">tay<a name="cs-vn-ethnicity-tay"> </a></td><td>Tày</td><td/></tr><tr><td style="white-space:nowrap">thai<a name="cs-vn-ethnicity-thai"> </a></td><td>Thái</td><td/></tr><tr><td style="white-space:nowrap">hoa<a name="cs-vn-ethnicity-hoa"> </a></td><td>Hoa</td><td/></tr><tr><td style="white-space:nowrap">khome<a name="cs-vn-ethnicity-khome"> </a></td><td>Khơ-me</td><td/></tr><tr><td style="white-space:nowrap">muong<a name="cs-vn-ethnicity-muong"> </a></td><td>Mường</td><td/></tr><tr><td style="white-space:nowrap">nung<a name="cs-vn-ethnicity-nung"> </a></td><td>Nùng</td><td/></tr><tr><td style="white-space:nowrap">hmong<a name="cs-vn-ethnicity-hmong"> </a></td><td> Hmông</td><td/></tr><tr><td style="white-space:nowrap">dao<a name="cs-vn-ethnicity-dao"> </a></td><td>Dao</td><td/></tr><tr><td style="white-space:nowrap">giarai<a name="cs-vn-ethnicity-giarai"> </a></td><td>Gia Rai</td><td/></tr><tr><td style="white-space:nowrap">ngai<a name="cs-vn-ethnicity-ngai"> </a></td><td>Ngái</td><td/></tr><tr><td style="white-space:nowrap">ede<a name="cs-vn-ethnicity-ede"> </a></td><td>Ê đê</td><td/></tr><tr><td style="white-space:nowrap">bana<a name="cs-vn-ethnicity-bana"> </a></td><td>Ba-na</td><td/></tr><tr><td style="white-space:nowrap">xodang<a name="cs-vn-ethnicity-xodang"> </a></td><td>Xơ đăng</td><td/></tr><tr><td style="white-space:nowrap">sanchay<a name="cs-vn-ethnicity-sanchay"> </a></td><td>Sán Chay</td><td/></tr><tr><td style="white-space:nowrap">coho<a name="cs-vn-ethnicity-coho"> </a></td><td>Cơ-ho</td><td/></tr><tr><td style="white-space:nowrap">cham<a name="cs-vn-ethnicity-cham"> </a></td><td>Chăm</td><td/></tr><tr><td style="white-space:nowrap">sandiu<a name="cs-vn-ethnicity-sandiu"> </a></td><td>Sán Dìu</td><td/></tr><tr><td style="white-space:nowrap">hre<a name="cs-vn-ethnicity-hre"> </a></td><td>Hrê</td><td/></tr><tr><td style="white-space:nowrap">mnong<a name="cs-vn-ethnicity-mnong"> </a></td><td>Mnông</td><td/></tr><tr><td style="white-space:nowrap">raglai<a name="cs-vn-ethnicity-raglai"> </a></td><td>Ra-glai</td><td/></tr><tr><td style="white-space:nowrap">xtieng<a name="cs-vn-ethnicity-xtieng"> </a></td><td>Xtiêng</td><td/></tr><tr><td style="white-space:nowrap">vankieu<a name="cs-vn-ethnicity-vankieu"> </a></td><td>Bru-Vân Kiều</td><td/></tr><tr><td style="white-space:nowrap">tho<a name="cs-vn-ethnicity-tho"> </a></td><td>Thổ</td><td/></tr><tr><td style="white-space:nowrap">giay<a name="cs-vn-ethnicity-giay"> </a></td><td>Giáy</td><td/></tr><tr><td style="white-space:nowrap">cotu<a name="cs-vn-ethnicity-cotu"> </a></td><td>Cơ-tu</td><td/></tr><tr><td style="white-space:nowrap">gietrieng<a name="cs-vn-ethnicity-gietrieng"> </a></td><td>Gié-Triêng</td><td/></tr><tr><td style="white-space:nowrap">ma<a name="cs-vn-ethnicity-ma"> </a></td><td>Mạ</td><td/></tr><tr><td style="white-space:nowrap">khomu<a name="cs-vn-ethnicity-khomu"> </a></td><td>Khơ-mú</td><td/></tr><tr><td style="white-space:nowrap">co<a name="cs-vn-ethnicity-co"> </a></td><td>Co</td><td/></tr><tr><td style="white-space:nowrap">taoi<a name="cs-vn-ethnicity-taoi"> </a></td><td>Ta-ôi</td><td/></tr><tr><td style="white-space:nowrap">choro<a name="cs-vn-ethnicity-choro"> </a></td><td>Chơ-ro</td><td/></tr><tr><td style="white-space:nowrap">khang<a name="cs-vn-ethnicity-khang"> </a></td><td>Kháng</td><td/></tr><tr><td style="white-space:nowrap">xinhmun<a name="cs-vn-ethnicity-xinhmun"> </a></td><td>Xinh-mun</td><td/></tr><tr><td style="white-space:nowrap">hanhi<a name="cs-vn-ethnicity-hanhi"> </a></td><td>Hà Nhì</td><td/></tr><tr><td style="white-space:nowrap">churu<a name="cs-vn-ethnicity-churu"> </a></td><td>Chu-ru</td><td/></tr><tr><td style="white-space:nowrap">lao<a name="cs-vn-ethnicity-lao"> </a></td><td>Lào</td><td/></tr><tr><td style="white-space:nowrap">lachi<a name="cs-vn-ethnicity-lachi"> </a></td><td>La Chi</td><td/></tr><tr><td style="white-space:nowrap">laha<a name="cs-vn-ethnicity-laha"> </a></td><td>La Ha</td><td/></tr><tr><td style="white-space:nowrap">phula<a name="cs-vn-ethnicity-phula"> </a></td><td>Phù Lá</td><td/></tr><tr><td style="white-space:nowrap">lahu<a name="cs-vn-ethnicity-lahu"> </a></td><td>La Hủ</td><td/></tr><tr><td style="white-space:nowrap">lu<a name="cs-vn-ethnicity-lu"> </a></td><td>Lự</td><td/></tr><tr><td style="white-space:nowrap">lolo<a name="cs-vn-ethnicity-lolo"> </a></td><td>Lô Lô</td><td/></tr><tr><td style="white-space:nowrap">chut<a name="cs-vn-ethnicity-chut"> </a></td><td>Chứt</td><td/></tr><tr><td style="white-space:nowrap">mang<a name="cs-vn-ethnicity-mang"> </a></td><td>Mảng</td><td/></tr><tr><td style="white-space:nowrap">pathen<a name="cs-vn-ethnicity-pathen"> </a></td><td>Pà Thẻn</td><td/></tr><tr><td style="white-space:nowrap">colao<a name="cs-vn-ethnicity-colao"> </a></td><td>Cơ Lao</td><td/></tr><tr><td style="white-space:nowrap">cong<a name="cs-vn-ethnicity-cong"> </a></td><td>Cống</td><td>Xắm Khống, Mấng Nhé, Xá Xeng</td></tr><tr><td style="white-space:nowrap">boy<a name="cs-vn-ethnicity-boy"> </a></td><td>Bố Y</td><td>Chủng Chá, Trọng Gia, Tu Di, Tu Din</td></tr><tr><td style="white-space:nowrap">sila<a name="cs-vn-ethnicity-sila"> </a></td><td>Si La</td><td>Cù Dề Xừ, Khả pẻ</td></tr><tr><td style="white-space:nowrap">pupeo<a name="cs-vn-ethnicity-pupeo"> </a></td><td>Pu Péo</td><td>Ka Pèo, Pen Ti Lô Lô</td></tr><tr><td style="white-space:nowrap">brao<a name="cs-vn-ethnicity-brao"> </a></td><td>Brâu</td><td>Brao</td></tr><tr><td style="white-space:nowrap">odu<a name="cs-vn-ethnicity-odu"> </a></td><td>Ơ Đu</td><td>Tày Hạt</td></tr><tr><td style="white-space:nowrap">romam<a name="cs-vn-ethnicity-romam"> </a></td><td>Rơ-măm</td><td/></tr><tr><td style="white-space:nowrap">unk<a name="cs-vn-ethnicity-unk"> </a></td><td>Không rõ</td><td/></tr></table></div>
   </text>
   <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
   <version value="0.1.0-test"/>
-  <name value="Vietnam Ethnicity"/>
-  <status value="draft"/>
-  <date value="2021-05-12T07:09:35+00:00"/>
+  <name value="CSVietnamEthnicity"/>
+  <title value="CodeSystem Vietnam Ethnicity"/>
+  <status value="active"/>
+  <date value="2021-05-12T08:21:05+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -17,6 +18,7 @@
       <value value="http://ohie.org"/>
     </telecom>
   </contact>
+  <description value="CodeSystem of Vietnam included  54 ethnic groups in Vietnam recognized by the Vietnamese government"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -24,442 +26,232 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
+  <count value="55"/>
   <concept>
     <code value="kinh"/>
     <display value="Kinh"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Kinh"/>
-    </designation>
+    <definition value="Kinh People are a Southeast Asian ethnic group originally native to modern-day Northern Vietnam"/>
   </concept>
   <concept>
     <code value="tay"/>
     <display value="T&#xE0;y"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="T&#xE0;y"/>
-    </designation>
   </concept>
   <concept>
     <code value="thai"/>
     <display value="Th&#xE1;i"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Th&#xE1;i"/>
-    </designation>
   </concept>
   <concept>
     <code value="hoa"/>
     <display value="Hoa"/>
-    <designation>
-      <language value="vi-VN"/>
-    </designation>
   </concept>
   <concept>
     <code value="khome"/>
     <display value="Kh&#x1A1;-me"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Kh&#x1A1;-me"/>
-    </designation>
   </concept>
   <concept>
     <code value="muong"/>
     <display value="M&#x1B0;&#x1EDD;ng"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="M&#x1B0;&#x1EDD;ng"/>
-    </designation>
   </concept>
   <concept>
     <code value="nung"/>
     <display value="N&#xF9;ng"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="N&#xF9;ng"/>
-    </designation>
   </concept>
   <concept>
     <code value="hmong"/>
-    <display value="H&#xF4;ng"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="H&#xF4;ng"/>
-    </designation>
+    <display value=" Hm&#xF4;ng"/>
   </concept>
   <concept>
     <code value="dao"/>
     <display value="Dao"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Dao"/>
-    </designation>
   </concept>
   <concept>
     <code value="giarai"/>
     <display value="Gia Rai"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Gia Rai"/>
-    </designation>
   </concept>
   <concept>
     <code value="ngai"/>
     <display value="Ng&#xE1;i"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Ng&#xE1;i"/>
-    </designation>
   </concept>
   <concept>
     <code value="ede"/>
     <display value="&#xCA; &#x111;&#xEA;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="&#xCA; &#x111;&#xEA;"/>
-    </designation>
   </concept>
   <concept>
     <code value="bana"/>
     <display value="Ba-na"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Ba-na"/>
-    </designation>
   </concept>
   <concept>
     <code value="xodang"/>
     <display value="X&#x1A1; &#x111;&#x103;ng"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="X&#x1A1; &#x111;&#x103;ng"/>
-    </designation>
   </concept>
   <concept>
     <code value="sanchay"/>
     <display value="S&#xE1;n Chay"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="S&#xE1;n Chay"/>
-    </designation>
   </concept>
   <concept>
     <code value="coho"/>
     <display value="C&#x1A1;-ho"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="C&#x1A1;-ho"/>
-    </designation>
   </concept>
   <concept>
     <code value="cham"/>
     <display value="Ch&#x103;m"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Ch&#x103;m"/>
-    </designation>
   </concept>
   <concept>
     <code value="sandiu"/>
     <display value="S&#xE1;n D&#xEC;u"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="S&#xE1;n D&#xEC;u"/>
-    </designation>
   </concept>
   <concept>
     <code value="hre"/>
     <display value="Hr&#xEA;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Hr&#xEA;"/>
-    </designation>
   </concept>
   <concept>
     <code value="mnong"/>
     <display value="Mn&#xF4;ng"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Mn&#xF4;ng"/>
-    </designation>
   </concept>
   <concept>
     <code value="raglai"/>
     <display value="Ra-glai"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Ra-glai"/>
-    </designation>
   </concept>
   <concept>
     <code value="xtieng"/>
     <display value="Xti&#xEA;ng"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Xti&#xEA;ng"/>
-    </designation>
   </concept>
   <concept>
     <code value="vankieu"/>
     <display value="Bru-V&#xE2;n Ki&#x1EC1;u"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Bru-V&#xE2;n Ki&#x1EC1;u"/>
-    </designation>
   </concept>
   <concept>
     <code value="tho"/>
     <display value="Th&#x1ED5;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Th&#x1ED5;"/>
-    </designation>
   </concept>
   <concept>
     <code value="giay"/>
     <display value="Gi&#xE1;y"/>
-    <designation>
-      <language value="vi-VN"/>
-    </designation>
   </concept>
   <concept>
     <code value="cotu"/>
     <display value="C&#x1A1;-tu"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="C&#x1A1;-tu"/>
-    </designation>
   </concept>
   <concept>
     <code value="gietrieng"/>
     <display value="Gi&#xE9;-Tri&#xEA;ng"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Gi&#xE9;-Tri&#xEA;ng"/>
-    </designation>
   </concept>
   <concept>
     <code value="ma"/>
     <display value="M&#x1EA1;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="M&#x1EA1;"/>
-    </designation>
   </concept>
   <concept>
     <code value="khomu"/>
     <display value="Kh&#x1A1;-m&#xFA;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Kh&#x1A1;-m&#xFA;"/>
-    </designation>
   </concept>
   <concept>
     <code value="co"/>
     <display value="Co"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Co"/>
-    </designation>
   </concept>
   <concept>
     <code value="taoi"/>
     <display value="Ta-&#xF4;i"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Ta-&#xF4;i"/>
-    </designation>
   </concept>
   <concept>
     <code value="choro"/>
     <display value="Ch&#x1A1;-ro"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Ch&#x1A1;-ro"/>
-    </designation>
   </concept>
   <concept>
     <code value="khang"/>
     <display value="Kh&#xE1;ng"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Kh&#xE1;ng"/>
-    </designation>
   </concept>
   <concept>
     <code value="xinhmun"/>
     <display value="Xinh-mun"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Xinh-mun"/>
-    </designation>
   </concept>
   <concept>
     <code value="hanhi"/>
     <display value="H&#xE0; Nh&#xEC;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="H&#xE0; Nh&#xEC;"/>
-    </designation>
   </concept>
   <concept>
     <code value="churu"/>
     <display value="Chu-ru"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Chu-ru"/>
-    </designation>
   </concept>
   <concept>
     <code value="lao"/>
     <display value="L&#xE0;o"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="L&#xE0;o"/>
-    </designation>
   </concept>
   <concept>
     <code value="lachi"/>
     <display value="La Chi"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="La Chi"/>
-    </designation>
   </concept>
   <concept>
     <code value="laha"/>
     <display value="La Ha"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="La Ha"/>
-    </designation>
   </concept>
   <concept>
     <code value="phula"/>
     <display value="Ph&#xF9; L&#xE1;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Ph&#xF9; L&#xE1;"/>
-    </designation>
   </concept>
   <concept>
     <code value="lahu"/>
     <display value="La H&#x1EE7;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="La H&#x1EE7;"/>
-    </designation>
   </concept>
   <concept>
     <code value="lu"/>
     <display value="L&#x1EF1;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="L&#x1EF1;"/>
-    </designation>
   </concept>
   <concept>
     <code value="lolo"/>
-    <display value="L&#xF4; l&#xF4;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="L&#xF4; l&#xF4;"/>
-    </designation>
+    <display value="L&#xF4; L&#xF4;"/>
   </concept>
   <concept>
     <code value="chut"/>
     <display value="Ch&#x1EE9;t"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Ch&#x1EE9;t"/>
-    </designation>
   </concept>
   <concept>
     <code value="mang"/>
     <display value="M&#x1EA3;ng"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="M&#x1EA3;ng"/>
-    </designation>
   </concept>
   <concept>
     <code value="pathen"/>
     <display value="P&#xE0; Th&#x1EBB;n"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="P&#xE0; Th&#x1EBB;n"/>
-    </designation>
   </concept>
   <concept>
     <code value="colao"/>
     <display value="C&#x1A1; Lao"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="C&#x1A1; Lao"/>
-    </designation>
   </concept>
   <concept>
     <code value="cong"/>
     <display value="C&#x1ED1;ng"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="C&#x1ED1;ng"/>
-    </designation>
+    <definition value="X&#x1EAF;m Kh&#x1ED1;ng, M&#x1EA5;ng Nh&#xE9;, X&#xE1; Xeng"/>
   </concept>
   <concept>
     <code value="boy"/>
     <display value="B&#x1ED1; Y"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="B&#x1ED1; Y"/>
-    </designation>
+    <definition value="Ch&#x1EE7;ng Ch&#xE1;, Tr&#x1ECD;ng Gia, Tu Di, Tu Din"/>
   </concept>
   <concept>
     <code value="sila"/>
     <display value="Si La"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Si La"/>
-    </designation>
+    <definition value="C&#xF9; D&#x1EC1; X&#x1EEB;, Kh&#x1EA3; p&#x1EBB;"/>
   </concept>
   <concept>
     <code value="pupeo"/>
     <display value="Pu P&#xE9;o"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Pu P&#xE9;o"/>
-    </designation>
+    <definition value="Ka P&#xE8;o, Pen Ti L&#xF4; L&#xF4;"/>
   </concept>
   <concept>
     <code value="brao"/>
     <display value="Br&#xE2;u"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Br&#xE2;u"/>
-    </designation>
+    <definition value="Brao"/>
   </concept>
   <concept>
     <code value="odu"/>
     <display value="&#x1A0; &#x110;u"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="&#x1A0; &#x110;u"/>
-    </designation>
+    <definition value="T&#xE0;y H&#x1EA1;t"/>
   </concept>
   <concept>
     <code value="romam"/>
     <display value="R&#x1A1;-m&#x103;m"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="R&#x1A1;-m&#x103;m"/>
-    </designation>
   </concept>
   <concept>
     <code value="unk"/>
     <display value="Kh&#xF4;ng r&#xF5;"/>
-    <designation>
-      <language value="vi-VN"/>
-      <value value="Kh&#xF4;ng r&#xF5;"/>
-    </designation>
   </concept>
 </CodeSystem>

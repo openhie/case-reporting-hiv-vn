@@ -6,9 +6,9 @@
     <profile value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Ethnicity</b>: <span title="Codes: ">kinh</span></p><p><b>identifier</b>: id: ARV001, id: P000001, id: 0111111, id: 00123456876</p><p><b>name</b>: John Johnson</p><p><b>birthDate</b>: 1970-01-01</p><p><b>address</b>: </p><ul><li>31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000 (TEMP)</li><li>3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward (HOME)</li></ul></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Vietnam Ethnicity </b>: <span title="Codes: ">kinh</span></p><p><b>identifier</b>: id: ARV001, id: P000001, id: 0111111, id: 00123456876</p><p><b>name</b>: John Johnson</p><p><b>birthDate</b>: 1970-01-01</p><p><b>address</b>: </p><ul><li>31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000 </li><li>3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward </li></ul></div>
   </text>
-  <extension url="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/vs-vn-ethnicity">
+  <extension url="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-vn-ethnicity">
     <valueCodeableConcept>
       <coding>
         <code value="kinh"/>
@@ -36,11 +36,9 @@
   </name>
   <birthDate value="1970"/>
   <address>
-    <use value="temp"/>
     <line value="31 T&#xF4;n Th&#x1EA5;t Thi&#x1EC7;p, B&#x1EBF;n Ngh&#xE9;, Qu&#x1EAD;n 1, Th&#xE0;nh ph&#x1ED1; H&#x1ED3; Ch&#xED; Minh 70000"/>
   </address>
   <address>
-    <use value="home"/>
     <line value="3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward"/>
   </address>
 </Patient>

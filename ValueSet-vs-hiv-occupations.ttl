@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "vs-hiv-occupations"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-hiv-occupations.html\"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-occupations</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106538001\">106538001</a></td><td>Lái xe</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106400003\">106400003</a></td><td>Ngư dân</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106388008\">106388008</a></td><td>Người làm nông nghiệp</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106541005\">106541005</a></td><td>Công nhân</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=310892005\">310892005</a></td><td>Cán bộ, chiến sỹ thuộc lực lượng vũ trang nhân dân</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=413327003\">413327003</a></td><td>Học sinh, sinh viên</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449344001\">449344001</a></td><td>Bán dâm</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159799000\">159799000</a></td><td>Nữ bán dâm</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159800001\">159800001</a></td><td>Nam bán dâm</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73438004\">73438004</a></td><td>Thất nghiệp</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=184119001\">184119001</a></td><td>Nghề khác</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-occupations"];
   fhir:ValueSet.version [ fhir:value "0.1.0-test"];
   fhir:ValueSet.name [ fhir:value "HIVOccupations"];
-  fhir:ValueSet.title [ fhir:value "Occupations relevant for HIV"];
+  fhir:ValueSet.title [ fhir:value "Occupation"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-05-12T07:09:35+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-05-12T08:21:05+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "OpenHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Valueset - Occupations relevant for HIV"];
+  fhir:ValueSet.description [ fhir:value "Valueset - Occupation"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -39,7 +39,52 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-occupations" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "106538001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lái xe" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "106400003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ngư dân" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "106388008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Người làm nông nghiệp" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "106541005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Công nhân" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "310892005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cán bộ, chiến sỹ thuộc lực lượng vũ trang nhân dân" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "413327003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Học sinh, sinh viên" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "449344001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bán dâm" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "159799000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nữ bán dâm" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "159800001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nam bán dâm" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73438004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thất nghiệp" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "184119001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nghề khác" ]
+       ]
      ]
   ] .
 

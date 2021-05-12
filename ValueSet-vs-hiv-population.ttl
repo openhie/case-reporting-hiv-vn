@@ -14,10 +14,10 @@
   ];
   fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-population"];
   fhir:ValueSet.version [ fhir:value "0.1.0-test"];
-  fhir:ValueSet.name [ fhir:value "HIVPopulation"];
-  fhir:ValueSet.title [ fhir:value "Occupations relevant for HIV"];
+  fhir:ValueSet.name [ fhir:value "HIVRiskPopulation"];
+  fhir:ValueSet.title [ fhir:value "Risk Population relevant for HIV"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-05-12T07:09:35+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-05-12T08:21:05+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "OpenHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Valueset - Occupations relevant for HIV"];
+  fhir:ValueSet.description [ fhir:value "Valueset - Risk population relevant for HIV"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

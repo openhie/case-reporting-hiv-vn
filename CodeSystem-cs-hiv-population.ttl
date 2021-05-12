@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "cs-hiv-population"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-population-1\"> </a></td><td>Injection drug users</td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-population-2\"> </a></td><td>FSW</td><td>Female sex workers</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-population-3\"> </a></td><td>Pregnant women</td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-population-4\"> </a></td><td>Blood donors</td><td>Blood donors</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-population-5\"> </a></td><td>TB patients</td><td>TB patients</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-hiv-population-6\"> </a></td><td>People with STDs</td><td>People with sexually transmitted diseases</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-hiv-population-7\"> </a></td><td>Young recruits</td><td>Young recruits for military service</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-hiv-population-8\"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-hiv-population-9\"> </a></td><td>Others</td><td>Others</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-population-1\"> </a></td><td>Người tiêm chích ma túy</td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-population-2\"> </a></td><td>Nữ bán dâm</td><td>Female sex workers</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-population-3\"> </a></td><td>Mang thai</td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-population-4\"> </a></td><td>Người hiến máu tình nguyện</td><td>Blood donors</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-population-5\"> </a></td><td>Bệnh nhân lao</td><td>TB patients</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-hiv-population-6\"> </a></td><td>Người mắc nhiễm trùng lây qua đường tình dục</td><td>People with sexually transmitted diseases</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-hiv-population-7\"> </a></td><td>Thanh niên khám tuyển nghĩa vụ quân sự</td><td>Young recruits for military service</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-hiv-population-8\"> </a></td><td>Quan hệ tình dục đồng giới nam</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-hiv-population-9\"> </a></td><td>Không rõ</td><td>Unidentified</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"];
   fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
-  fhir:CodeSystem.name [ fhir:value "CSHIVPopulation"];
+  fhir:CodeSystem.name [ fhir:value "CSHIVRiskPopulation"];
   fhir:CodeSystem.title [ fhir:value "Population groups"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-05-12T07:09:35+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-05-12T08:21:05+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -41,48 +41,48 @@
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "1" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Injection drug users" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Người tiêm chích ma túy" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Injecting drug users" ]
   ], [
      fhir:index 1;
      fhir:CodeSystem.concept.code [ fhir:value "2" ];
-     fhir:CodeSystem.concept.display [ fhir:value "FSW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nữ bán dâm" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Female sex workers" ]
   ], [
      fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "3" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Pregnant women" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mang thai" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Pregnant women" ]
   ], [
      fhir:index 3;
      fhir:CodeSystem.concept.code [ fhir:value "4" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Blood donors" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Người hiến máu tình nguyện" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Blood donors" ]
   ], [
      fhir:index 4;
      fhir:CodeSystem.concept.code [ fhir:value "5" ];
-     fhir:CodeSystem.concept.display [ fhir:value "TB patients" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bệnh nhân lao" ];
      fhir:CodeSystem.concept.definition [ fhir:value "TB patients" ]
   ], [
      fhir:index 5;
      fhir:CodeSystem.concept.code [ fhir:value "6" ];
-     fhir:CodeSystem.concept.display [ fhir:value "People with STDs" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Người mắc nhiễm trùng lây qua đường tình dục" ];
      fhir:CodeSystem.concept.definition [ fhir:value "People with sexually transmitted diseases" ]
   ], [
      fhir:index 6;
      fhir:CodeSystem.concept.code [ fhir:value "7" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Young recruits" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Thanh niên khám tuyển nghĩa vụ quân sự" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Young recruits for military service" ]
   ], [
      fhir:index 7;
      fhir:CodeSystem.concept.code [ fhir:value "8" ];
-     fhir:CodeSystem.concept.display [ fhir:value "MSM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Quan hệ tình dục đồng giới nam" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Men who have sex with men" ]
   ], [
      fhir:index 8;
      fhir:CodeSystem.concept.code [ fhir:value "9" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Others" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Others" ]
+     fhir:CodeSystem.concept.display [ fhir:value "Không rõ" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Unidentified" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

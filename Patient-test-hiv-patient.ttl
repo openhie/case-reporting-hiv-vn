@@ -17,11 +17,11 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Ethnicity</b>: <span title=\"Codes: \">kinh</span></p><p><b>identifier</b>: id: ARV001, id: P000001, id: 0111111, id: 00123456876</p><p><b>name</b>: John Johnson</p><p><b>birthDate</b>: 1970-01-01</p><p><b>address</b>: </p><ul><li>31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000 (TEMP)</li><li>3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward (HOME)</li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Vietnam Ethnicity </b>: <span title=\"Codes: \">kinh</span></p><p><b>identifier</b>: id: ARV001, id: P000001, id: 0111111, id: 00123456876</p><p><b>name</b>: John Johnson</p><p><b>birthDate</b>: 1970-01-01</p><p><b>address</b>: </p><ul><li>31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000 </li><li>3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward </li></ul></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/vs-vn-ethnicity" ];
+     fhir:Extension.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-vn-ethnicity" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
@@ -53,14 +53,12 @@
   fhir:Patient.birthDate [ fhir:value "1970"^^xsd:gYear];
   fhir:Patient.address [
      fhir:index 0;
-     fhir:Address.use [ fhir:value "temp" ];
      fhir:Address.line [
        fhir:value "31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000";
        fhir:index 0
      ]
   ], [
      fhir:index 1;
-     fhir:Address.use [ fhir:value "home" ];
      fhir:Address.line [
        fhir:value "3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward";
        fhir:index 0
