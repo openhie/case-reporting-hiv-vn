@@ -184,14 +184,6 @@ Description:    """
     This profile allows the exchange of a patient's ARV treatment"""
 
 
-
-Profile:        ViralLoad
-Parent:         Observation
-Id:             hiv-viral-load
-Title:          "HIV viral load"
-Description:    "HIV viral load."
-//* code from HIVRecencyResults
-
 Profile:        ARVTherapySummary
 Parent:         MedicationStatement
 Id:             arv-therapy-summary
