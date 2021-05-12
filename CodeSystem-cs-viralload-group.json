@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-viralload-group",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-group defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-viralload-group-1\"> </a></td><td>0-200</td><td>From 0 to 200</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-viralload-group-2\"> </a></td><td>20-350</td><td>From 200 to 350</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-viralload-group-3\"> </a></td><td>350-500</td><td>From 350 to 500</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-viralload-group-4\"> </a></td><td>500-1000</td><td>From 500 to 1000</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-viralload-group-5\"> </a></td><td>1000-</td><td>Large than 100</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-group",
+  "version": "0.1.0-test",
+  "name": "CSViralLoadGroup",
+  "title": "Viral Load group",
+  "status": "active",
+  "date": "2021-05-12T07:09:35+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "Codesystem - Viral Load group",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "1",
+      "display": "0-200",
+      "definition": "From 0 to 200"
+    },
+    {
+      "code": "2",
+      "display": "20-350",
+      "definition": "From 200 to 350"
+    },
+    {
+      "code": "3",
+      "display": "350-500",
+      "definition": "From 350 to 500"
+    },
+    {
+      "code": "4",
+      "display": "500-1000",
+      "definition": "From 500 to 1000"
+    },
+    {
+      "code": "5",
+      "display": "1000-",
+      "definition": "Large than 100"
+    }
+  ]
+}

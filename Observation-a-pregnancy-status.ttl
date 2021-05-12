@@ -1,6 +1,8 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -17,12 +19,13 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: \">unborn</span></p><p><b>subject</b>: <a href=\"Patient-test-hiv-patient.html\">Generated Summary: id: ARV001, id: P000001, id: 0111111, id: 00123456876; John Johnson; birthDate: 1970-01-01</a></p><p><b>issued</b>: Apr 5, 2013, 2:30:10 PM</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-status unborn}\">Unborn</span></p><p><b>subject</b>: <a href=\"Patient-test-hiv-patient.html\">Generated Summary: id: ARV001, id: P000001, id: 0111111, id: 00123456876; John Johnson; birthDate: 1970-01-01</a></p><p><b>issued</b>: Apr 5, 2013, 8:30:10 AM</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 248957007}\">Menstruation</span></p><p><b>value</b>: Mar 5, 2013, 8:30:10 AM</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 31676001}\">HIV antigen test</span></p><p><b>value</b>: Apr 5, 2013, 8:30:10 AM</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-common birthDateOfChild}\">the child birth day</span></p><p><b>value</b>: Apr 5, 2013, 8:30:10 AM</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status yes}\">Yes</span></p><p><b>value</b>: Apr 5, 2013, 8:30:10 AM</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org LA11882-0}\">Detected</span></p><p><b>value</b>: Apr 5, 2013, 8:30:10 AM</p></blockquote></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-status" ];
        fhir:Coding.code [ fhir:value "unborn" ]
      ]
   ];
@@ -30,7 +33,61 @@
      fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Patient/test-hiv-patient>;
      fhir:Reference.reference [ fhir:value "Patient/test-hiv-patient" ]
   ];
-  fhir:Observation.issued [ fhir:value "2013-04-05T15:30:10+01:00"^^xsd:dateTime] .
+  fhir:Observation.issued [ fhir:value "2013-04-05T15:30:10+07:00"^^xsd:dateTime];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:248957007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "248957007" ]
+       ]
+     ];
+     fhir:Observation.component.valueDateTime [ fhir:value "2013-03-05T15:30:10+07:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:31676001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "31676001" ]
+       ]
+     ];
+     fhir:Observation.component.valueDateTime [ fhir:value "2013-04-05T15:30:10+07:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 2;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-common" ];
+         fhir:Coding.code [ fhir:value "birthDateOfChild" ]
+       ]
+     ];
+     fhir:Observation.component.valueDateTime [ fhir:value "2013-04-05T15:30:10+07:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 3;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status" ];
+         fhir:Coding.code [ fhir:value "yes" ]
+       ]
+     ];
+     fhir:Observation.component.valueDateTime [ fhir:value "2013-04-05T15:30:10+07:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 4;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:LA11882-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "LA11882-0" ]
+       ]
+     ];
+     fhir:Observation.component.valueDateTime [ fhir:value "2013-04-05T15:30:10+07:00"^^xsd:dateTime ]
+  ] .
 
 # - ontology header ------------------------------------------------------------
 

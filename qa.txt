@@ -1,13 +1,15 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 66, warn = 38, info = 83
+err = 68, warn = 42, info = 87
 IG Publisher Version: 1.1.68
-Generated Tue May 11 22:17:30 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Wed May 12 07:10:14 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
- Build Errors : 284 / 12 / 1
+ Build Errors : 337 / 15 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-arv-treatment-status : 0 / 1 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-cs-gender : 0 / 0 / 5
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-common : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-population : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-risk-behavior : 0 / 0 / 1
@@ -17,9 +19,12 @@ Generated Tue May 11 22:17:30 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender-identity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-pregnancy-status : 0 / 1 / 6
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-viralload-chidinh : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-viralload-group : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vn-ethnicity : 2 / 1 / 56
  /github/workspace/fsh-generated/resources/CodeSystem-type-of-contact : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-a-pregnancy-status : 1 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-a-hiv-viral-load : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-a-pregnancy-status : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 11 / 9 / 6
  /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 11 / 1 / 5
@@ -34,12 +39,15 @@ Generated Tue May 11 22:17:30 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-factor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-specimen : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vs-vn-ethnicity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-HIVPregnancyOutcomeCodes : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-HIVRapidTestResults : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VSDateComponent : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-VSSymptoms : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-arv-treatment-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-common-date : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-occupations : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-population : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-pregnancy-status : 0 / 0 / 1
@@ -49,6 +57,8 @@ Generated Tue May 11 22:17:30 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-gender : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-gender-identity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-contact : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-viralload-chidinh : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-viralload-group : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-vn-ethnicity : 0 / 0 / 1
  /github/workspace/input/openhie.vn.case-reporting.hiv : 0 / 1 / 1
 </table>
@@ -58,11 +68,16 @@ INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL fo
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-occupation.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-occupation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-hiv-common.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-hiv-common.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-common-date.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/HIVPregnancyOutcomeCodes.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/HIVPregnancyOutcomeCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-arv-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-arv-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/exampleresponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-pregnancy-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -74,6 +89,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-gender.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-gender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-viral-load.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/CodeSystem-cs-patient-communication-preferences.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -225,7 +241,7 @@ ERROR: /github/workspace/output/ValueSet-HIVRapidTestResults.html: unable to par
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 360 column 45
+/* ' at line 361 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor-mappings.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -245,6 +261,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor-mappings.htm
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 463 column 45
+ERROR: /github/workspace/output/ValueSet-vs-arv-treatment-status.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 348 column 45
 ERROR: /github/workspace/output/downloads.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -264,6 +299,25 @@ ERROR: /github/workspace/output/downloads.html: unable to parse character refere
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 293 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-viralload-chidinh.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 322 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-occupation.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -340,6 +394,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan.profile.jso
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 3218 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-viralload-chidinh.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-patient-gender-identity.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -511,6 +584,25 @@ ERROR: /github/workspace/output/CodeSystem-cs-patient-gender-identity.change.his
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 312 column 45
+ERROR: /github/workspace/output/ValueSet-vs-viralload-group.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 334 column 45
 ERROR: /github/workspace/output/ValueSet-vs-vn-ethnicity.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -530,6 +622,25 @@ ERROR: /github/workspace/output/ValueSet-vs-vn-ethnicity.xml.html: unable to par
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 334 column 45
+ERROR: /github/workspace/output/Observation-a-hiv-viral-load.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 312 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation.profile.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -549,6 +660,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation.profile.
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 2752 column 45
+ERROR: /github/workspace/output/ValueSet-vs-viralload-chidinh.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 312 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-hiv-occupations.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -739,6 +869,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-diagnosis-observation.ht
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 936 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-arv-treatment-status.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 367 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result.profile.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -891,6 +1040,44 @@ ERROR: /github/workspace/output/ValueSet-HIVRapidTestResults.change.history.html
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 312 column 45
+ERROR: /github/workspace/output/Observation-a-hiv-viral-load.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 342 column 45
+ERROR: /github/workspace/output/ValueSet-VSDateComponent.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 312 column 45
 ERROR: /github/workspace/output/ValueSet-vs-hiv-transmission-route.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -948,6 +1135,25 @@ ERROR: /github/workspace/output/CodeSystem-cs-hiv-transmission-route.html: unabl
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 322 column 45
+ERROR: /github/workspace/output/ValueSet-VSDateComponent.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 361 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result-examples.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -986,6 +1192,25 @@ ERROR: /github/workspace/output/ValueSet-vs-hiv-occupations.html: unable to pars
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 360 column 45
+ERROR: /github/workspace/output/ValueSet-vs-viralload-chidinh.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 348 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-patient.profile.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1005,6 +1230,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-patient.profile.json.htm
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 7090 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-hiv-common.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 351 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-condition.profile.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1100,6 +1344,25 @@ ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.ch
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 312 column 45
+ERROR: /github/workspace/output/ValueSet-vs-viralload-chidinh.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 342 column 45
 ERROR: /github/workspace/output/ValueSet-vs-type-of-contact.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1195,6 +1458,44 @@ ERROR: /github/workspace/output/ValueSet-vs-patient-gender-identity.ttl.html: un
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 348 column 45
+ERROR: /github/workspace/output/ValueSet-vs-arv-treatment-status.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 334 column 45
+ERROR: /github/workspace/output/ValueSet-vs-viralload-group.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 312 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation-mappings.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1214,6 +1515,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation-mappings
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 502 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-hiv-common.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 319 column 45
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1308,7 +1628,26 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.xml.h
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2825 column 45
+/* ' at line 3737 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-hiv-common.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 312 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-hiv-population.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1385,6 +1724,25 @@ ERROR: /github/workspace/output/CodeSystem-type-of-contact.json.html: unable to 
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 359 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-arv-treatment-status.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 366 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-diagnosis-observation.profile.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1632,6 +1990,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-condition-mappings.html:
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 473 column 45
+ERROR: /github/workspace/output/ValueSet-vs-viralload-group.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 348 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1650,7 +2027,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.histo
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 333 column 45
+/* ' at line 343 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-patient-gender.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1689,6 +2066,25 @@ ERROR: /github/workspace/output/QuestionnaireResponse-exampleresponse.html: unab
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 299 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-hiv-common.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 346 column 45
 ERROR: /github/workspace/output/Bundle-examplebundle.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1821,7 +2217,7 @@ ERROR: /github/workspace/output/StructureDefinition-pregnancy-status-mappings.ht
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 512 column 45
+/* ' at line 587 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-pregnancy-status.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1859,7 +2255,7 @@ ERROR: /github/workspace/output/artifacts.html: unable to parse character refere
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 744 column 45
+/* ' at line 828 column 45
 ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary-definitions.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1993,6 +2389,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-specimen.profile.history
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 333 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-viralload-chidinh.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 312 column 45
 ERROR: /github/workspace/output/ValueSet-vs-hiv-pregnancy-status.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2069,6 +2484,25 @@ ERROR: /github/workspace/output/ValueSet-VSSymptoms.xml.html: unable to parse ch
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 337 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-viralload-chidinh.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 364 column 45
 ERROR: /github/workspace/output/ValueSet-vs-hiv-occupations.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2296,7 +2730,7 @@ ERROR: /github/workspace/output/Observation-a-pregnancy-status.xml.html: unable 
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 321 column 45
+/* ' at line 370 column 45
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2373,6 +2807,25 @@ ERROR: /github/workspace/output/CodeSystem-cs-hiv-transmission-route.xml.html: u
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 350 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-arv-treatment-status.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 319 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-specimen.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2411,6 +2864,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-diagnosis-observation-ma
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 506 column 45
+ERROR: /github/workspace/output/ValueSet-vs-viralload-chidinh.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 334 column 45
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2449,6 +2921,25 @@ ERROR: /github/workspace/output/Bundle-examplebundle.xml.html: unable to parse c
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 323 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-viralload-group.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 355 column 45
 ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-place.profile.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2676,7 +3167,7 @@ ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.ttl
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2765 column 45
+/* ' at line 3979 column 45
 ERROR: /github/workspace/output/ValueSet-VSSymptoms.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2696,6 +3187,25 @@ ERROR: /github/workspace/output/ValueSet-VSSymptoms.ttl.html: unable to parse ch
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 352 column 45
+ERROR: /github/workspace/output/ValueSet-vs-arv-treatment-status.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 342 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-condition-definitions.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2772,6 +3282,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan.html: unabl
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 893 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-viralload-group.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 364 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-patient-communication-preferences.change.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2848,6 +3377,25 @@ ERROR: /github/workspace/output/ValueSet-vs-hiv-risk-behavior.json.html: unable 
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 342 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-viralload-group.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 312 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-occupation.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2943,6 +3491,25 @@ ERROR: /github/workspace/output/StructureDefinition-vs-vn-ethnicity.profile.hist
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 333 column 45
+ERROR: /github/workspace/output/ValueSet-vs-common-date.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 346 column 45
 ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2961,7 +3528,7 @@ ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.jso
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 3082 column 45
+/* ' at line 4501 column 45
 ERROR: /github/workspace/output/Observation-a-pregnancy-status.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2980,7 +3547,26 @@ ERROR: /github/workspace/output/Observation-a-pregnancy-status.ttl.html: unable 
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 337 column 45
+/* ' at line 384 column 45
+ERROR: /github/workspace/output/ValueSet-vs-arv-treatment-status.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 312 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-hiv-occupations.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3037,7 +3623,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.json.
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 3071 column 45
+/* ' at line 4057 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-hiv-population.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3075,7 +3661,7 @@ ERROR: /github/workspace/output/StructureDefinition-pregnancy-status-definitions
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 898 column 45
+/* ' at line 1217 column 45
 ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary.profile.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3152,6 +3738,25 @@ ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary.profile.
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 333 column 45
+ERROR: /github/workspace/output/ValueSet-vs-common-date.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 335 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-condition.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3266,6 +3871,25 @@ ERROR: /github/workspace/output/CodeSystem-cs-pregnancy-status.xml.html: unable 
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 367 column 45
+ERROR: /github/workspace/output/Observation-a-hiv-viral-load.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 357 column 45
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_HIVPregnancyOutcomeCodes.change.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3361,6 +3985,25 @@ ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.chan
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 312 column 45
+ERROR: /github/workspace/output/ValueSet-VSDateComponent.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 361 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result-mappings.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3494,6 +4137,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-patient-mappings.html: u
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 623 column 45
+ERROR: /github/workspace/output/ValueSet-vs-viralload-chidinh.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 360 column 45
 ERROR: /github/workspace/output/ValueSet-HIVRapidTestResults.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3550,7 +4212,7 @@ ERROR: /github/workspace/output/Observation-a-pregnancy-status.json.html: unable
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 324 column 45
+/* ' at line 382 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-hiv-risk-behavior.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3570,6 +4232,25 @@ ERROR: /github/workspace/output/CodeSystem-cs-hiv-risk-behavior.json.html: unabl
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 364 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-hiv-common.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 335 column 45
 ERROR: /github/workspace/output/ValueSet-vs-patient-communication-preferences.change.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3627,6 +4308,25 @@ ERROR: /github/workspace/output/actors.html: unable to parse character reference
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 281 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-viralload-chidinh.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 355 column 45
 ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary.profile.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3646,6 +4346,25 @@ ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary.profile.
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 1536 column 45
+ERROR: /github/workspace/output/ValueSet-VSDateComponent.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 360 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-hiv-transmission-route.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3702,7 +4421,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.html: unable 
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 933 column 45
+/* ' at line 1091 column 45
 ERROR: /github/workspace/output/references.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3722,6 +4441,25 @@ ERROR: /github/workspace/output/references.html: unable to parse character refer
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 275 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-viralload-group.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
 ERROR: /github/workspace/output/ValueSet-vs-hiv-risk-behavior.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3778,7 +4516,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load-definitions.h
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 890 column 45
+/* ' at line 1111 column 45
 ERROR: /github/workspace/output/ValueSet-vs-type-of-contact.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3855,6 +4593,44 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-patient-examples.html: u
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 365 column 45
+ERROR: /github/workspace/output/ValueSet-VSDateComponent.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 349 column 45
+ERROR: /github/workspace/output/ValueSet-vs-viralload-group.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 360 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-vn-ethnicity.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3988,6 +4764,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-specimen.profile.xml.htm
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 2405 column 45
+ERROR: /github/workspace/output/ValueSet-vs-common-date.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 312 column 45
 ERROR: /github/workspace/output/StructureDefinition-vs-vn-ethnicity-definitions.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4025,7 +4820,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load-examples.html
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 344 column 45
+/* ' at line 365 column 45
 ERROR: /github/workspace/output/Observation-a-pregnancy-status.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4121,6 +4916,25 @@ ERROR: /github/workspace/output/ValueSet-VSSymptoms.html: unable to parse charac
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 358 column 45
+ERROR: /github/workspace/output/Observation-a-hiv-viral-load.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 297 column 45
 ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4367,7 +5181,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load-mappings.html
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 502 column 45
+/* ' at line 562 column 45
 ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4424,7 +5238,7 @@ ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.html: unabl
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 945 column 45
+/* ' at line 1110 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-condition.profile.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4501,6 +5315,25 @@ ERROR: /github/workspace/output/CodeSystem-cs-hiv-risk-behavior.xml.html: unable
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 357 column 45
+ERROR: /github/workspace/output/Observation-a-hiv-viral-load.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 349 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor-examples.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4766,7 +5599,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.ttl.h
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2752 column 45
+/* ' at line 3594 column 45
 ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-place.profile.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4805,6 +5638,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation.profile.
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 2826 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-arv-treatment-status.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 351 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result.profile.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4843,6 +5695,25 @@ ERROR: /github/workspace/output/QuestionnaireResponse-exampleresponse.change.his
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 312 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-viralload-group.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 322 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor.profile.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4920,6 +5791,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-patient.profile.xml.html
             var parameterValue = '';
 /* ' at line 6297 column 45
 ERROR: /github/workspace/output/CodeSystem-type-of-contact.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 312 column 45
+ERROR: /github/workspace/output/CodeSystem-cs-arv-treatment-status.change.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
           var formVars = new Set();  
@@ -5089,7 +5979,26 @@ ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.xml
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2840 column 45
+/* ' at line 4145 column 45
+ERROR: /github/workspace/output/ValueSet-vs-common-date.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 359 column 45
 ERROR: /github/workspace/output/ValueSet-vs-patient-gender-identity.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -5109,6 +6018,25 @@ ERROR: /github/workspace/output/ValueSet-vs-patient-gender-identity.html: unable
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 358 column 45
+ERROR: /github/workspace/output/ValueSet-vs-arv-treatment-status.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 360 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan-definitions.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -5128,6 +6056,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan-definitions
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 959 column 45
+ERROR: /github/workspace/output/ValueSet-vs-viralload-group.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 342 column 45
 ERROR: /github/workspace/output/ValueSet-vs-hiv-occupations.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -5166,6 +6113,25 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan.profile.ttl
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 2928 column 45
+ERROR: /github/workspace/output/ValueSet-vs-common-date.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSewsnJZI7PA0pDCEtGLcdzpaydxTv64RGki8DYZvIig49OKEQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
 ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-place.profile.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -5325,12 +6291,22 @@ ERROR: Bundle/examplebundle: Bundle/examplebundle: Bundle.entry[0]: Bundle entry
 ERROR: Bundle/examplebundle: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Condition).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/examplebundle: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Condition): Validate resource against profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-condition - listed in meta
 ERROR: Bundle/examplebundle: Bundle/examplebundle: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-arv-treatment-status.json ==
+INFORMATION: CodeSystem/cs-arv-treatment-status: CodeSystem/cs-arv-treatment-status: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+WARNING: CodeSystem/cs-arv-treatment-status: CodeSystem/cs-arv-treatment-status: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+INFORMATION: CodeSystem/cs-arv-treatment-status: CodeSystem/cs-arv-treatment-status: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-arv-treatment-status: CodeSystem/cs-arv-treatment-status: CodeSystem.concept[1].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+INFORMATION: CodeSystem/cs-arv-treatment-status: CodeSystem/cs-arv-treatment-status: CodeSystem.concept[2].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-gender.json ==
 INFORMATION: CodeSystem/cs-gender: CodeSystem/cs-gender: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 INFORMATION: CodeSystem/cs-gender: CodeSystem/cs-gender: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-gender: CodeSystem/cs-gender: CodeSystem.concept[1].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-gender: CodeSystem/cs-gender: CodeSystem.concept[2].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-gender: CodeSystem/cs-gender: CodeSystem.concept[3].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-common.json ==
+INFORMATION: CodeSystem/cs-hiv-common: CodeSystem/cs-hiv-common: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+WARNING: CodeSystem/cs-hiv-common: CodeSystem/cs-hiv-common: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+INFORMATION: CodeSystem/cs-hiv-common: CodeSystem/cs-hiv-common: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations.json ==
 INFORMATION: CodeSystem/cs-hiv-occupations: CodeSystem/cs-hiv-occupations: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-population.json ==
@@ -5371,6 +6347,11 @@ INFORMATION: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: Cod
 INFORMATION: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: CodeSystem.concept[2].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: CodeSystem.concept[3].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-pregnancy-status: CodeSystem/cs-pregnancy-status: CodeSystem.concept[4].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-viralload-chidinh.json ==
+INFORMATION: CodeSystem/cs-viralload-chidinh: CodeSystem/cs-viralload-chidinh: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+WARNING: CodeSystem/cs-viralload-chidinh: CodeSystem/cs-viralload-chidinh: CodeSystem.concept[2].definition: value should not start or finish with whitespace
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-viralload-group.json ==
+INFORMATION: CodeSystem/cs-viralload-group: CodeSystem/cs-viralload-group: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-vn-ethnicity.json ==
 INFORMATION: CodeSystem/cs-vn-ethnicity: CodeSystem/cs-vn-ethnicity: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem/cs-vn-ethnicity: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
@@ -5433,11 +6414,12 @@ INFORMATION: CodeSystem/cs-vn-ethnicity: CodeSystem/cs-vn-ethnicity: CodeSystem.
 INFORMATION: CodeSystem/cs-vn-ethnicity: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[54].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 == /github/workspace/fsh-generated/resources/CodeSystem-type-of-contact.json ==
 INFORMATION: CodeSystem/type-of-contact: CodeSystem/type-of-contact: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/Observation-a-hiv-viral-load.json ==
+INFORMATION: Observation/a-hiv-viral-load: Observation/a-hiv-viral-load: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/a-hiv-viral-load: Observation/a-hiv-viral-load: Observation: Validate resource against profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-viral-load - listed in meta
 == /github/workspace/fsh-generated/resources/Observation-a-pregnancy-status.json ==
 INFORMATION: Observation/a-pregnancy-status: Observation/a-pregnancy-status: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-WARNING: Observation/a-pregnancy-status: Observation/a-pregnancy-status: Observation.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: Observation/a-pregnancy-status: Observation/a-pregnancy-status: Observation: Validate resource against profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/pregnancy-status - listed in meta
-ERROR: Observation/a-pregnancy-status: Observation/a-pregnancy-status: Observation.code: None of the codings provided are in the value set http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-pregnancy-status (http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-pregnancy-status), and a coding from this value set is required) (codes = null#unborn)
 == /github/workspace/fsh-generated/resources/Patient-test-hiv-patient.json ==
 INFORMATION: Patient/test-hiv-patient: Patient/test-hiv-patient: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
 WARNING: Patient/test-hiv-patient: Patient/test-hiv-patient: Patient.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -5550,7 +6532,6 @@ INFORMATION: StructureDefinition/hiv-specimen: StructureDefinition/hiv-specimen:
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-specimen'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load.json ==
 INFORMATION: StructureDefinition/hiv-viral-load: StructureDefinition/hiv-viral-load: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-viral-load'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status.json ==
 INFORMATION: StructureDefinition/pregnancy-status: StructureDefinition/pregnancy-status: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-vs-vn-ethnicity.json ==
@@ -5562,8 +6543,14 @@ ERROR: ValueSet/HIVPregnancyOutcomeCodes: ValueSet/HIVPregnancyOutcomeCodes: Val
 WARNING: ValueSet/HIVPregnancyOutcomeCodes: ValueSet/HIVPregnancyOutcomeCodes: ValueSet.compose[0].include[0]: No System specified, so Concepts and Filters can''t be checked
 == /github/workspace/fsh-generated/resources/ValueSet-HIVRapidTestResults.json ==
 INFORMATION: ValueSet/HIVRapidTestResults: ValueSet/HIVRapidTestResults: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-VSDateComponent.json ==
+INFORMATION: ValueSet/VSDateComponent: ValueSet/VSDateComponent: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-VSSymptoms.json ==
 INFORMATION: ValueSet/VSSymptoms: ValueSet/VSSymptoms: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-arv-treatment-status.json ==
+INFORMATION: ValueSet/vs-arv-treatment-status: ValueSet/vs-arv-treatment-status: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-common-date.json ==
+INFORMATION: ValueSet/vs-common-date: ValueSet/vs-common-date: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-occupations.json ==
 INFORMATION: ValueSet/vs-hiv-occupations: ValueSet/vs-hiv-occupations: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-population.json ==
@@ -5582,6 +6569,10 @@ INFORMATION: ValueSet/vs-patient-gender: ValueSet/vs-patient-gender: ValueSet: V
 INFORMATION: ValueSet/vs-patient-gender-identity: ValueSet/vs-patient-gender-identity: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-contact.json ==
 INFORMATION: ValueSet/vs-type-of-contact: ValueSet/vs-type-of-contact: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-viralload-chidinh.json ==
+INFORMATION: ValueSet/vs-viralload-chidinh: ValueSet/vs-viralload-chidinh: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-viralload-group.json ==
+INFORMATION: ValueSet/vs-viralload-group: ValueSet/vs-viralload-group: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-vn-ethnicity.json ==
 INFORMATION: ValueSet/vs-vn-ethnicity: ValueSet/vs-vn-ethnicity: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/input/openhie.vn.case-reporting.hiv.xml ==

@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam",
   "status": "draft",
   "experimental": false,
-  "date": "2021-05-11T22:16:57+00:00",
+  "date": "2021-05-12T07:09:35+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -403,6 +403,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-common"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -411,6 +422,32 @@
         },
         "name": "Ethnicity",
         "description": "Ethnicity."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-viralload-group"
+        },
+        "name": "Viral Load group",
+        "description": "Valueset - Viral Load group"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-viralload-chidinh"
+        },
+        "name": "Chi dinh",
+        "description": "CodeSystem - Chi dinh"
       },
       {
         "extension": [
@@ -511,6 +548,18 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/vs-common-date"
+        },
+        "description": "Define common event date"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/HIVPregnancyOutcomeCodes"
         }
       },
@@ -581,6 +630,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-arv-treatment-status"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -615,6 +675,32 @@
         },
         "name": "Occupations relevant for HIV",
         "description": "Valueset - Occupations relevant for HIV"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-viralload-chidinh"
+        },
+        "name": "Chi dinh",
+        "description": "Valueset - cs-viralload-chidinh"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-viralload-group"
+        },
+        "name": "Viral Load group",
+        "description": "Codesystem - Viral Load group"
       },
       {
         "extension": [
@@ -744,6 +830,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/VSDateComponent"
+        },
+        "name": "Date component of pregnancy",
+        "description": "Date component of pregnancy associated with HIV case"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
@@ -844,6 +943,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-arv-treatment-status"
+        },
+        "name": "Arv treatment Status",
+        "description": "Valueset - ARV treatment Status"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           }
         ],
@@ -865,6 +977,19 @@
         },
         "name": "CD4Observation",
         "description": "This profile allows the exchange of a patient's CD$ test and results"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/a-hiv-viral-load"
+        },
+        "name": "Example Observation - a-hiv-viral-load",
+        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-viral-load"
       },
       {
         "extension": [

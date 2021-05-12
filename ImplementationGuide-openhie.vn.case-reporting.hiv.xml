@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-05-11T22:16:57+00:00"/>
+  <date value="2021-05-12T07:09:35+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -260,6 +260,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-hiv-common"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -267,6 +275,26 @@
       </reference>
       <name value="Ethnicity"/>
       <description value="Ethnicity."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-viralload-group"/>
+      </reference>
+      <name value="Viral Load group"/>
+      <description value="Valueset - Viral Load group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-viralload-chidinh"/>
+      </reference>
+      <name value="Chi dinh"/>
+      <description value="CodeSystem - Chi dinh"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -343,6 +371,15 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/vs-common-date"/>
+      </reference>
+      <description value="Define common event date"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/HIVPregnancyOutcomeCodes"/>
       </reference>
     </resource>
@@ -396,6 +433,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-arv-treatment-status"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -423,6 +468,26 @@
       </reference>
       <name value="Occupations relevant for HIV"/>
       <description value="Valueset - Occupations relevant for HIV"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-viralload-chidinh"/>
+      </reference>
+      <name value="Chi dinh"/>
+      <description value="Valueset - cs-viralload-chidinh"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-viralload-group"/>
+      </reference>
+      <name value="Viral Load group"/>
+      <description value="Codesystem - Viral Load group"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -520,6 +585,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSDateComponent"/>
+      </reference>
+      <name value="Date component of pregnancy"/>
+      <description value="Date component of pregnancy associated with HIV case"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -596,6 +671,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-arv-treatment-status"/>
+      </reference>
+      <name value="Arv treatment Status"/>
+      <description value="Valueset - ARV treatment Status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -613,6 +698,16 @@
       </reference>
       <name value="CD4Observation"/>
       <description value="This profile allows the exchange of a patient&#39;s CD$ test and results"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/a-hiv-viral-load"/>
+      </reference>
+      <name value="Example Observation - a-hiv-viral-load"/>
+      <exampleCanonical value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-viral-load"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

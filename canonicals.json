@@ -14,11 +14,25 @@
     "name": "CSVImportQuestionnaire"
   },
   {
+    "id": "cs-arv-treatment-status",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status",
+    "version": "0.1.0-test",
+    "name": "ARV Treatment Status"
+  },
+  {
     "id": "cs-gender",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-gender",
     "version": "0.1.0-test",
     "name": "Gender"
+  },
+  {
+    "id": "cs-hiv-common",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-common",
+    "version": "0.1.0-test",
+    "name": "Common code for CS HIV"
   },
   {
     "id": "cs-hiv-occupations",
@@ -82,6 +96,20 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-status",
     "version": "0.1.0-test",
     "name": "HIV Pregnancy Status"
+  },
+  {
+    "id": "cs-viralload-chidinh",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-chidinh",
+    "version": "0.1.0-test",
+    "name": "CSChiDinh"
+  },
+  {
+    "id": "cs-viralload-group",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-group",
+    "version": "0.1.0-test",
+    "name": "CSViralLoadGroup"
   },
   {
     "id": "cs-vn-ethnicity",
@@ -210,11 +238,32 @@
     "name": "HIVRapidTestResults"
   },
   {
+    "id": "VSDateComponent",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/VSDateComponent",
+    "version": "0.1.0-test",
+    "name": "VSDateComponent"
+  },
+  {
     "id": "VSSymptoms",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/VSSymptoms",
     "version": "0.1.0-test",
     "name": "VSSymptoms"
+  },
+  {
+    "id": "vs-arv-treatment-status",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-arv-treatment-status",
+    "version": "0.1.0-test",
+    "name": "ARVTreatmentStatus"
+  },
+  {
+    "id": "vs-common-date",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-common-date",
+    "version": "0.1.0-test",
+    "name": "VSCommonDate"
   },
   {
     "id": "vs-hiv-occupations",
@@ -278,6 +327,20 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-type-of-contact",
     "version": "0.1.0-test",
     "name": "TypeOfContact"
+  },
+  {
+    "id": "vs-viralload-chidinh",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-viralload-chidinh",
+    "version": "0.1.0-test",
+    "name": "VSChiDinh"
+  },
+  {
+    "id": "vs-viralload-group",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-viralload-group",
+    "version": "0.1.0-test",
+    "name": "VSViralLoadGroup"
   },
   {
     "id": "vs-vn-ethnicity",

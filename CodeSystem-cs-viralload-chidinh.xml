@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-viralload-chidinh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-chidinh defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="cs-viralload-chidinh-1"> </a></td><td>tại thời điểm 6 tháng sau ARV</td><td>At 6 months after ARV</td></tr><tr><td style="white-space:nowrap">2<a name="cs-viralload-chidinh-2"> </a></td><td>tại thời điểm 12 tháng sau ARV</td><td>At 12 months months after ARV</td></tr><tr><td style="white-space:nowrap">3<a name="cs-viralload-chidinh-3"> </a></td><td>định kỳ 12 tháng</td><td>Every 12 </td></tr><tr><td style="white-space:nowrap">4<a name="cs-viralload-chidinh-4"> </a></td><td>nghi ngờ thất bại điều trị</td><td>Suspect treatment failure</td></tr><tr><td style="white-space:nowrap">5<a name="cs-viralload-chidinh-5"> </a></td><td>phụ nữ mang thai/cho con bú</td><td>pregnant / lactating women</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-chidinh"/>
+  <version value="0.1.0-test"/>
+  <name value="CSChiDinh"/>
+  <title value="Chi dinh"/>
+  <status value="active"/>
+  <date value="2021-05-12T07:09:35+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - Chi dinh"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="1"/>
+    <display value="t&#x1EA1;i th&#x1EDD;i &#x111;i&#x1EC3;m 6 th&#xE1;ng sau ARV"/>
+    <definition value="At 6 months after ARV"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="t&#x1EA1;i th&#x1EDD;i &#x111;i&#x1EC3;m 12 th&#xE1;ng sau ARV"/>
+    <definition value="At 12 months months after ARV"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="&#x111;&#x1ECB;nh k&#x1EF3; 12 th&#xE1;ng"/>
+    <definition value="Every 12 "/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="nghi ng&#x1EDD; th&#x1EA5;t b&#x1EA1;i &#x111;i&#x1EC1;u tr&#x1ECB;"/>
+    <definition value="Suspect treatment failure"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="ph&#x1EE5; n&#x1EEF; mang thai/cho con b&#xFA;"/>
+    <definition value="pregnant / lactating women"/>
+  </concept>
+</CodeSystem>

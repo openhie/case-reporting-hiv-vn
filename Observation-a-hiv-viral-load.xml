@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="a-hiv-viral-load"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-viral-load"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-chidinh 1}">tại thời điểm 6 tháng sau ARV</span></p><p><b>subject</b>: <a href="Patient-test-hiv-patient.html">Generated Summary: id: ARV001, id: P000001, id: 0111111, id: 00123456876; John Johnson; birthDate: 1970-01-01</a></p><p><b>issued</b>: Apr 5, 2013, 8:30:10 AM</p><p><b>value</b>: 10</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 399445004}">Specimen collection date (observable entity)</span></p><p><b>value</b>: Feb 5, 2013, 8:30:10 AM</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-group 1}">0-200</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-chidinh"/>
+      <code value="1"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/test-hiv-patient"/>
+  </subject>
+  <issued value="2013-04-05T15:30:10+07:00"/>
+  <valueInteger value="10"/>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="399445004"/>
+      </coding>
+    </code>
+    <valueDateTime value="2013-02-05T15:30:10+07:00"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-group"/>
+        <code value="1"/>
+      </coding>
+    </code>
+  </component>
+</Observation>
