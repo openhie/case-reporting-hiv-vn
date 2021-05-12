@@ -156,7 +156,7 @@ Usage: #definition
 //* item[=].item[=].item[=].item[=].answerValueSet    = Canonical($vs-iso3166-1-2)
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "theCCCD"
-* item[=].item[=].item[=].item[=].item[=].text   = "Health insurance code"
+* item[=].item[=].item[=].item[=].item[=].text   = "Vietnam National ID"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "7.1"
 
@@ -199,7 +199,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].text   = "Occupation"
 * item[=].item[=].item[=].item[=].type   = #choice
 //* item[=].item[=].item[=].item[=].prefix   = "9"
-* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-occupations)
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-occupation)
 
 * item[=].item[+].linkId = "risk_factors"
 * item[=].item[=].text   = "Risk Factors"
@@ -447,20 +447,32 @@ Usage: #definition
 * item[=].item[=].item[=].type   = #group
 //* item[=].item[=].item[=].prefix   = "17.7"
 
+* item[=].item[=].item[=].item[+].linkId = "regimen.name"
+* item[=].item[=].item[=].item[=].text   = "Tên phác đồ điều trị"
+* item[=].item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-regimen)
+//* item[=].item[=].item[=].item[=].prefix   = "18.1"
+
+* item[=].item[=].item[=].item[+].linkId = "regimen.level"
+* item[=].item[=].item[=].item[=].text   = "Bậc phác đồ"
+* item[=].item[=].item[=].item[=].type   = #choice
+//* item[=].item[=].item[=].item[=].prefix   = "18.2"
+* item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-regimenlevel)
+
 * item[=].item[=].item[=].item[+].linkId = "regimen.date1stLineStarted"
 * item[=].item[=].item[=].item[=].text   = "Date 1st ARV regimen started"
 * item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "18.1"
+//* item[=].item[=].item[=].item[=].prefix   = "18.3"
 
 * item[=].item[=].item[=].item[+].linkId = "arvTreatment.date2ndLineStarted"
 * item[=].item[=].item[=].item[=].text   = "Date 3rd ARV regimen started"
 * item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "18.2"
+//* item[=].item[=].item[=].item[=].prefix   = "18.4"
 
 * item[=].item[=].item[=].item[+].linkId = "arvTreatment.date3rdLineStarted"
 * item[=].item[=].item[=].item[=].text   = "Date 3rd ARV regimen started"
 * item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "18.3"
+//* item[=].item[=].item[=].item[=].prefix   = "18.5"
 
 
 * item[=].item[+].linkId = "comorbidities"

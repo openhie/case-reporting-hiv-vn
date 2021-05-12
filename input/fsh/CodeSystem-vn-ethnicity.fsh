@@ -10,11 +10,11 @@ Description:  "CodeSystem - Vietnam 54 ethic groups"
 * insert Code(kinh, Kinh, Kinh)
 * insert Code(tay, Tày, Tày)
 * insert Code(thai, Thái, Thái)
-* insert Code(hoa, Hoa, )
+* insert Code(hoa, Hoa,Hoa )
 * insert Code(khome, Khơ-me,Khơ-me)
 * insert Code(muong, Mường,Mường)
 * insert Code(nung, Nùng,Nùng)
-* insert Code(hmong, Hông,Hông)
+* insert Code(hmong, Hmông,Hmông)
 * insert Code(dao, Dao,Dao)
 * insert Code(giarai, Gia Rai,Gia Rai)
 * insert Code(ngai, Ngái,Ngái)
@@ -31,7 +31,7 @@ Description:  "CodeSystem - Vietnam 54 ethic groups"
 * insert Code(xtieng, Xtiêng,Xtiêng)
 * insert Code(vankieu, Bru-Vân Kiều,Bru-Vân Kiều)
 * insert Code(tho, Thổ,Thổ)
-* insert Code(giay, Giáy,)
+* insert Code(giay, Giáy,Giáy)
 * insert Code(cotu, Cơ-tu,Cơ-tu)
 * insert Code(gietrieng, Gié-Triêng,Gié-Triêng)
 * insert Code(ma, Mạ,Mạ)
@@ -63,7 +63,7 @@ Description:  "CodeSystem - Vietnam 54 ethic groups"
 * insert Code(romam, Rơ-măm,Rơ-măm)
 * insert Code(unk, Không rõ,Không rõ)
 
-CodeSystem:  VietnamEthnicity
+CodeSystem:  CSVietnamEthnicity
 Id: cs-vn-ethnicity
 Title: "Vietnam Ethnicity"
 Description:  "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recognized by the Vietnamese government"
@@ -76,7 +76,7 @@ Description:  "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recog
 * #khome "Khơ-me"
 * #muong "Mường"
 * #nung "Nùng"
-* #hmong " Hông"
+* #hmong " Hmông"
 * #dao "Dao"
 * #giarai "Gia Rai"
 * #ngai "Ngái"
@@ -125,8 +125,8 @@ Description:  "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recog
 * #romam "Rơ-măm"
 * #unk "Không rõ"
 
-ValueSet: VietnamEthnicity
+ValueSet: VSVietnamEthnicity
 Id: vs-vn-ethnicity
 Title: "Vietnam Ethnicity"
 Description:  "Valueset - Vietnam Ethnicity"
-* include codes from system VietnamEthnicity
+* include codes from system CSVietnamEthnicity

@@ -61,22 +61,22 @@ Description:    """
    Temporary 0..1 and 
    Permanent 0..1
 
-* address[Temporary].use = #temp (exactly)
-* address[Permanent].use = #home (exactly)
+///* address[Temporary].use = #temp (exactly)
+//* address[Permanent].use = #home (exactly)
 
 Extension: Ethnicity
 Id: vs-vn-ethnicity
 Title: "Ethnicity"
 Description: "Ethnicity."
 * value[x] only CodeableConcept
-* valueCodeableConcept from VietnamEthnicity (extensible)
+* valueCodeableConcept from VSVietnamEthnicity (extensible)
 
 Extension:  SpecimenCollectionPlace
 Id: ext-specimen-collection-place
 Title: "Specimen Collection Place"
 Description: "Specimen Collection Place."
 * value[x] only CodeableConcept or Reference
-* valueCodeableConcept from VietnamEthnicity (extensible)
+* valueCodeableConcept from VSVietnamEthnicity (extensible)
 
 Profile:        HIVRiskFactor
 Parent:         Condition
