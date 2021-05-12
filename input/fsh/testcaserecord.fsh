@@ -15,7 +15,7 @@ InstanceOf: HIVPatient
 
 * address[Temporary].line = "31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000"
 * address[Permanent].line = "3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward"
-* extension[Ethnicity].valueCodeableConcept = #kinh
+* extension[VietnamEthnicity].valueCodeableConcept = #kinh
 * birthDate = "1970"
 
 Instance: test-hiv-condition
