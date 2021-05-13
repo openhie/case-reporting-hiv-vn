@@ -221,7 +221,7 @@ Description: "CodeSystem - Population groups - Subjects to be tested for HIV"
 * #9 "Others" "Others" 
 
 
-ValueSet: HIVPopulation
+ValueSet: VSHIVPopulation
 Id: vs-hiv-population
 Title: "Occupations relevant for HIV"
 Description:  "Valueset - Occupations relevant for HIV"
@@ -240,7 +240,7 @@ Description: "CodeSystem - Behavior associated with risk of HIV transmission"
 * #4 "Multiple Sex Partners" "Multiple Sex Partners (NOT for money or drugs)"
 * #5 "Others" "Other risks to oneself" 
 
-ValueSet: HIVRiskBehavior
+ValueSet: VSHIVRiskBehavior
 Id: vs-hiv-risk-behavior
 Title: "Risk Behavior"
 Description: "ValueSet - Behavior associated with risk of HIV transmission"
@@ -259,7 +259,7 @@ Description: "CodeSystem - Route of HIV transmission"
 * #4 "Unidentified" "Unidentified"
 
 
-ValueSet: HIVTransmissionRoute
+ValueSet: VSHIVTransmissionRoute
 Id: vs-hiv-transmission-route
 Title: "HIV Transmission Route"
 Description:  "Valueset - Route of HIV transmission"
