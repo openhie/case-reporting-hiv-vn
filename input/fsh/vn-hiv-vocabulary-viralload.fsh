@@ -20,10 +20,8 @@ Id: cs-viralload-group
 Title: "Viral Load group"
 Description: "Codesystem - Viral Load group"
 * #1 "0-200" "From 0 to 200"
-* #2 "20-350" "From 200 to 350"
-* #3 "350-500" "From 350 to 500"
-* #4 "500-1000" "From 500 to 1000"
-* #5 "1000-" "Large than 100"
+* #2 "200-1000" "From 200 to 1000"
+* #3 "1000-" "Large than 100"
 
 ValueSet: VSViralLoadGroup
 Id: vs-viralload-group
