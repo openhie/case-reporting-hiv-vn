@@ -20,14 +20,14 @@ Description: "CodeSystem - Pregnancy Status"
 
 
 ValueSet: VSRecencyRITAResult
-Id: cs-recency-rita
+Id: vs-recency-rita
 Title: "Recency RITA result"
 Description:  "Valueset - Recency RITA result"
 * CSRecencyResult#newInfection
 * CSRecencyResult#infection
 
 ValueSet: VSRecencyRTRIResult
-Id: cs-recency-rtri
+Id: vs-recency-rtri
 Title: "Recency RITA result"
 Description:  "Valueset - Recency RITI result"
 * include codes from system CSRecencyResult
