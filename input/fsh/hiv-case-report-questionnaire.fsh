@@ -11,7 +11,15 @@ Usage: #inline
 * name = "Gender"
 * status = #draft
 */
-
+/*
+Instance: VietnamEthnicity
+InstanceOf: ValueSet
+Description: "Vietnam Ethnicity codes"
+Title: "Vietnam Ethnicity"
+Usage: #inline
+* name = "VietnamEthnicity"
+* status = #draft
+*/
 
 
 Instance: HIVPregnancyOutcomeCodes
@@ -137,8 +145,8 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].prefix = "3"
 
-* item[=].item[=].item[=].item[+].linkId = "ethnicity"
-* item[=].item[=].item[=].item[=].text   = "Ethnicity"
+* item[=].item[=].item[=].item[+].linkId = "ethnic"
+* item[=].item[=].item[=].item[=].text   = "Vietnam Ethnicity"
 * item[=].item[=].item[=].item[=].type   = #choice
 //* item[=].item[=].item[=].item[=].prefix = "4"
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-ethnicity)
@@ -287,7 +295,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.testResult"
 * item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "HIVRecencyTestResults"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
 
 //* item[=].item[=].item[=].item[=].prefix   = "12.1.4"
 
@@ -305,7 +313,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "recency.testResult"
 * item[=].item[=].item[=].item[=].text   = "VL recent infection conclusion"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "HIVRecencyTestResults"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
 //* item[=].item[=].item[=].item[=].prefix   = "12.2.2"
 
 
@@ -456,20 +464,33 @@ Usage: #definition
 * item[=].item[=].item[=].type   = #group
 //* item[=].item[=].item[=].prefix   = "17.7"
 
+* item[=].item[=].item[=].item[+].linkId = "regimen.name"
+* item[=].item[=].item[=].item[=].text   = "ARV regimen Name"
+* item[=].item[=].item[=].item[=].type   = #choice
+//* item[=].item[=].item[=].item[=].prefix   = "18.1"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-regimen)
+
+* item[=].item[=].item[=].item[+].linkId = "regimen.level"
+* item[=].item[=].item[=].item[=].text   = "ARV regimen Level"
+* item[=].item[=].item[=].item[=].type   = #choice
+//* item[=].item[=].item[=].item[=].prefix   = "18.2"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-regimenlevel)
+
 * item[=].item[=].item[=].item[+].linkId = "regimen.date1stLineStarted"
 * item[=].item[=].item[=].item[=].text   = "Date 1st ARV regimen started"
 * item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "18.1"
+//* item[=].item[=].item[=].item[=].prefix   = "18.3"
+
 
 * item[=].item[=].item[=].item[+].linkId = "arvTreatment.date2ndLineStarted"
 * item[=].item[=].item[=].item[=].text   = "Date 3rd ARV regimen started"
 * item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "18.2"
+//* item[=].item[=].item[=].item[=].prefix   = "18.4"
 
 * item[=].item[=].item[=].item[+].linkId = "arvTreatment.date3rdLineStarted"
 * item[=].item[=].item[=].item[=].text   = "Date 3rd ARV regimen started"
 * item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "18.3"
+//* item[=].item[=].item[=].item[=].prefix   = "18.5"
 
 
 * item[=].item[+].linkId = "comorbidities"

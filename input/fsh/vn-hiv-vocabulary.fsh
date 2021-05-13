@@ -46,32 +46,6 @@ Usage: #inline
 
 // Add content from here on
 
-Instance: cs-occupation
-InstanceOf: CodeSystem
-Title: "Occupation"
-Usage: #example
-Description:  "CodeSystem - occupations"
-* name = "Occupations"
-* status = #draft
-* content = #complete
-* insert Code(10,Service workers exploited for sex work,Nhân viên cơ sở kinh doanh dịch vụ dễ bị lợi dụng để hoạt động mại dâm)
-* insert Code(4,Drivers,Lái xe)
-* insert Code(14,Fishermen,Ngư dân)
-* insert Code(13,Agricultural workers,Người làm nông nghiệp)
-* insert Code(6,Intellectual,Trí thức)
-* insert Code(2,Workers,Công nhân)
-* insert Code(3,Officers and soldiers,Cán bộ\, chiến sỹ thuộc lực lượng vũ trang nhân dân)
-* insert Code(5,Public servants or workers with labor contracts,Công chức\, viên chức\, người lao động có hợp đồng lao động theo quy định của pháp luật)
-* insert Code(9,Other occupation,Nghề khác)
-* insert Code(7,Students,Học sinh\, sinh viên)
-* insert Code(12,Children,Trẻ em)
-* insert Code(11,Children under 5,Trẻ em dưới 5 tuổi)
-* insert Code(16,Workers without labor contract,Lao động tự do)
-* insert Code(8,Out of work,Thất nghiệp)
-* insert Code(15,Prisoners,Phạm nhân)
-* insert Code(17,Free,Tự do)
-
-
 Instance: cs-gender
 InstanceOf: CodeSystem
 Title: "Gender"
@@ -168,77 +142,55 @@ Description:  "Type of contact or relationship"
 
 
 ValueSet: HIVRapidTestResults
+Id: vs-hiv-rapidtestresults
 Title: "HIVRapidTestResults"
 Description: "HIV rapid test result codes"
 * ^status = #draft
-* $LOINC#LA11882-0 "Detected"
-* $LOINC#LA11883-8 "Not detected"
-* $LOINC#LA11885-3 "Equivocal"
-* $LOINC#LA9663-1 "Inconclusive"
+
+* $LOINC#LA15255-5 "Có phản ứng"
+* $LOINC#LA15256-3 "Khong phản ứng"
+* $LOINC#LA11884-6 "Chưa xác định"
+* $LOINC#LA15841-2 "Không hợp lệ"
 
 // *************
 
-
-CodeSystem:  CSHIVOccupations
-Id: cs-hiv-occupations
-Title: "Occupations relevant for HIV"
-Description: "CodeSystem Occupations for HIV"
-* #1 "Sex workers" "Employees of facilities providing services that are vulnerable to be abused to engage in prostitution"
-* #2 "Drivers" "Drivers"
-* #3 "Fishermen" "Fishermen"
-* #4 "Agricultural workers" "Agricultural workers"
-* #5 "Workers" "Workers"
-* #6 "Officers and soldiers" "Officers and soldiers"
-* #7 "Public servants or workers with labor contracts" "Public servants, officers, or workers with labor contracts under labor laws"
-* #8 "Students" "Pupils, students"
-* #9 "Children" "Children"
-* #10 "Workers without labor contract" "Workers without labor contract"
-* #11 "Out of work" "Out of work"
-* #12 "Prisoners" "Prisoners"
-
-
-ValueSet: HIVOccupations
-Id: vs-hiv-occupations
-Title: "Occupations relevant for HIV"
-Description:  "Valueset - Occupations relevant for HIV"
-* include codes from system CSHIVOccupations 
-
-// *************
-
-
-CodeSystem:  CSHIVPopulation
+CodeSystem:  CSHIVRiskPopulation
 Id: cs-hiv-population
 Title: "Population groups"
 Description: "CodeSystem - Population groups - Subjects to be tested for HIV"
-* #1 "Injection drug users" "Injecting drug users" 
-* #2 "FSW" "Female sex workers" 
-* #3 "Pregnant women" "Pregnant women" 
-* #4 "Blood donors" "Blood donors" 
-* #5 "TB patients" "TB patients" 
-* #6 "People with STDs" "People with sexually transmitted diseases" 
-* #7 "Young recruits" "Young recruits for military service" 
-* #8 "MSM" "Men who have sex with men" 
-* #9 "Others" "Others" 
+
+* #1 "Người tiêm chích ma túy" "Injecting drug users"
+* #2 "Nữ bán dâm" "Female sex workers"
+* #3 "Mang thai" "Pregnant women"
+* #4 "Người hiến máu tình nguyện" "Blood donors"
+* #5 "Bệnh nhân lao" "TB patients"
+* #6 "Người mắc nhiễm trùng lây qua đường tình dục" "People with sexually transmitted diseases"
+* #7 "Thanh niên khám tuyển nghĩa vụ quân sự" "Young recruits for military service"
+* #8 "Quan hệ tình dục đồng giới nam" "Men who have sex with men"
+* #9 "Không rõ" "Unidentified"
 
 
-ValueSet: VSHIVPopulation
+ValueSet: VSHIVRiskPopulation
 Id: vs-hiv-population
-Title: "Occupations relevant for HIV"
-Description:  "Valueset - Occupations relevant for HIV"
-* include codes from system CSHIVPopulation
+Title: "Risk Population relevant for HIV"
+Description:  "Valueset - Risk population relevant for HIV"
+* include codes from system CSHIVRiskPopulation
 
 // *************
-
 
 CodeSystem:  CSHIVRiskBehavior
 Id: cs-hiv-risk-behavior
 Title: "Risk Behavior"
 Description: "CodeSystem - Behavior associated with risk of HIV transmission"
-* #1 "Drug injection" "Drug injection"
-* #2 "Sex workers" "Sexual relationship with sex workers or with sex buyers/clients (for money or drug)"
-* #3 "MSM" "Men who have sex with men" 
-* #4 "Multiple Sex Partners" "Multiple Sex Partners (NOT for money or drugs)"
-* #5 "Others" "Other risks to oneself" 
+* #1 "Tiêm chích ma túy" "Drug injection"
+* #2 "Quan hệ tình dục với người bán dâm hoặc mua dâm " "Sexual relationship with sex workers or with sex buyers/clients (for money or drug)"
+* #3 "Quan hệ tình dục đồng giới nam" "Men who have sex with men"
+* #4 "Quan hệ với vợ/chồng/bạn tình là người nhiễm HIV" "Having sex with spouse/partners who are HIV infected"
+* #5 "Quan hệ tình dục với nhiều người (không vì tiền hay ma túy)" "Having sex with multiple partners (not for money or drug)"
+* #6 "Lây nhiễm từ mẹ sang con" "Mother to child transmission"
+* #7 "Nguy cơ khác của bản thân" "Other risk behaviors"
+* #8 "Không rõ" "Unidentified"
+
 
 ValueSet: VSHIVRiskBehavior
 Id: vs-hiv-risk-behavior
@@ -253,11 +205,16 @@ CodeSystem:  CSHIVTransmissionRoute
 Id: cs-hiv-transmission-route
 Title: "HIV Transmission Route"
 Description: "CodeSystem - Route of HIV transmission"
-* #1 "Blood born" "Blood born"
-* #2 "Sexual Relationship" "Sexual Relationship"
-* #3 "Mother to child" "Mother to child"
-* #4 "Unidentified" "Unidentified"
 
+* #312425004 "Lây qua đường máu" "Blood"
+* #226034001 "Lây qua đường tiêm chích ma túy" "Drug injection"
+* #250373003 "Truyền máu" "Blood transfusion finding"
+* #53348004 "Tai nạn nghề nghiệp" "Accidental "
+* #417564009 "Lây qua đường tình dục" "Sexual Transmission"
+* #38628009 "Tình dục đồng giới" "Homosexual (finding)"
+* #20430005 "Tình dục khác giới" "Heterosexual (finding)"
+* #438998000 "Mẹ truyền sang con" "Mother to Child Transmission"
+* #69910005 "Không rõ" "Unidentified"
 
 ValueSet: VSHIVTransmissionRoute
 Id: vs-hiv-transmission-route
