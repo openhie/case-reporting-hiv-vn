@@ -20,3 +20,12 @@ ValueSet: VSCommonDate
 Id: vs-common-date
 Description: "Define common event date"
 * SCT#399445004
+
+ValueSet: VSDiagnosisResults
+Title: "Diagnosis Results"
+Description: "Diagnosis Results codes"
+* ^status = #draft
+* SCT#165816005 "HIV Positive"
+* SCT#165815009 "HIV Negative"
+* SCT#10828004 "Positive"
+* SCT#260385009 "Negative"

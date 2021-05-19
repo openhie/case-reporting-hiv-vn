@@ -158,6 +158,7 @@ CodeSystem:  CSHIVRiskPopulation
 Id: cs-hiv-population
 Title: "Population groups"
 Description: "CodeSystem - Population groups - Subjects to be tested for HIV"
+
 * #1 "Người tiêm chích ma túy" "Injecting drug users"
 * #2 "Nữ bán dâm" "Female sex workers"
 * #3 "Mang thai" "Pregnant women"
@@ -169,7 +170,7 @@ Description: "CodeSystem - Population groups - Subjects to be tested for HIV"
 * #9 "Không rõ" "Unidentified"
 
 
-ValueSet: HIVRiskPopulation
+ValueSet: VSHIVRiskPopulation
 Id: vs-hiv-population
 Title: "Risk Population relevant for HIV"
 Description:  "Valueset - Risk population relevant for HIV"
@@ -191,7 +192,7 @@ Description: "CodeSystem - Behavior associated with risk of HIV transmission"
 * #8 "Không rõ" "Unidentified"
 
 
-ValueSet: HIVRiskBehavior
+ValueSet: VSHIVRiskBehavior
 Id: vs-hiv-risk-behavior
 Title: "Risk Behavior"
 Description: "ValueSet - Behavior associated with risk of HIV transmission"
@@ -205,7 +206,7 @@ Id: cs-hiv-transmission-route
 Title: "HIV Transmission Route"
 Description: "CodeSystem - Route of HIV transmission"
 
-* #312425004 "Lây qua đường máu"
+* #312425004 "Lây qua đường máu" "Blood"
 * #226034001 "Lây qua đường tiêm chích ma túy" "Drug injection"
 * #250373003 "Truyền máu" "Blood transfusion finding"
 * #53348004 "Tai nạn nghề nghiệp" "Accidental "
@@ -215,7 +216,7 @@ Description: "CodeSystem - Route of HIV transmission"
 * #438998000 "Mẹ truyền sang con" "Mother to Child Transmission"
 * #69910005 "Không rõ" "Unidentified"
 
-ValueSet: HIVTransmissionRoute
+ValueSet: VSHIVTransmissionRoute
 Id: vs-hiv-transmission-route
 Title: "HIV Transmission Route"
 Description:  "Valueset - Route of HIV transmission"

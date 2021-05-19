@@ -113,8 +113,7 @@ Id:             hiv-risk-factor
 Title:          "HIV Risk Behavior"
 Description:    """ 
     This profile allows the exchange of patient's risk behaviors"""
-
-
+* category from VSHIVRiskBehavior
 
 
 Profile:        HIVSpecimen
@@ -127,53 +126,12 @@ Description:    "The specimen used for the result"
 * collection.collectedDateTime MS
 
 
-
-
 Profile:        HIVCondition
 Parent:         Condition
 Id:             hiv-condition
 Title:          "HIV Condition"
 Description:    """ 
     This profile allows the exchange of a patient's hiv diagnosis"""
-
-
-
-Profile:        HIVDiagnosisObservation
-Parent:         Observation
-Id:             hiv-diagnosis-observation
-Title:          "HIV Recency result"
-Description:    """ 
-    This profile allows the exchange of a patient's hiv recency test"""
-* code from HIVRapidTestResults
-* specimen MS
-//date of specimencollection
-//place of specimencollection
-* effectiveDateTime MS
-//result valueCodeableConcept? - valueBoolean?
-//* contained[0] only HIVSpecimen
-
-
-Profile:        HIVRecencyResult
-Parent:         Observation
-Id:             hiv-recency-result
-Title:          "HIV Recency result"
-Description:    """ 
-    This profile allows the exchange of a patient's hiv recency test"""
-* code from HIVRapidTestResults
-* specimen MS
-//date of specimencollection
-//place of specimencollection
-* effectiveDateTime MS
-//result valueCodeableConcept? - valueBoolean?
-//* contained[0] only HIVSpecimen
-
-
-Profile:        CD4Observation
-Parent:         Observation
-Id:             hiv-cd4-observation
-Title:          "CD4Observation"
-Description:    """ 
-    This profile allows the exchange of a patient's CD$ test and results"""
 
 
 Profile:        ARVCarePlan
@@ -192,5 +150,18 @@ Description:    "ART therapy summary."
 //* code from HIVRecencyResults
 
 
+Profile:        HIVKeyPopulation
+Parent:         Condition
+Id:             hiv-key-population
+Title:          "HIV key population"
+Description:    """
+    This profile allows the patient's key population"""
+* category from VSHIVRiskPopulation
 
-
+Profile:        HIVTransmissionRoute
+Parent:         Condition
+Id:             hiv-transmission-route
+Title:          "HIV Transmission route"
+Description:    """
+    This profile allows the patient's transmission route"""
+* category from VSHIVTransmissionRoute
