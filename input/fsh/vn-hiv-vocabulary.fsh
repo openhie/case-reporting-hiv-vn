@@ -23,6 +23,23 @@ RuleSet: VSCodeDef(system,code,display,vn)
 * compose.include[=].concept[=].designation[=].value = "{vn}"
 
 
+Instance: NationalPatientIdentifier9Digit
+InstanceOf: NamingSystem
+// * url = 
+* status = #active
+* kind = #identifier
+* name = "NationalPatientIdentifier9Digit"
+* date = "2021-01-01"
+* type = http://terminology.hl7.org/CodeSystem/v2-0203#NI
+* jurisdiction = urn:iso:std:iso:3166#VN
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "https://basespecs.vn/NamingSystem/NationalID9"
+* uniqueId[=].preferred = true
+
+
+
+
+
 
 Instance: PregnancyOutcomeCodes
 InstanceOf: ValueSet
