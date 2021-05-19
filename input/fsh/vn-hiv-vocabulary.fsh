@@ -15,6 +15,14 @@ RuleSet: CodeDef(code,display,definition,vn)
 * concept[=].designation[=].value = "{vn}"
 
 
+RuleSet: VSCodeDef(system,code,display,vn)
+* compose.include[+].system = {system} 
+* compose.include[=].concept[+].code = #{code}
+* compose.include[=].concept[=].display = "{display}"
+* compose.include[=].concept[=].designation[+].language = #vi-VN
+* compose.include[=].concept[=].designation[=].value = "{vn}"
+
+
 
 Instance: PregnancyOutcomeCodes
 InstanceOf: ValueSet
