@@ -215,7 +215,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].text   = "Occupation"
 * item[=].item[=].item[=].item[=].type   = #choice
 //* item[=].item[=].item[=].item[=].prefix   = "9"
-* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-occupations)
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-occupation)
 
 * item[=].item[+].linkId = "risk_factors"
 * item[=].item[=].text   = "Risk Factors"

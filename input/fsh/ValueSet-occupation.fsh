@@ -2,14 +2,14 @@ Alias: SCT = http://snomed.info/sct
 
 
 
-Instance: HIVOccupations2
+Instance: vs-hiv-occupation
 InstanceOf: ValueSet
 Description: "Occupation Value Set"
 Title: "Occupation Value Set"
 Usage: #example
-* name = "HIVOccupationCodes2"
+* name = "HIVOccupationCodes"
 * status = #draft
-
+* url = "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-occupation"
 * compose.include[+].system = SCT 
 * compose.include[=].concept[+].code = SCT#106538001
 * compose.include[=].concept[=].designation[+].language = #vi-VN
