@@ -81,18 +81,6 @@
     }
   ],
   "profiles": {
-    "MedicationStatement": [
-      {
-        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/arv-therapy-summary",
-        "title": "ART therapy summary"
-      }
-    ],
-    "CarePlan": [
-      {
-        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-arv-careplan",
-        "title": "ARVCarePlan"
-      }
-    ],
     "Observation": [
       {
         "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-viral-load",
@@ -103,10 +91,34 @@
         "title": "Pregnancy status"
       }
     ],
+    "MedicationStatement": [
+      {
+        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/arv-therapy-summary",
+        "title": "ART therapy summary"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-hepatitis-process",
+        "title": "HIVTreatment"
+      },
+      {
+        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-methadone-process",
+        "title": "HIVTreatment"
+      },
+      {
+        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-process",
+        "title": "HIVTreatment"
+      },
+      {
+        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-tb-process",
+        "title": "HIVTreatment"
+      }
+    ],
     "Condition": [
       {
-        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-risk-factor",
-        "title": "HIV Risk Behavior"
+        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-transmission-route",
+        "title": "HIV Transmission route"
       }
     ],
     "Patient": [

@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "cs-viralload-group"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-group defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-viralload-group-1\"> </a></td><td>0-200</td><td>From 0 to 200</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-viralload-group-2\"> </a></td><td>20-350</td><td>From 200 to 350</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-viralload-group-3\"> </a></td><td>350-500</td><td>From 350 to 500</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-viralload-group-4\"> </a></td><td>500-1000</td><td>From 500 to 1000</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-viralload-group-5\"> </a></td><td>1000-</td><td>Large than 100</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-group defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-viralload-group-1\"> </a></td><td>0-200</td><td>From 0 to 200</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-viralload-group-2\"> </a></td><td>200-1000</td><td>From 200 to 1000</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-viralload-group-3\"> </a></td><td>1000-</td><td>Large than 100</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-group"];
   fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
   fhir:CodeSystem.name [ fhir:value "CSViralLoadGroup"];
   fhir:CodeSystem.title [ fhir:value "Viral Load group"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-05-12T08:21:14+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-05-20T06:45:07+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
      ]
   ];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "1" ];
@@ -46,21 +46,11 @@
   ], [
      fhir:index 1;
      fhir:CodeSystem.concept.code [ fhir:value "2" ];
-     fhir:CodeSystem.concept.display [ fhir:value "20-350" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "From 200 to 350" ]
+     fhir:CodeSystem.concept.display [ fhir:value "200-1000" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "From 200 to 1000" ]
   ], [
      fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "3" ];
-     fhir:CodeSystem.concept.display [ fhir:value "350-500" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "From 350 to 500" ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "4" ];
-     fhir:CodeSystem.concept.display [ fhir:value "500-1000" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "From 500 to 1000" ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "5" ];
      fhir:CodeSystem.concept.display [ fhir:value "1000-" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Large than 100" ]
   ] .

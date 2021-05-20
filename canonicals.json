@@ -84,6 +84,27 @@
     "name": "HIV Pregnancy Status"
   },
   {
+    "id": "cs-recency-result",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result",
+    "version": "0.1.0-test",
+    "name": "Recency RITA result"
+  },
+  {
+    "id": "cs-treatment-patient-category",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-patient-category",
+    "version": "0.1.0-test",
+    "name": "Category of the patient"
+  },
+  {
+    "id": "cs-treatment-status",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-status",
+    "version": "0.1.0-test",
+    "name": "Status of treatment process"
+  },
+  {
     "id": "cs-viralload-chidinh",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-chidinh",
@@ -131,6 +152,20 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ImplementationGuide/openhie.vn.case-reporting.hiv",
     "version": "0.1.0-test",
     "name": "OpenHIE Vietnam HIV Case-reporting"
+  },
+  {
+    "id": "NationalPatientIdentifier9Digit",
+    "type": "NamingSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/NamingSystem/NationalPatientIdentifier9Digit",
+    "version": "0.1.0-test",
+    "name": "NationalPatientIdentifier9Digit"
+  },
+  {
+    "id": "aids-diagnosis-observation",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/aids-diagnosis-observation",
+    "version": "0.1.0-test",
+    "name": "AIDSDiagnosisObservation"
   },
   {
     "id": "arv-therapy-summary",
@@ -182,6 +217,13 @@
     "name": "HIVDiagnosisObservation"
   },
   {
+    "id": "hiv-key-population",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-key-population",
+    "version": "0.1.0-test",
+    "name": "HIVKeyPopulation"
+  },
+  {
     "id": "hiv-patient",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient",
@@ -208,6 +250,41 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-specimen",
     "version": "0.1.0-test",
     "name": "HIVSpecimen"
+  },
+  {
+    "id": "hiv-transmission-route",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-transmission-route",
+    "version": "0.1.0-test",
+    "name": "HIVTransmissionRoute"
+  },
+  {
+    "id": "hiv-treatment-hepatitis-process",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-hepatitis-process",
+    "version": "0.1.0-test",
+    "name": "HepatitisTreatment"
+  },
+  {
+    "id": "hiv-treatment-methadone-process",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-methadone-process",
+    "version": "0.1.0-test",
+    "name": "MethadoneTreatment"
+  },
+  {
+    "id": "hiv-treatment-process",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-process",
+    "version": "0.1.0-test",
+    "name": "HIVTreatment"
+  },
+  {
+    "id": "hiv-treatment-tb-process",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-tb-process",
+    "version": "0.1.0-test",
+    "name": "TBTreatment"
   },
   {
     "id": "hiv-viral-load",
@@ -245,6 +322,13 @@
     "name": "VSDateComponent"
   },
   {
+    "id": "VSDiagnosisResults",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/VSDiagnosisResults",
+    "version": "0.1.0-test",
+    "name": "VSDiagnosisResults"
+  },
+  {
     "id": "VSSymptoms",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/VSSymptoms",
@@ -266,18 +350,18 @@
     "name": "VSCommonDate"
   },
   {
-    "id": "vs-hiv-occupations",
+    "id": "vs-hiv-occupation",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-occupations",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-occupation",
     "version": "0.1.0-test",
-    "name": "HIVOccupations"
+    "name": "HIVOccupationCodes"
   },
   {
     "id": "vs-hiv-population",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-population",
     "version": "0.1.0-test",
-    "name": "HIVRiskPopulation"
+    "name": "VSHIVRiskPopulation"
   },
   {
     "id": "vs-hiv-pregnancy-status",
@@ -298,14 +382,14 @@
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-risk-behavior",
     "version": "0.1.0-test",
-    "name": "HIVRiskBehavior"
+    "name": "VSHIVRiskBehavior"
   },
   {
     "id": "vs-hiv-transmission-route",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-transmission-route",
     "version": "0.1.0-test",
-    "name": "HIVTransmissionRoute"
+    "name": "VSHIVTransmissionRoute"
   },
   {
     "id": "vs-patient-communication-preferences",
@@ -327,6 +411,27 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-patient-gender-identity",
     "version": "0.1.0-test",
     "name": "PatientGenderIdentity"
+  },
+  {
+    "id": "vs-recency-rita",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-recency-rita",
+    "version": "0.1.0-test",
+    "name": "VSRecencyRITAResult"
+  },
+  {
+    "id": "vs-recency-rtri",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-recency-rtri",
+    "version": "0.1.0-test",
+    "name": "VSRecencyRTRIResult"
+  },
+  {
+    "id": "vs-treatment-category",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-treatment-category",
+    "version": "0.1.0-test",
+    "name": "VSTreatmentCategory"
   },
   {
     "id": "vs-type-of-contact",
