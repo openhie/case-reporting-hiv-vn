@@ -3,14 +3,14 @@
   "id": "vs-vn-regimen",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-vs-vn-regimen.html\"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/vs-vn-regimen</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-vn-regimen.html\"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimen</code></a></li></ul></div>"
   },
   "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-regimen",
   "version": "0.1.0-test",
   "name": "VSVietnamRegimen",
   "title": "ValueSet Vietnam HIV Regimen",
   "status": "active",
-  "date": "2021-05-20T06:45:07+00:00",
+  "date": "2021-05-21T09:32:16+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -36,7 +36,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/vs-vn-regimen"
+        "system": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimen"
       }
     ]
   }

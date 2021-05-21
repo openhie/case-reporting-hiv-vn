@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cs-vn-regimenlevel"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimenlevel defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">lvl1<a name="cs-vn-regimenlevel-lvl1"> </a></td><td>Bậc Một</td></tr><tr><td style="white-space:nowrap">lvl2<a name="cs-vn-regimenlevel-lvl2"> </a></td><td>Bậc Hai</td></tr><tr><td style="white-space:nowrap">lvl3<a name="cs-vn-regimenlevel-lvl3"> </a></td><td>Bậc Ba</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimenlevel defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">lvl1<a name="cs-vn-regimenlevel-lvl1"> </a></td><td>Level 1</td></tr><tr><td style="white-space:nowrap">lvl2<a name="cs-vn-regimenlevel-lvl2"> </a></td><td>Level 2</td></tr><tr><td style="white-space:nowrap">lvl3<a name="cs-vn-regimenlevel-lvl3"> </a></td><td>Level 3</td></tr></table></div>
   </text>
   <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimenlevel"/>
   <version value="0.1.0-test"/>
   <name value="CSRegimenLevel"/>
   <title value="CodeSystem Vietnam HIV Regimen Level "/>
   <status value="active"/>
-  <date value="2021-05-20T06:45:07+00:00"/>
+  <date value="2021-05-21T09:32:16+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -29,14 +29,14 @@
   <count value="3"/>
   <concept>
     <code value="lvl1"/>
-    <display value="B&#x1EAD;c M&#x1ED9;t"/>
+    <display value="Level 1"/>
   </concept>
   <concept>
     <code value="lvl2"/>
-    <display value="B&#x1EAD;c Hai"/>
+    <display value="Level 2"/>
   </concept>
   <concept>
     <code value="lvl3"/>
-    <display value="B&#x1EAD;c Ba"/>
+    <display value="Level 3"/>
   </concept>
 </CodeSystem>

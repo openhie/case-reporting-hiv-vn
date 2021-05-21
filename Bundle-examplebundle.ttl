@@ -23,7 +23,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href=\"Patient-test-hiv-patient.html\">Generated Summary: id: ARV001, id: P000001, id: 0111111, id: 00123456876; John Johnson; birthDate: 1970-01-01</a></p><p><b>recordedDate</b>: 2020-11-12</p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href=\"Patient-test-hiv-patient.html\">Generated Summary: id: ARV001, id: P0000012311, id: 011100101, id: NN-1232717432, id: 01112303122; Nguyan Van A; birthDate: 1970-01-01</a></p><p><b>recordedDate</b>: 2020-11-12</p></div>"
        ];
        fhir:Condition.subject [
          fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Patient/test-hiv-patient>;

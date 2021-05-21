@@ -126,6 +126,13 @@
     "name": "CSVietnamEthnicity"
   },
   {
+    "id": "cs-vn-regimen",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimen",
+    "version": "0.1.0-test",
+    "name": "CSVietnamRegimen"
+  },
+  {
     "id": "cs-vn-regimenlevel",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimenlevel",
@@ -138,13 +145,6 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/type-of-contact",
     "version": "0.1.0-test",
     "name": "CSTypeOfContact"
-  },
-  {
-    "id": "vs-vn-regimen",
-    "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/vs-vn-regimen",
-    "version": "0.1.0-test",
-    "name": "CSVietnamRegimen"
   },
   {
     "id": "openhie.vn.case-reporting.hiv",
@@ -329,13 +329,6 @@
     "name": "VSDiagnosisResults"
   },
   {
-    "id": "VSSymptoms",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/VSSymptoms",
-    "version": "0.1.0-test",
-    "name": "VSSymptoms"
-  },
-  {
     "id": "vs-arv-treatment-status",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-arv-treatment-status",
@@ -383,6 +376,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-risk-behavior",
     "version": "0.1.0-test",
     "name": "VSHIVRiskBehavior"
+  },
+  {
+    "id": "vs-hiv-sympthoms",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-symptoms",
+    "version": "0.1.0-test",
+    "name": "HIVSymptomsCode"
   },
   {
     "id": "vs-hiv-transmission-route",

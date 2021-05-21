@@ -197,6 +197,9 @@
     ],
     "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-vn-ethnicity": [
       "Patient"
+    ],
+    "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/vn-administrative-address": [
+      "Patient.address"
     ]
   }
 }

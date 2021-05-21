@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Vietnam Ethnicity </b>: <span title=\"Codes: \">kinh</span></p><p><b>identifier</b>: id: ARV001, id: P000001, id: 0111111, id: 00123456876</p><p><b>name</b>: John Johnson</p><p><b>birthDate</b>: 1970-01-01</p><p><b>address</b>: </p><ul><li>31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000 </li><li>3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward </li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Vietnam Ethnicity </b>: <span title=\"Codes: \">kinh</span></p><p><b>identifier</b>: id: ARV001, id: P0000012311, id: 011100101, id: NN-1232717432, id: 01112303122</p><p><b>name</b>: Nguyan Van A</p><p><b>birthDate</b>: 1970-01-01</p><p><b>address</b>: </p><ul><li>31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000 </li><li>3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward </li></ul></div>"
   },
   "extension": [
     {
@@ -29,20 +29,24 @@
     },
     {
       "system": "https://basespecs.vn/NamingSystem/PassportNumbers",
-      "value": "P000001"
+      "value": "P0000012311"
+    },
+    {
+      "system": "hhttps://basespecs.vn/NamingSystem/NationalID9",
+      "value": "011100101"
     },
     {
       "system": "https://basespecs.vn/NamingSystem/InsuranceNumbers",
-      "value": "0111111"
+      "value": "NN-1232717432"
     },
     {
       "system": "https://basespecs.vn/NamingSystem/NationalID",
-      "value": "00123456876"
+      "value": "01112303122"
     }
   ],
   "name": [
     {
-      "text": "John Johnson"
+      "text": "Nguyan Van A"
     }
   ],
   "birthDate": "1970",
