@@ -1,7 +1,7 @@
 Profile:        HIVTreatment
 Parent:         CarePlan
 Id:             hiv-treatment-process
-Title:          "HIVTreatment"
+Title:          "HIV Treatment"
 Description:    """
     This profile allows the exchange of a patient's treatment"""
 * category from VSTreatmentCategory
@@ -10,7 +10,7 @@ Description:    """
 Profile:        TBTreatment
 Parent:         CarePlan
 Id:             hiv-treatment-tb-process
-Title:          "HIVTreatment"
+Title:          "TB Treatment"
 Description:    """
     This profile allows to add tuberculosis status"""
 
@@ -18,7 +18,7 @@ Description:    """
 Profile:        HepatitisTreatment
 Parent:         CarePlan
 Id:             hiv-treatment-hepatitis-process
-Title:          "HIVTreatment"
+Title:          "Hepatitis Treatment"
 Description:    """
     This profile allows to add hepatitis status"""
 
@@ -26,6 +26,6 @@ Description:    """
 Profile:        MethadoneTreatment
 Parent:         CarePlan
 Id:             hiv-treatment-methadone-process
-Title:          "HIVTreatment"
+Title:          "Methadon Treatment"
 Description:    """
     This profile allows to add methadone status"""
