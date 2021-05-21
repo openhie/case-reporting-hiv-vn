@@ -3,7 +3,7 @@ Parent:         Observation
 Id:             hiv-viral-load
 Title:          "HIV viral load"
 Description:    "HIV viral load."
-* code from VSChiDinh
+* code from VSIndications
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open

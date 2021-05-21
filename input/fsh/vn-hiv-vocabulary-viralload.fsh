@@ -1,6 +1,6 @@
-CodeSystem:  CSChiDinh
-Id: cs-viralload-chidinh
-Title: "Chi dinh"
+CodeSystem:  CSIndications
+Id: cs-viralload-indications
+Title: "Viralload Indications"
 Description: "CodeSystem - Chi dinh"
 * #1 "tại thời điểm 6 tháng sau ARV" "At 6 months after ARV"
 * #2 "tại thời điểm 12 tháng sau ARV" "At 12 months months after ARV"
@@ -8,11 +8,11 @@ Description: "CodeSystem - Chi dinh"
 * #4 "nghi ngờ thất bại điều trị" "Suspect treatment failure"
 * #5 "phụ nữ mang thai/cho con bú" "pregnant / lactating women"
 
-ValueSet: VSChiDinh
-Id: vs-viralload-chidinh
-Title: "Chi dinh"
-Description:  "Valueset - cs-viralload-chidinh"
-* include codes from system CSChiDinh
+ValueSet: VSIndications
+Id: cs-viralload-indications
+Title: "Viralload Indications"
+Description:  "Valueset - cs-viralload-indications"
+* include codes from system CSIndications
 
 
 CodeSystem: CSViralLoadGroup
