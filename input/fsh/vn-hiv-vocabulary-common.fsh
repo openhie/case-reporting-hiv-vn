@@ -21,8 +21,8 @@ Id: vs-common-date
 Description: "Define common event date"
 * SCT#399445004
 
-
-Instance: VSDiagnosisResults
+// todo: Translation
+Instance: vs-diagnosis-results
 InstanceOf: ValueSet
 Title: "Diagnosis Results"
 Usage: #definition
@@ -34,6 +34,7 @@ Description:  "ValueSet - Diagnosis Results"
 * insert VSCodeDef(SCT, 165815009, HIV Negative, Âm tính HIV)
 * insert VSCodeDef(SCT, 10828004, Positive, Dương tính)
 * insert VSCodeDef(SCT, 260385009, Negative, Âm tính)
+
 
 
 

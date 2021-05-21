@@ -22,24 +22,6 @@ Usage: #inline
 */
 
 
-Instance: HIVPregnancyOutcomeCodes
-InstanceOf: ValueSet
-Description: "Pregnancy Outcome Codes"
-Title: "Pregnancy Outcome Codes"
-// Usage: #inline
-* name = "HIVPregnancyOutcomeCodes"
-* status = #draft
-* compose.include[+].concept[+].code = #1 
-* compose.include[=].concept[=].display = "Unborn" 
-* compose.include[=].concept[+].code = #2 
-* compose.include[=].concept[=].display = "Born" 
-* compose.include[=].concept[+].code = #3 
-* compose.include[=].concept[=].display = "Miscarried" 
-* compose.include[=].concept[+].code = #4 
-* compose.include[=].concept[=].display = "Abortion" 
-* compose.include[=].concept[+].code = #5 
-* compose.include[=].concept[=].display = "Unknown" 
-
 Instance: BirthDefects
 InstanceOf: ValueSet
 Description: "Birth Defects"
@@ -88,7 +70,7 @@ Usage: #definition
 
 //* contained[+] = HIVRiskPopulation
 //* contained[+] = HIVRiskBehavior
-* contained[+] = HIVPregnancyOutcomeCodes
+* contained[+] = cs-pregnancy-status
 * contained[+] = BirthDefects
 * contained[+] = ChildHIVStatus
 //* contained[+] = HIVTransmissionRoute
@@ -639,7 +621,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "pregnancyOutcomeCode"
 * item[=].item[=].item[=].item[=].text   = "Pregnancy Outcome code"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "#HIVPregnancyOutcomeCodes"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-pregnancy-status)
 //* item[=].item[=].item[=].item[=].prefix   = "20.5.1"
 
 

@@ -3,8 +3,6 @@ Alias:   SCT = http://snomed.info/sct
 Alias: $CommPreference = http://hl7.org/fhir/StructureDefinition/patient-preferenceType
 Alias: $GenderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
 
-
-
 Profile:        HIVPatient
 Parent:         Patient
 Id:             hiv-patient
