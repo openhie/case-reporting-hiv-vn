@@ -13,9 +13,6 @@ InstanceOf: NamingSystem
 
 
 
-
-
-
 Instance: PregnancyOutcomeCodes
 InstanceOf: ValueSet
 Description: "Pregnancy Outcome Codes"
@@ -60,11 +57,16 @@ Description:  "CodeSystem - gender"
 * insert CodeDef(unknown,unknown,Gender is unknown,Không rõ)
 
 
+Instance: vs-hiv-sympthoms
+InstanceOf: ValueSet
+Description: "Symptoms Value Set"
+Title: "Symptoms Value Set"
+Usage: #example
+* name = "HIVSymptomsCode"
+* status = #draft
+* url = "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-symptoms"
 
-ValueSet: VSSymptoms
-Title: "Symptoms"
-Description:  "Symptoms associated with HIV case"
-* SCT#248427009 "Sốt kéo dài"
+* insert VSCodeDef(SCT,248427009,Fever symptoms,Sốt)
 
 
 CodeSystem:  CSPatientGender

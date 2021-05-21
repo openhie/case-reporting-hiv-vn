@@ -1,4 +1,3 @@
-Alias:   SCT = http://snomed.info/sct
 
 Alias: $CommPreference = http://hl7.org/fhir/StructureDefinition/patient-preferenceType
 Alias: $GenderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
@@ -31,36 +30,36 @@ Description:    """
 
 * identifier contains
     art 0..* and
-    theCCCD 0..* and
-    soCMTND 0..* and
-    theBHXH 0..* and
-    soHoChieu 0..* and
-    BanglaiXe 0..*
+    cccdID 0..* and
+    cmtndID 0..* and
+    insuranceID 0..* and
+    passportnum 0..* and
+    driverlic 0..*
 * identifier[art].system 1..1
 * identifier[art].system = "https://basespecs.vn/NamingSystem/ARTIdentifiers" (exactly)
 * identifier[art].value 1..1
-* identifier[theCCCD].system 1..1
-* identifier[theCCCD].system = "https://basespecs.vn/NamingSystem/NationalID" (exactly)
-* identifier[theCCCD].value 1..1
-* identifier[soCMTND].system 1..1
-* identifier[soCMTND].system = "https://basespecs.vn/NamingSystem/NationalID" (exactly)
-* identifier[soCMTND].value 1..1
-* identifier[theBHXH].system 1..1
-* identifier[theBHXH].system = "https://basespecs.vn/NamingSystem/InsuranceNumbers" (exactly)
-* identifier[theBHXH].value 1..1
-* identifier[soHoChieu].system 1..1
-* identifier[soHoChieu].system = "https://basespecs.vn/NamingSystem/PassportNumbers" (exactly)
-* identifier[soHoChieu].value 1..1
-* identifier[BanglaiXe].system 1..1
-* identifier[BanglaiXe].system = "https://basespecs.vn/NamingSystem/DriverID" (exactly)
-* identifier[BanglaiXe].value 1..1
+* identifier[cccdID].system 1..1
+* identifier[cccdID].system = "https://basespecs.vn/NamingSystem/NationalID" (exactly)
+* identifier[cccdID].value 1..1
+* identifier[cmtndID].system 1..1
+* identifier[cmtndID].system = "hhttps://basespecs.vn/NamingSystem/NationalID9" (exactly)
+* identifier[cmtndID].value 1..1
+* identifier[insuranceID].system 1..1
+* identifier[insuranceID].system = "https://basespecs.vn/NamingSystem/InsuranceNumbers" (exactly)
+* identifier[insuranceID].value 1..1
+* identifier[passportnum].system 1..1
+* identifier[passportnum].system = "https://basespecs.vn/NamingSystem/PassportNumbers" (exactly)
+* identifier[passportnum].value 1..1
+* identifier[driverlic].system 1..1
+* identifier[driverlic].system = "https://basespecs.vn/NamingSystem/DriverID" (exactly)
+* identifier[driverlic].value 1..1
 
 * address contains
    Temporary 0..1 and 
    Permanent 0..1
 
-///* address[Temporary].use = #temp (exactly)
-//* address[Permanent].use = #home (exactly)
+* address[Temporary].extension contains VNAdministrativeAddress named adminAddress 0..1
+* address[Permanent].extension contains VNAdministrativeAddress named adminAddress 0..1
 
 Extension: VietnamEthnicity
 Id: ext-vn-ethnicity
