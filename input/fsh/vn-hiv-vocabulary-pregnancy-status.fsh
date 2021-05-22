@@ -1,10 +1,10 @@
 // todo: Translation
-Instance: cs-pregnancy-status
+Instance: cs-pregnancy-outcome
 InstanceOf: CodeSystem
-Title: "HIV Pregnancy Status"
+Title: "HIV Pregnancy Outcome"
 Usage: #example
-Description:  "CodeSystem - HIV Pregnancy Status"
-* name = "HIV Pregnancy Status"
+Description:  "CodeSystem - HIV Pregnancy Outcome"
+* name = "HIV Pregnancy Outcome"
 * status = #draft
 * content = #complete
 * insert Code(unborn, Unborn, Chưa sinh)
@@ -13,10 +13,10 @@ Description:  "CodeSystem - HIV Pregnancy Status"
 * insert Code(abortion, Abortion, Đã phá thai)
 * insert Code(unknown, Unknown, Không rõ)
 
-CodeSystem:  CSHIVPregnancyStatus
-Id: cs-pregnancy-status
-Title: "HIV Pregnancy Status"
-Description: "CodeSystem - Pregnancy Status"
+CodeSystem:  CSHIVPregnancyOutcome
+Id: cs-pregnancy-outcome
+Title: "HIV Pregnancy Outcome"
+Description: "CodeSystem - Pregnancy Outcome"
 * #1 "Unborn" "Unborn"
 * #2 "Born" "Born"
 * #3 "Miscarried" "Miscarried"
@@ -24,11 +24,11 @@ Description: "CodeSystem - Pregnancy Status"
 * #5 "Unknown" "Unknown"
 
 
-ValueSet: VSHIVPregnancyStatus
-Id: vs-hiv-pregnancy-status
-Title: "HIV Pregnancy Status"
-Description:  "Valueset - Pregnancy Status"
-* include codes from system CSHIVPregnancyStatus
+ValueSet: VSHIVPregnancyOutcome
+Id: vs-hiv-pregnancy-outcome
+Title: "HIV Pregnancy outcome"
+Description:  "Valueset - Pregnancy Outcome"
+* include codes from system CSHIVPregnancyOutcome
 
 Instance: cs-arv-treatment-status
 InstanceOf: CodeSystem

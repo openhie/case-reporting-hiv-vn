@@ -1,7 +1,7 @@
 CodeSystem:  CSIndications
 Id: cs-viralload-indications
 Title: "Viralload Indications"
-Description: "CodeSystem - Chi dinh"
+Description: "CodeSystem - Indications"
 * #1  "At 6 months after ARV" "At 6 months after ARV"
 * #2  "At 12 months months after ARV"  "At 12 months months after ARV"
 * #3  "Every 12 "  "Every 12 "

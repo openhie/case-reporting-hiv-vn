@@ -70,7 +70,7 @@ Usage: #definition
 
 //* contained[+] = HIVRiskPopulation
 //* contained[+] = HIVRiskBehavior
-* contained[+] = cs-pregnancy-status
+* contained[+] = cs-pregnancy-outcome
 * contained[+] = BirthDefects
 * contained[+] = ChildHIVStatus
 //* contained[+] = HIVTransmissionRoute
@@ -622,7 +622,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "pregnancyOutcomeCode"
 * item[=].item[=].item[=].item[=].text   = "Pregnancy Outcome code"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-pregnancy-status)
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-pregnancy-outcome)
 //* item[=].item[=].item[=].item[=].prefix   = "20.5.1"
 
 
