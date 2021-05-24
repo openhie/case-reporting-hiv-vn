@@ -3,10 +3,10 @@
 Profile:        AIDSDiagnosisObservation
 Parent:         Observation
 Id:             aids-diagnosis-observation
-Title:          "HIV Recency result"
+Title:          "AIDS Diagnosis result"
 Description:    """
     This profile allows the exchange of a patient's hiv recency test"""
-* code from VSDiagnosisResults
+* code from http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/VSDiagnosisResults
 * specimen MS
 * effectiveDateTime MS
 
@@ -26,11 +26,12 @@ Description:    """
 Profile:        HIVDiagnosisObservation
 Parent:         Observation
 Id:             hiv-diagnosis-observation
-Title:          "HIV Recency result"
+Title:          "HIV Diagnosis result"
 Description:    """
     This profile allows the exchange of a patient's hiv recency test"""
 * specimen MS
-* code from  VSDiagnosisResults
+// todo: need check sushi syntax
+// * code from http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/VSDiagnosisResults
 * effectiveDateTime MS
 
 * component ^slicing.discriminator.type = #pattern

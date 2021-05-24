@@ -1,3 +1,4 @@
+// todo: Translation
 Instance: cs-treatment-patient-category
 InstanceOf: CodeSystem
 Title: "Category of the patient"
@@ -18,6 +19,7 @@ Description: "CodeSystem - Category of the patient"
 * #reRegister "Re-Register" "Patient re-registration"
 * #transfer "transfer" "Transfer"
 
+// todo: Translation
 Instance: cs-treatment-status
 InstanceOf: CodeSystem
 Title: "Status of treatment process"

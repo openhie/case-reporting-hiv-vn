@@ -1,3 +1,4 @@
+// todo: Translation
 Instance: cs-recency-result
 InstanceOf: CodeSystem
 Title: "Recency result"

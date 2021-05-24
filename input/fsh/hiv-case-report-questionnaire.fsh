@@ -22,24 +22,6 @@ Usage: #inline
 */
 
 
-Instance: HIVPregnancyOutcomeCodes
-InstanceOf: ValueSet
-Description: "Pregnancy Outcome Codes"
-Title: "Pregnancy Outcome Codes"
-// Usage: #inline
-* name = "HIVPregnancyOutcomeCodes"
-* status = #draft
-* compose.include[+].concept[+].code = #1 
-* compose.include[=].concept[=].display = "Unborn" 
-* compose.include[=].concept[+].code = #2 
-* compose.include[=].concept[=].display = "Born" 
-* compose.include[=].concept[+].code = #3 
-* compose.include[=].concept[=].display = "Miscarried" 
-* compose.include[=].concept[+].code = #4 
-* compose.include[=].concept[=].display = "Abortion" 
-* compose.include[=].concept[+].code = #5 
-* compose.include[=].concept[=].display = "Unknown" 
-
 Instance: BirthDefects
 InstanceOf: ValueSet
 Description: "Birth Defects"
@@ -88,7 +70,7 @@ Usage: #definition
 
 //* contained[+] = HIVRiskPopulation
 //* contained[+] = HIVRiskBehavior
-* contained[+] = HIVPregnancyOutcomeCodes
+* contained[+] = cs-pregnancy-outcome
 * contained[+] = BirthDefects
 * contained[+] = ChildHIVStatus
 //* contained[+] = HIVTransmissionRoute
@@ -171,28 +153,28 @@ Usage: #definition
 //* item[=].item[=].item[=].item[=].prefix = "7"
 //* item[=].item[=].item[=].item[=].answerValueSet    = Canonical($vs-iso3166-1-2)
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "id_cccd"
-* item[=].item[=].item[=].item[=].item[=].text   = "Health insurance number"
+* item[=].item[=].item[=].item[=].item[+].linkId = "cccdID"
+* item[=].item[=].item[=].item[=].item[=].text   = "National ID 11 digits"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "7.1"
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "theBHXH"
+* item[=].item[=].item[=].item[=].item[+].linkId = "insuranceID"
 * item[=].item[=].item[=].item[=].item[=].text   = "Health insurance code"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "7.2"
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "soHoChieu"
+* item[=].item[=].item[=].item[=].item[+].linkId = "passportnum"
 * item[=].item[=].item[=].item[=].item[=].text   = "Passport Number"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "7.3"
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "BanglaiXe"
-* item[=].item[=].item[=].item[=].item[=].text   = "Driver Licese"
+* item[=].item[=].item[=].item[=].item[+].linkId = "driverlic"
+* item[=].item[=].item[=].item[=].item[=].text   = "Driver license"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "7.4"
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "soCMTND"
-* item[=].item[=].item[=].item[=].item[=].text   = "Old national ID"
+* item[=].item[=].item[=].item[=].item[+].linkId = "cmtndID"
+* item[=].item[=].item[=].item[=].item[=].text   = "National ID 9 digits"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "7.5"
 
@@ -209,6 +191,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].item[+].linkId = "permanent"
 * item[=].item[=].item[=].item[=].item[=].text   = "Permanent residence"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
+
 //* item[=].item[=].item[=].item[=].item[=].prefix   = "8.2"
 
 * item[=].item[=].item[=].item[+].linkId = "occupation"
@@ -639,7 +622,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "pregnancyOutcomeCode"
 * item[=].item[=].item[=].item[=].text   = "Pregnancy Outcome code"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "#HIVPregnancyOutcomeCodes"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-pregnancy-outcome)
 //* item[=].item[=].item[=].item[=].prefix   = "20.5.1"
 
 
