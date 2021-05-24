@@ -3,7 +3,7 @@ InstanceOf: ViralLoad
 //Usage: #inline
 * subject = Reference (test-hiv-patient)
 * status = #final
-* code = CSChiDinh#1
+* code = CSIndications#1
 * issued = "2013-04-05T15:30:10+07:00"
 * valueInteger = 10
 

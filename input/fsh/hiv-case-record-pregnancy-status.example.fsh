@@ -3,7 +3,7 @@ InstanceOf: PregnancyStatus
 //Usage: #inline
 * subject = Reference (test-hiv-patient)
 * status = #final
-* code = CSHIVPregnancyStatus#unborn
+* code = CSHIVPregnancyOutcome#unborn
 * issued = "2013-04-05T15:30:10+07:00"
 
 * component[time][+].code = SCT#248957007

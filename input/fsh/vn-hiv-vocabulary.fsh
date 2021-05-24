@@ -1,6 +1,3 @@
-Alias: SCT = http://snomed.info/sct
-
-
 Instance: NationalPatientIdentifier9Digit
 InstanceOf: NamingSystem
 // * url = 

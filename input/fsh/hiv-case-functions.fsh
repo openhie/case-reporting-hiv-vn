@@ -1,3 +1,5 @@
+Alias:   SCT = http://snomed.info/sct
+
 RuleSet: Code(code,display,vn)
 * concept[+].code = #{code}
 * concept[=].display = "{display}"

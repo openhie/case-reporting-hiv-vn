@@ -1,7 +1,7 @@
 Profile:        CD4Observation
 Parent:         Observation
 Id:             hiv-cd4-observation
-Title:          "CD4Observation"
+Title:          "CD4 Observation"
 Description:    """
     This profile allows the exchange of a patient's CD$ test and results"""
 * code = SCT#24655002
