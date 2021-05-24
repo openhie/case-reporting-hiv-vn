@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-05-21T09:32:16+00:00"/>
+  <date value="2021-05-24T07:10:14+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -240,6 +240,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-viralload-indications"/>
+      </reference>
+      <name value="Viralload Indications"/>
+      <description value="CodeSystem - Indications"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -283,28 +293,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/cs-viralload-chidinh"/>
-      </reference>
-      <name value="Chi dinh"/>
-      <description value="CodeSystem - Chi dinh"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
         <reference value="CodeSystem/cs-vn-ethnicity"/>
       </reference>
       <name value="CodeSystem Vietnam Ethnicity"/>
       <description value="CodeSystem of Vietnam included  54 ethnic groups in Vietnam recognized by the Vietnamese government"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-pregnancy-status"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -325,16 +317,6 @@
       </reference>
       <name value="Patient Gender"/>
       <description value="The genders for patients"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-hiv-pregnancy-status"/>
-      </reference>
-      <name value="HIV Pregnancy Status"/>
-      <description value="Valueset - Pregnancy Status"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -398,14 +380,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/HIVPregnancyOutcomeCodes"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
@@ -419,6 +393,15 @@
       <reference>
         <reference value="ValueSet/vs-hiv-occupation"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-diagnosis-results"/>
+      </reference>
+      <name value="VSDiagnosisResults"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -501,7 +484,7 @@
       <reference>
         <reference value="StructureDefinition/aids-diagnosis-observation"/>
       </reference>
-      <name value="HIV Recency result"/>
+      <name value="AIDS Diagnosis result"/>
       <description value="This profile allows the exchange of a patient&#39;s hiv recency test"/>
     </resource>
     <resource>
@@ -541,8 +524,18 @@
       <reference>
         <reference value="StructureDefinition/hiv-diagnosis-observation"/>
       </reference>
-      <name value="HIV Recency result"/>
+      <name value="HIV Diagnosis result"/>
       <description value="This profile allows the exchange of a patient&#39;s hiv recency test"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cs-viralload-indications"/>
+      </reference>
+      <name value="Viralload Indications"/>
+      <description value="Valueset - cs-viralload-indications"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -581,7 +574,7 @@
       <reference>
         <reference value="StructureDefinition/hiv-treatment-process"/>
       </reference>
-      <name value="HIVTreatment"/>
+      <name value="HIV Treatment"/>
       <description value="This profile allows the exchange of a patient&#39;s treatment"/>
     </resource>
     <resource>
@@ -619,7 +612,7 @@
       <reference>
         <reference value="StructureDefinition/hiv-treatment-methadone-process"/>
       </reference>
-      <name value="HIVTreatment"/>
+      <name value="Methadon Treatment"/>
       <description value="This profile allows to add methadone status"/>
     </resource>
     <resource>
@@ -722,16 +715,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSDiagnosisResults"/>
-      </reference>
-      <name value="Diagnosis Results"/>
-      <description value="Diagnosis Results codes"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -739,16 +722,6 @@
       </reference>
       <name value="HIV Transmission route"/>
       <description value="This profile allows the patient&#39;s transmission route"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-viralload-chidinh"/>
-      </reference>
-      <name value="Chi dinh"/>
-      <description value="Valueset - cs-viralload-chidinh"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -772,12 +745,22 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-pregnancy-outcome"/>
+      </reference>
+      <name value="HIV Pregnancy outcome"/>
+      <description value="Valueset - Pregnancy Outcome"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/hiv-cd4-observation"/>
       </reference>
-      <name value="CD4Observation"/>
+      <name value="CD4 Observation"/>
       <description value="This profile allows the exchange of a patient&#39;s CD$ test and results"/>
     </resource>
     <resource>
@@ -849,6 +832,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-pregnancy-outcome"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -902,7 +893,7 @@
       <reference>
         <reference value="StructureDefinition/hiv-treatment-hepatitis-process"/>
       </reference>
-      <name value="HIVTreatment"/>
+      <name value="Hepatitis Treatment"/>
       <description value="This profile allows to add hepatitis status"/>
     </resource>
     <resource>
@@ -938,7 +929,7 @@
       <reference>
         <reference value="StructureDefinition/hiv-treatment-tb-process"/>
       </reference>
-      <name value="HIVTreatment"/>
+      <name value="TB Treatment"/>
       <description value="This profile allows to add tuberculosis status"/>
     </resource>
     <resource>

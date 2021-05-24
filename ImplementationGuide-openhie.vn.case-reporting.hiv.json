@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam",
   "status": "draft",
   "experimental": false,
-  "date": "2021-05-21T09:32:16+00:00",
+  "date": "2021-05-24T07:10:14+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -377,6 +377,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-viralload-indications"
+        },
+        "name": "Viralload Indications",
+        "description": "CodeSystem - Indications"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -433,34 +446,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-viralload-chidinh"
-        },
-        "name": "Chi dinh",
-        "description": "CodeSystem - Chi dinh"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
           "reference": "CodeSystem/cs-vn-ethnicity"
         },
         "name": "CodeSystem Vietnam Ethnicity",
         "description": "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recognized by the Vietnamese government"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-pregnancy-status"
-        }
       },
       {
         "extension": [
@@ -487,19 +476,6 @@
         },
         "name": "Patient Gender",
         "description": "The genders for patients"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-pregnancy-status"
-        },
-        "name": "HIV Pregnancy Status",
-        "description": "Valueset - Pregnancy Status"
       },
       {
         "extension": [
@@ -583,17 +559,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/HIVPregnancyOutcomeCodes"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Questionnaire"
           }
         ],
@@ -611,6 +576,18 @@
         "reference": {
           "reference": "ValueSet/vs-hiv-occupation"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-diagnosis-results"
+        },
+        "name": "VSDiagnosisResults"
       },
       {
         "extension": [
@@ -720,7 +697,7 @@
         "reference": {
           "reference": "StructureDefinition/aids-diagnosis-observation"
         },
-        "name": "HIV Recency result",
+        "name": "AIDS Diagnosis result",
         "description": "This profile allows the exchange of a patient's hiv recency test"
       },
       {
@@ -772,8 +749,21 @@
         "reference": {
           "reference": "StructureDefinition/hiv-diagnosis-observation"
         },
-        "name": "HIV Recency result",
+        "name": "HIV Diagnosis result",
         "description": "This profile allows the exchange of a patient's hiv recency test"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/cs-viralload-indications"
+        },
+        "name": "Viralload Indications",
+        "description": "Valueset - cs-viralload-indications"
       },
       {
         "extension": [
@@ -824,7 +814,7 @@
         "reference": {
           "reference": "StructureDefinition/hiv-treatment-process"
         },
-        "name": "HIVTreatment",
+        "name": "HIV Treatment",
         "description": "This profile allows the exchange of a patient's treatment"
       },
       {
@@ -874,7 +864,7 @@
         "reference": {
           "reference": "StructureDefinition/hiv-treatment-methadone-process"
         },
-        "name": "HIVTreatment",
+        "name": "Methadon Treatment",
         "description": "This profile allows to add methadone status"
       },
       {
@@ -1009,19 +999,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/VSDiagnosisResults"
-        },
-        "name": "Diagnosis Results",
-        "description": "Diagnosis Results codes"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -1030,19 +1007,6 @@
         },
         "name": "HIV Transmission route",
         "description": "This profile allows the patient's transmission route"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-viralload-chidinh"
-        },
-        "name": "Chi dinh",
-        "description": "Valueset - cs-viralload-chidinh"
       },
       {
         "extension": [
@@ -1074,13 +1038,26 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-pregnancy-outcome"
+        },
+        "name": "HIV Pregnancy outcome",
+        "description": "Valueset - Pregnancy Outcome"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
           "reference": "StructureDefinition/hiv-cd4-observation"
         },
-        "name": "CD4Observation",
+        "name": "CD4 Observation",
         "description": "This profile allows the exchange of a patient's CD$ test and results"
       },
       {
@@ -1175,6 +1152,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-pregnancy-outcome"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -1244,7 +1232,7 @@
         "reference": {
           "reference": "StructureDefinition/hiv-treatment-hepatitis-process"
         },
-        "name": "HIVTreatment",
+        "name": "Hepatitis Treatment",
         "description": "This profile allows to add hepatitis status"
       },
       {
@@ -1292,7 +1280,7 @@
         "reference": {
           "reference": "StructureDefinition/hiv-treatment-tb-process"
         },
-        "name": "HIVTreatment",
+        "name": "TB Treatment",
         "description": "This profile allows to add tuberculosis status"
       },
       {

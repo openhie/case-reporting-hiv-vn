@@ -77,11 +77,11 @@
     "name": "CSPatientGenderIdentity"
   },
   {
-    "id": "cs-pregnancy-status",
+    "id": "cs-pregnancy-outcome",
     "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-status",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-outcome",
     "version": "0.1.0-test",
-    "name": "HIV Pregnancy Status"
+    "name": "HIV Pregnancy Outcome"
   },
   {
     "id": "cs-recency-result",
@@ -105,18 +105,18 @@
     "name": "Status of treatment process"
   },
   {
-    "id": "cs-viralload-chidinh",
-    "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-chidinh",
-    "version": "0.1.0-test",
-    "name": "CSChiDinh"
-  },
-  {
     "id": "cs-viralload-group",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-group",
     "version": "0.1.0-test",
     "name": "CSViralLoadGroup"
+  },
+  {
+    "id": "cs-viralload-indications",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-indications",
+    "version": "0.1.0-test",
+    "name": "CSIndications"
   },
   {
     "id": "cs-vn-ethnicity",
@@ -308,13 +308,6 @@
     "name": "VNAdministrativeAddress"
   },
   {
-    "id": "HIVPregnancyOutcomeCodes",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/HIVPregnancyOutcomeCodes",
-    "version": "0.1.0-test",
-    "name": "HIVPregnancyOutcomeCodes"
-  },
-  {
     "id": "VSDateComponent",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/VSDateComponent",
@@ -322,11 +315,11 @@
     "name": "VSDateComponent"
   },
   {
-    "id": "VSDiagnosisResults",
+    "id": "cs-viralload-indications",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/VSDiagnosisResults",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/cs-viralload-indications",
     "version": "0.1.0-test",
-    "name": "VSDiagnosisResults"
+    "name": "VSIndications"
   },
   {
     "id": "vs-arv-treatment-status",
@@ -343,6 +336,13 @@
     "name": "VSCommonDate"
   },
   {
+    "id": "vs-diagnosis-results",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-diagnosis-results",
+    "version": "0.1.0-test",
+    "name": "VSDiagnosisResults"
+  },
+  {
     "id": "vs-hiv-occupation",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-occupation",
@@ -357,11 +357,11 @@
     "name": "VSHIVRiskPopulation"
   },
   {
-    "id": "vs-hiv-pregnancy-status",
+    "id": "vs-hiv-pregnancy-outcome",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-pregnancy-status",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-pregnancy-outcome",
     "version": "0.1.0-test",
-    "name": "VSHIVPregnancyStatus"
+    "name": "VSHIVPregnancyOutcome"
   },
   {
     "id": "vs-hiv-rapidtestresults",
@@ -439,13 +439,6 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-type-of-contact",
     "version": "0.1.0-test",
     "name": "TypeOfContact"
-  },
-  {
-    "id": "vs-viralload-chidinh",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-viralload-chidinh",
-    "version": "0.1.0-test",
-    "name": "VSChiDinh"
   },
   {
     "id": "vs-viralload-group",
