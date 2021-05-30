@@ -201,7 +201,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-occupation)
 
 * item[=].item[+].linkId = "risk_factors"
-* item[=].item[=].text   = "Risk Factors"
+* item[=].item[=].text   = "Risk factors"
 * item[=].item[=].type   = #group
 //* item[=].item[=].prefix   = "10"
 
