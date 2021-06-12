@@ -80,33 +80,15 @@ Usage: #definition
 
 
 
-* item[+].linkId = "title"
-* item[=].text   = "HIV Case Report"
-* item[=].type   = #display
 
-* item[+].linkId = "regulations"
-* item[=].text   = "Reporting regulations: Monthly – applicable to each patient during the reporting period"
-* item[=].type   = #display
+* insert Question(,tile,HIV Case Report,display,false)
+* insert Question(,instructions,Reporting instructions: Monthly – applicable to each patient during the reporting period,display,false)
+* insert Question(,unit_name,Governing body unit name,string,false)
+* insert Question(,report_date,Date of Report,date,false)
+* insert Question(,questions,Monthly report,group,false)
 
-* item[+].linkId = "unit_name"
-* item[=].text   = "Governing body unit name"
-* item[=].type   = #string
 
-* item[+].linkId = "reportDate"
-* item[=].text   = "Date of report"
-* item[=].type   = #date
-
-//* item[+].linkId = "reportNumber" 
-//* item[=].text   = "Date of report"
-//* item[=].type   = #date
-
-* item[+].linkId = "intro"
-* item[=].text   = "Dear:"
-* item[=].type   = #display
-
-* item[+].linkId = "questions"
-* item[=].text   = "Monthly report"
-* item[=].type   = #group
+* insert Question(item[=].,patient_identification,Part I: Identifying Information,date,false)
 
 * item[=].item[+].linkId = "identifying_information"
 * item[=].item[=].text   = "Part I: Identifying Information"
@@ -127,25 +109,25 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].prefix = "3"
 
-* item[=].item[=].item[=].item[+].linkId = "ethnic"
+* item[=].item[=].item[=].item[+].linkId = "ethnicity"
 * item[=].item[=].item[=].item[=].text   = "Vietnam Ethnicity"
 * item[=].item[=].item[=].item[=].type   = #choice
 //* item[=].item[=].item[=].item[=].prefix = "4"
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-ethnicity)
 
-* item[=].item[=].item[=].item[+].linkId = "gender"
+* item[=].item[=].item[=].item[+].linkId = "patient_gender"
 * item[=].item[=].item[=].item[=].text   = "Gender"
 * item[=].item[=].item[=].item[=].type   = #choice
 //* item[=].item[=].item[=].item[=].prefix = "5"
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-patient-gender)
 
-* item[=].item[=].item[=].item[+].linkId = "birth_year"
-* item[=].item[=].item[=].item[=].text   = "Year of Birth"
-* item[=].item[=].item[=].item[=].type   = #integer
-* item[=].item[=].item[=].item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/regex"
-* item[=].item[=].item[=].item[=].extension.valueString = "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00))"
-//* item[=].item[=].item[=].item[=].prefix = "6"
+* item[=].item[=].item[=].item[+].linkId = "birth_date"
+* item[=].item[=].item[=].item[=].text   = "Date of Birth"
+* item[=].item[=].item[=].item[=].type   = #date
 
+//* item[=].item[=].item[=].item[=].type   = #integer
+//* item[=].item[=].item[=].item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/regex"
+//* item[=].item[=].item[=].item[=].extension.valueString = "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00))"
 
 * item[=].item[=].item[=].item[+].linkId = "identification"
 * item[=].item[=].item[=].item[=].text   = "Identification"
@@ -224,58 +206,58 @@ Usage: #definition
 * item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-transmission-route)
 
 
-* item[=].item[+].linkId = "hiv-diagnosis"
+* item[=].item[+].linkId = "hiv_diagnosis"
 * item[=].item[=].text   = "HIV Testing"
 * item[=].item[=].type   = #group
 //* item[=].item[=].prefix   = "11"
 
-* item[=].item[=].item[+].linkId = "hiv-diagnosis.dateOfConfirmation"
+* item[=].item[=].item[+].linkId = "hiv_diagnosis.confirmation_date"
 * item[=].item[=].item[=].text   = "Date of Confirmation"
 * item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].prefix   = "11.1"
 
-* item[=].item[=].item[+].linkId = "hiv-diagnosis.confirmingLab"
+* item[=].item[=].item[+].linkId = "hiv_diagnosis.confirming_lab"
 * item[=].item[=].item[=].text   = "Confirming Lab"
 * item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].prefix   = "11.2"
 
-* item[=].item[=].item[+].linkId = "hiv-diagnosis.dateOfSpecimenCollection"
+* item[=].item[=].item[+].linkId = "hiv_diagnosis.date_specimen_colleced"
 * item[=].item[=].item[=].text   = "Date of Specimen Collection"
 * item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].prefix   = "11.3"
 
-* item[=].item[=].item[+].linkId = "hiv-diagnosis.placeOfSpecimenCollection"
+* item[=].item[=].item[+].linkId = "hiv_diagnosis.place_specimen_colleced"
 * item[=].item[=].item[=].text   = "Place of Specimen Collection"
 * item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].prefix   = "11.4"
 
 
-* item[=].item[+].linkId = "hiv-recency-test"
+* item[=].item[+].linkId = "hiv_recency_test"
 * item[=].item[=].text   = "HIV Recency Test"
 * item[=].item[=].type   = #group
 //* item[=].item[=].prefix   = "12"
 
-* item[=].item[=].item[+].linkId = "hiv-recency-test.rapidTest"
+* item[=].item[=].item[+].linkId = "hiv_recency_test.rapidTest"
 * item[=].item[=].item[=].text   = "Rapid test"
 * item[=].item[=].item[=].type   = #group
 //* item[=].item[=].item[=].prefix   = "12.1"
 
-* item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.dateOfSpecimenCollection"
+* item[=].item[=].item[=].item[+].linkId = "hiv_recency_test.date_specimen_collection"
 * item[=].item[=].item[=].item[=].text   = "Date of Specimen Collection for rapid test"
 * item[=].item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].item[=].prefix   = "12.1.1"
 
-* item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.dateOfTestPerformance"
+* item[=].item[=].item[=].item[+].linkId = "hiv_recency_test.date_test_performed"
 * item[=].item[=].item[=].item[=].text   = "Date of rapid test performance"
 * item[=].item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].item[=].prefix   = "12.1.2"
 
-* item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.placeOfSpecimenCollection"
+* item[=].item[=].item[=].item[+].linkId = "hiv_recency_test.place_specimen_collected"
 * item[=].item[=].item[=].item[=].text   = "Place of Specimen Collection"
 * item[=].item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].item[=].prefix   = "12.1.3"
 
-* item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.testResult"
+* item[=].item[=].item[=].item[+].linkId = "hiv_recency_test.test_result"
 * item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
 * item[=].item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
@@ -283,45 +265,50 @@ Usage: #definition
 //* item[=].item[=].item[=].item[=].prefix   = "12.1.4"
 
 
-* item[=].item[=].item[+].linkId = "recency.vlTest"
+* item[=].item[=].item[+].linkId = "recency.vl_test"
 * item[=].item[=].item[=].text   = "Rapid VL test"
 * item[=].item[=].item[=].type   = #group
 //* item[=].item[=].item[=].prefix   = "12.2"
 
-* item[=].item[=].item[=].item[+].linkId = "recency.dateOfTestPerformance"
+* item[=].item[=].item[=].item[+].linkId = "recency.date_test_performed"
 * item[=].item[=].item[=].item[=].text   = "Date of rapid test performance"
 * item[=].item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].item[=].prefix   = "12.2.1"
 
-* item[=].item[=].item[=].item[+].linkId = "recency.testResult"
+* item[=].item[=].item[=].item[+].linkId = "recency.test_result"
 * item[=].item[=].item[=].item[=].text   = "VL recent infection conclusion"
 * item[=].item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
 //* item[=].item[=].item[=].item[=].prefix   = "12.2.2"
 
 
-* item[=].item[+].linkId = "cd4BeforeART"
-* item[=].item[=].text   = "CD4 test before ART"
+* item[=].item[+].linkId = "cd4"
+* item[=].item[=].text   = "CD4 test results"
 * item[=].item[=].type   = #group
 //* item[=].item[=].prefix   = "13"
 
 
-* item[=].item[=].item[+].linkId = "cd4BeforeART.dateOfSpecimenCollection"
+* item[=].item[=].item[+].linkId = "cd4.current.date_specimen_collected"
+* item[=].item[=].item[=].text   = "Date of Specimen Collection for present CD4 test"
+* item[=].item[=].item[=].type   = #date
+//* item[=].item[=].item[=].prefix   = "13.1"
+
+* item[=].item[=].item[+].linkId = "cd4.current.date_specimen_collected"
 * item[=].item[=].item[=].text   = "Date of Specimen Collection for CD4 test before ART"
 * item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].prefix   = "13.1"
 
-* item[=].item[=].item[+].linkId = "cd4BeforeART.dateOfTestPerformance"
+* item[=].item[=].item[+].linkId = "cd4.current.date_test_performed"
 * item[=].item[=].item[=].text   = "Date of CD4 test before ART performance"
 * item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].prefix   = "13.2"
 
-* item[=].item[=].item[+].linkId = "cd4BeforeART.placeOfSpecimenCollection"
+* item[=].item[=].item[+].linkId = "cd4.current.place_specimen_collected"
 * item[=].item[=].item[=].text   = "Place of Specimen Collection for CD4 test before ART"
 * item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].prefix   = "13.3"
 
-* item[=].item[=].item[+].linkId = "cd4BeforeART.testResult"
+* item[=].item[=].item[+].linkId = "cd4.current.testResult"
 * item[=].item[=].item[=].text   = "CD4 test before ART - result"
 * item[=].item[=].item[=].type   = #integer
 //* item[=].item[=].item[=].prefix   = "13.4"
@@ -332,17 +319,17 @@ Usage: #definition
 * item[=].item[=].type   = #group
 //* item[=].item[=].prefix   = "14"
 
-* item[=].item[=].item[+].linkId = "cd4DuringART.dateOfSpecimenCollection"
+* item[=].item[=].item[+].linkId = "cd4DuringART.date_specimen_collected"
 * item[=].item[=].item[=].text   = "Date of Specimen Collection for CD4 test during ART"
 * item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].prefix   = "14.1"
 
-* item[=].item[=].item[+].linkId = "cd4DuringART.dateOfTestPerformance"
+* item[=].item[=].item[+].linkId = "cd4DuringART.date_test_performed"
 * item[=].item[=].item[=].text   = "Date of CD4 test during ART performance"
 * item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].prefix   = "14.2"
 
-* item[=].item[=].item[+].linkId = "cd4DuringART.placeOfSpecimenCollection"
+* item[=].item[=].item[+].linkId = "cd4DuringART.place_specimen_collected"
 * item[=].item[=].item[=].text   = "Place of Specimen Collection for CD4 test during ART"
 * item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].prefix   = "14.3"
@@ -358,17 +345,17 @@ Usage: #definition
 * item[=].item[=].type   = #group
 //* item[=].item[=].prefix   = "15"
 
-* item[=].item[=].item[+].linkId = "vl4DuringART.dateOfSpecimenCollection"
+* item[=].item[=].item[+].linkId = "vl4DuringART.date_specimen_collected"
 * item[=].item[=].item[=].text   = "Date of Specimen Collection for VL test during ART"
 * item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].prefix   = "15.1"
 
-* item[=].item[=].item[+].linkId = "vl4DuringART.dateOfTestPerformance"
+* item[=].item[=].item[+].linkId = "vl4DuringART.date_test_performed"
 * item[=].item[=].item[=].text   = "Date of VL test during ART performance"
 * item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].prefix   = "15.2"
 
-* item[=].item[=].item[+].linkId = "vl4DuringART.placeOfSpecimenCollection"
+* item[=].item[=].item[+].linkId = "vl4DuringART.place_specimen_collected"
 * item[=].item[=].item[=].text   = "Place of Specimen Collection for VL test during ART"
 * item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].prefix   = "15.3"
@@ -386,17 +373,17 @@ Usage: #definition
 * item[=].item[=].type   = #group
 //* item[=].item[=].prefix   = "16"
 
-* item[=].item[=].item[+].linkId = "drugResistanceTest.dateOfSpecimenCollection"
+* item[=].item[=].item[+].linkId = "drugResistanceTest.date_specimen_collected"
 * item[=].item[=].item[=].text   = "Date of Specimen Collection for Drug Resistance test"
 * item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].prefix   = "16.1"
 
-* item[=].item[=].item[+].linkId = "drugResistanceTest.dateOfTestPerformance"
+* item[=].item[=].item[+].linkId = "drugResistanceTest.date_test_performed"
 * item[=].item[=].item[=].text   = "Date of Drug Resistance test"
 * item[=].item[=].item[=].type   = #date
 //* item[=].item[=].item[=].prefix   = "16.2"
 
-* item[=].item[=].item[+].linkId = "drugResistanceTest.placeOfSpecimenCollection"
+* item[=].item[=].item[+].linkId = "drugResistanceTest.place_specimen_collected"
 * item[=].item[=].item[=].text   = "Place of Specimen Collection for Drug Resistance test"
 * item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].prefix   = "16.3"
