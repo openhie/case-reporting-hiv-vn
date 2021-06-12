@@ -14,10 +14,12 @@ RuleSet: Question(context, linkId, text, type, repeats)
 
 Instance: vn-hiv-csv-import-questionnaire
 InstanceOf: sdc-questionnaire-extract
-Description: "HIV Case Report Form"
-Title: "HIV Case Report Form"
+Description: "HIV Case Data Import"
+Title: "HIV Case Data Import"
 Usage: #definition
 
+* title = "HIV Case surveillance import"
+* description = "HIV Case surveillance data import structure"
 
 //* extension[+].url = $targetStructureMap
 //* extension[=].valueCanonical = Canonical(HIVCaseReportMap)
