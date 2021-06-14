@@ -43,11 +43,16 @@ jobs:
           # Run the publisher - don't run the batch script but run the line directly
           args: java -jar ./input-cache/publisher.jar publisher -ig .
 
+
+      - name: Get branch name
+        run: echo ${GITHUB_REF##*/}
+          
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          destination_dir: ${GITHUB_REF##*/}
+          destination_dir: temp
           keep_files: true
           
