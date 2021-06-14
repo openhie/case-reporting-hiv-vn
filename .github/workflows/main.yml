@@ -45,16 +45,8 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
-
-      - name: DeployDraft
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/draft'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          destination_dir: draft
+          destination_dir: ${( steps.branch.outputs.BRANCH_NAME }}
           
