@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4e7a3d64-e357-48f8-a397-7f1aa538c448"/>
+  <id value="6095aee7-62be-494e-a27e-d53a52976468"/>
   <meta>
-    <lastUpdated value="2021-05-31T06:02:08.128+00:00"/>
+    <lastUpdated value="2021-06-14T22:07:36.224+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -35,8 +35,8 @@
         <name value="BirthDefects"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:5a1c1fd6-fcf4-4394-984a-eb8d3bdc5183"/>
-          <timestamp value="2021-05-31T06:02:34+00:00"/>
+          <identifier value="urn:uuid:7d0f1b2e-40e1-4642-a13e-b12fe51edf85"/>
+          <timestamp value="2021-06-14T22:07:59+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -74,8 +74,8 @@
         <name value="ChildHIVStatus"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:a34c4b39-7b7a-4f5c-affa-7f78c94e6cda"/>
-          <timestamp value="2021-05-31T06:02:34+00:00"/>
+          <identifier value="urn:uuid:48a82ee4-78e1-4c98-a73b-991210c3a359"/>
+          <timestamp value="2021-06-14T22:07:59+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -145,7 +145,7 @@
         <name value="VSRecencyRTRIResult"/>
         <title value="Recency RITA result"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -161,8 +161,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e702bae3-ab71-47d6-b98b-17b11df42ce1"/>
-          <timestamp value="2021-05-31T06:02:34+00:00"/>
+          <identifier value="urn:uuid:a90b931b-3d4c-4af5-a501-2f856c0cf52f"/>
+          <timestamp value="2021-06-14T22:07:59+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -252,7 +252,7 @@
         <name value="VSViralLoadGroup"/>
         <title value="Viral Load group"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -268,8 +268,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8708f643-bc1d-4b1d-ac09-a459fc884b3c"/>
-          <timestamp value="2021-05-31T06:02:37+00:00"/>
+          <identifier value="urn:uuid:2b8564df-7b07-4420-82be-4ebb1e942449"/>
+          <timestamp value="2021-06-14T22:08:01+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -407,7 +407,7 @@
         <name value="VSHIVTransmissionRoute"/>
         <title value="HIV Transmission Route"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -423,8 +423,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5aa41f6e-1d6d-4e09-9a78-012c1749519a"/>
-          <timestamp value="2021-05-31T06:02:38+00:00"/>
+          <identifier value="urn:uuid:aa4394eb-4746-403b-85b5-9c0c2850b052"/>
+          <timestamp value="2021-06-14T22:08:03+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -512,8 +512,8 @@
         <name value="BirthDefects"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:5a1c1fd6-fcf4-4394-984a-eb8d3bdc5183"/>
-          <timestamp value="2021-05-31T06:02:34+00:00"/>
+          <identifier value="urn:uuid:7d0f1b2e-40e1-4642-a13e-b12fe51edf85"/>
+          <timestamp value="2021-06-14T22:07:59+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -551,8 +551,8 @@
         <name value="BirthDefects"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:5a1c1fd6-fcf4-4394-984a-eb8d3bdc5183"/>
-          <timestamp value="2021-05-31T06:02:34+00:00"/>
+          <identifier value="urn:uuid:7d0f1b2e-40e1-4642-a13e-b12fe51edf85"/>
+          <timestamp value="2021-06-14T22:07:59+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -590,8 +590,8 @@
         <name value="ChildHIVStatus"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:a34c4b39-7b7a-4f5c-affa-7f78c94e6cda"/>
-          <timestamp value="2021-05-31T06:02:34+00:00"/>
+          <identifier value="urn:uuid:48a82ee4-78e1-4c98-a73b-991210c3a359"/>
+          <timestamp value="2021-06-14T22:07:59+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -722,7 +722,7 @@
         <version value="0.1.0-test"/>
         <name value="HIVOccupationCodes"/>
         <status value="draft"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -737,8 +737,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f96e928e-39e4-4fce-9af0-1f3af8ef6b11"/>
-          <timestamp value="2021-05-31T06:02:39+00:00"/>
+          <identifier value="urn:uuid:b5a11401-c43c-4bd3-afde-e4fa2b967363"/>
+          <timestamp value="2021-06-14T22:08:04+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -882,7 +882,7 @@
         <name value="VSDiagnosisResults"/>
         <title value="VSDiagnosisResults"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -897,8 +897,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:56e03019-aa32-4ecd-99ad-9c7bd750b622"/>
-          <timestamp value="2021-05-31T06:02:39+00:00"/>
+          <identifier value="urn:uuid:5e19e220-6266-466a-911a-068d72a6013a"/>
+          <timestamp value="2021-06-14T22:08:04+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1009,7 +1009,7 @@
         <name value="PatientGender"/>
         <title value="Patient Gender"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1025,8 +1025,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c6eca219-662d-459c-9b83-2b6921769cb7"/>
-          <timestamp value="2021-05-31T06:02:40+00:00"/>
+          <identifier value="urn:uuid:eef3ad61-983c-4fbc-aca3-10ec9a5168db"/>
+          <timestamp value="2021-06-14T22:08:04+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1153,7 +1153,7 @@
         <name value="PatientGenderIdentity"/>
         <title value="Patient Gender Identity"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1169,8 +1169,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b45a65f2-8613-4098-87ee-f377507e0917"/>
-          <timestamp value="2021-05-31T06:02:40+00:00"/>
+          <identifier value="urn:uuid:a0ec1abc-954f-418f-948d-0fe9306286be"/>
+          <timestamp value="2021-06-14T22:08:04+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1280,7 +1280,7 @@
         <name value="ARVTreatmentStatus"/>
         <title value="Arv treatment Status"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1296,8 +1296,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cc3fefa7-86d5-4070-bfe2-53d09b1f30d1"/>
-          <timestamp value="2021-05-31T06:02:41+00:00"/>
+          <identifier value="urn:uuid:4441ecd7-72d7-405f-a963-26064eb4f958"/>
+          <timestamp value="2021-06-14T22:08:06+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1403,7 +1403,7 @@
         <name value="VSIndications"/>
         <title value="Viralload Indications"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1419,8 +1419,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:085c75a0-a42c-4ff5-ace7-4eeaf73d219d"/>
-          <timestamp value="2021-05-31T06:02:41+00:00"/>
+          <identifier value="urn:uuid:a109c493-2596-406e-b85b-89e3b74c3aca"/>
+          <timestamp value="2021-06-14T22:08:07+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1512,7 +1512,7 @@
         <name value="VSRecencyRITAResult"/>
         <title value="Recency RITA result"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1528,8 +1528,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ef28d2d8-b378-4464-bd65-9755c3a34eb0"/>
-          <timestamp value="2021-05-31T06:02:42+00:00"/>
+          <identifier value="urn:uuid:4655cf7d-e9d4-43b6-a348-2b9d853e08f9"/>
+          <timestamp value="2021-06-14T22:08:08+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1659,7 +1659,7 @@
         <name value="VSTreatmentCategory"/>
         <title value="Category of the treatment"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1675,8 +1675,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:07c4c6bb-b5ff-4da9-9fbb-872f335cb762"/>
-          <timestamp value="2021-05-31T06:02:42+00:00"/>
+          <identifier value="urn:uuid:9990e015-5769-4653-b9c9-822f10dc2d4a"/>
+          <timestamp value="2021-06-14T22:08:08+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1782,7 +1782,7 @@
         <name value="PatientCommunicationPreferences"/>
         <title value="Patient Communication Preferences"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1798,8 +1798,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bc320bb2-9b03-44a4-a502-ab8774a90fc0"/>
-          <timestamp value="2021-05-31T06:02:43+00:00"/>
+          <identifier value="urn:uuid:03e42ae3-c1e3-4de0-b6a6-aab47f1bccbc"/>
+          <timestamp value="2021-06-14T22:08:09+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1852,8 +1852,8 @@
         <name value="BirthDefects"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:5a1c1fd6-fcf4-4394-984a-eb8d3bdc5183"/>
-          <timestamp value="2021-05-31T06:02:34+00:00"/>
+          <identifier value="urn:uuid:7d0f1b2e-40e1-4642-a13e-b12fe51edf85"/>
+          <timestamp value="2021-06-14T22:07:59+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1929,7 +1929,7 @@
         <name value="HIVRapidTestResults"/>
         <title value="HIVRapidTestResults"/>
         <status value="draft"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1945,8 +1945,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:07999eff-c644-4422-8eb7-9d9a0072f958"/>
-          <timestamp value="2021-05-31T06:02:43+00:00"/>
+          <identifier value="urn:uuid:f463cd69-c3d9-4aaa-92de-1dfd24aef66d"/>
+          <timestamp value="2021-06-14T22:08:09+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2397,7 +2397,7 @@
         <name value="VSVietnamRegimen"/>
         <title value="ValueSet Vietnam HIV Regimen"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -2413,8 +2413,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2cd9a80f-ffe3-47c3-ab48-b13c1a6a6195"/>
-          <timestamp value="2021-05-31T06:02:44+00:00"/>
+          <identifier value="urn:uuid:f5b76905-42cf-4fd2-9b5d-a44a2fbe65a5"/>
+          <timestamp value="2021-06-14T22:08:10+00:00"/>
           <total value="47"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3148,7 +3148,7 @@
         <name value="VSVietnamEthnicity"/>
         <title value="Valueset Vietnam Ethnicity"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3164,8 +3164,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:29b3ef35-56b8-44f2-8100-98293ca65075"/>
-          <timestamp value="2021-05-31T06:02:45+00:00"/>
+          <identifier value="urn:uuid:c930c6be-299a-43ba-977b-2626cc01efcb"/>
+          <timestamp value="2021-06-14T22:08:11+00:00"/>
           <total value="56"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3536,7 +3536,7 @@
         <name value="VSHIVPregnancyOutcome"/>
         <title value="HIV Pregnancy outcome"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3552,8 +3552,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d7a54761-78eb-42dc-8cf2-8c5ca64f384b"/>
-          <timestamp value="2021-05-31T06:02:45+00:00"/>
+          <identifier value="urn:uuid:f6ce4081-802d-4c20-8928-7c2a248ffb21"/>
+          <timestamp value="2021-06-14T22:08:11+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3660,7 +3660,7 @@
         <name value="VSDateComponent"/>
         <title value="Date component of pregnancy"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3676,8 +3676,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1e6f4e1d-1979-46cc-bd4e-753996442c89"/>
-          <timestamp value="2021-05-31T06:02:45+00:00"/>
+          <identifier value="urn:uuid:79f27096-37a2-4790-a124-39d89c3ad0e9"/>
+          <timestamp value="2021-06-14T22:08:12+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3775,7 +3775,7 @@
         <name value="VSRegimenLevel"/>
         <title value="ValueSet Vietnam HIV Regimen Level "/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3791,8 +3791,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5166fdde-e226-4a63-ab6f-04f17e4efe35"/>
-          <timestamp value="2021-05-31T06:02:45+00:00"/>
+          <identifier value="urn:uuid:6a38b0dd-1239-4674-a004-2e7de173081d"/>
+          <timestamp value="2021-06-14T22:08:12+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3863,7 +3863,7 @@
         <version value="0.1.0-test"/>
         <name value="VSCommonDate"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3879,8 +3879,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b0fc5bd7-39e2-42e4-a5d4-51093ca814c5"/>
-          <timestamp value="2021-05-31T06:02:46+00:00"/>
+          <identifier value="urn:uuid:04acca77-dc00-46b2-a488-3d169d138e72"/>
+          <timestamp value="2021-06-14T22:08:12+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3972,7 +3972,7 @@
         <name value="TypeOfContact"/>
         <title value="Type of contact or relationship"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3988,8 +3988,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:df11af23-4c65-4257-830c-fef8f2d653b7"/>
-          <timestamp value="2021-05-31T06:02:46+00:00"/>
+          <identifier value="urn:uuid:3aa80802-3b0f-4200-874e-d5ab97fc2c88"/>
+          <timestamp value="2021-06-14T22:08:12+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4132,7 +4132,7 @@
         <name value="VSHIVRiskPopulation"/>
         <title value="Risk Population relevant for HIV"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -4148,8 +4148,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:92957ceb-ec4b-4bcf-a7da-02d50e341162"/>
-          <timestamp value="2021-05-31T06:02:46+00:00"/>
+          <identifier value="urn:uuid:4125493a-bbcf-4282-9b26-b5fff788edf8"/>
+          <timestamp value="2021-06-14T22:08:12+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4309,7 +4309,7 @@
         <name value="VSHIVRiskBehavior"/>
         <title value="Risk Behavior"/>
         <status value="active"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -4325,8 +4325,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ed4e50ae-193a-427e-8d48-2989b650960e"/>
-          <timestamp value="2021-05-31T06:02:46+00:00"/>
+          <identifier value="urn:uuid:e52ef340-05c4-40fd-91fa-12691e82145d"/>
+          <timestamp value="2021-06-14T22:08:12+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4422,7 +4422,7 @@
         <version value="0.1.0-test"/>
         <name value="HIVSymptomsCode"/>
         <status value="draft"/>
-        <date value="2021-05-31T06:02:08+00:00"/>
+        <date value="2021-06-14T22:07:36+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -4437,8 +4437,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0235b77f-1293-49cd-a167-872408e9b280"/>
-          <timestamp value="2021-05-31T06:02:46+00:00"/>
+          <identifier value="urn:uuid:524f04b0-a99f-4b24-a9b4-e62219386d2b"/>
+          <timestamp value="2021-06-14T22:08:13+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
