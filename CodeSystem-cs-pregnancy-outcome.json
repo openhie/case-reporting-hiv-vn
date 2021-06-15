@@ -1,0 +1,87 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-pregnancy-outcome",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-outcome defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">unborn<a name=\"cs-pregnancy-outcome-unborn\"> </a></td><td>Unborn</td></tr><tr><td style=\"white-space:nowrap\">born<a name=\"cs-pregnancy-outcome-born\"> </a></td><td>Born</td></tr><tr><td style=\"white-space:nowrap\">miscarried<a name=\"cs-pregnancy-outcome-miscarried\"> </a></td><td>Miscarried</td></tr><tr><td style=\"white-space:nowrap\">abortion<a name=\"cs-pregnancy-outcome-abortion\"> </a></td><td>Abortion</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"cs-pregnancy-outcome-unknown\"> </a></td><td>Unknown</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>unborn</td><td>Chưa sinh</td></tr><tr><td>born</td><td>Đã sinh</td></tr><tr><td>miscarried</td><td>Bị xảy thai</td></tr><tr><td>abortion</td><td>Đã phá thai</td></tr><tr><td>unknown</td><td>Không rõ</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-outcome",
+  "version": "0.1.0-test",
+  "name": "HIV Pregnancy Outcome",
+  "status": "draft",
+  "date": "2021-06-15T07:43:41+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "unborn",
+      "display": "Unborn",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Chưa sinh"
+        }
+      ]
+    },
+    {
+      "code": "born",
+      "display": "Born",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Đã sinh"
+        }
+      ]
+    },
+    {
+      "code": "miscarried",
+      "display": "Miscarried",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Bị xảy thai"
+        }
+      ]
+    },
+    {
+      "code": "abortion",
+      "display": "Abortion",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Đã phá thai"
+        }
+      ]
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Không rõ"
+        }
+      ]
+    }
+  ]
+}
