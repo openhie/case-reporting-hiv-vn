@@ -9,10 +9,10 @@
   <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ImplementationGuide/openhie.vn.case-reporting.hiv"/>
   <version value="0.1.0-test"/>
   <name value="OpenHIE Vietnam HIV Case-reporting"/>
-  <title value="HIV Case-reporting for Vietnam"/>
+  <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-06-15T07:43:41+00:00"/>
+  <date value="2021-06-15T07:57:53+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -385,6 +385,8 @@
       <reference>
         <reference value="Questionnaire/vn-hiv-csv-import-questionnaire"/>
       </reference>
+      <name value="HIV Case surveillance import"/>
+      <description value="HIV Case surveillance data import structure"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
