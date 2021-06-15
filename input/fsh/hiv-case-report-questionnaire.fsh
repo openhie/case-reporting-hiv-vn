@@ -85,285 +85,114 @@ Usage: #definition
 * insert Question(,instructions,Reporting instructions: Monthly – applicable to each patient during the reporting period,display,false)
 * insert Question(,unit_name,Governing body unit name,string,false)
 * insert Question(,report_date,Date of Report,date,false)
+
 * insert Question(,questions,Monthly report,group,false)
 
+* insert Question(item[=].,patient_identification,Part I: Identifying Information,group,false)
+* insert Question(item[=].item[=].,arv_patient_nr,ARV Patient number,string,false)
+* insert Question(item[=].item[=].,case_uid,Case UID,string,false)
 
-* insert Question(item[=].,patient_identification,Part I: Identifying Information,date,false)
-
-* item[=].item[+].linkId = "identifying_information"
-* item[=].item[=].text   = "Part I: Identifying Information"
-* item[=].item[=].type   = #group
-
-* item[=].item[=].item[+].linkId = "arv_patient_nr"
-* item[=].item[=].item[=].text   = "ARV Patient Number"
-* item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix = "1"
-
-* item[=].item[=].item[+].linkId = "personal_information"
-* item[=].item[=].item[=].text   = "Personal Information"
-* item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].prefix = "2"
-
-* item[=].item[=].item[=].item[+].linkId = "name"
-* item[=].item[=].item[=].item[=].text   = "Full name"
-* item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].prefix = "3"
-
-* item[=].item[=].item[=].item[+].linkId = "ethnicity"
-* item[=].item[=].item[=].item[=].text   = "Vietnam Ethnicity"
-* item[=].item[=].item[=].item[=].type   = #choice
-//* item[=].item[=].item[=].item[=].prefix = "4"
+* insert Question(item[=].item[=].,personal_information,Personal information,group,false)
+* insert Question(item[=].item[=].item[=].,name,Full name,string,false)
+* insert Question(item[=].item[=].item[=].,ethnicity,Vietnam Ethnicity,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-ethnicity)
 
-* item[=].item[=].item[=].item[+].linkId = "patient_gender"
-* item[=].item[=].item[=].item[=].text   = "Gender"
-* item[=].item[=].item[=].item[=].type   = #choice
-//* item[=].item[=].item[=].item[=].prefix = "5"
+
+* insert Question(item[=].item[=].item[=].,patient_gender,Gender,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-patient-gender)
 
-* item[=].item[=].item[=].item[+].linkId = "birth_date"
-* item[=].item[=].item[=].item[=].text   = "Date of Birth"
-* item[=].item[=].item[=].item[=].type   = #date
-
+* insert Question(item[=].item[=].item[=].,birth_date,Date of Birth,date,false)
 //* item[=].item[=].item[=].item[=].type   = #integer
 //* item[=].item[=].item[=].item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/regex"
 //* item[=].item[=].item[=].item[=].extension.valueString = "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00))"
 
-* item[=].item[=].item[=].item[+].linkId = "identification"
-* item[=].item[=].item[=].item[=].text   = "Identification"
-* item[=].item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].item[=].prefix = "7"
-//* item[=].item[=].item[=].item[=].answerValueSet    = Canonical($vs-iso3166-1-2)
+* insert Question(item[=].item[=].item[=].,identification,Identification,group,false)
+* insert Question(item[=].item[=].item[=].item[=].,cccd_id,National ID 11 digits,string,false)
+* insert Question(item[=].item[=].item[=].item[=].,cmtnd_id,National ID 9 digits,string,false)
+* insert Question(item[=].item[=].item[=].item[=].,insurance_id,Health insurance number,string,false)
+* insert Question(item[=].item[=].item[=].item[=].,passport_nr,Passport number,string,false)
+* insert Question(item[=].item[=].item[=].item[=].,driver_license,Driver license,string,false)
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "cccdID"
-* item[=].item[=].item[=].item[=].item[=].text   = "National ID 11 digits"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "7.1"
+* insert Question(item[=].item[=].item[=].,residence,Residence,group,false)
+* insert Question(item[=].item[=].item[=].item[=].,current_residence,Current residence,string,false)
+* insert Question(item[=].item[=].item[=].item[=].,permanent_residence,Permanent residence,string,false)
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "insuranceID"
-* item[=].item[=].item[=].item[=].item[=].text   = "Health insurance code"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "7.2"
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "passportnum"
-* item[=].item[=].item[=].item[=].item[=].text   = "Passport Number"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "7.3"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "driverlic"
-* item[=].item[=].item[=].item[=].item[=].text   = "Driver license"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "7.4"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "cmtndID"
-* item[=].item[=].item[=].item[=].item[=].text   = "National ID 9 digits"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "7.5"
-
-* item[=].item[=].item[=].item[+].linkId = "residence"
-* item[=].item[=].item[=].item[=].text   = "Residence"
-* item[=].item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].item[=].prefix   = "8"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "current"
-* item[=].item[=].item[=].item[=].item[=].text   = "Current residence"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "8.1"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "permanent"
-* item[=].item[=].item[=].item[=].item[=].text   = "Permanent residence"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "8.2"
-
-* item[=].item[=].item[=].item[+].linkId = "occupation"
-* item[=].item[=].item[=].item[=].text   = "Occupation"
-* item[=].item[=].item[=].item[=].type   = #choice
-//* item[=].item[=].item[=].item[=].prefix   = "9"
+* insert Question(item[=].item[=].item[=].,occupation,Occupation,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-occupation)
 
-* item[=].item[+].linkId = "risk_factors"
-* item[=].item[=].text   = "Risk factors"
-* item[=].item[=].type   = #group
-//* item[=].item[=].prefix   = "10"
+* insert Question(item[=].,risk_factors,Risk factors,group,false)
 
-* item[=].item[=].item[+].linkId = "risk_population"
-* item[=].item[=].item[=].text   = "Risk population"
-* item[=].item[=].item[=].type   = #choice
-//* item[=].item[=].item[=].prefix   = "10.1"
+* insert Question(item[=].item[=].,risk_population,Risk population,choice,false)
 * item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-population)
 
-* item[=].item[=].item[+].linkId = "risk_behavior"
-* item[=].item[=].item[=].text   = "Risk Behavior"
-* item[=].item[=].item[=].type   = #choice
-//* item[=].item[=].item[=].prefix   = "10.2"
+* insert Question(item[=].item[=].,risk_behavior,Risk behavior,choice,false)
 * item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-risk-behavior)
 
-* item[=].item[=].item[+].linkId = "transmission_route"
-* item[=].item[=].item[=].text   = "Transmission Route"
-* item[=].item[=].item[=].type   = #choice
-//* item[=].item[=].item[=].prefix   = "10.3"
+* insert Question(item[=].item[=].,transmission_route,Transmission route,choice,false)
 * item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-transmission-route)
 
+* insert Question(item[=].,hiv_diagnosis,HIV Diagnosis,group,false)
+* insert Question(item[=].item[=].,hiv_diagnosis.confirmation_date,Date of confirmation,date,false)
+* insert Question(item[=].item[=].,hiv_diagnosis.confirming_lab,Confirming lab,string,false)
+* insert Question(item[=].item[=].,hiv_diagnosis.date_specimen_collected,Date of specimen collection,date,false)
+* insert Question(item[=].item[=].,hiv_diagnosis.place_specimen_collected,Place of specimen collection,string,false)
 
-* item[=].item[+].linkId = "hiv_diagnosis"
-* item[=].item[=].text   = "HIV Testing"
-* item[=].item[=].type   = #group
-//* item[=].item[=].prefix   = "11"
+* insert Question(item[=].,hiv_recency_test,HIV recency test,group,false)
 
-* item[=].item[=].item[+].linkId = "hiv_diagnosis.confirmation_date"
-* item[=].item[=].item[=].text   = "Date of Confirmation"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "11.1"
-
-* item[=].item[=].item[+].linkId = "hiv_diagnosis.confirming_lab"
-* item[=].item[=].item[=].text   = "Confirming Lab"
-* item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix   = "11.2"
-
-* item[=].item[=].item[+].linkId = "hiv_diagnosis.date_specimen_colleced"
-* item[=].item[=].item[=].text   = "Date of Specimen Collection"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "11.3"
-
-* item[=].item[=].item[+].linkId = "hiv_diagnosis.place_specimen_colleced"
-* item[=].item[=].item[=].text   = "Place of Specimen Collection"
-* item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix   = "11.4"
+// To do: combine these and put a test type?
+//* insert Question(item[=].,hiv_recency_test.test_type,Test type,choice,false)
 
 
-* item[=].item[+].linkId = "hiv_recency_test"
-* item[=].item[=].text   = "HIV Recency Test"
-* item[=].item[=].type   = #group
-//* item[=].item[=].prefix   = "12"
-
-* item[=].item[=].item[+].linkId = "hiv_recency_test.rapidTest"
-* item[=].item[=].item[=].text   = "Rapid test"
-* item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].prefix   = "12.1"
-
-* item[=].item[=].item[=].item[+].linkId = "hiv_recency_test.date_specimen_collection"
-* item[=].item[=].item[=].item[=].text   = "Date of Specimen Collection for rapid test"
-* item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "12.1.1"
-
-* item[=].item[=].item[=].item[+].linkId = "hiv_recency_test.date_test_performed"
-* item[=].item[=].item[=].item[=].text   = "Date of rapid test performance"
-* item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "12.1.2"
-
-* item[=].item[=].item[=].item[+].linkId = "hiv_recency_test.place_specimen_collected"
-* item[=].item[=].item[=].item[=].text   = "Place of Specimen Collection"
-* item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].prefix   = "12.1.3"
-
-* item[=].item[=].item[=].item[+].linkId = "hiv_recency_test.test_result"
-* item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
-* item[=].item[=].item[=].item[=].type   = #choice
+* insert Question(item[=].item[=].,hiv_recency_test.rapid_test,Rapid test,group,false)
+* insert Question(item[=].item[=].item[=].,hiv_recency_test.rapid_test.date_specimen_collection,Date of Specimen Collection for rapid test,date,false)
+* insert Question(item[=].item[=].item[=].,hiv_recency_test.rapid_test.place_specimen_collection,Place of Specimen Collection for rapid test,string,false)
+* insert Question(item[=].item[=].item[=].,hiv_recency_test.rapid_test.date_test_performed,Date of rapid test performance,date,false)
+* insert Question(item[=].item[=].item[=].,hiv_recency_test.rapid_test.test_result,Result of recency rapid test performance,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
 
-//* item[=].item[=].item[=].item[=].prefix   = "12.1.4"
-
-
-* item[=].item[=].item[+].linkId = "recency.vl_test"
-* item[=].item[=].item[=].text   = "Rapid VL test"
-* item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].prefix   = "12.2"
-
-* item[=].item[=].item[=].item[+].linkId = "recency.date_test_performed"
-* item[=].item[=].item[=].item[=].text   = "Date of rapid test performance"
-* item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "12.2.1"
-
-* item[=].item[=].item[=].item[+].linkId = "recency.test_result"
-* item[=].item[=].item[=].item[=].text   = "VL recent infection conclusion"
-* item[=].item[=].item[=].item[=].type   = #choice
+* insert Question(item[=].item[=].,hiv_recency_test.vl_test,Rapid test,group,false)
+//* insert Question(item[=].item[=].item[=].,hiv_recency_test.vl_test.date_specimen_collection,Date of Specimen Collection for VL test,date,false)
+//* insert Question(item[=].item[=].item[=].,hiv_recency_test.vl_testid_test.place_specimen_collection,Place of Specimen Collection for rapVLid test,string,false)
+* insert Question(item[=].item[=].item[=].,hiv_recency_test.vl_test.date_test_performed,Date of VL test performance,date,false)
+* insert Question(item[=].item[=].item[=].,hiv_recency_test.vl_test.test_result,Result of recency VL test performance,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
-//* item[=].item[=].item[=].item[=].prefix   = "12.2.2"
 
 
-* item[=].item[+].linkId = "cd4"
-* item[=].item[=].text   = "CD4 test results"
-* item[=].item[=].type   = #group
-//* item[=].item[=].prefix   = "13"
+* insert Question(item[=].,cd4,CD4 test results,group,false)
+* insert Question(item[=].item[=].,cd4.present_test_reason,Reason for present CD4 test,string,false)
+* insert Question(item[=].item[=].,cd4.present_place_specimen_collected,Place of Specimen Collection for present CD4 test,string,false)
+* insert Question(item[=].item[=].,cd4.present_date_specimen_collected,Date of Specimen Collection for present CD4 test,date,false)
+* insert Question(item[=].item[=].,cd4.present_date_test_performed,Date of present CD4 test,date,false)
+* insert Question(item[=].item[=].,cd4.present_test_result,Result of present CD4 test,integer,false)
+
+* insert Question(item[=].item[=].,cd4.history,Past CD4 test results,group,true)
+* insert Question(item[=].item[=].item[=].,cd4.history.before_art,Test before ART?,choice,false)
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #yes "Yes"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #yes "No"
+* insert Question(item[=].item[=].item[=].,cd4.history.test_reason,Reason for past CD4 test,string,false)
+* insert Question(item[=].item[=].item[=].,cd4.history.place_specimen_collected,Place of Specimen Collection for past CD4 test,string,false)
+* insert Question(item[=].item[=].item[=].,cd4.history.date_specimen_collected,Date of Specimen Collection for past CD4 test,date,false)
+* insert Question(item[=].item[=].item[=].,cd4.history.date_test_performed,Date of past CD4 test,date,false)
+* insert Question(item[=].item[=].item[=].,cd4.history.test_result,Result of past CD4 test,integer,false)
 
 
-* item[=].item[=].item[+].linkId = "cd4.current.date_specimen_collected"
-* item[=].item[=].item[=].text   = "Date of Specimen Collection for present CD4 test"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "13.1"
+* insert Question(item[=].,vl,Viral Load test (First time and follow-up\),group,true)
+* insert Question(item[=].item[=].,vl.test_reason,Reason for present VL test,string,false)
+* insert Question(item[=].item[=].,vl.place_specimen_collected,Place of Specimen Collection for present VL test,string,false)
+* insert Question(item[=].item[=].,vl.date_specimen_collected,Date of Specimen Collection for present VL test,date,false)
+* insert Question(item[=].item[=].,vl.date_test_performed,Date of present VL test,date,false)
+* insert Question(item[=].item[=].,vl.test_result,Result of present VL test,integer,false)
 
-* item[=].item[=].item[+].linkId = "cd4.current.date_specimen_collected"
-* item[=].item[=].item[=].text   = "Date of Specimen Collection for CD4 test before ART"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "13.1"
-
-* item[=].item[=].item[+].linkId = "cd4.current.date_test_performed"
-* item[=].item[=].item[=].text   = "Date of CD4 test before ART performance"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "13.2"
-
-* item[=].item[=].item[+].linkId = "cd4.current.place_specimen_collected"
-* item[=].item[=].item[=].text   = "Place of Specimen Collection for CD4 test before ART"
-* item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix   = "13.3"
-
-* item[=].item[=].item[+].linkId = "cd4.current.testResult"
-* item[=].item[=].item[=].text   = "CD4 test before ART - result"
-* item[=].item[=].item[=].type   = #integer
-//* item[=].item[=].item[=].prefix   = "13.4"
-
-
-* item[=].item[+].linkId = "cd4DuringART"
-* item[=].item[=].text   = "CD4 test during ART (first time and follow-up)"
-* item[=].item[=].type   = #group
-//* item[=].item[=].prefix   = "14"
-
-* item[=].item[=].item[+].linkId = "cd4DuringART.date_specimen_collected"
-* item[=].item[=].item[=].text   = "Date of Specimen Collection for CD4 test during ART"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "14.1"
-
-* item[=].item[=].item[+].linkId = "cd4DuringART.date_test_performed"
-* item[=].item[=].item[=].text   = "Date of CD4 test during ART performance"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "14.2"
-
-* item[=].item[=].item[+].linkId = "cd4DuringART.place_specimen_collected"
-* item[=].item[=].item[=].text   = "Place of Specimen Collection for CD4 test during ART"
-* item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix   = "14.3"
-
-* item[=].item[=].item[+].linkId = "cd4DuringART.testResult"
-* item[=].item[=].item[=].text   = "CD4 test during ART - result"
-* item[=].item[=].item[=].type   = #integer
-//* item[=].item[=].item[=].prefix   = "14.4"
-
-
-* item[=].item[+].linkId = "vl4DuringART"
-* item[=].item[=].text   = "Routine Viral Load test during ART (First time and follow-up)"
-* item[=].item[=].type   = #group
-//* item[=].item[=].prefix   = "15"
-
-* item[=].item[=].item[+].linkId = "vl4DuringART.date_specimen_collected"
-* item[=].item[=].item[=].text   = "Date of Specimen Collection for VL test during ART"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "15.1"
-
-* item[=].item[=].item[+].linkId = "vl4DuringART.date_test_performed"
-* item[=].item[=].item[=].text   = "Date of VL test during ART performance"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "15.2"
-
-* item[=].item[=].item[+].linkId = "vl4DuringART.place_specimen_collected"
-* item[=].item[=].item[=].text   = "Place of Specimen Collection for VL test during ART"
-* item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix   = "15.3"
-
-* item[=].item[=].item[+].linkId = "vl4DuringART.testResult"
-* item[=].item[=].item[=].text   = "VL test during ART - result"
-* item[=].item[=].item[=].type   = #integer
-//* item[=].item[=].item[=].prefix   = "15.4"
+* insert Question(item[=].item[=].,vl.history,Past Viral Load test results,group,true)
+* insert Question(item[=].item[=].item[=].,vl.history.before_art,Test before ART?,choice,false)
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #yes "Yes"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #yes "No"
+* insert Question(item[=].item[=].item[=].,vl.history.test_reason,Reason for past CD4 test,string,false)
+* insert Question(item[=].item[=].item[=].,vl.history.place_specimen_collected,Place of Specimen Collection for past VL test,string,false)
+* insert Question(item[=].item[=].item[=].,vl.history.date_specimen_collected,Date of Specimen Collection for past VL test,date,false)
+* insert Question(item[=].item[=].item[=].,vl.history.date_test_performed,Date of past VL test,date,false)
+* insert Question(item[=].item[=].item[=].,vl.history.test_result,Result of past VL test,integer,false)
 
 
 
@@ -394,298 +223,107 @@ Usage: #definition
 //* item[=].item[=].item[=].prefix   = "16.4"
 
 
-* item[=].item[+].linkId = "arvTreatment"
-* item[=].item[=].text   = "ARV Treatment"
-* item[=].item[=].type   = #group
-//* item[=].item[=].prefix   = "17"
 
-* item[=].item[=].item[+].linkId = "arvTreatment.dateOfTreatmentStart"
-* item[=].item[=].item[=].text   = "Date of treatment start"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "17.1"
+* insert Question(item[=].,arvTreatment,ARV Treatment,group,true)
+* insert Question(item[=].item[=].,arvTreatment.past,Past treatment?,boolean,false)
+* insert Question(item[=].item[=].,arvTreatment.registration_type,Type of ARV Treatment registration,choice,false)
+* item[=].item[=].item[=].answerOption[+].valueCoding = #new "New registration"
+* item[=].item[=].item[=].answerOption[+].valueCoding = #transfer-in "Transfer in"
+* item[=].item[=].item[=].answerOption[+].valueCoding = #reinitiation "Re-initiation"
+* insert Question(item[=].item[=].,arvTreatment.registration_date,Date of ARV Treatment registration,date,false)
+* insert Question(item[=].item[=].,arvTreatment.registration_place,Place of ARV Treatment registration,string,false)
 
-* item[=].item[=].item[+].linkId = "arvTreatment.dateOfTreatmentStop"
-* item[=].item[=].item[=].text   = "Date of treatment stop"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "17.2"
+* insert Question(item[=].item[=].,arvTreatment.initiation_date,Date of ARV Treatment initiation,date,false)
 
-* item[=].item[=].item[+].linkId = "arvTreatment.placeOfInitiation"
-* item[=].item[=].item[=].text   = "Place of ARV treatment initiation"
-* item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix   = "17.3"
+* insert Question(item[=].item[=].,arvTreatment.treatment_stop_date,Date of treatment stop,date,false)
+* insert Question(item[=].item[=].,arvTreatment.treatment_stop_reason,Reason to stop treatment,choice,false)
+* item[=].item[=].item[=].answerOption[+].valueCoding = #transfer-out "Transfer out"
+* item[=].item[=].item[=].answerOption[+].valueCoding = #drop-out "Drop out"
+* item[=].item[=].item[=].answerOption[+].valueCoding = #death "Death"
+* insert Question(item[=].item[=].,arvTreatment.place_transfer_out,Place of transfer out,date,false)
 
-* item[=].item[=].item[+].linkId = "arvTreatment.dateOfLossToFollowUp"
-* item[=].item[=].item[=].text   = "Date of loss to follow up"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "17.4"
+* insert Question(item[=].item[=].,arvTreatment.date_loss_follow_up,Date of Loss to follow up,date,false)
 
-* item[=].item[=].item[+].linkId = "arvTreatment.dateOfTransferredOut"
-* item[=].item[=].item[=].text   = "Date ARV treatment transferred out"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "17.5"
-
-* item[=].item[=].item[+].linkId = "arvTreatment.placeTransferredOut"
-* item[=].item[=].item[=].text   = "Place ARV treatment transferred out"
-* item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix   = "17.6"
-
-* item[=].item[=].item[+].linkId = "arvTreatment.regimen"
-* item[=].item[=].item[=].text   = "ARV treatment regimen"
-* item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].prefix   = "17.7"
-
-* item[=].item[=].item[=].item[+].linkId = "regimen.name"
-* item[=].item[=].item[=].item[=].text   = "ARV regimen Name"
-* item[=].item[=].item[=].item[=].type   = #choice
-//* item[=].item[=].item[=].item[=].prefix   = "18.1"
+* insert Question(item[=].item[=].,arvTreatment.regimen,ARV Treatment regimen,group,false)
+* insert Question(item[=].item[=].item[=].,arvTreatment.regimen.name,Regimen name,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-regimen)
 
-* item[=].item[=].item[=].item[+].linkId = "regimen.level"
-* item[=].item[=].item[=].item[=].text   = "ARV regimen Level"
-* item[=].item[=].item[=].item[=].type   = #choice
-//* item[=].item[=].item[=].item[=].prefix   = "18.2"
+* insert Question(item[=].item[=].item[=].,arvTreatment.regimen.level,Regimen level,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-regimenlevel)
 
-* item[=].item[=].item[=].item[+].linkId = "regimen.date1stLineStarted"
-* item[=].item[=].item[=].item[=].text   = "Date 1st ARV regimen started"
-* item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "18.3"
 
 
-* item[=].item[=].item[=].item[+].linkId = "arvTreatment.date2ndLineStarted"
-* item[=].item[=].item[=].item[=].text   = "Date 3rd ARV regimen started"
-* item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "18.4"
+* insert Question(item[=].,comorbidities,Comorbidities,group,false)
 
-* item[=].item[=].item[=].item[+].linkId = "arvTreatment.date3rdLineStarted"
-* item[=].item[=].item[=].item[=].text   = "Date 3rd ARV regimen started"
-* item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "18.5"
+* insert Question(item[=].item[=].,tuberculosis,Tuberculosis,group,false)
+* insert Question(item[=].item[=].item[=].,tpt,TPT,group,false)
+* insert Question(item[=].item[=].item[=].item[=].,tpt.date_started,Date TPT started,date,false)
+* insert Question(item[=].item[=].item[=].item[=].,tpt.date_ended,Date TPT ended,date,false)
+* insert Question(item[=].item[=].item[=].item[=].,tpt.location,Place TPT provided,string,false)
 
+* insert Question(item[=].item[=].item[=].,tbdiagnosis_date,TB diagnosis date,date,false)
 
-* item[=].item[+].linkId = "comorbidities"
-* item[=].item[=].text   = "Comorbidities"
-* item[=].item[=].type   = #group
-//* item[=].item[=].prefix   = "19"
-
-* item[=].item[=].item[+].linkId = "tuberculosis"
-* item[=].item[=].item[=].text   = "Tuberculosis"
-* item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].prefix   = "19.1"
-
-* item[=].item[=].item[=].item[+].linkId = "TPT"
-* item[=].item[=].item[=].item[=].text   = "TPT"
-* item[=].item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].item[=].prefix   = "19.1.1"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "tpt.dateStarted"
-* item[=].item[=].item[=].item[=].item[=].text   = "Date TPT started"
-* item[=].item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.1.1.1"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "tpt.dateCompleted"
-* item[=].item[=].item[=].item[=].item[=].text   = "Date TPT completed"
-* item[=].item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.1.1.2"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "tpt.placeProvided"
-* item[=].item[=].item[=].item[=].item[=].text   = "Place TPT provided"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.1.1.3"
-
-* item[=].item[=].item[=].item[+].linkId = "tbDiagnosisDate"
-* item[=].item[=].item[=].item[=].text   = "TB Diagnosis Date"
-* item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "19.1.2"
+* insert Question(item[=].item[=].item[=].,tbtreatment,TB Treatment,group,false)
+* insert Question(item[=].item[=].item[=].item[=].,tbtreatment.date_started,TB Treatment date started,date,false)
+* insert Question(item[=].item[=].item[=].item[=].,tbtreatment.date_ended,TB Treatment date ended,date,false)
+* insert Question(item[=].item[=].item[=].item[=].,tbtreatment.location,Place TB Treatment provided,date,false)
 
 
-* item[=].item[=].item[=].item[+].linkId = "tbTreatment"
-* item[=].item[=].item[=].item[=].text   = "TB Treatment"
-* item[=].item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].item[=].prefix   = "19.1.3"
+* insert Question(item[=].item[=].,hbv_hcv,HBV and HCV,group,false)
+* insert Question(item[=].item[=].item[=].,hbv,HBV,group,false)
+* insert Question(item[=].item[=].item[=].item[=].,hbv.diagnosis_date,Date of HBV diagnosis,date,false)
+* insert Question(item[=].item[=].item[=].item[=].,hbv.treatment_start_date,Date of HBV treatment start,date,false)
+* insert Question(item[=].item[=].item[=].item[=].,hbv.treatment_stop_date,Date of HBV treatment stopped,date,false)
+* insert Question(item[=].item[=].item[=].item[=].,hbv.treatment_location,Place HBV treatment provided,string,false)
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "tbTreatment.dateStarted"
-* item[=].item[=].item[=].item[=].item[=].text   = "Date TB Treatment started"
-* item[=].item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.1.3.1"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "tbTreatment.dateCompleted"
-* item[=].item[=].item[=].item[=].item[=].text   = "Date TB Treatment completed"
-* item[=].item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.1.3.2"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "tbTreatment.placeProvided"
-* item[=].item[=].item[=].item[=].item[=].text   = "Place TB Treatment provided"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.1.3.3"
+* insert Question(item[=].item[=].item[=].,hcv,HCV,group,false)
+* insert Question(item[=].item[=].item[=].item[=].,hcv.diagnosis_date,Date of HCV diagnosis,date,false)
+* insert Question(item[=].item[=].item[=].item[=].,hcv.treatment_start_date,Date of HCV treatment start,date,false)
+* insert Question(item[=].item[=].item[=].item[=].,hcv.treatment_stop_date,Date of HCV treatment stopped,date,false)
+* insert Question(item[=].item[=].item[=].item[=].,hcv.treatment_location,Place HCV treatment provided,string,false)
 
 
+* insert Question(item[=].,pregnancies,Pregnancies,group,true)
+* insert Question(item[=].item[=].,pregnancy_date_reported,Date pregnancy reported,date,true)
+* insert Question(item[=].item[=].,pregnancy_date_reported,Place pregnancy reported,string,true)
+* insert Question(item[=].item[=].,pregnancy_delivery_place,Delivery place,string,true)
 
-* item[=].item[=].item[+].linkId = "hbv_hcv"
-* item[=].item[=].item[=].text   = "HBV and HCV"
-* item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].prefix   = "19.2"
-
-* item[=].item[=].item[=].item[+].linkId = "hbv"
-* item[=].item[=].item[=].item[=].text   = "HBV"
-* item[=].item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].item[=].prefix   = "19.2.1"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "hbv.diagnosisDate"
-* item[=].item[=].item[=].item[=].item[=].text   = "Date of HBV diagnosis"
-* item[=].item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.2.1.1"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "hbv.treatmentStartDate"
-* item[=].item[=].item[=].item[=].item[=].text   = "Date of HBV treatment start"
-* item[=].item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.2.1.2"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "hbv.treatmentEndDate"
-* item[=].item[=].item[=].item[=].item[=].text   = "Date HBV treatment completed"
-* item[=].item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.2.1.3"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "hbv.placeProvided"
-* item[=].item[=].item[=].item[=].item[=].text   = "Place HBV treatment provided"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.2.1.4"
-
-* item[=].item[=].item[=].item[+].linkId = "hcv"
-* item[=].item[=].item[=].item[=].text   = "HCV"
-* item[=].item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].item[=].prefix   = "19.2.2"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "hcv.diagnosisDate"
-* item[=].item[=].item[=].item[=].item[=].text   = "Date of HBV diagnosis"
-* item[=].item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.2.2.1"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "hcv.treatmentStartDate"
-* item[=].item[=].item[=].item[=].item[=].text   = "Date of HBV treatment start"
-* item[=].item[=].item[=].item[=].item[=].type   = #date
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "hcv.treatmentEndDate"
-* item[=].item[=].item[=].item[=].item[=].text   = "Date HBV treatment completed"
-* item[=].item[=].item[=].item[=].item[=].type   = #date
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "hcv.placeProvided"
-* item[=].item[=].item[=].item[=].item[=].text   = "Place HBV treatment provided"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "19.2.2.2"
-
-
-
-* item[=].item[+].linkId = "pregnancies"
-* item[=].item[=].text   = "ARV Treatment"
-* item[=].item[=].type   = #group
-//* item[=].item[=].prefix   = "20"
-
-* item[=].item[=].item[+].linkId = "datePregnancyReported"
-* item[=].item[=].item[=].text   = "Date pregnancy reported"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "20.1"
-
-* item[=].item[=].item[+].linkId = "placePregnancyReported"
-* item[=].item[=].item[=].text   = "Place pregnancy reported"
-* item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix   = "20.2"
-
-* item[=].item[=].item[+].linkId = "childDeliveryDate"
-* item[=].item[=].item[=].text   = "Reported child delivery date"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "20.3"
-
-* item[=].item[=].item[+].linkId = "childDeliveryPlace"
-* item[=].item[=].item[=].text   = "Reported child delivery place"
-* item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix   = "20.4"
-
-* item[=].item[=].item[+].linkId = "pregnancyOutcomes"
-* item[=].item[=].item[=].text   = "Pregnancy Outcomes"
-* item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].prefix   = "20.5"
-
-* item[=].item[=].item[=].item[+].linkId = "pregnancyOutcomeCode"
-* item[=].item[=].item[=].item[=].text   = "Pregnancy Outcome code"
-* item[=].item[=].item[=].item[=].type   = #choice
+* insert Question(item[=].item[=].,pregnancy_outcomes,Pregnancy outcomes,group,true)
+* insert Question(item[=].item[=].item[=].,pregnancy_outcome_code,Pregnancy outcome code,choice,true)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-pregnancy-outcome)
-//* item[=].item[=].item[=].item[=].prefix   = "20.5.1"
 
 
-* item[=].item[=].item[=].item[+].linkId = "childDateOfBirth"
-* item[=].item[=].item[=].item[=].text   = "Date of child birth"
-* item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
-* item[=].item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
-//* item[=].item[=].item[=].item[=].prefix   = "20.5.2"
+* insert Question(item[=].item[=].,pregnancy_delivery_date,Delivery date,date,true)
+* item[=].item[=].item[=].enableWhen.question = "pregnancy_outcome_code"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerCoding = #2
+* insert Question(item[=].item[=].,pregnancy_gestation_at_delivery,Gestation age at delivery (weeks\),integer,true)
+* item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerCoding = #2
 
-* item[=].item[=].item[=].item[+].linkId = "gestationAtDelivery"
-* item[=].item[=].item[=].item[=].text   = "Gestational age at delivery (weeks)"
-* item[=].item[=].item[=].item[=].type   = #decimal
-//* item[=].item[=].item[=].item[=].prefix   = "19.5.3"
-* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
-* item[=].item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
+* insert Question(item[=].item[=].,children,Births,group,true)
+* item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerCoding = #2
 
-* item[=].item[=].item[=].item[+].linkId = "birthWeight"
-* item[=].item[=].item[=].item[=].text   = "Weight at birth (kg)"
-* item[=].item[=].item[=].item[=].type   = #decimal
-//* item[=].item[=].item[=].item[=].prefix   = "20.5.4"
-* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
-* item[=].item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
-
-* item[=].item[=].item[=].item[+].linkId = "birtDefects"
-* item[=].item[=].item[=].item[=].text   = "Birth defects"
-* item[=].item[=].item[=].item[=].type   = #open-choice
+* insert Question(item[=].item[=].item[=].,children.birth_weight,Child weight at birth,decimal,false)
+* insert Question(item[=].item[=].item[=].,children.birth_defects,Birth defects,open-choice,true)
 * item[=].item[=].item[=].item[=].answerValueSet = "#BirthDefects"
-//* item[=].item[=].item[=].item[=].prefix   = "20.5.5"
-* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
-* item[=].item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
-
-* item[=].item[=].item[=].item[+].linkId = "child-hivStatus"
-* item[=].item[=].item[=].item[=].text   = "Child HIV status"
-* item[=].item[=].item[=].item[=].type   = #choice
+* insert Question(item[=].item[=].item[=].,children.hiv_status,HIV status,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = "#ChildHIVStatus"
-//* item[=].item[=].item[=].item[=].prefix   = "20.5.6"
-* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* insert Question(item[=].item[=].item[=].,children.hiv_diagnosis_date,Child HIV diagnosis date,date,false)
+* item[=].item[=].item[=].item[=].enableWhen.question = "children.hiv_status"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
 
-
-* item[=].item[=].item[=].item[+].linkId = "childHIVDiagnosisDate"
-* item[=].item[=].item[=].item[=].text   = "HIV diagnosis date"
-* item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "20.5.7"
-* item[=].item[=].item[=].item[=].enableWhen.question = "child-hivStatus"
+* insert Question(item[=].item[=].item[=].,child_arv_start_date,Child ARV start date,date,false)
+* item[=].item[=].item[=].item[=].enableWhen.question = "children.hiv_status"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
 
 
-* item[=].item[=].item[=].item[+].linkId = "childARTStartDate"
-* item[=].item[=].item[=].item[=].text   = "ART start date"
-* item[=].item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].item[=].prefix   = "20.5.8"
-* item[=].item[=].item[=].item[=].enableWhen.question = "child-hivStatus"
-* item[=].item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
+* insert Question(item[=].,death,Patient death,group,false)
+* insert Question(item[=].item[=].,death.date,Date of death,date,false)
+* insert Question(item[=].item[=].,death.cause,Cause of death,open-choice,false)
 
-
-
-* item[=].item[+].linkId = "death"
-* item[=].item[=].text   = "Patient death"
-* item[=].item[=].type   = #group
-//* item[=].item[=].prefix   = "21"
-
-* item[=].item[=].item[+].linkId = "dateOfDeath"
-* item[=].item[=].item[=].text   = "Date of death"
-* item[=].item[=].item[=].type   = #date
-//* item[=].item[=].item[=].prefix   = "21.1"
-
-* item[=].item[=].item[+].linkId = "causeOfDeath"
-* item[=].item[=].item[=].text   = "Cause of death"
-* item[=].item[=].item[=].type   = #open-choice
-//* item[=].item[=].item[=].prefix   = "21.2"
