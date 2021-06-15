@@ -11,11 +11,15 @@ on:
   push:
     branches: 
       - main
+      - master
       - draft
+      - candidate
   pull_request:
     branches: 
       - main
+      - master
       - draft
+      - candidate
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -53,7 +57,7 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: ./output # The folder the action should deploy.
           commit-message: Deploy candidate branch
-          target-folder: draft
+          target-folder: branches/draft
           clean: false 
 
       - name: Deploy any other
@@ -63,4 +67,4 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: ./output # The folder the action should deploy.
           commit-message: Deploy main branch
-          clean-exclude: draft
+          clean-exclude: branches
