@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-recency-rita",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-recency-result.html\"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-recency-result.html#cs-recency-result-newInfection\">newInfection</a></td><td>New Infection</td></tr><tr><td><a href=\"CodeSystem-cs-recency-result.html#cs-recency-result-infection\">infection</a></td><td>Infection</td></tr></table></li></ul></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-recency-rita",
+  "version": "0.1.0-test",
+  "name": "VSRecencyRITAResult",
+  "title": "Recency RITA result",
+  "status": "active",
+  "date": "2021-06-15T07:52:20+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "Valueset - Recency RITA result",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result",
+        "concept": [
+          {
+            "code": "newInfection"
+          },
+          {
+            "code": "infection"
+          }
+        ]
+      }
+    ]
+  }
+}
