@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a0da0c1d-8a0c-4db0-8a38-3e657dc7b34e"/>
+  <id value="3ae04672-7113-4552-8e8a-acf6f74f71bd"/>
   <meta>
-    <lastUpdated value="2021-06-15T19:11:01.685+00:00"/>
+    <lastUpdated value="2021-06-15T19:39:42.495+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -35,8 +35,8 @@
         <name value="BirthDefects"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:5d8b8b5b-9833-433e-b4f0-31c119b9b30e"/>
-          <timestamp value="2021-06-15T19:11:30+00:00"/>
+          <identifier value="urn:uuid:b1b5074e-35ad-4803-91e5-611279618b24"/>
+          <timestamp value="2021-06-15T19:40:06+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -74,8 +74,8 @@
         <name value="ChildHIVStatus"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:33c328c8-ed1f-4be3-b5d6-2d716678ae6e"/>
-          <timestamp value="2021-06-15T19:11:31+00:00"/>
+          <identifier value="urn:uuid:aa05ae9e-8791-4b15-949e-e8d0dab1502c"/>
+          <timestamp value="2021-06-15T19:40:06+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -145,7 +145,7 @@
         <name value="VSRecencyRTRIResult"/>
         <title value="Recency RITA result"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -161,8 +161,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3122f4d6-7f5f-4876-9511-5ec55de4ee3d"/>
-          <timestamp value="2021-06-15T19:11:31+00:00"/>
+          <identifier value="urn:uuid:2476c1e7-9eb9-4574-9e2b-ea0a38f16f50"/>
+          <timestamp value="2021-06-15T19:40:06+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -252,7 +252,7 @@
         <name value="VSViralLoadGroup"/>
         <title value="Viral Load group"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -268,8 +268,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fd420af7-29f7-4c31-9216-c45522674f6a"/>
-          <timestamp value="2021-06-15T19:11:33+00:00"/>
+          <identifier value="urn:uuid:0fc462ec-339c-4488-99d0-7e662476153f"/>
+          <timestamp value="2021-06-15T19:40:08+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -407,7 +407,7 @@
         <name value="VSHIVTransmissionRoute"/>
         <title value="HIV Transmission Route"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -423,8 +423,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ffc5a07-d31c-4c14-b3e8-b0c321a4da62"/>
-          <timestamp value="2021-06-15T19:11:35+00:00"/>
+          <identifier value="urn:uuid:26c45a83-709d-4d08-9e1a-cd839bc6f453"/>
+          <timestamp value="2021-06-15T19:40:09+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -512,8 +512,8 @@
         <name value="BirthDefects"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:5d8b8b5b-9833-433e-b4f0-31c119b9b30e"/>
-          <timestamp value="2021-06-15T19:11:30+00:00"/>
+          <identifier value="urn:uuid:b1b5074e-35ad-4803-91e5-611279618b24"/>
+          <timestamp value="2021-06-15T19:40:06+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -551,8 +551,8 @@
         <name value="BirthDefects"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:5d8b8b5b-9833-433e-b4f0-31c119b9b30e"/>
-          <timestamp value="2021-06-15T19:11:30+00:00"/>
+          <identifier value="urn:uuid:b1b5074e-35ad-4803-91e5-611279618b24"/>
+          <timestamp value="2021-06-15T19:40:06+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -590,8 +590,8 @@
         <name value="ChildHIVStatus"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:33c328c8-ed1f-4be3-b5d6-2d716678ae6e"/>
-          <timestamp value="2021-06-15T19:11:31+00:00"/>
+          <identifier value="urn:uuid:aa05ae9e-8791-4b15-949e-e8d0dab1502c"/>
+          <timestamp value="2021-06-15T19:40:06+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -629,42 +629,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-106538001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106538001">106538001</a>
-                </td>
-                <td>Car driver</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-106400003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106400003">106400003</a>
-                </td>
-                <td>Fishermen</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-106388008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106388008">106388008</a>
-                </td>
-                <td>Farmer</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-106541005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106541005">106541005</a>
-                </td>
-                <td>Social worker general</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-310892005"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=310892005">310892005</a>
                 </td>
-                <td>Army officer</td>
+                <td>Army personnel</td>
                 <td/>
               </tr>
               <tr>
@@ -681,6 +649,38 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73438004">73438004</a>
                 </td>
                 <td>Out of work</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-106388008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106388008">106388008</a>
+                </td>
+                <td>Farmer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-106538001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106538001">106538001</a>
+                </td>
+                <td>Car driver</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-106400003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106400003">106400003</a>
+                </td>
+                <td>Fishermen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-106541005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106541005">106541005</a>
+                </td>
+                <td>Social worker general</td>
                 <td/>
               </tr>
               <tr>
@@ -722,7 +722,7 @@
         <version value="0.1.0-test"/>
         <name value="HIVOccupationCodes"/>
         <status value="draft"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -737,8 +737,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8fc6e8db-6f74-47cc-8973-c888e7fae18a"/>
-          <timestamp value="2021-06-15T19:11:36+00:00"/>
+          <identifier value="urn:uuid:be5106a6-f095-42d8-8675-20c126842879"/>
+          <timestamp value="2021-06-15T19:40:10+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -758,28 +758,8 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="106538001"/>
-            <display value="Car driver"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="106400003"/>
-            <display value="Fishermen"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="106388008"/>
-            <display value="Farmer"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="106541005"/>
-            <display value="Social worker general"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="310892005"/>
-            <display value="Army officer"/>
+            <display value="Army personnel"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -790,6 +770,26 @@
             <system value="http://snomed.info/sct"/>
             <code value="73438004"/>
             <display value="Out of work"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106388008"/>
+            <display value="Farmer"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106538001"/>
+            <display value="Car driver"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106400003"/>
+            <display value="Fishermen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106541005"/>
+            <display value="Social worker general"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -882,7 +882,7 @@
         <name value="VSDiagnosisResults"/>
         <title value="VSDiagnosisResults"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -897,8 +897,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9e73cd9a-93e6-4518-b2f8-619c4ee03f36"/>
-          <timestamp value="2021-06-15T19:11:36+00:00"/>
+          <identifier value="urn:uuid:659755ae-d42d-4d0b-b240-e4e5d4ad4af8"/>
+          <timestamp value="2021-06-15T19:40:10+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -935,6 +935,139 @@
             <system value="http://snomed.info/sct"/>
             <code value="260385009"/>
             <display value="Negative"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-regimen-change-reason"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-regimen-change-reason"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-regimen-change-reason.html">Reason for regimen change v0.1.0-test (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-regimen-change-reason.html">
+                <code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-regimen-change-reason-drug-unavailable"> </a>
+                  <a href="CodeSystem-cs-regimen-change-reason.html#cs-regimen-change-reason-drug-unavailable">drug-unavailable</a>
+                </td>
+                <td>Drug unavailable</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-regimen-change-reason-drug-sideeffects"> </a>
+                  <a href="CodeSystem-cs-regimen-change-reason.html#cs-regimen-change-reason-drug-sideeffects">drug-sideeffects</a>
+                </td>
+                <td>Side effects</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-regimen-change-reason-treatment-failure"> </a>
+                  <a href="CodeSystem-cs-regimen-change-reason.html#cs-regimen-change-reason-treatment-failure">treatment-failure</a>
+                </td>
+                <td>Treatment failure</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-regimen-change-reason-drug-interaction"> </a>
+                  <a href="CodeSystem-cs-regimen-change-reason.html#cs-regimen-change-reason-drug-interaction">drug-interaction</a>
+                </td>
+                <td>Drug interaction</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-regimen-change-reason-new-guidance"> </a>
+                  <a href="CodeSystem-cs-regimen-change-reason.html#cs-regimen-change-reason-new-guidance">new-guidance</a>
+                </td>
+                <td>New regimen as national guidance</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-regimen-change-reason"/>
+        <version value="0.1.0-test"/>
+        <name value="RegimenChangeReason"/>
+        <title value="Reason for regimen change"/>
+        <status value="active"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
+        <publisher value="OpenHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://ohie.org"/>
+          </telecom>
+        </contact>
+        <description value="Reason for regimen change"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:20cccc21-387e-4b5f-91e0-55dedf860b12"/>
+          <timestamp value="2021-06-15T19:40:11+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason"/>
+            <code value="drug-unavailable"/>
+            <display value="Drug unavailable"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason"/>
+            <code value="drug-sideeffects"/>
+            <display value="Side effects"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason"/>
+            <code value="treatment-failure"/>
+            <display value="Treatment failure"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason"/>
+            <code value="drug-interaction"/>
+            <display value="Drug interaction"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason"/>
+            <code value="new-guidance"/>
+            <display value="New regimen as national guidance"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1009,7 +1142,7 @@
         <name value="PatientGender"/>
         <title value="Patient Gender"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1025,8 +1158,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fb1967d0-e387-4989-9150-9bea82736b07"/>
-          <timestamp value="2021-06-15T19:11:37+00:00"/>
+          <identifier value="urn:uuid:535a02ee-26f2-4af0-bb54-6def2ec6102c"/>
+          <timestamp value="2021-06-15T19:40:11+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1153,7 +1286,7 @@
         <name value="PatientGenderIdentity"/>
         <title value="Patient Gender Identity"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1169,8 +1302,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f0f6f67c-2e89-4b41-a84e-46a3d72f0a92"/>
-          <timestamp value="2021-06-15T19:11:38+00:00"/>
+          <identifier value="urn:uuid:eb90fd11-28ee-4f82-8d51-00bfdbb4d539"/>
+          <timestamp value="2021-06-15T19:40:11+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1280,7 +1413,7 @@
         <name value="ARVTreatmentStatus"/>
         <title value="Arv treatment Status"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1296,8 +1429,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:64aa9057-5d60-4ac1-bcb4-61bf5d766c0e"/>
-          <timestamp value="2021-06-15T19:11:39+00:00"/>
+          <identifier value="urn:uuid:b71f65c0-d688-42a4-9c80-5f6526b5a57e"/>
+          <timestamp value="2021-06-15T19:40:12+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1403,7 +1536,7 @@
         <name value="VSIndications"/>
         <title value="Viralload Indications"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1419,8 +1552,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ceaf2433-17f4-48c7-977e-c009a2d12fa2"/>
-          <timestamp value="2021-06-15T19:11:40+00:00"/>
+          <identifier value="urn:uuid:28603f69-49d9-4cce-845f-4cf3073a17c3"/>
+          <timestamp value="2021-06-15T19:40:13+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1512,7 +1645,7 @@
         <name value="VSRecencyRITAResult"/>
         <title value="Recency RITA result"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1528,8 +1661,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e8a37879-229d-4cbb-b154-b02d9998af8f"/>
-          <timestamp value="2021-06-15T19:11:41+00:00"/>
+          <identifier value="urn:uuid:d27632f1-9618-4c54-97af-ca3cc9c02c4e"/>
+          <timestamp value="2021-06-15T19:40:14+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1659,7 +1792,7 @@
         <name value="VSTreatmentCategory"/>
         <title value="Category of the treatment"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1675,8 +1808,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c49da48d-f79a-4333-96a4-d11e77133153"/>
-          <timestamp value="2021-06-15T19:11:41+00:00"/>
+          <identifier value="urn:uuid:4fbb5677-f6fa-48a5-841b-07ff67a1e6df"/>
+          <timestamp value="2021-06-15T19:40:14+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1782,7 +1915,7 @@
         <name value="PatientCommunicationPreferences"/>
         <title value="Patient Communication Preferences"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1798,8 +1931,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:93858a57-96d1-45da-867b-5ab8a23fffb9"/>
-          <timestamp value="2021-06-15T19:11:42+00:00"/>
+          <identifier value="urn:uuid:f6c6e258-01a8-4f52-8686-a7dcaa5b2f3e"/>
+          <timestamp value="2021-06-15T19:40:15+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1852,8 +1985,8 @@
         <name value="BirthDefects"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:5d8b8b5b-9833-433e-b4f0-31c119b9b30e"/>
-          <timestamp value="2021-06-15T19:11:30+00:00"/>
+          <identifier value="urn:uuid:b1b5074e-35ad-4803-91e5-611279618b24"/>
+          <timestamp value="2021-06-15T19:40:06+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1929,7 +2062,7 @@
         <name value="HIVRapidTestResults"/>
         <title value="HIVRapidTestResults"/>
         <status value="draft"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1945,8 +2078,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8eee47d8-b72a-4191-85ff-ae3ccb82b6cb"/>
-          <timestamp value="2021-06-15T19:11:43+00:00"/>
+          <identifier value="urn:uuid:596a70e3-2b94-44d9-a48d-041309300d55"/>
+          <timestamp value="2021-06-15T19:40:15+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2397,7 +2530,7 @@
         <name value="VSVietnamRegimen"/>
         <title value="ValueSet Vietnam HIV Regimen"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -2413,8 +2546,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3c324d01-a41f-49a4-86de-da1d51cca0bd"/>
-          <timestamp value="2021-06-15T19:11:43+00:00"/>
+          <identifier value="urn:uuid:25bafab0-7d2d-41cb-85db-5e412f61cdf6"/>
+          <timestamp value="2021-06-15T19:40:15+00:00"/>
           <total value="47"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3148,7 +3281,7 @@
         <name value="VSVietnamEthnicity"/>
         <title value="Valueset Vietnam Ethnicity"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3164,8 +3297,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9b66022-438d-42bd-ab00-8d0694a0a029"/>
-          <timestamp value="2021-06-15T19:11:45+00:00"/>
+          <identifier value="urn:uuid:f552d09b-35fe-4a6d-a670-035e4dfcd9d1"/>
+          <timestamp value="2021-06-15T19:40:16+00:00"/>
           <total value="56"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3536,7 +3669,7 @@
         <name value="VSHIVPregnancyOutcome"/>
         <title value="HIV Pregnancy outcome"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3552,8 +3685,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2bd5eac4-ad3c-4c63-8497-27304cd9f304"/>
-          <timestamp value="2021-06-15T19:11:45+00:00"/>
+          <identifier value="urn:uuid:e20aaf18-5f73-4952-8d55-57ef66843ae0"/>
+          <timestamp value="2021-06-15T19:40:16+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3660,7 +3793,7 @@
         <name value="VSDateComponent"/>
         <title value="Date component of pregnancy"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3676,8 +3809,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9da6936a-eddf-4de0-b6cc-385ac7453ac6"/>
-          <timestamp value="2021-06-15T19:11:45+00:00"/>
+          <identifier value="urn:uuid:fa965a8d-8e56-4541-a1ec-1a2f834d4844"/>
+          <timestamp value="2021-06-15T19:40:17+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3775,7 +3908,7 @@
         <name value="VSRegimenLevel"/>
         <title value="ValueSet Vietnam HIV Regimen Level "/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3791,8 +3924,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ea91f64-ea54-43d7-baaa-4af880c7ab7d"/>
-          <timestamp value="2021-06-15T19:11:46+00:00"/>
+          <identifier value="urn:uuid:e91a11b1-0a5e-4002-80b0-acf8041722f2"/>
+          <timestamp value="2021-06-15T19:40:17+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3863,7 +3996,7 @@
         <version value="0.1.0-test"/>
         <name value="VSCommonDate"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3879,8 +4012,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bc8bf8f4-84a0-4a55-b964-b15a2121d544"/>
-          <timestamp value="2021-06-15T19:11:46+00:00"/>
+          <identifier value="urn:uuid:47096c51-7162-4105-9c4b-f93722d76f28"/>
+          <timestamp value="2021-06-15T19:40:17+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3972,7 +4105,7 @@
         <name value="TypeOfContact"/>
         <title value="Type of contact or relationship"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3988,8 +4121,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9d96998f-6293-48b2-9839-a93e339e2063"/>
-          <timestamp value="2021-06-15T19:11:46+00:00"/>
+          <identifier value="urn:uuid:11961bc8-c3ae-4b3f-bc04-398471e8199f"/>
+          <timestamp value="2021-06-15T19:40:17+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4031,7 +4164,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 9 concepts</p>
+            <p>This value set contains 15 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-cs-hiv-population.html">Population groups v0.1.0-test (CodeSystem)</a>
             </p>
@@ -4054,75 +4187,123 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-1"> </a>
-                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-1">1</a>
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-pwid"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-pwid">pwid</a>
                 </td>
                 <td>Người tiêm chích ma túy</td>
                 <td>Injecting drug users</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-2"> </a>
-                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-2">2</a>
-                </td>
-                <td>Nữ bán dâm</td>
-                <td>Female sex workers</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-3"> </a>
-                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-3">3</a>
-                </td>
-                <td>Mang thai</td>
-                <td>Pregnant women</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-4"> </a>
-                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-4">4</a>
-                </td>
-                <td>Người hiến máu tình nguyện</td>
-                <td>Blood donors</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-5"> </a>
-                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-5">5</a>
-                </td>
-                <td>Bệnh nhân lao</td>
-                <td>TB patients</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-6"> </a>
-                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-6">6</a>
-                </td>
-                <td>Người mắc nhiễm trùng lây qua đường tình dục</td>
-                <td>People with sexually transmitted diseases</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-7"> </a>
-                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-7">7</a>
-                </td>
-                <td>Thanh niên khám tuyển nghĩa vụ quân sự</td>
-                <td>Young recruits for military service</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-8"> </a>
-                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-8">8</a>
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-msm"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-msm">msm</a>
                 </td>
                 <td>Quan hệ tình dục đồng giới nam</td>
                 <td>Men who have sex with men</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-9"> </a>
-                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-9">9</a>
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-sw"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-sw">sw</a>
                 </td>
-                <td>Không rõ</td>
-                <td>Unidentified</td>
+                <td/>
+                <td>Sex workers</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-tg-women"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-tg_women">tg_women</a>
+                </td>
+                <td/>
+                <td>Transgender women</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-partner-plhiv"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-partner_plhiv">partner_plhiv</a>
+                </td>
+                <td/>
+                <td>Sexual partner of PLHIV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-tg-men"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-tg_men">tg_men</a>
+                </td>
+                <td/>
+                <td>Transgender men</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-child-woman-hiv"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-child_woman_hiv">child_woman_hiv</a>
+                </td>
+                <td/>
+                <td>Child of mother who is infected with HIV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-client-sexw"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-client_sexw">client_sexw</a>
+                </td>
+                <td>Nữ bán dâm</td>
+                <td>Client of sex workers</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-blood-donor"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-blood-donor">blood-donor</a>
+                </td>
+                <td>Người hiến máu tình nguyện</td>
+                <td>Blood donors</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-suspect-hiv"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-suspect_hiv">suspect_hiv</a>
+                </td>
+                <td/>
+                <td>People suspected for AIDs</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-tb-patient"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-tb_patient">tb_patient</a>
+                </td>
+                <td>Bệnh nhân lao</td>
+                <td>TB patients</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-std-patient"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-std_patient">std_patient</a>
+                </td>
+                <td>Người mắc nhiễm trùng lây qua đường tình dục</td>
+                <td>People with sexually transmitted diseases</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-prisoner"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-prisoner">prisoner</a>
+                </td>
+                <td/>
+                <td>Prisoner</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-pregnant"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-pregnant">pregnant</a>
+                </td>
+                <td>Mang thai</td>
+                <td>Pregnant women</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-military-recruits"> </a>
+                  <a href="CodeSystem-cs-hiv-population.html#cs-hiv-population-military_recruits">military_recruits</a>
+                </td>
+                <td>Thanh niên khám tuyển nghĩa vụ quân sự</td>
+                <td>Young recruits for military service</td>
               </tr>
             </table>
           </div>
@@ -4132,7 +4313,7 @@
         <name value="VSHIVRiskPopulation"/>
         <title value="Risk Population relevant for HIV"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -4148,9 +4329,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:04190aa3-e020-4ce8-94aa-2b95f5cd95ea"/>
-          <timestamp value="2021-06-15T19:11:46+00:00"/>
-          <total value="9"/>
+          <identifier value="urn:uuid:dbbfd09a-8daa-49d6-99bf-a06d01aac701"/>
+          <timestamp value="2021-06-15T19:40:17+00:00"/>
+          <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -4161,48 +4342,71 @@
           </parameter>
           <contains>
             <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
-            <code value="1"/>
+            <code value="pwid"/>
             <display value="Ng&#x1B0;&#x1EDD;i ti&#xEA;m ch&#xED;ch ma t&#xFA;y"/>
           </contains>
           <contains>
             <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
-            <code value="2"/>
-            <display value="N&#x1EEF; b&#xE1;n d&#xE2;m"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
-            <code value="3"/>
-            <display value="Mang thai"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
-            <code value="4"/>
-            <display value="Ng&#x1B0;&#x1EDD;i hi&#x1EBF;n m&#xE1;u t&#xEC;nh nguy&#x1EC7;n"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
-            <code value="5"/>
-            <display value="B&#x1EC7;nh nh&#xE2;n lao"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
-            <code value="6"/>
-            <display value="Ng&#x1B0;&#x1EDD;i m&#x1EAF;c nhi&#x1EC5;m tr&#xF9;ng l&#xE2;y qua &#x111;&#x1B0;&#x1EDD;ng t&#xEC;nh d&#x1EE5;c"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
-            <code value="7"/>
-            <display value="Thanh ni&#xEA;n kh&#xE1;m tuy&#x1EC3;n ngh&#x129;a v&#x1EE5; qu&#xE2;n s&#x1EF1;"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
-            <code value="8"/>
+            <code value="msm"/>
             <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c &#x111;&#x1ED3;ng gi&#x1EDB;i nam"/>
           </contains>
           <contains>
             <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
-            <code value="9"/>
-            <display value="Kh&#xF4;ng r&#xF5;"/>
+            <code value="sw"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="tg_women"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="partner_plhiv"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="tg_men"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="child_woman_hiv"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="client_sexw"/>
+            <display value="N&#x1EEF; b&#xE1;n d&#xE2;m"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="blood-donor"/>
+            <display value="Ng&#x1B0;&#x1EDD;i hi&#x1EBF;n m&#xE1;u t&#xEC;nh nguy&#x1EC7;n"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="suspect_hiv"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="tb_patient"/>
+            <display value="B&#x1EC7;nh nh&#xE2;n lao"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="std_patient"/>
+            <display value="Ng&#x1B0;&#x1EDD;i m&#x1EAF;c nhi&#x1EC5;m tr&#xF9;ng l&#xE2;y qua &#x111;&#x1B0;&#x1EDD;ng t&#xEC;nh d&#x1EE5;c"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="prisoner"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="pregnant"/>
+            <display value="Mang thai"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
+            <code value="military_recruits"/>
+            <display value="Thanh ni&#xEA;n kh&#xE1;m tuy&#x1EC3;n ngh&#x129;a v&#x1EE5; qu&#xE2;n s&#x1EF1;"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -4216,7 +4420,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 8 concepts</p>
+            <p>This value set contains 5 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-cs-hiv-risk-behavior.html">Risk Behavior v0.1.0-test (CodeSystem)</a>
             </p>
@@ -4239,67 +4443,43 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-1"> </a>
-                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-1">1</a>
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-inject-drugs"> </a>
+                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-inject_drugs">inject_drugs</a>
                 </td>
                 <td>Tiêm chích ma túy</td>
                 <td>Drug injection</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-2"> </a>
-                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-2">2</a>
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-sex-client"> </a>
+                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-sex_client">sex_client</a>
                 </td>
                 <td>Quan hệ tình dục với người bán dâm hoặc mua dâm </td>
                 <td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-3"> </a>
-                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-3">3</a>
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-msm"> </a>
+                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-msm">msm</a>
                 </td>
                 <td>Quan hệ tình dục đồng giới nam</td>
                 <td>Men who have sex with men</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-4"> </a>
-                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-4">4</a>
-                </td>
-                <td>Quan hệ với vợ/chồng/bạn tình là người nhiễm HIV</td>
-                <td>Having sex with spouse/partners who are HIV infected</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-5"> </a>
-                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-5">5</a>
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-smp"> </a>
+                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-smp">smp</a>
                 </td>
                 <td>Quan hệ tình dục với nhiều người (không vì tiền hay ma túy)</td>
                 <td>Having sex with multiple partners (not for money or drug)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-6"> </a>
-                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-6">6</a>
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-partner-hiv"> </a>
+                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-partner_hiv">partner_hiv</a>
                 </td>
-                <td>Lây nhiễm từ mẹ sang con</td>
-                <td>Mother to child transmission</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-7"> </a>
-                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-7">7</a>
-                </td>
-                <td>Nguy cơ khác của bản thân</td>
-                <td>Other risk behaviors</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-risk-behavior-8"> </a>
-                  <a href="CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-8">8</a>
-                </td>
-                <td>Không rõ</td>
-                <td>Unidentified</td>
+                <td>Quan hệ với vợ/chồng/bạn tình là người nhiễm HIV</td>
+                <td>Having sex with spouse/partners who are HIV infected</td>
               </tr>
             </table>
           </div>
@@ -4309,7 +4489,7 @@
         <name value="VSHIVRiskBehavior"/>
         <title value="Risk Behavior"/>
         <status value="active"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -4325,9 +4505,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6fa2da8c-2ac2-4484-b014-bac4ddfecbca"/>
-          <timestamp value="2021-06-15T19:11:46+00:00"/>
-          <total value="8"/>
+          <identifier value="urn:uuid:fdc6aa1f-d517-48a5-9507-0cbfb64ae2a7"/>
+          <timestamp value="2021-06-15T19:40:17+00:00"/>
+          <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -4338,43 +4518,174 @@
           </parameter>
           <contains>
             <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
-            <code value="1"/>
+            <code value="inject_drugs"/>
             <display value="Ti&#xEA;m ch&#xED;ch ma t&#xFA;y"/>
           </contains>
           <contains>
             <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
-            <code value="2"/>
+            <code value="sex_client"/>
             <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c v&#x1EDB;i ng&#x1B0;&#x1EDD;i b&#xE1;n d&#xE2;m ho&#x1EB7;c mua d&#xE2;m "/>
           </contains>
           <contains>
             <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
-            <code value="3"/>
+            <code value="msm"/>
             <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c &#x111;&#x1ED3;ng gi&#x1EDB;i nam"/>
           </contains>
           <contains>
             <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
-            <code value="4"/>
-            <display value="Quan h&#x1EC7; v&#x1EDB;i v&#x1EE3;/ch&#x1ED3;ng/b&#x1EA1;n t&#xEC;nh l&#xE0; ng&#x1B0;&#x1EDD;i nhi&#x1EC5;m HIV"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
-            <code value="5"/>
+            <code value="smp"/>
             <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c v&#x1EDB;i nhi&#x1EC1;u ng&#x1B0;&#x1EDD;i (kh&#xF4;ng v&#xEC; ti&#x1EC1;n hay ma t&#xFA;y)"/>
           </contains>
           <contains>
             <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
-            <code value="6"/>
-            <display value="L&#xE2;y nhi&#x1EC5;m t&#x1EEB; m&#x1EB9; sang con"/>
+            <code value="partner_hiv"/>
+            <display value="Quan h&#x1EC7; v&#x1EDB;i v&#x1EE3;/ch&#x1ED3;ng/b&#x1EA1;n t&#xEC;nh l&#xE0; ng&#x1B0;&#x1EDD;i nhi&#x1EC5;m HIV"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-cause-of-death"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-cause-of-death"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-cause-of-death.html">Cause of death v0.1.0-test (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-cause-of-death.html">
+                <code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-cause-of-death-aids"> </a>
+                  <a href="CodeSystem-cs-cause-of-death.html#cs-cause-of-death-aids">aids</a>
+                </td>
+                <td>Last stage of AIDS</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-cause-of-death-other-diseases"> </a>
+                  <a href="CodeSystem-cs-cause-of-death.html#cs-cause-of-death-other-diseases">other-diseases</a>
+                </td>
+                <td>Caused by other diseases</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-cause-of-death-suicide"> </a>
+                  <a href="CodeSystem-cs-cause-of-death.html#cs-cause-of-death-suicide">suicide</a>
+                </td>
+                <td>Suicide</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-cause-of-death-overdose"> </a>
+                  <a href="CodeSystem-cs-cause-of-death.html#cs-cause-of-death-overdose">overdose</a>
+                </td>
+                <td>Drug overdose</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-cause-of-death-accident"> </a>
+                  <a href="CodeSystem-cs-cause-of-death.html#cs-cause-of-death-accident">accident</a>
+                </td>
+                <td>Accident</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-cause-of-death-unknown"> </a>
+                  <a href="CodeSystem-cs-cause-of-death.html#cs-cause-of-death-unknown">unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-cause-of-death"/>
+        <version value="0.1.0-test"/>
+        <name value="CauseOfDeath"/>
+        <title value="Cause of death"/>
+        <status value="active"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
+        <publisher value="OpenHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://ohie.org"/>
+          </telecom>
+        </contact>
+        <description value="Cause of death"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:9aba53f9-3e3f-4b44-a9a3-5d08721759da"/>
+          <timestamp value="2021-06-15T19:40:17+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death"/>
+            <code value="aids"/>
+            <display value="Last stage of AIDS"/>
           </contains>
           <contains>
-            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
-            <code value="7"/>
-            <display value="Nguy c&#x1A1; kh&#xE1;c c&#x1EE7;a b&#x1EA3;n th&#xE2;n"/>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death"/>
+            <code value="other-diseases"/>
+            <display value="Caused by other diseases"/>
           </contains>
           <contains>
-            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
-            <code value="8"/>
-            <display value="Kh&#xF4;ng r&#xF5;"/>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death"/>
+            <code value="suicide"/>
+            <display value="Suicide"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death"/>
+            <code value="overdose"/>
+            <display value="Drug overdose"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death"/>
+            <code value="accident"/>
+            <display value="Accident"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -4422,7 +4733,7 @@
         <version value="0.1.0-test"/>
         <name value="HIVSymptomsCode"/>
         <status value="draft"/>
-        <date value="2021-06-15T19:11:01+00:00"/>
+        <date value="2021-06-15T19:39:42+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -4437,8 +4748,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a371cf1c-c621-46ac-8492-0f6fda84e29b"/>
-          <timestamp value="2021-06-15T19:11:47+00:00"/>
+          <identifier value="urn:uuid:4374f9f3-bc6c-4cee-9686-4db0b7bbf632"/>
+          <timestamp value="2021-06-15T19:40:18+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>

@@ -1,14 +1,15 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 72, warn = 136, info = 48
+err = 75, warn = 160, info = 49
 IG Publisher Version: 1.1.73
-Generated Tue Jun 15 19:12:12 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Tue Jun 15 19:40:40 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
- Build Errors : 50 / 23 / 1
+ Build Errors : 57 / 23 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-a-treatment-record : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-cs-arv-treatment-status : 0 / 1 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-cause-of-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-gender : 0 / 0 / 5
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-common : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-population : 0 / 0 / 1
@@ -19,6 +20,7 @@ Generated Tue Jun 15 19:12:12 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender-identity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-pregnancy-outcome : 0 / 1 / 6
  /github/workspace/fsh-generated/resources/CodeSystem-cs-recency-result : 0 / 1 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-regimen-change-reason : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-treatment-patient-category : 0 / 1 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-cs-treatment-status : 0 / 1 / 5
  /github/workspace/fsh-generated/resources/CodeSystem-cs-viralload-group : 0 / 0 / 1
@@ -35,9 +37,9 @@ Generated Tue Jun 15 19:12:12 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/Observation-a-recency-result : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-an-aids-diagnosis-observation : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 13 / 17 / 10
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 15 / 41 / 10
  /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 11 / 1 / 5
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 28 / 1 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 29 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-aids-diagnosis-observation : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 0 / 1 / 1
@@ -62,6 +64,7 @@ Generated Tue Jun 15 19:12:12 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/ValueSet-VSDateComponent : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-cs-viralload-indications : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arv-treatment-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-cause-of-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-common-date : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-diagnosis-results : 0 / 0 / 5
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-occupation : 0 / 0 / 12
@@ -76,6 +79,7 @@ Generated Tue Jun 15 19:12:12 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-gender-identity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-recency-rita : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-recency-rtri : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-regimen-change-reason : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-treatment-category : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-contact : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-viralload-group : 0 / 0 / 1
@@ -127,10 +131,17 @@ ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-preg
 ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8: The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8: The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8: The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 249, column 1615: The link 'null#item.cd4.history.before_art' for "2 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 262, column 1600: The link 'null#item.vl.history.before_art' for "2 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 275, column 1554: The link 'null#item.arvTreatment.registration_type' for "3 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 280, column 1534: The link 'null#item.arvTreatment.treatment_stop_reason' for "3 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 251, column 1719: The link 'null#item.hiv_recency_test.vl_test.test_result' for "2 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 253, column 1540: The link 'null#item.cd4.present_test_reason' for "3 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 258, column 1524: The link 'null#item.cd4.present_test_result' for "2 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 260, column 1605: The link 'null#item.cd4.present_test_reason' for "3 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 266, column 1516: The link 'null#item.vl.test_reason' for "6 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 272, column 1600: The link 'null#item.vl.history.before_art' for "2 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 273, column 1623: The link 'null#item.vl.history.test_reason' for "6 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 288, column 1543: The link 'null#item.arvTreatment.registration_type' for "3 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 291, column 1548: The link 'null#item.arvTreatment.treatment_stop_reason' for "3 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 315, column 1617: The link 'null#item.hbv.diagnosis_result' for "2 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 321, column 1615: The link 'null#item.hcv.diagnosis_result' for "2 options" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
@@ -176,6 +187,8 @@ WARNING: CodeSystem/cs-arv-treatment-status: CodeSystem: csd-0: 'Name should be 
 INFORMATION: CodeSystem/cs-arv-treatment-status: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-arv-treatment-status: CodeSystem.concept[1].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-arv-treatment-status: CodeSystem.concept[2].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-cause-of-death.json ==
+INFORMATION: CodeSystem/cs-cause-of-death: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-gender.json ==
 INFORMATION: CodeSystem/cs-gender: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 INFORMATION: CodeSystem/cs-gender: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
@@ -214,6 +227,8 @@ WARNING: CodeSystem/cs-recency-result: CodeSystem: csd-0: 'Name should be usable
 INFORMATION: CodeSystem/cs-recency-result: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-recency-result: CodeSystem.concept[1].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-recency-result: CodeSystem.concept[2].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-regimen-change-reason.json ==
+INFORMATION: CodeSystem/cs-regimen-change-reason: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-treatment-patient-category.json ==
 INFORMATION: CodeSystem/cs-treatment-patient-category: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 WARNING: CodeSystem/cs-treatment-patient-category: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
@@ -348,23 +363,49 @@ ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: 
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' definition is for a simple extension, so it must contain a value, not extensions
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[0]: que-6: 'Required and repeat aren't permitted for display items' Rule 'Required and repeat aren't permitted for display items' Failed
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[1]: que-6: 'Required and repeat aren't permitted for display items' Rule 'Required and repeat aren't permitted for display items' Failed
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[5].item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[5].item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[3].item[1].item[1]: que-4: 'A question cannot have both answerOption and answerValueSet' Rule 'A question cannot have both answerOption and answerValueSet' Failed
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[3].item[1].item[1].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[3].item[1].item[1].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[0].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[5].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[5].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[6].item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[6].item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[6].item[0].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[4].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[5].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[1].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[1].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[1].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[6].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[6].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[6].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[5].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[6].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[6].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[6].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[5]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'pregnancy_gestation_at_delivery'
-ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[6]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'children'
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[1].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[1].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[1].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[1].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[1].answerOption[4].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[1].answerOption[5].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[4].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[4].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[4].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[7].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[7].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[7].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[11]: que-1: 'Group items must have nested items, display items cannot have nested items' Rule 'Group items must have nested items, display items cannot have nested items' Failed
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[1].item[1].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[1].item[1].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[2].item[1].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[2].item[1].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[5].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[5]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'pregnancy_gestation_at_delivery'
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'children'
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: Profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract, Element matches more than one slice - rootContext, itemContext
 ERROR: /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire: URL Mismatch http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire vs http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire
@@ -398,6 +439,8 @@ ERROR: QuestionnaireResponse.item[2].item[8].item[2]: The property item must be 
 INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
 WARNING: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.meta.tag[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: LinkId 'reportDate' not found in questionnaire
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0]: If text exists, it must match the questionnaire definition for linkId unit_name
+INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].answer[0]: Cannot validate string answer option because no option list is provided
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0]: LinkId 'identifying_information' not found in questionnaire
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0]: LinkId 'hiv-diagnosis' not found in questionnaire
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0]: LinkId 'arvTreatment.dateOfTreatmentStart' not found in questionnaire
@@ -486,6 +529,8 @@ INFORMATION: ValueSet/VSDateComponent: ValueSet: Validate resource against profi
 INFORMATION: ValueSet/cs-viralload-indications: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-arv-treatment-status.json ==
 INFORMATION: ValueSet/vs-arv-treatment-status: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-cause-of-death.json ==
+INFORMATION: ValueSet/vs-cause-of-death: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-common-date.json ==
 INFORMATION: ValueSet/vs-common-date: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-diagnosis-results.json ==
@@ -533,6 +578,8 @@ INFORMATION: ValueSet/vs-patient-gender-identity: ValueSet: Validate resource ag
 INFORMATION: ValueSet/vs-recency-rita: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-recency-rtri.json ==
 INFORMATION: ValueSet/vs-recency-rtri: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-regimen-change-reason.json ==
+INFORMATION: ValueSet/vs-regimen-change-reason: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-treatment-category.json ==
 INFORMATION: ValueSet/vs-treatment-category: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-contact.json ==
@@ -551,6 +598,6 @@ WARNING: ValueSet/vs-vn-regimenlevel: ValueSet.title: value should not start or 
 == /github/workspace/input/openhie.vn.case-reporting.hiv.xml ==
 INFORMATION: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[24].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[28].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[58].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[26].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[30].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[61].name: value should not start or finish with whitespace
