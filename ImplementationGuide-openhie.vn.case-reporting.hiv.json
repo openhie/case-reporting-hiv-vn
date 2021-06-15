@@ -8,10 +8,10 @@
   "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ImplementationGuide/openhie.vn.case-reporting.hiv",
   "version": "0.1.0-test",
   "name": "OpenHIE Vietnam HIV Case-reporting",
-  "title": "HIV Case-reporting for Vietnam - candidate draft",
+  "title": "HIV Case-reporting for Vietnam",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-15T19:05:17+00:00",
+  "date": "2021-06-15T19:10:11+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -459,19 +459,6 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-cause-of-death"
-        },
-        "name": "Cause of death",
-        "description": "Cause of death"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
           "reference": "CodeSystem/cs-hiv-population"
         },
         "name": "Population groups",
@@ -577,9 +564,7 @@
         ],
         "reference": {
           "reference": "Questionnaire/vn-hiv-csv-import-questionnaire"
-        },
-        "name": "HIV Case surveillance import",
-        "description": "HIV Case surveillance data import structure"
+        }
       },
       {
         "extension": [
@@ -603,19 +588,6 @@
           "reference": "ValueSet/vs-diagnosis-results"
         },
         "name": "VSDiagnosisResults"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-regimen-change-reason"
-        },
-        "name": "Reason for regimen change",
-        "description": "Reason for regimen change"
       },
       {
         "extension": [
@@ -1079,19 +1051,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-regimen-change-reason"
-        },
-        "name": "Reason for regimen change",
-        "description": "Reason for regimen change"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -1225,19 +1184,6 @@
         },
         "name": "Risk Behavior",
         "description": "ValueSet - Behavior associated with risk of HIV transmission"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-cause-of-death"
-        },
-        "name": "Cause of death",
-        "description": "Cause of death"
       },
       {
         "extension": [
