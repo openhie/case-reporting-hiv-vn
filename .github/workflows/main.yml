@@ -60,7 +60,7 @@ jobs:
           target-folder: branches/draft
           clean: false 
 
-      - name: Deploy any other
+      - name: Deploy main
         uses: JamesIves/github-pages-deploy-action@4.1.4
         if: github.ref != 'refs/heads/draft'
         with:
