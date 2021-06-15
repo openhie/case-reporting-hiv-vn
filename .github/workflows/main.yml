@@ -11,11 +11,15 @@ on:
   push:
     branches: 
       - main
+      - master
       - draft
+      - candidate
   pull_request:
     branches: 
       - main
+      - master
       - draft
+      - candidate
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -44,14 +48,23 @@ jobs:
         with:
           # Run the publisher - don't run the batch script but run the line directly
           args: java -jar ./input-cache/publisher.jar publisher -ig .
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+
+
+      - name: Deploy candidate
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        if: github.ref == 'refs/heads/draft'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          #destination_dir: ./temp
-          #keep_files: true
-          
-      - name: Setup folders
-        run: |
-          mkdir public subdir1
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./output # The folder the action should deploy.
+          commit-message: Deploy candidate branch
+          target-folder: draft
+          clean: false 
+
+      - name: Deploy any other
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        if: github.ref != 'refs/heads/draft'
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./output # The folder the action should deploy.
+          commit-message: Deploy main branch
+          clean-exclude: draft
