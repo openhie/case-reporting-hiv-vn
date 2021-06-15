@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-pregnancy-outcome"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-outcome defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">unborn<a name="cs-pregnancy-outcome-unborn"> </a></td><td>Unborn</td></tr><tr><td style="white-space:nowrap">born<a name="cs-pregnancy-outcome-born"> </a></td><td>Born</td></tr><tr><td style="white-space:nowrap">miscarried<a name="cs-pregnancy-outcome-miscarried"> </a></td><td>Miscarried</td></tr><tr><td style="white-space:nowrap">abortion<a name="cs-pregnancy-outcome-abortion"> </a></td><td>Abortion</td></tr><tr><td style="white-space:nowrap">unknown<a name="cs-pregnancy-outcome-unknown"> </a></td><td>Unknown</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>unborn</td><td>Chưa sinh</td></tr><tr><td>born</td><td>Đã sinh</td></tr><tr><td>miscarried</td><td>Bị xảy thai</td></tr><tr><td>abortion</td><td>Đã phá thai</td></tr><tr><td>unknown</td><td>Không rõ</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-outcome"/>
+  <version value="0.1.0-test"/>
+  <name value="HIV Pregnancy Outcome"/>
+  <status value="draft"/>
+  <date value="2021-06-15T16:04:23+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="unborn"/>
+    <display value="Unborn"/>
+    <designation>
+      <language value="vi-VN"/>
+      <value value="Ch&#x1B0;a sinh"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="born"/>
+    <display value="Born"/>
+    <designation>
+      <language value="vi-VN"/>
+      <value value="&#x110;&#xE3; sinh"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="miscarried"/>
+    <display value="Miscarried"/>
+    <designation>
+      <language value="vi-VN"/>
+      <value value="B&#x1ECB; x&#x1EA3;y thai"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="abortion"/>
+    <display value="Abortion"/>
+    <designation>
+      <language value="vi-VN"/>
+      <value value="&#x110;&#xE3; ph&#xE1; thai"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+    <designation>
+      <language value="vi-VN"/>
+      <value value="Kh&#xF4;ng r&#xF5;"/>
+    </designation>
+  </concept>
+</CodeSystem>

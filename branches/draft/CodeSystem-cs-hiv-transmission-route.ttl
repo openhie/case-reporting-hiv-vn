@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-transmission-route> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-hiv-transmission-route"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-transmission-route defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">312425004<a name=\"cs-hiv-transmission-route-312425004\"> </a></td><td>Lây qua đường máu</td><td>Blood</td></tr><tr><td style=\"white-space:nowrap\">226034001<a name=\"cs-hiv-transmission-route-226034001\"> </a></td><td>Lây qua đường tiêm chích ma túy</td><td>Drug injection</td></tr><tr><td style=\"white-space:nowrap\">250373003<a name=\"cs-hiv-transmission-route-250373003\"> </a></td><td>Truyền máu</td><td>Blood transfusion finding</td></tr><tr><td style=\"white-space:nowrap\">53348004<a name=\"cs-hiv-transmission-route-53348004\"> </a></td><td>Tai nạn nghề nghiệp</td><td>Accidental </td></tr><tr><td style=\"white-space:nowrap\">417564009<a name=\"cs-hiv-transmission-route-417564009\"> </a></td><td>Lây qua đường tình dục</td><td>Sexual Transmission</td></tr><tr><td style=\"white-space:nowrap\">38628009<a name=\"cs-hiv-transmission-route-38628009\"> </a></td><td>Tình dục đồng giới</td><td>Homosexual (finding)</td></tr><tr><td style=\"white-space:nowrap\">20430005<a name=\"cs-hiv-transmission-route-20430005\"> </a></td><td>Tình dục khác giới</td><td>Heterosexual (finding)</td></tr><tr><td style=\"white-space:nowrap\">438998000<a name=\"cs-hiv-transmission-route-438998000\"> </a></td><td>Mẹ truyền sang con</td><td>Mother to Child Transmission</td></tr><tr><td style=\"white-space:nowrap\">69910005<a name=\"cs-hiv-transmission-route-69910005\"> </a></td><td>Không rõ</td><td>Unidentified</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-transmission-route"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
+  fhir:CodeSystem.name [ fhir:value "CSHIVTransmissionRoute"];
+  fhir:CodeSystem.title [ fhir:value "HIV Transmission Route"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-06-15T16:04:23+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "CodeSystem - Route of HIV transmission"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "312425004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lây qua đường máu" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "226034001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lây qua đường tiêm chích ma túy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Drug injection" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "250373003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Truyền máu" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood transfusion finding" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "53348004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tai nạn nghề nghiệp" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Accidental " ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "417564009" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lây qua đường tình dục" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Sexual Transmission" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "38628009" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tình dục đồng giới" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Homosexual (finding)" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "20430005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tình dục khác giới" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Heterosexual (finding)" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "438998000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mẹ truyền sang con" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Mother to Child Transmission" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "69910005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Không rõ" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Unidentified" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-transmission-route.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

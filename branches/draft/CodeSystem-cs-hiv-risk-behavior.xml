@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-risk-behavior"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="cs-hiv-risk-behavior-1"> </a></td><td>Tiêm chích ma túy</td><td>Drug injection</td></tr><tr><td style="white-space:nowrap">2<a name="cs-hiv-risk-behavior-2"> </a></td><td>Quan hệ tình dục với người bán dâm hoặc mua dâm </td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style="white-space:nowrap">3<a name="cs-hiv-risk-behavior-3"> </a></td><td>Quan hệ tình dục đồng giới nam</td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">4<a name="cs-hiv-risk-behavior-4"> </a></td><td>Quan hệ với vợ/chồng/bạn tình là người nhiễm HIV</td><td>Having sex with spouse/partners who are HIV infected</td></tr><tr><td style="white-space:nowrap">5<a name="cs-hiv-risk-behavior-5"> </a></td><td>Quan hệ tình dục với nhiều người (không vì tiền hay ma túy)</td><td>Having sex with multiple partners (not for money or drug)</td></tr><tr><td style="white-space:nowrap">6<a name="cs-hiv-risk-behavior-6"> </a></td><td>Lây nhiễm từ mẹ sang con</td><td>Mother to child transmission</td></tr><tr><td style="white-space:nowrap">7<a name="cs-hiv-risk-behavior-7"> </a></td><td>Nguy cơ khác của bản thân</td><td>Other risk behaviors</td></tr><tr><td style="white-space:nowrap">8<a name="cs-hiv-risk-behavior-8"> </a></td><td>Không rõ</td><td>Unidentified</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
+  <version value="0.1.0-test"/>
+  <name value="CSHIVRiskBehavior"/>
+  <title value="Risk Behavior"/>
+  <status value="active"/>
+  <date value="2021-06-15T16:04:23+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - Behavior associated with risk of HIV transmission"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="1"/>
+    <display value="Ti&#xEA;m ch&#xED;ch ma t&#xFA;y"/>
+    <definition value="Drug injection"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c v&#x1EDB;i ng&#x1B0;&#x1EDD;i b&#xE1;n d&#xE2;m ho&#x1EB7;c mua d&#xE2;m "/>
+    <definition value="Sexual relationship with sex workers or with sex buyers/clients (for money or drug)"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c &#x111;&#x1ED3;ng gi&#x1EDB;i nam"/>
+    <definition value="Men who have sex with men"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Quan h&#x1EC7; v&#x1EDB;i v&#x1EE3;/ch&#x1ED3;ng/b&#x1EA1;n t&#xEC;nh l&#xE0; ng&#x1B0;&#x1EDD;i nhi&#x1EC5;m HIV"/>
+    <definition value="Having sex with spouse/partners who are HIV infected"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c v&#x1EDB;i nhi&#x1EC1;u ng&#x1B0;&#x1EDD;i (kh&#xF4;ng v&#xEC; ti&#x1EC1;n hay ma t&#xFA;y)"/>
+    <definition value="Having sex with multiple partners (not for money or drug)"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="L&#xE2;y nhi&#x1EC5;m t&#x1EEB; m&#x1EB9; sang con"/>
+    <definition value="Mother to child transmission"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Nguy c&#x1A1; kh&#xE1;c c&#x1EE7;a b&#x1EA3;n th&#xE2;n"/>
+    <definition value="Other risk behaviors"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Kh&#xF4;ng r&#xF5;"/>
+    <definition value="Unidentified"/>
+  </concept>
+</CodeSystem>
