@@ -15,10 +15,10 @@
   fhir:ImplementationGuide.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ImplementationGuide/openhie.vn.case-reporting.hiv"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0-test"];
   fhir:ImplementationGuide.name [ fhir:value "OpenHIE Vietnam HIV Case-reporting"];
-  fhir:ImplementationGuide.title [ fhir:value "HIV Case-reporting for Vietnam - candidate draft"];
+  fhir:ImplementationGuide.title [ fhir:value "HIV Case-reporting for Vietnam"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-15T07:57:53+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-15T15:35:51+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "OpenHIE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -549,9 +549,7 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/vn-hiv-csv-import-questionnaire>;
          fhir:Reference.reference [ fhir:value "Questionnaire/vn-hiv-csv-import-questionnaire" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Case surveillance import" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIV Case surveillance data import structure" ]
+       ]
      ], [
        fhir:index 17;
        fhir:Element.extension [

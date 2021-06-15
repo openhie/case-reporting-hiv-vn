@@ -8,10 +8,10 @@
   "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ImplementationGuide/openhie.vn.case-reporting.hiv",
   "version": "0.1.0-test",
   "name": "OpenHIE Vietnam HIV Case-reporting",
-  "title": "HIV Case-reporting for Vietnam - candidate draft",
+  "title": "HIV Case-reporting for Vietnam",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-15T07:57:53+00:00",
+  "date": "2021-06-15T15:35:51+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -564,9 +564,7 @@
         ],
         "reference": {
           "reference": "Questionnaire/vn-hiv-csv-import-questionnaire"
-        },
-        "name": "HIV Case surveillance import",
-        "description": "HIV Case surveillance data import structure"
+        }
       },
       {
         "extension": [
