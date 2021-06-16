@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-arv-treatment-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">yes<a name="cs-arv-treatment-status-yes"> </a></td><td>Yes</td></tr><tr><td style="white-space:nowrap">no<a name="cs-arv-treatment-status-no"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">unknown<a name="cs-arv-treatment-status-unknown"> </a></td><td>Unknown</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>yes</td><td>Có</td></tr><tr><td>no</td><td>Không</td></tr><tr><td>unknown</td><td>Không rõ</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status"/>
+  <version value="0.1.0-test"/>
+  <name value="ARV Treatment Status"/>
+  <status value="draft"/>
+  <date value="2021-06-16T12:49:47+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="yes"/>
+    <display value="Yes"/>
+    <designation>
+      <language value="vi-VN"/>
+      <value value="C&#xF3;"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="no"/>
+    <display value="No"/>
+    <designation>
+      <language value="vi-VN"/>
+      <value value="Kh&#xF4;ng"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+    <designation>
+      <language value="vi-VN"/>
+      <value value="Kh&#xF4;ng r&#xF5;"/>
+    </designation>
+  </concept>
+</CodeSystem>

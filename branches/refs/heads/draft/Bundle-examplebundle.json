@@ -1,0 +1,26 @@
+{
+  "resourceType": "Bundle",
+  "id": "examplebundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "test-hiv-condition",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href=\"Patient-test-hiv-patient.html\">Generated Summary: id: ARV001, id: P0000012311, id: 011100101, id: NN-1232717432, id: 01112303122; Nguyan Van A; birthDate: 1970-01-01</a></p><p><b>recordedDate</b>: 2020-11-12</p></div>"
+        },
+        "subject": {
+          "reference": "Patient/test-hiv-patient"
+        },
+        "recordedDate": "2020-11-12"
+      }
+    }
+  ]
+}
