@@ -161,15 +161,22 @@ Id: cs-hiv-population
 Title: "Population groups"
 Description: "CodeSystem - Population groups - Subjects to be tested for HIV"
 
-* #1 "Người tiêm chích ma túy" "Injecting drug users"
-* #2 "Nữ bán dâm" "Female sex workers"
-* #3 "Mang thai" "Pregnant women"
-* #4 "Người hiến máu tình nguyện" "Blood donors"
-* #5 "Bệnh nhân lao" "TB patients"
-* #6 "Người mắc nhiễm trùng lây qua đường tình dục" "People with sexually transmitted diseases"
-* #7 "Thanh niên khám tuyển nghĩa vụ quân sự" "Young recruits for military service"
-* #8 "Quan hệ tình dục đồng giới nam" "Men who have sex with men"
-* #9 "Không rõ" "Unidentified"
+* #pwid "Người tiêm chích ma túy" "Injecting drug users"
+* #msm "Quan hệ tình dục đồng giới nam" "Men who have sex with men"
+* #sw "" "Sex workers"
+* #tg_women "" "Transgender women"
+* #partner_plhiv "" "Sexual partner of PLHIV"
+* #tg_men "" "Transgender men"
+* #child_woman_hiv "" "Child of mother who is infected with HIV"
+* #client_sexw "Nữ bán dâm" "Client of sex workers"
+* #blood-donor "Người hiến máu tình nguyện" "Blood donors"
+* #suspect_hiv "" "People suspected for AIDs"
+* #tb_patient "Bệnh nhân lao" "TB patients"
+* #std_patient "Người mắc nhiễm trùng lây qua đường tình dục" "People with sexually transmitted diseases"
+* #prisoner "" "Prisoner"
+* #pregnant "Mang thai" "Pregnant women"
+* #military_recruits "Thanh niên khám tuyển nghĩa vụ quân sự" "Young recruits for military service"
+//* #other "Không rõ" "Unidentified"
 
 
 ValueSet: VSHIVRiskPopulation
@@ -184,14 +191,12 @@ CodeSystem:  CSHIVRiskBehavior
 Id: cs-hiv-risk-behavior
 Title: "Risk Behavior"
 Description: "CodeSystem - Behavior associated with risk of HIV transmission"
-* #1 "Tiêm chích ma túy" "Drug injection"
-* #2 "Quan hệ tình dục với người bán dâm hoặc mua dâm " "Sexual relationship with sex workers or with sex buyers/clients (for money or drug)"
-* #3 "Quan hệ tình dục đồng giới nam" "Men who have sex with men"
-* #4 "Quan hệ với vợ/chồng/bạn tình là người nhiễm HIV" "Having sex with spouse/partners who are HIV infected"
-* #5 "Quan hệ tình dục với nhiều người (không vì tiền hay ma túy)" "Having sex with multiple partners (not for money or drug)"
-* #6 "Lây nhiễm từ mẹ sang con" "Mother to child transmission"
-* #7 "Nguy cơ khác của bản thân" "Other risk behaviors"
-* #8 "Không rõ" "Unidentified"
+* #inject_drugs "Tiêm chích ma túy" "Drug injection"
+* #sex_client "Quan hệ tình dục với người bán dâm hoặc mua dâm " "Sexual relationship with sex workers or with sex buyers/clients (for money or drug)"
+* #msm "Quan hệ tình dục đồng giới nam" "Men who have sex with men"
+* #smp "Quan hệ tình dục với nhiều người (không vì tiền hay ma túy)" "Having sex with multiple partners (not for money or drug)"
+* #partner_hiv "Quan hệ với vợ/chồng/bạn tình là người nhiễm HIV" "Having sex with spouse/partners who are HIV infected"
+//* #other "Không rõ" "Unidentified"
 
 
 ValueSet: VSHIVRiskBehavior
@@ -228,3 +233,42 @@ Description:  "Valueset - Route of HIV transmission"
 
 
 
+
+
+CodeSystem:  CSCauseOfDeath
+Id: cs-cause-of-death
+Title: "Cause of death"
+Description: "Cause of death"
+* #aids "Last stage of AIDS"
+* #other-diseases "Caused by other diseases"
+* #suicide "Suicide"
+* #overdose "Drug overdose"
+* #accident "Accident"
+* #unknown "Unknown"
+
+
+ValueSet: CauseOfDeath
+Id: vs-cause-of-death
+Title: "Cause of death"
+Description: "Cause of death"
+* include codes from system CSCauseOfDeath
+
+
+
+
+CodeSystem:  CSRegimenChangeReason
+Id: cs-regimen-change-reason
+Title: "Reason for regimen change"
+Description: "Reason for regimen change"
+* #drug-unavailable "Drug unavailable"
+* #drug-sideeffects "Side effects"
+* #treatment-failure "Treatment failure"
+* #drug-interaction "Drug interaction"
+* #new-guidance "New regimen as national guidance"
+
+
+ValueSet: RegimenChangeReason
+Id: vs-regimen-change-reason
+Title: "Reason for regimen change"
+Description: "Reason for regimen change"
+* include codes from system CSRegimenChangeReason
