@@ -1,9 +1,9 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 75, warn = 160, info = 49
+err = 74, warn = 160, info = 49
 IG Publisher Version: 1.1.73
-Generated Wed Jun 16 10:46:29 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Wed Jun 16 11:11:40 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
  Build Errors : 57 / 23 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
@@ -37,7 +37,7 @@ Generated Wed Jun 16 10:46:29 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/Observation-a-recency-result : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-an-aids-diagnosis-observation : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 15 / 41 / 10
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 14 / 41 / 10
  /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 11 / 1 / 5
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 29 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-aids-diagnosis-observation : 0 / 2 / 1
@@ -394,7 +394,6 @@ WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[7].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[7].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[7].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[11]: que-1: 'Group items must have nested items, display items cannot have nested items' Rule 'Group items must have nested items, display items cannot have nested items' Failed
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[1].item[1].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[1].item[1].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[2].item[1].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
