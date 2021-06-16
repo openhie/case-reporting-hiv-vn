@@ -161,14 +161,14 @@ Usage: #definition
 * insert Question(item[=].item[=].item[=].,hiv_recency_test.rapid_test.date_specimen_collection,Date of Specimen Collection,date,false)
 * insert Question(item[=].item[=].item[=].,hiv_recency_test.rapid_test.place_specimen_collection,Place of Specimen Collection,string,false)
 * insert Question(item[=].item[=].item[=].,hiv_recency_test.rapid_test.date_test_performed,Date test result validated,date,false)
-* insert Question(item[=].item[=].item[=].,hiv_recency_test.rapid_test.test_result,Test result,choice,false)
+* insert Question(item[=].item[=].item[=].,hiv_recency_test.rapid_test.test_result,Conclusion,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
 
 * insert Question(item[=].item[=].,hiv_recency_test.vl_test,Viral load test specific for recency test,group,false)
 //* insert Question(item[=].item[=].item[=].,hiv_recency_test.vl_test.date_specimen_collection,Date of Specimen Collection for VL test,date,false)
 //* insert Question(item[=].item[=].item[=].,hiv_recency_test.vl_testid_test.place_specimen_collection,Place of Specimen Collection for rapVLid test,string,false)
 * insert Question(item[=].item[=].item[=].,hiv_recency_test.vl_test.date_test_performed,Date of VL test performance,date,false)
-* insert Question(item[=].item[=].item[=].,hiv_recency_test.vl_test.test_result,Test conclusion,choice,false)
+* insert Question(item[=].item[=].item[=].,hiv_recency_test.vl_test.test_result,Conclusion,choice,false)
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #recent "Recent infection"
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #long-term "Long term infection"
 
@@ -217,7 +217,6 @@ Usage: #definition
 
 
 * insert Question(item[=].item[=].,vl.history,Past Viral Load test,group,true)
-* insert Question(item[=].item[=].item[=].,vl.history.before_art,Test before ART?,choice,false)
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #yes "Yes"
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #yes "No"
 * insert Question(item[=].item[=].item[=].,vl.history.test_reason,Reason for past CD4 test,string,false)
@@ -242,8 +241,7 @@ Usage: #definition
 
 * insert Question(item[=].,arvTreatment,ARV Treatment,group,true)
 * insert Question(item[=].item[=].,arvTreatment.registration_place,ARV Treatment facility,open-choice,false)
-    * insert Question(item[=].item[=].,arvTreatment.initiation_date,Date of ARV Treatment initiation,date,false)
-* insert Question(item[=].item[=].,arvTreatment.registration_date,Date of ARV Treatment initiation,date,false)
+* insert Question(item[=].item[=].,arvTreatment.initiation_date,Date of ARV Treatment initiation,date,false)
 * insert Question(item[=].item[=].,arvTreatment.registration_date,Date of ARV Treatment registration,date,false)
 * insert Question(item[=].item[=].,arvTreatment.registration_type,Reason for ARV Treatment registration,choice,false)
 * item[=].item[=].item[=].answerOption[+].valueCoding = #new "New registration"
@@ -328,7 +326,6 @@ Other
 * insert Question(item[=].item[=].,death.date,Date of death,date,false)
 * insert Question(item[=].item[=].,death.cause,Cause of death,open-choice,false)
 * item[=].item[=].item[=].answerValueSet = Canonical (vs-cause-of-death)
-
 
 
 
