@@ -107,7 +107,7 @@ Usage: #definition
 //* item[=].item[=].item[=].item[=].extension.valueString = "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00))"
 
 * insert Question(item[=].item[=].item[=].,identification,Identification,group,false)
-* insert Question(item[=].item[=].item[=].item[=].,cccd_id,National ID 11 digits,string,false)
+* insert Question(item[=].item[=].item[=].item[=].,cccd_id,National ID 12 digits,string,false)
 * insert Question(item[=].item[=].item[=].item[=].,cmtnd_id,National ID 9 digits,string,false)
 * insert Question(item[=].item[=].item[=].item[=].,insurance_id,Health insurance number,string,false)
 * insert Question(item[=].item[=].item[=].item[=].,passport_nr,Passport number,string,false)
