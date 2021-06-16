@@ -82,7 +82,7 @@ Usage: #definition
 
 
 * insert Question(,tile,HIV Case Report,display,false)
-* insert Question(,instructions,Reporting instructions: Monthly – applicable to each patient during the reporting period,display,false)
+* insert Question(,instructions,Reporting instructions: Monthly - applicable to each patient during the reporting period,display,false)
 * insert Question(,unit_name,Facility ID,open-choice,false)
 * insert Question(,report_date,Date of Report,date,false)
 
@@ -121,7 +121,7 @@ Usage: #definition
 * insert Question(item[=].item[=].item[=].item[=].item[=].,current_residence.commune,Commune,open-choice,false)
 * insert Question(item[=].item[=].item[=].item[=].item[=].,current_residence.address,Street address,string,false)
 
-* insert Question(item[=].item[=].item[=].item[=].,permanent_residence,Permanent residence,string,false)
+* insert Question(item[=].item[=].item[=].item[=].,permanent_residence,Permanent residence,group,false)
 * insert Question(item[=].item[=].item[=].item[=].item[=].,permanent_residence.country,Country,open-choice,false)
 * insert Question(item[=].item[=].item[=].item[=].item[=].,permanent_residence.province,Province,open-choice,false)
 * insert Question(item[=].item[=].item[=].item[=].item[=].,permanent_residence.district,District,open-choice,false)
@@ -265,8 +265,8 @@ Usage: #definition
 
 
 * insert Question(item[=].item[=].,arvTreatment.regimen,ARV Treatment regimen,group,true)
-* insert Question(item[=].item[=].,arvTreatment.date_regimen_started,Date regimen started,date,false)
-* insert Question(item[=].item[=].,arvTreatment.date_regimen_stopped,Date regimen stopped,date,false)
+* insert Question(item[=].item[=].item[=].,arvTreatment.date_regimen_started,Date regimen started,date,false)
+* insert Question(item[=].item[=].item[=].,arvTreatment.date_regimen_stopped,Date regimen stopped,date,false)
 * insert Question(item[=].item[=].item[=].,arvTreatment.regimen.name,Regimen name,open-choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-regimen)
 * insert Question(item[=].item[=].item[=].,arvTreatment.regimen_line,Regimen line,choice,false)
