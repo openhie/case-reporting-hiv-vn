@@ -217,8 +217,6 @@ Usage: #definition
 
 
 * insert Question(item[=].item[=].,history,Past Viral Load test,group,true)
-* item[=].item[=].item[=].answerOption[+].valueCoding = #yes "Yes"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #no "No"
 * insert Question(item[=].item[=].item[=].,test_reason,Reason for past CD4 test,string,false)
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #routine-6 "6 months after ART initiation"
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #routine-12 "12 month routine"
