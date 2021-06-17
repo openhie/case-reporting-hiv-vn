@@ -272,16 +272,6 @@ Usage: #definition
 * insert Question(item[=].item[=].item[=].,regimen_change_reason,Reason to change regimen,open-choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-regimen-change-reason)
 
-/*
-Lack of drug
-Side effects
-Treatment failure 
-Drug interaction
-New regimen as national guidance
-Other
-*/
-
-
 * insert Question(item[=].,comorbidities,Comorbidities,group,false)
 
 * insert Question(item[=].item[=].,tuberculosis,Tuberculosis,group,false)
