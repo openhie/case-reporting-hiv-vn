@@ -1,5 +1,6 @@
 Alias: $targetStructureMap = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap
 Alias: $LOINC = http://loinc.org
+Alias: $vnhiv_ans = http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions
 
 
 /*
@@ -169,32 +170,32 @@ Usage: #definition
 //* insert Question(item[=].item[=].item[=].,vl_testid_test.place_specimen_collection,Place of Specimen Collection for rapVLid test,string,false)
 * insert Question(item[=].item[=].item[=].,date_test_performed,Date of VL test performance,date,false)
 * insert Question(item[=].item[=].item[=].,test_result,Conclusion,choice,false)
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #recent "Recent infection"
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #long-term "Long term infection"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#recent "Recent infection"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#long-term "Long term infection"
 
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
 
 
 * insert Question(item[=].,cd4_test,CD4 test results,group,false)
 * insert Question(item[=].item[=].,lastest_test_reason,Reason for present CD4 test,choice,false)
-* item[=].item[=].item[=].answerOption[+].valueCoding = #pre-art "Before ART"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #routine "Routine"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #other "Other"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pre-art "Before ART"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine "Routine"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
 
 * insert Question(item[=].item[=].,lastest_date_specimen_collected,Date of Specimen Collection for present CD4 test,date,false)
 * insert Question(item[=].item[=].,lastest_place_specimen_collected,Place of Specimen Collection for present CD4 test,string,false)
 * insert Question(item[=].item[=].,lastest_date_test_performed,Date of present CD4 test,date,false)
 * insert Question(item[=].item[=].,lastest_test_result,Result of present CD4 test,integer,false)
 * insert Question(item[=].item[=].,lastest_test_result,Other outcome of CD4 test,choice,false)
-* item[=].item[=].item[=].answerOption[+].valueCoding = #undetermined "Undetermined"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #notapplicable "Not applicable"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#undetermined "Undetermined"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#notapplicable "Not applicable"
 
 
 * insert Question(item[=].item[=].,history,Other CD4 test results,group,true)
 * insert Question(item[=].item[=].item[=].,lastest_test_reason,Reason for CD4 test,choice,false)
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #pre-art "Before ART"
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #routine "Routine"
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #other "Other"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pre-art "Before ART"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine "Routine"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
 * insert Question(item[=].item[=].item[=].,place_specimen_collected,Place of Specimen Collection for CD4 test,string,false)
 * insert Question(item[=].item[=].item[=].,date_specimen_collected,Date of Specimen Collection for CD4 test,date,false)
 * insert Question(item[=].item[=].item[=].,date_test_performed,Date of CD4 test,date,false)
@@ -203,12 +204,12 @@ Usage: #definition
 
 * insert Question(item[=].,vl_test,Viral Load test (First time and follow-up\),group,true)
 * insert Question(item[=].item[=].,test_reason,Reason for present VL test,string,false)
-* item[=].item[=].item[=].answerOption[+].valueCoding = #routine-6 "6 months after ART initiation"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #routine-12 "12 month routine"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #treatment-fail "Suspected treatment failure (clinical, immunological)"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #3month-after-high "3 month after high viral load"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #pregnant "Pregnant/Lactating woman"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #other "Other"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine-6 "6 months after ART initiation"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine-12 "12 month routine"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#treatment-fail "Suspected treatment failure (clinical, immunological)"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#3month-after-high "3 month after high viral load"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pregnant "Pregnant/Lactating woman"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
 
 * insert Question(item[=].item[=].,place_specimen_collected,Place of Specimen Collection for present VL test,string,false)
 * insert Question(item[=].item[=].,date_specimen_collected,Date of Specimen Collection for present VL test,date,false)
@@ -218,12 +219,12 @@ Usage: #definition
 
 * insert Question(item[=].item[=].,history,Past Viral Load test,group,true)
 * insert Question(item[=].item[=].item[=].,test_reason,Reason for past CD4 test,string,false)
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #routine-6 "6 months after ART initiation"
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #routine-12 "12 month routine"
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #treatment-fail "Suspected treatment failure (clinical, immunological)"
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #3month-after-high "3 month after high viral load"
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #pregnant "Pregnant/Lactating woman"
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #other "Other"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine-6 "6 months after ART initiation"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine-12 "12 month routine"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#treatment-fail "Suspected treatment failure (clinical, immunological)"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#3month-after-high "3 month after high viral load"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pregnant "Pregnant/Lactating woman"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
 * insert Question(item[=].item[=].item[=].,place_specimen_collected,Place of Specimen Collection for past VL test,string,false)
 * insert Question(item[=].item[=].item[=].,date_specimen_collected,Date of Specimen Collection for past VL test,date,false)
 * insert Question(item[=].item[=].item[=].,date_test_performed,Date of past VL test,date,false)
@@ -242,17 +243,17 @@ Usage: #definition
 * insert Question(item[=].item[=].,initiation_date,Date of ARV Treatment initiation,date,false)
 * insert Question(item[=].item[=].,enrollment_date,Date of ARV Treatment registration,date,false)
 * insert Question(item[=].item[=].,enrollment_type,Reason for ARV Treatment registration,choice,false)
-* item[=].item[=].item[=].answerOption[+].valueCoding = #new "New registration"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #transfer-in "Transfer in"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #reinitiation "Re-initiation"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#new "New registration"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#transfer-in "Transfer in"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#reinitiation "Re-initiation"
 // enableWhen: if transfer in, enable the transfer in facility
 
 * insert Question(item[=].item[=].,place_transfer_in,Transferred-in facility (previous facility\),open-choice,false)
 * insert Question(item[=].item[=].,treatment_stop_date,Date of treatment stop,date,false)
 * insert Question(item[=].item[=].,treatment_stop_reason,Reason to stop treatment,choice,false)
-* item[=].item[=].item[=].answerOption[+].valueCoding = #transfer-out "Transfer out"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #drop-out "Drop out or LTFU"
-* item[=].item[=].item[=].answerOption[+].valueCoding = #death "Death"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#transfer-out "Transfer out"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#drop-out "Drop out or LTFU"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#death "Death"
 // enableWhen: if transfer out, enable the transfer out facility
 * insert Question(item[=].item[=].,place_transfer_in,Transferred-out facility (next facility\),open-choice,false)
 
@@ -290,8 +291,8 @@ Usage: #definition
 * insert Question(item[=].item[=].,hbv,HBV,group,false)
 * insert Question(item[=].item[=].item[=].,diagnosis_date,Date of HbsAg test,date,false)
 * insert Question(item[=].item[=].item[=].,diagnosis_result,Result of HbsAg test,choice,false)
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #negative "Negative"
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #positive "Positive"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#negative "Negative"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#positive "Positive"
 
 * insert Question(item[=].item[=].item[=].,treatment_start_date,Date of HBV treatment start,date,false)
 * insert Question(item[=].item[=].item[=].,treatment_stop_date,Date of HBV treatment stopped,date,false)
@@ -300,8 +301,8 @@ Usage: #definition
 * insert Question(item[=].item[=].,hcv,HCV,group,false)
 * insert Question(item[=].item[=].item[=].,diagnosis_date,Date of HCV diagnosis test,date,false)
 * insert Question(item[=].item[=].item[=].,diagnosis_result,Result of HCV test,choice,false)
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #negative "Negative"
-* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = #positive "Positive"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#negative "Negative"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#positive "Positive"
 
 * insert Question(item[=].item[=].item[=].,diagnosis_date,Date of HCV viral load test,date,false)
 * insert Question(item[=].item[=].item[=].,diagnosis_result,Result of HCV viral load test,integer,false)
