@@ -1,9 +1,9 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 74, warn = 158, info = 49
+err = 75, warn = 159, info = 48
 IG Publisher Version: 1.1.73
-Generated Thu Jun 17 09:33:00 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Thu Jun 17 11:48:24 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
  Build Errors : 56 / 23 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
@@ -37,9 +37,9 @@ Generated Thu Jun 17 09:33:00 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/Observation-a-recency-result : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-an-aids-diagnosis-observation : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 14 / 39 / 10
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 16 / 40 / 10
  /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 11 / 1 / 5
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 29 / 1 / 3
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 28 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-aids-diagnosis-observation : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 0 / 1 / 1
@@ -131,16 +131,16 @@ ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-preg
 ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8: The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8: The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8: The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 251, column 1714: The link 'null#item.hiv_recency_test.vl_test.test_result' for "2 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 253, column 1540: The link 'null#item.cd4.present_test_reason' for "3 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 258, column 1524: The link 'null#item.cd4.present_test_result' for "2 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 260, column 1605: The link 'null#item.cd4.present_test_reason' for "3 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 266, column 1516: The link 'null#item.vl.test_reason' for "6 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 272, column 1609: The link 'null#item.vl.history.test_reason' for "6 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 286, column 1543: The link 'null#item.arvTreatment.registration_type' for "3 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 289, column 1548: The link 'null#item.arvTreatment.treatment_stop_reason' for "3 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 313, column 1617: The link 'null#item.hbv.diagnosis_result' for "2 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 319, column 1615: The link 'null#item.hcv.diagnosis_result' for "2 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 251, column 1689: The link 'null#item.test_result' for "2 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 253, column 1536: The link 'null#item.lastest_test_reason' for "3 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 258, column 1520: The link 'null#item.lastest_test_result' for "2 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 260, column 1601: The link 'null#item.lastest_test_reason' for "3 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 266, column 1513: The link 'null#item.test_reason' for "6 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 272, column 1598: The link 'null#item.test_reason' for "6 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 286, column 1528: The link 'null#item.enrollment_type' for "3 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 289, column 1535: The link 'null#item.treatment_stop_reason' for "3 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 313, column 1613: The link 'null#item.diagnosis_result' for "2 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 319, column 1611: The link 'null#item.diagnosis_result' for "2 options" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
@@ -345,6 +345,7 @@ INFORMATION: Patient/test-hiv-patient: Patient.address[1]: This element does not
 ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json - the canonical URL (http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire) does not match the URL (http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire)
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: cs-pregnancy-outcome))
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire: que-2: 'The link ids for groups and questions must be unique within the questionnaire' Rule 'The link ids for groups and questions must be unique within the questionnaire' Failed
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(CodeSystem): Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(CodeSystem): csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
@@ -402,6 +403,8 @@ WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[5]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'pregnancy_gestation_at_delivery'
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'children'
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].item[3]: Unable to find an item with the linkId 'children.hiv_status' which is referenced in the enableWhen for 'hiv_diagnosis_date'
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].item[4]: Unable to find an item with the linkId 'children.hiv_status' which is referenced in the enableWhen for 'child_arv_start_date'
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: Profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract, Element matches more than one slice - rootContext, itemContext
 ERROR: /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire: URL Mismatch http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire vs http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire
@@ -434,13 +437,11 @@ ERROR: QuestionnaireResponse.item[2].item[8].item[0]: The property item must be 
 ERROR: QuestionnaireResponse.item[2].item[8].item[2]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[8].item[2])
 INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
 WARNING: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.meta.tag[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: LinkId 'unit_name' not found in questionnaire
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: LinkId 'reportDate' not found in questionnaire
-ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0]: If text exists, it must match the questionnaire definition for linkId unit_name
-INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].answer[0]: Cannot validate string answer option because no option list is provided
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0]: LinkId 'identifying_information' not found in questionnaire
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0]: LinkId 'hiv-diagnosis' not found in questionnaire
-ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0]: LinkId 'arvTreatment.dateOfTreatmentStart' not found in questionnaire
-ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0]: LinkId 'arvTreatment.placeOfInitiation' not found in questionnaire
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0]: LinkId 'arvTreatment' not found in questionnaire
 INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse - listed in meta
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[1].answer[0].value.ofType(date): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type date
