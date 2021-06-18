@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-hiv-rapidtestresults",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA15255-5.html\">LA15255-5</a></td><td>Có phản ứng</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA15256-3.html\">LA15256-3</a></td><td>Khong phản ứng</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA11884-6.html\">LA11884-6</a></td><td>Chưa xác định</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA15841-2.html\">LA15841-2</a></td><td>Không hợp lệ</td></tr></table></li></ul></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-rapidtestresults",
+  "version": "0.1.0-test",
+  "name": "HIVRapidTestResults",
+  "title": "HIVRapidTestResults",
+  "status": "draft",
+  "date": "2021-06-18T10:22:42+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "HIV rapid test result codes",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA15255-5",
+            "display": "Có phản ứng"
+          },
+          {
+            "code": "LA15256-3",
+            "display": "Khong phản ứng"
+          },
+          {
+            "code": "LA11884-6",
+            "display": "Chưa xác định"
+          },
+          {
+            "code": "LA15841-2",
+            "display": "Không hợp lệ"
+          }
+        ]
+      }
+    ]
+  }
+}
