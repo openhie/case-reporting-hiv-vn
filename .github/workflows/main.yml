@@ -52,7 +52,8 @@ jobs:
       - name: Get branch names
         id: branch-name
         uses: tj-actions/branch-names@v4.3
-      
+        run: |
+          echo "${{ steps.branch-name.outputs.current_branch }}"      
 
       - name: Deploy candidate_test
         uses: JamesIves/github-pages-deploy-action@4.1.4
