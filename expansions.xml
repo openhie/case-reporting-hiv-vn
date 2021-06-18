@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b7c6fa1e-3423-4194-aac0-dba3619f50ec"/>
+  <id value="89b9e19a-6417-4144-a007-e68cde58fe07"/>
   <meta>
-    <lastUpdated value="2021-06-17T09:24:16.111+00:00"/>
+    <lastUpdated value="2021-06-18T10:02:40.176+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -38,7 +38,7 @@
                   <a name="http---loinc.org-LA15255-5"> </a>
                   <a href="http://details.loinc.org/LOINC/LA15255-5.html">LA15255-5</a>
                 </td>
-                <td>Có phản ứng</td>
+                <td>Reactive</td>
                 <td/>
               </tr>
               <tr>
@@ -46,7 +46,7 @@
                   <a name="http---loinc.org-LA15256-3"> </a>
                   <a href="http://details.loinc.org/LOINC/LA15256-3.html">LA15256-3</a>
                 </td>
-                <td>Khong phản ứng</td>
+                <td>Nonreactive</td>
                 <td/>
               </tr>
               <tr>
@@ -54,7 +54,7 @@
                   <a name="http---loinc.org-LA11884-6"> </a>
                   <a href="http://details.loinc.org/LOINC/LA11884-6.html">LA11884-6</a>
                 </td>
-                <td>Chưa xác định</td>
+                <td>Indeterminate</td>
                 <td/>
               </tr>
               <tr>
@@ -62,7 +62,7 @@
                   <a name="http---loinc.org-LA15841-2"> </a>
                   <a href="http://details.loinc.org/LOINC/LA15841-2.html">LA15841-2</a>
                 </td>
-                <td>Không hợp lệ</td>
+                <td>Invalid</td>
                 <td/>
               </tr>
             </table>
@@ -73,7 +73,7 @@
         <name value="HIVRapidTestResults"/>
         <title value="HIVRapidTestResults"/>
         <status value="draft"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -89,8 +89,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e5ced5d8-0333-4e49-b8a7-3270d9b73cf2"/>
-          <timestamp value="2021-06-17T09:24:45+00:00"/>
+          <identifier value="urn:uuid:bf7f9c49-fa90-4798-978b-24aa2767c7ff"/>
+          <timestamp value="2021-06-18T10:03:06+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -107,22 +107,22 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="LA15255-5"/>
-            <display value="C&#xF3; ph&#x1EA3;n &#x1EE9;ng"/>
+            <display value="Reactive"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="LA15256-3"/>
-            <display value="Khong ph&#x1EA3;n &#x1EE9;ng"/>
+            <display value="Nonreactive"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="LA11884-6"/>
-            <display value="Ch&#x1B0;a x&#xE1;c &#x111;&#x1ECB;nh"/>
+            <display value="Indeterminate"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="LA15841-2"/>
-            <display value="Kh&#xF4;ng h&#x1EE3;p l&#x1EC7;"/>
+            <display value="Invalid"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -205,7 +205,7 @@
         <name value="VSHIVPregnancyOutcome"/>
         <title value="HIV Pregnancy outcome"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -221,8 +221,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:141cf374-38c4-4753-96e7-207c0d8879f8"/>
-          <timestamp value="2021-06-17T09:24:47+00:00"/>
+          <identifier value="urn:uuid:2892292f-f753-473f-bb0a-4d8e6b5e8c71"/>
+          <timestamp value="2021-06-18T10:03:08+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -370,7 +370,7 @@
         <name value="VSHIVRiskPopulation"/>
         <title value="Risk Population relevant for HIV"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -386,8 +386,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:18512837-a06f-44d8-a303-0f431d14f670"/>
-          <timestamp value="2021-06-17T09:24:47+00:00"/>
+          <identifier value="urn:uuid:c453002b-9ada-4d36-867b-6dda91687931"/>
+          <timestamp value="2021-06-18T10:03:09+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -515,7 +515,7 @@
         <name value="PatientGender"/>
         <title value="Patient Gender"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -531,8 +531,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b99fd748-61ae-4e2e-9b69-c99ffec5438a"/>
-          <timestamp value="2021-06-17T09:24:47+00:00"/>
+          <identifier value="urn:uuid:3c0598ce-c5f6-4dc0-a94f-ff3bd0d1c4f8"/>
+          <timestamp value="2021-06-18T10:03:09+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -643,7 +643,7 @@
         <name value="VSIndications"/>
         <title value="Viralload Indications"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -659,8 +659,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e1a579d4-d988-46ad-ae0f-440a0dd41b99"/>
-          <timestamp value="2021-06-17T09:24:47+00:00"/>
+          <identifier value="urn:uuid:5eb60686-80e0-4d56-948c-1c3aadc26348"/>
+          <timestamp value="2021-06-18T10:03:09+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -760,7 +760,7 @@
         <name value="ARVTreatmentStatus"/>
         <title value="Arv treatment Status"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -776,8 +776,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1c349a54-8603-4835-90ec-d775f82a2d5f"/>
-          <timestamp value="2021-06-17T09:24:47+00:00"/>
+          <identifier value="urn:uuid:241e51b6-7abb-4286-ab38-e2064deb3ce4"/>
+          <timestamp value="2021-06-18T10:03:09+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -867,7 +867,7 @@
         <name value="VSViralLoadGroup"/>
         <title value="Viral Load group"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -883,8 +883,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:95069404-5eef-4fa5-a4c0-fb962a3d7362"/>
-          <timestamp value="2021-06-17T09:24:47+00:00"/>
+          <identifier value="urn:uuid:d6b19e7b-3fba-445d-8cfc-870d50f14f9c"/>
+          <timestamp value="2021-06-18T10:03:09+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1398,7 +1398,7 @@
         <name value="VSVietnamEthnicity"/>
         <title value="Valueset Vietnam Ethnicity"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1414,8 +1414,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:64d95bdc-5906-4318-a973-c70c300f02e4"/>
-          <timestamp value="2021-06-17T09:24:47+00:00"/>
+          <identifier value="urn:uuid:fa738cac-9188-4ee7-9db2-a6447d5cd467"/>
+          <timestamp value="2021-06-18T10:03:09+00:00"/>
           <total value="56"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1810,7 +1810,7 @@
         <name value="VSHIVRiskBehavior"/>
         <title value="Risk Behavior"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -1826,8 +1826,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3dabcb95-963c-44ad-a7e2-6dc49487f5e4"/>
-          <timestamp value="2021-06-17T09:24:49+00:00"/>
+          <identifier value="urn:uuid:db35f6da-1402-4590-b6a0-a787bab2a2f4"/>
+          <timestamp value="2021-06-18T10:03:11+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1913,7 +1913,7 @@
                   <a name="http---snomed.info-sct-106538001"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106538001">106538001</a>
                 </td>
-                <td>Car driver</td>
+                <td>Lái xe</td>
                 <td/>
               </tr>
               <tr>
@@ -1921,7 +1921,7 @@
                   <a name="http---snomed.info-sct-106400003"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106400003">106400003</a>
                 </td>
-                <td>Fishermen</td>
+                <td>Ngư dân</td>
                 <td/>
               </tr>
               <tr>
@@ -1929,7 +1929,7 @@
                   <a name="http---snomed.info-sct-106388008"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106388008">106388008</a>
                 </td>
-                <td>Farmer</td>
+                <td>Người làm nông nghiệp</td>
                 <td/>
               </tr>
               <tr>
@@ -1937,7 +1937,7 @@
                   <a name="http---snomed.info-sct-106541005"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106541005">106541005</a>
                 </td>
-                <td>Social worker general</td>
+                <td>Công nhân</td>
                 <td/>
               </tr>
               <tr>
@@ -1945,7 +1945,7 @@
                   <a name="http---snomed.info-sct-310892005"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=310892005">310892005</a>
                 </td>
-                <td>Army officer</td>
+                <td>Cán bộ - chiến sỹ thuộc lực lượng vũ trang nhân dân</td>
                 <td/>
               </tr>
               <tr>
@@ -1953,7 +1953,7 @@
                   <a name="http---snomed.info-sct-413327003"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=413327003">413327003</a>
                 </td>
-                <td>Student full time education</td>
+                <td>Học sinh-sinh viên</td>
                 <td/>
               </tr>
               <tr>
@@ -1961,7 +1961,7 @@
                   <a name="http---snomed.info-sct-73438004"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73438004">73438004</a>
                 </td>
-                <td>Out of work</td>
+                <td>Thất nghiệp</td>
                 <td/>
               </tr>
               <tr>
@@ -1969,7 +1969,7 @@
                   <a name="http---snomed.info-sct-184119001"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=184119001">184119001</a>
                 </td>
-                <td>Patient occupation unknown</td>
+                <td>Nghề khác</td>
                 <td/>
               </tr>
               <tr>
@@ -1977,7 +1977,7 @@
                   <a name="http---snomed.info-sct-449344001"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449344001">449344001</a>
                 </td>
-                <td>Sex worker</td>
+                <td>Nghề bán dâm</td>
                 <td/>
               </tr>
               <tr>
@@ -1985,7 +1985,7 @@
                   <a name="http---snomed.info-sct-159799000"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159799000">159799000</a>
                 </td>
-                <td>Female prostitute</td>
+                <td>Nữ bán dâm</td>
                 <td/>
               </tr>
               <tr>
@@ -1993,7 +1993,7 @@
                   <a name="http---snomed.info-sct-159800001"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159800001">159800001</a>
                 </td>
-                <td>Male prostitute</td>
+                <td>Nam bán dâm</td>
                 <td/>
               </tr>
             </table>
@@ -2003,7 +2003,7 @@
         <version value="0.1.0-test"/>
         <name value="HIVOccupationCodes"/>
         <status value="draft"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -2018,8 +2018,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d8919a6c-35b8-497a-b7c9-3ac6d4a70a73"/>
-          <timestamp value="2021-06-17T09:24:49+00:00"/>
+          <identifier value="urn:uuid:fac4c419-eb24-4f3a-84a1-a7c12491c04c"/>
+          <timestamp value="2021-06-18T10:03:11+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2040,57 +2040,57 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="106538001"/>
-            <display value="Car driver"/>
+            <display value="L&#xE1;i xe"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="106400003"/>
-            <display value="Fishermen"/>
+            <display value="Ng&#x1B0; d&#xE2;n"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="106388008"/>
-            <display value="Farmer"/>
+            <display value="Ng&#x1B0;&#x1EDD;i l&#xE0;m n&#xF4;ng nghi&#x1EC7;p"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="106541005"/>
-            <display value="Social worker general"/>
+            <display value="C&#xF4;ng nh&#xE2;n"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="310892005"/>
-            <display value="Army officer"/>
+            <display value="C&#xE1;n b&#x1ED9; - chi&#x1EBF;n s&#x1EF9; thu&#x1ED9;c l&#x1EF1;c l&#x1B0;&#x1EE3;ng v&#x169; trang nh&#xE2;n d&#xE2;n"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="413327003"/>
-            <display value="Student full time education"/>
+            <display value="H&#x1ECD;c sinh-sinh vi&#xEA;n"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="73438004"/>
-            <display value="Out of work"/>
+            <display value="Th&#x1EA5;t nghi&#x1EC7;p"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="184119001"/>
-            <display value="Patient occupation unknown"/>
+            <display value="Ngh&#x1EC1; kh&#xE1;c"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="449344001"/>
-            <display value="Sex worker"/>
+            <display value="Ngh&#x1EC1; b&#xE1;n d&#xE2;m"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="159799000"/>
-            <display value="Female prostitute"/>
+            <display value="N&#x1EEF; b&#xE1;n d&#xE2;m"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="159800001"/>
-            <display value="Male prostitute"/>
+            <display value="Nam b&#xE1;n d&#xE2;m"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2165,7 +2165,7 @@
         <name value="TypeOfContact"/>
         <title value="Type of contact or relationship"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -2181,8 +2181,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:851d6ed4-1723-47ad-98b7-3670d1a2aa09"/>
-          <timestamp value="2021-06-17T09:24:51+00:00"/>
+          <identifier value="urn:uuid:38e21935-46ce-4875-a228-2927e80303df"/>
+          <timestamp value="2021-06-18T10:03:13+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2277,7 +2277,7 @@
         <name value="VSRecencyRTRIResult"/>
         <title value="Recency RITA result"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -2293,8 +2293,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e5e96620-d423-4d15-9511-6cc639ab559e"/>
-          <timestamp value="2021-06-17T09:24:51+00:00"/>
+          <identifier value="urn:uuid:370153bc-43b8-439f-b08b-5c39d0f57fc6"/>
+          <timestamp value="2021-06-18T10:03:13+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2376,7 +2376,7 @@
         <name value="VSRecencyRITAResult"/>
         <title value="Recency RITA result"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -2392,8 +2392,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d51eb6e7-19ba-45e2-ba0d-b5e380df03a2"/>
-          <timestamp value="2021-06-17T09:24:51+00:00"/>
+          <identifier value="urn:uuid:3fe4d9e9-8d7b-477d-b39e-700d0c2f46de"/>
+          <timestamp value="2021-06-18T10:03:13+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2523,7 +2523,7 @@
         <name value="VSTreatmentCategory"/>
         <title value="Category of the treatment"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -2539,8 +2539,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dfc7489a-358d-41b1-b1cc-94946ba96ee2"/>
-          <timestamp value="2021-06-17T09:24:52+00:00"/>
+          <identifier value="urn:uuid:39b369eb-1622-4d14-bc85-5fd8b5d999b7"/>
+          <timestamp value="2021-06-18T10:03:13+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2625,7 +2625,7 @@
                   <a name="http---snomed.info-sct-165816005"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=165816005">165816005</a>
                 </td>
-                <td>HIV Positive</td>
+                <td>Dương tính HIV</td>
                 <td/>
               </tr>
               <tr>
@@ -2633,7 +2633,7 @@
                   <a name="http---snomed.info-sct-165815009"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=165815009">165815009</a>
                 </td>
-                <td>HIV Negative</td>
+                <td>Âm tính HIV</td>
                 <td/>
               </tr>
               <tr>
@@ -2641,7 +2641,7 @@
                   <a name="http---snomed.info-sct-10828004"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10828004">10828004</a>
                 </td>
-                <td>Positive</td>
+                <td>Dương tính</td>
                 <td/>
               </tr>
               <tr>
@@ -2649,7 +2649,7 @@
                   <a name="http---snomed.info-sct-260385009"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260385009">260385009</a>
                 </td>
-                <td>Negative</td>
+                <td>Âm tính</td>
                 <td/>
               </tr>
             </table>
@@ -2660,7 +2660,7 @@
         <name value="VSDiagnosisResults"/>
         <title value="VSDiagnosisResults"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -2675,8 +2675,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c63618ab-8b1a-43df-b30b-91bd79a59f22"/>
-          <timestamp value="2021-06-17T09:24:52+00:00"/>
+          <identifier value="urn:uuid:4e4715cd-73ec-4091-8990-89d6a9389a5d"/>
+          <timestamp value="2021-06-18T10:03:13+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2697,22 +2697,22 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="165816005"/>
-            <display value="HIV Positive"/>
+            <display value="D&#x1B0;&#x1A1;ng t&#xED;nh HIV"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="165815009"/>
-            <display value="HIV Negative"/>
+            <display value="&#xC2;m t&#xED;nh HIV"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="10828004"/>
-            <display value="Positive"/>
+            <display value="D&#x1B0;&#x1A1;ng t&#xED;nh"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="260385009"/>
-            <display value="Negative"/>
+            <display value="&#xC2;m t&#xED;nh"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2827,7 +2827,7 @@
         <name value="VSHIVTransmissionRoute"/>
         <title value="HIV Transmission Route"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -2843,8 +2843,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b49ba6dc-a3ce-45c5-b4d0-d35d6483aba2"/>
-          <timestamp value="2021-06-17T09:24:53+00:00"/>
+          <identifier value="urn:uuid:97050efe-60c5-49a7-bfa7-f792fd114a45"/>
+          <timestamp value="2021-06-18T10:03:15+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2935,7 +2935,7 @@
                   <a name="http---snomed.info-sct-399445004"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=399445004">399445004</a>
                 </td>
-                <td>Specimen collection date</td>
+                <td>Specimen collection date (observable entity)</td>
                 <td/>
               </tr>
             </table>
@@ -2945,7 +2945,7 @@
         <version value="0.1.0-test"/>
         <name value="VSCommonDate"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -2961,8 +2961,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2af24d48-cde2-4425-b225-cb9ad6208234"/>
-          <timestamp value="2021-06-17T09:24:53+00:00"/>
+          <identifier value="urn:uuid:4be4cd14-cca6-4854-9423-f3a433cf3f0f"/>
+          <timestamp value="2021-06-18T10:03:15+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2979,7 +2979,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="399445004"/>
-            <display value="Specimen collection date"/>
+            <display value="Specimen collection date (observable entity)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -3046,7 +3046,7 @@
         <name value="VSRegimenLevel"/>
         <title value="ValueSet Vietnam HIV Regimen Level "/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3062,8 +3062,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:667399a8-36de-48d7-81d1-cc40cef78f37"/>
-          <timestamp value="2021-06-17T09:24:53+00:00"/>
+          <identifier value="urn:uuid:4f4662a4-5441-4fb3-96de-e48f4f08fd4d"/>
+          <timestamp value="2021-06-18T10:03:15+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3505,7 +3505,7 @@
         <name value="VSVietnamRegimen"/>
         <title value="ValueSet Vietnam HIV Regimen"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3521,8 +3521,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:167b82f2-fbbf-4509-99d7-e84461d43470"/>
-          <timestamp value="2021-06-17T09:24:54+00:00"/>
+          <identifier value="urn:uuid:1fee125a-c1e5-43a1-aae3-75202a44e5b1"/>
+          <timestamp value="2021-06-18T10:03:15+00:00"/>
           <total value="47"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3803,7 +3803,7 @@
                   <a name="http---snomed.info-sct-248427009"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=248427009">248427009</a>
                 </td>
-                <td>Fever symptoms</td>
+                <td>Sốt</td>
                 <td/>
               </tr>
             </table>
@@ -3813,7 +3813,7 @@
         <version value="0.1.0-test"/>
         <name value="HIVSymptomsCode"/>
         <status value="draft"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -3828,8 +3828,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dbb50fff-67a2-4df1-b74f-fe4195c354e8"/>
-          <timestamp value="2021-06-17T09:24:54+00:00"/>
+          <identifier value="urn:uuid:9662d2cd-237a-4886-aaa6-ecfcf3b3f222"/>
+          <timestamp value="2021-06-18T10:03:16+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3846,7 +3846,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="248427009"/>
-            <display value="Fever symptoms"/>
+            <display value="S&#x1ED1;t"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -3881,8 +3881,8 @@
         <name value="PregnancyOutcomeCodes"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:0129669c-7d0e-44f5-9c8f-14c32d77552c"/>
-          <timestamp value="2021-06-17T09:24:54+00:00"/>
+          <identifier value="urn:uuid:46b22844-4b89-4800-b9cd-ac5a12a72c8a"/>
+          <timestamp value="2021-06-18T10:03:16+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -3920,8 +3920,8 @@
         <name value="PregnancyOutcomeCodes"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:0129669c-7d0e-44f5-9c8f-14c32d77552c"/>
-          <timestamp value="2021-06-17T09:24:54+00:00"/>
+          <identifier value="urn:uuid:46b22844-4b89-4800-b9cd-ac5a12a72c8a"/>
+          <timestamp value="2021-06-18T10:03:16+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -3959,8 +3959,8 @@
         <name value="ChildHIVStatus"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:a9d3d540-d54b-4ea7-9dee-2cf8cc2ad42a"/>
-          <timestamp value="2021-06-17T09:24:54+00:00"/>
+          <identifier value="urn:uuid:e1d075ad-8aa8-4e80-8e62-60fe1ca97f20"/>
+          <timestamp value="2021-06-18T10:03:16+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -4008,7 +4008,7 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=248957007">248957007</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Kỳ kinh nguyệt cuối</td>
+                <td>Menstruation</td>
                 <td/>
               </tr>
               <tr>
@@ -4017,7 +4017,7 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=31676001">31676001</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Ngày xét nghiệm HIV của con</td>
+                <td>HIV antigen test</td>
                 <td/>
               </tr>
               <tr>
@@ -4037,7 +4037,7 @@
         <name value="VSDateComponent"/>
         <title value="Date component of pregnancy"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -4053,8 +4053,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5fba11da-8511-4603-b8e5-4d5f64c8792c"/>
-          <timestamp value="2021-06-17T09:24:54+00:00"/>
+          <identifier value="urn:uuid:87d2aebd-90f2-43df-895f-106477c390a2"/>
+          <timestamp value="2021-06-18T10:03:17+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4075,12 +4075,12 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="248957007"/>
-            <display value="K&#x1EF3; kinh nguy&#x1EC7;t cu&#x1ED1;i"/>
+            <display value="Menstruation"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="31676001"/>
-            <display value="Ng&#xE0;y x&#xE9;t nghi&#x1EC7;m HIV c&#x1EE7;a con"/>
+            <display value="HIV antigen test"/>
           </contains>
           <contains>
             <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-common"/>
@@ -4184,7 +4184,7 @@
         <name value="PatientGenderIdentity"/>
         <title value="Patient Gender Identity"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -4200,8 +4200,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ff10b3ff-26b6-4cdb-803f-a8ba8d6f2ce9"/>
-          <timestamp value="2021-06-17T09:24:55+00:00"/>
+          <identifier value="urn:uuid:ae7313d9-25ef-488e-945a-0a999e53d90f"/>
+          <timestamp value="2021-06-18T10:03:17+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4279,8 +4279,8 @@
         <name value="PregnancyOutcomeCodes"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:0129669c-7d0e-44f5-9c8f-14c32d77552c"/>
-          <timestamp value="2021-06-17T09:24:54+00:00"/>
+          <identifier value="urn:uuid:46b22844-4b89-4800-b9cd-ac5a12a72c8a"/>
+          <timestamp value="2021-06-18T10:03:16+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -4318,8 +4318,8 @@
         <name value="ChildHIVStatus"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:a9d3d540-d54b-4ea7-9dee-2cf8cc2ad42a"/>
-          <timestamp value="2021-06-17T09:24:54+00:00"/>
+          <identifier value="urn:uuid:e1d075ad-8aa8-4e80-8e62-60fe1ca97f20"/>
+          <timestamp value="2021-06-18T10:03:16+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -4381,7 +4381,7 @@
         <name value="PatientCommunicationPreferences"/>
         <title value="Patient Communication Preferences"/>
         <status value="active"/>
-        <date value="2021-06-17T09:24:16+00:00"/>
+        <date value="2021-06-18T10:02:40+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -4397,8 +4397,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cebefddc-c849-45b8-b102-cd6b328832f5"/>
-          <timestamp value="2021-06-17T09:24:56+00:00"/>
+          <identifier value="urn:uuid:25b1690e-ca94-4710-90eb-b9902ba58ef1"/>
+          <timestamp value="2021-06-18T10:03:18+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4451,8 +4451,8 @@
         <name value="PregnancyOutcomeCodes"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:0129669c-7d0e-44f5-9c8f-14c32d77552c"/>
-          <timestamp value="2021-06-17T09:24:54+00:00"/>
+          <identifier value="urn:uuid:46b22844-4b89-4800-b9cd-ac5a12a72c8a"/>
+          <timestamp value="2021-06-18T10:03:16+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
