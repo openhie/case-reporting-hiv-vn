@@ -63,7 +63,6 @@ jobs:
           commit-message: Deploy candidate branch
           target-folder: ${{ steps.branch-name.outputs.current_branch }}  
           clean: false 
-
       
       
       - name: Deploy candidate
