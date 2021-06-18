@@ -1,7 +1,6 @@
 Alias: $targetStructureMap = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap
 Alias: $LOINC = http://loinc.org
 
-
 /*
 Instance: Gender
 InstanceOf: ValueSet
