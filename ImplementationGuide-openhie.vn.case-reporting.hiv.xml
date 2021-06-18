@@ -9,10 +9,10 @@
   <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ImplementationGuide/openhie.vn.case-reporting.hiv"/>
   <version value="0.1.0-test"/>
   <name value="OpenHIE Vietnam HIV Case-reporting"/>
-  <title value="HIV Case-reporting for Vietnam"/>
+  <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-06-18T10:30:21+00:00"/>
+  <date value="2021-06-18T10:32:53+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -436,6 +436,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-regimen-change-reason"/>
+      </reference>
+      <name value="Reason for regimen change"/>
+      <description value="Reason for regimen change"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -521,6 +531,16 @@
       </reference>
       <name value="Recency RITA result"/>
       <description value="Valueset - Recency RITA result"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-regimen-change-reason"/>
+      </reference>
+      <name value="Reason for regimen change"/>
+      <description value="Reason for regimen change"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -721,6 +741,8 @@
       <reference>
         <reference value="Questionnaire/vn-hiv-csv-import-questionnaire"/>
       </reference>
+      <name value="HIV Case surveillance import"/>
+      <description value="HIV Case surveillance data import structure"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -831,6 +853,16 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/vs-cause-of-death"/>
+      </reference>
+      <name value="Cause of death"/>
+      <description value="Cause of death"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/vs-patient-communication-preferences"/>
       </reference>
       <name value="Patient Communication Preferences"/>
@@ -921,6 +953,16 @@
       </reference>
       <name value="HIV Transmission Route"/>
       <description value="CodeSystem - Route of HIV transmission"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-cause-of-death"/>
+      </reference>
+      <name value="Cause of death"/>
+      <description value="Cause of death"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

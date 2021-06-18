@@ -1,14 +1,15 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 98, warn = 129, info = 49
+err = 75, warn = 127, info = 80
 IG Publisher Version: 1.1.75
-Generated Fri Jun 18 10:31:18 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Fri Jun 18 10:33:53 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
- Build Errors : 80 / 24 / 1
+ Build Errors : 46 / 23 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-a-treatment-record : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-cs-arv-treatment-status : 0 / 1 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-cause-of-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-gender : 0 / 0 / 5
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-common : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-population : 0 / 0 / 1
@@ -19,6 +20,7 @@ Generated Fri Jun 18 10:31:18 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender-identity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-pregnancy-outcome : 0 / 1 / 6
  /github/workspace/fsh-generated/resources/CodeSystem-cs-recency-result : 0 / 1 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-regimen-change-reason : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-treatment-patient-category : 0 / 1 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-cs-treatment-status : 0 / 1 / 5
  /github/workspace/fsh-generated/resources/CodeSystem-cs-viralload-group : 0 / 0 / 1
@@ -35,9 +37,9 @@ Generated Fri Jun 18 10:31:18 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/Observation-a-recency-result : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-an-aids-diagnosis-observation : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 8 / 9 / 11
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 16 / 8 / 42
  /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 11 / 1 / 5
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 25 / 1 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 28 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-aids-diagnosis-observation : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 0 / 1 / 1
@@ -62,6 +64,7 @@ Generated Fri Jun 18 10:31:18 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/ValueSet-VSDateComponent : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-cs-viralload-indications : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arv-treatment-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-cause-of-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-common-date : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-diagnosis-results : 0 / 0 / 5
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-occupation : 0 / 0 / 12
@@ -76,6 +79,7 @@ Generated Fri Jun 18 10:31:18 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-gender-identity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-recency-rita : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-recency-rtri : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-regimen-change-reason : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-treatment-category : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-contact : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-viralload-group : 0 / 0 / 1
@@ -109,8 +113,6 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-hiv-sympthoms.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-hiv-sympthoms.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-recency-result.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-recency-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -129,39 +131,6 @@ ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-preg
 ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8: The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8: The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8: The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 211, column 743: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 212, column 739: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 223, column 747: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 225, column 656: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 226, column 652: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 227, column 660: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 238, column 743: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 241, column 747: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 261, column 660: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 270, column 739: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 271, column 743: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 303, column 743: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 307, column 743: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 308, column 739: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 313, column 660: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 206, column 565: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 215, column 569: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 216, column 565: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 217, column 569: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 218, column 565: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 255, column 569: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 257, column 569: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 276, column 565: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 294, column 565: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 297, column 569: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 306, column 565: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 325, column 569: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 327, column 569: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 328, column 565: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 346, column 565: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 350, column 565: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 351, column 569: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 361, column 569: The image source 'icon-q-coding.png' cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8: The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
@@ -207,6 +176,8 @@ WARNING: CodeSystem/cs-arv-treatment-status: CodeSystem: csd-0: 'Name should be 
 INFORMATION: CodeSystem/cs-arv-treatment-status: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-arv-treatment-status: CodeSystem.concept[1].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-arv-treatment-status: CodeSystem.concept[2].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-cause-of-death.json ==
+INFORMATION: CodeSystem/cs-cause-of-death: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-gender.json ==
 INFORMATION: CodeSystem/cs-gender: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 INFORMATION: CodeSystem/cs-gender: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
@@ -245,6 +216,8 @@ WARNING: CodeSystem/cs-recency-result: CodeSystem: csd-0: 'Name should be usable
 INFORMATION: CodeSystem/cs-recency-result: CodeSystem.concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-recency-result: CodeSystem.concept[1].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 INFORMATION: CodeSystem/cs-recency-result: CodeSystem.concept[2].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-regimen-change-reason.json ==
+INFORMATION: CodeSystem/cs-regimen-change-reason: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-treatment-patient-category.json ==
 INFORMATION: CodeSystem/cs-treatment-patient-category: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 WARNING: CodeSystem/cs-treatment-patient-category: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
@@ -362,6 +335,8 @@ INFORMATION: Patient/test-hiv-patient: Patient.address[1]: This element does not
 ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json - the canonical URL (http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire) does not match the URL (http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire)
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: cs-pregnancy-outcome))
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire: que-2: 'The link ids for groups and questions must be unique within the questionnaire' Rule 'The link ids for groups and questions must be unique within the questionnaire' Failed
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(CodeSystem): Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(CodeSystem): csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(CodeSystem).concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
@@ -376,16 +351,52 @@ ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[2].o
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[2].ofType(ValueSet).compose[0].include[0]: No System specified, so Concepts and Filters can''t be checked
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' definition is for a simple extension, so it must contain a value, not extensions
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[1].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[2].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[5].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[6].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[4].item[7].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[0]: que-6: 'Required and repeat aren't permitted for display items' Rule 'Required and repeat aren't permitted for display items' Failed
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[1]: que-6: 'Required and repeat aren't permitted for display items' Rule 'Required and repeat aren't permitted for display items' Failed
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[3].item[1].item[1]: que-4: 'A question cannot have both answerOption and answerValueSet' Rule 'A question cannot have both answerOption and answerValueSet' Failed
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[3].item[1].item[1].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[3].item[1].item[1].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[0].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[0].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[0].answerOption[2].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[5].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[5].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[6].item[0].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[6].item[0].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[6].item[0].answerOption[2].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[2].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[3].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[4].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[5].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[0].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[0].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[0].answerOption[2].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[0].answerOption[3].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[0].answerOption[4].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].item[0].answerOption[5].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[3].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[3].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[3].answerOption[2].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[6].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[6].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[6].answerOption[2].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[1].item[1].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[1].item[1].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[2].item[1].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[2].item[1].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[5].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[5]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'pregnancy_gestation_at_delivery'
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'children'
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].item[3]: Unable to find an item with the linkId 'children.hiv_status' which is referenced in the enableWhen for 'hiv_diagnosis_date'
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[6].item[4]: Unable to find an item with the linkId 'children.hiv_status' which is referenced in the enableWhen for 'child_arv_start_date'
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: Profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract, Element matches more than one slice - rootContext, itemContext
-INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[0].item[1].item[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract
 ERROR: /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire: URL Mismatch http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire vs http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire
 == /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire.json ==
 ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire.json - the canonical URL (http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/vn-hiv-csv-import-questionnaire) does not match the URL (http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire)
@@ -416,8 +427,11 @@ ERROR: QuestionnaireResponse.item[2].item[8].item[0]: The property item must be 
 ERROR: QuestionnaireResponse.item[2].item[8].item[2]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[8].item[2])
 INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
 WARNING: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.meta.tag[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0].item[0]: LinkId 'id_cccd' not found in questionnaire
-ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].item[0]: If text exists, it must match the questionnaire definition for linkId hiv-diagnosis
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: LinkId 'unit_name' not found in questionnaire
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: LinkId 'reportDate' not found in questionnaire
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0]: LinkId 'identifying_information' not found in questionnaire
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0]: LinkId 'hiv-diagnosis' not found in questionnaire
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0]: LinkId 'arvTreatment' not found in questionnaire
 INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse - listed in meta
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[0].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[1].answer[0].value.ofType(date): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type date
@@ -502,6 +516,8 @@ INFORMATION: ValueSet/VSDateComponent: ValueSet: Validate resource against profi
 INFORMATION: ValueSet/cs-viralload-indications: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-arv-treatment-status.json ==
 INFORMATION: ValueSet/vs-arv-treatment-status: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-cause-of-death.json ==
+INFORMATION: ValueSet/vs-cause-of-death: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-common-date.json ==
 INFORMATION: ValueSet/vs-common-date: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-diagnosis-results.json ==
@@ -549,6 +565,8 @@ INFORMATION: ValueSet/vs-patient-gender-identity: ValueSet: Validate resource ag
 INFORMATION: ValueSet/vs-recency-rita: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-recency-rtri.json ==
 INFORMATION: ValueSet/vs-recency-rtri: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-regimen-change-reason.json ==
+INFORMATION: ValueSet/vs-regimen-change-reason: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-treatment-category.json ==
 INFORMATION: ValueSet/vs-treatment-category: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-contact.json ==
@@ -567,6 +585,6 @@ WARNING: ValueSet/vs-vn-regimenlevel: ValueSet.title: value should not start or 
 == /github/workspace/input/openhie.vn.case-reporting.hiv.xml ==
 INFORMATION: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[24].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[39].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[45].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[25].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[41].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[47].name: value should not start or finish with whitespace
