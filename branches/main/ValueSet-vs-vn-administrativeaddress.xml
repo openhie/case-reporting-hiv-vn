@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-vn-administrativeaddress"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul/></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-administrativeaddress"/>
+  <version value="0.1.0-test"/>
+  <name value="VSAdministrativeAddress"/>
+  <title value="Vietnam Administrative Address"/>
+  <status value="draft"/>
+  <date value="2021-06-19T17:21:10+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="Th&#xF4;ng tin &#x111;&#x1ECB;a danh h&#xE0;nh ch&#xED;nh - Theo ban h&#xE0;nh Danh m&#x1EE5;c D&#xE2;n t&#x1ED9;c c&#x1EE7;a T&#x1ED5;ng c&#x1EE5;c th&#x1ED1;ng k&#xEA;"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+</ValueSet>

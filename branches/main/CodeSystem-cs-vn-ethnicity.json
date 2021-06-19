@@ -1,0 +1,264 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-vn-ethnicity",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-vn-ethnicity-1\"> </a></td><td>Kinh </td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-vn-ethnicity-2\"> </a></td><td>Tày </td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-vn-ethnicity-3\"> </a></td><td>Thái </td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-vn-ethnicity-4\"> </a></td><td>Hoa </td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-vn-ethnicity-5\"> </a></td><td>Khơ-me </td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-vn-ethnicity-6\"> </a></td><td>Mường </td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-vn-ethnicity-7\"> </a></td><td>Nùng </td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-vn-ethnicity-8\"> </a></td><td>Hmông </td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-vn-ethnicity-9\"> </a></td><td>Dao </td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"cs-vn-ethnicity-10\"> </a></td><td>Gia-rai </td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"cs-vn-ethnicity-11\"> </a></td><td>Ngái </td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"cs-vn-ethnicity-12\"> </a></td><td>Ê-đê </td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"cs-vn-ethnicity-13\"> </a></td><td>Ba-na </td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"cs-vn-ethnicity-14\"> </a></td><td>Xơ-đăng </td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"cs-vn-ethnicity-15\"> </a></td><td>Sán Chay </td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"cs-vn-ethnicity-16\"> </a></td><td>Cơ-ho </td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"cs-vn-ethnicity-17\"> </a></td><td>Chăm </td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"cs-vn-ethnicity-18\"> </a></td><td>Sán Dìu </td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"cs-vn-ethnicity-19\"> </a></td><td>Hrê </td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"cs-vn-ethnicity-20\"> </a></td><td>Mnông </td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"cs-vn-ethnicity-21\"> </a></td><td>Ra-glai </td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"cs-vn-ethnicity-22\"> </a></td><td>Xtiêng </td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"cs-vn-ethnicity-23\"> </a></td><td>Bru-Vân Kiều </td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"cs-vn-ethnicity-24\"> </a></td><td>Thổ </td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"cs-vn-ethnicity-25\"> </a></td><td>Giáy </td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"cs-vn-ethnicity-26\"> </a></td><td>Cơ-tu </td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"cs-vn-ethnicity-27\"> </a></td><td>Gié-Triêng </td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"cs-vn-ethnicity-28\"> </a></td><td>Mạ </td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"cs-vn-ethnicity-29\"> </a></td><td>Khơ-mú </td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"cs-vn-ethnicity-30\"> </a></td><td>Co </td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"cs-vn-ethnicity-31\"> </a></td><td>Ta-ôi </td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"cs-vn-ethnicity-32\"> </a></td><td>Chơ-ro </td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"cs-vn-ethnicity-33\"> </a></td><td>Kháng </td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"cs-vn-ethnicity-34\"> </a></td><td>Xinh-mun </td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"cs-vn-ethnicity-35\"> </a></td><td>Hà Nhì </td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"cs-vn-ethnicity-36\"> </a></td><td>Chu-ru </td></tr><tr><td style=\"white-space:nowrap\">37<a name=\"cs-vn-ethnicity-37\"> </a></td><td>Lào </td></tr><tr><td style=\"white-space:nowrap\">38<a name=\"cs-vn-ethnicity-38\"> </a></td><td>La Chi </td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"cs-vn-ethnicity-39\"> </a></td><td>La Ha </td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"cs-vn-ethnicity-40\"> </a></td><td>Phù Lá </td></tr><tr><td style=\"white-space:nowrap\">41<a name=\"cs-vn-ethnicity-41\"> </a></td><td>La Hủ </td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"cs-vn-ethnicity-42\"> </a></td><td>Lự </td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"cs-vn-ethnicity-43\"> </a></td><td>Lô Lô </td></tr><tr><td style=\"white-space:nowrap\">44<a name=\"cs-vn-ethnicity-44\"> </a></td><td>Chứt </td></tr><tr><td style=\"white-space:nowrap\">45<a name=\"cs-vn-ethnicity-45\"> </a></td><td>Mảng </td></tr><tr><td style=\"white-space:nowrap\">46<a name=\"cs-vn-ethnicity-46\"> </a></td><td>Pà Thẻn </td></tr><tr><td style=\"white-space:nowrap\">47<a name=\"cs-vn-ethnicity-47\"> </a></td><td>Cơ Lao </td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"cs-vn-ethnicity-48\"> </a></td><td>Cống </td></tr><tr><td style=\"white-space:nowrap\">49<a name=\"cs-vn-ethnicity-49\"> </a></td><td>Bố Y </td></tr><tr><td style=\"white-space:nowrap\">50<a name=\"cs-vn-ethnicity-50\"> </a></td><td>Si La </td></tr><tr><td style=\"white-space:nowrap\">51<a name=\"cs-vn-ethnicity-51\"> </a></td><td>Pu Péo </td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"cs-vn-ethnicity-52\"> </a></td><td>Brâu </td></tr><tr><td style=\"white-space:nowrap\">53<a name=\"cs-vn-ethnicity-53\"> </a></td><td>Ơ Đu </td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"cs-vn-ethnicity-54\"> </a></td><td>Rơ-măm </td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"cs-vn-ethnicity-55\"> </a></td><td>Người nước ngoài </td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"cs-vn-ethnicity-0\"> </a></td><td>Không rõ </td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity",
+  "version": "0.1.0-test",
+  "name": "CSVietnamEthnicity",
+  "title": "CodeSystem Vietnam Ethnicity",
+  "status": "active",
+  "date": "2021-06-19T17:21:10+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recognized by the Vietnamese government",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 56,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Kinh "
+    },
+    {
+      "code": "2",
+      "display": "Tày "
+    },
+    {
+      "code": "3",
+      "display": "Thái "
+    },
+    {
+      "code": "4",
+      "display": "Hoa "
+    },
+    {
+      "code": "5",
+      "display": "Khơ-me "
+    },
+    {
+      "code": "6",
+      "display": "Mường "
+    },
+    {
+      "code": "7",
+      "display": "Nùng "
+    },
+    {
+      "code": "8",
+      "display": "Hmông "
+    },
+    {
+      "code": "9",
+      "display": "Dao "
+    },
+    {
+      "code": "10",
+      "display": "Gia-rai "
+    },
+    {
+      "code": "11",
+      "display": "Ngái "
+    },
+    {
+      "code": "12",
+      "display": "Ê-đê "
+    },
+    {
+      "code": "13",
+      "display": "Ba-na "
+    },
+    {
+      "code": "14",
+      "display": "Xơ-đăng "
+    },
+    {
+      "code": "15",
+      "display": "Sán Chay "
+    },
+    {
+      "code": "16",
+      "display": "Cơ-ho "
+    },
+    {
+      "code": "17",
+      "display": "Chăm "
+    },
+    {
+      "code": "18",
+      "display": "Sán Dìu "
+    },
+    {
+      "code": "19",
+      "display": "Hrê "
+    },
+    {
+      "code": "20",
+      "display": "Mnông "
+    },
+    {
+      "code": "21",
+      "display": "Ra-glai "
+    },
+    {
+      "code": "22",
+      "display": "Xtiêng "
+    },
+    {
+      "code": "23",
+      "display": "Bru-Vân Kiều "
+    },
+    {
+      "code": "24",
+      "display": "Thổ "
+    },
+    {
+      "code": "25",
+      "display": "Giáy "
+    },
+    {
+      "code": "26",
+      "display": "Cơ-tu "
+    },
+    {
+      "code": "27",
+      "display": "Gié-Triêng "
+    },
+    {
+      "code": "28",
+      "display": "Mạ "
+    },
+    {
+      "code": "29",
+      "display": "Khơ-mú "
+    },
+    {
+      "code": "30",
+      "display": "Co "
+    },
+    {
+      "code": "31",
+      "display": "Ta-ôi "
+    },
+    {
+      "code": "32",
+      "display": "Chơ-ro "
+    },
+    {
+      "code": "33",
+      "display": "Kháng "
+    },
+    {
+      "code": "34",
+      "display": "Xinh-mun "
+    },
+    {
+      "code": "35",
+      "display": "Hà Nhì "
+    },
+    {
+      "code": "36",
+      "display": "Chu-ru "
+    },
+    {
+      "code": "37",
+      "display": "Lào "
+    },
+    {
+      "code": "38",
+      "display": "La Chi "
+    },
+    {
+      "code": "39",
+      "display": "La Ha "
+    },
+    {
+      "code": "40",
+      "display": "Phù Lá "
+    },
+    {
+      "code": "41",
+      "display": "La Hủ "
+    },
+    {
+      "code": "42",
+      "display": "Lự "
+    },
+    {
+      "code": "43",
+      "display": "Lô Lô "
+    },
+    {
+      "code": "44",
+      "display": "Chứt "
+    },
+    {
+      "code": "45",
+      "display": "Mảng "
+    },
+    {
+      "code": "46",
+      "display": "Pà Thẻn "
+    },
+    {
+      "code": "47",
+      "display": "Cơ Lao "
+    },
+    {
+      "code": "48",
+      "display": "Cống "
+    },
+    {
+      "code": "49",
+      "display": "Bố Y "
+    },
+    {
+      "code": "50",
+      "display": "Si La "
+    },
+    {
+      "code": "51",
+      "display": "Pu Péo "
+    },
+    {
+      "code": "52",
+      "display": "Brâu "
+    },
+    {
+      "code": "53",
+      "display": "Ơ Đu "
+    },
+    {
+      "code": "54",
+      "display": "Rơ-măm "
+    },
+    {
+      "code": "55",
+      "display": "Người nước ngoài "
+    },
+    {
+      "code": "0",
+      "display": "Không rõ "
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-gender> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-gender"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-gender defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"cs-gender-male\"> </a></td><td>Male</td><td>Client identifies as male</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"cs-gender-female\"> </a></td><td>Female</td><td>Client identifies as female</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-gender-other\"> </a></td><td>other</td><td>Client has another gender identity</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"cs-gender-unknown\"> </a></td><td>unknown</td><td>Gender is unknown</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>male</td><td>Nam</td></tr><tr><td>female</td><td>Nữ</td></tr><tr><td>other</td><td>Khác</td></tr><tr><td>unknown</td><td>Không rõ</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-gender"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
+  fhir:CodeSystem.name [ fhir:value "Gender"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-06-19T17:21:10+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "male" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Male" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Client identifies as male" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nam" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "female" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Female" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Client identifies as female" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nữ" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Client has another gender identity" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Khác" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.display [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Gender is unknown" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "vi-VN" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Không rõ" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-gender.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
