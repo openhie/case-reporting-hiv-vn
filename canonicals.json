@@ -4,7 +4,7 @@
     "type": "Questionnaire",
     "url": "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire",
     "version": "0.1.0-test",
-    "name": "hiv_case_report_form"
+    "name": "HIVCaseReportForm"
   },
   {
     "id": "vn-hiv-csv-import-questionnaire",
@@ -19,13 +19,6 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status",
     "version": "0.1.0-test",
     "name": "ARV Treatment Status"
-  },
-  {
-    "id": "cs-cause-of-death",
-    "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death",
-    "version": "0.1.0-test",
-    "name": "CSCauseOfDeath"
   },
   {
     "id": "cs-gender",
@@ -96,13 +89,6 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result",
     "version": "0.1.0-test",
     "name": "Recency RITA result"
-  },
-  {
-    "id": "cs-regimen-change-reason",
-    "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason",
-    "version": "0.1.0-test",
-    "name": "CSRegimenChangeReason"
   },
   {
     "id": "cs-treatment-patient-category",
@@ -343,13 +329,6 @@
     "name": "ARVTreatmentStatus"
   },
   {
-    "id": "vs-cause-of-death",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-cause-of-death",
-    "version": "0.1.0-test",
-    "name": "CauseOfDeath"
-  },
-  {
     "id": "vs-common-date",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-common-date",
@@ -446,13 +425,6 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-recency-rtri",
     "version": "0.1.0-test",
     "name": "VSRecencyRTRIResult"
-  },
-  {
-    "id": "vs-regimen-change-reason",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-regimen-change-reason",
-    "version": "0.1.0-test",
-    "name": "RegimenChangeReason"
   },
   {
     "id": "vs-treatment-category",
