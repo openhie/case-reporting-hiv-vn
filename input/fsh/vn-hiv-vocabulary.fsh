@@ -272,3 +272,20 @@ Id: vs-regimen-change-reason
 Title: "Reason for regimen change"
 Description: "Reason for regimen change"
 * include codes from system CSRegimenChangeReason
+
+
+CodeSystem: CSWhoStage
+Id: cs-vn-whostage
+Title: "CodeSystem WHO stage "
+Description:  "CodeSystem - WHO Stage"
+
+* #stage1 "WHO Stage 1"
+* #stage2 "WHO Stage 2"
+* #stage3 "WHO Stage 3"
+* #stage4 "WHO Stage 4"
+
+ValueSet: VSWhoStage
+Id: vs-vn-whostage
+Title: "ValueSet WHO Stage "
+Description:  "ValueSet - WHO Stage"
+* include codes from system CSWhoStage
