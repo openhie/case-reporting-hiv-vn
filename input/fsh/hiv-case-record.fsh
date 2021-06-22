@@ -1,5 +1,5 @@
 
-Alias: $CommPreference = http://hl7.org/fhir/StructureDefinition/patient-preferenceType
+//Alias: $CommPreference = http://hl7.org/fhir/StructureDefinition/patient-preferenceType
 Alias: $GenderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
 
 Profile:        HIVPatient
@@ -9,8 +9,7 @@ Title:          "HIV Patient"
 Description:    """ 
     This Patient profile allows the exchange of patient information, including all the data associated with HIV patients"""
 * extension contains
-    VietnamEthnicity named species 0..1 and
-    $CommPreference named comm-preference 0..1 MS and
+    VietnamEthnicity named ethnicity 0..1 and
     $GenderIdentity named genderIdentity 0..1 MS
 
 * extension[VietnamEthnicity] MS
@@ -85,8 +84,8 @@ Description: "Vietnam Administrative Address."
     district 0..1 MS and
     commune 0..1 MS
 * extension[province].value[x] only CodeableConcept
-* extension[district].value[x] only CodeableConcept
-* extension[commune].value[x] only CodeableConcept
+//* extension[district].value[x] only CodeableConcept
+//* extension[commune].value[x] only CodeableConcept
 
 // Definitions of in-line extensions
 * extension[province] ^short = " province residence address "
@@ -104,9 +103,9 @@ Description:  "Thông tin địa danh hành chính - Theo ban hành Danh mục D
 * ^status = #draft
 
 
-Profile:        HIVRiskFactor
+Profile:        HIVRiskBehavior
 Parent:         Condition
-Id:             hiv-risk-factor
+Id:             hiv-risk-behavior
 Title:          "HIV Risk Behavior"
 Description:    """ 
     This profile allows the exchange of patient's risk behaviors"""
@@ -162,3 +161,10 @@ Title:          "HIV Transmission route"
 Description:    """
     This profile allows the patient's transmission route"""
 * category from VSHIVTransmissionRoute
+
+Profile:        CauseOfDeath
+Parent:         Observation
+Id:             cause-of-death
+Title:          "Cause of Death for HIV case surveillance"
+Description:    """
+    Cause of Death for HIV case surveillance"""

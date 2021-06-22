@@ -159,13 +159,13 @@ Usage: #definition
 
 
 * insert Question(item[=].item[=].,rapid_test,Rapid test for recent infection,group,false)
-* insert Question(item[=].item[=].item[=].,date_specimen_collection,Date of Specimen Collection,date,false)
-* insert Question(item[=].item[=].item[=].,place_specimen_collection,Place of Specimen Collection,string,false)
+* insert Question(item[=].item[=].item[=].,date_specimen_collected,Date of Specimen Collection,date,false)
+* insert Question(item[=].item[=].item[=].,place_specimen_collected,Place of Specimen Collection,string,false)
 * insert Question(item[=].item[=].item[=].,date_test_performed,Date test result validated,date,false)
 * insert Question(item[=].item[=].item[=].,test_result,Conclusion,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
 
-* insert Question(item[=].item[=].,vl_test,Viral load test specific for recency test,group,false)
+* insert Question(item[=].item[=].,vl_rapid_test,Viral load test specific for recency test,group,false)
 //* insert Question(item[=].item[=].item[=].,vl_test.date_specimen_collection,Date of Specimen Collection for VL test,date,false)
 //* insert Question(item[=].item[=].item[=].,vl_testid_test.place_specimen_collection,Place of Specimen Collection for rapVLid test,string,false)
 * insert Question(item[=].item[=].item[=].,date_test_performed,Date of VL test performance,date,false)
@@ -182,11 +182,11 @@ Usage: #definition
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine "Routine"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
 
-* insert Question(item[=].item[=].,cd4_date_specimen_collected,Date of Specimen Collection for present CD4 test,date,false)
-* insert Question(item[=].item[=].,cd4_place_specimen_collected,Place of Specimen Collection for present CD4 test,string,false)
-* insert Question(item[=].item[=].,cd4_date_test_performed,Date of present CD4 test,date,false)
-* insert Question(item[=].item[=].,cd4_test_result,Result of present CD4 test,integer,false)
-* insert Question(item[=].item[=].,cd4_test_result,Other outcome of CD4 test,choice,false)
+* insert Question(item[=].item[=].,date_specimen_collected,Date of Specimen Collection for present CD4 test,date,false)
+* insert Question(item[=].item[=].,place_specimen_collected,Place of Specimen Collection for present CD4 test,string,false)
+* insert Question(item[=].item[=].,date_test_performed,Date of present CD4 test,date,false)
+* insert Question(item[=].item[=].,test_result,Result of present CD4 test,integer,false)
+* insert Question(item[=].item[=].,test_result_other,Other outcome of CD4 test,choice,false)
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#undetermined "Undetermined"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#notapplicable "Not applicable"
 
@@ -304,8 +304,8 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#negative "Negative"
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#positive "Positive"
 
-* insert Question(item[=].item[=].item[=].,diagnosis_date,Date of HCV viral load test,date,false)
-* insert Question(item[=].item[=].item[=].,diagnosis_result,Result of HCV viral load test,integer,false)
+* insert Question(item[=].item[=].item[=].,vl_diagnosis_date,Date of HCV viral load test,date,false)
+* insert Question(item[=].item[=].item[=].,vl_diagnosis_result,Result of HCV viral load test,integer,false)
 
 * insert Question(item[=].item[=].item[=].,treatment_start_date,Date of HCV treatment start,date,false)
 * insert Question(item[=].item[=].item[=].,treatment_stop_date,Date of HCV treatment stopped,date,false)
@@ -323,14 +323,14 @@ Usage: #definition
 * insert Question(item[=].item[=].,pregnancy_delivery_place,Delivery place,string,true)
 
 * insert Question(item[=].item[=].,pregnancy_outcomes,Pregnancy outcome,group,false)
-* insert Question(item[=].item[=].item[=].,pregnancy_outcome_code,Pregnancy outcome code,choice,true)
+* insert Question(item[=].item[=].item[=].,pregnancy_outcome_code,Pregnancy outcome code,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-pregnancy-outcome)
 
 * insert Question(item[=].item[=].item[=].,pregnancy_delivery_date,Delivery date,date,true)
 * item[=].item[=].item[=].item[=].enableWhen.question = "pregnancy_outcome_code"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
-* insert Question(item[=].item[=].item[=].,pregnancy_gestation_at_delivery,Gestation age at delivery (weeks\),integer,true)
+* insert Question(item[=].item[=].item[=].,pregnancy_gestational_age_at_delivery,Gestational age at delivery (weeks\),integer,true)
 * item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
