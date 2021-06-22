@@ -8,10 +8,10 @@
   "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ImplementationGuide/openhie.vn.case-reporting.hiv",
   "version": "0.1.0-test",
   "name": "OpenHIE Vietnam HIV Case-reporting",
-  "title": "HIV Case-reporting for Vietnam",
+  "title": "HIV Case-reporting for Vietnam - candidate draft",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-19T17:21:10+00:00",
+  "date": "2021-06-22T22:21:12+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -633,6 +633,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-regimen-change-reason"
+        },
+        "name": "Reason for regimen change",
+        "description": "Reason for regimen change"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -743,6 +756,19 @@
         },
         "name": "Recency RITA result",
         "description": "Valueset - Recency RITA result"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-regimen-change-reason"
+        },
+        "name": "Reason for regimen change",
+        "description": "Reason for regimen change"
       },
       {
         "extension": [
@@ -1005,7 +1031,9 @@
         ],
         "reference": {
           "reference": "Questionnaire/vn-hiv-csv-import-questionnaire"
-        }
+        },
+        "name": "HIV Case surveillance import",
+        "description": "HIV Case surveillance data import structure"
       },
       {
         "extension": [
@@ -1152,6 +1180,19 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/vs-cause-of-death"
+        },
+        "name": "Cause of death",
+        "description": "Cause of death"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/vs-patient-communication-preferences"
         },
         "name": "Patient Communication Preferences",
@@ -1269,6 +1310,19 @@
         },
         "name": "HIV Transmission Route",
         "description": "CodeSystem - Route of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-cause-of-death"
+        },
+        "name": "Cause of death",
+        "description": "Cause of death"
       },
       {
         "extension": [
