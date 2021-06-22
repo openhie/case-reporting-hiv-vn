@@ -176,23 +176,24 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
 
 
-* insert Question(item[=].,cd4_test,CD4 test results,group,false)
-* insert Question(item[=].item[=].,lastest_test_reason,Reason for present CD4 test,choice,false)
+* insert Question(item[=].,cd4_test,CD4 test results,group,true)
+* insert Question(item[=].item[=].,test_reason,Reason for present CD4 test,choice,false)
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pre-art "Before ART"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine "Routine"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
 
-* insert Question(item[=].item[=].,lastest_date_specimen_collected,Date of Specimen Collection for present CD4 test,date,false)
-* insert Question(item[=].item[=].,lastest_place_specimen_collected,Place of Specimen Collection for present CD4 test,string,false)
-* insert Question(item[=].item[=].,lastest_date_test_performed,Date of present CD4 test,date,false)
-* insert Question(item[=].item[=].,lastest_test_result,Result of present CD4 test,integer,false)
-* insert Question(item[=].item[=].,lastest_test_result,Other outcome of CD4 test,choice,false)
+* insert Question(item[=].item[=].,cd4_date_specimen_collected,Date of Specimen Collection for present CD4 test,date,false)
+* insert Question(item[=].item[=].,cd4_place_specimen_collected,Place of Specimen Collection for present CD4 test,string,false)
+* insert Question(item[=].item[=].,cd4_date_test_performed,Date of present CD4 test,date,false)
+* insert Question(item[=].item[=].,cd4_test_result,Result of present CD4 test,integer,false)
+* insert Question(item[=].item[=].,cd4_test_result,Other outcome of CD4 test,choice,false)
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#undetermined "Undetermined"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#notapplicable "Not applicable"
 
-
+/*
 * insert Question(item[=].item[=].,history,Other CD4 test results,group,true)
 * insert Question(item[=].item[=].item[=].,lastest_test_reason,Reason for CD4 test,choice,false)
+
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pre-art "Before ART"
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine "Routine"
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
@@ -200,7 +201,10 @@ Usage: #definition
 * insert Question(item[=].item[=].item[=].,date_specimen_collected,Date of Specimen Collection for CD4 test,date,false)
 * insert Question(item[=].item[=].item[=].,date_test_performed,Date of CD4 test,date,false)
 * insert Question(item[=].item[=].item[=].,test_result,Result of CD4 test,integer,false)
-
+* insert Question(item[=].item[=].item[=].,cd4_test_result,Other outcome of CD4 test,choice,false)
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#undetermined "Undetermined"
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#notapplicable "Not applicable"
+*/
 
 * insert Question(item[=].,vl_test,Viral Load test (First time and follow-up\),group,true)
 * insert Question(item[=].item[=].,test_reason,Reason for present VL test,string,false)
@@ -210,13 +214,12 @@ Usage: #definition
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#3month-after-high "3 month after high viral load"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pregnant "Pregnant/Lactating woman"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
-
 * insert Question(item[=].item[=].,place_specimen_collected,Place of Specimen Collection for present VL test,string,false)
 * insert Question(item[=].item[=].,date_specimen_collected,Date of Specimen Collection for present VL test,date,false)
 * insert Question(item[=].item[=].,date_test_performed,Date of present VL test,date,false)
 * insert Question(item[=].item[=].,test_result,Result of present VL test,integer,false)
 
-
+/*
 * insert Question(item[=].item[=].,history,Past Viral Load test,group,true)
 * insert Question(item[=].item[=].item[=].,test_reason,Reason for past CD4 test,string,false)
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine-6 "6 months after ART initiation"
@@ -229,7 +232,7 @@ Usage: #definition
 * insert Question(item[=].item[=].item[=].,date_specimen_collected,Date of Specimen Collection for past VL test,date,false)
 * insert Question(item[=].item[=].item[=].,date_test_performed,Date of past VL test,date,false)
 * insert Question(item[=].item[=].item[=].,test_result,Result of past VL test,integer,false)
-
+*/
 
 * insert Question(item[=].,drug_resistance_test,Drug Resistance test,group,true)
 * insert Question(item[=].item[=].,date_specimen_collected,Date of Specimen Collection,date,false)
@@ -260,7 +263,6 @@ Usage: #definition
 * insert Question(item[=].item[=].,date_next_appointment,Date of next appointment,date,false)
 * insert Question(item[=].item[=].,date_last_examination,Date of last examination,date,false)
 
-
 * insert Question(item[=].item[=].,arv_regimen,ARV Treatment regimen,group,true)
 * insert Question(item[=].item[=].item[=].,date_regimen_started,Date regimen started,date,false)
 * insert Question(item[=].item[=].item[=].,date_regimen_stopped,Date regimen stopped,date,false)
@@ -280,13 +282,11 @@ Usage: #definition
 * insert Question(item[=].item[=].item[=].item[=].,date_ended,TB Treatment date ended,date,false)
 * insert Question(item[=].item[=].item[=].item[=].,location,Place TB Treatment provided,open-choice,false)
 
-* insert Question(item[=].item[=].item[=].,tpt,TPT,group,false)
+* insert Question(item[=].item[=].item[=].,tpt,TPT,group,true)
 * insert Question(item[=].item[=].item[=].item[=].,date_started,Date TPT started,date,false)
 * insert Question(item[=].item[=].item[=].item[=].,date_ended,Date TPT ended,date,false)
 * insert Question(item[=].item[=].item[=].item[=].,location,Place TPT provided,open-choice,false)
 * insert Question(item[=].item[=].item[=].item[=].,tpt_completed,TPT completed,boolean,false)
-
-
 
 * insert Question(item[=].item[=].,hbv,HBV,group,false)
 * insert Question(item[=].item[=].item[=].,diagnosis_date,Date of HbsAg test,date,false)
@@ -317,46 +317,42 @@ Usage: #definition
 * item[=].item[=].item[=].answerValueSet = Canonical (vs-cause-of-death)
 
 
-
-
-
-* insert Question(item[=].,pregnancies,Pregnancies,group,true)
+* insert Question(item[=].,pregnancy,Pregnancies,group,true)
 * insert Question(item[=].item[=].,pregnancy_date_reported,Date pregnancy reported,date,true)
 * insert Question(item[=].item[=].,pregnancy_place_reported,Place pregnancy reported,string,true)
 * insert Question(item[=].item[=].,pregnancy_delivery_place,Delivery place,string,true)
 
-* insert Question(item[=].item[=].,pregnancy_outcomes,Pregnancy outcomes,group,true)
+* insert Question(item[=].item[=].,pregnancy_outcomes,Pregnancy outcome,group,false)
 * insert Question(item[=].item[=].item[=].,pregnancy_outcome_code,Pregnancy outcome code,choice,true)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-pregnancy-outcome)
 
-
-* insert Question(item[=].item[=].,pregnancy_delivery_date,Delivery date,date,true)
-* item[=].item[=].item[=].enableWhen.question = "pregnancy_outcome_code"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding = #2
-* insert Question(item[=].item[=].,pregnancy_gestation_at_delivery,Gestation age at delivery (weeks\),integer,true)
-* item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding = #2
-
-* insert Question(item[=].item[=].,children,Births,group,true)
-* item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding = #2
-
-* insert Question(item[=].item[=].item[=].,birth_weight,Child weight at birth,decimal,false)
-* insert Question(item[=].item[=].item[=].,birth_defects,Birth defects,open-choice,true)
-* item[=].item[=].item[=].item[=].answerValueSet = "#BirthDefects"
-* insert Question(item[=].item[=].item[=].,hiv_status,HIV status,choice,false)
-* item[=].item[=].item[=].item[=].answerValueSet = "#ChildHIVStatus"
-* insert Question(item[=].item[=].item[=].,hiv_diagnosis_date,Child HIV diagnosis date,date,false)
-* item[=].item[=].item[=].item[=].enableWhen.question = "children.hiv_status"
+* insert Question(item[=].item[=].item[=].,pregnancy_delivery_date,Delivery date,date,true)
+* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancy_outcome_code"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
-
-* insert Question(item[=].item[=].item[=].,child_arv_start_date,Child ARV start date,date,false)
-* item[=].item[=].item[=].item[=].enableWhen.question = "children.hiv_status"
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
+* insert Question(item[=].item[=].item[=].,pregnancy_gestation_at_delivery,Gestation age at delivery (weeks\),integer,true)
+* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
+
+* insert Question(item[=].item[=].item[=].,children,Births,group,true)
+* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
+
+* insert Question(item[=].item[=].item[=].item[=].,birth_weight,Child weight at birth,decimal,false)
+* insert Question(item[=].item[=].item[=].item[=].,birth_defects,Birth defects,open-choice,true)
+* item[=].item[=].item[=].item[=].item[=].answerValueSet = "#BirthDefects"
+* insert Question(item[=].item[=].item[=].item[=].,hiv_status,HIV status,choice,false)
+* item[=].item[=].item[=].item[=].item[=].answerValueSet = "#ChildHIVStatus"
+* insert Question(item[=].item[=].item[=].item[=].,hiv_diagnosis_date,Child HIV diagnosis date,date,false)
+* item[=].item[=].item[=].item[=].item[=].enableWhen.question = "children.hiv_status"
+* item[=].item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
+
+* insert Question(item[=].item[=].item[=].item[=].,child_arv_start_date,Child ARV start date,date,false)
+* item[=].item[=].item[=].item[=].item[=].enableWhen.question = "children.hiv_status"
+* item[=].item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
 
 
