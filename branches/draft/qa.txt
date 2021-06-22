@@ -1,9 +1,9 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 75, warn = 127, info = 71
+err = 75, warn = 128, info = 71
 IG Publisher Version: 1.1.75
-Generated Tue Jun 22 22:22:01 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Tue Jun 22 23:33:09 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
  Build Errors : 46 / 23 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
@@ -42,6 +42,7 @@ Generated Tue Jun 22 22:22:01 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 28 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-aids-diagnosis-observation : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-cause-of-death : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ext-vn-ethnicity : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-careplan : 0 / 1 / 1
@@ -51,7 +52,7 @@ Generated Tue Jun 22 22:22:01 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-key-population : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-factor : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-behavior : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-specimen : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-transmission-route : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-treatment-hepatitis-process : 0 / 1 / 1
@@ -382,7 +383,7 @@ WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[2]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'pregnancy_gestation_at_delivery'
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[2]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'pregnancy_gestational_age_at_delivery'
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'children'
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[3]: Unable to find an item with the linkId 'children.hiv_status' which is referenced in the enableWhen for 'hiv_diagnosis_date'
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[4]: Unable to find an item with the linkId 'children.hiv_status' which is referenced in the enableWhen for 'child_arv_start_date'
@@ -446,6 +447,9 @@ WARNING: StructureDefinition/aids-diagnosis-observation: StructureDefinition.sna
 == /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary.json ==
 INFORMATION: StructureDefinition/arv-therapy-summary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/arv-therapy-summary'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-cause-of-death.json ==
+INFORMATION: StructureDefinition/cause-of-death: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/cause-of-death'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place.json ==
 INFORMATION: StructureDefinition/ext-specimen-collection-place: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-specimen-collection-place'): The Implementation Guide contains no examples for this extension
@@ -472,9 +476,9 @@ INFORMATION: StructureDefinition/hiv-patient: StructureDefinition: Validate reso
 WARNING: StructureDefinition/hiv-patient: StructureDefinition.snapshot.element[8].short: value should not start or finish with whitespace
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result.json ==
 INFORMATION: StructureDefinition/hiv-recency-result: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-factor.json ==
-INFORMATION: StructureDefinition/hiv-risk-factor: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-risk-factor'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-behavior.json ==
+INFORMATION: StructureDefinition/hiv-risk-behavior: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-risk-behavior'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-specimen.json ==
 INFORMATION: StructureDefinition/hiv-specimen: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-specimen'): The Implementation Guide contains no examples for this profile
@@ -576,6 +580,6 @@ WARNING: ValueSet/vs-vn-regimenlevel: ValueSet.title: value should not start or 
 == /github/workspace/input/openhie.vn.case-reporting.hiv.xml ==
 INFORMATION: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[25].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[41].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[47].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[26].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[42].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[48].name: value should not start or finish with whitespace
