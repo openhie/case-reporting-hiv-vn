@@ -189,6 +189,13 @@
     "name": "ARVTherapySummary"
   },
   {
+    "id": "cause-of-death",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/cause-of-death",
+    "version": "0.1.0-test",
+    "name": "CauseOfDeath"
+  },
+  {
     "id": "ext-specimen-collection-place",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-specimen-collection-place",
@@ -252,11 +259,11 @@
     "name": "HIVRecencyResult"
   },
   {
-    "id": "hiv-risk-factor",
+    "id": "hiv-risk-behavior",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-risk-factor",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-risk-behavior",
     "version": "0.1.0-test",
-    "name": "HIVRiskFactor"
+    "name": "HIVRiskBehavior"
   },
   {
     "id": "hiv-specimen",

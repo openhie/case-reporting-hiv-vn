@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam - candidate draft",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-22T22:21:12+00:00",
+  "date": "2021-06-22T23:32:17+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -672,6 +672,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-risk-behavior"
+        },
+        "name": "HIV Risk Behavior",
+        "description": "This profile allows the exchange of patient's risk behaviors"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -1002,19 +1015,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/hiv-risk-factor"
-        },
-        "name": "HIV Risk Behavior",
-        "description": "This profile allows the exchange of patient's risk behaviors"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -1310,6 +1310,19 @@
         },
         "name": "HIV Transmission Route",
         "description": "CodeSystem - Route of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cause-of-death"
+        },
+        "name": "Cause of Death for HIV case surveillance",
+        "description": "Cause of Death for HIV case surveillance"
       },
       {
         "extension": [

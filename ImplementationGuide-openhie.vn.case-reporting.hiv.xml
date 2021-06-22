@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-06-22T22:21:12+00:00"/>
+  <date value="2021-06-22T23:32:17+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -466,6 +466,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-risk-behavior"/>
+      </reference>
+      <name value="HIV Risk Behavior"/>
+      <description value="This profile allows the exchange of patient&#39;s risk behaviors"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -718,16 +728,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-risk-factor"/>
-      </reference>
-      <name value="HIV Risk Behavior"/>
-      <description value="This profile allows the exchange of patient&#39;s risk behaviors"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -953,6 +953,16 @@
       </reference>
       <name value="HIV Transmission Route"/>
       <description value="CodeSystem - Route of HIV transmission"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cause-of-death"/>
+      </reference>
+      <name value="Cause of Death for HIV case surveillance"/>
+      <description value="Cause of Death for HIV case surveillance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
