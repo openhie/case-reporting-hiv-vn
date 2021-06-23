@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 33, errors = 75, warn = 128, info = 71 -->
+<!-- broken links = 33, errors = 75, warn = 132, info = 71 -->
 <head>
   <title>OpenHIE Vietnam HIV Case-reporting : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OpenHIE Vietnam HIV Case-reporting</h1>
- <p>Generated Tue Jun 22 23:33:09 UTC 2021, FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv">http://openhie.org/fhir/openhie.vn.case-reporting.hiv</a> (<a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Jun 23 09:09:55 UTC 2021, FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv">http://openhie.org/fhir/openhie.vn.case-reporting.hiv</a> (<a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.75</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = openhie.vn.case-reporting.hiv, Canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv</td></tr>
@@ -38,7 +38,7 @@
  <br/><br/>The copyrightYear parameter ('2020+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://openhie.org/fhir/openhie.vn.case-reporting.hiv (Problem #1 with package-list.json at http://openhie.org/fhir/openhie.vn.case-reporting.hiv: openhie.org)</td></tr>
- <tr><td>Summary:</td><td> broken links = 33, errors = 75, warn = 128, info = 71</td></tr>
+ <tr><td>Summary:</td><td> broken links = 33, errors = 75, warn = 132, info = 71</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -112,6 +112,9 @@
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-cs-vn-regimenlevel"><b>/github/workspace/fsh-generated/resources/CodeSystem-cs-vn-regimenlevel</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-cs-vn-whostage"><b>/github/workspace/fsh-generated/resources/CodeSystem-cs-vn-whostage</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-type-of-contact"><b>/github/workspace/fsh-generated/resources/CodeSystem-type-of-contact</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
@@ -294,7 +297,10 @@
      <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-vs-vn-regimenlevel"><b>/github/workspace/fsh-generated/resources/ValueSet-vs-vn-regimenlevel</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_input_openhie.vn.case-reporting.hiv"><b>/github/workspace/input/openhie.vn.case-reporting.hiv</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-vs-vn-whostage"><b>/github/workspace/fsh-generated/resources/ValueSet-vs-vn-whostage</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_openhie.vn.case-reporting.hiv"><b>/github/workspace/input/openhie.vn.case-reporting.hiv</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>1</b></td>
    </tr>
 </table>
 <hr/>
@@ -413,103 +419,103 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#e54fff20-0d77-4a44-8f25-8f5b17ae8524">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#d6ddcb4a-3261-454a-8b4a-782e0f854360">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#4a2509fa-e676-4091-9982-9ebdecf47248">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#1611bb1a-4069-4c8a-b3fd-3ee85b423c9a">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#e0e852dd-c0d9-4bfe-a7d0-f3f73848983b">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#eff0c787-9ebf-4045-8866-65a36ce04b5a">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#2c03f487-46c2-4619-a16c-cdf8dc554e79">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#8f01742a-c2f9-4652-9103-61fb52984670">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#a9de57f2-324b-41a8-83b5-07048b07a274">ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#281a3ca2-fb80-4c98-8417-658dee89048a">ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#424837d1-21a7-4035-938b-7799d6c6ca52">ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#c62ce75e-d5ba-4116-b035-732e6ae9a3a3">ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.html#4eb73bbb-2244-4b4c-8e66-b2ee64aadf28">ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.html#f2856ae2-d236-474d-a67d-a989b44be495">ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.html#66f5cd3b-0d52-4872-8c66-fa0506c91d64">ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.html#1ec47e19-57db-428c-89db-7d649180cf55">ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#35a547de-a076-407a-b8ca-6214ac77fa97">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#600e3165-1b62-482d-97b7-85749166581b">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#66044ff7-4916-4228-ad0f-2816c11c9bc3">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#1c96db81-b84c-435d-bf49-58d626437766">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#4853556f-4fe0-4558-b170-fa86c952d839">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#4f18fbe7-2a14-42d9-a4fc-254d61144a22">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#d5a453e8-f407-4ebb-b27d-cc7ffb737dd5">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#6acb435a-01c4-45d0-aac6-8dbb27dd2140">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#0b0d86bf-fd7f-4e78-9208-d2d17d4dcebd">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#8c816fdb-ef59-456e-aaa2-3a2cc0712b6f">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#1597f6b9-2629-43a2-bfe7-a066fde7ed0e">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#bf9ee270-8d66-4a0a-a84a-1e7538c795c9">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#04a056e1-15f5-4da5-9429-f5b2a70ff78e">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#06f2dcfa-ed71-4381-b324-f1f4349f9a7e">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#9c15739e-c95e-4c9d-91a1-7dac9b90debb">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#645a0062-4df2-49fa-8cf7-410cc014e078">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#b3126ac8-aaa3-412d-b13e-aadbbb23f2f0">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#f1780bbd-eb98-4553-9383-5867332caa3c">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#fd36f9bb-2a5b-4640-a943-0f9376269b0c">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#598fcb3b-8922-4732-93ef-9f8abf0ada89">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#c654bc66-7eaf-4921-a207-bcc1e8d25427">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#aaca02f1-5e9f-4fd4-bc45-f1f0f1c47de4">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#ac76186e-2b67-47db-88f3-8481dd8cf576">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#74957e08-d53c-4304-8bcf-6ec82e5b491c">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#0f4b974a-769e-4bd7-beaa-c05ccb85df6b">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#c0bfb613-e32e-4f7b-bb70-924731154f97">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#e9550610-0901-47ff-9068-bae311c71aea">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#e0c9feb8-9d84-4df4-bc61-626b6afae4bf">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#6c9c5aa7-55a2-4643-8bfb-4a35fe690ca8">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#2957e859-1553-4c48-abe5-6b55c80c93b3">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#cd75491f-3998-4bed-ad50-05c5ec303be2">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#b6244876-86be-4a75-8bc3-664af8874bde">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="actors.html#90d34ecf-c666-4e22-a935-07a208cba586">actors.html#/html/body/div/div/div/div/div/div/a at Line 165, column 98</a></b></td><td><b>error</b></td><td><b>The link 'transactions.html' for &quot;transactions&quot; cannot be resolved</b></td>
+     <td><b><a href="actors.html#f2e218c0-e44a-4d43-b07e-fe8420149636">actors.html#/html/body/div/div/div/div/div/div/a at Line 165, column 98</a></b></td><td><b>error</b></td><td><b>The link 'transactions.html' for &quot;transactions&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="actors.html#90d34ecf-c666-4e22-a935-07a208cba586">actors.html#/html/body/div/div/div/div/div/div/a at Line 171, column 64</a></b></td><td><b>error</b></td><td><b>The link 'concepts.html#case_report' for &quot;case report&quot; cannot be resolved</b></td>
+     <td><b><a href="actors.html#f2e218c0-e44a-4d43-b07e-fe8420149636">actors.html#/html/body/div/div/div/div/div/div/a at Line 171, column 64</a></b></td><td><b>error</b></td><td><b>The link 'concepts.html#case_report' for &quot;case report&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="actors.html#90d34ecf-c666-4e22-a935-07a208cba586">actors.html#/html/body/div/div/div/div/div/div/a at Line 173, column 100</a></b></td><td><b>error</b></td><td><b>The link 'concepts.html#case_report' for &quot;maturity level&quot; cannot be resolved</b></td>
+     <td><b><a href="actors.html#f2e218c0-e44a-4d43-b07e-fe8420149636">actors.html#/html/body/div/div/div/div/div/div/a at Line 173, column 100</a></b></td><td><b>error</b></td><td><b>The link 'concepts.html#case_report' for &quot;maturity level&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="actors.html#90d34ecf-c666-4e22-a935-07a208cba586">actors.html#/html/body/div/div/div/div/div/div/a at Line 183, column 357</a></b></td><td><b>error</b></td><td><b>The link 'expected_actions.html#transform' for &quot;three options&quot; cannot be resolved</b></td>
+     <td><b><a href="actors.html#f2e218c0-e44a-4d43-b07e-fe8420149636">actors.html#/html/body/div/div/div/div/div/div/a at Line 183, column 357</a></b></td><td><b>error</b></td><td><b>The link 'expected_actions.html#transform' for &quot;three options&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#0f5e200a-fe8f-4dc6-896c-55d7ed79052d">index.html#/html/body/div/div/div/div/div/div/p/a at Line 191, column 182</a></b></td><td><b>error</b></td><td><b>The link 'transactions.html' for &quot;transactions&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#febd542b-83b2-4a6b-9900-5a0adac1175c">index.html#/html/body/div/div/div/div/div/div/p/a at Line 191, column 182</a></b></td><td><b>error</b></td><td><b>The link 'transactions.html' for &quot;transactions&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#1e2ec4da-fc84-4645-bd1e-cdd07a2a7a19">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 216, column 12</a></b></td><td><b>error</b></td><td><b>The link 'requirements.html' for &quot;Level II: Business Requirements&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#79a34a80-71e5-4af5-969d-0554c2a9322b">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 216, column 12</a></b></td><td><b>error</b></td><td><b>The link 'requirements.html' for &quot;Level II: Business Requirements&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#85af2cf5-dda2-4f05-887d-2a794bc25861">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 218, column 12</a></b></td><td><b>error</b></td><td><b>The link 'data_exchange.html' for &quot;Level III: Data Models and Exchange&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#766b6bd9-1ab0-47d7-9a18-751b3301e2dc">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 218, column 12</a></b></td><td><b>error</b></td><td><b>The link 'data_exchange.html' for &quot;Level III: Data Models and Exchange&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#9f259eb3-b036-457d-843b-501889ba84f3">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 219, column 12</a></b></td><td><b>error</b></td><td><b>The link 'deployment.html' for &quot;Level IV - ε: Deployment Guidance&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#767adc87-1ca2-4369-839e-d47248178810">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 219, column 12</a></b></td><td><b>error</b></td><td><b>The link 'deployment.html' for &quot;Level IV - ε: Deployment Guidance&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#9f259eb3-b036-457d-843b-501889ba84f3">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 220, column 17</a></b></td><td><b>error</b></td><td><b>The link 'instant_openhie.html' for &quot;Instant OpenHIE&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#767adc87-1ca2-4369-839e-d47248178810">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 220, column 17</a></b></td><td><b>error</b></td><td><b>The link 'instant_openhie.html' for &quot;Instant OpenHIE&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -1043,6 +1049,20 @@
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-cs-vn-whostage"> </a>
+<h2><a href="CodeSystem-cs-vn-whostage.html">/github/workspace/fsh-generated/resources/CodeSystem-cs-vn-whostage.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/cs-vn-whostage: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem/cs-vn-whostage: CodeSystem.title</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_fsh-generated_resources_CodeSystem-type-of-contact"> </a>
 <h2><a href="CodeSystem-type-of-contact.html">/github/workspace/fsh-generated/resources/CodeSystem-type-of-contact.json</a></h2>
  <table class="grid">
@@ -1174,10 +1194,10 @@
      <td><b>Patient/test-hiv-patient: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient - listed in meta</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Patient/test-hiv-patient: Patient.address[0] (l49/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient</b> <span id="sl208" class="flip" onclick="flip('l208')">Show Reasoning</span><div id="l208" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient<ul><li>Patient.address[0]: discriminator = true and (use memberOf 'http://hl7.org/fhir/ValueSet/address-use|4.0.1')</li>, <li>Patient.address[0]: discriminator = true and (use memberOf 'http://hl7.org/fhir/ValueSet/address-use|4.0.1')</li></ul></div></td>
+     <td><b><a href="">Patient/test-hiv-patient: Patient.address[0] (l49/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient</b> <span id="sl210" class="flip" onclick="flip('l210')">Show Reasoning</span><div id="l210" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient<ul><li>Patient.address[0]: discriminator = true and (use memberOf 'http://hl7.org/fhir/ValueSet/address-use|4.0.1')</li>, <li>Patient.address[0]: discriminator = true and (use memberOf 'http://hl7.org/fhir/ValueSet/address-use|4.0.1')</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Patient/test-hiv-patient: Patient.address[1] (l54/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient</b> <span id="sl209" class="flip" onclick="flip('l209')">Show Reasoning</span><div id="l209" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient<ul><li>Patient.address[1]: discriminator = true and (use memberOf 'http://hl7.org/fhir/ValueSet/address-use|4.0.1')</li>, <li>Patient.address[1]: discriminator = true and (use memberOf 'http://hl7.org/fhir/ValueSet/address-use|4.0.1')</li></ul></div></td>
+     <td><b><a href="">Patient/test-hiv-patient: Patient.address[1] (l54/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient</b> <span id="sl211" class="flip" onclick="flip('l211')">Show Reasoning</span><div id="l211" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient<ul><li>Patient.address[1]: discriminator = true and (use memberOf 'http://hl7.org/fhir/ValueSet/address-use|4.0.1')</li>, <li>Patient.address[1]: discriminator = true and (use memberOf 'http://hl7.org/fhir/ValueSet/address-use|4.0.1')</li></ul></div></td>
    </tr>
 </table>
 <hr/>
@@ -1293,61 +1313,61 @@
      <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[0].answerOption[5].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[3].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[3].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[3].answerOption[1].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[3].answerOption[1].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[3].answerOption[2].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[3].answerOption[2].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[6].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[6].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[6].answerOption[1].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[6].answerOption[1].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[6].answerOption[2].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[6].answerOption[2].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[1].item[1].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[1].item[1].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[1].item[1].answerOption[1].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[1].item[1].answerOption[1].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[2].item[1].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[2].item[1].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[8].item[2].item[1].answerOption[1].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[9].item[2].item[1].answerOption[1].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[1].enableWhen[0].answer.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[11].item[3].item[1].enableWhen[0].answer.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[2].enableWhen[0].answer.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[11].item[3].item[2].enableWhen[0].answer.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].enableWhen[0].answer.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[11].item[3].item[3].enableWhen[0].answer.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[3].enableWhen[0].answer.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[11].item[3].item[3].item[3].enableWhen[0].answer.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[4].enableWhen[0].answer.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[11].item[3].item[3].item[4].enableWhen[0].answer.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[2]</b></td><td><b>error</b></td><td title="Questionnaire_Q_EnableWhen_NoTarget"><b>Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'pregnancy_gestational_age_at_delivery'</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[11].item[3].item[2]</b></td><td><b>error</b></td><td title="Questionnaire_Q_EnableWhen_NoTarget"><b>Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'pregnancy_gestational_age_at_delivery'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3]</b></td><td><b>error</b></td><td title="Questionnaire_Q_EnableWhen_NoTarget"><b>Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'children'</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[11].item[3].item[3]</b></td><td><b>error</b></td><td title="Questionnaire_Q_EnableWhen_NoTarget"><b>Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'children'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[3]</b></td><td><b>error</b></td><td title="Questionnaire_Q_EnableWhen_NoTarget"><b>Unable to find an item with the linkId 'children.hiv_status' which is referenced in the enableWhen for 'hiv_diagnosis_date'</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[11].item[3].item[3].item[3]</b></td><td><b>error</b></td><td title="Questionnaire_Q_EnableWhen_NoTarget"><b>Unable to find an item with the linkId 'children.hiv_status' which is referenced in the enableWhen for 'hiv_diagnosis_date'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[4]</b></td><td><b>error</b></td><td title="Questionnaire_Q_EnableWhen_NoTarget"><b>Unable to find an item with the linkId 'children.hiv_status' which is referenced in the enableWhen for 'child_arv_start_date'</b></td>
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[11].item[3].item[3].item[4]</b></td><td><b>error</b></td><td title="Questionnaire_Q_EnableWhen_NoTarget"><b>Unable to find an item with the linkId 'children.hiv_status' which is referenced in the enableWhen for 'child_arv_start_date'</b></td>
    </tr>
    <tr style="background-color: #d6feff">
      <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta</b></td>
@@ -2171,6 +2191,20 @@
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-vs-vn-whostage"> </a>
+<h2><a href="ValueSet-vs-vn-whostage.html">/github/workspace/fsh-generated/resources/ValueSet-vs-vn-whostage.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/vs-vn-whostage: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/vs-vn-whostage: ValueSet.title</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_input_openhie.vn.case-reporting.hiv"> </a>
 <h2><a href="ImplementationGuide-openhie.vn.case-reporting.hiv.html">/github/workspace/input/openhie.vn.case-reporting.hiv.xml</a></h2>
  <table class="grid">
@@ -2187,10 +2221,16 @@
      <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[26].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[42].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[36].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[48].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[43].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[49].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[79].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -2793,6 +2833,9 @@
      <td><a href="CodeSystem-cs-vn-regimenlevel.html">/github/workspace/fsh-generated/resources/CodeSystem-cs-vn-regimenlevel.json</a></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-cs-vn-whostage.html">/github/workspace/fsh-generated/resources/CodeSystem-cs-vn-whostage.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-ext-vn-ethnicity.html">/github/workspace/fsh-generated/resources/StructureDefinition-ext-vn-ethnicity.json</a></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
@@ -2812,6 +2855,15 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="ValueSet-vs-vn-regimenlevel.html">/github/workspace/fsh-generated/resources/ValueSet-vs-vn-regimenlevel.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-vs-vn-whostage.html">/github/workspace/fsh-generated/resources/ValueSet-vs-vn-whostage.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-openhie.vn.case-reporting.hiv.html">/github/workspace/input/openhie.vn.case-reporting.hiv.xml</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-openhie.vn.case-reporting.hiv.html">/github/workspace/input/openhie.vn.case-reporting.hiv.xml</a></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="ImplementationGuide-openhie.vn.case-reporting.hiv.html">/github/workspace/input/openhie.vn.case-reporting.hiv.xml</a></td><td><b>value should not start or finish with whitespace</b></td>

@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Case-reporting for Vietnam - candidate draft"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-22T23:32:17+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-23T09:08:50+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "OpenHIE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -804,6 +804,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-whostage>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-vn-whostage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet WHO Stage " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet - WHO Stage" ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -816,7 +829,7 @@
          fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-diagnosis-observation>
        ]
      ], [
-       fhir:index 37;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -828,7 +841,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VSDiagnosisResults" ]
      ], [
-       fhir:index 38;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -841,7 +854,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem Vietnam HIV Regimen" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem - Vietnam HIV Regimen" ]
      ], [
-       fhir:index 39;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -854,7 +867,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV specimen" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The specimen used for the result" ]
      ], [
-       fhir:index 40;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -867,7 +880,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TB Treatment" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile allows to add tuberculosis status" ]
      ], [
-       fhir:index 41;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -880,7 +893,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem Vietnam Ethnicity" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recognized by the Vietnamese government" ]
      ], [
-       fhir:index 42;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -893,7 +906,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem Vietnam HIV Regimen Level " ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem - Vietnam HIV Regimen Level" ]
      ], [
-       fhir:index 43;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -906,7 +919,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Type of contact or relationship" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type of contact or relationship" ]
      ], [
-       fhir:index 44;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -917,7 +930,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/cs-arv-treatment-status" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -930,7 +943,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Transmission Route" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valueset - Route of HIV transmission" ]
      ], [
-       fhir:index 46;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -941,7 +954,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/cs-hiv-common" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -953,7 +966,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Define common event date" ]
      ], [
-       fhir:index 48;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -966,7 +979,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet Vietnam HIV Regimen Level " ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet - Vietnam HIV Regimen Level" ]
      ], [
-       fhir:index 49;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -982,7 +995,7 @@
          fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/pregnancy-status>
        ]
      ], [
-       fhir:index 50;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -995,7 +1008,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Risk Behavior" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem - Behavior associated with risk of HIV transmission" ]
      ], [
-       fhir:index 51;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1008,7 +1021,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet Vietnam HIV Regimen" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet - Vietnam HIV Regimen" ]
      ], [
-       fhir:index 52;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1019,7 +1032,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-hiv-sympthoms" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1032,7 +1045,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Case surveillance import" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIV Case surveillance data import structure" ]
      ], [
-       fhir:index 54;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1048,7 +1061,7 @@
          fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-condition>
        ]
      ], [
-       fhir:index 55;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1061,7 +1074,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vietnam Administrative Address" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vietnam Administrative Address." ]
      ], [
-       fhir:index 56;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1074,7 +1087,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Date component of pregnancy" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Date component of pregnancy associated with HIV case" ]
      ], [
-       fhir:index 57;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1085,7 +1098,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/cs-recency-result" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1098,7 +1111,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Gender Identity" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valueset - patient gender identities" ]
      ], [
-       fhir:index 59;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1111,7 +1124,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Population groups" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem - Population groups - Subjects to be tested for HIV" ]
      ], [
-       fhir:index 60;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1124,7 +1137,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV key population" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile allows the patient's key population" ]
      ], [
-       fhir:index 61;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1137,7 +1150,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Recency result" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile allows the exchange of a patient's hiv recency test" ]
      ], [
-       fhir:index 62;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1148,7 +1161,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/cs-treatment-patient-category" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1164,7 +1177,7 @@
          fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-viral-load>
        ]
      ], [
-       fhir:index 64;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1175,7 +1188,7 @@
          fhir:Reference.reference [ fhir:value "Questionnaire/hiv-case-report-questionnaire" ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1188,7 +1201,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cause of death" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cause of death" ]
      ], [
-       fhir:index 66;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1201,7 +1214,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Communication Preferences" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valueset - Patient Communication Preferences" ]
      ], [
-       fhir:index 67;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1214,7 +1227,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vietnam Administrative Address" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Thông tin địa danh hành chính - Theo ban hành Danh mục Dân tộc của Tổng cục thống kê" ]
      ], [
-       fhir:index 68;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1227,7 +1240,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Load group" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codesystem - Viral Load group" ]
      ], [
-       fhir:index 69;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1243,7 +1256,7 @@
          fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-recency-result>
        ]
      ], [
-       fhir:index 70;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1256,7 +1269,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Hepatitis Treatment" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile allows to add hepatitis status" ]
      ], [
-       fhir:index 71;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1267,7 +1280,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/cs-gender" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1278,7 +1291,7 @@
          fhir:Reference.reference [ fhir:value "QuestionnaireResponse/exampleresponse" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1291,7 +1304,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Gender" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The genders for patients" ]
      ], [
-       fhir:index 74;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1307,7 +1320,7 @@
          fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient>
        ]
      ], [
-       fhir:index 75;
+       fhir:index 76;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1320,7 +1333,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Transmission Route" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem - Route of HIV transmission" ]
      ], [
-       fhir:index 76;
+       fhir:index 77;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1333,7 +1346,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cause of Death for HIV case surveillance" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cause of Death for HIV case surveillance" ]
      ], [
-       fhir:index 77;
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1346,7 +1359,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cause of death" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cause of death" ]
      ], [
-       fhir:index 78;
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-whostage>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-vn-whostage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem WHO stage " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem - WHO Stage" ]
+     ], [
+       fhir:index 80;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1359,7 +1385,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CD4 Observation" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile allows the exchange of a patient's CD$ test and results" ]
      ], [
-       fhir:index 79;
+       fhir:index 81;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1372,7 +1398,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "AIDS Diagnosis result" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile allows the exchange of a patient's hiv recency test" ]
      ], [
-       fhir:index 80;
+       fhir:index 82;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1385,7 +1411,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen Collection Place" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Specimen Collection Place." ]
      ], [
-       fhir:index 81;
+       fhir:index 83;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
