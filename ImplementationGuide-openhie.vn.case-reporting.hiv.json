@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam - candidate draft",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-22T23:32:17+00:00",
+  "date": "2021-06-23T04:43:25+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -813,6 +813,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-vn-whostage"
+        },
+        "name": "ValueSet WHO Stage ",
+        "description": "ValueSet - WHO Stage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
@@ -1336,6 +1349,19 @@
         },
         "name": "Cause of death",
         "description": "Cause of death"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-vn-whostage"
+        },
+        "name": "CodeSystem WHO stage ",
+        "description": "CodeSystem - WHO Stage"
       },
       {
         "extension": [

@@ -154,6 +154,13 @@
     "name": "CSRegimenLevel"
   },
   {
+    "id": "cs-vn-whostage",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-whostage",
+    "version": "0.1.0-test",
+    "name": "CSWhoStage"
+  },
+  {
     "id": "type-of-contact",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/type-of-contact",
@@ -509,5 +516,12 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-regimenlevel",
     "version": "0.1.0-test",
     "name": "VSRegimenLevel"
+  },
+  {
+    "id": "vs-vn-whostage",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-whostage",
+    "version": "0.1.0-test",
+    "name": "VSWhoStage"
   }
 ]

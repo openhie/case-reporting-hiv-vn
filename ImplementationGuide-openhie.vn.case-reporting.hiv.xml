@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-06-22T23:32:17+00:00"/>
+  <date value="2021-06-23T04:43:25+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -574,6 +574,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-vn-whostage"/>
+      </reference>
+      <name value="ValueSet WHO Stage "/>
+      <description value="ValueSet - WHO Stage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -973,6 +983,16 @@
       </reference>
       <name value="Cause of death"/>
       <description value="Cause of death"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-vn-whostage"/>
+      </reference>
+      <name value="CodeSystem WHO stage "/>
+      <description value="CodeSystem - WHO Stage"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
