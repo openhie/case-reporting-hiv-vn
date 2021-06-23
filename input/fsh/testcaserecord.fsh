@@ -8,10 +8,10 @@ InstanceOf: HIVPatient
 * name[+].text = "Nguyan Van A"
 
 * identifier[art].value = "ARV001"
-* identifier[passportnum].value = "P0000012311"
-* identifier[cmtndID].value = "011100101"
-* identifier[insuranceID].value = "NN-1232717432"
-* identifier[cccdID].value = "01112303122"
+* identifier[passport_nr].value = "P0000012311"
+* identifier[national_id9].value = "011100101"
+* identifier[insurance_nr].value = "NN-1232717432"
+* identifier[national_id12].value = "01112303122"
 
 * address[Temporary].line = "31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000"
 * address[Permanent].line = "3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward"

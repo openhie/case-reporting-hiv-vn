@@ -3,21 +3,14 @@ Alias: $LOINC = http://loinc.org
 Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
 
 
-RuleSet: Question(context, linkId, text, type, repeats)
-* {context}item[+].linkId = "{linkId}"
-* {context}item[=].text = "{text}"
-* {context}item[=].type = #{type}
-* {context}item[=].repeats = {repeats}
-
-
-
-
 Instance: vn-hiv-csv-import-questionnaire
 InstanceOf: sdc-questionnaire-extract
-Description: "HIV Case Report Form"
-Title: "HIV Case Report Form"
+Description: "HIV Case Data Import"
+Title: "HIV Case Data Import"
 Usage: #definition
 
+* title = "HIV Case surveillance import"
+* description = "HIV Case surveillance data import structure"
 
 //* extension[+].url = $targetStructureMap
 //* extension[=].valueCanonical = Canonical(HIVCaseReportMap)
