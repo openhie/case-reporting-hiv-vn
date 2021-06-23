@@ -84,7 +84,7 @@ Usage: #definition
 
 * insert Question(,tile,HIV Case Report,display,false)
 * insert Question(,instructions,Reporting instructions: Monthly - applicable to each patient during the reporting period,display,false)
-* insert Question(,organization_unit_name,Facility ID,open-choice,false)
+* insert Question(,organization_unit,Facility ID,open-choice,false)
 * insert Question(,report_date,Date of Report,date,false)
 
 * insert Question(,questions,Monthly report,group,false)
@@ -111,6 +111,7 @@ Usage: #definition
 * insert Question(item[=].item[=].item[=].item[=].,national_id12,National ID 12 digits,string,false)
 * insert Question(item[=].item[=].item[=].item[=].,national_id9,National ID 9 digits,string,false)
 * insert Question(item[=].item[=].item[=].item[=].,insurance_nr,Health insurance number,string,false)
+* insert Question(item[=].item[=].item[=].item[=].,insurance_exp_date,Health insurance expiry date,date,false)
 * insert Question(item[=].item[=].item[=].item[=].,passport_nr,Passport number,string,false)
 * insert Question(item[=].item[=].item[=].item[=].,driver_license,Driver license,string,false)
 
@@ -161,7 +162,7 @@ Usage: #definition
 * insert Question(item[=].item[=].,rapid_test,Rapid test for recent infection,group,false)
 * insert Question(item[=].item[=].item[=].,date_specimen_collected,Date of Specimen Collection,date,false)
 * insert Question(item[=].item[=].item[=].,place_specimen_collected,Place of Specimen Collection,string,false)
-* insert Question(item[=].item[=].item[=].,date_test_performed,Date test result validated,date,false)
+* insert Question(item[=].item[=].item[=].,date_test_validated,Date test result validated,date,false)
 * insert Question(item[=].item[=].item[=].,test_result,Conclusion,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
 
@@ -219,6 +220,11 @@ Usage: #definition
 * insert Question(item[=].item[=].,date_test_performed,Date of present VL test,date,false)
 * insert Question(item[=].item[=].,test_result,Result of present VL test,integer,false)
 
+* insert Question(item[=].,mmt_treatment,Methadone maintenance treatment,group,true)
+* insert Question(item[=].item[=].,start_date,Start date,date,false)
+* insert Question(item[=].item[=].,end_date,End date,date,false)
+* insert Question(item[=].item[=].,facility,Methadone maintenance treatment facility,string,false)
+
 /*
 * insert Question(item[=].item[=].,history,Past Viral Load test,group,true)
 * insert Question(item[=].item[=].item[=].,test_reason,Reason for past CD4 test,string,false)
@@ -272,6 +278,9 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-regimenlevel)
 * insert Question(item[=].item[=].item[=].,regimen_change_reason,Reason to change regimen,open-choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-regimen-change-reason)
+
+* insert Question(item[=].item[=].,who_stage,WHO Stage,choice,false)
+* item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-whostage)
 
 * insert Question(item[=].,comorbidities,Comorbidities,group,false)
 
