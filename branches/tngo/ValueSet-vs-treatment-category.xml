@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-treatment-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-cs-treatment-patient-category.html"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-patient-category</code></a></li><li>Include all codes defined in <a href="CodeSystem-cs-treatment-status.html"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-status</code></a></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-treatment-category"/>
+  <version value="0.1.0-test"/>
+  <name value="VSTreatmentCategory"/>
+  <title value="Category of the treatment"/>
+  <status value="active"/>
+  <date value="2021-06-23T04:43:25+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="Valueset - Category of the treatment"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-patient-category"/>
+    </include>
+    <include>
+      <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-status"/>
+    </include>
+  </compose>
+</ValueSet>
