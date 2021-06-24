@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cs-hiv-population"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">pwid<a name="cs-hiv-population-pwid"> </a></td><td>Người tiêm chích ma túy</td><td>Injecting drug users</td></tr><tr><td style="white-space:nowrap">msm<a name="cs-hiv-population-msm"> </a></td><td>Quan hệ tình dục đồng giới nam</td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">sw<a name="cs-hiv-population-sw"> </a></td><td/><td>Sex workers</td></tr><tr><td style="white-space:nowrap">tg_women<a name="cs-hiv-population-tg_women"> </a></td><td/><td>Transgender women</td></tr><tr><td style="white-space:nowrap">partner_plhiv<a name="cs-hiv-population-partner_plhiv"> </a></td><td/><td>Sexual partner of PLHIV</td></tr><tr><td style="white-space:nowrap">tg_men<a name="cs-hiv-population-tg_men"> </a></td><td/><td>Transgender men</td></tr><tr><td style="white-space:nowrap">child_woman_hiv<a name="cs-hiv-population-child_woman_hiv"> </a></td><td/><td>Child of mother who is infected with HIV</td></tr><tr><td style="white-space:nowrap">client_sexw<a name="cs-hiv-population-client_sexw"> </a></td><td>Nữ bán dâm</td><td>Client of sex workers</td></tr><tr><td style="white-space:nowrap">blood-donor<a name="cs-hiv-population-blood-donor"> </a></td><td>Người hiến máu tình nguyện</td><td>Blood donors</td></tr><tr><td style="white-space:nowrap">suspect_hiv<a name="cs-hiv-population-suspect_hiv"> </a></td><td/><td>People suspected for AIDs</td></tr><tr><td style="white-space:nowrap">tb_patient<a name="cs-hiv-population-tb_patient"> </a></td><td>Bệnh nhân lao</td><td>TB patients</td></tr><tr><td style="white-space:nowrap">std_patient<a name="cs-hiv-population-std_patient"> </a></td><td>Người mắc nhiễm trùng lây qua đường tình dục</td><td>People with sexually transmitted diseases</td></tr><tr><td style="white-space:nowrap">prisoner<a name="cs-hiv-population-prisoner"> </a></td><td/><td>Prisoner</td></tr><tr><td style="white-space:nowrap">pregnant<a name="cs-hiv-population-pregnant"> </a></td><td>Mang thai</td><td>Pregnant women</td></tr><tr><td style="white-space:nowrap">military_recruits<a name="cs-hiv-population-military_recruits"> </a></td><td>Thanh niên khám tuyển nghĩa vụ quân sự</td><td>Young recruits for military service</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">pwid<a name="cs-hiv-population-pwid"> </a></td><td>Injecting drug users</td></tr><tr><td style="white-space:nowrap">msm<a name="cs-hiv-population-msm"> </a></td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">sw<a name="cs-hiv-population-sw"> </a></td><td>Sex workers</td></tr><tr><td style="white-space:nowrap">client_sw<a name="cs-hiv-population-client_sw"> </a></td><td>Clients of sex worker </td></tr><tr><td style="white-space:nowrap">partner_plhiv<a name="cs-hiv-population-partner_plhiv"> </a></td><td>Sexual partner of PLHIV</td></tr><tr><td style="white-space:nowrap">tg_women<a name="cs-hiv-population-tg_women"> </a></td><td>Transgender women</td></tr><tr><td style="white-space:nowrap">tg_men<a name="cs-hiv-population-tg_men"> </a></td><td>Transgender men</td></tr><tr><td style="white-space:nowrap">child_woman_hiv<a name="cs-hiv-population-child_woman_hiv"> </a></td><td>Child of mother who is infected with HIV</td></tr><tr><td style="white-space:nowrap">client_sexw<a name="cs-hiv-population-client_sexw"> </a></td><td>Client of sex workers</td></tr><tr><td style="white-space:nowrap">blood-donor<a name="cs-hiv-population-blood-donor"> </a></td><td>Blood seller / blood donor</td></tr><tr><td style="white-space:nowrap">suspect_hiv<a name="cs-hiv-population-suspect_hiv"> </a></td><td>People suspected for AIDs</td></tr><tr><td style="white-space:nowrap">tb_patient<a name="cs-hiv-population-tb_patient"> </a></td><td>Tuberculosis patient</td></tr><tr><td style="white-space:nowrap">std_person<a name="cs-hiv-population-std_person"> </a></td><td>Persons with STD</td></tr><tr><td style="white-space:nowrap">prisoner<a name="cs-hiv-population-prisoner"> </a></td><td>Prisoner</td></tr><tr><td style="white-space:nowrap">pregnant<a name="cs-hiv-population-pregnant"> </a></td><td>Pregnant women</td></tr><tr><td style="white-space:nowrap">military_recruits<a name="cs-hiv-population-military_recruits"> </a></td><td>Young recruits for military service</td></tr><tr><td style="white-space:nowrap">other<a name="cs-hiv-population-other"> </a></td><td>Other</td></tr></table></div>
   </text>
   <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population"/>
   <version value="0.1.0-test"/>
   <name value="CSHIVRiskPopulation"/>
   <title value="Population groups"/>
   <status value="active"/>
-  <date value="2021-06-23T04:43:25+00:00"/>
+  <date value="2021-06-24T08:37:22+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -26,73 +26,73 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
-  <count value="15"/>
+  <count value="17"/>
   <concept>
     <code value="pwid"/>
-    <display value="Ng&#x1B0;&#x1EDD;i ti&#xEA;m ch&#xED;ch ma t&#xFA;y"/>
-    <definition value="Injecting drug users"/>
+    <display value="Injecting drug users"/>
   </concept>
   <concept>
     <code value="msm"/>
-    <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c &#x111;&#x1ED3;ng gi&#x1EDB;i nam"/>
-    <definition value="Men who have sex with men"/>
+    <display value="Men who have sex with men"/>
   </concept>
   <concept>
     <code value="sw"/>
-    <definition value="Sex workers"/>
+    <display value="Sex workers"/>
   </concept>
   <concept>
-    <code value="tg_women"/>
-    <definition value="Transgender women"/>
+    <code value="client_sw"/>
+    <display value="Clients of sex worker "/>
   </concept>
   <concept>
     <code value="partner_plhiv"/>
-    <definition value="Sexual partner of PLHIV"/>
+    <display value="Sexual partner of PLHIV"/>
+  </concept>
+  <concept>
+    <code value="tg_women"/>
+    <display value="Transgender women"/>
   </concept>
   <concept>
     <code value="tg_men"/>
-    <definition value="Transgender men"/>
+    <display value="Transgender men"/>
   </concept>
   <concept>
     <code value="child_woman_hiv"/>
-    <definition value="Child of mother who is infected with HIV"/>
+    <display value="Child of mother who is infected with HIV"/>
   </concept>
   <concept>
     <code value="client_sexw"/>
-    <display value="N&#x1EEF; b&#xE1;n d&#xE2;m"/>
-    <definition value="Client of sex workers"/>
+    <display value="Client of sex workers"/>
   </concept>
   <concept>
     <code value="blood-donor"/>
-    <display value="Ng&#x1B0;&#x1EDD;i hi&#x1EBF;n m&#xE1;u t&#xEC;nh nguy&#x1EC7;n"/>
-    <definition value="Blood donors"/>
+    <display value="Blood seller / blood donor"/>
   </concept>
   <concept>
     <code value="suspect_hiv"/>
-    <definition value="People suspected for AIDs"/>
+    <display value="People suspected for AIDs"/>
   </concept>
   <concept>
     <code value="tb_patient"/>
-    <display value="B&#x1EC7;nh nh&#xE2;n lao"/>
-    <definition value="TB patients"/>
+    <display value="Tuberculosis patient"/>
   </concept>
   <concept>
-    <code value="std_patient"/>
-    <display value="Ng&#x1B0;&#x1EDD;i m&#x1EAF;c nhi&#x1EC5;m tr&#xF9;ng l&#xE2;y qua &#x111;&#x1B0;&#x1EDD;ng t&#xEC;nh d&#x1EE5;c"/>
-    <definition value="People with sexually transmitted diseases"/>
+    <code value="std_person"/>
+    <display value="Persons with STD"/>
   </concept>
   <concept>
     <code value="prisoner"/>
-    <definition value="Prisoner"/>
+    <display value="Prisoner"/>
   </concept>
   <concept>
     <code value="pregnant"/>
-    <display value="Mang thai"/>
-    <definition value="Pregnant women"/>
+    <display value="Pregnant women"/>
   </concept>
   <concept>
     <code value="military_recruits"/>
-    <display value="Thanh ni&#xEA;n kh&#xE1;m tuy&#x1EC3;n ngh&#x129;a v&#x1EE5; qu&#xE2;n s&#x1EF1;"/>
-    <definition value="Young recruits for military service"/>
+    <display value="Young recruits for military service"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
   </concept>
 </CodeSystem>
