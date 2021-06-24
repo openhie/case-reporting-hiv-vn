@@ -84,7 +84,7 @@ Usage: #definition
 
 * insert Question(,title,HIV case report,display,false)
 * insert Question(,instructions,Reporting instructions: Monthly - applicable to each patient during the reporting period,display,false)
-* insert Question(,organization_unit,Facility ID,open-choice,false)
+* insert Question(,facility_id,Facility ID,open-choice,false)
 * insert Question(,report_date,Date of report,date,false)
 
 * insert Question(,questions,Monthly report,group,false)
@@ -156,7 +156,7 @@ Usage: #definition
 * insert Question(item[=].item[=].,confirmation_date,Date of confirmation,date,false)
 * insert Question(item[=].item[=].,confirming_lab,Confirming lab,open-choice,false)
 * insert Question(item[=].item[=].,date_specimen_collected,Date of specimen collection,date,false)
-* insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection,string,false)
+* insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection,open-choice,false)
 
 * insert Question(item[=].,hiv_recency_test,HIV recency test,group,false)
 
@@ -166,7 +166,7 @@ Usage: #definition
 
 * insert Question(item[=].item[=].,rapid_test,Rapid test for recent infection,group,false)
 * insert Question(item[=].item[=].item[=].,date_specimen_collected,Date of specimen collection,date,false)
-* insert Question(item[=].item[=].item[=].,place_specimen_collected,Place of specimen collection,string,false)
+* insert Question(item[=].item[=].item[=].,place_specimen_collected,Place of specimen collection,open-choice,false)
 * insert Question(item[=].item[=].item[=].,date_test_performed,Date test result performed,date,false)
 * insert Question(item[=].item[=].item[=].,test_result,Rapid test result,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
@@ -190,7 +190,7 @@ Usage: #definition
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
 */
 * insert Question(item[=].item[=].,date_specimen_collected,Date of specimen collection for CD4 test,date,false)
-* insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection for CD4 test,string,false)
+* insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection for CD4 test,open-choice,false)
 * insert Question(item[=].item[=].,date_test_performed,Date of CD4 test,date,false)
 * insert Question(item[=].item[=].,test_result,Result of CD4 test,integer,false)
 * insert Question(item[=].item[=].,test_result_other,Other outcome of CD4 test,choice,false)
@@ -223,7 +223,7 @@ Usage: #definition
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pregnant "Pregnant/Lactating woman"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
 */
-* insert Question(item[=].item[=].,place_specimen_collected,Place of Specimen Collection for present viral load test,string,false)
+* insert Question(item[=].item[=].,place_specimen_collected,Place of Specimen Collection for present viral load test,open-choice,false)
 * insert Question(item[=].item[=].,date_specimen_collected,Date of Specimen Collection for present viral load test,date,false)
 * insert Question(item[=].item[=].,date_test_performed,Date of present viral load test,date,false)
 * insert Question(item[=].item[=].,test_result,Result of present viral load test,integer,false)
@@ -247,7 +247,7 @@ Usage: #definition
 * insert Question(item[=].,drug_resistance_test,Drug Resistance test,group,true)
 * insert Question(item[=].item[=].,date_specimen_collected,Date of specimen collection,date,false)
 * insert Question(item[=].item[=].,date_test_performed,Date test results performed,date,false)
-* insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection,string,false)
+* insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection,open-choice,false)
 * insert Question(item[=].item[=].,test_result,Drug resistance test result,choice,false)
 
 
@@ -315,7 +315,7 @@ Usage: #definition
 
 * insert Question(item[=].item[=].item[=].,treatment_start_date,Date of HBV treatment start,date,false)
 * insert Question(item[=].item[=].item[=].,treatment_stop_date,Date of HBV treatment stopped,date,false)
-* insert Question(item[=].item[=].item[=].,treatment_location,Place HBV treatment provided,string,false)
+* insert Question(item[=].item[=].item[=].,treatment_location,Place HBV treatment provided,open-choice,false)
 
 * insert Question(item[=].item[=].,hcv,HCV,group,true)
 * insert Question(item[=].item[=].item[=].,anti_hcv_date,Date of anti HCV test,date,false)
@@ -332,7 +332,7 @@ Usage: #definition
 
 * insert Question(item[=].item[=].item[=].,treatment_start_date,Date of HCV treatment start,date,false)
 * insert Question(item[=].item[=].item[=].,treatment_stop_date,Date of HCV treatment stopped,date,false)
-* insert Question(item[=].item[=].item[=].,treatment_location,Place HCV treatment provided,string,false)
+* insert Question(item[=].item[=].item[=].,treatment_location,Place HCV treatment provided,open-choice,false)
 
 * insert Question(item[=].,death,Patient death,group,false)
 * insert Question(item[=].item[=].,date,Date of death,date,false)
@@ -342,8 +342,8 @@ Usage: #definition
 
 * insert Question(item[=].,pregnancy,Pregnancies,group,true)
 * insert Question(item[=].item[=].,pregnancy_date_reported,Date pregnancy reported,date,false)
-* insert Question(item[=].item[=].,pregnancy_place_reported,Place pregnancy reported,string,false)
-* insert Question(item[=].item[=].,pregnancy_delivery_place,Delivery place,string,false)
+* insert Question(item[=].item[=].,pregnancy_place_reported,Place pregnancy reported,open-choice,false)
+* insert Question(item[=].item[=].,pregnancy_delivery_place,Delivery place,open-choice,false)
 
 * insert Question(item[=].item[=].,pregnancy_outcomes,Pregnancy outcome,group,false)
 * insert Question(item[=].item[=].item[=].,pregnancy_outcome_code,Pregnancy outcome code,choice,false)
