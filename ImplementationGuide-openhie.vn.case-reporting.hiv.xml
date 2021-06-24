@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-06-23T09:08:50+00:00"/>
+  <date value="2021-06-24T08:37:22+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -242,6 +242,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-hiv-rapidtestresults"/>
+      </reference>
+      <name value="Codesystem Rapid test results"/>
+      <description value="CodeSystem - Recency rapid test results for HIV"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -277,8 +287,8 @@
       <reference>
         <reference value="ValueSet/vs-hiv-rapidtestresults"/>
       </reference>
-      <name value="HIVRapidTestResults"/>
-      <description value="HIV rapid test result codes"/>
+      <name value="Valueset Rapid test results"/>
+      <description value="Valueset - Recency rapid test results"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -319,6 +329,16 @@
       </reference>
       <name value="ART therapy summary"/>
       <description value="ART therapy summary."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-reasonvltest"/>
+      </reference>
+      <name value="Valueset Reason for VL test"/>
+      <description value="Valueset - Reason for VL test"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -446,6 +466,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-hiv-treatmentstopreason"/>
+      </reference>
+      <name value="Codesystem Reason to stop treatment at facility"/>
+      <description value="CodeSystem - &#x9;Reason to stop treatment at facility"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -511,6 +541,8 @@
       <reference>
         <reference value="ValueSet/vs-hiv-occupation"/>
       </reference>
+      <name value="Occupation Value Set "/>
+      <description value="ValueSet - Occupation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -584,6 +616,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-hiv-reasonvltest"/>
+      </reference>
+      <name value="Codesystem Reason for VL test"/>
+      <description value="CodeSystem - Reason for VL test"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -646,10 +688,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/cs-vn-regimenlevel"/>
+        <reference value="CodeSystem/cs-hiv-occupation"/>
       </reference>
-      <name value="CodeSystem Vietnam HIV Regimen Level "/>
-      <description value="CodeSystem - Vietnam HIV Regimen Level"/>
+      <name value="CodeSystem Occupation"/>
+      <description value="CodeSystem - Occupation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -660,6 +702,16 @@
       </reference>
       <name value="Type of contact or relationship"/>
       <description value="Type of contact or relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-vn-regimenline"/>
+      </reference>
+      <name value="CodeSystem Vietnam HIV Regimen Line"/>
+      <description value="CodeSystem - Vietnam HIV Regimen Line"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -678,6 +730,16 @@
       </reference>
       <name value="HIV Transmission Route"/>
       <description value="Valueset - Route of HIV transmission"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-reasoncd4test"/>
+      </reference>
+      <name value="Valueset Reason for CD4 test"/>
+      <description value="Valueset - Reason for CD4 test"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -701,10 +763,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-vn-regimenlevel"/>
+        <reference value="ValueSet/vs-hiv-treatmentstopreason"/>
       </reference>
-      <name value="ValueSet Vietnam HIV Regimen Level "/>
-      <description value="ValueSet - Vietnam HIV Regimen Level"/>
+      <name value="Valueset Reason to stop treatment at facility"/>
+      <description value="Valueset - Reason to stop treatment at facility"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -718,6 +780,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-recentinfection"/>
+      </reference>
+      <name value="Valueset Recent infection conclusion"/>
+      <description value="Valueset - Recent infection conclusion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -725,6 +797,16 @@
       </reference>
       <name value="Risk Behavior"/>
       <description value="CodeSystem - Behavior associated with risk of HIV transmission"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-vn-regimenline"/>
+      </reference>
+      <name value="ValueSet Vietnam HIV Regimen Line "/>
+      <description value="ValueSet - Vietnam HIV Regimen Line"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -743,6 +825,16 @@
       <reference>
         <reference value="ValueSet/vs-hiv-sympthoms"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-hiv-reasoncd4test"/>
+      </reference>
+      <name value="Codesystem Reason for CD4 test"/>
+      <description value="CodeSystem - Reason for CD4 test"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -821,6 +913,16 @@
       </reference>
       <name value="HIV key population"/>
       <description value="This profile allows the patient&#39;s key population"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-hiv-recentinfection"/>
+      </reference>
+      <name value="Codesystem Recent infection conclusion"/>
+      <description value="CodeSystem - RRecent infection conclusion"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

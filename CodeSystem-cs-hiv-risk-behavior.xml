@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cs-hiv-risk-behavior"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">inject_drugs<a name="cs-hiv-risk-behavior-inject_drugs"> </a></td><td>Tiêm chích ma túy</td><td>Drug injection</td></tr><tr><td style="white-space:nowrap">sex_client<a name="cs-hiv-risk-behavior-sex_client"> </a></td><td>Quan hệ tình dục với người bán dâm hoặc mua dâm </td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style="white-space:nowrap">msm<a name="cs-hiv-risk-behavior-msm"> </a></td><td>Quan hệ tình dục đồng giới nam</td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">smp<a name="cs-hiv-risk-behavior-smp"> </a></td><td>Quan hệ tình dục với nhiều người (không vì tiền hay ma túy)</td><td>Having sex with multiple partners (not for money or drug)</td></tr><tr><td style="white-space:nowrap">partner_hiv<a name="cs-hiv-risk-behavior-partner_hiv"> </a></td><td>Quan hệ với vợ/chồng/bạn tình là người nhiễm HIV</td><td>Having sex with spouse/partners who are HIV infected</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">pwid<a name="cs-hiv-risk-behavior-pwid"> </a></td><td>PWID</td></tr><tr><td style="white-space:nowrap">sex_partner<a name="cs-hiv-risk-behavior-sex_partner"> </a></td><td>Having sex with sex worker or sex buyer</td></tr><tr><td style="white-space:nowrap">msm<a name="cs-hiv-risk-behavior-msm"> </a></td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">smp<a name="cs-hiv-risk-behavior-smp"> </a></td><td>Having sex with multiple partners (not for money or drug)</td></tr><tr><td style="white-space:nowrap">partner_hiv<a name="cs-hiv-risk-behavior-partner_hiv"> </a></td><td>Having sex with spouse/partners who are HIV infected</td></tr><tr><td style="white-space:nowrap">other<a name="cs-hiv-risk-behavior-other"> </a></td><td>Other</td></tr></table></div>
   </text>
   <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
   <version value="0.1.0-test"/>
   <name value="CSHIVRiskBehavior"/>
   <title value="Risk Behavior"/>
   <status value="active"/>
-  <date value="2021-06-23T09:08:50+00:00"/>
+  <date value="2021-06-24T08:37:22+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -26,30 +26,29 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
-  <count value="5"/>
+  <count value="6"/>
   <concept>
-    <code value="inject_drugs"/>
-    <display value="Ti&#xEA;m ch&#xED;ch ma t&#xFA;y"/>
-    <definition value="Drug injection"/>
+    <code value="pwid"/>
+    <display value="PWID"/>
   </concept>
   <concept>
-    <code value="sex_client"/>
-    <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c v&#x1EDB;i ng&#x1B0;&#x1EDD;i b&#xE1;n d&#xE2;m ho&#x1EB7;c mua d&#xE2;m "/>
-    <definition value="Sexual relationship with sex workers or with sex buyers/clients (for money or drug)"/>
+    <code value="sex_partner"/>
+    <display value="Having sex with sex worker or sex buyer"/>
   </concept>
   <concept>
     <code value="msm"/>
-    <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c &#x111;&#x1ED3;ng gi&#x1EDB;i nam"/>
-    <definition value="Men who have sex with men"/>
+    <display value="Men who have sex with men"/>
   </concept>
   <concept>
     <code value="smp"/>
-    <display value="Quan h&#x1EC7; t&#xEC;nh d&#x1EE5;c v&#x1EDB;i nhi&#x1EC1;u ng&#x1B0;&#x1EDD;i (kh&#xF4;ng v&#xEC; ti&#x1EC1;n hay ma t&#xFA;y)"/>
-    <definition value="Having sex with multiple partners (not for money or drug)"/>
+    <display value="Having sex with multiple partners (not for money or drug)"/>
   </concept>
   <concept>
     <code value="partner_hiv"/>
-    <display value="Quan h&#x1EC7; v&#x1EDB;i v&#x1EE3;/ch&#x1ED3;ng/b&#x1EA1;n t&#xEC;nh l&#xE0; ng&#x1B0;&#x1EDD;i nhi&#x1EC5;m HIV"/>
-    <definition value="Having sex with spouse/partners who are HIV infected"/>
+    <display value="Having sex with spouse/partners who are HIV infected"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
   </concept>
 </CodeSystem>

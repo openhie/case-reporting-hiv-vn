@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam - candidate draft",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-23T09:08:50+00:00",
+  "date": "2021-06-24T08:37:22+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -379,6 +379,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-rapidtestresults"
+        },
+        "name": "Codesystem Rapid test results",
+        "description": "CodeSystem - Recency rapid test results for HIV"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -424,8 +437,8 @@
         "reference": {
           "reference": "ValueSet/vs-hiv-rapidtestresults"
         },
-        "name": "HIVRapidTestResults",
-        "description": "HIV rapid test result codes"
+        "name": "Valueset Rapid test results",
+        "description": "Valueset - Recency rapid test results"
       },
       {
         "extension": [
@@ -478,6 +491,19 @@
         },
         "name": "ART therapy summary",
         "description": "ART therapy summary."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-reasonvltest"
+        },
+        "name": "Valueset Reason for VL test",
+        "description": "Valueset - Reason for VL test"
       },
       {
         "extension": [
@@ -646,6 +672,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-treatmentstopreason"
+        },
+        "name": "Codesystem Reason to stop treatment at facility",
+        "description": "CodeSystem - \tReason to stop treatment at facility"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -729,7 +768,9 @@
         ],
         "reference": {
           "reference": "ValueSet/vs-hiv-occupation"
-        }
+        },
+        "name": "Occupation Value Set ",
+        "description": "ValueSet - Occupation"
       },
       {
         "extension": [
@@ -826,6 +867,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-reasonvltest"
+        },
+        "name": "Codesystem Reason for VL test",
+        "description": "CodeSystem - Reason for VL test"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
@@ -907,10 +961,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-vn-regimenlevel"
+          "reference": "CodeSystem/cs-hiv-occupation"
         },
-        "name": "CodeSystem Vietnam HIV Regimen Level ",
-        "description": "CodeSystem - Vietnam HIV Regimen Level"
+        "name": "CodeSystem Occupation",
+        "description": "CodeSystem - Occupation"
       },
       {
         "extension": [
@@ -924,6 +978,19 @@
         },
         "name": "Type of contact or relationship",
         "description": "Type of contact or relationship"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-vn-regimenline"
+        },
+        "name": "CodeSystem Vietnam HIV Regimen Line",
+        "description": "CodeSystem - Vietnam HIV Regimen Line"
       },
       {
         "extension": [
@@ -948,6 +1015,19 @@
         },
         "name": "HIV Transmission Route",
         "description": "Valueset - Route of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-reasoncd4test"
+        },
+        "name": "Valueset Reason for CD4 test",
+        "description": "Valueset - Reason for CD4 test"
       },
       {
         "extension": [
@@ -980,10 +1060,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-vn-regimenlevel"
+          "reference": "ValueSet/vs-hiv-treatmentstopreason"
         },
-        "name": "ValueSet Vietnam HIV Regimen Level ",
-        "description": "ValueSet - Vietnam HIV Regimen Level"
+        "name": "Valueset Reason to stop treatment at facility",
+        "description": "Valueset - Reason to stop treatment at facility"
       },
       {
         "extension": [
@@ -1002,6 +1082,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-recentinfection"
+        },
+        "name": "Valueset Recent infection conclusion",
+        "description": "Valueset - Recent infection conclusion"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
@@ -1010,6 +1103,19 @@
         },
         "name": "Risk Behavior",
         "description": "CodeSystem - Behavior associated with risk of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-vn-regimenline"
+        },
+        "name": "ValueSet Vietnam HIV Regimen Line ",
+        "description": "ValueSet - Vietnam HIV Regimen Line"
       },
       {
         "extension": [
@@ -1034,6 +1140,19 @@
         "reference": {
           "reference": "ValueSet/vs-hiv-sympthoms"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-reasoncd4test"
+        },
+        "name": "Codesystem Reason for CD4 test",
+        "description": "CodeSystem - Reason for CD4 test"
       },
       {
         "extension": [
@@ -1136,6 +1255,19 @@
         },
         "name": "HIV key population",
         "description": "This profile allows the patient's key population"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-recentinfection"
+        },
+        "name": "Codesystem Recent infection conclusion",
+        "description": "CodeSystem - RRecent infection conclusion"
       },
       {
         "extension": [

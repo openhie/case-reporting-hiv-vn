@@ -42,11 +42,46 @@
     "name": "Common code for CS HIV"
   },
   {
+    "id": "cs-hiv-occupation",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-occupation",
+    "version": "0.1.0-test",
+    "name": "CSOccupation"
+  },
+  {
     "id": "cs-hiv-population",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population",
     "version": "0.1.0-test",
     "name": "CSHIVRiskPopulation"
+  },
+  {
+    "id": "cs-hiv-rapidtestresults",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-rapidtestresults",
+    "version": "0.1.0-test",
+    "name": "CSHIVRapidTestResults"
+  },
+  {
+    "id": "cs-hiv-reasoncd4test",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-reasoncd4test",
+    "version": "0.1.0-test",
+    "name": "CSHIVReasonCD4Test"
+  },
+  {
+    "id": "cs-hiv-reasonvltest",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-reasonvltest",
+    "version": "0.1.0-test",
+    "name": "CSReasonVLTest"
+  },
+  {
+    "id": "cs-hiv-recentinfection",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-recentinfection",
+    "version": "0.1.0-test",
+    "name": "CSRecentInfectionConclusion"
   },
   {
     "id": "cs-hiv-risk-behavior",
@@ -61,6 +96,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-transmission-route",
     "version": "0.1.0-test",
     "name": "CSHIVTransmissionRoute"
+  },
+  {
+    "id": "cs-hiv-treatmentstopreason",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-treatmentstopreason",
+    "version": "0.1.0-test",
+    "name": "CSTreatmentStopReason"
   },
   {
     "id": "cs-patient-communication-preferences",
@@ -147,11 +189,11 @@
     "name": "CSVietnamRegimen"
   },
   {
-    "id": "cs-vn-regimenlevel",
+    "id": "cs-vn-regimenline",
     "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimenlevel",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimenline",
     "version": "0.1.0-test",
-    "name": "CSRegimenLevel"
+    "name": "CSRegimenLine"
   },
   {
     "id": "cs-vn-whostage",
@@ -382,7 +424,7 @@
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-occupation",
     "version": "0.1.0-test",
-    "name": "HIVOccupationCodes"
+    "name": "VSOccupation"
   },
   {
     "id": "vs-hiv-population",
@@ -403,7 +445,28 @@
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-rapidtestresults",
     "version": "0.1.0-test",
-    "name": "HIVRapidTestResults"
+    "name": "VSHIVRapidTestResults"
+  },
+  {
+    "id": "vs-hiv-reasoncd4test",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-reasoncd4test",
+    "version": "0.1.0-test",
+    "name": "VSHIVReasonCD4Test"
+  },
+  {
+    "id": "vs-hiv-reasonvltest",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-reasonvltest",
+    "version": "0.1.0-test",
+    "name": "VSCSReasonVLTest"
+  },
+  {
+    "id": "vs-hiv-recentinfection",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-recentinfection",
+    "version": "0.1.0-test",
+    "name": "VSRecentInfectionConclusion"
   },
   {
     "id": "vs-hiv-risk-behavior",
@@ -425,6 +488,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-transmission-route",
     "version": "0.1.0-test",
     "name": "VSHIVTransmissionRoute"
+  },
+  {
+    "id": "vs-hiv-treatmentstopreason",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-treatmentstopreason",
+    "version": "0.1.0-test",
+    "name": "VSTreatmentStopReason"
   },
   {
     "id": "vs-patient-communication-preferences",
@@ -511,11 +581,11 @@
     "name": "VSVietnamRegimen"
   },
   {
-    "id": "vs-vn-regimenlevel",
+    "id": "vs-vn-regimenline",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-regimenlevel",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-regimenline",
     "version": "0.1.0-test",
-    "name": "VSRegimenLevel"
+    "name": "VSRegimenLine"
   },
   {
     "id": "vs-vn-whostage",
