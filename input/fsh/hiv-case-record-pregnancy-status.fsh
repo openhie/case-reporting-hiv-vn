@@ -26,5 +26,5 @@ Description:    "Pregnancy status."
 
 * component[hivTestResultForChild].code 1..1
 * component[hivTestResultForChild].code only CodeableConcept
-* component[hivTestResultForChild].code from HIVRapidTestResults
+* component[hivTestResultForChild].code from VSHIVRapidTestResults
 * component[hivTestResultForChild].value[x] only dateTime
