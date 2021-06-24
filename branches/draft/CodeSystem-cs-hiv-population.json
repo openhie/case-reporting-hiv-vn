@@ -3,14 +3,14 @@
   "id": "cs-hiv-population",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pwid<a name=\"cs-hiv-population-pwid\"> </a></td><td>Người tiêm chích ma túy</td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\">msm<a name=\"cs-hiv-population-msm\"> </a></td><td>Quan hệ tình dục đồng giới nam</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">sw<a name=\"cs-hiv-population-sw\"> </a></td><td/><td>Sex workers</td></tr><tr><td style=\"white-space:nowrap\">tg_women<a name=\"cs-hiv-population-tg_women\"> </a></td><td/><td>Transgender women</td></tr><tr><td style=\"white-space:nowrap\">partner_plhiv<a name=\"cs-hiv-population-partner_plhiv\"> </a></td><td/><td>Sexual partner of PLHIV</td></tr><tr><td style=\"white-space:nowrap\">tg_men<a name=\"cs-hiv-population-tg_men\"> </a></td><td/><td>Transgender men</td></tr><tr><td style=\"white-space:nowrap\">child_woman_hiv<a name=\"cs-hiv-population-child_woman_hiv\"> </a></td><td/><td>Child of mother who is infected with HIV</td></tr><tr><td style=\"white-space:nowrap\">client_sexw<a name=\"cs-hiv-population-client_sexw\"> </a></td><td>Nữ bán dâm</td><td>Client of sex workers</td></tr><tr><td style=\"white-space:nowrap\">blood-donor<a name=\"cs-hiv-population-blood-donor\"> </a></td><td>Người hiến máu tình nguyện</td><td>Blood donors</td></tr><tr><td style=\"white-space:nowrap\">suspect_hiv<a name=\"cs-hiv-population-suspect_hiv\"> </a></td><td/><td>People suspected for AIDs</td></tr><tr><td style=\"white-space:nowrap\">tb_patient<a name=\"cs-hiv-population-tb_patient\"> </a></td><td>Bệnh nhân lao</td><td>TB patients</td></tr><tr><td style=\"white-space:nowrap\">std_patient<a name=\"cs-hiv-population-std_patient\"> </a></td><td>Người mắc nhiễm trùng lây qua đường tình dục</td><td>People with sexually transmitted diseases</td></tr><tr><td style=\"white-space:nowrap\">prisoner<a name=\"cs-hiv-population-prisoner\"> </a></td><td/><td>Prisoner</td></tr><tr><td style=\"white-space:nowrap\">pregnant<a name=\"cs-hiv-population-pregnant\"> </a></td><td>Mang thai</td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\">military_recruits<a name=\"cs-hiv-population-military_recruits\"> </a></td><td>Thanh niên khám tuyển nghĩa vụ quân sự</td><td>Young recruits for military service</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pwid<a name=\"cs-hiv-population-pwid\"> </a></td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\">msm<a name=\"cs-hiv-population-msm\"> </a></td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">sw<a name=\"cs-hiv-population-sw\"> </a></td><td>Sex workers</td></tr><tr><td style=\"white-space:nowrap\">client_sw<a name=\"cs-hiv-population-client_sw\"> </a></td><td>Clients of sex worker </td></tr><tr><td style=\"white-space:nowrap\">partner_plhiv<a name=\"cs-hiv-population-partner_plhiv\"> </a></td><td>Sexual partner of PLHIV</td></tr><tr><td style=\"white-space:nowrap\">tg_women<a name=\"cs-hiv-population-tg_women\"> </a></td><td>Transgender women</td></tr><tr><td style=\"white-space:nowrap\">tg_men<a name=\"cs-hiv-population-tg_men\"> </a></td><td>Transgender men</td></tr><tr><td style=\"white-space:nowrap\">child_woman_hiv<a name=\"cs-hiv-population-child_woman_hiv\"> </a></td><td>Child of mother who is infected with HIV</td></tr><tr><td style=\"white-space:nowrap\">client_sexw<a name=\"cs-hiv-population-client_sexw\"> </a></td><td>Client of sex workers</td></tr><tr><td style=\"white-space:nowrap\">blood-donor<a name=\"cs-hiv-population-blood-donor\"> </a></td><td>Blood seller / blood donor</td></tr><tr><td style=\"white-space:nowrap\">suspect_hiv<a name=\"cs-hiv-population-suspect_hiv\"> </a></td><td>People suspected for AIDs</td></tr><tr><td style=\"white-space:nowrap\">tb_patient<a name=\"cs-hiv-population-tb_patient\"> </a></td><td>Tuberculosis patient</td></tr><tr><td style=\"white-space:nowrap\">std_person<a name=\"cs-hiv-population-std_person\"> </a></td><td>Persons with STD</td></tr><tr><td style=\"white-space:nowrap\">prisoner<a name=\"cs-hiv-population-prisoner\"> </a></td><td>Prisoner</td></tr><tr><td style=\"white-space:nowrap\">pregnant<a name=\"cs-hiv-population-pregnant\"> </a></td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\">military_recruits<a name=\"cs-hiv-population-military_recruits\"> </a></td><td>Young recruits for military service</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-hiv-population-other\"> </a></td><td>Other</td></tr></table></div>"
   },
   "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population",
   "version": "0.1.0-test",
   "name": "CSHIVRiskPopulation",
   "title": "Population groups",
   "status": "active",
-  "date": "2021-06-23T09:08:50+00:00",
+  "date": "2021-06-24T08:45:21+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -34,75 +34,75 @@
     }
   ],
   "content": "complete",
-  "count": 15,
+  "count": 17,
   "concept": [
     {
       "code": "pwid",
-      "display": "Người tiêm chích ma túy",
-      "definition": "Injecting drug users"
+      "display": "Injecting drug users"
     },
     {
       "code": "msm",
-      "display": "Quan hệ tình dục đồng giới nam",
-      "definition": "Men who have sex with men"
+      "display": "Men who have sex with men"
     },
     {
       "code": "sw",
-      "definition": "Sex workers"
+      "display": "Sex workers"
     },
     {
-      "code": "tg_women",
-      "definition": "Transgender women"
+      "code": "client_sw",
+      "display": "Clients of sex worker "
     },
     {
       "code": "partner_plhiv",
-      "definition": "Sexual partner of PLHIV"
+      "display": "Sexual partner of PLHIV"
+    },
+    {
+      "code": "tg_women",
+      "display": "Transgender women"
     },
     {
       "code": "tg_men",
-      "definition": "Transgender men"
+      "display": "Transgender men"
     },
     {
       "code": "child_woman_hiv",
-      "definition": "Child of mother who is infected with HIV"
+      "display": "Child of mother who is infected with HIV"
     },
     {
       "code": "client_sexw",
-      "display": "Nữ bán dâm",
-      "definition": "Client of sex workers"
+      "display": "Client of sex workers"
     },
     {
       "code": "blood-donor",
-      "display": "Người hiến máu tình nguyện",
-      "definition": "Blood donors"
+      "display": "Blood seller / blood donor"
     },
     {
       "code": "suspect_hiv",
-      "definition": "People suspected for AIDs"
+      "display": "People suspected for AIDs"
     },
     {
       "code": "tb_patient",
-      "display": "Bệnh nhân lao",
-      "definition": "TB patients"
+      "display": "Tuberculosis patient"
     },
     {
-      "code": "std_patient",
-      "display": "Người mắc nhiễm trùng lây qua đường tình dục",
-      "definition": "People with sexually transmitted diseases"
+      "code": "std_person",
+      "display": "Persons with STD"
     },
     {
       "code": "prisoner",
-      "definition": "Prisoner"
+      "display": "Prisoner"
     },
     {
       "code": "pregnant",
-      "display": "Mang thai",
-      "definition": "Pregnant women"
+      "display": "Pregnant women"
     },
     {
       "code": "military_recruits",
-      "display": "Thanh niên khám tuyển nghĩa vụ quân sự",
-      "definition": "Young recruits for military service"
+      "display": "Young recruits for military service"
+    },
+    {
+      "code": "other",
+      "display": "Other"
     }
   ]
 }

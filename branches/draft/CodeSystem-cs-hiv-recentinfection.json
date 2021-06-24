@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-hiv-recentinfection",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-recentinfection defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">recent<a name=\"cs-hiv-recentinfection-recent\"> </a></td><td>Recent infection</td></tr><tr><td style=\"white-space:nowrap\">long-term<a name=\"cs-hiv-recentinfection-long-term\"> </a></td><td>Long term infection</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-recentinfection",
+  "version": "0.1.0-test",
+  "name": "CSRecentInfectionConclusion",
+  "title": "Codesystem Recent infection conclusion",
+  "status": "active",
+  "date": "2021-06-24T08:45:21+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem - RRecent infection conclusion",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "recent",
+      "display": "Recent infection"
+    },
+    {
+      "code": "long-term",
+      "display": "Long term infection"
+    }
+  ]
+}
