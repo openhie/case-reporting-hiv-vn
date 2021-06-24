@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam - candidate draft",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-24T08:37:22+00:00",
+  "date": "2021-06-24T08:45:21+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -353,14 +353,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "Observation/an-aids-diagnosis-observation"
+          "reference": "StructureDefinition/hiv-cd4-observation"
         },
-        "name": "Example Observation - an-aids-diagnosis-observation",
-        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/aids-diagnosis-observation"
+        "name": "CD4 Observation",
+        "description": "This profile allows the exchange of a patient's CD$ test and results"
       },
       {
         "extension": [
@@ -370,10 +370,23 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pregnancy-status"
+          "reference": "StructureDefinition/hiv-treatment-tb-process"
         },
-        "name": "Pregnancy status",
-        "description": "Pregnancy status."
+        "name": "TB Treatment",
+        "description": "This profile allows to add tuberculosis status"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/examplebundle"
+        },
+        "name": "Example Bundle - examplebundle",
+        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-condition"
       },
       {
         "extension": [
@@ -383,49 +396,34 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-hiv-rapidtestresults"
+          "reference": "CodeSystem/cs-patient-gender"
         },
-        "name": "Codesystem Rapid test results",
-        "description": "CodeSystem - Recency rapid test results for HIV"
+        "name": "Patient Gender",
+        "description": "The genders for patients"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "Questionnaire"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/hiv-transmission-route"
+          "reference": "Questionnaire/vn-hiv-csv-import-questionnaire"
         },
-        "name": "HIV Transmission route",
-        "description": "This profile allows the patient's transmission route"
+        "name": "HIV Case surveillance import",
+        "description": "HIV Case surveillance data import structure"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "QuestionnaireResponse"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/hiv-condition"
-        },
-        "name": "HIV Condition",
-        "description": "This profile allows the exchange of a patient's hiv diagnosis"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/a-treatment-record"
-        },
-        "name": "Example CarePlan - a-treatment-record",
-        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-process"
+          "reference": "QuestionnaireResponse/exampleresponse"
+        }
       },
       {
         "extension": [
@@ -435,36 +433,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-hiv-rapidtestresults"
+          "reference": "ValueSet/vs-hiv-treatmentstopreason"
         },
-        "name": "Valueset Rapid test results",
-        "description": "Valueset - Recency rapid test results"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/hiv-viral-load"
-        },
-        "name": "HIV viral load",
-        "description": "HIV viral load."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/a-hiv-cd4-observation"
-        },
-        "name": "Example Observation - a-hiv-cd4-observation",
-        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-cd4-observation"
+        "name": "Valueset Reason to stop treatment at facility",
+        "description": "Valueset - Reason to stop treatment at facility"
       },
       {
         "extension": [
@@ -474,62 +446,21 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-viralload-indications"
+          "reference": "CodeSystem/cs-hiv-treatmentstopreason"
         },
-        "name": "Viralload Indications",
-        "description": "CodeSystem - Indications"
+        "name": "Codesystem Reason to stop treatment at facility",
+        "description": "CodeSystem - \tReason to stop treatment at facility"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "CodeSystem"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/arv-therapy-summary"
-        },
-        "name": "ART therapy summary",
-        "description": "ART therapy summary."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-reasonvltest"
-        },
-        "name": "Valueset Reason for VL test",
-        "description": "Valueset - Reason for VL test"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-pregnancy-outcome"
-        },
-        "name": "HIV Pregnancy outcome",
-        "description": "Valueset - Pregnancy Outcome"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/hiv-treatment-process"
-        },
-        "name": "HIV Treatment",
-        "description": "This profile allows the exchange of a patient's treatment"
+          "reference": "CodeSystem/cs-gender"
+        }
       },
       {
         "extension": [
@@ -541,93 +472,6 @@
         "reference": {
           "reference": "CodeSystem/cs-pregnancy-outcome"
         }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-population"
-        },
-        "name": "Risk Population relevant for HIV",
-        "description": "Valueset - Risk population relevant for HIV"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-patient-gender"
-        },
-        "name": "Patient Gender",
-        "description": "Valueset - patient genders"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-treatment-status"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-patient-communication-preferences"
-        },
-        "name": "Patient Communication Preferences",
-        "description": "The way the patient prefers to be contacted"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-patient-gender-identity"
-        },
-        "name": "Patient Gender Identity",
-        "description": "A list of genders that the patient may identify with"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "NamingSystem"
-          }
-        ],
-        "reference": {
-          "reference": "NamingSystem/NationalPatientIdentifier9Digit"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/cs-viralload-indications"
-        },
-        "name": "Viralload Indications",
-        "description": "Valueset - cs-viralload-indications"
       },
       {
         "extension": [
@@ -650,10 +494,35 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-viralload-group"
+          "reference": "ValueSet/vs-hiv-pregnancy-outcome"
         },
-        "name": "Viral Load group",
-        "description": "Valueset - Viral Load group"
+        "name": "HIV Pregnancy outcome",
+        "description": "Valueset - Pregnancy Outcome"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-common-date"
+        },
+        "description": "Define common event date"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-specimen"
+        },
+        "name": "HIV specimen",
+        "description": "The specimen used for the result"
       },
       {
         "extension": [
@@ -663,23 +532,8 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-regimen-change-reason"
-        },
-        "name": "Reason for regimen change",
-        "description": "Reason for regimen change"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-hiv-treatmentstopreason"
-        },
-        "name": "Codesystem Reason to stop treatment at facility",
-        "description": "CodeSystem - \tReason to stop treatment at facility"
+          "reference": "CodeSystem/cs-hiv-common"
+        }
       },
       {
         "extension": [
@@ -689,88 +543,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-vn-ethnicity"
+          "reference": "ValueSet/vs-hiv-reasonvltest"
         },
-        "name": "Valueset Vietnam Ethnicity",
-        "description": "Valueset - Vietnam Ethnicity"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/hiv-patient"
-        },
-        "name": "HIV Patient",
-        "description": "This Patient profile allows the exchange of patient information, including all the data associated with HIV patients"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/hiv-risk-behavior"
-        },
-        "name": "HIV Risk Behavior",
-        "description": "This profile allows the exchange of patient's risk behaviors"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/ext-vn-ethnicity"
-        },
-        "name": "Vietnam Ethnicity ",
-        "description": "Vietnam Ethnicity"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/hiv-treatment-methadone-process"
-        },
-        "name": "Methadon Treatment",
-        "description": "This profile allows to add methadone status"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-risk-behavior"
-        },
-        "name": "Risk Behavior",
-        "description": "ValueSet - Behavior associated with risk of HIV transmission"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-occupation"
-        },
-        "name": "Occupation Value Set ",
-        "description": "ValueSet - Occupation"
+        "name": "Valueset Reason for VL test",
+        "description": "Valueset - Reason for VL test"
       },
       {
         "extension": [
@@ -793,23 +569,21 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-recency-rtri"
-        },
-        "name": "Recency RITA result",
-        "description": "Valueset - Recency RITI result"
+          "reference": "ValueSet/vs-hiv-sympthoms"
+        }
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-recency-rita"
+          "reference": "StructureDefinition/hiv-viral-load"
         },
-        "name": "Recency RITA result",
-        "description": "Valueset - Recency RITA result"
+        "name": "HIV viral load",
+        "description": "HIV viral load."
       },
       {
         "extension": [
@@ -832,9 +606,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/hiv-diagnosis-observation"
+          "reference": "StructureDefinition/hiv-recency-result"
         },
-        "name": "HIV Diagnosis result",
+        "name": "HIV Recency result",
         "description": "This profile allows the exchange of a patient's hiv recency test"
       },
       {
@@ -845,74 +619,23 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-treatment-category"
+          "reference": "ValueSet/VSDateComponent"
         },
-        "name": "Category of the treatment",
-        "description": "Valueset - Category of the treatment"
+        "name": "Date component of pregnancy",
+        "description": "Date component of pregnancy associated with HIV case"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "CarePlan"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-vn-whostage"
+          "reference": "CarePlan/a-treatment-record"
         },
-        "name": "ValueSet WHO Stage ",
-        "description": "ValueSet - WHO Stage"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-hiv-reasonvltest"
-        },
-        "name": "Codesystem Reason for VL test",
-        "description": "CodeSystem - Reason for VL test"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/a-hiv-diagnosis-observation"
-        },
-        "name": "Example Observation - a-hiv-diagnosis-observation",
-        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-diagnosis-observation"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-diagnosis-results"
-        },
-        "name": "VSDiagnosisResults"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-vn-regimen"
-        },
-        "name": "CodeSystem Vietnam HIV Regimen",
-        "description": "CodeSystem - Vietnam HIV Regimen"
+        "name": "Example CarePlan - a-treatment-record",
+        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-process"
       },
       {
         "extension": [
@@ -922,10 +645,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/hiv-specimen"
+          "reference": "StructureDefinition/hiv-risk-behavior"
         },
-        "name": "HIV specimen",
-        "description": "The specimen used for the result"
+        "name": "HIV Risk Behavior",
+        "description": "This profile allows the exchange of patient's risk behaviors"
       },
       {
         "extension": [
@@ -935,23 +658,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/hiv-treatment-tb-process"
+          "reference": "StructureDefinition/hiv-transmission-route"
         },
-        "name": "TB Treatment",
-        "description": "This profile allows to add tuberculosis status"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-vn-ethnicity"
-        },
-        "name": "CodeSystem Vietnam Ethnicity",
-        "description": "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recognized by the Vietnamese government"
+        "name": "HIV Transmission route",
+        "description": "This profile allows the patient's transmission route"
       },
       {
         "extension": [
@@ -974,10 +684,36 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/type-of-contact"
+          "reference": "CodeSystem/cs-hiv-transmission-route"
         },
-        "name": "Type of contact or relationship",
-        "description": "Type of contact or relationship"
+        "name": "HIV Transmission Route",
+        "description": "CodeSystem - Route of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-cause-of-death"
+        },
+        "name": "Cause of death",
+        "description": "Cause of death"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/arv-therapy-summary"
+        },
+        "name": "ART therapy summary",
+        "description": "ART therapy summary."
       },
       {
         "extension": [
@@ -996,163 +732,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-arv-treatment-status"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-hiv-transmission-route"
+          "reference": "ValueSet/vs-patient-gender"
         },
-        "name": "HIV Transmission Route",
-        "description": "Valueset - Route of HIV transmission"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-reasoncd4test"
-        },
-        "name": "Valueset Reason for CD4 test",
-        "description": "Valueset - Reason for CD4 test"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-hiv-common"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-common-date"
-        },
-        "description": "Define common event date"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-treatmentstopreason"
-        },
-        "name": "Valueset Reason to stop treatment at facility",
-        "description": "Valueset - Reason to stop treatment at facility"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/a-pregnancy-status"
-        },
-        "name": "Example Observation - a-pregnancy-status",
-        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/pregnancy-status"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-recentinfection"
-        },
-        "name": "Valueset Recent infection conclusion",
-        "description": "Valueset - Recent infection conclusion"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-hiv-risk-behavior"
-        },
-        "name": "Risk Behavior",
-        "description": "CodeSystem - Behavior associated with risk of HIV transmission"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-vn-regimenline"
-        },
-        "name": "ValueSet Vietnam HIV Regimen Line ",
-        "description": "ValueSet - Vietnam HIV Regimen Line"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-vn-regimen"
-        },
-        "name": "ValueSet Vietnam HIV Regimen",
-        "description": "ValueSet - Vietnam HIV Regimen"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-sympthoms"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-hiv-reasoncd4test"
-        },
-        "name": "Codesystem Reason for CD4 test",
-        "description": "CodeSystem - Reason for CD4 test"
+        "name": "Patient Gender",
+        "description": "Valueset - patient genders"
       },
       {
         "extension": [
@@ -1162,23 +749,8 @@
           }
         ],
         "reference": {
-          "reference": "Questionnaire/vn-hiv-csv-import-questionnaire"
-        },
-        "name": "HIV Case surveillance import",
-        "description": "HIV Case surveillance data import structure"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/examplebundle"
-        },
-        "name": "Example Bundle - examplebundle",
-        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-condition"
+          "reference": "Questionnaire/hiv-case-report-questionnaire"
+        }
       },
       {
         "extension": [
@@ -1197,38 +769,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/VSDateComponent"
-        },
-        "name": "Date component of pregnancy",
-        "description": "Date component of pregnancy associated with HIV case"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-recency-result"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-patient-gender-identity"
+          "reference": "CodeSystem/cs-patient-gender-identity"
         },
         "name": "Patient Gender Identity",
-        "description": "Valueset - patient gender identities"
+        "description": "A list of genders that the patient may identify with"
       },
       {
         "extension": [
@@ -1238,10 +786,36 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-hiv-population"
+          "reference": "CodeSystem/cs-vn-ethnicity"
         },
-        "name": "Population groups",
-        "description": "CodeSystem - Population groups - Subjects to be tested for HIV"
+        "name": "CodeSystem Vietnam Ethnicity",
+        "description": "CodeSystem of Vietnam included  54 ethnic groups in Vietnam recognized by the Vietnamese government"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-viralload-group"
+        },
+        "name": "Viral Load group",
+        "description": "Codesystem - Viral Load group"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-rapidtestresults"
+        },
+        "name": "Valueset Rapid test results",
+        "description": "Valueset - Recency rapid test results"
       },
       {
         "extension": [
@@ -1260,14 +834,38 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-hiv-recentinfection"
+          "reference": "StructureDefinition/hiv-condition"
         },
-        "name": "Codesystem Recent infection conclusion",
-        "description": "CodeSystem - RRecent infection conclusion"
+        "name": "HIV Condition",
+        "description": "This profile allows the exchange of a patient's hiv diagnosis"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "NamingSystem"
+          }
+        ],
+        "reference": {
+          "reference": "NamingSystem/NationalPatientIdentifier9Digit"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/a-recency-result"
+        },
+        "name": "Example Observation - a-recency-result",
+        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-recency-result"
       },
       {
         "extension": [
@@ -1277,10 +875,123 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/hiv-recency-result"
+          "reference": "StructureDefinition/hiv-arv-careplan"
         },
-        "name": "HIV Recency result",
-        "description": "This profile allows the exchange of a patient's hiv recency test"
+        "name": "ARVCarePlan",
+        "description": "This profile allows the exchange of a patient's ARV treatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pregnancy-status"
+        },
+        "name": "Pregnancy status",
+        "description": "Pregnancy status."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-patient"
+        },
+        "name": "HIV Patient",
+        "description": "This Patient profile allows the exchange of patient information, including all the data associated with HIV patients"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-reasoncd4test"
+        },
+        "name": "Codesystem Reason for CD4 test",
+        "description": "CodeSystem - Reason for CD4 test"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-vn-whostage"
+        },
+        "name": "ValueSet WHO Stage ",
+        "description": "ValueSet - WHO Stage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-patient-communication-preferences"
+        },
+        "name": "Patient Communication Preferences",
+        "description": "Valueset - Patient Communication Preferences"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/an-aids-diagnosis-observation"
+        },
+        "name": "Example Observation - an-aids-diagnosis-observation",
+        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/aids-diagnosis-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-treatment-hepatitis-process"
+        },
+        "name": "Hepatitis Treatment",
+        "description": "This profile allows to add hepatitis status"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-arv-treatment-status"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-recency-result"
+        }
       },
       {
         "extension": [
@@ -1310,38 +1021,196 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Questionnaire"
+            "valueString": "CodeSystem"
           }
         ],
         "reference": {
-          "reference": "Questionnaire/hiv-case-report-questionnaire"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-cause-of-death"
-        },
-        "name": "Cause of death",
-        "description": "Cause of death"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-patient-communication-preferences"
+          "reference": "CodeSystem/cs-patient-communication-preferences"
         },
         "name": "Patient Communication Preferences",
-        "description": "Valueset - Patient Communication Preferences"
+        "description": "The way the patient prefers to be contacted"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-population"
+        },
+        "name": "Risk Population relevant for HIV",
+        "description": "Valueset - Risk population relevant for HIV"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-reasonvltest"
+        },
+        "name": "Codesystem Reason for VL test",
+        "description": "CodeSystem - Reason for VL test"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-population"
+        },
+        "name": "Population groups",
+        "description": "CodeSystem - Population groups - Subjects to be tested for HIV"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-vn-regimen"
+        },
+        "name": "CodeSystem Vietnam HIV Regimen",
+        "description": "CodeSystem - Vietnam HIV Regimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/type-of-contact"
+        },
+        "name": "Type of contact or relationship",
+        "description": "Type of contact or relationship"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-viralload-indications"
+        },
+        "name": "Viralload Indications",
+        "description": "CodeSystem - Indications"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-risk-behavior"
+        },
+        "name": "Risk Behavior",
+        "description": "CodeSystem - Behavior associated with risk of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-vn-ethnicity"
+        },
+        "name": "Valueset Vietnam Ethnicity",
+        "description": "Valueset - Vietnam Ethnicity"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-recentinfection"
+        },
+        "name": "Valueset Recent infection conclusion",
+        "description": "Valueset - Recent infection conclusion"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-viralload-group"
+        },
+        "name": "Viral Load group",
+        "description": "Valueset - Viral Load group"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-recentinfection"
+        },
+        "name": "Codesystem Recent infection conclusion",
+        "description": "CodeSystem - RRecent infection conclusion"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-risk-behavior"
+        },
+        "name": "Risk Behavior",
+        "description": "ValueSet - Behavior associated with risk of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-rapidtestresults"
+        },
+        "name": "Codesystem Rapid test results",
+        "description": "CodeSystem - Recency rapid test results for HIV"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-treatment-category"
+        },
+        "name": "Category of the treatment",
+        "description": "Valueset - Category of the treatment"
       },
       {
         "extension": [
@@ -1360,101 +1229,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-viralload-group"
+          "reference": "ValueSet/vs-recency-rita"
         },
-        "name": "Viral Load group",
-        "description": "Codesystem - Viral Load group"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/a-recency-result"
-        },
-        "name": "Example Observation - a-recency-result",
-        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-recency-result"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/hiv-treatment-hepatitis-process"
-        },
-        "name": "Hepatitis Treatment",
-        "description": "This profile allows to add hepatitis status"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-gender"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          }
-        ],
-        "reference": {
-          "reference": "QuestionnaireResponse/exampleresponse"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-patient-gender"
-        },
-        "name": "Patient Gender",
-        "description": "The genders for patients"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/test-hiv-patient"
-        },
-        "name": "Example Patient - test-hiv-patient",
-        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-hiv-transmission-route"
-        },
-        "name": "HIV Transmission Route",
-        "description": "CodeSystem - Route of HIV transmission"
+        "name": "Recency RITA result",
+        "description": "Valueset - Recency RITA result"
       },
       {
         "extension": [
@@ -1473,14 +1255,27 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-cause-of-death"
+          "reference": "ValueSet/vs-hiv-reasoncd4test"
         },
-        "name": "Cause of death",
-        "description": "Cause of death"
+        "name": "Valueset Reason for CD4 test",
+        "description": "Valueset - Reason for CD4 test"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-occupation"
+        },
+        "name": "Occupation Value Set ",
+        "description": "ValueSet - Occupation"
       },
       {
         "extension": [
@@ -1490,36 +1285,34 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-vn-whostage"
-        },
-        "name": "CodeSystem WHO stage ",
-        "description": "CodeSystem - WHO Stage"
+          "reference": "CodeSystem/cs-treatment-status"
+        }
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "StructureDefinition:extension"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/hiv-cd4-observation"
+          "reference": "StructureDefinition/ext-vn-ethnicity"
         },
-        "name": "CD4 Observation",
-        "description": "This profile allows the exchange of a patient's CD$ test and results"
+        "name": "Vietnam Ethnicity ",
+        "description": "Vietnam Ethnicity"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/aids-diagnosis-observation"
+          "reference": "ValueSet/vs-recency-rtri"
         },
-        "name": "AIDS Diagnosis result",
-        "description": "This profile allows the exchange of a patient's hiv recency test"
+        "name": "Recency RITA result",
+        "description": "Valueset - Recency RITI result"
       },
       {
         "extension": [
@@ -1542,10 +1335,217 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/hiv-arv-careplan"
+          "reference": "StructureDefinition/hiv-treatment-methadone-process"
         },
-        "name": "ARVCarePlan",
-        "description": "This profile allows the exchange of a patient's ARV treatment"
+        "name": "Methadon Treatment",
+        "description": "This profile allows to add methadone status"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-vn-whostage"
+        },
+        "name": "CodeSystem WHO stage ",
+        "description": "CodeSystem - WHO Stage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/test-hiv-patient"
+        },
+        "name": "Example Patient - test-hiv-patient",
+        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-cause-of-death"
+        },
+        "name": "Cause of death",
+        "description": "Cause of death"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-diagnosis-results"
+        },
+        "name": "VSDiagnosisResults"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/a-pregnancy-status"
+        },
+        "name": "Example Observation - a-pregnancy-status",
+        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/pregnancy-status"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-vn-regimen"
+        },
+        "name": "ValueSet Vietnam HIV Regimen",
+        "description": "ValueSet - Vietnam HIV Regimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-treatment-process"
+        },
+        "name": "HIV Treatment",
+        "description": "This profile allows the exchange of a patient's treatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/cs-viralload-indications"
+        },
+        "name": "Viralload Indications",
+        "description": "Valueset - cs-viralload-indications"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/a-hiv-diagnosis-observation"
+        },
+        "name": "Example Observation - a-hiv-diagnosis-observation",
+        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-diagnosis-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/aids-diagnosis-observation"
+        },
+        "name": "AIDS Diagnosis result",
+        "description": "This profile allows the exchange of a patient's hiv recency test"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/a-hiv-cd4-observation"
+        },
+        "name": "Example Observation - a-hiv-cd4-observation",
+        "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-cd4-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-transmission-route"
+        },
+        "name": "HIV Transmission Route",
+        "description": "Valueset - Route of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-vn-regimenline"
+        },
+        "name": "ValueSet Vietnam HIV Regimen Line ",
+        "description": "ValueSet - Vietnam HIV Regimen Line"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-patient-gender-identity"
+        },
+        "name": "Patient Gender Identity",
+        "description": "Valueset - patient gender identities"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-diagnosis-observation"
+        },
+        "name": "HIV Diagnosis result",
+        "description": "This profile allows the exchange of a patient's hiv recency test"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-regimen-change-reason"
+        },
+        "name": "Reason for regimen change",
+        "description": "Reason for regimen change"
       }
     ],
     "page": {

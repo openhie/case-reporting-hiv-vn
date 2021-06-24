@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OpenHIE Vietnam HIV Case-reporting</h1>
- <p>Generated Thu Jun 24 08:38:13 UTC 2021, FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv">http://openhie.org/fhir/openhie.vn.case-reporting.hiv</a> (<a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Thu Jun 24 08:46:16 UTC 2021, FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv">http://openhie.org/fhir/openhie.vn.case-reporting.hiv</a> (<a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.75</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = openhie.vn.case-reporting.hiv, Canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv</td></tr>
@@ -173,13 +173,19 @@
      <td><b>ImplementationGuide.dependency[0].url</b></td><td><b>information</b></td><td title=""><b>The correct canonical URL for this dependency is http://hl7.org/fhir/uv/sdc/ImplementationGuide/sdc</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/an-aids-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/a-treatment-record.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/exampleresponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-gender.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-cd4-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-gender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-pregnancy-outcome.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -188,28 +194,7 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-pregnancy-outcome.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/NationalPatientIdentifier9Digit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource NamingSystem/NationalPatientIdentifier9Digit.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-diagnosis-results.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-arv-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-arv-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-common-date.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-hiv-common.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -218,19 +203,37 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-hiv-common.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-common-date.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-hiv-sympthoms.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-hiv-sympthoms.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/a-treatment-record.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/hiv-case-report-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/hiv-case-report-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/NationalPatientIdentifier9Digit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource NamingSystem/NationalPatientIdentifier9Digit.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-recency-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/an-aids-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-arv-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-arv-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-recency-result.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -248,127 +251,124 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-viral-load.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/hiv-case-report-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/hiv-case-report-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-recency-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-gender.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-gender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/exampleresponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#da6632a6-da0d-4172-bc54-77b0484c79c5">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-diagnosis-results.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-cd4-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#f456dc4a-b682-4d21-ae24-bca69ed3afd5">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#9b5ac037-f3bc-45da-9c45-6b318ab00010">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#8b065318-21d4-49bb-a314-c89cc6326b19">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#6ae66a49-f324-45d6-9086-4a2e9f9bbeb5">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#290c3417-4e2d-443b-86a8-9689a649bc15">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#d8d4375b-3c85-48dd-8a2f-2d01d2b6ec53">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#63a0c522-3d51-4452-b0b1-27beb6b6d673">ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#ec07be71-462a-48db-b1c5-9aa798625779">CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hiv-case-report-questionnaire_cs-pregnancy-outcome.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#bf031e39-a0e2-4f2a-ae2e-01a76b221dbe">ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#ab2add88-31ba-4fd1-ba9b-c4dcc7cbd3c7">ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.html#d0e5c984-7893-4781-a76a-b2007da3e416">ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#4e60eea5-b8c7-4be3-852f-babe60d7144d">ValueSet-hiv-case-report-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.html#099eb408-7959-4cea-ba9b-4cd37b45557a">ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.html#55e3be17-e328-4d5d-810b-3eb7f9dd982d">ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#8ffa57aa-8ce8-4c12-807e-e33190869d51">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_BirthDefects.html#edf64e93-06f2-489f-854d-cd189ea1d97a">ValueSet-hiv-case-report-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#bfc42551-f943-404d-acd2-e4bbd2be223b">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#7d23248b-21d5-46a0-a185-3d1acb224622">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#a30ced53-c514-4fe1-8e60-e2ea156256aa">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#1690ac9f-51a3-4128-aaa5-e8b31c4c34a7">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#687dca38-5083-4c1d-b0ec-806ed5019cca">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#4b090fbc-3702-47f6-8783-e4d91c228234">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#14b7955e-a78a-4338-858e-7cae863997f6">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#b6fb59be-1770-4244-857d-d2f626e2dc08">ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-hiv-case-report-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#e868750c-f825-46a2-8400-4861f07e0866">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#a33a4b24-9273-4594-91e1-f300f1e33355">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#42c3dbbc-12b4-40b4-a3ee-ee91a2217049">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#3c440e68-78ce-4a11-b01f-527725607803">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#9d46c0ab-d49a-4f4f-b7a2-ff1cadcc6081">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#c474cbc6-fcb7-4466-ba77-88f5621fb451">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#3a449cd8-49e6-439d-a8e0-f22278a66ff1">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#4245f782-5ef1-4545-a4db-aa3a3e3f8423">ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#954429e1-d004-4bbe-a796-41a86cbeab5a">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#194901d6-2a1d-40d0-a8d1-4feadd8777b8">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#3035447d-9d01-43fa-b733-40a186814e63">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#d938a02c-08d4-46e6-b570-afeb1c4c81cd">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#6b0ce914-5703-468d-8a3d-19418726a0a0">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#64f72e0c-389b-45ef-a701-003ff1b6be60">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#21fdb72f-9e43-435f-a010-1264b970dc81">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#cf41dc66-0533-482c-8a09-90cb5dad9c2f">ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#66f68ef9-f685-4432-a97c-0c7c47468cbc">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#ea80eee1-8b6e-47a6-a1da-ba831e78b351">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 173, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#e5660f0e-22c9-457a-b1f2-46cc624c7b74">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#eeadf05c-8662-40fc-a6ca-0bd4ebff0537">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#6d0802d0-72bf-4813-858d-8d4e6c8bd13e">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#d77af14b-7ce2-4c78-99d7-a8b402395ce8">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 168, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="actors.html#afd4eb07-a874-4e2d-af44-d2dd9b346d0e">actors.html#/html/body/div/div/div/div/div/div/a at Line 165, column 98</a></b></td><td><b>error</b></td><td><b>The link 'transactions.html' for &quot;transactions&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#170edc00-2f33-4946-a53f-6bda06f6ccb0">ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="actors.html#afd4eb07-a874-4e2d-af44-d2dd9b346d0e">actors.html#/html/body/div/div/div/div/div/div/a at Line 171, column 64</a></b></td><td><b>error</b></td><td><b>The link 'concepts.html#case_report' for &quot;case report&quot; cannot be resolved</b></td>
+     <td><b><a href="actors.html#c163e070-a553-4241-8cd7-57d5ad69fd7c">actors.html#/html/body/div/div/div/div/div/div/a at Line 165, column 98</a></b></td><td><b>error</b></td><td><b>The link 'transactions.html' for &quot;transactions&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="actors.html#afd4eb07-a874-4e2d-af44-d2dd9b346d0e">actors.html#/html/body/div/div/div/div/div/div/a at Line 173, column 100</a></b></td><td><b>error</b></td><td><b>The link 'concepts.html#case_report' for &quot;maturity level&quot; cannot be resolved</b></td>
+     <td><b><a href="actors.html#c163e070-a553-4241-8cd7-57d5ad69fd7c">actors.html#/html/body/div/div/div/div/div/div/a at Line 171, column 64</a></b></td><td><b>error</b></td><td><b>The link 'concepts.html#case_report' for &quot;case report&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="actors.html#afd4eb07-a874-4e2d-af44-d2dd9b346d0e">actors.html#/html/body/div/div/div/div/div/div/a at Line 183, column 357</a></b></td><td><b>error</b></td><td><b>The link 'expected_actions.html#transform' for &quot;three options&quot; cannot be resolved</b></td>
+     <td><b><a href="actors.html#c163e070-a553-4241-8cd7-57d5ad69fd7c">actors.html#/html/body/div/div/div/div/div/div/a at Line 173, column 100</a></b></td><td><b>error</b></td><td><b>The link 'concepts.html#case_report' for &quot;maturity level&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#9ade90c0-a000-4ff6-8e29-e8f28fc69ca1">index.html#/html/body/div/div/div/div/div/div/p/a at Line 191, column 182</a></b></td><td><b>error</b></td><td><b>The link 'transactions.html' for &quot;transactions&quot; cannot be resolved</b></td>
+     <td><b><a href="actors.html#c163e070-a553-4241-8cd7-57d5ad69fd7c">actors.html#/html/body/div/div/div/div/div/div/a at Line 183, column 357</a></b></td><td><b>error</b></td><td><b>The link 'expected_actions.html#transform' for &quot;three options&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#7bc21316-3675-4958-9ec2-1866ce2922f4">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 216, column 12</a></b></td><td><b>error</b></td><td><b>The link 'requirements.html' for &quot;Level II: Business Requirements&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#0238d4a5-d765-484e-9fbf-6316f64841cf">index.html#/html/body/div/div/div/div/div/div/p/a at Line 191, column 182</a></b></td><td><b>error</b></td><td><b>The link 'transactions.html' for &quot;transactions&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#3a67e1a5-39fb-43d8-96df-0af90b1dd58c">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 218, column 12</a></b></td><td><b>error</b></td><td><b>The link 'data_exchange.html' for &quot;Level III: Data Models and Exchange&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#93606641-0898-45dd-b8ad-9c9db7efd6e1">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 216, column 12</a></b></td><td><b>error</b></td><td><b>The link 'requirements.html' for &quot;Level II: Business Requirements&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#cd4b935f-30c1-4bf6-bfaf-aae8d728e68e">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 219, column 12</a></b></td><td><b>error</b></td><td><b>The link 'deployment.html' for &quot;Level IV - ε: Deployment Guidance&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#cb0338f0-011a-4ff0-bb5d-577322ff3f6c">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 218, column 12</a></b></td><td><b>error</b></td><td><b>The link 'data_exchange.html' for &quot;Level III: Data Models and Exchange&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#cd4b935f-30c1-4bf6-bfaf-aae8d728e68e">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 220, column 17</a></b></td><td><b>error</b></td><td><b>The link 'instant_openhie.html' for &quot;Instant OpenHIE&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#1102e1b6-7a57-4a5c-84d6-a3c53cd60f6a">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 219, column 12</a></b></td><td><b>error</b></td><td><b>The link 'deployment.html' for &quot;Level IV - ε: Deployment Guidance&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#1102e1b6-7a57-4a5c-84d6-a3c53cd60f6a">index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 220, column 17</a></b></td><td><b>error</b></td><td><b>The link 'instant_openhie.html' for &quot;Instant OpenHIE&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -1446,19 +1446,19 @@
      <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide</b></td><td><b>warning</b></td><td title="ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[29].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[45].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[32].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[72].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[39].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[74].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[59].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[78].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[89].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[90].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
