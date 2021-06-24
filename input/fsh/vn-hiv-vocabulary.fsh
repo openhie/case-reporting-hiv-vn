@@ -75,8 +75,7 @@ Title: "Patient Gender"
 Description: "The genders for patients"
 * #male "Male" "Client identifies as female"
 * #female "Female" "Client identifies as male"
-* #transgender "Transgender" "Client identifies as transgender"
-* #non-binary "Non-binary" "Client identifies in a non-binary way"
+* #unidentified "Unidentified"
 
 ValueSet: PatientGender
 Id: vs-patient-gender
@@ -142,7 +141,7 @@ Description:  "Type of contact or relationship"
 
 // *************
 
-
+/*
 ValueSet: HIVRapidTestResults
 Id: vs-hiv-rapidtestresults
 Title: "HIVRapidTestResults"
@@ -153,29 +152,62 @@ Description: "HIV rapid test result codes"
 * $LOINC#LA15256-3 "Khong phản ứng"
 * $LOINC#LA11884-6 "Chưa xác định"
 * $LOINC#LA15841-2 "Không hợp lệ"
-
+*/
 // *************
+CodeSystem:  CSHIVRapidTestResults
+Id: cs-hiv-rapidtestresults
+Title: "Codesystem Rapid test results"
+Description: "CodeSystem - Recency rapid test results for HIV  "
+
+* #recent "Recent"
+* #long_term "Long term"
+* #negative "Negative"
+
+ValueSet: VSHIVRapidTestResults
+Id: vs-hiv-rapidtestresults
+Title: "Valueset Rapid test results"
+Description:  "Valueset - Recency rapid test results "
+* include codes from system CSHIVRapidTestResults
+//*******************
+CodeSystem:  CSHIVReasonCD4Test
+Id: cs-hiv-reasoncd4test
+Title: "Codesystem Reason for CD4 test"
+Description: "CodeSystem - Reason for CD4 test"
+
+* #before_art "Before ART"
+* #routine_test "Routine test"
+* #other "Other "
+
+ValueSet: VSHIVReasonCD4Test
+Id: vs-hiv-reasoncd4test
+Title: "Valueset Reason for CD4 test"
+Description:  "Valueset - Reason for CD4 test"
+* include codes from system CSHIVReasonCD4Test
+
+//*******************
 
 CodeSystem:  CSHIVRiskPopulation
 Id: cs-hiv-population
 Title: "Population groups"
 Description: "CodeSystem - Population groups - Subjects to be tested for HIV"
 
-* #pwid "Người tiêm chích ma túy" "Injecting drug users"
-* #msm "Quan hệ tình dục đồng giới nam" "Men who have sex with men"
-* #sw "" "Sex workers"
-* #tg_women "" "Transgender women"
-* #partner_plhiv "" "Sexual partner of PLHIV"
-* #tg_men "" "Transgender men"
-* #child_woman_hiv "" "Child of mother who is infected with HIV"
-* #client_sexw "Nữ bán dâm" "Client of sex workers"
-* #blood-donor "Người hiến máu tình nguyện" "Blood donors"
-* #suspect_hiv "" "People suspected for AIDs"
-* #tb_patient "Bệnh nhân lao" "TB patients"
-* #std_patient "Người mắc nhiễm trùng lây qua đường tình dục" "People with sexually transmitted diseases"
-* #prisoner "" "Prisoner"
-* #pregnant "Mang thai" "Pregnant women"
-* #military_recruits "Thanh niên khám tuyển nghĩa vụ quân sự" "Young recruits for military service"
+* #pwid "Injecting drug users"
+* #msm "Men who have sex with men"
+* #sw "Sex workers"
+* #client_sw "Clients of sex worker "
+* #partner_plhiv "Sexual partner of PLHIV"
+* #tg_women "Transgender women"
+* #tg_men "Transgender men"
+* #child_woman_hiv "Child of mother who is infected with HIV"
+* #client_sexw "Client of sex workers"
+* #blood-donor "Blood seller / blood donor"
+* #suspect_hiv "People suspected for AIDs"
+* #tb_patient "Tuberculosis patient"
+* #std_person "Persons with STD"
+* #prisoner "Prisoner"
+* #pregnant "Pregnant women"
+* #military_recruits "Young recruits for military service"
+* #other "Other"
 //* #other "Không rõ" "Unidentified"
 
 
@@ -191,12 +223,12 @@ CodeSystem:  CSHIVRiskBehavior
 Id: cs-hiv-risk-behavior
 Title: "Risk Behavior"
 Description: "CodeSystem - Behavior associated with risk of HIV transmission"
-* #inject_drugs "Tiêm chích ma túy" "Drug injection"
-* #sex_client "Quan hệ tình dục với người bán dâm hoặc mua dâm " "Sexual relationship with sex workers or with sex buyers/clients (for money or drug)"
-* #msm "Quan hệ tình dục đồng giới nam" "Men who have sex with men"
-* #smp "Quan hệ tình dục với nhiều người (không vì tiền hay ma túy)" "Having sex with multiple partners (not for money or drug)"
-* #partner_hiv "Quan hệ với vợ/chồng/bạn tình là người nhiễm HIV" "Having sex with spouse/partners who are HIV infected"
-//* #other "Không rõ" "Unidentified"
+* #pwid "PWID"
+* #sex_partner "Having sex with sex worker or sex buyer"
+* #msm  "Men who have sex with men"
+* #smp  "Having sex with multiple partners (not for money or drug)"
+* #partner_hiv "Having sex with spouse/partners who are HIV infected"
+* #other "Other"
 
 
 ValueSet: VSHIVRiskBehavior
@@ -213,26 +245,21 @@ Id: cs-hiv-transmission-route
 Title: "HIV Transmission Route"
 Description: "CodeSystem - Route of HIV transmission"
 
-* #312425004 "Lây qua đường máu" "Blood"
-* #226034001 "Lây qua đường tiêm chích ma túy" "Drug injection"
-* #250373003 "Truyền máu" "Blood transfusion finding"
-* #53348004 "Tai nạn nghề nghiệp" "Accidental "
-* #417564009 "Lây qua đường tình dục" "Sexual Transmission"
-* #38628009 "Tình dục đồng giới" "Homosexual (finding)"
-* #20430005 "Tình dục khác giới" "Heterosexual (finding)"
-* #438998000 "Mẹ truyền sang con" "Mother to Child Transmission"
-* #69910005 "Không rõ" "Unidentified"
+* #312425004 "Blood"
+* #226034001 "Drug injection"
+* #250373003 "Blood transfusion"
+* #53348004 "Occupational accident "
+* #417564009 "Sexual Transmission"
+* #38628009 "Homosexual"
+* #20430005 "Heterosexual"
+* #438998000 "Mother to Child Transmission"
+* #69910005 "Unidentified"
 
 ValueSet: VSHIVTransmissionRoute
 Id: vs-hiv-transmission-route
 Title: "HIV Transmission Route"
 Description:  "Valueset - Route of HIV transmission"
 * include codes from system CSHIVTransmissionRoute
-
-
-
-
-
 
 
 CodeSystem:  CSCauseOfDeath
@@ -254,25 +281,6 @@ Description: "Cause of death"
 * include codes from system CSCauseOfDeath
 
 
-
-
-CodeSystem:  CSRegimenChangeReason
-Id: cs-regimen-change-reason
-Title: "Reason for regimen change"
-Description: "Reason for regimen change"
-* #drug-unavailable "Drug unavailable"
-* #drug-sideeffects "Side effects"
-* #treatment-failure "Treatment failure"
-* #drug-interaction "Drug interaction"
-* #new-guidance "New regimen as national guidance"
-
-
-ValueSet: RegimenChangeReason
-Id: vs-regimen-change-reason
-Title: "Reason for regimen change"
-Description: "Reason for regimen change"
-* include codes from system CSRegimenChangeReason
-
 CodeSystem: CSWhoStage
 Id: cs-vn-whostage
 Title: "CodeSystem WHO stage "
@@ -288,3 +296,53 @@ Id: vs-vn-whostage
 Title: "ValueSet WHO Stage "
 Description:  "ValueSet - WHO Stage"
 * include codes from system CSWhoStage
+
+//********************
+CodeSystem:  CSReasonVLTest
+Id: cs-hiv-reasonvltest
+Title: "Codesystem Reason for VL test"
+Description: "CodeSystem - Reason for VL test"
+
+* #routine-6 "6 months after ART initiation"
+* #routine-12 "12 month routine"
+* #treatment-fail "Suspected treatment failure (clinical, immunological)"
+* #3month-after-high "3 month after high viral load"
+* #pregnant "Pregnant/Lactating woman"
+* #other "Other"
+
+ValueSet: VSCSReasonVLTest
+Id: vs-hiv-reasonvltest
+Title: "Valueset Reason for VL test"
+Description:  "Valueset - Reason for VL test"
+* include codes from system CSReasonVLTest
+
+//********************
+CodeSystem: CSRecentInfectionConclusion
+Id: cs-hiv-recentinfection
+Title: "Codesystem Recent infection conclusion"
+Description: "CodeSystem - RRecent infection conclusion"
+
+* #recent "Recent infection"
+* #long-term "Long term infection"
+
+ValueSet: VSRecentInfectionConclusion
+Id: vs-hiv-recentinfection
+Title: "Valueset Recent infection conclusion"
+Description:  "Valueset - Recent infection conclusion"
+* include codes from system CSRecentInfectionConclusion
+
+//********************
+CodeSystem: CSTreatmentStopReason
+Id: cs-hiv-treatmentstopreason
+Title: "Codesystem Reason to stop treatment at facility"
+Description: "CodeSystem - 	Reason to stop treatment at facility"
+
+* #transfer-out "Transfer out"
+* #drop-out "Drop out or LTFU"
+* #death "Death"
+
+ValueSet: VSTreatmentStopReason
+Id: vs-hiv-treatmentstopreason
+Title: "Valueset Reason to stop treatment at facility"
+Description:  "Valueset - Reason to stop treatment at facility"
+* include codes from system CSTreatmentStopReason

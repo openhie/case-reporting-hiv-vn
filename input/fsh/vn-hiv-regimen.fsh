@@ -58,17 +58,35 @@ Description:  "ValueSet - Vietnam HIV Regimen"
 * include codes from system CSVietnamRegimen
 
 //-------------------------------------------------------------
-CodeSystem: CSRegimenLevel
-Id: cs-vn-regimenlevel
-Title: "CodeSystem Vietnam HIV Regimen Level "
-Description:  "CodeSystem - Vietnam HIV Regimen Level"
+CodeSystem: CSRegimenLine
+Id: cs-vn-regimenline
+Title: "CodeSystem Vietnam HIV Regimen Line"
+Description:  "CodeSystem - Vietnam HIV Regimen Line"
 
-* #lvl1 "Level 1"
-* #lvl2 "Level 2"
-* #lvl3 "Level 3"
+* #lvl1 "First line"
+* #lvl2 "Second line"
+* #lvl3 "Third line"
 
-ValueSet: VSRegimenLevel
-Id: vs-vn-regimenlevel
-Title: "ValueSet Vietnam HIV Regimen Level "
-Description:  "ValueSet - Vietnam HIV Regimen Level"
-* include codes from system CSRegimenLevel
+ValueSet: VSRegimenLine
+Id: vs-vn-regimenline
+Title: "ValueSet Vietnam HIV Regimen Line "
+Description:  "ValueSet - Vietnam HIV Regimen Line"
+* include codes from system CSRegimenLine
+
+CodeSystem:  CSRegimenChangeReason
+Id: cs-regimen-change-reason
+Title: "Reason for regimen change"
+Description: "Reason for regimen change"
+* #lack_of_drug "Lack of drug"
+* #side_effects "Side effects"
+* #treatment_failure "Treatment failure"
+* #drug_interaction "Drug interaction"
+* #new-guidance "New regimen as national guidance"
+* #other "Other"
+
+
+ValueSet: RegimenChangeReason
+Id: vs-regimen-change-reason
+Title: "Reason for regimen change"
+Description: "Reason for regimen change"
+* include codes from system CSRegimenChangeReason
