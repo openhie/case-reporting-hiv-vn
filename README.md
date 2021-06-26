@@ -6,7 +6,7 @@ This ImplementationGuide contains the specification and artifacts for the Vietna
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://openhie.github.io/case-reporting-hiv-vn__  
+Continuous Build: __http://openhie.github.io/case-reporting-hiv-vn/branches/draft__  
 Canonical / permanent URL: 
 <br> </br>
 
