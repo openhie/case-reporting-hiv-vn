@@ -197,11 +197,13 @@ Usage: #definition
 * insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection for CD4 test,open-choice,false)
 * insert Question(item[=].item[=].,date_test_performed,Date of CD4 test,date,false)
 * insert Question(item[=].item[=].,test_result,Result of CD4 test,integer,false)
+
+/*
 * insert Question(item[=].item[=].,test_result_other,Other outcome of CD4 test,choice,false)
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#undetermined "Undetermined"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#notapplicable "Not applicable"
 
-/*
+
 * insert Question(item[=].item[=].,history,Other CD4 test results,group,true)
 * insert Question(item[=].item[=].item[=].,lastest_test_reason,Reason for CD4 test,choice,false)
 
@@ -218,7 +220,9 @@ Usage: #definition
 */
 
 * insert Question(item[=].,vl_test,Viral load test (First time and follow-up\),group,true)
-* insert Question(item[=].item[=].,test_reason,Reason for VL test,string,false)
+* insert Question(item[=].item[=].,test_reason,Reason for VL test,open-choice,false)
+* item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-reasonvltest)
+
 /*
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine-6 "6 months after ART initiation"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine-12 "12 month routine"
@@ -289,9 +293,10 @@ Usage: #definition
 * insert Question(item[=].item[=].item[=].,regimen_change_reason,Reason to change regimen,open-choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-regimen-change-reason)
 
-* insert Question(item[=].item[=].,who_stage,WHO Stage,choice,false)
-* item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-whostage)
-* insert Question(item[=].item[=].,date_who_stage,Date of WHO clinical stage,date,false)
+* insert Question(item[=].item[=].,who_stage,WHO Stage,group,true)
+* insert Question(item[=].item[=].item[=].,who_clinical stage,WHO clinical stage,choice,false)
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-whostage)
+* insert Question(item[=].item[=].item[=].,date_who_stage,Date of WHO clinical stage,date,false)
 
 * insert Question(item[=].,comorbidities,Comorbidities,group,false)
 
@@ -347,8 +352,8 @@ Usage: #definition
 
 * insert Question(item[=].,pregnancy,Pregnancies,group,true)
 * insert Question(item[=].item[=].,date_reported,Date pregnancy reported,date,false)
-* insert Question(item[=].item[=].,place_reported,Place pregnancy reported,open-choice,false)
 * insert Question(item[=].item[=].,delivery_place,Delivery place,open-choice,false)
+* insert Question(item[=].item[=].,place_reported,Place pregnancy reported,open-choice,false)
 
 * insert Question(item[=].item[=].,outcomes,Pregnancy outcome,group,false)
 * insert Question(item[=].item[=].item[=].,outcome_code,Pregnancy outcome code,choice,false)
