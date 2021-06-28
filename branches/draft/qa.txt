@@ -1,9 +1,9 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 73, warn = 131, info = 52
+err = 74, warn = 131, info = 51
 IG Publisher Version: 1.1.76
-Generated Sat Jun 26 06:35:57 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Mon Jun 28 12:07:18 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
  Build Errors : 45 / 22 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
@@ -44,7 +44,7 @@ Generated Sat Jun 26 06:35:57 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/Observation-a-recency-result : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-an-aids-diagnosis-observation : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 15 / 8 / 24
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 16 / 8 / 23
  /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 11 / 1 / 5
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 28 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-aids-diagnosis-observation : 0 / 2 / 1
@@ -327,8 +327,7 @@ ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: 
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' definition is for a simple extension, so it must contain a value, not extensions
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[0]: que-6: 'Required and repeat aren't permitted for display items' Rule 'Required and repeat aren't permitted for display items' Failed
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[1]: que-6: 'Required and repeat aren't permitted for display items' Rule 'Required and repeat aren't permitted for display items' Failed
-INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[5].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[4].item[5].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[3].item[1].item[2].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[5].item[5].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[4].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[7].item[4].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
@@ -346,7 +345,8 @@ WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[2]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'pregnancy_gestational_age_at_delivery'
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[1]: Unable to find an item with the linkId 'pregnancy_outcome_code' which is referenced in the enableWhen for 'delivery_date'
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[2]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'gestational_age_at_delivery'
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3]: Unable to find an item with the linkId 'pregnancyOutcomeCode' which is referenced in the enableWhen for 'child'
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[3]: Unable to find an item with the linkId 'child.hiv_status' which is referenced in the enableWhen for 'hiv_diagnosis_date'
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[4].item[10].item[3].item[3].item[4]: Unable to find an item with the linkId 'child.hiv_status' which is referenced in the enableWhen for 'child_arv_start_date'
