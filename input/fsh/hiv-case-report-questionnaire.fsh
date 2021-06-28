@@ -175,8 +175,12 @@ Usage: #definition
 //* insert Question(item[=].item[=].item[=].,vl_test.date_specimen_collection,Date of Specimen Collection for VL test,date,false)
 //* insert Question(item[=].item[=].item[=].,vl_testid_test.place_specimen_collection,Place of Specimen Collection for rapVLid test,string,false)
 * insert Question(item[=].item[=].item[=].,date_test_performed,Date of VL test performance,date,false)
-* insert Question(item[=].item[=].item[=].,test_result,Recent infection conclusion,choice,false)
-* item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-recentinfection)
+* insert Question(item[=].item[=].item[=].,test_result,VL test result (copies/mL\),integer,false)
+* insert Question(item[=].item[=].item[=].,test_result_other,Other of viral load test (undetectable\),choice,false)
+* item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#undetectable "undetectable"
+
+* insert Question(item[=].item[=].,recent_infection_conclusion,Recent infection conclusion,choice,false)
+* item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-recentinfection)
 /*
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#recent "Recent infection"
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#long-term "Long term infection"
@@ -193,11 +197,13 @@ Usage: #definition
 * insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection for CD4 test,open-choice,false)
 * insert Question(item[=].item[=].,date_test_performed,Date of CD4 test,date,false)
 * insert Question(item[=].item[=].,test_result,Result of CD4 test,integer,false)
+
+/*
 * insert Question(item[=].item[=].,test_result_other,Other outcome of CD4 test,choice,false)
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#undetermined "Undetermined"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#notapplicable "Not applicable"
 
-/*
+
 * insert Question(item[=].item[=].,history,Other CD4 test results,group,true)
 * insert Question(item[=].item[=].item[=].,lastest_test_reason,Reason for CD4 test,choice,false)
 
@@ -214,7 +220,9 @@ Usage: #definition
 */
 
 * insert Question(item[=].,vl_test,Viral load test (First time and follow-up\),group,true)
-* insert Question(item[=].item[=].,test_reason,Reason for present VL test,string,false)
+* insert Question(item[=].item[=].,test_reason,Reason for VL test,open-choice,false)
+* item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-reasonvltest)
+
 /*
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine-6 "6 months after ART initiation"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#routine-12 "12 month routine"
@@ -223,10 +231,10 @@ Usage: #definition
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pregnant "Pregnant/Lactating woman"
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#other "Other"
 */
-* insert Question(item[=].item[=].,place_specimen_collected,Place of Specimen Collection for present viral load test,open-choice,false)
-* insert Question(item[=].item[=].,date_specimen_collected,Date of Specimen Collection for present viral load test,date,false)
-* insert Question(item[=].item[=].,date_test_performed,Date of present viral load test,date,false)
-* insert Question(item[=].item[=].,test_result,Result of present viral load test,integer,false)
+* insert Question(item[=].item[=].,place_specimen_collected,Place of Specimen Collection for viral load test,open-choice,false)
+* insert Question(item[=].item[=].,date_specimen_collected,Date of Specimen Collection for viral load test,date,false)
+* insert Question(item[=].item[=].,date_test_performed,Date of viral load test,date,false)
+* insert Question(item[=].item[=].,test_result,Result of viral load test,integer,false)
 * insert Question(item[=].item[=].,test_result_other,Result of other outcome,choice,false)
 * item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#undetectable "undetectable"
 /*
@@ -244,7 +252,7 @@ Usage: #definition
 * insert Question(item[=].item[=].item[=].,test_result,Result of past VL test,integer,false)
 */
 
-* insert Question(item[=].,drug_resistance_test,Drug Resistance test,group,true)
+* insert Question(item[=].,drug_resistance_test,Drug resistance test,group,true)
 * insert Question(item[=].item[=].,date_specimen_collected,Date of specimen collection,date,false)
 * insert Question(item[=].item[=].,date_test_performed,Date test results performed,date,false)
 * insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection,open-choice,false)
@@ -285,8 +293,10 @@ Usage: #definition
 * insert Question(item[=].item[=].item[=].,regimen_change_reason,Reason to change regimen,open-choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-regimen-change-reason)
 
-* insert Question(item[=].item[=].,who_stage,WHO Stage,choice,false)
-* item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-whostage)
+* insert Question(item[=].item[=].,who_stage,WHO Stage,group,true)
+* insert Question(item[=].item[=].item[=].,who_clinical stage,WHO clinical stage,choice,false)
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-whostage)
+* insert Question(item[=].item[=].item[=].,date_who_stage,Date of WHO clinical stage,date,false)
 
 * insert Question(item[=].,comorbidities,Comorbidities,group,false)
 
@@ -341,19 +351,19 @@ Usage: #definition
 
 
 * insert Question(item[=].,pregnancy,Pregnancies,group,true)
-* insert Question(item[=].item[=].,pregnancy_date_reported,Date pregnancy reported,date,false)
-* insert Question(item[=].item[=].,pregnancy_place_reported,Place pregnancy reported,open-choice,false)
-* insert Question(item[=].item[=].,pregnancy_delivery_place,Delivery place,open-choice,false)
+* insert Question(item[=].item[=].,date_reported,Date pregnancy reported,date,false)
+* insert Question(item[=].item[=].,delivery_place,Delivery place,open-choice,false)
+* insert Question(item[=].item[=].,place_reported,Place pregnancy reported,open-choice,false)
 
-* insert Question(item[=].item[=].,pregnancy_outcomes,Pregnancy outcome,group,false)
-* insert Question(item[=].item[=].item[=].,pregnancy_outcome_code,Pregnancy outcome code,choice,false)
+* insert Question(item[=].item[=].,outcomes,Pregnancy outcome,group,false)
+* insert Question(item[=].item[=].item[=].,outcome_code,Pregnancy outcome code,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-pregnancy-outcome)
 
-* insert Question(item[=].item[=].item[=].,pregnancy_delivery_date,Delivery date,date,true)
+* insert Question(item[=].item[=].item[=].,delivery_date,Delivery date,date,true)
 * item[=].item[=].item[=].item[=].enableWhen.question = "pregnancy_outcome_code"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
-* insert Question(item[=].item[=].item[=].,pregnancy_gestational_age_at_delivery,Gestational age at delivery (weeks\),integer,true)
+* insert Question(item[=].item[=].item[=].,gestational_age_at_delivery,Gestational age at delivery (weeks\),integer,true)
 * item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
