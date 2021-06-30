@@ -374,10 +374,12 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 
 * insert Question(item[=].item[=].item[=].item[=].,birth_weight,Child weight at birth,decimal,false)
-* insert Question(item[=].item[=].item[=].item[=].,birth_defects,Birth defects,open-choice,true)
-* item[=].item[=].item[=].item[=].item[=].answerValueSet = "#BirthDefects"
+* insert Question(item[=].item[=].item[=].item[=].,birth_defects,Birth defects,boolean,false)
+/* item[=].item[=].item[=].item[=].item[=].answerValueSet = "#BirthDefects"
+*/
 * insert Question(item[=].item[=].item[=].item[=].,hiv_status,HIV status,choice,false)
-* item[=].item[=].item[=].item[=].item[=].answerValueSet = "#ChildHIVStatus"
+* item[=].item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-birthdefects)
+
 * insert Question(item[=].item[=].item[=].item[=].,hiv_diagnosis_date,Child HIV diagnosis date,date,false)
 * item[=].item[=].item[=].item[=].item[=].enableWhen.question = "child.hiv_status"
 * item[=].item[=].item[=].item[=].item[=].enableWhen.operator = #=

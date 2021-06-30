@@ -22,6 +22,23 @@ Usage: #inline
 * status = #draft
 
 
+//********************
+CodeSystem:  CSBirthDefects
+Id: cs-hiv-birthdefects
+Title: "Codesystem Birth Defects"
+Description: "CodeSystem - Birth Defects"
+
+* #positive "Positive"
+* #negative "Negative"
+* #unidentified "Unidentified"
+* #unknown "Unknown"
+
+ValueSet: VSCBirthDefects
+Id: vs-hiv-birthdefects
+Title: "Valueset Birth Defects"
+Description:  "Valueset - Birth Defects"
+* include codes from system CSBirthDefects
+/*
 Instance: BirthDefects
 InstanceOf: ValueSet
 Description: "Birth Defects"
@@ -29,7 +46,7 @@ Title: "Pregnancy Outcome Codes"
 Usage: #inline
 * name = "BirthDefects"
 * status = #draft
-
+*/
 
 Instance: ChildHIVStatus
 InstanceOf: ValueSet
@@ -199,7 +216,6 @@ Description: "CodeSystem - Population groups - Subjects to be tested for HIV"
 * #tg_women "Transgender women"
 * #tg_men "Transgender men"
 * #child_woman_hiv "Child of mother who is infected with HIV"
-* #client_sexw "Client of sex workers"
 * #blood-donor "Blood seller / blood donor"
 * #suspect_hiv "People suspected for AIDs"
 * #tb_patient "Tuberculosis patient"
@@ -272,6 +288,7 @@ Description: "Cause of death"
 * #overdose "Drug overdose"
 * #accident "Accident"
 * #unknown "Unknown"
+* #other "Other"
 
 
 ValueSet: CauseOfDeath
