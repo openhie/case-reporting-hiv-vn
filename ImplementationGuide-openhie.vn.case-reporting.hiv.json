@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam - candidate draft",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-28T12:06:23+00:00",
+  "date": "2021-06-30T04:48:23+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -522,6 +522,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-birthdefects"
+        },
+        "name": "Valueset Birth Defects",
+        "description": "Valueset - Birth Defects"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -823,6 +836,19 @@
         },
         "name": "Reason for regimen change",
         "description": "Reason for regimen change"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-birthdefects"
+        },
+        "name": "Codesystem Birth Defects",
+        "description": "CodeSystem - Birth Defects"
       },
       {
         "extension": [

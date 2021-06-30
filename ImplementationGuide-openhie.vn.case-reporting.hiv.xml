@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-06-28T12:06:23+00:00"/>
+  <date value="2021-06-30T04:48:23+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -352,6 +352,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-birthdefects"/>
+      </reference>
+      <name value="Valueset Birth Defects"/>
+      <description value="Valueset - Birth Defects"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -583,6 +593,16 @@
       </reference>
       <name value="Reason for regimen change"/>
       <description value="Reason for regimen change"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-hiv-birthdefects"/>
+      </reference>
+      <name value="Codesystem Birth Defects"/>
+      <description value="CodeSystem - Birth Defects"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
