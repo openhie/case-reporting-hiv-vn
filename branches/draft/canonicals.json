@@ -35,6 +35,13 @@
     "name": "Gender"
   },
   {
+    "id": "cs-hiv-birthdefects",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-birthdefects",
+    "version": "0.1.0-test",
+    "name": "CSBirthDefects"
+  },
+  {
     "id": "cs-hiv-common",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-common",
@@ -418,6 +425,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-diagnosis-results",
     "version": "0.1.0-test",
     "name": "VSDiagnosisResults"
+  },
+  {
+    "id": "vs-hiv-birthdefects",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-birthdefects",
+    "version": "0.1.0-test",
+    "name": "VSCBirthDefects"
   },
   {
     "id": "vs-hiv-occupation",
