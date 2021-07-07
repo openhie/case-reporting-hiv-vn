@@ -21,3 +21,9 @@ RuleSet: VSCodeDef(system,code,display,vn)
 * compose.include[=].concept[=].display = "{display}"
 * compose.include[=].concept[=].designation[+].language = #vi-VN
 * compose.include[=].concept[=].designation[=].value = "{vn}"
+
+RuleSet: Question(context, linkId, text, type, repeats)
+* {context}item[+].linkId = "{linkId}"
+* {context}item[=].text = "{text}"
+* {context}item[=].type = #{type}
+* {context}item[=].repeats = {repeats}
