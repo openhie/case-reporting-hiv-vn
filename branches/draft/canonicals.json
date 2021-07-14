@@ -231,6 +231,34 @@
     "name": "NationalPatientIdentifier9Digit"
   },
   {
+    "id": "HIVChildPatient",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/HIVChildPatient",
+    "version": "0.1.0-test",
+    "name": "HIVChildPatient"
+  },
+  {
+    "id": "HIVIndexRelatedPerson",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/HIVIndexRelatedPerson",
+    "version": "0.1.0-test",
+    "name": "HIVIndexRelatedPerson"
+  },
+  {
+    "id": "ProblemsObservation",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ProblemsObservation",
+    "version": "0.1.0-test",
+    "name": "ProblemsObservation"
+  },
+  {
+    "id": "WeightObservation",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/WeightObservation",
+    "version": "0.1.0-test",
+    "name": "WeightObservation"
+  },
+  {
     "id": "aids-diagnosis-observation",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/aids-diagnosis-observation",
@@ -264,6 +292,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-vn-ethnicity",
     "version": "0.1.0-test",
     "name": "VietnamEthnicity"
+  },
+  {
+    "id": "hcv-diagnosis-observation",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hcv-diagnosis-observation",
+    "version": "0.1.0-test",
+    "name": "HCVDiagnosisObservation"
   },
   {
     "id": "hiv-arv-careplan",
@@ -383,6 +418,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/vn-administrative-address",
     "version": "0.1.0-test",
     "name": "VNAdministrativeAddress"
+  },
+  {
+    "id": "HIVRelationshipTypesVS",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/HIVRelationshipTypesVS",
+    "version": "0.1.0-test",
+    "name": "HIVRelationshipTypesVS"
   },
   {
     "id": "VSDateComponent",
