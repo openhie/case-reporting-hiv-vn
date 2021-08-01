@@ -22,6 +22,11 @@
 <link rel="stylesheet" href="assets/css/openhie.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+  <!-- Questionnaire: -->
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
+
+
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -66,7 +71,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">HIV Case-reporting for Vietnam</span><br/>0.1.0-test - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">HIV Case-reporting for Vietnam - candidate draft</span><br/>0.1.0-test - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -126,12 +131,12 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
-
+    
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>MyIG Home Page</b></li>
-
+          
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -150,7 +155,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">HIV Case-reporting for Vietnam - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">HIV Case-reporting for Vietnam - candidate draft - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>MyIG Home Page</h2>
   
   <div lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Summary</a></li><li><a href="#2">About This Implementation Guide</a></li><li><a href="#3">Intellectual Property Considerations</a></li><li><a href="#4">Disclaimer</a></li></ul></div>
@@ -182,7 +187,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     This Implementation Guide is underpinned by supporting <a href="references.html">guidelines, policies and recommendations</a>
   </p>
   
-  <p><a name="2a192d85-c084-4ac1-997b-4fd92809d865">​</a>
+  <p><a name="df3bbf25-e38c-4f3d-8764-532f50032436">​</a>
     This Implementation Guide defines three <a href="actors.html">actors</a> involved in the submission of a case report into a case report repository.  These actors engage in the <a href="transactions.html">transactions</a> to submit, transform and store case reports into a case report repository.
   </p>
 
@@ -208,10 +213,10 @@ entity CSV --><polygon filter="url(#f78ickv9cqui2)" style="stroke:#000000;stroke
     This Implementation Guide is broken into the following levels of <a href="http://hl7.org/fhir/uv/cpg/2019Sep/documentation-approach.html">knowledge representation</a>:
     <ul>
       <li><a href="index.html">Level I: Narrative</a> Contains references to the guidance, guidlines, policies and recommemndations underpinning this Implementation Guide</li>
-      <li><a name="96a0b7d8-07c8-4b5b-b144-59c5d3efc546">​</a><a href="requirements.html">Level II: Business Requirements</a> Contains the requirements for this Implementation Guide including the defintition of key concepts, user personas, use cases and workflows.
+      <li><a name="80963c04-d80b-4603-a354-165710f9000f">​</a><a href="requirements.html">Level II: Business Requirements</a> Contains the requirements for this Implementation Guide including the defintition of key concepts, user personas, use cases and workflows.
       </li>
-      <li><a name="30dc9e6a-1595-4a9f-9344-8d3a3363d1a1">​</a><a href="data_exchange.html">Level III: Data Models and Exchange</a> Contains the data models and data exchange protocols defined in this Implementation Guide.</li>
-      <li><a name="046b311a-d0f3-484d-92ab-6c5dd1bf0b01">​</a><a href="deployment.html">Level IV - ε: Deployment Guidance </a>
+      <li><a name="e55a733c-8375-4fbe-a76e-c41dec9277da">​</a><a href="data_exchange.html">Level III: Data Models and Exchange</a> Contains the data models and data exchange protocols defined in this Implementation Guide.</li>
+      <li><a name="83accb0b-56d6-4b4a-98e3-21c1a4513974">​</a><a href="deployment.html">Level IV - ε: Deployment Guidance </a>
       Contains <a href="instant_openhie.html">Instant OpenHIE</a> Technical Specifications relevant to this Implementation Guide and supporting guidance for adaptation in local environments.</li>
     </ul>
   </p>  
@@ -249,11 +254,14 @@ entity CSV --><polygon filter="url(#f78ickv9cqui2)" style="stroke:#000000;stroke
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
+           
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 19, 2021 17:21+0000">2021-06-19</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 1, 2021 17:21+0000">2021-08-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

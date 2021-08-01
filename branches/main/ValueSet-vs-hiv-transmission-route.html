@@ -22,6 +22,13 @@
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.39"}
-    h3,h4,h5,h6{--heading-prefix:"6.39"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.47"}
+    h3,h4,h5,h6{--heading-prefix:"6.47"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -68,7 +75,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">HIV Case-reporting for Vietnam</span><br/>0.1.0-test - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">HIV Case-reporting for Vietnam - candidate draft</span><br/>0.1.0-test - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -131,12 +138,12 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
-
+    
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>HIV Transmission Route</b></li>
-
+          
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -148,7 +155,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HIV Case-reporting for Vietnam - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HIV Case-reporting for Vietnam - candidate draft - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -192,7 +199,7 @@
  <tr><td>Version:</td><td>0.1.0-test</td></tr>
  <tr><td>Name:</td><td>VSHIVTransmissionRoute</td></tr>
  <tr><td>Title:</td><td>HIV Transmission Route</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-06-19T17:21:10+00:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-08-01T17:21:48+00:00</td></tr>
  <tr><td>Definition:</td><td><p>Valueset - Route of HIV transmission</p>
 </td></tr>
  <tr><td>Publisher:</td><td>OpenHIE</td></tr>
@@ -206,7 +213,7 @@
   
 <ul>
  <li><a href="StructureDefinition-hiv-transmission-route.html">HIV Transmission route</a></li>
- <li><a href="Questionnaire-hiv-case-report-questionnaire.html">HIVCaseReportForm</a></li>
+ <li><a href="Questionnaire-hiv-case-report-questionnaire.html">hiv_case_report_form</a></li>
 </ul>
 
 
@@ -225,7 +232,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 9 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-cs-hiv-transmission-route.html">HIV Transmission Route v0.1.0-test (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-cs-hiv-transmission-route.html"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-transmission-route</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-312425004"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-312425004">312425004</a></td><td>Lây qua đường máu</td><td>Blood</td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-226034001"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-226034001">226034001</a></td><td>Lây qua đường tiêm chích ma túy</td><td>Drug injection</td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-250373003"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-250373003">250373003</a></td><td>Truyền máu</td><td>Blood transfusion finding</td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-53348004"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-53348004">53348004</a></td><td>Tai nạn nghề nghiệp</td><td>Accidental </td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-417564009"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-417564009">417564009</a></td><td>Lây qua đường tình dục</td><td>Sexual Transmission</td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-38628009"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-38628009">38628009</a></td><td>Tình dục đồng giới</td><td>Homosexual (finding)</td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-20430005"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-20430005">20430005</a></td><td>Tình dục khác giới</td><td>Heterosexual (finding)</td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-438998000"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-438998000">438998000</a></td><td>Mẹ truyền sang con</td><td>Mother to Child Transmission</td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-69910005"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-69910005">69910005</a></td><td>Không rõ</td><td>Unidentified</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 9 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-cs-hiv-transmission-route.html">HIV Transmission Route v0.1.0-test (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-cs-hiv-transmission-route.html"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-transmission-route</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-312425004"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-312425004">312425004</a></td><td>Blood</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-226034001"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-226034001">226034001</a></td><td>Drug injection</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-250373003"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-250373003">250373003</a></td><td>Blood transfusion</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-53348004"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-53348004">53348004</a></td><td>Occupational accident </td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-417564009"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-417564009">417564009</a></td><td>Sexual Transmission</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-38628009"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-38628009">38628009</a></td><td>Homosexual</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-20430005"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-20430005">20430005</a></td><td>Heterosexual</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-438998000"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-438998000">438998000</a></td><td>Mother to Child Transmission</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-transmission-route-69910005"> </a><a href="CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-69910005">69910005</a></td><td>Unidentified</td><td/></tr></table></div>
 
   <hr/>
   <p>
@@ -282,11 +289,14 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
+
+           
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 19, 2021 17:21+0000">2021-06-19</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 1, 2021 17:21+0000">2021-08-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

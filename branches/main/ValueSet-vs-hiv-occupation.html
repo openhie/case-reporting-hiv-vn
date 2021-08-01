@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.VN.CASE-REPORTING.HIV\ - FHIR v4.0.1</title>
+    <title>OPENHIE.VN.CASE-REPORTING.HIV\Occupation Value Set  - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -22,6 +22,13 @@
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.33"}
-    h3,h4,h5,h6{--heading-prefix:"6.33"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.38"}
+    h3,h4,h5,h6{--heading-prefix:"6.38"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -68,7 +75,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">HIV Case-reporting for Vietnam</span><br/>0.1.0-test - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">HIV Case-reporting for Vietnam - candidate draft</span><br/>0.1.0-test - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -131,12 +138,12 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
-
+    
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b></b></li>
-
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Occupation Value Set </b></li>
+          
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -148,7 +155,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HIV Case-reporting for Vietnam - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HIV Case-reporting for Vietnam - candidate draft - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -182,7 +189,7 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: </h2>
+  <h2 id="root">ValueSet: Occupation Value Set </h2>
   <p>
     <b>Summary</b>
   </p>
@@ -190,8 +197,11 @@
 <tbody>
 <tr><td>Defining URL:</td><td>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-occupation</td></tr>
  <tr><td>Version:</td><td>0.1.0-test</td></tr>
- <tr><td>Name:</td><td>HIVOccupationCodes</td></tr>
- <tr><td>Status:</td><td>Draft as of 2021-06-19T17:21:10+00:00</td></tr>
+ <tr><td>Name:</td><td>VSOccupation</td></tr>
+ <tr><td>Title:</td><td>Occupation Value Set </td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-08-01T17:21:48+00:00</td></tr>
+ <tr><td>Definition:</td><td><p>ValueSet - Occupation</p>
+</td></tr>
  <tr><td>Publisher:</td><td>OpenHIE</td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-vs-hiv-occupation.xml.html">XML</a> / <a href="ValueSet-vs-hiv-occupation.json.html">JSON</a> / <a href="ValueSet-vs-hiv-occupation.ttl.html">Turtle</a></td></tr>
 </tbody></table>
@@ -202,7 +212,7 @@
   </p>
   
 <ul>
- <li><a href="Questionnaire-hiv-case-report-questionnaire.html">HIVCaseReportForm</a></li>
+ <li><a href="Questionnaire-hiv-case-report-questionnaire.html">hiv_case_report_form</a></li>
 </ul>
 
 
@@ -215,13 +225,13 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106538001">106538001</a></td><td>Car driver</td><td>Lái xe</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106400003">106400003</a></td><td>Fishermen</td><td>Ngư dân</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106388008">106388008</a></td><td>Farmer</td><td>Người làm nông nghiệp</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106541005">106541005</a></td><td>Social worker general</td><td>Công nhân</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=310892005">310892005</a></td><td>Army officer</td><td>Cán bộ - chiến sỹ thuộc lực lượng vũ trang nhân dân</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=413327003">413327003</a></td><td>Student full time education</td><td>Học sinh-sinh viên</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73438004">73438004</a></td><td>Out of work</td><td>Thất nghiệp</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=184119001">184119001</a></td><td>Patient occupation unknown</td><td>Nghề khác</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449344001">449344001</a></td><td>Sex worker</td><td>Nghề bán dâm</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159799000">159799000</a></td><td>Female prostitute</td><td>Nữ bán dâm</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>vi</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159800001">159800001</a></td><td>Male prostitute</td><td>Nam bán dâm</td></tr></table></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-hiv-occupation.html"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-occupation</code></a></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 11 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html"><code>http://snomed.info/sct</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-106538001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106538001">106538001</a></td><td>Lái xe</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-106400003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106400003">106400003</a></td><td>Ngư dân</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-106388008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106388008">106388008</a></td><td>Người làm nông nghiệp</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-106541005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106541005">106541005</a></td><td>Công nhân</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-310892005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=310892005">310892005</a></td><td>Cán bộ - chiến sỹ thuộc lực lượng vũ trang nhân dân</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-413327003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=413327003">413327003</a></td><td>Học sinh-sinh viên</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-73438004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73438004">73438004</a></td><td>Thất nghiệp</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-184119001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=184119001">184119001</a></td><td>Nghề khác</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-449344001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449344001">449344001</a></td><td>Nghề bán dâm</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-159799000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159799000">159799000</a></td><td>Nữ bán dâm</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-159800001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159800001">159800001</a></td><td>Nam bán dâm</td><td/></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 10 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-cs-hiv-occupation.html">CodeSystem Occupation v0.1.0-test (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-cs-hiv-occupation.html"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-occupation</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-occupation-army"> </a><a href="CodeSystem-cs-hiv-occupation.html#cs-hiv-occupation-army">army</a></td><td>Army personnel</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-occupation-gov-empl"> </a><a href="CodeSystem-cs-hiv-occupation.html#cs-hiv-occupation-gov_empl">gov_empl</a></td><td>Government employee</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-occupation-worker"> </a><a href="CodeSystem-cs-hiv-occupation.html#cs-hiv-occupation-worker">worker</a></td><td>Worker</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-occupation-student"> </a><a href="CodeSystem-cs-hiv-occupation.html#cs-hiv-occupation-student">student</a></td><td>Pupil/Student</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-occupation-free-lancer"> </a><a href="CodeSystem-cs-hiv-occupation.html#cs-hiv-occupation-free_lancer">free_lancer</a></td><td>Free lancer</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-occupation-unemployment"> </a><a href="CodeSystem-cs-hiv-occupation.html#cs-hiv-occupation-unemployment">unemployment</a></td><td>Unemployment</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-occupation-child"> </a><a href="CodeSystem-cs-hiv-occupation.html#cs-hiv-occupation-child">child</a></td><td>Children</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-occupation-prisoner"> </a><a href="CodeSystem-cs-hiv-occupation.html#cs-hiv-occupation-prisoner">prisoner</a></td><td>Prisoner</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-occupation-famer"> </a><a href="CodeSystem-cs-hiv-occupation.html#cs-hiv-occupation-famer">famer</a></td><td>Farmer</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-occupation-other"> </a><a href="CodeSystem-cs-hiv-occupation.html#cs-hiv-occupation-other">other</a></td><td>Other</td><td/></tr></table></div>
 
   <hr/>
   <p>
@@ -278,11 +288,14 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
+
+           
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 19, 2021 17:21+0000">2021-06-19</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 1, 2021 17:21+0000">2021-08-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

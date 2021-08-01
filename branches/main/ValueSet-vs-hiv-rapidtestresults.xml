@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="vs-hiv-rapidtestresults"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://details.loinc.org/LOINC/LA15255-5.html">LA15255-5</a></td><td>Có phản ứng</td></tr><tr><td><a href="http://details.loinc.org/LOINC/LA15256-3.html">LA15256-3</a></td><td>Khong phản ứng</td></tr><tr><td><a href="http://details.loinc.org/LOINC/LA11884-6.html">LA11884-6</a></td><td>Chưa xác định</td></tr><tr><td><a href="http://details.loinc.org/LOINC/LA15841-2.html">LA15841-2</a></td><td>Không hợp lệ</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-hiv-rapidtestresults.html"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-rapidtestresults</code></a></li></ul></div>
   </text>
   <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-rapidtestresults"/>
   <version value="0.1.0-test"/>
-  <name value="HIVRapidTestResults"/>
-  <title value="HIVRapidTestResults"/>
-  <status value="draft"/>
-  <date value="2021-06-19T17:21:10+00:00"/>
+  <name value="VSHIVRapidTestResults"/>
+  <title value="Valueset Rapid test results"/>
+  <status value="active"/>
+  <date value="2021-08-01T17:21:48+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -18,7 +18,7 @@
       <value value="http://ohie.org"/>
     </telecom>
   </contact>
-  <description value="HIV rapid test result codes"/>
+  <description value="Valueset - Recency rapid test results "/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -27,23 +27,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://loinc.org"/>
-      <concept>
-        <code value="LA15255-5"/>
-        <display value="C&#xF3; ph&#x1EA3;n &#x1EE9;ng"/>
-      </concept>
-      <concept>
-        <code value="LA15256-3"/>
-        <display value="Khong ph&#x1EA3;n &#x1EE9;ng"/>
-      </concept>
-      <concept>
-        <code value="LA11884-6"/>
-        <display value="Ch&#x1B0;a x&#xE1;c &#x111;&#x1ECB;nh"/>
-      </concept>
-      <concept>
-        <code value="LA15841-2"/>
-        <display value="Kh&#xF4;ng h&#x1EE3;p l&#x1EC7;"/>
-      </concept>
+      <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-rapidtestresults"/>
     </include>
   </compose>
 </ValueSet>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-vn-whostage"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-whostage defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">stage1<a name="cs-vn-whostage-stage1"> </a></td><td>WHO Stage 1</td></tr><tr><td style="white-space:nowrap">stage2<a name="cs-vn-whostage-stage2"> </a></td><td>WHO Stage 2</td></tr><tr><td style="white-space:nowrap">stage3<a name="cs-vn-whostage-stage3"> </a></td><td>WHO Stage 3</td></tr><tr><td style="white-space:nowrap">stage4<a name="cs-vn-whostage-stage4"> </a></td><td>WHO Stage 4</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-whostage"/>
+  <version value="0.1.0-test"/>
+  <name value="CSWhoStage"/>
+  <title value="CodeSystem WHO stage "/>
+  <status value="active"/>
+  <date value="2021-08-01T17:21:48+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - WHO Stage"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="stage1"/>
+    <display value="WHO Stage 1"/>
+  </concept>
+  <concept>
+    <code value="stage2"/>
+    <display value="WHO Stage 2"/>
+  </concept>
+  <concept>
+    <code value="stage3"/>
+    <display value="WHO Stage 3"/>
+  </concept>
+  <concept>
+    <code value="stage4"/>
+    <display value="WHO Stage 4"/>
+  </concept>
+</CodeSystem>
