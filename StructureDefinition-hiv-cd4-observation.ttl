@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "CD4Observation"];
   fhir:StructureDefinition.title [ fhir:value "CD4 Observation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-15T19:22:19+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-01T17:21:48+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
        fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "This profile allows the exchange of a patient's CD4 test and results"];
+  fhir:StructureDefinition.description [ fhir:value "This profile allows the exchange of a patient's CD$ test and results"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

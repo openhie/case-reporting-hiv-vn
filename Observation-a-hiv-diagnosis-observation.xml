@@ -6,7 +6,7 @@
     <profile value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-diagnosis-observation"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 165816005}">HTLV-3 antibody positive</span></p><p><b>subject</b>: <a href="Patient-test-hiv-patient.html">Generated Summary: id: ARV001, id: P0000012311, id: 011100101, id: NN-1232717432, id: 01112303122; Nguyan Van A; birthDate: 1970-01-01</a></p><p><b>effective</b>: Apr 5, 2013, 8:30:10 AM</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 165816005}">HTLV-3 antibody positive</span></p><p><b>subject</b>: <a href="Patient-test-hiv-patient.html">Generated Summary: id: ARV001, id: P0000012311, id: 011100101, id: NN-1232717432, id: 01112303122; Nguyan Van A; birthDate: 1970-01-01</a></p><p><b>effective</b>: Apr 5, 2013, 8:30:10 AM</p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 399445004}">Specimen collection date (observable entity)</span></td><td>Feb 5, 2013, 8:30:10 AM</td></tr></table></div>
   </text>
   <status value="final"/>
   <code>
@@ -19,4 +19,13 @@
     <reference value="Patient/test-hiv-patient"/>
   </subject>
   <effectiveDateTime value="2013-04-05T15:30:10+07:00"/>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="399445004"/>
+      </coding>
+    </code>
+    <valueDateTime value="2013-02-05T15:30:10+07:00"/>
+  </component>
 </Observation>
