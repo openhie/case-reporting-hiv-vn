@@ -58,7 +58,7 @@ Usage: #definition
 //* extension[+].url = $targetStructureMap
 //* extension[=].valueCanonical = Canonical(HIVCaseReportMap)
 
-* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext"
+//* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext"
 
 
 
@@ -71,19 +71,26 @@ Usage: #definition
 
 //* contained[+] = HIVRiskPopulation
 //* contained[+] = HIVRiskBehavior
-* contained[+] = cs-pregnancy-outcome
-* contained[+] = BirthDefects
-* contained[+] = ChildHIVStatus
-//* contained[+] = HIVTransmissionRoute
+//* contained[+] = vs-hiv-pregnancy-outcome
+//* contained[+] = vs-hiv-birthdefects
+//* contained[+] = vs-hiv-childhivstatus
 
 
-* url = "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire"
+* url = "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire"
 
 
 
 
 * insert Question(,title,HIV case report,display,false)
+* item[+].linkId = "title"
+* item[=].text = "HIV case report"
+* item[=].type = #display
 * insert Question(,instructions,Reporting instructions: Monthly - applicable to each patient during the reporting period,display,false)
+* item[+].linkId = "instructions"
+* item[=].text = "Reporting instructions: Monthly - applicable to each patient during the reporting period"
+* item[=].type = #display
+
+
 * insert Question(,facility_id,Facility ID,open-choice,false)
 * insert Question(,report_date,Date of report,date,false)
 
@@ -360,16 +367,16 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-pregnancy-outcome)
 
 * insert Question(item[=].item[=].item[=].,delivery_date,Delivery date,date,true)
-* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancy_outcome_code"
+* item[=].item[=].item[=].item[=].enableWhen.question = "outcome_code"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 * insert Question(item[=].item[=].item[=].,gestational_age_at_delivery,Gestational age at delivery (weeks\),integer,true)
-* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* item[=].item[=].item[=].item[=].enableWhen.question = "outcome_code"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 
 * insert Question(item[=].item[=].item[=].,child,Births,group,true)
-* item[=].item[=].item[=].item[=].enableWhen.question = "pregnancyOutcomeCode"
+* item[=].item[=].item[=].item[=].enableWhen.question = "outcome_code"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 
@@ -381,12 +388,12 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-birthdefects)
 
 * insert Question(item[=].item[=].item[=].item[=].,hiv_diagnosis_date,Child HIV diagnosis date,date,false)
-* item[=].item[=].item[=].item[=].item[=].enableWhen.question = "child.hiv_status"
+* item[=].item[=].item[=].item[=].item[=].enableWhen.question = "hiv_status"
 * item[=].item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
 
 * insert Question(item[=].item[=].item[=].item[=].,child_arv_start_date,Child ARV start date,date,false)
-* item[=].item[=].item[=].item[=].item[=].enableWhen.question = "child.hiv_status"
+* item[=].item[=].item[=].item[=].item[=].enableWhen.question = "hiv_status"
 * item[=].item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].item[=].enableWhen.answerCoding = #1
 
