@@ -1,12 +1,5 @@
 [
   {
-    "id": "hiv-case-report-questionnaire",
-    "type": "Questionnaire",
-    "url": "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire",
-    "version": "0.1.0-test",
-    "name": "hiv_case_report_form"
-  },
-  {
     "id": "vn-hiv-csv-import-questionnaire",
     "type": "Questionnaire",
     "url": "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire",
@@ -229,6 +222,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/NamingSystem/NationalPatientIdentifier9Digit",
     "version": "0.1.0-test",
     "name": "NationalPatientIdentifier9Digit"
+  },
+  {
+    "id": "hiv-case-report-questionnaire",
+    "type": "Questionnaire",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire",
+    "version": "0.1.0-test",
+    "name": "hiv_case_report_form"
   },
   {
     "id": "aids-diagnosis-observation",
