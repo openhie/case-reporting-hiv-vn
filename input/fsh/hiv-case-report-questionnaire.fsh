@@ -81,11 +81,11 @@ Usage: #definition
 
 
 
-* insert Question(,title,HIV case report,display,false)
+//* insert Question(,title,HIV case report,display,false)
 * item[+].linkId = "title"
 * item[=].text = "HIV case report"
 * item[=].type = #display
-* insert Question(,instructions,Reporting instructions: Monthly - applicable to each patient during the reporting period,display,false)
+//* insert Question(,instructions,Reporting instructions: Monthly - applicable to each patient during the reporting period,display,false)
 * item[+].linkId = "instructions"
 * item[=].text = "Reporting instructions: Monthly - applicable to each patient during the reporting period"
 * item[=].type = #display
