@@ -1,11 +1,11 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 39, warn = 130, info = 48
+err = 38, warn = 129, info = 48
 IG Publisher Version: 1.1.77
-Generated Tue Aug 03 06:42:23 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Tue Aug 03 06:53:56 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
- Build Errors : 35 / 22 / 1
+ Build Errors : 34 / 21 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-a-treatment-record : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-cs-arv-treatment-status : 0 / 1 / 4
@@ -133,8 +133,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/a-treatment-record.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/NationalPatientIdentifier9Digit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource NamingSystem/NationalPatientIdentifier9Digit.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/hiv-case-report-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/hiv-case-report-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-treatment-patient-category.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-patient-category.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-recency-result.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.

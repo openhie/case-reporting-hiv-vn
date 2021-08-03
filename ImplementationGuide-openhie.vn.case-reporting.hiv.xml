@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-03T06:41:28+00:00"/>
+  <date value="2021-08-03T06:53:00+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -1069,6 +1069,8 @@
       <reference>
         <reference value="Questionnaire/hiv-case-report-questionnaire"/>
       </reference>
+      <name value="HIV Case Report Form"/>
+      <description value="HIV Case Report Form"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
