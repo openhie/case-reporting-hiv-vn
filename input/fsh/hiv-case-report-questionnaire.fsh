@@ -60,6 +60,8 @@ Usage: #definition
 
 //* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext"
 
+* title = "HIV Case Report Form"
+* description = "HIV Case Report Form"
 
 
 * name = "hiv_case_report_form"
