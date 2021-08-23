@@ -22,6 +22,11 @@
 <link rel="stylesheet" href="assets/css/openhie.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+  <!-- Questionnaire: -->
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
+
+
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -93,16 +98,32 @@
 	<li>
 		<a href="toc.html">Table of Contents</a>
 	</li>
-  <!-- <li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
-		</a>
 
+
+	<li class="dropdown"><a name="24955d2f-1f48-4857-b5d6-62f7cb0e63ee">​</a>
+		<a data-toggle="dropdown" href="requirements.html" class="dropdown-toggle">Business Input<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+		  <li><a href="concepts.html">Key Concepts</a></li>
+		  <li><a name="c7fd8231-b526-4bec-99e1-4685ae49cabc">​</a><a href="functional.html">Functional Requirements</a></li>    
+		  <li><a name="484ac367-5b5f-4b19-8557-df1145653e91">​</a><a href="usecases.html">Use Cases</a></li>
+		  <li><a name="0bcca5ba-fb94-49d6-b35e-0e18595f39e2">​</a><a href="dictionary.html">Data Dictionary</a></li>
+
+		</ul>
 	</li>
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
-		</a>
 
-	</li> -->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="data_exchange.html" class="dropdown-toggle">Data Models and Exchange<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+		  <li><a href="dependencies.html">Dependencies</a></li>
+		  <li><a href="actors.html">Actors</a></li>
+		  <li><a href="transactions.html">Transactions</a></li>
+		  <li><a name="68a4c636-89c4-46b9-bf84-c5c60d328a6e">​</a><a href="workflows.html">Workflows</a></li>
+		  <li><a name="0261f34e-3b78-4264-b6a3-49fab04d0a50">​</a><a href="content_profiles.html">Content Profiles</a></li>
+		</ul>
+	</li>
+
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
 		</a>
@@ -113,9 +134,11 @@
 		</ul>
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Deployment<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-			<li><a href="downloads.html">Downloads</a></li>
+		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
+		  <li><a href="testing.html">Testing</a></li>
+		  <li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -126,12 +149,12 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
-
+    
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           
-
+          
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -160,14 +183,14 @@
 
 
   
-    <li><a name="4fba38a8-8428-486c-b6b6-4c1e4324828f">​</a>
+    <li><a name="9c798e20-db30-464b-a58c-07bd425fd0f0">​</a>
       <a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html">XML</a>
     </li>
   
 
 
   
-    <li><a name="8318c4cb-c366-4e72-9e23-86f00bbb2e1a">​</a>
+    <li><a name="195e8522-5dd6-4c1b-97c9-b391d44d4887">​</a>
       <a href="ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html">JSON</a>
     </li>
   
@@ -224,11 +247,14 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
+           
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 15, 2021 19:22+0000">2021-07-15</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 23, 2021 21:28+0000">2021-08-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

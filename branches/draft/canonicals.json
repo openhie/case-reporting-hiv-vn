@@ -1,12 +1,5 @@
 [
   {
-    "id": "hiv-case-report-questionnaire",
-    "type": "Questionnaire",
-    "url": "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire",
-    "version": "0.1.0-test",
-    "name": "hiv_case_report_form"
-  },
-  {
     "id": "vn-hiv-csv-import-questionnaire",
     "type": "Questionnaire",
     "url": "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire",
@@ -137,14 +130,14 @@
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-outcome",
     "version": "0.1.0-test",
-    "name": "HIV Pregnancy Outcome"
+    "name": "HIVPregnancyOutcome"
   },
   {
     "id": "cs-recency-result",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result",
     "version": "0.1.0-test",
-    "name": "Recency RITA result"
+    "name": "RecencyRITAresult"
   },
   {
     "id": "cs-regimen-change-reason",
@@ -158,14 +151,14 @@
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-patient-category",
     "version": "0.1.0-test",
-    "name": "Category of the patient"
+    "name": "PatientCategory"
   },
   {
     "id": "cs-treatment-status",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-status",
     "version": "0.1.0-test",
-    "name": "Status of treatment process"
+    "name": "StatusOfTreatmentProcess"
   },
   {
     "id": "cs-viralload-group",
@@ -229,6 +222,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/NamingSystem/NationalPatientIdentifier9Digit",
     "version": "0.1.0-test",
     "name": "NationalPatientIdentifier9Digit"
+  },
+  {
+    "id": "hiv-case-report-questionnaire",
+    "type": "Questionnaire",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/hiv-case-report-questionnaire",
+    "version": "0.1.0-test",
+    "name": "hiv_case_report_form"
   },
   {
     "id": "HIVChildPatient",
@@ -532,7 +532,7 @@
     "name": "VSHIVRiskBehavior"
   },
   {
-    "id": "vs-hiv-sympthoms",
+    "id": "vs-hiv-symptoms",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-symptoms",
     "version": "0.1.0-test",

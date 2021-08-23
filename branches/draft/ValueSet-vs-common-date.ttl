@@ -15,8 +15,9 @@
   fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-common-date"];
   fhir:ValueSet.version [ fhir:value "0.1.0-test"];
   fhir:ValueSet.name [ fhir:value "VSCommonDate"];
+  fhir:ValueSet.title [ fhir:value "Common event date"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-07-15T19:22:19+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-08-23T21:28:34+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "OpenHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
