@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-03T06:53:00+00:00"/>
+  <date value="2021-08-23T21:28:01+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -242,11 +242,22 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hcv-diagnosis-observation"/>
+      </reference>
+      <name value="HIV Diagnosis result"/>
+      <description value="This profile allows the exchange of a statement of a patient&#39;s hiv diagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
         <reference value="CodeSystem/cs-hiv-common"/>
       </reference>
+      <name value="Common code for CS HIV"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -363,6 +374,7 @@
       <reference>
         <reference value="CodeSystem/cs-arv-treatment-status"/>
       </reference>
+      <name value="ARV Treatment Status"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -486,6 +498,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HIVIndexRelatedPerson"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -546,6 +566,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProblemsObservation"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -556,21 +584,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-hiv-sympthoms"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/hiv-cd4-observation"/>
       </reference>
       <name value="CD4 Observation"/>
-      <description value="This profile allows the exchange of a patient&#39;s CD$ test and results"/>
+      <description value="This profile allows the exchange of a patient&#39;s CD4 test and results"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -629,6 +649,7 @@
       <reference>
         <reference value="CodeSystem/cs-treatment-status"/>
       </reference>
+      <name value="Status of treatment process"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -672,6 +693,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-symptoms"/>
+      </reference>
+      <name value="HIV Symptoms"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HIVChildPatient"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -687,6 +725,7 @@
       <reference>
         <reference value="ValueSet/vs-common-date"/>
       </reference>
+      <name value="Common event date"/>
       <description value="Define common event date"/>
     </resource>
     <resource>
@@ -846,6 +885,7 @@
       <reference>
         <reference value="CodeSystem/cs-gender"/>
       </reference>
+      <name value="Gender"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -913,6 +953,7 @@
       <reference>
         <reference value="CodeSystem/cs-pregnancy-outcome"/>
       </reference>
+      <name value="HIV Pregnancy Outcome"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -936,6 +977,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/WeightObservation"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CarePlan"/>
       </extension>
       <reference>
@@ -943,6 +992,16 @@
       </reference>
       <name value="Example CarePlan - a-treatment-record"/>
       <exampleCanonical value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-process"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/HIVRelationshipTypesVS"/>
+      </reference>
+      <name value="Relationship types"/>
+      <description value="Types of relationships between patients and related persons."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -972,7 +1031,7 @@
         <reference value="StructureDefinition/hiv-diagnosis-observation"/>
       </reference>
       <name value="HIV Diagnosis result"/>
-      <description value="This profile allows the exchange of a patient&#39;s hiv recency test"/>
+      <description value="This profile allows the exchange of a statement of a patient&#39;s hiv diagnosis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1089,6 +1148,7 @@
       <reference>
         <reference value="CodeSystem/cs-treatment-patient-category"/>
       </reference>
+      <name value="Category of the patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1127,6 +1187,7 @@
       <reference>
         <reference value="CodeSystem/cs-recency-result"/>
       </reference>
+      <name value="Recency RITA result"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1164,23 +1225,78 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="HIV Case Reporting - Home Page"/>
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="references.html"/>
-        <title value="References"/>
-        <generation value="html"/>
+        <nameUrl value="business_requirements.html"/>
+        <title value="Business Requirements"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="concepts.html"/>
+          <title value="Concepts"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="use_cases.html"/>
+          <title value="Use Cases"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="references.html"/>
+          <title value="References"/>
+          <generation value="html"/>
+        </page>
       </page>
       <page>
-        <nameUrl value="actors.html"/>
-        <title value="Actors"/>
-        <generation value="html"/>
+        <nameUrl value="data_exchange.html"/>
+        <title value="Data Models and Exchange"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="dependencies.html"/>
+          <title value="Dependencies"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="actors.html"/>
+          <title value="Actors"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="functionalities.html"/>
+          <title value="Functionalities"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="patient_matching.html"/>
+            <title value="Business and Functional Requirements"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
+        <page>
+          <nameUrl value="transactions.html"/>
+          <title value="Transactions"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Useful Downloads"/>
-        <generation value="html"/>
+        <nameUrl value="deployment.html"/>
+        <title value="Deployment"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="security_privacy.html"/>
+          <title value="Security and Privacy"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="testing.html"/>
+          <title value="Testing"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="downloads.html"/>
+          <title value="Useful Downloads"/>
+          <generation value="html"/>
+        </page>
       </page>
       <page>
         <nameUrl value="changes.html"/>
