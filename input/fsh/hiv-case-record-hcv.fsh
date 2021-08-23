@@ -16,4 +16,4 @@ Description:    """
 * performer ^slicing.description = "Slice based on the type or profile of resource"
 * performer contains
     Organization 0..1 MS
-* performer[Organization] only Reference(Organization)
+* performer[Organization] only Reference(Organization) 
