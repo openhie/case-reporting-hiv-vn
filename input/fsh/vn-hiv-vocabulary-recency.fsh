@@ -4,7 +4,8 @@ InstanceOf: CodeSystem
 Title: "Recency result"
 Usage: #example
 Description:  "CodeSystem - Recency result"
-* name = "Recency RITA result"
+* name = "RecencyRITAresult"
+* title = "Recency RITA result"
 * status = #draft
 * content = #complete
 * insert Code(newInfection, New Infection, Mới nhiễm )

@@ -20,7 +20,7 @@ Description:    "Pregnancy status."
 
 * component contains
     gest_age 0..1 MS
-    
+
 * component[gest_age].code = #76516-4	
 * component[gest_age].value[x] only Quantity	
 * component[gest_age].valueQuantity.value MS // 6.	
@@ -44,4 +44,5 @@ ValueSet: HIVRelationshipTypesVS
 Title: "Relationship types"
 Description:  "Types of relationships between patients and related persons."
 * $RoleCode#CHILD "Child"
+
 // other values will be for index

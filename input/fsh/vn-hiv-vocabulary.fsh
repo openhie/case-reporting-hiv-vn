@@ -4,6 +4,7 @@ InstanceOf: NamingSystem
 * status = #active
 * kind = #identifier
 * name = "NationalPatientIdentifier9Digit"
+* title = "NationalPatientIdentifier9Digit"
 * date = "2021-01-01"
 * type = http://terminology.hl7.org/CodeSystem/v2-0203#NI
 * jurisdiction = urn:iso:std:iso:3166#VN
@@ -66,6 +67,7 @@ Title: "Gender"
 Usage: #example
 Description:  "CodeSystem - gender"
 * name = "Gender"
+* title = "Gender"
 * status = #draft
 * content = #complete
 * insert CodeDef(male,Male,Client identifies as male,Nam)
@@ -74,12 +76,13 @@ Description:  "CodeSystem - gender"
 * insert CodeDef(unknown,unknown,Gender is unknown,Không rõ)
 
 
-Instance: vs-hiv-sympthoms
+Instance: vs-hiv-symptoms
 InstanceOf: ValueSet
 Description: "Symptoms Value Set"
 Title: "Symptoms Value Set"
 Usage: #example
 * name = "HIVSymptomsCode"
+* title = "HIV Symptoms"
 * status = #draft
 * url = "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-symptoms"
 
