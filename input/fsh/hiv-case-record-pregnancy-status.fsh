@@ -44,4 +44,5 @@ ValueSet: HIVRelationshipTypesVS
 Title: "Relationship types"
 Description:  "Types of relationships between patients and related persons."
 * $RoleCode#CHILD "Child"
+
 // other values will be for index
