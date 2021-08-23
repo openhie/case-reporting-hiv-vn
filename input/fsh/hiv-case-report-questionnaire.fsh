@@ -176,14 +176,14 @@ Usage: #definition
 * insert Question(item[=].item[=].,rapid_test,Rapid test for recent infection,group,false)
 * insert Question(item[=].item[=].item[=].,date_specimen_collected,Date of specimen collection,date,false)
 * insert Question(item[=].item[=].item[=].,place_specimen_collected,Place of specimen collection,open-choice,false)
-* insert Question(item[=].item[=].item[=].,date_test_performed,Date test result performed,date,false)
+* insert Question(item[=].item[=].item[=].,date_test_performed,Date test result validated,date,false)
 * insert Question(item[=].item[=].item[=].,test_result,Rapid test result,choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical (vs-hiv-rapidtestresults)
 
 * insert Question(item[=].item[=].,vl_test,Viral load test specific for recency test,group,false)
 //* insert Question(item[=].item[=].item[=].,vl_test.date_specimen_collection,Date of Specimen Collection for VL test,date,false)
 //* insert Question(item[=].item[=].item[=].,vl_testid_test.place_specimen_collection,Place of Specimen Collection for rapVLid test,string,false)
-* insert Question(item[=].item[=].item[=].,date_test_performed,Date of VL test performance,date,false)
+* insert Question(item[=].item[=].item[=].,date_test_performed,Date of recency VL test,date,false)
 * insert Question(item[=].item[=].item[=].,test_result,VL test result (copies/mL\),integer,false)
 * insert Question(item[=].item[=].item[=].,test_result_other,Other of viral load test (undetectable\),choice,false)
 * item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#undetectable "undetectable"
@@ -263,7 +263,7 @@ Usage: #definition
 
 * insert Question(item[=].,drug_resistance_test,Drug resistance test,group,true)
 * insert Question(item[=].item[=].,date_specimen_collected,Date of specimen collection,date,false)
-* insert Question(item[=].item[=].,date_test_performed,Date test results performed,date,false)
+* insert Question(item[=].item[=].,date_test_performed,Date test results validated,date,false)
 * insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection,open-choice,false)
 * insert Question(item[=].item[=].,test_result,Drug resistance test result,choice,false)
 
