@@ -3,14 +3,14 @@
   "id": "cs-hiv-rapidtestresults",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-rapidtestresults defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">recent<a name=\"cs-hiv-rapidtestresults-recent\"> </a></td><td>Recent</td></tr><tr><td style=\"white-space:nowrap\">long_term<a name=\"cs-hiv-rapidtestresults-long_term\"> </a></td><td>Long term</td></tr><tr><td style=\"white-space:nowrap\">negative<a name=\"cs-hiv-rapidtestresults-negative\"> </a></td><td>Negative</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-rapidtestresults defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">recent<a name=\"cs-hiv-rapidtestresults-recent\"> </a></td><td>Recent</td></tr><tr><td style=\"white-space:nowrap\">long_term<a name=\"cs-hiv-rapidtestresults-long_term\"> </a></td><td>Long term</td></tr><tr><td style=\"white-space:nowrap\">negative<a name=\"cs-hiv-rapidtestresults-negative\"> </a></td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\">inconclusive<a name=\"cs-hiv-rapidtestresults-inconclusive\"> </a></td><td>Inconclusive</td></tr></table></div>"
   },
   "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-rapidtestresults",
   "version": "0.1.0-test",
   "name": "CSHIVRapidTestResults",
   "title": "Codesystem Rapid test results",
   "status": "active",
-  "date": "2021-08-23T21:38:17+00:00",
+  "date": "2021-09-12T07:19:23+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -34,7 +34,7 @@
     }
   ],
   "content": "complete",
-  "count": 3,
+  "count": 4,
   "concept": [
     {
       "code": "recent",
@@ -47,6 +47,10 @@
     {
       "code": "negative",
       "display": "Negative"
+    },
+    {
+      "code": "inconclusive",
+      "display": "Inconclusive"
     }
   ]
 }

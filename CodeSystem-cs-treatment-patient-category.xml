@@ -7,10 +7,9 @@
   </text>
   <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-patient-category"/>
   <version value="0.1.0-test"/>
-  <name value="PatientCategory"/>
-  <title value="Category of the patient"/>
+  <name value="Category of the patient"/>
   <status value="draft"/>
-  <date value="2021-08-23T21:38:17+00:00"/>
+  <date value="2021-09-12T07:19:23+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -30,7 +29,7 @@
     <display value="Register"/>
     <designation>
       <language value="vi-VN"/>
-      <value value="&#x110;&#x103;ng k&#xFD; m&#x1EDB;i"/>
+      <value value="Đăng ký mới"/>
     </designation>
   </concept>
   <concept>
@@ -38,7 +37,7 @@
     <display value="Re-Register"/>
     <designation>
       <language value="vi-VN"/>
-      <value value="&#x110;&#x103;ng k&#xFD; l&#x1EA1;i"/>
+      <value value="Đăng ký lại"/>
     </designation>
   </concept>
   <concept>
@@ -46,7 +45,7 @@
     <display value="Transfer"/>
     <designation>
       <language value="vi-VN"/>
-      <value value="Chuy&#x1EC3;n &#x111;&#x1EBF;n"/>
+      <value value="Chuyển đến"/>
     </designation>
   </concept>
 </CodeSystem>
