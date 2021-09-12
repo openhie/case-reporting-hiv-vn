@@ -47,7 +47,7 @@ Usage: #inline
 * name = "BirthDefects"
 * status = #draft
 */
-
+/*
 Instance: ChildHIVStatus
 InstanceOf: ValueSet
 Description: "Child HIV Status"
@@ -55,7 +55,7 @@ Title: "Child HIV Status"
 Usage: #inline
 * name = "ChildHIVStatus"
 * status = #draft
-
+*/
 
 
 // Add content from here on
