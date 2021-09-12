@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "ef0d4dba-f7b9-4813-867e-d3d408914400",
+  "id" : "499a7565-b03f-4a60-b412-4bcfea5f9eb4",
   "meta" : {
-    "lastUpdated" : "2021-09-12T07:19:23.888+00:00"
+    "lastUpdated" : "2021-09-12T07:37:00.496+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,14 +12,14 @@
       "id" : "vs-hiv-population",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 16 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-hiv-population.html\">Population groups v0.1.0-test (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-hiv-population.html\"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-pwid\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-pwid\">pwid</a></td><td>Injecting drug users</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-msm\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-msm\">msm</a></td><td>Men who have sex with men</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-sw\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-sw\">sw</a></td><td>Sex workers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-client-sw\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-client_sw\">client_sw</a></td><td>Clients of sex worker </td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-partner-plhiv\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-partner_plhiv\">partner_plhiv</a></td><td>Sexual partner of PLHIV</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-tg-women\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-tg_women\">tg_women</a></td><td>Transgender women</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-tg-men\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-tg_men\">tg_men</a></td><td>Transgender men</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-child-woman-hiv\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-child_woman_hiv\">child_woman_hiv</a></td><td>Child of mother who is infected with HIV</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-blood-donor\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-blood-donor\">blood-donor</a></td><td>Blood seller / blood donor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-suspect-hiv\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-suspect_hiv\">suspect_hiv</a></td><td>People suspected for AIDs</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-tb-patient\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-tb_patient\">tb_patient</a></td><td>Tuberculosis patient</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-std-person\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-std_person\">std_person</a></td><td>Persons with STD</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-prisoner\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-prisoner\">prisoner</a></td><td>Prisoner</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-pregnant\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-pregnant\">pregnant</a></td><td>Pregnant women</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-military-recruits\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-military_recruits\">military_recruits</a></td><td>Young recruits for military service</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-other\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-other\">other</a></td><td>Other</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 17 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-hiv-population.html\">Population groups v0.1.0-test (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-hiv-population.html\"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-pwid\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-pwid\">pwid</a></td><td>Injecting drug users</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-msm\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-msm\">msm</a></td><td>Men who have sex with men</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-sw\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-sw\">sw</a></td><td>Sex workers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-client-sw\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-client_sw\">client_sw</a></td><td>Clients of sex worker </td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-partner-plhiv\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-partner_plhiv\">partner_plhiv</a></td><td>Sexual partner of PLHIV</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-tg-women\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-tg_women\">tg_women</a></td><td>Transgender women</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-tg-men\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-tg_men\">tg_men</a></td><td>Transgender men</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-child-woman-hiv\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-child_woman_hiv\">child_woman_hiv</a></td><td>Child of mother who is infected with HIV</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-blood-donor\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-blood-donor\">blood-donor</a></td><td>Blood seller / blood donor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-suspect-hiv\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-suspect_hiv\">suspect_hiv</a></td><td>People suspected for AIDs</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-tb-patient\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-tb_patient\">tb_patient</a></td><td>Tuberculosis patient</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-std-person\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-std_person\">std_person</a></td><td>Persons with STD</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-prisoner\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-prisoner\">prisoner</a></td><td>Prisoner</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-pregnant\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-pregnant\">pregnant</a></td><td>Pregnant women</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-military-recruits\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-military_recruits\">military_recruits</a></td><td>Young recruits for military service</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-partner-high-risk\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-partner_high_risk\">partner_high_risk</a></td><td>Sexual partner of high risk group</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-openhie.vn.case-reporting.hiv-CodeSystem-cs-hiv-population-other\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-other\">other</a></td><td>Other</td><td/></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-population",
       "version" : "0.1.0-test",
       "name" : "VSHIVRiskPopulation",
       "title" : "Risk Population relevant for HIV",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -35,9 +35,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3236e1a9-9aa6-4168-a5b2-dbcfa5ef999f",
-        "timestamp" : "2021-09-12T07:19:46+00:00",
-        "total" : 16,
+        "identifier" : "urn:uuid:ead917cd-af8e-49a8-b281-99efd44b86a1",
+        "timestamp" : "2021-09-12T07:37:20+00:00",
+        "total" : 17,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -123,6 +123,11 @@
         },
         {
           "system" : "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population",
+          "code" : "partner_high_risk",
+          "display" : "Sexual partner of high risk group"
+        },
+        {
+          "system" : "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population",
           "code" : "other",
           "display" : "Other"
         }]
@@ -143,7 +148,7 @@
       "name" : "VSHIVRapidTestResults",
       "title" : "Valueset Rapid test results",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -159,8 +164,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e2d6fc66-78e3-4d54-bc03-4245e1c13599",
-        "timestamp" : "2021-09-12T07:19:49+00:00",
+        "identifier" : "urn:uuid:3192ecf0-d97d-4097-9980-1d2c58934730",
+        "timestamp" : "2021-09-12T07:37:23+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -207,7 +212,7 @@
       "name" : "VSRegimenLine",
       "title" : "ValueSet Vietnam HIV Regimen Line ",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -223,8 +228,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:28ece4fd-4953-4b71-9a31-cc6431977de7",
-        "timestamp" : "2021-09-12T07:19:49+00:00",
+        "identifier" : "urn:uuid:d1bd5d6d-c06a-4d0b-94dd-89055856c02b",
+        "timestamp" : "2021-09-12T07:37:23+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -266,7 +271,7 @@
       "name" : "VSTreatmentCategory",
       "title" : "Category of the treatment",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -282,8 +287,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e6d2aecc-651d-4f0f-968c-9ff034603831",
-        "timestamp" : "2021-09-12T07:19:50+00:00",
+        "identifier" : "urn:uuid:ba7e4276-0e53-4fbd-840b-fd8c8011006f",
+        "timestamp" : "2021-09-12T07:37:24+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -349,7 +354,7 @@
       "name" : "RegimenChangeReason",
       "title" : "Reason for regimen change",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -365,8 +370,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b66361b7-f837-4e85-9bfa-495c0ab902c4",
-        "timestamp" : "2021-09-12T07:19:51+00:00",
+        "identifier" : "urn:uuid:3b1f51a2-4631-4368-8e3a-89f339ae2e6c",
+        "timestamp" : "2021-09-12T07:37:25+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -423,7 +428,7 @@
       "name" : "ARVTreatmentStatus",
       "title" : "Arv treatment Status",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -439,8 +444,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ea2afd6f-dfaf-4ead-9fab-c52843ecfb49",
-        "timestamp" : "2021-09-12T07:19:51+00:00",
+        "identifier" : "urn:uuid:e8245c3f-a714-45e3-ab66-9c0076f29438",
+        "timestamp" : "2021-09-12T07:37:25+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -482,7 +487,7 @@
       "name" : "VSTreatmentStopReason",
       "title" : "Valueset Reason to stop treatment at facility",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -498,8 +503,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:684dc841-a6ba-40dd-8a34-8ad3e185d544",
-        "timestamp" : "2021-09-12T07:19:51+00:00",
+        "identifier" : "urn:uuid:c8ea2a2e-5c8f-4c09-818c-e6f95e67e2f6",
+        "timestamp" : "2021-09-12T07:37:25+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -541,7 +546,7 @@
       "name" : "VSRecencyRTRIResult",
       "title" : "Recency RITA result",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -557,8 +562,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:79f38aa6-ec2b-4be8-b869-c4503e4e37ad",
-        "timestamp" : "2021-09-12T07:19:51+00:00",
+        "identifier" : "urn:uuid:b64e0497-7492-4b36-a1eb-89899727d6cc",
+        "timestamp" : "2021-09-12T07:37:26+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -600,7 +605,7 @@
       "name" : "VSAdministrativeAddress",
       "title" : "Vietnam Administrative Address",
       "status" : "draft",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -616,8 +621,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:63a9b1ed-0a34-45f0-a3c5-e8af8f28dd73",
-        "timestamp" : "2021-09-12T07:19:52+00:00",
+        "identifier" : "urn:uuid:bdac3285-4124-40ca-b361-207b802827ca",
+        "timestamp" : "2021-09-12T07:37:26+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -639,7 +644,7 @@
       "name" : "VSAdministrativeAddress",
       "title" : "Vietnam Administrative Address",
       "status" : "draft",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -655,8 +660,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:63a9b1ed-0a34-45f0-a3c5-e8af8f28dd73",
-        "timestamp" : "2021-09-12T07:19:52+00:00",
+        "identifier" : "urn:uuid:bdac3285-4124-40ca-b361-207b802827ca",
+        "timestamp" : "2021-09-12T07:37:26+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -678,7 +683,7 @@
       "name" : "VSAdministrativeAddress",
       "title" : "Vietnam Administrative Address",
       "status" : "draft",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -694,8 +699,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:63a9b1ed-0a34-45f0-a3c5-e8af8f28dd73",
-        "timestamp" : "2021-09-12T07:19:52+00:00",
+        "identifier" : "urn:uuid:bdac3285-4124-40ca-b361-207b802827ca",
+        "timestamp" : "2021-09-12T07:37:26+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -717,8 +722,8 @@
       "name" : "ChildHIVStatus",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:ca9b3ad4-4d2d-41a2-9c01-0141004ccd3f",
-        "timestamp" : "2021-09-12T07:19:52+00:00",
+        "identifier" : "urn:uuid:9f2493ef-8101-4939-8066-1f2d24909e33",
+        "timestamp" : "2021-09-12T07:37:26+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -740,7 +745,7 @@
       "name" : "VSOccupation",
       "title" : "Occupation Value Set ",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -756,8 +761,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:781df14f-f12e-4d84-9496-c6c75bf20b15",
-        "timestamp" : "2021-09-12T07:19:53+00:00",
+        "identifier" : "urn:uuid:61aebc7c-812f-47ac-8551-77f0fcd1a472",
+        "timestamp" : "2021-09-12T07:37:27+00:00",
         "total" : 13,
         "parameter" : [{
           "name" : "excludeNested",
@@ -849,7 +854,7 @@
       "name" : "VSHIVTransmissionRoute",
       "title" : "HIV Transmission Route",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -865,8 +870,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d8172b9c-6bc7-42d1-ab44-03e39392b1d0",
-        "timestamp" : "2021-09-12T07:19:53+00:00",
+        "identifier" : "urn:uuid:f0060513-d140-4a87-8050-fa413bb1bc6f",
+        "timestamp" : "2021-09-12T07:37:27+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -938,7 +943,7 @@
       "name" : "VSHIVPregnancyOutcome",
       "title" : "HIV Pregnancy outcome",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -954,8 +959,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:73b6b07a-e15e-4d08-bc42-084039b7caf5",
-        "timestamp" : "2021-09-12T07:19:53+00:00",
+        "identifier" : "urn:uuid:779ef934-0be4-4c3e-8c8d-005659a3f030",
+        "timestamp" : "2021-09-12T07:37:27+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1007,7 +1012,7 @@
       "name" : "VSHIVRiskBehavior",
       "title" : "Risk Behavior",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1023,8 +1028,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f232e1e7-bf2b-4e59-b22c-ea6c46e39bae",
-        "timestamp" : "2021-09-12T07:19:53+00:00",
+        "identifier" : "urn:uuid:37bcb436-7e5a-44d7-a15d-91d3bc14b3e2",
+        "timestamp" : "2021-09-12T07:37:28+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1081,7 +1086,7 @@
       "name" : "VSHIVReasonCD4Test",
       "title" : "Valueset Reason for CD4 test",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1097,8 +1102,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:620c6122-58ca-49e1-ad7c-a0143e63c196",
-        "timestamp" : "2021-09-12T07:19:54+00:00",
+        "identifier" : "urn:uuid:813cd8ff-4c2f-45ce-8930-70432e8d00fe",
+        "timestamp" : "2021-09-12T07:37:29+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1140,7 +1145,7 @@
       "name" : "VSDiagnosisResults",
       "title" : "VSDiagnosisResults",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1155,8 +1160,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ffa0db3c-a855-4826-b8d0-bf99dc60ae90",
-        "timestamp" : "2021-09-12T07:19:54+00:00",
+        "identifier" : "urn:uuid:58567f01-e74d-40d7-a16f-d7e666b43e91",
+        "timestamp" : "2021-09-12T07:37:29+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1210,7 +1215,7 @@
       "version" : "0.1.0-test",
       "name" : "HIVSymptomsCode",
       "status" : "draft",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1225,8 +1230,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f75ca180-8026-4b4c-b2cd-808a0747739f",
-        "timestamp" : "2021-09-12T07:19:55+00:00",
+        "identifier" : "urn:uuid:0019ecd7-07c2-4acd-b937-583d3479eb7b",
+        "timestamp" : "2021-09-12T07:37:30+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1261,7 +1266,7 @@
       "version" : "0.1.0-test",
       "name" : "VSCommonDate",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1277,8 +1282,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5bab834d-8918-4ad5-81e8-ff993c1316b9",
-        "timestamp" : "2021-09-12T07:19:55+00:00",
+        "identifier" : "urn:uuid:aa03d72b-d84d-4021-aef9-38c9fad2c7b3",
+        "timestamp" : "2021-09-12T07:37:30+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1314,7 +1319,7 @@
       "name" : "VSViralLoadGroup",
       "title" : "Viral Load group",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1330,8 +1335,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a7cac425-8749-4a6a-9201-162116297658",
-        "timestamp" : "2021-09-12T07:19:56+00:00",
+        "identifier" : "urn:uuid:1046893c-98fe-4d36-845c-243a413334c6",
+        "timestamp" : "2021-09-12T07:37:30+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1373,7 +1378,7 @@
       "name" : "PatientGenderIdentity",
       "title" : "Patient Gender Identity",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1389,8 +1394,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d09c16b6-2910-433c-9f7a-e58b57b50085",
-        "timestamp" : "2021-09-12T07:19:56+00:00",
+        "identifier" : "urn:uuid:8683744f-a489-413d-9ee2-a4a762057f52",
+        "timestamp" : "2021-09-12T07:37:30+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1452,7 +1457,7 @@
       "name" : "VSMediatorSystem",
       "title" : "MediatorSystem Value Set ",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1468,8 +1473,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d28b2c2e-e21e-47f6-ae36-4b24d44b811e",
-        "timestamp" : "2021-09-12T07:19:56+00:00",
+        "identifier" : "urn:uuid:c7ef8cc1-4d5e-48b4-920a-5208cde96f6a",
+        "timestamp" : "2021-09-12T07:37:30+00:00",
         "total" : 10,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1546,7 +1551,7 @@
       "name" : "VSRecencyRITAResult",
       "title" : "Recency RITA result",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1562,8 +1567,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d0c7de7f-f051-427d-bf1e-124dda593db9",
-        "timestamp" : "2021-09-12T07:19:56+00:00",
+        "identifier" : "urn:uuid:47f164d8-0935-4106-8eab-4dd02ded9bcb",
+        "timestamp" : "2021-09-12T07:37:30+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1600,7 +1605,7 @@
       "name" : "VSDateComponent",
       "title" : "Date component of pregnancy",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1616,8 +1621,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c5205da9-f60c-4ffe-a07e-0cb51a225a6e",
-        "timestamp" : "2021-09-12T07:19:56+00:00",
+        "identifier" : "urn:uuid:53730f55-692c-4ca6-98dc-95181b8a84d2",
+        "timestamp" : "2021-09-12T07:37:31+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1667,7 +1672,7 @@
       "name" : "VSVietnamRegimen",
       "title" : "ValueSet Vietnam HIV Regimen",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1683,8 +1688,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2891a24b-9eaf-4571-aed9-839e0f027e0f",
-        "timestamp" : "2021-09-12T07:19:57+00:00",
+        "identifier" : "urn:uuid:727507c1-0602-4ec6-9d80-f8e99c551993",
+        "timestamp" : "2021-09-12T07:37:31+00:00",
         "total" : 47,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1946,7 +1951,7 @@
       "name" : "PatientCommunicationPreferences",
       "title" : "Patient Communication Preferences",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -1962,8 +1967,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c5f8e0de-2b86-48a4-bdfe-d93692a0ac12",
-        "timestamp" : "2021-09-12T07:19:57+00:00",
+        "identifier" : "urn:uuid:8fdccd63-02dc-460c-90c9-a49d94a55a9b",
+        "timestamp" : "2021-09-12T07:37:31+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2000,7 +2005,7 @@
       "name" : "CauseOfDeath",
       "title" : "Cause of death",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -2016,8 +2021,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:19ffc400-b6db-4950-b6b0-c4839edfbe96",
-        "timestamp" : "2021-09-12T07:19:57+00:00",
+        "identifier" : "urn:uuid:51e2e452-3441-4ec1-b35e-38d39be267b0",
+        "timestamp" : "2021-09-12T07:37:31+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2079,7 +2084,7 @@
       "name" : "VSCSReasonVLTest",
       "title" : "Valueset Reason for VL test",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -2095,8 +2100,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:978b91b0-e69c-476f-adb8-64263fa3998d",
-        "timestamp" : "2021-09-12T07:19:57+00:00",
+        "identifier" : "urn:uuid:27ee9a02-f253-4e1e-9c2c-35e6635bb7e9",
+        "timestamp" : "2021-09-12T07:37:32+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2153,7 +2158,7 @@
       "name" : "VSCSResidenceStatus",
       "title" : "Valueset ResidenceStatus",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -2169,8 +2174,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:46b8b199-c8f6-41d6-a556-cd1dab4a034a",
-        "timestamp" : "2021-09-12T07:19:58+00:00",
+        "identifier" : "urn:uuid:cf641902-1e12-4af3-a515-8efad5fcd022",
+        "timestamp" : "2021-09-12T07:37:32+00:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2237,7 +2242,7 @@
       "name" : "VSVietnamEthnicity",
       "title" : "Valueset Vietnam Ethnicity",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -2253,8 +2258,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2c66c568-bb5e-46c8-9a6e-f175d3987465",
-        "timestamp" : "2021-09-12T07:19:58+00:00",
+        "identifier" : "urn:uuid:ec15ff7e-3137-429a-85ee-f9dd83cce37b",
+        "timestamp" : "2021-09-12T07:37:32+00:00",
         "total" : 56,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2561,7 +2566,7 @@
       "name" : "VSCBirthDefects",
       "title" : "Valueset Birth Defects",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -2577,8 +2582,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cf88b80a-88e4-48f0-88e8-986bc9db4ce3",
-        "timestamp" : "2021-09-12T07:19:58+00:00",
+        "identifier" : "urn:uuid:4116d1ba-407e-42d6-bcc9-e44dd7e0f038",
+        "timestamp" : "2021-09-12T07:37:33+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2625,7 +2630,7 @@
       "name" : "VSWhoStage",
       "title" : "ValueSet WHO Stage ",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -2641,8 +2646,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:94659344-ffcd-4dda-a43b-d1afa5d42a79",
-        "timestamp" : "2021-09-12T07:19:58+00:00",
+        "identifier" : "urn:uuid:57db76c4-b058-4591-bb68-932f36d78b77",
+        "timestamp" : "2021-09-12T07:37:33+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2689,7 +2694,7 @@
       "name" : "VSIndications",
       "title" : "Viralload Indications",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -2705,8 +2710,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:915718d9-4108-4da5-a1ae-7796e5b315cc",
-        "timestamp" : "2021-09-12T07:19:58+00:00",
+        "identifier" : "urn:uuid:c61ce43f-c7f4-4dfa-9479-5effe1c65bd9",
+        "timestamp" : "2021-09-12T07:37:33+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2758,7 +2763,7 @@
       "name" : "PatientGender",
       "title" : "Patient Gender",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -2774,8 +2779,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:99574fce-d725-4360-a7f5-42d2b98061fd",
-        "timestamp" : "2021-09-12T07:19:59+00:00",
+        "identifier" : "urn:uuid:14519774-8b3d-487d-b6db-552522631696",
+        "timestamp" : "2021-09-12T07:37:34+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2817,7 +2822,7 @@
       "name" : "VSRecentInfectionConclusion",
       "title" : "Valueset Recent infection conclusion",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -2833,8 +2838,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:82c2a575-91fa-4000-a635-46558c8ab78b",
-        "timestamp" : "2021-09-12T07:19:59+00:00",
+        "identifier" : "urn:uuid:48221af4-58b1-4d7a-b76e-3fd12c48df9a",
+        "timestamp" : "2021-09-12T07:37:34+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2871,7 +2876,7 @@
       "name" : "TypeOfContact",
       "title" : "Type of contact or relationship",
       "status" : "active",
-      "date" : "2021-09-12T07:19:23+00:00",
+      "date" : "2021-09-12T07:37:00+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -2887,8 +2892,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2e67f8be-3c23-4fb8-98cf-89ee91ea3b7f",
-        "timestamp" : "2021-09-12T07:19:59+00:00",
+        "identifier" : "urn:uuid:ffbd3a9a-592c-4532-a7da-2aa27f4633c8",
+        "timestamp" : "2021-09-12T07:37:34+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
