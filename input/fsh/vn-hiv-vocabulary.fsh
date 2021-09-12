@@ -224,6 +224,7 @@ Description: "CodeSystem - Population groups - Subjects to be tested for HIV"
 * #prisoner "Prisoner"
 * #pregnant "Pregnant women"
 * #military_recruits "Young recruits for military service"
+* #partner_high_risk "Sexual partner of high risk group"
 * #other "Other"
 //* #other "Không rõ" "Unidentified"
 
