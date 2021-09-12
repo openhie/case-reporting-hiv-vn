@@ -179,6 +179,7 @@ Description: "CodeSystem - Recency rapid test results for HIV  "
 * #recent "Recent"
 * #long_term "Long term"
 * #negative "Negative"
+* #inconclusive "Inconclusive"
 
 ValueSet: VSHIVRapidTestResults
 Id: vs-hiv-rapidtestresults
@@ -285,7 +286,7 @@ Description: "Cause of death"
 * #aids "Last stage of AIDS"
 * #other-diseases "Caused by other diseases"
 * #suicide "Suicide"
-* #overdose "Drug overdose"
+* #overdose "Drug overdose shock"
 * #accident "Accident"
 * #unknown "Unknown"
 * #other "Other"
@@ -363,3 +364,48 @@ Id: vs-hiv-treatmentstopreason
 Title: "Valueset Reason to stop treatment at facility"
 Description:  "Valueset - Reason to stop treatment at facility"
 * include codes from system CSTreatmentStopReason
+
+
+//********************
+CodeSystem: CSResidenceStatus
+Id: cs-hiv-residence-status
+Title: "Codesystem ResidenceStatus"
+Description: "CodeSystem - 	ResidenceStatus"
+
+* #ltfu "LTFU"
+* #live-local "Currently live in locality"
+* #not-reality "Not in reality"
+* #in-rpison "In prison"
+* #within-provice "Move within province"
+* #other-place "Move to other places/provinces"
+* #far-from-home "Work far away from home"
+* #unknow "Unknown"
+
+ValueSet: VSCSResidenceStatus
+Id: vs-hiv-residence-status
+Title: "Valueset ResidenceStatus"
+Description:  "Valueset - ResidenceStatus"
+* include codes from system CSResidenceStatus
+
+//***********
+CodeSystem: CSMediatorSystem
+Id: cs-hiv-mediatorsys
+Title: "CodeSystem Mediator System"
+Description:  "CodeSystem - Mediator System"
+
+* #hivinfo "HIV Info"
+* #pdma "PDMA"
+* #opcassist "OPC Assist Online"
+* #htcelog "HTC e-Log"
+* #eclinica "eClinica"
+* #hivims "HIV IMS"
+* #vtshis "Viettel HIS"
+* #hmed "HMED"
+* #dieutriarv "DieutriARV"
+* #mpi "MPI"
+
+ValueSet: VSMediatorSystem
+Id: vs-hiv-mediatorsys
+Title: "MediatorSystem Value Set "
+Description:  "ValueSet - Mediator System"
+* include codes from system CSMediatorSystem

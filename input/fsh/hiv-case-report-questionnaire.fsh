@@ -93,7 +93,11 @@ Usage: #definition
 * item[=].type = #display
 
 
+* insert Question(,mediator,From System ,choice,false)
+* item[=].answerValueSet = Canonical(vs-hiv-mediatorsys)
+
 * insert Question(,facility_id,Facility ID,open-choice,false)
+
 * insert Question(,report_date,Date of report,date,false)
 
 * insert Question(,questions,Monthly report,group,false)
@@ -147,6 +151,9 @@ Usage: #definition
 
 * insert Question(item[=].item[=].item[=].,occupation,Occupation,open-choice,false)
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-occupation)
+
+* insert Question(item[=].item[=].item[=].,residence_status,Residence Status,choice,false)
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-residence-status)
 
 * insert Question(item[=].,risk_factors,Risk factors,group,false)
 
@@ -276,9 +283,11 @@ Usage: #definition
 * insert Question(item[=].item[=].,enrollment_date,Date of ARV Treatment registration,date,false)
 * insert Question(item[=].item[=].,enrollment_facility,Name of ARV treatment facility,open-choice,false)
 * insert Question(item[=].item[=].,enrollment_type,Reason for ARV treatment registration,choice,false)
-* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#new "New registration"
-* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#transfer-in "Transfer in"
-* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#reinitiation "Re-initiation"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#new "ARV newly registered"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#transfer-in "ARV patient transferred in"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#reinitiation "ARV patient restarted"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pre-tranfer-in "Pre-ARV patient transferred in"
+* item[=].item[=].item[=].answerOption[+].valueCoding = $vnhiv_ans#pre-re-gregistered "Pre-ARV patients re-registered"
 // enableWhen: if transfer in, enable the transfer in facility
 
 * insert Question(item[=].item[=].,facility_transfer_in,Transferred-in facility (previous facility\),open-choice,false)
