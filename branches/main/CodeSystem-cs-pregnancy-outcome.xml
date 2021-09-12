@@ -9,7 +9,7 @@
   <version value="0.1.0-test"/>
   <name value="HIV Pregnancy Outcome"/>
   <status value="draft"/>
-  <date value="2021-08-03T06:53:00+00:00"/>
+  <date value="2021-09-12T07:19:23+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -29,7 +29,7 @@
     <display value="Unborn"/>
     <designation>
       <language value="vi-VN"/>
-      <value value="Ch&#x1B0;a sinh"/>
+      <value value="Chưa sinh"/>
     </designation>
   </concept>
   <concept>
@@ -37,7 +37,7 @@
     <display value="Born"/>
     <designation>
       <language value="vi-VN"/>
-      <value value="&#x110;&#xE3; sinh"/>
+      <value value="Đã sinh"/>
     </designation>
   </concept>
   <concept>
@@ -45,7 +45,7 @@
     <display value="Miscarried"/>
     <designation>
       <language value="vi-VN"/>
-      <value value="B&#x1ECB; x&#x1EA3;y thai"/>
+      <value value="Bị xảy thai"/>
     </designation>
   </concept>
   <concept>
@@ -53,7 +53,7 @@
     <display value="Abortion"/>
     <designation>
       <language value="vi-VN"/>
-      <value value="&#x110;&#xE3; ph&#xE1; thai"/>
+      <value value="Đã phá thai"/>
     </designation>
   </concept>
   <concept>
@@ -61,7 +61,7 @@
     <display value="Unknown"/>
     <designation>
       <language value="vi-VN"/>
-      <value value="Kh&#xF4;ng r&#xF5;"/>
+      <value value="Không rõ"/>
     </designation>
   </concept>
 </CodeSystem>

@@ -42,6 +42,13 @@
     "name": "Common code for CS HIV"
   },
   {
+    "id": "cs-hiv-mediatorsys",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-mediatorsys",
+    "version": "0.1.0-test",
+    "name": "CSMediatorSystem"
+  },
+  {
     "id": "cs-hiv-occupation",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-occupation",
@@ -82,6 +89,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-recentinfection",
     "version": "0.1.0-test",
     "name": "CSRecentInfectionConclusion"
+  },
+  {
+    "id": "cs-hiv-residence-status",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-residence-status",
+    "version": "0.1.0-test",
+    "name": "CSResidenceStatus"
   },
   {
     "id": "cs-hiv-risk-behavior",
@@ -434,6 +448,13 @@
     "name": "VSCBirthDefects"
   },
   {
+    "id": "vs-hiv-mediatorsys",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-mediatorsys",
+    "version": "0.1.0-test",
+    "name": "VSMediatorSystem"
+  },
+  {
     "id": "vs-hiv-occupation",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-occupation",
@@ -481,6 +502,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-recentinfection",
     "version": "0.1.0-test",
     "name": "VSRecentInfectionConclusion"
+  },
+  {
+    "id": "vs-hiv-residence-status",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-residence-status",
+    "version": "0.1.0-test",
+    "name": "VSCSResidenceStatus"
   },
   {
     "id": "vs-hiv-risk-behavior",

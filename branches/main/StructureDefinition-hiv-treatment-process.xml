@@ -18,7 +18,7 @@
   <name value="HIVTreatment"/>
   <title value="HIV Treatment"/>
   <status value="active"/>
-  <date value="2021-08-03T06:53:00+00:00"/>
+  <date value="2021-09-12T07:19:23+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -1365,7 +1365,7 @@
     <element id="CarePlan.activity.outcomeReference">
       <path value="CarePlan.activity.outcomeReference"/>
       <short value="Appointment, Encounter, Procedure, etc."/>
-      <definition value="Details of the outcome or action resulting from the activity.  The reference to an &quot;event&quot; resource, such as Procedure or Encounter or Observation, is the result/outcome of the activity itself.  The activity can be conveyed using CarePlan.activity.detail OR using the CarePlan.activity.reference (a reference to a &#x201C;request&#x201D; resource)."/>
+      <definition value="Details of the outcome or action resulting from the activity.  The reference to an &quot;event&quot; resource, such as Procedure or Encounter or Observation, is the result/outcome of the activity itself.  The activity can be conveyed using CarePlan.activity.detail OR using the CarePlan.activity.reference (a reference to a “request” resource)."/>
       <comment value="The activity outcome is independent of the outcome of the related goal(s).  For example, if the goal is to achieve a target body weight of 150 lbs and an activity is defined to diet, then the activity outcome could be calories consumed whereas the goal outcome is an observation for the actual body weight measured."/>
       <requirements value="Links plan to resulting actions."/>
       <min value="0"/>
