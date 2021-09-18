@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 23, errors = 38, warn = 131, info = 50 -->
+<!-- broken links = 23, errors = 38, warn = 131, info = 44 -->
 <head>
   <title>OpenHIE Vietnam HIV Case-reporting : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OpenHIE Vietnam HIV Case-reporting</h1>
- <p>Generated Sun Sep 12 07:38:00 UTC 2021, FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv">http://openhie.org/fhir/openhie.vn.case-reporting.hiv</a> (<a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Sat Sep 18 10:17:18 UTC 2021, FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv">http://openhie.org/fhir/openhie.vn.case-reporting.hiv</a> (<a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.80</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = openhie.vn.case-reporting.hiv, Canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv</td></tr>
@@ -51,7 +51,7 @@
  <br/><br/>The copyrightYear parameter ('2020+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://openhie.org/fhir/openhie.vn.case-reporting.hiv (Problem #1 with package-list.json at http://openhie.org/fhir/openhie.vn.case-reporting.hiv: openhie.org)</td></tr>
- <tr><td>Summary:</td><td> broken links = 23, errors = 38, warn = 131, info = 50</td></tr>
+ <tr><td>Summary:</td><td> broken links = 23, errors = 38, warn = 131, info = 44</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -106,7 +106,7 @@
      <td><a href="#_github_workspace_fsh-generated_resources_Patient-test-hiv-patient"><b>/github/workspace/fsh-generated/resources/Patient-test-hiv-patient</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-hiv-case-report-questionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire</b></a></td><td><b>1</b></td><td><b>6</b></td><td><b>15</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-hiv-case-report-questionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire</b></a></td><td><b>1</b></td><td><b>6</b></td><td><b>9</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-vn-hiv-csv-import-questionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire</b></a></td><td><b>11</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -189,41 +189,11 @@
    <tr style="background-color: #ffffe6">
      <td><b>ImplementationGuide.dependency[0].url</b></td><td><b>information</b></td><td title=""><b>The correct canonical URL for this dependency is http://hl7.org/fhir/uv/sdc/ImplementationGuide/sdc</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/a-treatment-record.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/NationalPatientIdentifier9Digit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource NamingSystem/NationalPatientIdentifier9Digit.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/an-aids-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-gender.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-gender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-arv-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-arv-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-pregnancy-outcome.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-pregnancy-outcome.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-treatment-patient-category.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -231,23 +201,11 @@
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-patient-category.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/exampleresponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-diagnosis-results.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-hiv-sympthoms.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-hiv-sympthoms.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-common-date.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-recency-result.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -256,25 +214,52 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-recency-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-arv-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-arv-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/NationalPatientIdentifier9Digit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource NamingSystem/NationalPatientIdentifier9Digit.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-hiv-common.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-hiv-common.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-hiv-sympthoms.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-viral-load.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-hiv-sympthoms.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-cd4-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/a-treatment-record.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-pregnancy-outcome.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-pregnancy-outcome.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/an-aids-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-diagnosis-results.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-recency-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-common-date.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -282,11 +267,26 @@
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-viral-load.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-cd4-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-vn-hiv-csv-import-questionnaire-form.html">output/Questionnaire-vn-hiv-csv-import-questionnaire-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 222 column 259</b></td>
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/exampleresponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="Questionnaire-hiv-case-report-questionnaire-form.html">output/Questionnaire-hiv-case-report-questionnaire-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 222 column 257</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-vn-hiv-csv-import-questionnaire-form.html">output/Questionnaire-vn-hiv-csv-import-questionnaire-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 222 column 259</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#l272">output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
@@ -384,13 +384,13 @@
      <td><b>CodeSystem</b></td><td><b>warning</b></td><td title="csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[2].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[2].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -406,7 +406,7 @@
      <td><b>CodeSystem</b></td><td><b>warning</b></td><td title="csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -461,19 +461,19 @@
      <td><b>CodeSystem</b></td><td><b>warning</b></td><td title="csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[2].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[2].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[3].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[3].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[4].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[4].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -489,13 +489,13 @@
      <td><b>CodeSystem</b></td><td><b>warning</b></td><td title="csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[2].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[2].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -511,13 +511,13 @@
      <td><b>CodeSystem</b></td><td><b>warning</b></td><td title="csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[2].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[2].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -533,16 +533,16 @@
      <td><b>CodeSystem</b></td><td><b>warning</b></td><td title="csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[2].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[2].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem.concept[3].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>CodeSystem.concept[3].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -806,24 +806,6 @@
      <td><b>Questionnaire.item[5].item[3].item[1].item[2].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire.item[5].item[5].item[5].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire.item[5].item[7].item[4].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire.item[5].item[7].item[4].answerOption[1].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire.item[5].item[7].item[4].answerOption[2].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire.item[5].item[7].item[4].answerOption[3].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Questionnaire.item[5].item[7].item[4].answerOption[4].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
      <td><b>Questionnaire.item[5].item[8].item[1].item[1].answerOption[0].value.ofType(Coding)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -949,10 +931,10 @@
      <td><b>QuestionnaireResponse (l16/c90)</b></td><td><b>warning</b></td><td title="Questionnaire_QR_Q_NotFound"><b>The questionnaire 'http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire' could not be resolved, so no validation can be performed against the base questionnaire</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">QuestionnaireResponse.item[0].answer[0].value.ofType(string) (l38/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse</b> <span id="sl195" class="flip" onclick="flip('l195')">Show Reasoning</span><div id="l195" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse<ul><li>QuestionnaireResponse.item[0].answer[0].value.ofType(string): discriminator = true and ($this is Coding)</li></ul></div></td>
+     <td><b><a href="">QuestionnaireResponse.item[0].answer[0].value.ofType(string) (l38/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse</b> <span id="sl189" class="flip" onclick="flip('l189')">Show Reasoning</span><div id="l189" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse<ul><li>QuestionnaireResponse.item[0].answer[0].value.ofType(string): discriminator = true and ($this is Coding)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">QuestionnaireResponse.item[1].answer[0].value.ofType(date) (l47/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse</b> <span id="sl196" class="flip" onclick="flip('l196')">Show Reasoning</span><div id="l196" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse<ul><li>QuestionnaireResponse.item[1].answer[0].value.ofType(date): discriminator = true and ($this is Coding)</li></ul></div></td>
+     <td><b><a href="">QuestionnaireResponse.item[1].answer[0].value.ofType(date) (l47/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse</b> <span id="sl190" class="flip" onclick="flip('l190')">Show Reasoning</span><div id="l190" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse<ul><li>QuestionnaireResponse.item[1].answer[0].value.ofType(date): discriminator = true and ($this is Coding)</li></ul></div></td>
    </tr>
 </table>
 <hr/>
@@ -1207,7 +1189,7 @@
      <td><b>ValueSet.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: vs-hiv-sympthoms/http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-symptoms</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ValueSet.compose.include[0].concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>ValueSet.compose.include[0].concept[0].designation[0].language</b></td><td><b>information</b></td><td><b>The value provided ('vi-VN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated/resources/ValueSet-vs-hiv-sympthoms</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-sympthoms vs http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-symptoms</b></td>
@@ -1251,22 +1233,22 @@
      <td><b>ImplementationGuide</b></td><td><b>warning</b></td><td title="ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[4].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[37].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[27].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[38].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[58].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[46].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[83].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[47].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[88].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[59].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[98].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[80].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -1462,24 +1444,6 @@
 <a name="Terminology_TX_System_NotKnown"> </a>
 <h2>Terminology_TX_System_NotKnown</h2>
  <table class="grid">
-   <tr style="background-color: #fffff2">
-     <td><a href="Questionnaire-hiv-case-report-questionnaire.html">fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Questionnaire-hiv-case-report-questionnaire.html">fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Questionnaire-hiv-case-report-questionnaire.html">fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Questionnaire-hiv-case-report-questionnaire.html">fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Questionnaire-hiv-case-report-questionnaire.html">fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Questionnaire-hiv-case-report-questionnaire.html">fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
-   </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Questionnaire-hiv-case-report-questionnaire.html">fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated</b></td>
    </tr>
