@@ -7,6 +7,13 @@
     "name": "CSVImportQuestionnaire"
   },
   {
+    "id": "cs-arv-enrollment-type",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-enrollment-type",
+    "version": "0.1.0-test",
+    "name": "CSARVEnrollmentType"
+  },
+  {
     "id": "cs-arv-treatment-status",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status",
@@ -187,6 +194,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-indications",
     "version": "0.1.0-test",
     "name": "CSIndications"
+  },
+  {
+    "id": "cs-viralload-result-other",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-result-other",
+    "version": "0.1.0-test",
+    "name": "CSViralLoadOther"
   },
   {
     "id": "cs-vn-ethnicity",
@@ -413,6 +427,13 @@
     "name": "VSIndications"
   },
   {
+    "id": "vs-arv-enrollment-type",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-arv-enrollment-type",
+    "version": "0.1.0-test",
+    "name": "VSARVEnrollmentType"
+  },
+  {
     "id": "vs-arv-treatment-status",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-arv-treatment-status",
@@ -600,6 +621,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-viralload-group",
     "version": "0.1.0-test",
     "name": "VSViralLoadGroup"
+  },
+  {
+    "id": "vs-viralload-result-other",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-viralload-result-other",
+    "version": "0.1.0-test",
+    "name": "VSViralLoadOther"
   },
   {
     "id": "vs-vn-administrativeaddress",
