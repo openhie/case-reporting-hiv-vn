@@ -410,3 +410,37 @@ Id: vs-hiv-mediatorsys
 Title: "MediatorSystem Value Set "
 Description:  "ValueSet - Mediator System"
 * include codes from system CSMediatorSystem
+
+CodeSystem: CSViralLoadOther
+Id: cs-viralload-result-other
+Title: "CodeSystem Viral Load Other Result"
+Description: "Codesystem - Viral Load Other Result"
+* #vl_undetectable "Undetectable"
+* #vl_200 "Below 200 copies/mL" 
+* #vl_2_1000 "From 200 to 1,000 copies/mL"
+* #vl_1000 "Above 1,000 copies/mL"
+* #vl_no "Not taken"
+
+ValueSet: VSViralLoadOther
+Id: vs-viralload-result-other
+Title: "ValueSet Viral Load Other Result"
+Description:  "Valueset - Viral Load Other Result"
+* include codes from system CSViralLoadOther
+
+//***************************************
+CodeSystem: CSARVEnrollmentType
+Id: cs-arv-enrollment-type
+Title: "CodeSystem ARV Enrollment Type"
+Description: "Codesystem - ARV Enrollment Type"
+
+* #new "ARV newly registered"
+* #transfer-in "ARV patient transferred in"
+* #reinitiation "ARV patient restarted"
+* #pre-tranfer-in "Pre-ARV patient transferred in"
+* #pre-re-gregistered "Pre-ARV patients re-registered"
+
+ValueSet: VSARVEnrollmentType
+Id: vs-arv-enrollment-type
+Title: "ValueSet ARV Enrollment Type"
+Description: "ValueSet - ARV Enrollment Type"
+* include codes from system CSARVEnrollmentType
