@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-arv-status",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">arv<a name=\"cs-arv-status-arv\"> </a></td><td>treatment</td><td>treatment given</td></tr><tr><td style=\"white-space:nowrap\">death<a name=\"cs-arv-status-death\"> </a></td><td>death</td><td>Patient death</td></tr><tr><td style=\"white-space:nowrap\">drop<a name=\"cs-arv-status-drop\"> </a></td><td>drop</td><td>Patient drop out</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"cs-arv-status-transfer\"> </a></td><td>transfer</td><td>Transfer</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status",
+  "version": "0.1.0-test",
+  "name": "CSARVStatus",
+  "title": "CodeSystem ARV Treatment Status",
+  "status": "active",
+  "date": "2021-09-25T01:43:32+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "Codesystem - ARV TreatmentStatus",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "arv",
+      "display": "treatment",
+      "definition": "treatment given"
+    },
+    {
+      "code": "death",
+      "display": "death",
+      "definition": "Patient death"
+    },
+    {
+      "code": "drop",
+      "display": "drop",
+      "definition": "Patient drop out"
+    },
+    {
+      "code": "transfer",
+      "display": "transfer",
+      "definition": "Transfer"
+    }
+  ]
+}

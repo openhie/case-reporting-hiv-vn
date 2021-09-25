@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-09-18T10:16:13+00:00"/>
+  <date value="2021-09-25T01:43:32+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -293,6 +293,16 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/cs-arv-status"/>
+      </reference>
+      <name value="CodeSystem ARV Treatment Status"/>
+      <description value="Codesystem - ARV TreatmentStatus"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/cs-treatment-patient-category"/>
       </reference>
     </resource>
@@ -405,6 +415,16 @@
       </reference>
       <name value="Vietnam Administrative Address"/>
       <description value="Thông tin địa danh hành chính - Theo ban hành Danh mục Dân tộc của Tổng cục thống kê"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-arv-status"/>
+      </reference>
+      <name value="ValueSet ARV Treatment Status"/>
+      <description value="ValueSet - ARV Treatment Status"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

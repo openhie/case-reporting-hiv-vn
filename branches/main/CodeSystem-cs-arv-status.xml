@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-arv-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">arv<a name="cs-arv-status-arv"> </a></td><td>treatment</td><td>treatment given</td></tr><tr><td style="white-space:nowrap">death<a name="cs-arv-status-death"> </a></td><td>death</td><td>Patient death</td></tr><tr><td style="white-space:nowrap">drop<a name="cs-arv-status-drop"> </a></td><td>drop</td><td>Patient drop out</td></tr><tr><td style="white-space:nowrap">transfer<a name="cs-arv-status-transfer"> </a></td><td>transfer</td><td>Transfer</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status"/>
+  <version value="0.1.0-test"/>
+  <name value="CSARVStatus"/>
+  <title value="CodeSystem ARV Treatment Status"/>
+  <status value="active"/>
+  <date value="2021-09-25T01:43:32+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="Codesystem - ARV TreatmentStatus"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="arv"/>
+    <display value="treatment"/>
+    <definition value="treatment given"/>
+  </concept>
+  <concept>
+    <code value="death"/>
+    <display value="death"/>
+    <definition value="Patient death"/>
+  </concept>
+  <concept>
+    <code value="drop"/>
+    <display value="drop"/>
+    <definition value="Patient drop out"/>
+  </concept>
+  <concept>
+    <code value="transfer"/>
+    <display value="transfer"/>
+    <definition value="Transfer"/>
+  </concept>
+</CodeSystem>
