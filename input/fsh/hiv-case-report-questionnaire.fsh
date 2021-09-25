@@ -313,6 +313,9 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-whostage)
 * insert Question(item[=].item[=].item[=].,date_who_stage,Date of WHO clinical stage,date,false)
 
+* insert Question(item[=].item[=].,treatment_status,ARV treatment Status,choice,false)
+* item[=].item[=].item[=].answerValueSet = Canonical(vs-arv-status)
+
 * insert Question(item[=].,comorbidities,Comorbidities,group,false)
 
 * insert Question(item[=].item[=].,tuberculosis,Tuberculosis,group,true)

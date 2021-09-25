@@ -444,3 +444,20 @@ Id: vs-arv-enrollment-type
 Title: "ValueSet ARV Enrollment Type"
 Description: "ValueSet - ARV Enrollment Type"
 * include codes from system CSARVEnrollmentType
+
+//***************************************
+CodeSystem: CSARVStatus
+Id: cs-arv-status
+Title: "CodeSystem ARV Treatment Status"
+Description: "Codesystem - ARV TreatmentStatus"
+
+* #arv "treatment" "treatment given"
+* #death "death" "Patient death"
+* #drop "drop" "Patient drop out"
+* #transfer "transfer" "Transfer"
+
+ValueSet: VSARVStatus
+Id: vs-arv-status
+Title: "ValueSet ARV Treatment Status"
+Description: "ValueSet - ARV Treatment Status"
+* include codes from system CSARVStatus
