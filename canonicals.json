@@ -14,6 +14,13 @@
     "name": "CSARVEnrollmentType"
   },
   {
+    "id": "cs-arv-status",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status",
+    "version": "0.1.0-test",
+    "name": "CSARVStatus"
+  },
+  {
     "id": "cs-arv-treatment-status",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status",
@@ -432,6 +439,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-arv-enrollment-type",
     "version": "0.1.0-test",
     "name": "VSARVEnrollmentType"
+  },
+  {
+    "id": "vs-arv-status",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-arv-status",
+    "version": "0.1.0-test",
+    "name": "VSARVStatus"
   },
   {
     "id": "vs-arv-treatment-status",
