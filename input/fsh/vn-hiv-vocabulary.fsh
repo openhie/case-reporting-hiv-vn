@@ -451,10 +451,12 @@ Id: cs-arv-status
 Title: "CodeSystem ARV Treatment Status"
 Description: "Codesystem - ARV TreatmentStatus"
 
-* #arv "treatment" "treatment given"
-* #death "death" "Patient death"
-* #drop "drop" "Patient drop out"
-* #transfer "transfer" "Transfer"
+* #arv "Currently on ART"
+* #death "Death"
+* #drop "Drop out/Loss-to-follow-up"
+* #transfer "Transferred out"
+* #never-art "Never on ART"
+* #unknow "Unknown"
 
 ValueSet: VSARVStatus
 Id: vs-arv-status
