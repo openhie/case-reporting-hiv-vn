@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "cs-arv-status"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">arv<a name=\"cs-arv-status-arv\"> </a></td><td>treatment</td><td>treatment given</td></tr><tr><td style=\"white-space:nowrap\">death<a name=\"cs-arv-status-death\"> </a></td><td>death</td><td>Patient death</td></tr><tr><td style=\"white-space:nowrap\">drop<a name=\"cs-arv-status-drop\"> </a></td><td>drop</td><td>Patient drop out</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"cs-arv-status-transfer\"> </a></td><td>transfer</td><td>Transfer</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">arv<a name=\"cs-arv-status-arv\"> </a></td><td>Currently on ART</td></tr><tr><td style=\"white-space:nowrap\">death<a name=\"cs-arv-status-death\"> </a></td><td>Death</td></tr><tr><td style=\"white-space:nowrap\">drop<a name=\"cs-arv-status-drop\"> </a></td><td>Drop out/Loss-to-follow-up</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"cs-arv-status-transfer\"> </a></td><td>Transferred out</td></tr><tr><td style=\"white-space:nowrap\">never-art<a name=\"cs-arv-status-never-art\"> </a></td><td>Never on ART</td></tr><tr><td style=\"white-space:nowrap\">unknow<a name=\"cs-arv-status-unknow\"> </a></td><td>Unknown</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status"];
   fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
   fhir:CodeSystem.name [ fhir:value "CSARVStatus"];
   fhir:CodeSystem.title [ fhir:value "CodeSystem ARV Treatment Status"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-09-25T01:43:32+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-09-26T03:05:54+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -37,27 +37,31 @@
      ]
   ];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "arv" ];
-     fhir:CodeSystem.concept.display [ fhir:value "treatment" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "treatment given" ]
+     fhir:CodeSystem.concept.display [ fhir:value "Currently on ART" ]
   ], [
      fhir:index 1;
      fhir:CodeSystem.concept.code [ fhir:value "death" ];
-     fhir:CodeSystem.concept.display [ fhir:value "death" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Patient death" ]
+     fhir:CodeSystem.concept.display [ fhir:value "Death" ]
   ], [
      fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "drop" ];
-     fhir:CodeSystem.concept.display [ fhir:value "drop" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Patient drop out" ]
+     fhir:CodeSystem.concept.display [ fhir:value "Drop out/Loss-to-follow-up" ]
   ], [
      fhir:index 3;
      fhir:CodeSystem.concept.code [ fhir:value "transfer" ];
-     fhir:CodeSystem.concept.display [ fhir:value "transfer" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Transfer" ]
+     fhir:CodeSystem.concept.display [ fhir:value "Transferred out" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "never-art" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Never on ART" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "unknow" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
