@@ -103,7 +103,7 @@ Usage: #definition
 * insert Question(,questions,Monthly report,group,false)
 
 * insert Question(item[=].,patient_identification,Part I: Identifying information,group,false)
-* insert Question(item[=].item[=].,patient_arv_nr,ARV patient number,string,false)
+* insert Question(item[=].item[=].,patient_cs_nr,Patient case surveillance number,string,false)
 * insert Question(item[=].item[=].,case_uid,Case UID,string,false)
 
 * insert Question(item[=].item[=].,index_testing,Index testing,group,false)
