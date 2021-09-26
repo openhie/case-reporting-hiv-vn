@@ -1,9 +1,9 @@
 ﻿OpenHIE Vietnam HIV Case-reporting : Validation Results
 =========================================
 
-err = 38, warn = 131, info = 44
+err = 38, warn = 131, info = 47
 IG Publisher Version: 1.1.80
-Generated Sat Sep 25 01:44:41 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Sun Sep 26 03:06:57 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
 
  Build Errors : 34 / 21 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
@@ -50,7 +50,7 @@ Generated Sat Sep 25 01:44:41 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
  /github/workspace/fsh-generated/resources/Observation-a-recency-result : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-an-aids-diagnosis-observation : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 1 / 6 / 11
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 1 / 6 / 14
  /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 11 / 1 / 5
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 8 / 2 / 4
  /github/workspace/fsh-generated/resources/StructureDefinition-aids-diagnosis-observation : 0 / 2 / 1
@@ -321,8 +321,8 @@ ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire: que-2: 'The l
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[3].item[1].item[2].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[8].item[1].item[1].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[8].item[1].item[1].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[8].item[1].item[3].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[8].item[1].item[3].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[8].item[1].item[5].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[8].item[1].item[5].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[8].item[2].item[1].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[8].item[2].item[1].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[8].item[2].item[3].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
@@ -332,6 +332,9 @@ WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[3].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[3].item[3].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[3].item[3].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[3].item[3].item[5].answerOption[0].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[3].item[3].item[5].answerOption[1].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[10].item[3].item[3].item[5].answerOption[2].value.ofType(Coding): Code System URI 'http://example.org/CodeSystem/casereporting-hiv-vn-casereport-answeroptions' is unknown so the code cannot be validated
 == fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire.json ==
 ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire.json - the canonical URL (http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Questionnaire/vn-hiv-csv-import-questionnaire) does not match the URL (http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire)
 ERROR: Questionnaire/vn-hiv-csv-import-questionnaire: Questionnaire: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: PregnancyOutcomeCodes,BirthDefects,ChildHIVStatus))
