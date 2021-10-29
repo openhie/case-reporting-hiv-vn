@@ -2,8 +2,8 @@
 =========================================
 
 err = 38, warn = 131, info = 47
-IG Publisher Version: 1.1.81
-Generated Wed Oct 06 13:43:33 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+IG Publisher Version: 1.1.83
+Generated Fri Oct 29 12:02:51 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
  Build Errors : 34 / 21 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-a-treatment-record : 0 / 0 / 2
@@ -116,39 +116,39 @@ Generated Wed Oct 06 13:43:33 UTC 2021. FHIR version 4.0.1 for openhie.vn.case-r
 == n/a ==
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/uv/sdc/ImplementationGuide/sdc
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-gender.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-gender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-treatment-patient-category.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-patient-category.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-recency-result.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-recency-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-arv-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-arv-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/NationalPatientIdentifier9Digit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource NamingSystem/NationalPatientIdentifier9Digit.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-hiv-common.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-hiv-common.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-hiv-sympthoms.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-hiv-sympthoms.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-treatment-patient-category.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-patient-category.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-recency-result.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-recency-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-gender.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-gender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/a-treatment-record.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-pregnancy-outcome.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-pregnancy-outcome.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-hiv-common.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-hiv-common.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-viral-load.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/exampleresponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/an-aids-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-hiv-sympthoms.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-hiv-sympthoms.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-cd4-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-diagnosis-results.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-recency-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-arv-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-arv-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/vs-common-date.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/cs-treatment-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-viral-load.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-cd4-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/exampleresponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-form.html: unexpected non-end of element null::div  at line 222 column 257
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-recency-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire-form.html: unexpected non-end of element null::div  at line 222 column 259
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-form.html: unexpected non-end of element null::div  at line 222 column 257
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 180, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 187, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 175, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
@@ -454,9 +454,9 @@ WARNING: ValueSet/vs-vn-regimenline: ValueSet.title: value should not start or f
 WARNING: ValueSet/vs-vn-whostage: ValueSet.title: value should not start or finish with whitespace
 == input/openhie.vn.case-reporting.hiv.xml ==
 WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[39].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[40].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[48].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[49].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[61].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[82].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[18].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[20].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[33].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[45].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[64].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[80].name: value should not start or finish with whitespace
