@@ -1,1 +1,80 @@
 
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+skinparam rectangle<<dash>> {
+    borderStyle dashed
+   } 
+
+skinparam component<<viettel>> {
+    backgroundColor Tomato
+   } 
+
+
+component "FHIR Storage" as FHIR {
+  component "HAPI FHIR Repository" as HAPI{
+  rectangle "  " as rect <<dash>>{
+    collections "Patient\nresources"
+    collections "CarePlan\nresources" 
+    collections "Observation\nresources" as Obs
+    }
+  collections "QuestionnaireResponse resources" as QR
+  }
+
+  Obs -[hidden]d- QR
+ 
+}
+
+
+component "                                      SSO                                       " as SSO{ 
+}
+
+HAPI -[hidden]r- PIM
+
+component "Patient Identity Management" as PIM{
+    component WebUI <<viettel>>
+    component "Data\nExtraction\nService 2" as DES2 <<viettel>>
+    component "HIV Case indexing modules" as CIdx {
+     component "Case Finding" as CF <<viettel>>
+     component "Case Screening" as CS <<viettel>>
+     component "Case Confirm" as CC <<viettel>>
+
+     CS -[hidden]d- CC
+     CC -[hidden]d- CF
+
+    }
+    database "Patient Index DB" as SQL <<viettel>>
+
+    WebUI -[hidden]d- SQL
+    WebUI -[hidden]r- CIdx
+    SQL -[hidden]d- DES2
+  }
+
+
+
+
+  stack "                   **ElasticSearch**                     \n" as ELK{
+    database "ES Data Repository (non-PII)" {
+    collections "Data Indices" as DI1
+    collections "Data Indices" as DI2
+    collections "Data Indices" as DI3
+    collections "..." as DI4
+    }
+    
+  
+  }
+
+component Kibana <<viettel>>
+' component "Data Extraction Service" as DES
+
+ELK -[hidden]d- Kibana
+Kibana -[hidden]d- SSO
+PIM -[hidden]d- SSO
+
+
+
+@enduml
+
+
