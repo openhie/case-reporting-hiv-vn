@@ -5,6 +5,7 @@ Title: "HIV Pregnancy Outcome"
 Usage: #example
 Description:  "CodeSystem - HIV Pregnancy Outcome"
 * name = "HIV Pregnancy Outcome"
+* title = "HIV Pregnancy Outcome"
 * status = #draft
 * content = #complete
 * insert Code(unborn, Unborn, Chưa sinh)
@@ -36,6 +37,7 @@ Title: "ARV Treatment Status"
 Usage: #example
 Description:  "CodeSystem - ARV Treatment Status"
 * name = "ARV Treatment Status"
+* title = "ARV Treatment Status"
 * status = #draft
 * content = #complete
 

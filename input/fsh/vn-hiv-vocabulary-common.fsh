@@ -6,6 +6,7 @@ Title: "Common code for CS HIV"
 Usage: #example
 Description:  "CodeSystem - Common code for CS HIV"
 * name = "Common code for CS HIV"
+* title = "Common code for CS HIV"
 * status = #draft
 * content = #complete
 
@@ -18,6 +19,7 @@ Title: "Common code for CS HIV"
 
 ValueSet: VSCommonDate
 Id: vs-common-date
+Title: "Common event date"
 Description: "Define common event date"
 * SCT#399445004
 

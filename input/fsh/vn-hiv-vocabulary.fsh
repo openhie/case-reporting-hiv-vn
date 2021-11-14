@@ -74,11 +74,12 @@ Description:  "CodeSystem - gender"
 * insert CodeDef(unknown,unknown,Gender is unknown,Không rõ)
 
 
-Instance: vs-hiv-sympthoms
+Instance: vs-hiv-symptoms
 InstanceOf: ValueSet
 Description: "Symptoms Value Set"
 Title: "Symptoms Value Set"
 Usage: #example
+* title = "HIV Symptoms"
 * name = "HIVSymptomsCode"
 * status = #draft
 * url = "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-symptoms"

@@ -28,7 +28,7 @@ Parent:         Observation
 Id:             hiv-diagnosis-observation
 Title:          "HIV Diagnosis result"
 Description:    """
-    This profile allows the exchange of a patient's hiv recency test"""
+    This profile allows the exchange of a statement of a patient's HIV diagnosis"""
 * specimen MS
 // todo: need check sushi syntax
 // * code from http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/VSDiagnosisResults

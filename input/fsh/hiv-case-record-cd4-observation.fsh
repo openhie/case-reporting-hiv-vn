@@ -3,7 +3,7 @@ Parent:         Observation
 Id:             hiv-cd4-observation
 Title:          "CD4 Observation"
 Description:    """
-    This profile allows the exchange of a patient's CD$ test and results"""
+    This profile allows the exchange of a patient's CD4 test and results"""
 * code = SCT#24655002
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
