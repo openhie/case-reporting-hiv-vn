@@ -12,8 +12,7 @@ Description:  "CodeSystem - Recency result"
 * insert Code(infection, Infection, Nhiễm lâu)
 * insert Code(no, Not infection, Không nhiễm )
 
-CodeSystem:  
-Id: cs-recency-result
+CodeSystem: cs-recency-result
 Title: "Recency RITA result"
 Description: "CodeSystem - Recency result"
 * #1 "newInfection" "New Infection"
