@@ -1,5 +1,5 @@
 // todo: Translation
-Instance: cs-recency-result
+Instance: CSRecencyResult
 InstanceOf: CodeSystem
 Title: "Recency result"
 Usage: #example
@@ -12,13 +12,14 @@ Description:  "CodeSystem - Recency result"
 * insert Code(infection, Infection, Nhiễm lâu)
 * insert Code(no, Not infection, Không nhiễm )
 
+/*
 CodeSystem: cs-recency-result
 Title: "Recency RITA result"
 Description: "CodeSystem - Recency result"
 * #1 "newInfection" "New Infection"
 * #2 "infection" "Infection"
-* #3 "notInfection" "Not Infection"
-
+* #3 "noInfection" "Not Infection"
+*/
 
 ValueSet: VSRecencyRITAResult
 Id: vs-recency-rita
