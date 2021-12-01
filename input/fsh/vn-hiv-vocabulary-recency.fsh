@@ -12,10 +12,10 @@ Description:  "CodeSystem - Recency result"
 * insert Code(infection, Infection, Nhiễm lâu)
 * insert Code(no, Not infection, Không nhiễm )
 
-CodeSystem:  CSRecencyResult
+CodeSystem:  
 Id: cs-recency-result
 Title: "Recency RITA result"
-Description: "CodeSystem - Pregnancy Status"
+Description: "CodeSystem - Recency result"
 * #1 "newInfection" "New Infection"
 * #2 "infection" "Infection"
 * #3 "notInfection" "Not Infection"
