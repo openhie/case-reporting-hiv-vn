@@ -5,6 +5,7 @@ Title: "Category of the patient"
 Usage: #example
 Description:  "CodeSystem - Category of the patient"
 * name = "Category of the patient"
+* title = "Category of the patient"
 * status = #draft
 * content = #complete
 * insert Code(register , Register, Đăng ký mới  )
@@ -26,6 +27,7 @@ Title: "Status of treatment process"
 Usage: #example
 Description:  "CodeSystem - Status of treatment process"
 * name = "Status of treatment process"
+* title = "Status of treatment process"
 * status = #draft
 * content = #complete
 * insert Code(drop, Drop out, bỏ trị  )

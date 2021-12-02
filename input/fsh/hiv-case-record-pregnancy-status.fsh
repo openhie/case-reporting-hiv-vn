@@ -1,3 +1,5 @@
+Alias: $RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+
 Profile:        PregnancyStatus
 Parent:         Observation
 Id:             pregnancy-status
