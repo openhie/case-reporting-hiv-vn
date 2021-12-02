@@ -58,9 +58,29 @@
       </page>
 
       <page>
-        <nameUrl value="business_requirements.html"/>
-        <title value="Business Requirements"/>
+        <nameUrl value="business_input.html"/>
+        <title value="Business Input"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="use_cases.html"/>
+          <title value="Use Cases"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="personas.html"/>
+          <title value="User Personas"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="persona1.html"/>
+            <title value="User Persona 1"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="persona2.html"/>
+            <title value="User Persona 2"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
         <page>
           <nameUrl value="concepts.html"/>
           <title value="Concepts"/>
