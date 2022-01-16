@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>OPENHIE.VN.CASE-REPORTING.HIV\MyIG Home Page - FHIR v4.0.1</title>
+    <title>OPENHIE.VN.CASE-REPORTING.HIV\HIV Case Reporting - Home Page - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -98,16 +98,32 @@
 	<li>
 		<a href="toc.html">Table of Contents</a>
 	</li>
-  <!-- <li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
-		</a>
 
-	</li>
+
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Input<b class="caret"></b>
 		</a>
+		<ul class="dropdown-menu">
+		  <li><a href="concepts.html">Key Concepts</a></li>
+		  <li><a name="l181">​</a><a href="functional.html">Functional Requirements</a></li>    
+		  <li><a name="l185">​</a><a href="usecases.html">Use Cases</a></li>
+		  <li><a name="l189">​</a><a href="dictionary.html">Data Dictionary</a></li>
 
-	</li> -->
+		</ul>
+	</li>
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="data_exchange.html" class="dropdown-toggle">Data Models and Exchange<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+		  <li><a href="dependencies.html">Dependencies</a></li>
+		  <li><a href="actors.html">Actors</a></li>
+		  <li><a href="transactions.html">Transactions</a></li>
+		  <li><a name="l216">​</a><a href="workflows.html">Workflows</a></li>
+		  <li><a name="l220">​</a><a href="content_profiles.html">Content Profiles</a></li>
+		</ul>
+	</li>
+
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
 		</a>
@@ -118,9 +134,11 @@
 		</ul>
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Deployment<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-			<li><a href="downloads.html">Downloads</a></li>
+		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
+		  <li><a href="testing.html">Testing</a></li>
+		  <li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -135,7 +153,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>MyIG Home Page</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>HIV Case Reporting - Home Page</b></li>
           
         </ul>
       </div>    <!-- /container -->
@@ -156,7 +174,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">HIV Case-reporting for Vietnam - candidate draft - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>MyIG Home Page</h2>
+  <h2>HIV Case Reporting - Home Page</h2>
   
   <div lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Summary</a></li><li><a href="#2">About This Implementation Guide</a></li><li><a href="#3">Intellectual Property Considerations</a></li><li><a href="#4">Disclaimer</a></li></ul></div>
   <a name="scope">   </a>
@@ -187,20 +205,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     This Implementation Guide is underpinned by supporting <a href="references.html">guidelines, policies and recommendations</a>
   </p>
   
-  <p><a name="l340">​</a>
+  <p>
     This Implementation Guide defines three <a href="actors.html">actors</a> involved in the submission of a case report into a case report repository.  These actors engage in the <a href="transactions.html">transactions</a> to submit, transform and store case reports into a case report repository.
   </p>
 
 
   <figure>
-      <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 739 317" zoomAndPan="magnify" preserveAspectRatio="none" width="739px" style="width:739px;height:317px;" contentScriptType="application/ecmascript" version="1.1" height="317px"><defs><filter width="300%" x="-1" y="-1" id="f78ickv9cqui2" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"></feColorMatrix><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"></feOffset><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"></feBlend></filter></defs><g>  <!-- MD5=[556c685c3f67b66002a68d50baf6b87f]
-entity CRS --><rect filter="url(#f78ickv9cqui2)" width="106" x="0" y="146.5938" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="10" font-size="14" textLength="86" y="169.5889" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="14" font-size="14" textLength="67" y="185.8857" font-family="sans-serif" fill="#000000">Submitter</text>  <!-- MD5=[17549a46b9157fffb22f2ba1e2e184fc]
-entity CRT --><rect filter="url(#f78ickv9cqui2)" width="108" x="278" y="146.5938" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="288" font-size="14" textLength="86" y="169.5889" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="292" font-size="14" textLength="84" y="185.8857" font-family="sans-serif" fill="#000000">Transformer</text>  <!-- MD5=[1740912d46fb7c339ac072f9579cf9ae]
-entity CRR --><rect filter="url(#f78ickv9cqui2)" width="106" x="547" y="146.5938" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="557" font-size="14" textLength="86" y="169.5889" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="561" font-size="14" textLength="74" y="185.8857" font-family="sans-serif" fill="#000000">Repository</text>  <!-- MD5=[ec7ae0bf730c6da16785858819ad3b18]
-entity CRI --><rect filter="url(#f78ickv9cqui2)" width="91" x="283.5" y="10.5938" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="293.5" font-size="14" textLength="71" y="33.5889" font-family="sans-serif" fill="#000000">Case Data</text><text lengthAdjust="spacing" x="297.5" font-size="14" textLength="58" y="49.8857" font-family="sans-serif" fill="#000000">Importer</text>  <!-- MD5=[ff8ff1b9124d8226c243bd0d10adfb7e]
-entity CRM --><rect filter="url(#f78ickv9cqui2)" width="92" x="540" y="252.5938" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="550" font-size="14" textLength="71" y="275.5889" font-family="sans-serif" fill="#000000">Case Data</text><text lengthAdjust="spacing" x="554" font-size="14" textLength="68" y="291.8857" font-family="sans-serif" fill="#000000">Converter</text>  <!-- MD5=[9b26d2ff2f193e6245bd37f76e41b17a]
-entity EHR --><rect filter="url(#f78ickv9cqui2)" width="93" x="8.5" y="265.0938" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="32.2969"></rect><rect width="93" x="4.5" y="261.0938" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="32.2969"></rect><text lengthAdjust="spacing" x="36.5" font-size="14" textLength="29" y="282.0889" font-family="sans-serif" fill="#000000">EHR</text>  <!-- MD5=[1194ee1088c4a1f787c0b58111daa5b9]
-entity CSV --><polygon filter="url(#f78ickv9cqui2)" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" points="5,19.0938,5,55.3906,101,55.3906,101,29.0938,91,19.0938,5,19.0938"></polygon><path d="M91,19.0938 L91,29.0938 L101,29.0938 " style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE"></path><text lengthAdjust="spacing" x="39" font-size="14" textLength="28" y="42.0889" font-family="sans-serif" fill="#000000">CSV</text><path d="M106.1345,173.0938 C155.3049,173.0938 228.0765,173.0938 277.6357,173.0938 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="277.6357,173.0938,268.6357,169.0938,272.6357,173.0938,268.6357,177.0938,277.6357,173.0938"></polygon><text lengthAdjust="spacing" x="120" font-size="13" textLength="144" y="166.1606" font-family="sans-serif" fill="#000000">1. Submit Case Report</text><path d="M101.7132,279.0938 C203.9939,279.0938 439.8968,279.0938 539.8767,279.0938 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="539.8767,279.0938,530.8767,275.0938,534.8767,279.0938,530.8767,283.0938,539.8767,279.0938"></polygon><text lengthAdjust="spacing" x="253.75" font-size="13" textLength="130" y="272.1606" font-family="sans-serif" fill="#000000">4. Provide case data</text><path d="M101.0755,37.0938 C152.3513,37.0938 232.9645,37.0938 283.3081,37.0938 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="283.3081,37.0938,274.3081,33.0938,278.3081,37.0938,274.3081,41.0938,283.3081,37.0938"></polygon><text lengthAdjust="spacing" x="135.25" font-size="13" textLength="118" y="30.1606" font-family="sans-serif" fill="#000000">3. Store case data</text><path d="M329.5713,63.6135 C330.1018,87.3053 330.8876,122.4056 331.4206,146.2125 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="331.4206,146.2125,335.2181,137.1253,331.3087,141.2138,327.2201,137.3043,331.4206,146.2125"></polygon><text lengthAdjust="spacing" x="341" font-size="13" textLength="62" y="94.6606" font-family="sans-serif" fill="#000000">1. Submit</text><text lengthAdjust="spacing" x="331" font-size="13" textLength="78" y="109.7935" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="372" font-size="13" textLength="0" y="124.9263" font-family="sans-serif" fill="#000000"></text><path d="M596.5393,199.8016 C594.3855,215.8018 591.6249,236.3089 589.4694,252.3212 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="596.5393,199.8016,591.3744,208.1875,595.8723,204.7569,599.3029,209.2548,596.5393,199.8016"></polygon><text lengthAdjust="spacing" x="598" font-size="13" textLength="133" y="230.6606" font-family="sans-serif" fill="#000000">2. Store Case Report</text><path d="M386.2338,173.0938 C433.0365,173.0938 500.2511,173.0938 546.7615,173.0938 " style="stroke:#A80036;stroke-width:1.0;" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="546.7615,173.0938,537.7615,169.0938,541.7615,173.0938,537.7615,177.0938,546.7615,173.0938"></polygon><text lengthAdjust="spacing" x="400" font-size="13" textLength="133" y="166.1606" font-family="sans-serif" fill="#000000">2. Store Case Report</text></g></svg>
+      <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 796 361" zoomAndPan="magnify" preserveAspectRatio="none" width="796px" style="width:796px;height:361px;" contentScriptType="application/ecmascript" version="1.1" height="361px"><defs><filter width="300%" x="-1" y="-1" id="f11s8v70xkjc8" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"></feColorMatrix><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"></feOffset><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"></feBlend></filter></defs><g>  <!-- MD5=[556c685c3f67b66002a68d50baf6b87f]
+entity CRS --><rect filter="url(#f11s8v70xkjc8)" width="106" x="11" y="167" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="21" font-size="14" textLength="86" y="189.9951" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="25" font-size="14" textLength="67" y="206.292" font-family="sans-serif" fill="#000000">Submitter</text>  <!-- MD5=[17549a46b9157fffb22f2ba1e2e184fc]
+entity CRT --><rect filter="url(#f11s8v70xkjc8)" width="108" x="314" y="167" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="324" font-size="14" textLength="86" y="189.9951" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="328" font-size="14" textLength="84" y="206.292" font-family="sans-serif" fill="#000000">Transformer</text>  <!-- MD5=[1740912d46fb7c339ac072f9579cf9ae]
+entity CRR --><rect filter="url(#f11s8v70xkjc8)" width="106" x="608" y="167" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="618" font-size="14" textLength="86" y="189.9951" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="622" font-size="14" textLength="74" y="206.292" font-family="sans-serif" fill="#000000">Repository</text>  <!-- MD5=[ec7ae0bf730c6da16785858819ad3b18]
+entity CRI --><rect filter="url(#f11s8v70xkjc8)" width="91" x="320.5" y="7" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="330.5" font-size="14" textLength="71" y="29.9951" font-family="sans-serif" fill="#000000">Case Data</text><text lengthAdjust="spacing" x="334.5" font-size="14" textLength="58" y="46.292" font-family="sans-serif" fill="#000000">Importer</text>  <!-- MD5=[ff8ff1b9124d8226c243bd0d10adfb7e]
+entity CRM --><rect filter="url(#f11s8v70xkjc8)" width="92" x="593" y="297" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="52.5938"></rect><text lengthAdjust="spacing" x="603" font-size="14" textLength="71" y="319.9951" font-family="sans-serif" fill="#000000">Case Data</text><text lengthAdjust="spacing" x="607" font-size="14" textLength="68" y="336.292" font-family="sans-serif" fill="#000000">Converter</text>  <!-- MD5=[9b26d2ff2f193e6245bd37f76e41b17a]
+entity EHR --><rect filter="url(#f11s8v70xkjc8)" width="93" x="19.5" y="309.5" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="32.2969"></rect><rect width="93" x="15.5" y="305.5" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" height="32.2969"></rect><text lengthAdjust="spacing" x="47.5" font-size="14" textLength="29" y="326.4951" font-family="sans-serif" fill="#000000">EHR</text>  <!-- MD5=[1194ee1088c4a1f787c0b58111daa5b9]
+entity CSV --><polygon filter="url(#f11s8v70xkjc8)" style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE" points="16,15.5,16,51.7969,112,51.7969,112,25.5,102,15.5,16,15.5"></polygon><path d="M102,15.5 L102,25.5 L112,25.5 " style="stroke:#000000;stroke-width:1.5;" fill="#FEFECE"></path><text lengthAdjust="spacing" x="50" font-size="14" textLength="28" y="38.4951" font-family="sans-serif" fill="#000000">CSV</text>  <!-- MD5=[3d67381b8408732e8a867ba3d9298d13]
+link CRS to EHR -->  <!-- MD5=[5f4ac5667a5e40a6a1715d60658b5555]
+reverse link CRS to EHR -->  <!-- MD5=[ce8a391d46a4a42bf1f00254918943f0]
+reverse link CSV to CRS -->  <!-- MD5=[20bbea0e4ed51c2955be2849e4234ea0]
+link CSV to CRS -->  <!-- MD5=[932548e256d4f32ad63d4cd96c56ebf5]
+link CRS to CRT --><path d="M117.3006,194 C117.3006,194 308.9926,194 308.9926,194 " style="stroke:#A80036;stroke-width:1.0;" id="CRS-to-CRT" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="313.9926,194,304.9926,190,308.9926,194,304.9926,198,313.9926,194"></polygon>  <!-- MD5=[cd82f6552ec4616f6525d944aeccafa6]
+link EHR to CRM --><path d="M112.5286,324 C112.5286,324 587.811,324 587.811,324 " style="stroke:#A80036;stroke-width:1.0;" id="EHR-to-CRM" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="592.811,324,583.811,320,587.811,324,583.811,328,592.811,324"></polygon>  <!-- MD5=[da278937eabf743d9dc8196f694bc83d]
+link CSV to CRI --><path d="M112.1867,34 C112.1867,34 315.4554,34 315.4554,34 " style="stroke:#A80036;stroke-width:1.0;" id="CSV-to-CRI" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="320.4554,34,311.4554,30,315.4554,34,311.4554,38,320.4554,34"></polygon>  <!-- MD5=[1103fadd8bb9c6a645e042b06b7d12a3]
+link CRI to CRT --><path d="M366,60.2804 C366,60.2804 366,161.8989 366,161.8989 " style="stroke:#A80036;stroke-width:1.0;" id="CRI-to-CRT" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="366,166.8989,370,157.8989,366,161.8989,362,157.8989,366,166.8989"></polygon><text lengthAdjust="spacing" x="378" font-size="13" textLength="62" y="103.0669" font-family="sans-serif" fill="#000000">1. Submit</text><text lengthAdjust="spacing" x="368" font-size="13" textLength="78" y="118.1997" font-family="sans-serif" fill="#000000">Case Report</text><text lengthAdjust="spacing" x="409" font-size="13" textLength="0" y="133.3325" font-family="sans-serif" fill="#000000"></text>  <!-- MD5=[e60be6082dc9510680fda59f8e7f78fe]
+reverse link CRR to CRM --><path d="M646.5,225.1211 C646.5,225.1211 646.5,296.9145 646.5,296.9145 " style="stroke:#A80036;stroke-width:1.0;" id="CRR-backto-CRM" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="646.5,220.1211,642.5,229.1211,646.5,225.1211,650.5,229.1211,646.5,220.1211"></polygon><text lengthAdjust="spacing" x="655" font-size="13" textLength="133" y="263.0669" font-family="sans-serif" fill="#000000">2. Store Case Report</text>  <!-- MD5=[c6920bba5145f12062906a55f1d19b60]
+link CRT to CRR --><path d="M422.0822,194 C422.0822,194 602.7275,194 602.7275,194 " style="stroke:#A80036;stroke-width:1.0;" id="CRT-to-CRR" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="607.7275,194,598.7275,190,602.7275,194,598.7275,198,607.7275,194"></polygon></g></svg>
     <figcaption>Actors and Transactions</figcaption>
   </figure>
 
@@ -213,10 +241,10 @@ entity CSV --><polygon filter="url(#f78ickv9cqui2)" style="stroke:#000000;stroke
     This Implementation Guide is broken into the following levels of <a href="http://hl7.org/fhir/uv/cpg/2019Sep/documentation-approach.html">knowledge representation</a>:
     <ul>
       <li><a href="index.html">Level I: Narrative</a> Contains references to the guidance, guidlines, policies and recommemndations underpinning this Implementation Guide</li>
-      <li><a name="l451">​</a><a href="requirements.html">Level II: Business Requirements</a> Contains the requirements for this Implementation Guide including the defintition of key concepts, user personas, use cases and workflows.
+      <li><a name="l517">​</a><a href="requirements.html">Level II: Business Requirements</a> Contains the requirements for this Implementation Guide including the defintition of key concepts, user personas, use cases and workflows.
       </li>
-      <li><a name="l456">​</a><a href="data_exchange.html">Level III: Data Models and Exchange</a> Contains the data models and data exchange protocols defined in this Implementation Guide.</li>
-      <li><a name="l461">​</a><a href="deployment.html">Level IV - ε: Deployment Guidance </a>
+      <li><a href="data_exchange.html">Level III: Data Models and Exchange</a> Contains the data models and data exchange protocols defined in this Implementation Guide.</li>
+      <li><a name="l527">​</a><a href="deployment.html">Level IV - ε: Deployment Guidance </a>
       Contains <a href="instant_openhie.html">Instant OpenHIE</a> Technical Specifications relevant to this Implementation Guide and supporting guidance for adaptation in local environments.</li>
     </ul>
   </p>  
@@ -261,7 +289,7 @@ entity CSV --><polygon filter="url(#f78ickv9cqui2)" style="stroke:#000000;stroke
            
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 29, 2021 13:58+0000">2021-10-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 16, 2022 18:45+0000">2022-01-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

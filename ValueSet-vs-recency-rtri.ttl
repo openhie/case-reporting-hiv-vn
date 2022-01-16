@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "vs-recency-rtri"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-recency-result.html\"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-RecencyRITAresult.html\"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/RecencyRITAresult</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-recency-rtri"];
   fhir:ValueSet.version [ fhir:value "0.1.0-test"];
   fhir:ValueSet.name [ fhir:value "VSRecencyRTRIResult"];
-  fhir:ValueSet.title [ fhir:value "Recency RITA result"];
+  fhir:ValueSet.title [ fhir:value "Recency RITI result"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-10-29T13:58:33+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-01-16T18:45:36+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "OpenHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -39,7 +39,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/RecencyRITAresult" ]
      ]
   ] .
 

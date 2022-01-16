@@ -14,9 +14,10 @@
   ];
   fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-outcome"];
   fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
-  fhir:CodeSystem.name [ fhir:value "HIV Pregnancy Outcome"];
+  fhir:CodeSystem.name [ fhir:value "HIVPregnancyOutcome"];
+  fhir:CodeSystem.title [ fhir:value "HIV Pregnancy Outcome"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2021-10-29T13:58:33+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-01-16T18:45:36+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;

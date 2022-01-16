@@ -279,6 +279,18 @@
     }
   ],
   "profiles": {
+    "Patient": [
+      {
+        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient",
+        "title": "HIV Patient"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/HIVIndexRelatedPerson",
+        "title": "HIVIndexRelatedPerson"
+      }
+    ],
     "Observation": [
       {
         "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-viral-load",
@@ -319,12 +331,6 @@
         "title": "HIV Transmission route"
       }
     ],
-    "Patient": [
-      {
-        "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient",
-        "title": "HIV Patient"
-      }
-    ],
     "Specimen": [
       {
         "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-specimen",
@@ -350,6 +356,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
       "Patient"

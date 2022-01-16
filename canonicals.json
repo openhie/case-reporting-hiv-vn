@@ -7,6 +7,13 @@
     "name": "CSVImportQuestionnaire"
   },
   {
+    "id": "RecencyRITAresult",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/RecencyRITAresult",
+    "version": "0.1.0-test",
+    "name": "RecencyRITAresult"
+  },
+  {
     "id": "cs-arv-enrollment-type",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-enrollment-type",
@@ -158,14 +165,7 @@
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-pregnancy-outcome",
     "version": "0.1.0-test",
-    "name": "HIV Pregnancy Outcome"
-  },
-  {
-    "id": "cs-recency-result",
-    "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result",
-    "version": "0.1.0-test",
-    "name": "Recency RITA result"
+    "name": "HIVPregnancyOutcome"
   },
   {
     "id": "cs-regimen-change-reason",
@@ -179,14 +179,14 @@
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-patient-category",
     "version": "0.1.0-test",
-    "name": "Category of the patient"
+    "name": "PatientCategory"
   },
   {
     "id": "cs-treatment-status",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-status",
     "version": "0.1.0-test",
-    "name": "Status of treatment process"
+    "name": "StatusOfTreatmentProcess"
   },
   {
     "id": "cs-viralload-group",
@@ -266,6 +266,34 @@
     "name": "hiv_case_report_form"
   },
   {
+    "id": "HIVChildPatient",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/HIVChildPatient",
+    "version": "0.1.0-test",
+    "name": "HIVChildPatient"
+  },
+  {
+    "id": "HIVIndexRelatedPerson",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/HIVIndexRelatedPerson",
+    "version": "0.1.0-test",
+    "name": "HIVIndexRelatedPerson"
+  },
+  {
+    "id": "ProblemsObservation",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ProblemsObservation",
+    "version": "0.1.0-test",
+    "name": "ProblemsObservation"
+  },
+  {
+    "id": "WeightObservation",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/WeightObservation",
+    "version": "0.1.0-test",
+    "name": "WeightObservation"
+  },
+  {
     "id": "aids-diagnosis-observation",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/aids-diagnosis-observation",
@@ -299,6 +327,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-vn-ethnicity",
     "version": "0.1.0-test",
     "name": "VietnamEthnicity"
+  },
+  {
+    "id": "hcv-diagnosis-observation",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hcv-diagnosis-observation",
+    "version": "0.1.0-test",
+    "name": "HCVDiagnosisObservation"
   },
   {
     "id": "hiv-arv-careplan",
@@ -418,6 +453,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/vn-administrative-address",
     "version": "0.1.0-test",
     "name": "VNAdministrativeAddress"
+  },
+  {
+    "id": "HIVRelationshipTypesVS",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/HIVRelationshipTypesVS",
+    "version": "0.1.0-test",
+    "name": "HIVRelationshipTypesVS"
   },
   {
     "id": "VSDateComponent",
@@ -553,7 +595,7 @@
     "name": "VSHIVRiskBehavior"
   },
   {
-    "id": "vs-hiv-sympthoms",
+    "id": "vs-hiv-symptoms",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-symptoms",
     "version": "0.1.0-test",
