@@ -1,0 +1,117 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+skinparam rectangle<<dash>> {
+    borderStyle dashed
+   } 
+
+skinparam component<<viettel>> {
+    backgroundColor Tomato
+   } 
+
+skinparam component<<globits>> {
+    backgroundColor LightSlateGrey
+   } 
+
+
+component "FHIR Storage" as FHIR {
+  component "HAPI FHIR Repository" as HAPI{
+  rectangle "  " as rect <<dash>>{
+    collections "Patient\nresources" as Pat
+    collections "CarePlan\nresources" as CPl
+    collections "Observation\nresources" as Obs
+    collections "..." as etc
+    }
+  collections "QuestionnaireResponse resources" as QR
+  }
+
+  Pat -[hidden]r- Obs
+  Pat -[hidden]d- CPl
+  CPl -[hidden]d- QR
+  CPl -[hidden]r- etc
+ 
+}
+
+
+component "                                          SSO                                          " as SSO <<viettel>> { 
+}
+
+HAPI -[hidden]r- PIM
+
+component "Patient Identity Management" as PIM{
+    component WebUI <<viettel>>
+    component "Data\nExtraction\nService 2" as DES2 <<viettel>>
+    component "HIV Case indexing modules" as CIdx {
+     component "Case Finding" as CF <<viettel>>
+     component "Case Screening" as CS <<viettel>>
+     component "Case Confirm" as CC <<viettel>>
+
+     CS -[hidden]d- CC
+     CC -[hidden]d- CF
+
+    }
+    database "Patient Index DB" as SQL <<viettel>>
+
+    WebUI -d- SQL
+    WebUI -[hidden]r- CIdx
+    SQL -[hidden]d- DES2
+  }
+
+
+
+
+  stack "                   **ElasticSearch**                     \n" as ELK{
+    database "ES Data Repository (non-PII)" {
+    collections "Data Indices" as DI1
+    collections "Data Indices" as DI2
+    collections "Data Indices" as DI3
+    collections "..." as DI4
+    }
+  
+  }
+
+component Kibana <<viettel>>
+' component "Data Extraction Service" as DES
+
+DI3 -[hidden]d- Kibana
+Kibana <-d- SSO
+PIM -[hidden]d- SSO
+
+
+component "Data\nExtraction\nService" as DES <<globits>>
+component "API Service" as API <<globits>>
+component "Adapter" as Adp <<globits>>
+component "De-identification Service" as DID <<globits>>
+component "POS" as POS
+component "POS" as POS2
+rectangle  OpenHIM <<dash>>{
+  component "Mediator" as Med <<globits>>
+  collections "QRs" as QRs
+}
+collections "QRs" as QRs2
+
+POS2 -r-> API
+API  -r-> QRs2
+
+POS <-d- Adp
+Adp -r-> Med
+Med -r-> QRs
+
+Adp -[hidden]d- POS2
+
+OpenHIM -[hidden]r- DES
+QRs <-r- DES
+QRs2 <-- DES
+
+DES -d-> HAPI
+DID -l-> HAPI
+DID -[hidden]d-> WebUI
+
+Kibana -u-> ELK
+SSO -u-> PIM
+
+@enduml
+
+
