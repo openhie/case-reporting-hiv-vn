@@ -18,11 +18,11 @@ CodeSystem:  CSHIVPregnancyOutcome
 Id: cs-pregnancy-outcome
 Title: "HIV Pregnancy Outcome"
 Description: "CodeSystem - Pregnancy Outcome"
-* #1 "unborn" "Unborn"
-* #2 "born" "Born"
-* #3 "miscarried" "Miscarried"
-* #4 "abortion" "Abortion"
-* #5 "unknown" "Unknown"
+* #unborn "unborn" "Unborn"
+* #born "born" "Born"
+* #miscarried "miscarried" "Miscarried"
+* #abortion "abortion" "Abortion"
+* #unknown "unknown" "Unknown"
 
 
 ValueSet: VSHIVPregnancyOutcome
