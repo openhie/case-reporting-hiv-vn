@@ -62,17 +62,25 @@ component "Patient Identity Management" as PIM{
 
 
 
-  stack "                   **ElasticSearch**                     \n" as ELK{
-    database "ES Data Repository (non-PII)" {
+  component "                   **ElasticSearch**                     \n" as ELK{
+    database "ES Data Repository (non-PII)" as ES {
     collections "Data Indices" as DI1
     collections "Data Indices" as DI2
     collections "Data Indices" as DI3
     collections "..." as DI4
     }
+    
+    DI1 -[hidden]d- DI2
+    DI3 -[hidden]d- DI4
+    component Kibana <<viettel>>
   
   }
 
-component Kibana <<viettel>>
+FHIR -[hidden]r- ES
+FHIR -[hidden]d- ELK
+ELK -[hidden]d- PIM
+ELK -[hidden]u- PIM
+
 ' component "Data Extraction Service" as DES
 
 DI3 -[hidden]d- Kibana
