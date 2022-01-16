@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-viralload-result-other",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-result-other defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">vl_undetectable<a name=\"cs-viralload-result-other-vl_undetectable\"> </a></td><td>Undetectable</td></tr><tr><td style=\"white-space:nowrap\">vl_200<a name=\"cs-viralload-result-other-vl_200\"> </a></td><td>Below 200 copies/mL</td></tr><tr><td style=\"white-space:nowrap\">vl_2_1000<a name=\"cs-viralload-result-other-vl_2_1000\"> </a></td><td>From 200 to 1,000 copies/mL</td></tr><tr><td style=\"white-space:nowrap\">vl_1000<a name=\"cs-viralload-result-other-vl_1000\"> </a></td><td>Above 1,000 copies/mL</td></tr><tr><td style=\"white-space:nowrap\">vl_no<a name=\"cs-viralload-result-other-vl_no\"> </a></td><td>Not taken</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-result-other",
+  "version": "0.1.0-test",
+  "name": "CSViralLoadOther",
+  "title": "CodeSystem Viral Load Other Result",
+  "status": "active",
+  "date": "2022-01-16T18:50:07+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "Codesystem - Viral Load Other Result",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "vl_undetectable",
+      "display": "Undetectable"
+    },
+    {
+      "code": "vl_200",
+      "display": "Below 200 copies/mL"
+    },
+    {
+      "code": "vl_2_1000",
+      "display": "From 200 to 1,000 copies/mL"
+    },
+    {
+      "code": "vl_1000",
+      "display": "Above 1,000 copies/mL"
+    },
+    {
+      "code": "vl_no",
+      "display": "Not taken"
+    }
+  ]
+}
