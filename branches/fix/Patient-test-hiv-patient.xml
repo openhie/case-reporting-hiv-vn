@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="test-hiv-patient"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "test-hiv-patient" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-patient.html">HIV Patient</a></p></div><p><b>Vietnam Ethnicity </b>: kinh <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#kinh)</span></p><p><b>identifier</b>: id: ARV001, id: P0000012311, id: 011100101, id: NN-1232717432, id: 01112303122</p><p><b>name</b>: Nguyan Van A</p><p><b>birthDate</b>: 1970-01-01</p><p><b>address</b>: </p><ul><li>31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000 </li><li>3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward </li></ul></div>
+  </text>
+  <extension url="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-vn-ethnicity">
+    <valueCodeableConcept>
+      <coding>
+        <code value="kinh"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="https://basespecs.vn/NamingSystem/ARTIdentifiers"/>
+    <value value="ARV001"/>
+  </identifier>
+  <identifier>
+    <system value="https://basespecs.vn/NamingSystem/PassportNumbers"/>
+    <value value="P0000012311"/>
+  </identifier>
+  <identifier>
+    <system value="hhttps://basespecs.vn/NamingSystem/NationalID9"/>
+    <value value="011100101"/>
+  </identifier>
+  <identifier>
+    <system value="https://basespecs.vn/NamingSystem/InsuranceNumbers"/>
+    <value value="NN-1232717432"/>
+  </identifier>
+  <identifier>
+    <system value="https://basespecs.vn/NamingSystem/NationalID"/>
+    <value value="01112303122"/>
+  </identifier>
+  <name>
+    <text value="Nguyan Van A"/>
+  </name>
+  <birthDate value="1970"/>
+  <address>
+    <line value="31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000"/>
+  </address>
+  <address>
+    <line value="3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward"/>
+  </address>
+</Patient>

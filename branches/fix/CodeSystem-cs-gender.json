@@ -1,0 +1,82 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-gender",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-gender defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"cs-gender-male\"> </a></td><td>Male</td><td>Client identifies as male</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"cs-gender-female\"> </a></td><td>Female</td><td>Client identifies as female</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-gender-other\"> </a></td><td>other</td><td>Client has another gender identity</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"cs-gender-unknown\"> </a></td><td>unknown</td><td>Gender is unknown</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>male</td><td>Nam</td></tr><tr><td>female</td><td>Nữ</td></tr><tr><td>other</td><td>Khác</td></tr><tr><td>unknown</td><td>Không rõ</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-gender",
+  "version": "0.1.0-test",
+  "name": "Gender",
+  "title": "Gender",
+  "status": "draft",
+  "date": "2022-01-16T18:45:36+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "male",
+      "display": "Male",
+      "definition": "Client identifies as male",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Nam"
+        }
+      ]
+    },
+    {
+      "code": "female",
+      "display": "Female",
+      "definition": "Client identifies as female",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Nữ"
+        }
+      ]
+    },
+    {
+      "code": "other",
+      "display": "other",
+      "definition": "Client has another gender identity",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Khác"
+        }
+      ]
+    },
+    {
+      "code": "unknown",
+      "display": "unknown",
+      "definition": "Gender is unknown",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Không rõ"
+        }
+      ]
+    }
+  ]
+}

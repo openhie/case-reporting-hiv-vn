@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-recentinfection"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-recentinfection defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">recent<a name="cs-hiv-recentinfection-recent"> </a></td><td>Recent infection</td></tr><tr><td style="white-space:nowrap">long-term<a name="cs-hiv-recentinfection-long-term"> </a></td><td>Long term infection</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-recentinfection"/>
+  <version value="0.1.0-test"/>
+  <name value="CSRecentInfectionConclusion"/>
+  <title value="Codesystem Recent infection conclusion"/>
+  <status value="active"/>
+  <date value="2022-01-16T18:45:36+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - RRecent infection conclusion"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="recent"/>
+    <display value="Recent infection"/>
+  </concept>
+  <concept>
+    <code value="long-term"/>
+    <display value="Long term infection"/>
+  </concept>
+</CodeSystem>
