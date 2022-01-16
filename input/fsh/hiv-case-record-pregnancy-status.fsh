@@ -6,27 +6,43 @@ Id:             pregnancy-status
 Title:          "Pregnancy status"
 Description:    "Pregnancy status."
 * code from VSHIVPregnancyOutcome
+* issued MS // 1 date_reported
+// * extension contains http://hl7.org/fhir/StructureDefinition/event-location MS // 2. delivery place
+// * extension contains place_reported
+* code MS // 4 outcome_code
+* effectiveDateTime MS // 5. delivery date
 
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
-* component ^slicing.description = "Slice based on the type of component"
+* component ^slicing.ordered = false   // can be omitted, since false is the default
+* component ^slicing.description = "Slice based on the component.code pattern"
+
 * component contains
-    time 0..* and
-    arvTreatmentStatusForChild 0..1 and
-    hivTestResultForChild 0..1
+    gest_age 0..1 MS
 
-* component[time].code 1..1
-* component[time].code only CodeableConcept
-* component[time].code from VSDateComponent
-* component[time].value[x] only dateTime
+* component[gest_age].code = #76516-4	
+* component[gest_age].value[x] only Quantity	
+* component[gest_age].valueQuantity.value MS // 6.	
 
-* component[arvTreatmentStatusForChild].code 1..1
-* component[arvTreatmentStatusForChild].code only CodeableConcept
-* component[arvTreatmentStatusForChild].code from ARVTreatmentStatus
-* component[arvTreatmentStatusForChild].value[x] only dateTime
+Profile: HIVChildPatient 
+Parent: Patient
 
-* component[hivTestResultForChild].code 1..1
-* component[hivTestResultForChild].code only CodeableConcept
-* component[hivTestResultForChild].code from VSHIVRapidTestResults
-* component[hivTestResultForChild].value[x] only dateTime
+Profile: WeightObservation
+Parent: Observation
+
+Profile: ProblemsObservation
+Parent: Observation
+
+Profile: HIVIndexRelatedPerson  
+Parent: RelatedPerson
+* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#CHILD
+* relationship from HIVRelationshipTypesVS
+
+
+ValueSet: HIVRelationshipTypesVS
+Title: "Relationship types"
+Description:  "Types of relationships between patients and related persons."
+* $RoleCode#CHILD "Child"
+
+// other values will be for index

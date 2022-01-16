@@ -46,8 +46,8 @@ Title: "Pregnancy Outcome Codes"
 Usage: #inline
 * name = "BirthDefects"
 * status = #draft
-*/
-/*
+
+
 Instance: ChildHIVStatus
 InstanceOf: ValueSet
 Description: "Child HIV Status"
@@ -66,6 +66,7 @@ Title: "Gender"
 Usage: #example
 Description:  "CodeSystem - gender"
 * name = "Gender"
+* title = "Gender"
 * status = #draft
 * content = #complete
 * insert CodeDef(male,Male,Client identifies as male,Nam)
@@ -81,6 +82,7 @@ Title: "Symptoms Value Set"
 Usage: #example
 * title = "HIV Symptoms"
 * name = "HIVSymptomsCode"
+* title = "HIV Symptoms"
 * status = #draft
 * url = "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-symptoms"
 
