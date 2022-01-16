@@ -3,6 +3,7 @@
 'skinparam linetype ortho
 hide circle
 hide stereotype
+
 '!pragma layout smetana
 
 skinparam class<<AS>> {
@@ -36,7 +37,7 @@ skinparam class<<TL>> {
 package "HIV Case Surveillance" as HIVCaseSurveillance {
 
 
-  
+
     class "**Standardized**\n** Case **\n**Report**" as StdReport<<TL>> {
         Report
         |_ record_created
@@ -244,6 +245,7 @@ Diag -right[hidden]- Rec : ""
 StdReport -right- Long: "                           "
 'StdReport -[hidden]right- TPT: "                       "
 StdReport -[hidden]right- ARV: "                       "
+
 '    Frms -right-> StdReport: "       "
 '    MonthlyReport -right-> StdReport
 Pat -down[hidden]- TPT : ""
@@ -265,7 +267,6 @@ VL -right[hidden]- IC : ""
 'MonthlyReport -right[hidden]-> StdReport
 
 
-  
 caption
 
 HIV Case Surveillance
@@ -273,3 +274,4 @@ endcaption
 
 
 @enduml
+

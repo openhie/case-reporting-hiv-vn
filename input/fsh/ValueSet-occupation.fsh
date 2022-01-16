@@ -37,6 +37,7 @@ Id: cs-hiv-occupation
 Title: "CodeSystem Occupation"
 Description:  "CodeSystem - Occupation"
 
+
 * #sex_business "Persons work in services that are susceptible for sex work"
 * #driver "Driver"
 * #fishman "Fisherman"
