@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-arv-enrollment-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-enrollment-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">new<a name=\"cs-arv-enrollment-type-new\"> </a></td><td>ARV newly registered</td></tr><tr><td style=\"white-space:nowrap\">transfer-in<a name=\"cs-arv-enrollment-type-transfer-in\"> </a></td><td>ARV patient transferred in</td></tr><tr><td style=\"white-space:nowrap\">reinitiation<a name=\"cs-arv-enrollment-type-reinitiation\"> </a></td><td>ARV patient restarted</td></tr><tr><td style=\"white-space:nowrap\">pre-tranfer-in<a name=\"cs-arv-enrollment-type-pre-tranfer-in\"> </a></td><td>Pre-ARV patient transferred in</td></tr><tr><td style=\"white-space:nowrap\">pre-re-gregistered<a name=\"cs-arv-enrollment-type-pre-re-gregistered\"> </a></td><td>Pre-ARV patients re-registered</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-enrollment-type",
+  "version": "0.1.0-test",
+  "name": "CSARVEnrollmentType",
+  "title": "CodeSystem ARV Enrollment Type",
+  "status": "active",
+  "date": "2022-02-25T21:00:17+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "Codesystem - ARV Enrollment Type",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "new",
+      "display": "ARV newly registered"
+    },
+    {
+      "code": "transfer-in",
+      "display": "ARV patient transferred in"
+    },
+    {
+      "code": "reinitiation",
+      "display": "ARV patient restarted"
+    },
+    {
+      "code": "pre-tranfer-in",
+      "display": "Pre-ARV patient transferred in"
+    },
+    {
+      "code": "pre-re-gregistered",
+      "display": "Pre-ARV patients re-registered"
+    }
+  ]
+}

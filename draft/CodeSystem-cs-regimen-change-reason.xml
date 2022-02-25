@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-regimen-change-reason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">lack_of_drug<a name="cs-regimen-change-reason-lack_of_drug"> </a></td><td>Lack of drug</td></tr><tr><td style="white-space:nowrap">side_effects<a name="cs-regimen-change-reason-side_effects"> </a></td><td>Side effects</td></tr><tr><td style="white-space:nowrap">treatment_failure<a name="cs-regimen-change-reason-treatment_failure"> </a></td><td>Treatment failure</td></tr><tr><td style="white-space:nowrap">drug_interaction<a name="cs-regimen-change-reason-drug_interaction"> </a></td><td>Drug interaction</td></tr><tr><td style="white-space:nowrap">new-guidance<a name="cs-regimen-change-reason-new-guidance"> </a></td><td>New regimen as national guidance</td></tr><tr><td style="white-space:nowrap">other<a name="cs-regimen-change-reason-other"> </a></td><td>Other</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason"/>
+  <version value="0.1.0-test"/>
+  <name value="CSRegimenChangeReason"/>
+  <title value="Reason for regimen change"/>
+  <status value="active"/>
+  <date value="2022-02-25T21:00:17+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="Reason for regimen change"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="lack_of_drug"/>
+    <display value="Lack of drug"/>
+  </concept>
+  <concept>
+    <code value="side_effects"/>
+    <display value="Side effects"/>
+  </concept>
+  <concept>
+    <code value="treatment_failure"/>
+    <display value="Treatment failure"/>
+  </concept>
+  <concept>
+    <code value="drug_interaction"/>
+    <display value="Drug interaction"/>
+  </concept>
+  <concept>
+    <code value="new-guidance"/>
+    <display value="New regimen as national guidance"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

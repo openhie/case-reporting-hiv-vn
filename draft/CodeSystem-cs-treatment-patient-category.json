@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-treatment-patient-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-patient-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">register<a name=\"cs-treatment-patient-category-register\"> </a></td><td>Register</td></tr><tr><td style=\"white-space:nowrap\">reRegister<a name=\"cs-treatment-patient-category-reRegister\"> </a></td><td>Re-Register</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"cs-treatment-patient-category-transfer\"> </a></td><td>Transfer</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>register</td><td>Đăng ký mới</td></tr><tr><td>reRegister</td><td>Đăng ký lại</td></tr><tr><td>transfer</td><td>Chuyển đến</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-treatment-patient-category",
+  "version": "0.1.0-test",
+  "name": "PatientCategory",
+  "title": "Category of the patient",
+  "status": "draft",
+  "date": "2022-02-25T21:00:17+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "register",
+      "display": "Register",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Đăng ký mới"
+        }
+      ]
+    },
+    {
+      "code": "reRegister",
+      "display": "Re-Register",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Đăng ký lại"
+        }
+      ]
+    },
+    {
+      "code": "transfer",
+      "display": "Transfer",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Chuyển đến"
+        }
+      ]
+    }
+  ]
+}
