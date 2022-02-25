@@ -1,5 +1,5 @@
 
-Alias: $CommPreference = http://hl7.org/fhir/StructureDefinition/patient-preferenceType
+//Alias: $CommPreference = http://hl7.org/fhir/StructureDefinition/patient-preferenceType
 Alias: $GenderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
 
 Profile:        HIVPatient
@@ -9,8 +9,7 @@ Title:          "HIV Patient"
 Description:    """ 
     This Patient profile allows the exchange of patient information, including all the data associated with HIV patients"""
 * extension contains
-    VietnamEthnicity named species 0..1 and
-    $CommPreference named comm-preference 0..1 MS and
+    VietnamEthnicity named ethnicity 0..1 and
     $GenderIdentity named genderIdentity 0..1 MS
 
 * extension[VietnamEthnicity] MS
@@ -30,29 +29,29 @@ Description:    """
 
 * identifier contains
     art 0..* and
-    cccdID 0..* and
-    cmtndID 0..* and
-    insuranceID 0..* and
-    passportnum 0..* and
-    driverlic 0..*
+    national_id12 0..* and
+    national_id9 0..* and
+    insurance_nr 0..* and
+    passport_nr 0..* and
+    driver_license 0..*
 * identifier[art].system 1..1
 * identifier[art].system = "https://basespecs.vn/NamingSystem/ARTIdentifiers" (exactly)
 * identifier[art].value 1..1
-* identifier[cccdID].system 1..1
-* identifier[cccdID].system = "https://basespecs.vn/NamingSystem/NationalID" (exactly)
-* identifier[cccdID].value 1..1
-* identifier[cmtndID].system 1..1
-* identifier[cmtndID].system = "hhttps://basespecs.vn/NamingSystem/NationalID9" (exactly)
-* identifier[cmtndID].value 1..1
-* identifier[insuranceID].system 1..1
-* identifier[insuranceID].system = "https://basespecs.vn/NamingSystem/InsuranceNumbers" (exactly)
-* identifier[insuranceID].value 1..1
-* identifier[passportnum].system 1..1
-* identifier[passportnum].system = "https://basespecs.vn/NamingSystem/PassportNumbers" (exactly)
-* identifier[passportnum].value 1..1
-* identifier[driverlic].system 1..1
-* identifier[driverlic].system = "https://basespecs.vn/NamingSystem/DriverID" (exactly)
-* identifier[driverlic].value 1..1
+* identifier[national_id12].system 1..1
+* identifier[national_id12].system = "https://basespecs.vn/NamingSystem/NationalID" (exactly)
+* identifier[national_id12].value 1..1
+* identifier[national_id9].system 1..1
+* identifier[national_id9].system = "hhttps://basespecs.vn/NamingSystem/NationalID9" (exactly)
+* identifier[national_id9].value 1..1
+* identifier[insurance_nr].system 1..1
+* identifier[insurance_nr].system = "https://basespecs.vn/NamingSystem/InsuranceNumbers" (exactly)
+* identifier[insurance_nr].value 1..1
+* identifier[passport_nr].system 1..1
+* identifier[passport_nr].system = "https://basespecs.vn/NamingSystem/PassportNumbers" (exactly)
+* identifier[passport_nr].value 1..1
+* identifier[driver_license].system 1..1
+* identifier[driver_license].system = "https://basespecs.vn/NamingSystem/DriverID" (exactly)
+* identifier[driver_license].value 1..1
 
 * address contains
    Temporary 0..1 and 
@@ -85,8 +84,8 @@ Description: "Vietnam Administrative Address."
     district 0..1 MS and
     commune 0..1 MS
 * extension[province].value[x] only CodeableConcept
-* extension[district].value[x] only CodeableConcept
-* extension[commune].value[x] only CodeableConcept
+//* extension[district].value[x] only CodeableConcept
+//* extension[commune].value[x] only CodeableConcept
 
 // Definitions of in-line extensions
 * extension[province] ^short = " province residence address "
@@ -104,9 +103,9 @@ Description:  "Thông tin địa danh hành chính - Theo ban hành Danh mục D
 * ^status = #draft
 
 
-Profile:        HIVRiskFactor
+Profile:        HIVRiskBehavior
 Parent:         Condition
-Id:             hiv-risk-factor
+Id:             hiv-risk-behavior
 Title:          "HIV Risk Behavior"
 Description:    """ 
     This profile allows the exchange of patient's risk behaviors"""
@@ -162,3 +161,10 @@ Title:          "HIV Transmission route"
 Description:    """
     This profile allows the patient's transmission route"""
 * category from VSHIVTransmissionRoute
+
+Profile:        CauseOfDeath
+Parent:         Observation
+Id:             cause-of-death
+Title:          "Cause of Death for HIV case surveillance"
+Description:    """
+    Cause of Death for HIV case surveillance"""

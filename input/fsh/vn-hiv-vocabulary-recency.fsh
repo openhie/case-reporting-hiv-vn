@@ -1,34 +1,38 @@
 // todo: Translation
-Instance: cs-recency-result
+
+/*
+Instance: CSRecencyResult
 InstanceOf: CodeSystem
 Title: "Recency result"
 Usage: #example
 Description:  "CodeSystem - Recency result"
-* name = "Recency RITA result"
+* id = CSRecencyResult
+* name = "CSRecencyResult"
+* title = "Recency RITA result"
 * status = #draft
 * content = #complete
 * insert Code(newInfection, New Infection, Mới nhiễm )
 * insert Code(infection, Infection, Nhiễm lâu)
 * insert Code(no, Not infection, Không nhiễm )
+*/
 
-CodeSystem:  CSRecencyResult
-Id: cs-recency-result
+CodeSystem: RecencyRITAresult
 Title: "Recency RITA result"
-Description: "CodeSystem - Pregnancy Status"
-* #1 "newInfection" "New Infection"
-* #2 "infection" "Infection"
-* #3 "notInfection" "Not Infection"
+Description: "CodeSystem - Recency result"
+* #newInfection "newInfection" "New Infection"
+* #infection "infection" "Infection"
+* #noInfection "noInfection" "Not Infection"
 
 
 ValueSet: VSRecencyRITAResult
 Id: vs-recency-rita
 Title: "Recency RITA result"
 Description:  "Valueset - Recency RITA result"
-* CSRecencyResult#newInfection
-* CSRecencyResult#infection
+* RecencyRITAresult#newInfection
+* RecencyRITAresult#infection
 
 ValueSet: VSRecencyRTRIResult
 Id: vs-recency-rtri
-Title: "Recency RITA result"
+Title: "Recency RITI result"
 Description:  "Valueset - Recency RITI result"
-* include codes from system CSRecencyResult
+* include codes from system RecencyRITAresult

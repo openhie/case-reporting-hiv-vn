@@ -1,4 +1,4 @@
-Alias: SCT = http://snomed.info/sct
+/*Alias: SCT = http://snomed.info/sct
 
 Instance: vs-hiv-occupation
 InstanceOf: ValueSet
@@ -30,3 +30,30 @@ Usage: #example
 * insert VSCodeDef(SCT,449344001,Sex worker,Nghề bán dâm)
 * insert VSCodeDef(SCT,159799000,Female prostitute,Nữ bán dâm)
 * insert VSCodeDef(SCT,159800001,Male prostitute,Nam bán dâm)
+*/
+
+CodeSystem: CSOccupation
+Id: cs-hiv-occupation
+Title: "CodeSystem Occupation"
+Description:  "CodeSystem - Occupation"
+
+
+* #sex_business "Persons work in services that are susceptible for sex work"
+* #driver "Driver"
+* #fishman "Fisherman"
+* #army "Army personnel"
+* #gov_empl "Government employee"
+* #worker "Worker"
+* #student "Pupil/Student"
+* #free_lancer "Free lancer"
+* #unemployment "Unemployment"
+* #child "Children"
+* #prisoner "Prisoner"
+* #famer "Farmer"
+* #other "Other"
+
+ValueSet: VSOccupation
+Id: vs-hiv-occupation
+Title: "Occupation Value Set "
+Description:  "ValueSet - Occupation"
+* include codes from system CSOccupation

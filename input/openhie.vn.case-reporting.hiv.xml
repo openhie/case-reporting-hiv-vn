@@ -53,29 +53,115 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="HIV Case Reporting - Home Page"/>
         <generation value="html"/>
       </page>
+
       <page>
-        <nameUrl value="references.html"/>
-        <title value="References"/>
-        <generation value="html"/>
+        <nameUrl value="business_input.html"/>
+        <title value="Business Input"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="use_cases.html"/>
+          <title value="Use Cases"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="personas.html"/>
+          <title value="User Personas"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="persona1.html"/>
+            <title value="User Persona 1"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="persona2.html"/>
+            <title value="User Persona 2"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
+        <page>
+          <nameUrl value="concepts.html"/>
+          <title value="Concepts"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="references.html"/>
+          <title value="References"/>
+          <generation value="html"/>
+        </page>
       </page>
+
+
       <page>
-        <nameUrl value="actors.html"/>
-        <title value="Actors"/>
-        <generation value="html"/>
+        <nameUrl value="data_exchange.html"/>
+        <title value="Data Models and Exchange"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="dependencies.html"/>
+          <title value="Dependencies"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="actors.html"/>
+          <title value="Actors"/>
+          <generation value="html"/>
+        </page>
+
+        <page>
+          <nameUrl value="functionalities.html"/>
+          <title value="Functionalities"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="patient_matching.html"/>
+            <title value="Business and Functional Requirements"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
+
+
+        <page>
+          <nameUrl value="transactions.html"/>
+          <title value="Transactions"/>
+          <generation value="markdown"/>
+        </page>
       </page>
+
       <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Useful Downloads"/>
-        <generation value="html"/>
+        <nameUrl value="deployment.html"/>
+        <title value="Deployment"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="security_privacy.html"/>
+          <title value="Security and Privacy"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="testing.html"/>
+          <title value="Testing"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="downloads.html"/>
+          <title value="Useful Downloads"/>
+          <generation value="html"/>
+        </page>
       </page>
+
+
+
+
     <!-- change history page -->
       <page>
         <nameUrl value="changes.html"/>
         <title value="IG Change History"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="tooling.html"/>
+        <title value="Tooling"/>
+        <generation value="markdown"/>
       </page>
     </page>
     <!-- copyright year is a mandatory parameter -->

@@ -4,7 +4,8 @@ InstanceOf: CodeSystem
 Title: "HIV Pregnancy Outcome"
 Usage: #example
 Description:  "CodeSystem - HIV Pregnancy Outcome"
-* name = "HIV Pregnancy Outcome"
+* name = "HIVPregnancyOutcome"
+* title = "HIV Pregnancy Outcome"
 * status = #draft
 * content = #complete
 * insert Code(unborn, Unborn, Chưa sinh)
@@ -17,11 +18,11 @@ CodeSystem:  CSHIVPregnancyOutcome
 Id: cs-pregnancy-outcome
 Title: "HIV Pregnancy Outcome"
 Description: "CodeSystem - Pregnancy Outcome"
-* #1 "Unborn" "Unborn"
-* #2 "Born" "Born"
-* #3 "Miscarried" "Miscarried"
-* #4 "Abortion" "Abortion"
-* #5 "Unknown" "Unknown"
+* #unborn "unborn" "Unborn"
+* #born "born" "Born"
+* #miscarried "miscarried" "Miscarried"
+* #abortion "abortion" "Abortion"
+* #unknown "unknown" "Unknown"
 
 
 ValueSet: VSHIVPregnancyOutcome
@@ -36,6 +37,7 @@ Title: "ARV Treatment Status"
 Usage: #example
 Description:  "CodeSystem - ARV Treatment Status"
 * name = "ARV Treatment Status"
+* title = "ARV Treatment Status"
 * status = #draft
 * content = #complete
 
