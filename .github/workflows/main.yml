@@ -65,11 +65,6 @@ jobs:
           target-folder: ${{ steps.branch-name.outputs.current_branch }}  
           clean: false 
 
-      - name: Get branch names
-        id: branch-name
-        uses: tj-actions/branch-names@v4.3
-
-
       - name: Deploy candidate
         uses: JamesIves/github-pages-deploy-action@4.1.4
         if: ${{ steps.branch-name.outputs.is_default }} == 'false'
