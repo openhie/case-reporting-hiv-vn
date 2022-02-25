@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="vs-recency-rtri"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-recency-result.html"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-RecencyRITAresult.html"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/RecencyRITAresult</code></a></li></ul></div>
   </text>
   <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-recency-rtri"/>
   <version value="0.1.0-test"/>
   <name value="VSRecencyRTRIResult"/>
-  <title value="Recency RITA result"/>
+  <title value="Recency RITI result"/>
   <status value="active"/>
-  <date value="2021-08-23T21:38:17+00:00"/>
+  <date value="2022-02-25T20:43:03+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -27,7 +27,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result"/>
+      <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/RecencyRITAresult"/>
     </include>
   </compose>
 </ValueSet>

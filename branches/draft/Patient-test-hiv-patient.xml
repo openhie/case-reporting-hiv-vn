@@ -6,7 +6,7 @@
     <profile value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Vietnam Ethnicity </b>: <span title="Codes: ">kinh</span></p><p><b>identifier</b>: id: ARV001, id: P0000012311, id: 011100101, id: NN-1232717432, id: 01112303122</p><p><b>name</b>: Nguyan Van A</p><p><b>birthDate</b>: 1970-01-01</p><p><b>address</b>: </p><ul><li>31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000 </li><li>3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward </li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Nguyan Van A</b> (no stated gender) 1970-01-01 ( id: ARV001)</p></div>
   </text>
   <extension url="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-vn-ethnicity">
     <valueCodeableConcept>
@@ -40,7 +40,7 @@
   </name>
   <birthDate value="1970"/>
   <address>
-    <line value="31 T&#xF4;n Th&#x1EA5;t Thi&#x1EC7;p, B&#x1EBF;n Ngh&#xE9;, Qu&#x1EAD;n 1, Th&#xE0;nh ph&#x1ED1; H&#x1ED3; Ch&#xED; Minh 70000"/>
+    <line value="31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000"/>
   </address>
   <address>
     <line value="3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward"/>

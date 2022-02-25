@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cs-hiv-rapidtestresults"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-rapidtestresults defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">recent<a name="cs-hiv-rapidtestresults-recent"> </a></td><td>Recent</td></tr><tr><td style="white-space:nowrap">long_term<a name="cs-hiv-rapidtestresults-long_term"> </a></td><td>Long term</td></tr><tr><td style="white-space:nowrap">negative<a name="cs-hiv-rapidtestresults-negative"> </a></td><td>Negative</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-rapidtestresults defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">recent<a name="cs-hiv-rapidtestresults-recent"> </a></td><td>Recent</td></tr><tr><td style="white-space:nowrap">long_term<a name="cs-hiv-rapidtestresults-long_term"> </a></td><td>Long term</td></tr><tr><td style="white-space:nowrap">negative<a name="cs-hiv-rapidtestresults-negative"> </a></td><td>Negative</td></tr><tr><td style="white-space:nowrap">inconclusive<a name="cs-hiv-rapidtestresults-inconclusive"> </a></td><td>Inconclusive</td></tr></table></div>
   </text>
   <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-rapidtestresults"/>
   <version value="0.1.0-test"/>
   <name value="CSHIVRapidTestResults"/>
   <title value="Codesystem Rapid test results"/>
   <status value="active"/>
-  <date value="2021-08-23T21:38:17+00:00"/>
+  <date value="2022-02-25T20:43:03+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -26,7 +26,7 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
-  <count value="3"/>
+  <count value="4"/>
   <concept>
     <code value="recent"/>
     <display value="Recent"/>
@@ -38,5 +38,9 @@
   <concept>
     <code value="negative"/>
     <display value="Negative"/>
+  </concept>
+  <concept>
+    <code value="inconclusive"/>
+    <display value="Inconclusive"/>
   </concept>
 </CodeSystem>

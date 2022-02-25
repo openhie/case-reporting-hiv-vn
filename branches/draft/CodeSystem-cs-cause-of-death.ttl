@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "cs-cause-of-death"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">aids<a name=\"cs-cause-of-death-aids\"> </a></td><td>Last stage of AIDS</td></tr><tr><td style=\"white-space:nowrap\">other-diseases<a name=\"cs-cause-of-death-other-diseases\"> </a></td><td>Caused by other diseases</td></tr><tr><td style=\"white-space:nowrap\">suicide<a name=\"cs-cause-of-death-suicide\"> </a></td><td>Suicide</td></tr><tr><td style=\"white-space:nowrap\">overdose<a name=\"cs-cause-of-death-overdose\"> </a></td><td>Drug overdose</td></tr><tr><td style=\"white-space:nowrap\">accident<a name=\"cs-cause-of-death-accident\"> </a></td><td>Accident</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"cs-cause-of-death-unknown\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-cause-of-death-other\"> </a></td><td>Other</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">aids<a name=\"cs-cause-of-death-aids\"> </a></td><td>Last stage of AIDS</td></tr><tr><td style=\"white-space:nowrap\">other-diseases<a name=\"cs-cause-of-death-other-diseases\"> </a></td><td>Caused by other diseases</td></tr><tr><td style=\"white-space:nowrap\">suicide<a name=\"cs-cause-of-death-suicide\"> </a></td><td>Suicide</td></tr><tr><td style=\"white-space:nowrap\">overdose<a name=\"cs-cause-of-death-overdose\"> </a></td><td>Drug overdose shock</td></tr><tr><td style=\"white-space:nowrap\">accident<a name=\"cs-cause-of-death-accident\"> </a></td><td>Accident</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"cs-cause-of-death-unknown\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-cause-of-death-other\"> </a></td><td>Other</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death"];
   fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
   fhir:CodeSystem.name [ fhir:value "CSCauseOfDeath"];
   fhir:CodeSystem.title [ fhir:value "Cause of death"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-08-23T21:38:17+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-02-25T20:43:03+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -53,7 +53,7 @@
   ], [
      fhir:index 3;
      fhir:CodeSystem.concept.code [ fhir:value "overdose" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Drug overdose" ]
+     fhir:CodeSystem.concept.display [ fhir:value "Drug overdose shock" ]
   ], [
      fhir:index 4;
      fhir:CodeSystem.concept.code [ fhir:value "accident" ];

@@ -7,6 +7,27 @@
     "name": "CSVImportQuestionnaire"
   },
   {
+    "id": "RecencyRITAresult",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/RecencyRITAresult",
+    "version": "0.1.0-test",
+    "name": "RecencyRITAresult"
+  },
+  {
+    "id": "cs-arv-enrollment-type",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-enrollment-type",
+    "version": "0.1.0-test",
+    "name": "CSARVEnrollmentType"
+  },
+  {
+    "id": "cs-arv-status",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status",
+    "version": "0.1.0-test",
+    "name": "CSARVStatus"
+  },
+  {
     "id": "cs-arv-treatment-status",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status",
@@ -40,6 +61,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-common",
     "version": "0.1.0-test",
     "name": "Common code for CS HIV"
+  },
+  {
+    "id": "cs-hiv-mediatorsys",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-mediatorsys",
+    "version": "0.1.0-test",
+    "name": "CSMediatorSystem"
   },
   {
     "id": "cs-hiv-occupation",
@@ -82,6 +110,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-recentinfection",
     "version": "0.1.0-test",
     "name": "CSRecentInfectionConclusion"
+  },
+  {
+    "id": "cs-hiv-residence-status",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-residence-status",
+    "version": "0.1.0-test",
+    "name": "CSResidenceStatus"
   },
   {
     "id": "cs-hiv-risk-behavior",
@@ -133,13 +168,6 @@
     "name": "HIVPregnancyOutcome"
   },
   {
-    "id": "cs-recency-result",
-    "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result",
-    "version": "0.1.0-test",
-    "name": "RecencyRITAresult"
-  },
-  {
     "id": "cs-regimen-change-reason",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason",
@@ -173,6 +201,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-indications",
     "version": "0.1.0-test",
     "name": "CSIndications"
+  },
+  {
+    "id": "cs-viralload-result-other",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-result-other",
+    "version": "0.1.0-test",
+    "name": "CSViralLoadOther"
   },
   {
     "id": "cs-vn-ethnicity",
@@ -441,6 +476,20 @@
     "name": "VSIndications"
   },
   {
+    "id": "vs-arv-enrollment-type",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-arv-enrollment-type",
+    "version": "0.1.0-test",
+    "name": "VSARVEnrollmentType"
+  },
+  {
+    "id": "vs-arv-status",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-arv-status",
+    "version": "0.1.0-test",
+    "name": "VSARVStatus"
+  },
+  {
     "id": "vs-arv-treatment-status",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-arv-treatment-status",
@@ -474,6 +523,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-birthdefects",
     "version": "0.1.0-test",
     "name": "VSCBirthDefects"
+  },
+  {
+    "id": "vs-hiv-mediatorsys",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-mediatorsys",
+    "version": "0.1.0-test",
+    "name": "VSMediatorSystem"
   },
   {
     "id": "vs-hiv-occupation",
@@ -523,6 +579,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-recentinfection",
     "version": "0.1.0-test",
     "name": "VSRecentInfectionConclusion"
+  },
+  {
+    "id": "vs-hiv-residence-status",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-hiv-residence-status",
+    "version": "0.1.0-test",
+    "name": "VSCSResidenceStatus"
   },
   {
     "id": "vs-hiv-risk-behavior",
@@ -614,6 +677,13 @@
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-viralload-group",
     "version": "0.1.0-test",
     "name": "VSViralLoadGroup"
+  },
+  {
+    "id": "vs-viralload-result-other",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-viralload-result-other",
+    "version": "0.1.0-test",
+    "name": "VSViralLoadOther"
   },
   {
     "id": "vs-vn-administrativeaddress",
