@@ -1,5 +1,10 @@
 Vietnam HIV Case Reporting Implementation Guide
 ---
+<div>
+    <a href="https://circleci.com/gh/badges/shields/tree/master">
+        <img src="https://img.shields.io/github/workflow/status/openhie/case-reporting-hiv-vn/CI/main" alt="build status"></a>
+</div>
+
 This ImplementationGuide contains the specification and artifacts for the Vietnam HIV Case Base Reporting.
 <br> </br>
 ###
