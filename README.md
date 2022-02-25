@@ -7,7 +7,7 @@ Vietnam HIV Case Reporting Implementation Guide
 </div>
 This ImplementationGuide contains the specification and artifacts for the Vietnam HIV Case Base Reporting.
 <br> </br>
-###
+
 ### Publication
 This ImplementationGuide is published in the following locations:
 
