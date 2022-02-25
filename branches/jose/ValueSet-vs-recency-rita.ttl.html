@@ -45,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.56"}
-    h3,h4,h5,h6{--heading-prefix:"6.56"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.41"}
+    h3,h4,h5,h6{--heading-prefix:"7.41"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -100,14 +100,14 @@
 	</li>
 
 
-	<li class="dropdown"><a name="0b03b4d8-dff3-4658-9cf7-fb9eacfe214b">​</a>
-		<a data-toggle="dropdown" href="requirements.html" class="dropdown-toggle">Business Input<b class="caret"></b>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Input<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 		  <li><a href="concepts.html">Key Concepts</a></li>
-		  <li><a name="2a7416c6-fa6e-498d-8c56-09955c9f0cc5">​</a><a href="functional.html">Functional Requirements</a></li>    
-		  <li><a name="beab19d6-1900-4270-bfdc-3d6286a76309">​</a><a href="usecases.html">Use Cases</a></li>
-		  <li><a name="600aeef0-5f20-471b-9a62-828c7e4ca99d">​</a><a href="dictionary.html">Data Dictionary</a></li>
+		  <li><a name="l181">​</a><a href="functional.html">Functional Requirements</a></li>    
+		  <li><a name="l185">​</a><a href="usecases.html">Use Cases</a></li>
+		  <li><a name="l189">​</a><a href="dictionary.html">Data Dictionary</a></li>
 
 		</ul>
 	</li>
@@ -119,8 +119,8 @@
 		  <li><a href="dependencies.html">Dependencies</a></li>
 		  <li><a href="actors.html">Actors</a></li>
 		  <li><a href="transactions.html">Transactions</a></li>
-		  <li><a name="bb358311-52c2-417e-a86a-ad66f44b2e73">​</a><a href="workflows.html">Workflows</a></li>
-		  <li><a name="8be12f47-7ed2-4370-8938-09aeb1fd8b56">​</a><a href="content_profiles.html">Content Profiles</a></li>
+		  <li><a name="l216">​</a><a href="workflows.html">Workflows</a></li>
+		  <li><a name="l220">​</a><a href="content_profiles.html">Content Profiles</a></li>
 		</ul>
 	</li>
 
@@ -204,6 +204,21 @@
 
 
 <h2 id="root">: Recency RITA result - TTL Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-02-25
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="ValueSet-vs-recency-rita.ttl" no-download="true">Raw ttl</a> | <a download="null" href="ValueSet-vs-recency-rita.ttl">Download</a></p>
 
@@ -224,15 +239,15 @@
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "vs-recency-rita"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generated" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\"CodeSystem-cs-recency-result.html\"&gt;&lt;code&gt;http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result&lt;/code&gt;&lt;/a&gt;&lt;table class=\"none\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-cs-recency-result.html#cs-recency-result-newInfection\"&gt;newInfection&lt;/a&gt;&lt;/td&gt;&lt;td&gt;New Infection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-cs-recency-result.html#cs-recency-result-infection\"&gt;infection&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Infection&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "extensions" ];
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\"CodeSystem-RecencyRITAresult.html\"&gt;&lt;code&gt;http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/RecencyRITAresult&lt;/code&gt;&lt;/a&gt;&lt;table class=\"none\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-RecencyRITAresult.html#RecencyRITAresult-newInfection\"&gt;newInfection&lt;/a&gt;&lt;/td&gt;&lt;td&gt;newInfection&lt;/td&gt;&lt;td&gt;New Infection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-RecencyRITAresult.html#RecencyRITAresult-infection\"&gt;infection&lt;/a&gt;&lt;/td&gt;&lt;td&gt;infection&lt;/td&gt;&lt;td&gt;Infection&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   ];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-recency-rita"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.1.0-test"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "VSRecencyRITAResult"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Recency RITA result"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-08-23T21:28:01+00:00"^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2022-02-25T20:11:49+00:00"^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "OpenHIE"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -252,7 +267,7 @@
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
      <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-recency-result" ];
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/RecencyRITAresult" ];
        <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "newInfection" ]       ], [
@@ -297,7 +312,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 23, 2021 21:28+0000">2021-08-23</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 25, 2022 20:11+0000">2022-02-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

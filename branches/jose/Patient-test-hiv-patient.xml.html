@@ -45,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.95"}
-    h3,h4,h5,h6{--heading-prefix:"6.95"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.107"}
+    h3,h4,h5,h6{--heading-prefix:"7.107"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -100,14 +100,14 @@
 	</li>
 
 
-	<li class="dropdown"><a name="8d1ea4cf-9ce5-48ae-b49f-e59359b2f51d">​</a>
-		<a data-toggle="dropdown" href="requirements.html" class="dropdown-toggle">Business Input<b class="caret"></b>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Input<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 		  <li><a href="concepts.html">Key Concepts</a></li>
-		  <li><a name="f06cbf53-76f1-4e31-a033-54cca2609683">​</a><a href="functional.html">Functional Requirements</a></li>    
-		  <li><a name="242debcc-dccd-4e10-81dd-7ffc92ffef96">​</a><a href="usecases.html">Use Cases</a></li>
-		  <li><a name="89e8b2b2-ca35-45ac-b3c3-f759f13750ee">​</a><a href="dictionary.html">Data Dictionary</a></li>
+		  <li><a name="l181">​</a><a href="functional.html">Functional Requirements</a></li>    
+		  <li><a name="l185">​</a><a href="usecases.html">Use Cases</a></li>
+		  <li><a name="l189">​</a><a href="dictionary.html">Data Dictionary</a></li>
 
 		</ul>
 	</li>
@@ -119,8 +119,8 @@
 		  <li><a href="dependencies.html">Dependencies</a></li>
 		  <li><a href="actors.html">Actors</a></li>
 		  <li><a href="transactions.html">Transactions</a></li>
-		  <li><a name="02318fb9-6762-480a-a5d7-e9afa1feb0c8">​</a><a href="workflows.html">Workflows</a></li>
-		  <li><a name="b99b0cc4-7439-4da5-8518-3be843d234fd">​</a><a href="content_profiles.html">Content Profiles</a></li>
+		  <li><a name="l216">​</a><a href="workflows.html">Workflows</a></li>
+		  <li><a name="l220">​</a><a href="content_profiles.html">Content Profiles</a></li>
 		</ul>
 	</li>
 
@@ -204,6 +204,19 @@
 
 
 <h2 id="root">: Example Patient - test-hiv-patient - XML Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="Patient-test-hiv-patient.xml" no-download="true">Raw xml</a> | <a download="null" href="Patient-test-hiv-patient.xml">Download</a></p>
 
@@ -221,8 +234,8 @@
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient"/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="extensions"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Vietnam Ethnicity &lt;/b&gt;: &lt;span title="Codes: "&gt;kinh&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ARV001, id: P0000012311, id: 011100101, id: NN-1232717432, id: 01112303122&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Nguyan Van A&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1970-01-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000 &lt;/li&gt;&lt;li&gt;3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward &lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Nguyan Van A&lt;/b&gt; (no stated gender) 1970-01-01 ( id: ARV001)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-vn-ethnicity"&gt;
@@ -294,7 +307,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 23, 2021 21:28+0000">2021-08-23</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 25, 2022 20:11+0000">2022-02-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

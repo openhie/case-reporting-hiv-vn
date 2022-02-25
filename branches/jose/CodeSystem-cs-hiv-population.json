@@ -3,14 +3,14 @@
   "id": "cs-hiv-population",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pwid<a name=\"cs-hiv-population-pwid\"> </a></td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\">msm<a name=\"cs-hiv-population-msm\"> </a></td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">sw<a name=\"cs-hiv-population-sw\"> </a></td><td>Sex workers</td></tr><tr><td style=\"white-space:nowrap\">client_sw<a name=\"cs-hiv-population-client_sw\"> </a></td><td>Clients of sex worker </td></tr><tr><td style=\"white-space:nowrap\">partner_plhiv<a name=\"cs-hiv-population-partner_plhiv\"> </a></td><td>Sexual partner of PLHIV</td></tr><tr><td style=\"white-space:nowrap\">tg_women<a name=\"cs-hiv-population-tg_women\"> </a></td><td>Transgender women</td></tr><tr><td style=\"white-space:nowrap\">tg_men<a name=\"cs-hiv-population-tg_men\"> </a></td><td>Transgender men</td></tr><tr><td style=\"white-space:nowrap\">child_woman_hiv<a name=\"cs-hiv-population-child_woman_hiv\"> </a></td><td>Child of mother who is infected with HIV</td></tr><tr><td style=\"white-space:nowrap\">blood-donor<a name=\"cs-hiv-population-blood-donor\"> </a></td><td>Blood seller / blood donor</td></tr><tr><td style=\"white-space:nowrap\">suspect_hiv<a name=\"cs-hiv-population-suspect_hiv\"> </a></td><td>People suspected for AIDs</td></tr><tr><td style=\"white-space:nowrap\">tb_patient<a name=\"cs-hiv-population-tb_patient\"> </a></td><td>Tuberculosis patient</td></tr><tr><td style=\"white-space:nowrap\">std_person<a name=\"cs-hiv-population-std_person\"> </a></td><td>Persons with STD</td></tr><tr><td style=\"white-space:nowrap\">prisoner<a name=\"cs-hiv-population-prisoner\"> </a></td><td>Prisoner</td></tr><tr><td style=\"white-space:nowrap\">pregnant<a name=\"cs-hiv-population-pregnant\"> </a></td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\">military_recruits<a name=\"cs-hiv-population-military_recruits\"> </a></td><td>Young recruits for military service</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-hiv-population-other\"> </a></td><td>Other</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pwid<a name=\"cs-hiv-population-pwid\"> </a></td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\">msm<a name=\"cs-hiv-population-msm\"> </a></td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">sw<a name=\"cs-hiv-population-sw\"> </a></td><td>Sex workers</td></tr><tr><td style=\"white-space:nowrap\">client_sw<a name=\"cs-hiv-population-client_sw\"> </a></td><td>Clients of sex worker </td></tr><tr><td style=\"white-space:nowrap\">partner_plhiv<a name=\"cs-hiv-population-partner_plhiv\"> </a></td><td>Sexual partner of PLHIV</td></tr><tr><td style=\"white-space:nowrap\">tg_women<a name=\"cs-hiv-population-tg_women\"> </a></td><td>Transgender women</td></tr><tr><td style=\"white-space:nowrap\">tg_men<a name=\"cs-hiv-population-tg_men\"> </a></td><td>Transgender men</td></tr><tr><td style=\"white-space:nowrap\">child_woman_hiv<a name=\"cs-hiv-population-child_woman_hiv\"> </a></td><td>Child of mother who is infected with HIV</td></tr><tr><td style=\"white-space:nowrap\">blood-donor<a name=\"cs-hiv-population-blood-donor\"> </a></td><td>Blood seller / blood donor</td></tr><tr><td style=\"white-space:nowrap\">suspect_hiv<a name=\"cs-hiv-population-suspect_hiv\"> </a></td><td>People suspected for AIDs</td></tr><tr><td style=\"white-space:nowrap\">tb_patient<a name=\"cs-hiv-population-tb_patient\"> </a></td><td>Tuberculosis patient</td></tr><tr><td style=\"white-space:nowrap\">std_person<a name=\"cs-hiv-population-std_person\"> </a></td><td>Persons with STD</td></tr><tr><td style=\"white-space:nowrap\">prisoner<a name=\"cs-hiv-population-prisoner\"> </a></td><td>Prisoner</td></tr><tr><td style=\"white-space:nowrap\">pregnant<a name=\"cs-hiv-population-pregnant\"> </a></td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\">military_recruits<a name=\"cs-hiv-population-military_recruits\"> </a></td><td>Young recruits for military service</td></tr><tr><td style=\"white-space:nowrap\">partner_high_risk<a name=\"cs-hiv-population-partner_high_risk\"> </a></td><td>Sexual partner of high risk group</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-hiv-population-other\"> </a></td><td>Other</td></tr></table></div>"
   },
   "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-population",
   "version": "0.1.0-test",
   "name": "CSHIVRiskPopulation",
   "title": "Population groups",
   "status": "active",
-  "date": "2021-08-23T21:28:01+00:00",
+  "date": "2022-02-25T20:11:49+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -34,7 +34,7 @@
     }
   ],
   "content": "complete",
-  "count": 16,
+  "count": 17,
   "concept": [
     {
       "code": "pwid",
@@ -95,6 +95,10 @@
     {
       "code": "military_recruits",
       "display": "Young recruits for military service"
+    },
+    {
+      "code": "partner_high_risk",
+      "display": "Sexual partner of high risk group"
     },
     {
       "code": "other",

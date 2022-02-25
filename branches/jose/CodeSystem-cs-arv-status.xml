@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-arv-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">arv<a name="cs-arv-status-arv"> </a></td><td>Currently on ART</td></tr><tr><td style="white-space:nowrap">death<a name="cs-arv-status-death"> </a></td><td>Death</td></tr><tr><td style="white-space:nowrap">drop<a name="cs-arv-status-drop"> </a></td><td>Drop out/Loss-to-follow-up</td></tr><tr><td style="white-space:nowrap">transfer<a name="cs-arv-status-transfer"> </a></td><td>Transferred out</td></tr><tr><td style="white-space:nowrap">never-art<a name="cs-arv-status-never-art"> </a></td><td>Never on ART</td></tr><tr><td style="white-space:nowrap">unknow<a name="cs-arv-status-unknow"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-status"/>
+  <version value="0.1.0-test"/>
+  <name value="CSARVStatus"/>
+  <title value="CodeSystem ARV Treatment Status"/>
+  <status value="active"/>
+  <date value="2022-02-25T20:11:49+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="Codesystem - ARV TreatmentStatus"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="arv"/>
+    <display value="Currently on ART"/>
+  </concept>
+  <concept>
+    <code value="death"/>
+    <display value="Death"/>
+  </concept>
+  <concept>
+    <code value="drop"/>
+    <display value="Drop out/Loss-to-follow-up"/>
+  </concept>
+  <concept>
+    <code value="transfer"/>
+    <display value="Transferred out"/>
+  </concept>
+  <concept>
+    <code value="never-art"/>
+    <display value="Never on ART"/>
+  </concept>
+  <concept>
+    <code value="unknow"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

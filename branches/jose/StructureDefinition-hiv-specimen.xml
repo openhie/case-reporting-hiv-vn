@@ -21,7 +21,7 @@
   <name value="HIVSpecimen"/>
   <title value="HIV specimen"/>
   <status value="active"/>
-  <date value="2021-08-23T21:28:01+00:00"/>
+  <date value="2022-02-25T20:11:49+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -1148,7 +1148,7 @@
       <path value="Specimen.collection.fastingStatus[x]"/>
       <short value="Whether or how long patient abstained from food and/or drink"/>
       <definition value="Abstinence or reduction from some or all food, drink, or both, for a period of time prior to sample collection."/>
-      <comment value="Representing fasting status using this element is preferred to representing it with an observation using a &#39;pre-coordinated code&#39;  such as  LOINC 2005-7 (Calcium [Moles/&#x200B;time] in 2 hour Urine --12 hours fasting), or  using  a component observation ` such as `Observation.component code`  = LOINC 49541-6 (Fasting status - Reported)."/>
+      <comment value="Representing fasting status using this element is preferred to representing it with an observation using a &#39;pre-coordinated code&#39;  such as  LOINC 2005-7 (Calcium [Moles/​time] in 2 hour Urine --12 hours fasting), or  using  a component observation ` such as `Observation.component code`  = LOINC 49541-6 (Fasting status - Reported)."/>
       <requirements value="Many diagnostic tests require fasting  to facilitate accurate interpretation."/>
       <min value="0"/>
       <max value="1"/>
