@@ -2,9 +2,9 @@
 =========================================
 
 err = 30, warn = 137, info = 77
-IG Publisher Version: 1.1.95
-Generated Sun Jan 16 18:51:25 UTC 2022. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
- Build Errors : 3355 / 24 / 1
+IG Publisher Version: 1.1.108
+Generated Fri Feb 25 20:11:09 UTC 2022. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+ Build Errors : 3343 / 24 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-a-treatment-record : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-RecencyRITAresult : 0 / 0 / 2
@@ -122,35 +122,35 @@ Generated Sun Jan 16 18:51:25 UTC 2022. FHIR version 4.0.1 for openhie.vn.case-r
 == n/a ==
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/uv/sdc/ImplementationGuide/sdc
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-viral-load.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-pregnancy-outcome.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-hiv-symptoms.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-patient-category.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-arv-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-hiv-common.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/a-treatment-record.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/exampleresponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/exampleresponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-hiv-common.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/HIVChildPatient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/HIVChildPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-pregnancy-outcome.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/ProblemsObservation.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ProblemsObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/an-aids-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/HIVIndexRelatedPerson.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/HIVIndexRelatedPerson.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/WeightObservation.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/WeightObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-gender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-hiv-symptoms.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-diagnosis-results.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/NationalPatientIdentifier9Digit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource NamingSystem/NationalPatientIdentifier9Digit.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-gender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-cd4-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/WeightObservation.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/WeightObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/HIVIndexRelatedPerson.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/HIVIndexRelatedPerson.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/an-aids-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-arv-treatment-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/ProblemsObservation.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ProblemsObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/HIVChildPatient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/HIVChildPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-recency-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/a-treatment-record.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-treatment-patient-category.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-cd4-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-viral-load.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire-form.html: unexpected non-end of element null::div  at line 238 column 259
 ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-form.html: unexpected non-end of element null::div  at line 238 column 257
 ERROR: /github/workspace/output/Bundle-examplebundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
@@ -2473,43 +2473,31 @@ ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDe
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 196, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 203, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 191, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.html#/html/body/div/div/div/div/div/ul/li/a at Line 198, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_BirthDefects.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 196, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 203, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 191, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.html#/html/body/div/div/div/div/div/ul/li/a at Line 198, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_ChildHIVStatus.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 196, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 203, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 191, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 198, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vs-arv-enrollment-type.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vs-arv-enrollment-type.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vs-arv-enrollment-type.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
@@ -3390,9 +3378,9 @@ ERROR: /github/workspace/output/actors.html#/html/body/div/div/nav/div/div/ul/li
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 194, column 64: The link 'concepts.html#case_report' for "case report" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-logo, family-nav, ig-status, top, concepts, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 196, column 100: The link 'concepts.html#case_report' for "maturity level" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-logo, family-nav, ig-status, top, concepts, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 206, column 357: The link 'expected_actions.html#transform' for "three options" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 196, column 64: The link 'concepts.html#case_report' for "case report" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-logo, family-nav, ig-status, top, concepts, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 198, column 100: The link 'concepts.html#case_report' for "maturity level" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-logo, family-nav, ig-status, top, concepts, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 208, column 357: The link 'expected_actions.html#transform' for "three options" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
@@ -3443,8 +3431,8 @@ ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 249, column 12: The link 'requirements.html' for "Level II: Business Requirements" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 253, column 17: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 280, column 12: The link 'requirements.html' for "Level II: Business Requirements" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 284, column 17: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/patient_matching.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/patient_matching.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/patient_matching.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
@@ -3536,12 +3524,12 @@ INFORMATION: CodeSystem/cs-hiv-mediatorsys: CodeSystem: CodeSystems SHOULD have 
 == fsh-generated/resources/CodeSystem-cs-hiv-occupation.json ==
 INFORMATION: CodeSystem/cs-hiv-occupation: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-hiv-population.json ==
-WARNING: CodeSystem/cs-hiv-population: CodeSystem.concept[3].display: value should not start or finish with whitespace
+WARNING: CodeSystem/cs-hiv-population: CodeSystem.concept[3].display: value should not start or finish with whitespace 'Clients...worker '
 INFORMATION: CodeSystem/cs-hiv-population: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-hiv-rapidtestresults.json ==
 INFORMATION: CodeSystem/cs-hiv-rapidtestresults: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-hiv-reasoncd4test.json ==
-WARNING: CodeSystem/cs-hiv-reasoncd4test: CodeSystem.concept[2].display: value should not start or finish with whitespace
+WARNING: CodeSystem/cs-hiv-reasoncd4test: CodeSystem.concept[2].display: value should not start or finish with whitespace 'Other '
 INFORMATION: CodeSystem/cs-hiv-reasoncd4test: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-hiv-reasonvltest.json ==
 INFORMATION: CodeSystem/cs-hiv-reasonvltest: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
@@ -3552,7 +3540,7 @@ INFORMATION: CodeSystem/cs-hiv-residence-status: CodeSystem: CodeSystems SHOULD 
 == fsh-generated/resources/CodeSystem-cs-hiv-risk-behavior.json ==
 INFORMATION: CodeSystem/cs-hiv-risk-behavior: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-hiv-transmission-route.json ==
-WARNING: CodeSystem/cs-hiv-transmission-route: CodeSystem.concept[3].display: value should not start or finish with whitespace
+WARNING: CodeSystem/cs-hiv-transmission-route: CodeSystem.concept[3].display: value should not start or finish with whitespace 'Occupational...accident '
 INFORMATION: CodeSystem/cs-hiv-transmission-route: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-hiv-treatmentstopreason.json ==
 INFORMATION: CodeSystem/cs-hiv-treatmentstopreason: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
@@ -3585,75 +3573,75 @@ INFORMATION: CodeSystem/cs-treatment-status: CodeSystem: CodeSystems SHOULD have
 == fsh-generated/resources/CodeSystem-cs-viralload-group.json ==
 INFORMATION: CodeSystem/cs-viralload-group: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-viralload-indications.json ==
-WARNING: CodeSystem/cs-viralload-indications: CodeSystem.concept[2].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-viralload-indications: CodeSystem.concept[2].definition: value should not start or finish with whitespace
+WARNING: CodeSystem/cs-viralload-indications: CodeSystem.concept[2].display: value should not start or finish with whitespace 'Every...12 '
+WARNING: CodeSystem/cs-viralload-indications: CodeSystem.concept[2].definition: value should not start or finish with whitespace 'Every...12 '
 INFORMATION: CodeSystem/cs-viralload-indications: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-viralload-result-other.json ==
 INFORMATION: CodeSystem/cs-viralload-result-other: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-vn-ethnicity.json ==
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[0].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[1].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[2].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[3].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[4].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[5].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[6].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[7].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[8].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[9].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[10].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[11].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[12].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[13].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[14].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[15].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[16].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[17].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[18].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[19].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[20].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[21].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[22].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[23].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[24].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[25].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[26].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[27].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[28].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[29].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[30].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[31].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[32].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[33].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[34].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[35].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[36].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[37].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[38].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[39].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[40].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[41].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[42].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[43].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[44].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[45].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[46].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[47].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[48].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[49].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[50].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[51].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[52].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[53].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[54].display: value should not start or finish with whitespace
-WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[55].display: value should not start or finish with whitespace
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[0].display: value should not start or finish with whitespace 'Kinh '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[1].display: value should not start or finish with whitespace 'Tày '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[2].display: value should not start or finish with whitespace 'Thái '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[3].display: value should not start or finish with whitespace 'Hoa '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[4].display: value should not start or finish with whitespace 'Khơ-me '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[5].display: value should not start or finish with whitespace 'Mường '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[6].display: value should not start or finish with whitespace 'Nùng '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[7].display: value should not start or finish with whitespace 'Hmông '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[8].display: value should not start or finish with whitespace 'Dao '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[9].display: value should not start or finish with whitespace 'Gia-rai '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[10].display: value should not start or finish with whitespace 'Ngái '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[11].display: value should not start or finish with whitespace 'Ê-đê '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[12].display: value should not start or finish with whitespace 'Ba-na '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[13].display: value should not start or finish with whitespace 'Xơ-đăng '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[14].display: value should not start or finish with whitespace 'Sán...Chay '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[15].display: value should not start or finish with whitespace 'Cơ-ho '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[16].display: value should not start or finish with whitespace 'Chăm '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[17].display: value should not start or finish with whitespace 'Sán...Dìu '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[18].display: value should not start or finish with whitespace 'Hrê '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[19].display: value should not start or finish with whitespace 'Mnông '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[20].display: value should not start or finish with whitespace 'Ra-glai '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[21].display: value should not start or finish with whitespace 'Xtiêng '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[22].display: value should not start or finish with whitespace 'Bru-Vân...Kiều '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[23].display: value should not start or finish with whitespace 'Thổ '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[24].display: value should not start or finish with whitespace 'Giáy '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[25].display: value should not start or finish with whitespace 'Cơ-tu '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[26].display: value should not start or finish with whitespace 'Gié-Triêng '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[27].display: value should not start or finish with whitespace 'Mạ '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[28].display: value should not start or finish with whitespace 'Khơ-mú '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[29].display: value should not start or finish with whitespace 'Co '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[30].display: value should not start or finish with whitespace 'Ta-ôi '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[31].display: value should not start or finish with whitespace 'Chơ-ro '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[32].display: value should not start or finish with whitespace 'Kháng '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[33].display: value should not start or finish with whitespace 'Xinh-mun '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[34].display: value should not start or finish with whitespace 'Hà...Nhì '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[35].display: value should not start or finish with whitespace 'Chu-ru '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[36].display: value should not start or finish with whitespace 'Lào '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[37].display: value should not start or finish with whitespace 'La...Chi '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[38].display: value should not start or finish with whitespace 'La...Ha '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[39].display: value should not start or finish with whitespace 'Phù...Lá '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[40].display: value should not start or finish with whitespace 'La...Hủ '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[41].display: value should not start or finish with whitespace 'Lự '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[42].display: value should not start or finish with whitespace 'Lô...Lô '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[43].display: value should not start or finish with whitespace 'Chứt '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[44].display: value should not start or finish with whitespace 'Mảng '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[45].display: value should not start or finish with whitespace 'Pà...Thẻn '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[46].display: value should not start or finish with whitespace 'Cơ...Lao '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[47].display: value should not start or finish with whitespace 'Cống '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[48].display: value should not start or finish with whitespace 'Bố...Y '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[49].display: value should not start or finish with whitespace 'Si...La '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[50].display: value should not start or finish with whitespace 'Pu...Péo '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[51].display: value should not start or finish with whitespace 'Brâu '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[52].display: value should not start or finish with whitespace 'Ơ...Đu '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[53].display: value should not start or finish with whitespace 'Rơ-măm '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[54].display: value should not start or finish with whitespace 'Người...ngoài '
+WARNING: CodeSystem/cs-vn-ethnicity: CodeSystem.concept[55].display: value should not start or finish with whitespace 'Không...rõ '
 INFORMATION: CodeSystem/cs-vn-ethnicity: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-vn-regimen.json ==
 INFORMATION: CodeSystem/cs-vn-regimen: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-vn-regimenline.json ==
 INFORMATION: CodeSystem/cs-vn-regimenline: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-cs-vn-whostage.json ==
-WARNING: CodeSystem/cs-vn-whostage: CodeSystem.title: value should not start or finish with whitespace
+WARNING: CodeSystem/cs-vn-whostage: CodeSystem.title: value should not start or finish with whitespace 'CodeSystem...stage '
 INFORMATION: CodeSystem/cs-vn-whostage: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-type-of-contact.json ==
 INFORMATION: CodeSystem/type-of-contact: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
@@ -3733,9 +3721,9 @@ WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.cas
 == fsh-generated/resources/StructureDefinition-ext-specimen-collection-place.json ==
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-specimen-collection-place'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ext-vn-ethnicity.json ==
-WARNING: StructureDefinition/ext-vn-ethnicity: StructureDefinition.title: value should not start or finish with whitespace
-WARNING: StructureDefinition/ext-vn-ethnicity: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/ext-vn-ethnicity: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/ext-vn-ethnicity: StructureDefinition.title: value should not start or finish with whitespace 'Vietnam...Ethnicity '
+WARNING: StructureDefinition/ext-vn-ethnicity: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace 'Vietnam...Ethnicity '
+WARNING: StructureDefinition/ext-vn-ethnicity: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace 'Vietnam...Ethnicity '
 == fsh-generated/resources/StructureDefinition-hcv-diagnosis-observation.json ==
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hcv-diagnosis-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-hiv-arv-careplan.json ==
@@ -3747,7 +3735,7 @@ INFORMATION: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn
 == fsh-generated/resources/StructureDefinition-hiv-key-population.json ==
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-key-population'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
-WARNING: StructureDefinition/hiv-patient: StructureDefinition.snapshot.element[8].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/hiv-patient: StructureDefinition.snapshot.element[8].short: value should not start or finish with whitespace 'Vietnam...Ethnicity '
 == fsh-generated/resources/StructureDefinition-hiv-recency-result.json ==
 == fsh-generated/resources/StructureDefinition-hiv-risk-behavior.json ==
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-risk-behavior'): The Implementation Guide contains no examples for this profile
@@ -3767,8 +3755,8 @@ WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.cas
 WARNING: StructureDefinition/pregnancy-status: StructureDefinition.snapshot.element[55].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: StructureDefinition/pregnancy-status: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/StructureDefinition-vn-administrative-address.json ==
-WARNING: StructureDefinition/vn-administrative-address: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/vn-administrative-address: StructureDefinition.differential.element[1].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/vn-administrative-address: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace ' province...address '
+WARNING: StructureDefinition/vn-administrative-address: StructureDefinition.differential.element[1].short: value should not start or finish with whitespace ' province...address '
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/vn-administrative-address'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/ValueSet-HIVRelationshipTypesVS.json ==
 == fsh-generated/resources/ValueSet-VSDateComponent.json ==
@@ -3785,9 +3773,9 @@ INFORMATION: ValueSet/vs-diagnosis-results: ValueSet.compose.include[2].concept[
 INFORMATION: ValueSet/vs-diagnosis-results: ValueSet.compose.include[3].concept[0].designation[0].language: The value provided ('vi-VN') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#vi-VN) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 == fsh-generated/resources/ValueSet-vs-hiv-birthdefects.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-mediatorsys.json ==
-WARNING: ValueSet/vs-hiv-mediatorsys: ValueSet.title: value should not start or finish with whitespace
+WARNING: ValueSet/vs-hiv-mediatorsys: ValueSet.title: value should not start or finish with whitespace 'MediatorSystem...Set '
 == fsh-generated/resources/ValueSet-vs-hiv-occupation.json ==
-WARNING: ValueSet/vs-hiv-occupation: ValueSet.title: value should not start or finish with whitespace
+WARNING: ValueSet/vs-hiv-occupation: ValueSet.title: value should not start or finish with whitespace 'Occupation...Set '
 == fsh-generated/resources/ValueSet-vs-hiv-population.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-pregnancy-outcome.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-rapidtestresults.json ==
@@ -3814,15 +3802,15 @@ INFORMATION: ValueSet/vs-hiv-symptoms: ValueSet.compose.include[0].concept[0].de
 == fsh-generated/resources/ValueSet-vs-vn-ethnicity.json ==
 == fsh-generated/resources/ValueSet-vs-vn-regimen.json ==
 == fsh-generated/resources/ValueSet-vs-vn-regimenline.json ==
-WARNING: ValueSet/vs-vn-regimenline: ValueSet.title: value should not start or finish with whitespace
+WARNING: ValueSet/vs-vn-regimenline: ValueSet.title: value should not start or finish with whitespace 'ValueSet...Line '
 == fsh-generated/resources/ValueSet-vs-vn-whostage.json ==
-WARNING: ValueSet/vs-vn-whostage: ValueSet.title: value should not start or finish with whitespace
+WARNING: ValueSet/vs-vn-whostage: ValueSet.title: value should not start or finish with whitespace 'ValueSet...Stage '
 == input/openhie.vn.case-reporting.hiv.xml ==
 WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.dependsOn[0].uri: Canonical URL 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' refers to a resource that has the wrong type. Found StructureDefinition expecting one of [ImplementationGuide]
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[7].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[12].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[57].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[70].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[75].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[92].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[24].name: value should not start or finish with whitespace 'CodeSystem...stage '
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[50].name: value should not start or finish with whitespace 'Vietnam...Ethnicity '
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[63].name: value should not start or finish with whitespace 'ValueSet...Stage '
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[78].name: value should not start or finish with whitespace 'ValueSet...Line '
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[86].name: value should not start or finish with whitespace 'MediatorSystem...Set '
+WARNING: ImplementationGuide/openhie.vn.case-reporting.hiv: ImplementationGuide.definition.resource[109].name: value should not start or finish with whitespace 'Occupation...Set '
