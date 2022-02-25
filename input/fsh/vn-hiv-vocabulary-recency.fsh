@@ -17,7 +17,7 @@ Title: "Recency RITA result"
 Description: "CodeSystem - Pregnancy Status"
 * #newInfection "newInfection" "New Infection"
 * #infection "infection" "Infection"
-* #infection "notInfection" "Not Infection"
+* #noinfection "notInfection" "Not Infection"
 
 
 ValueSet: VSRecencyRITAResult
