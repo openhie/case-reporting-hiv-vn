@@ -1,3 +1,4 @@
+
 This publication defines a specification that supports a series of **features**, detailed by identified **use cases**, to enable case reporting for HIV.
 
 ### Features
@@ -39,3 +40,6 @@ The following use cases have been elicited from the stated business requirements
 |use case|Name|Summary|
 |---|---|---|
 (TBC)
+
+Rules:
+> Rule 3: If national ID number and social health insurance number are not available, it is required to compare the combination of full name and other identifying info							

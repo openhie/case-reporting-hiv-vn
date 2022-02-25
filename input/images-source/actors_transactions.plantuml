@@ -2,7 +2,7 @@
 skinparam componentStyle rectangle
 
 '!include ./style.iuml
-!pragma graphviz_dot smetana
+'!pragma layout smetana
 skinparam linetype ortho
 
 agent [Case Report\n Submitter] as CRS

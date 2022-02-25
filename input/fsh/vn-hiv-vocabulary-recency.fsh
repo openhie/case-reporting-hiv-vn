@@ -19,9 +19,9 @@ Description:  "CodeSystem - Recency result"
 CodeSystem: RecencyRITAresult
 Title: "Recency RITA result"
 Description: "CodeSystem - Recency result"
-* #1 "newInfection" "New Infection"
-* #2 "infection" "Infection"
-* #3 "noInfection" "Not Infection"
+* #newInfection "newInfection" "New Infection"
+* #infection "infection" "Infection"
+* #noInfection "noInfection" "Not Infection"
 
 
 ValueSet: VSRecencyRITAResult
