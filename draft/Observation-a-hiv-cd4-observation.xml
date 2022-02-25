@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="a-hiv-cd4-observation"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-cd4-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "a-hiv-cd4-observation" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-cd4-observation.html">CD4 Observation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Lymphocyte antigen CD4 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#24655002)</span></p><p><b>subject</b>: <a href="Patient-test-hiv-patient.html">Patient/test-hiv-patient</a> ""</p><p><b>issued</b>: Apr 5, 2013, 8:30:10 AM</p><p><b>value</b>: 768</p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Specimen collection date (observable entity) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#399445004)</span></td><td>2013-02-05 03:30:10+0700</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="24655002"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/test-hiv-patient"/>
+  </subject>
+  <issued value="2013-04-05T15:30:10+07:00"/>
+  <valueInteger value="768"/>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="399445004"/>
+      </coding>
+    </code>
+    <valueDateTime value="2013-02-05T15:30:10+07:00"/>
+  </component>
+</Observation>

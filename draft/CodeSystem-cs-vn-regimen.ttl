@@ -1,0 +1,237 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimen> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-vn-regimen"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimen defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">reg001<a name=\"cs-vn-regimen-reg001\"> </a></td><td>(TDF/3TC/DTG 300/300/50)</td></tr><tr><td style=\"white-space:nowrap\">reg002<a name=\"cs-vn-regimen-reg002\"> </a></td><td>(TDF/3TC/EFV 300/300/400)</td></tr><tr><td style=\"white-space:nowrap\">reg003<a name=\"cs-vn-regimen-reg003\"> </a></td><td>(TDF/3TC/EFV 300/300/600)</td></tr><tr><td style=\"white-space:nowrap\">reg004<a name=\"cs-vn-regimen-reg004\"> </a></td><td>(ZDV/3TC 300/150)(EFV 600)</td></tr><tr><td style=\"white-space:nowrap\">reg005<a name=\"cs-vn-regimen-reg005\"> </a></td><td>(ZDV/3TC 300/150)(EFV 200)</td></tr><tr><td style=\"white-space:nowrap\">reg006<a name=\"cs-vn-regimen-reg006\"> </a></td><td>(ZDV/3TC/NVP 300/150/200)</td></tr><tr><td style=\"white-space:nowrap\">reg007<a name=\"cs-vn-regimen-reg007\"> </a></td><td>(ABC 300)(3TC 150)(DTG 50)</td></tr><tr><td style=\"white-space:nowrap\">reg008<a name=\"cs-vn-regimen-reg008\"> </a></td><td>(TDF 300)(3TC 150)(RAL 400)</td></tr><tr><td style=\"white-space:nowrap\">reg009<a name=\"cs-vn-regimen-reg009\"> </a></td><td>(TDF/FTC 300/200)(RAL 400)</td></tr><tr><td style=\"white-space:nowrap\">reg010<a name=\"cs-vn-regimen-reg010\"> </a></td><td>(TAF 25)(3TC 150)(DTG 50)</td></tr><tr><td style=\"white-space:nowrap\">reg011<a name=\"cs-vn-regimen-reg011\"> </a></td><td>(TDF/FTC 300/200)(EFV 600)</td></tr><tr><td style=\"white-space:nowrap\">reg012<a name=\"cs-vn-regimen-reg012\"> </a></td><td>(ZDV/3TC 300/150)(LPV/r 100/25)</td></tr><tr><td style=\"white-space:nowrap\">reg013<a name=\"cs-vn-regimen-reg013\"> </a></td><td>(ZDV/3TC 300/150)(LPV/r 200/50)</td></tr><tr><td style=\"white-space:nowrap\">reg014<a name=\"cs-vn-regimen-reg014\"> </a></td><td>(ZDV/3TC 300/150)(DTG 50)</td></tr><tr><td style=\"white-space:nowrap\">reg015<a name=\"cs-vn-regimen-reg015\"> </a></td><td>(ZDV/3TC 300/150)(ATV 300)(RTV 100)</td></tr><tr><td style=\"white-space:nowrap\">reg016<a name=\"cs-vn-regimen-reg016\"> </a></td><td>(ZDV/3TC 300/150)(DRV 600)(RTV 100)</td></tr><tr><td style=\"white-space:nowrap\">reg017<a name=\"cs-vn-regimen-reg017\"> </a></td><td>(TDF/FTC 300/200)(DTG 50)</td></tr><tr><td style=\"white-space:nowrap\">reg018<a name=\"cs-vn-regimen-reg018\"> </a></td><td>(TDF/FTC 300/200)(ATV 300)(RTV 100)</td></tr><tr><td style=\"white-space:nowrap\">reg019<a name=\"cs-vn-regimen-reg019\"> </a></td><td>(TDF/FTC 300/200)(DRV 600)(RTV 100)</td></tr><tr><td style=\"white-space:nowrap\">reg020<a name=\"cs-vn-regimen-reg020\"> </a></td><td>(TDF 300)(3TC 150)(ATV 300)(RTV 100)</td></tr><tr><td style=\"white-space:nowrap\">reg021<a name=\"cs-vn-regimen-reg021\"> </a></td><td>(TDF 300)(3TC 150)(DRV 600)(RTV 100)</td></tr><tr><td style=\"white-space:nowrap\">reg022<a name=\"cs-vn-regimen-reg022\"> </a></td><td>(TDF 300)(3TC 150)(LPV/r 100/25)</td></tr><tr><td style=\"white-space:nowrap\">reg023<a name=\"cs-vn-regimen-reg023\"> </a></td><td>(TDF 300)(3TC 150)(LPV/r 200/50)</td></tr><tr><td style=\"white-space:nowrap\">reg024<a name=\"cs-vn-regimen-reg024\"> </a></td><td>(TDF 300)(3TC 150)(LPV/r 80/20mg/ml)</td></tr><tr><td style=\"white-space:nowrap\">reg025<a name=\"cs-vn-regimen-reg025\"> </a></td><td>(TDF/FTC 300/200)(LPV/r 100/25)</td></tr><tr><td style=\"white-space:nowrap\">reg026<a name=\"cs-vn-regimen-reg026\"> </a></td><td>(TDF/FTC 300/200)(LPV/r 200/50)</td></tr><tr><td style=\"white-space:nowrap\">reg027<a name=\"cs-vn-regimen-reg027\"> </a></td><td>(TDF/FTC 300/200)(LPV/r 80/20mg/ml)</td></tr><tr><td style=\"white-space:nowrap\">reg028<a name=\"cs-vn-regimen-reg028\"> </a></td><td>(ABC 300)(ZDV/3TC 300/150)</td></tr><tr><td style=\"white-space:nowrap\">reg029<a name=\"cs-vn-regimen-reg029\"> </a></td><td>(ABC 300)(ZDV/3TC 60/30)</td></tr><tr><td style=\"white-space:nowrap\">reg030<a name=\"cs-vn-regimen-reg030\"> </a></td><td>(ABC/3TC 60/30)(DTG 50)</td></tr><tr><td style=\"white-space:nowrap\">reg031<a name=\"cs-vn-regimen-reg031\"> </a></td><td>(ABC/3TC 60/30)(LPV/r 100/25)</td></tr><tr><td style=\"white-space:nowrap\">reg032<a name=\"cs-vn-regimen-reg032\"> </a></td><td>(ABC/3TC 60/30)(LPV/r 200/50)</td></tr><tr><td style=\"white-space:nowrap\">reg033<a name=\"cs-vn-regimen-reg033\"> </a></td><td>(ABC/3TC 60/30)(LPV/r 80/20mg/ml)</td></tr><tr><td style=\"white-space:nowrap\">reg034<a name=\"cs-vn-regimen-reg034\"> </a></td><td>(ZDV/3TC/NVP 60/30/50)</td></tr><tr><td style=\"white-space:nowrap\">reg035<a name=\"cs-vn-regimen-reg035\"> </a></td><td>(ABC/3TC 60/30)(EFV 200)</td></tr><tr><td style=\"white-space:nowrap\">reg036<a name=\"cs-vn-regimen-reg036\"> </a></td><td>(ABC/3TC 60/30)(EFV 200)(EFV 50)</td></tr><tr><td style=\"white-space:nowrap\">reg037<a name=\"cs-vn-regimen-reg037\"> </a></td><td>(ABC/3TC 60/30)(EFV 50)</td></tr><tr><td style=\"white-space:nowrap\">reg038<a name=\"cs-vn-regimen-reg038\"> </a></td><td>(ZDV/3TC 60/30)(EFV 200)</td></tr><tr><td style=\"white-space:nowrap\">reg039<a name=\"cs-vn-regimen-reg039\"> </a></td><td>(ZDV/3TC 60/30)(EFV 200)(EFV 50)</td></tr><tr><td style=\"white-space:nowrap\">reg040<a name=\"cs-vn-regimen-reg040\"> </a></td><td>(ZDV/3TC 60/30)(EFV 50)</td></tr><tr><td style=\"white-space:nowrap\">reg041<a name=\"cs-vn-regimen-reg041\"> </a></td><td>(ZDV/3TC 60/30)(RAL 25)</td></tr><tr><td style=\"white-space:nowrap\">reg042<a name=\"cs-vn-regimen-reg042\"> </a></td><td>(ZDV/3TC 60/30)(RAL 100)</td></tr><tr><td style=\"white-space:nowrap\">reg043<a name=\"cs-vn-regimen-reg043\"> </a></td><td>(ZDV/3TC 60/30)(LPV/r 100/25)</td></tr><tr><td style=\"white-space:nowrap\">reg044<a name=\"cs-vn-regimen-reg044\"> </a></td><td>(ZDV/3TC 60/30)(LPV/r 80/20mg/ml)</td></tr><tr><td style=\"white-space:nowrap\">reg045<a name=\"cs-vn-regimen-reg045\"> </a></td><td>(ZDV/3TC 60/30)(DTG 50)</td></tr><tr><td style=\"white-space:nowrap\">reg046<a name=\"cs-vn-regimen-reg046\"> </a></td><td>(ABC/3TC 60/30)(RAL 25)</td></tr><tr><td style=\"white-space:nowrap\">reg047<a name=\"cs-vn-regimen-reg047\"> </a></td><td>(ABC/3TC 60/30)(RAL 100)</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimen"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
+  fhir:CodeSystem.name [ fhir:value "CSVietnamRegimen"];
+  fhir:CodeSystem.title [ fhir:value "CodeSystem Vietnam HIV Regimen"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-02-25T21:34:18+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "CodeSystem - Vietnam HIV Regimen"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "47"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "reg001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/3TC/DTG 300/300/50)" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "reg002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/3TC/EFV 300/300/400)" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "reg003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/3TC/EFV 300/300/600)" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "reg004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 300/150)(EFV 600)" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "reg005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 300/150)(EFV 200)" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "reg006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC/NVP 300/150/200)" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "reg007" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC 300)(3TC 150)(DTG 50)" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "reg008" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF 300)(3TC 150)(RAL 400)" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "reg009" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/FTC 300/200)(RAL 400)" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "reg010" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TAF 25)(3TC 150)(DTG 50)" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "reg011" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/FTC 300/200)(EFV 600)" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "reg012" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 300/150)(LPV/r 100/25)" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "reg013" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 300/150)(LPV/r 200/50)" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "reg014" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 300/150)(DTG 50)" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "reg015" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 300/150)(ATV 300)(RTV 100)" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "reg016" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 300/150)(DRV 600)(RTV 100)" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "reg017" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/FTC 300/200)(DTG 50)" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "reg018" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/FTC 300/200)(ATV 300)(RTV 100)" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "reg019" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/FTC 300/200)(DRV 600)(RTV 100)" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "reg020" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF 300)(3TC 150)(ATV 300)(RTV 100)" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "reg021" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF 300)(3TC 150)(DRV 600)(RTV 100)" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "reg022" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF 300)(3TC 150)(LPV/r 100/25)" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "reg023" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF 300)(3TC 150)(LPV/r 200/50)" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "reg024" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF 300)(3TC 150)(LPV/r 80/20mg/ml)" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "reg025" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/FTC 300/200)(LPV/r 100/25)" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "reg026" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/FTC 300/200)(LPV/r 200/50)" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "reg027" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(TDF/FTC 300/200)(LPV/r 80/20mg/ml)" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "reg028" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC 300)(ZDV/3TC 300/150)" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "reg029" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC 300)(ZDV/3TC 60/30)" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "reg030" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC/3TC 60/30)(DTG 50)" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "reg031" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC/3TC 60/30)(LPV/r 100/25)" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "reg032" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC/3TC 60/30)(LPV/r 200/50)" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "reg033" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC/3TC 60/30)(LPV/r 80/20mg/ml)" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "reg034" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC/NVP 60/30/50)" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "reg035" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC/3TC 60/30)(EFV 200)" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "reg036" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC/3TC 60/30)(EFV 200)(EFV 50)" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "reg037" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC/3TC 60/30)(EFV 50)" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "reg038" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 60/30)(EFV 200)" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "reg039" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 60/30)(EFV 200)(EFV 50)" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "reg040" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 60/30)(EFV 50)" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "reg041" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 60/30)(RAL 25)" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "reg042" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 60/30)(RAL 100)" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "reg043" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 60/30)(LPV/r 100/25)" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "reg044" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 60/30)(LPV/r 80/20mg/ml)" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "reg045" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ZDV/3TC 60/30)(DTG 50)" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "reg046" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC/3TC 60/30)(RAL 25)" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "reg047" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(ABC/3TC 60/30)(RAL 100)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-regimen.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

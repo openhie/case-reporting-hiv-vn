@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-hiv-birthdefects",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-birthdefects defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">positive<a name=\"cs-hiv-birthdefects-positive\"> </a></td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\">negative<a name=\"cs-hiv-birthdefects-negative\"> </a></td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\">unidentified<a name=\"cs-hiv-birthdefects-unidentified\"> </a></td><td>Unidentified</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"cs-hiv-birthdefects-unknown\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-birthdefects",
+  "version": "0.1.0-test",
+  "name": "CSBirthDefects",
+  "title": "Codesystem Birth Defects",
+  "status": "active",
+  "date": "2022-02-25T21:34:18+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem - Birth Defects",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "positive",
+      "display": "Positive"
+    },
+    {
+      "code": "negative",
+      "display": "Negative"
+    },
+    {
+      "code": "unidentified",
+      "display": "Unidentified"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    }
+  ]
+}

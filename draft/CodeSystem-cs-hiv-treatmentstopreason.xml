@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-treatmentstopreason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-treatmentstopreason defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">transfer-out<a name="cs-hiv-treatmentstopreason-transfer-out"> </a></td><td>Transfer out</td></tr><tr><td style="white-space:nowrap">drop-out<a name="cs-hiv-treatmentstopreason-drop-out"> </a></td><td>Drop out or LTFU</td></tr><tr><td style="white-space:nowrap">death<a name="cs-hiv-treatmentstopreason-death"> </a></td><td>Death</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-treatmentstopreason"/>
+  <version value="0.1.0-test"/>
+  <name value="CSTreatmentStopReason"/>
+  <title value="Codesystem Reason to stop treatment at facility"/>
+  <status value="active"/>
+  <date value="2022-02-25T21:34:18+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - &#x9;Reason to stop treatment at facility"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="transfer-out"/>
+    <display value="Transfer out"/>
+  </concept>
+  <concept>
+    <code value="drop-out"/>
+    <display value="Drop out or LTFU"/>
+  </concept>
+  <concept>
+    <code value="death"/>
+    <display value="Death"/>
+  </concept>
+</CodeSystem>

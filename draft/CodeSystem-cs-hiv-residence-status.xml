@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-residence-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-residence-status defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ltfu<a name="cs-hiv-residence-status-ltfu"> </a></td><td>LTFU</td></tr><tr><td style="white-space:nowrap">live-local<a name="cs-hiv-residence-status-live-local"> </a></td><td>Currently live in locality</td></tr><tr><td style="white-space:nowrap">not-reality<a name="cs-hiv-residence-status-not-reality"> </a></td><td>Not in reality</td></tr><tr><td style="white-space:nowrap">in-rpison<a name="cs-hiv-residence-status-in-rpison"> </a></td><td>In prison</td></tr><tr><td style="white-space:nowrap">within-provice<a name="cs-hiv-residence-status-within-provice"> </a></td><td>Move within province</td></tr><tr><td style="white-space:nowrap">other-place<a name="cs-hiv-residence-status-other-place"> </a></td><td>Move to other places/provinces</td></tr><tr><td style="white-space:nowrap">far-from-home<a name="cs-hiv-residence-status-far-from-home"> </a></td><td>Work far away from home</td></tr><tr><td style="white-space:nowrap">unknow<a name="cs-hiv-residence-status-unknow"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-residence-status"/>
+  <version value="0.1.0-test"/>
+  <name value="CSResidenceStatus"/>
+  <title value="Codesystem ResidenceStatus"/>
+  <status value="active"/>
+  <date value="2022-02-25T21:34:18+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - &#x9;ResidenceStatus"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="ltfu"/>
+    <display value="LTFU"/>
+  </concept>
+  <concept>
+    <code value="live-local"/>
+    <display value="Currently live in locality"/>
+  </concept>
+  <concept>
+    <code value="not-reality"/>
+    <display value="Not in reality"/>
+  </concept>
+  <concept>
+    <code value="in-rpison"/>
+    <display value="In prison"/>
+  </concept>
+  <concept>
+    <code value="within-provice"/>
+    <display value="Move within province"/>
+  </concept>
+  <concept>
+    <code value="other-place"/>
+    <display value="Move to other places/provinces"/>
+  </concept>
+  <concept>
+    <code value="far-from-home"/>
+    <display value="Work far away from home"/>
+  </concept>
+  <concept>
+    <code value="unknow"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>
