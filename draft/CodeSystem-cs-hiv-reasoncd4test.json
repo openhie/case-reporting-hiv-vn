@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-hiv-reasoncd4test",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-reasoncd4test defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">before_art<a name=\"cs-hiv-reasoncd4test-before_art\"> </a></td><td>Before ART</td></tr><tr><td style=\"white-space:nowrap\">routine_test<a name=\"cs-hiv-reasoncd4test-routine_test\"> </a></td><td>Routine test</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-hiv-reasoncd4test-other\"> </a></td><td>Other </td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-reasoncd4test",
+  "version": "0.1.0-test",
+  "name": "CSHIVReasonCD4Test",
+  "title": "Codesystem Reason for CD4 test",
+  "status": "active",
+  "date": "2022-02-25T20:59:17+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem - Reason for CD4 test",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "before_art",
+      "display": "Before ART"
+    },
+    {
+      "code": "routine_test",
+      "display": "Routine test"
+    },
+    {
+      "code": "other",
+      "display": "Other "
+    }
+  ]
+}

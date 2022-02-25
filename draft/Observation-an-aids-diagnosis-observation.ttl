@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Observation/an-aids-diagnosis-observation> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "an-aids-diagnosis-observation"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/aids-diagnosis-observation";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/aids-diagnosis-observation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"an-aids-diagnosis-observation\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-aids-diagnosis-observation.html\">AIDS Diagnosis result</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#10828004)</span></p><p><b>subject</b>: <a href=\"Patient-test-hiv-patient.html\">Patient/test-hiv-patient</a> \"\"</p><p><b>effective</b>: 2013-04-05 03:30:10+0700</p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Specimen collection date (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#399445004)</span></td><td>2013-02-05 03:30:10+0700</td></tr></table></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:10828004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "10828004" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Patient/test-hiv-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/test-hiv-patient" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2013-04-05T15:30:10+07:00"^^xsd:dateTime];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:399445004;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "399445004" ]
+       ]
+     ];
+     fhir:Observation.component.valueDateTime [ fhir:value "2013-02-05T15:30:10+07:00"^^xsd:dateTime ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Observation/an-aids-diagnosis-observation.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-arv-enrollment-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-enrollment-type defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">new<a name="cs-arv-enrollment-type-new"> </a></td><td>ARV newly registered</td></tr><tr><td style="white-space:nowrap">transfer-in<a name="cs-arv-enrollment-type-transfer-in"> </a></td><td>ARV patient transferred in</td></tr><tr><td style="white-space:nowrap">reinitiation<a name="cs-arv-enrollment-type-reinitiation"> </a></td><td>ARV patient restarted</td></tr><tr><td style="white-space:nowrap">pre-tranfer-in<a name="cs-arv-enrollment-type-pre-tranfer-in"> </a></td><td>Pre-ARV patient transferred in</td></tr><tr><td style="white-space:nowrap">pre-re-gregistered<a name="cs-arv-enrollment-type-pre-re-gregistered"> </a></td><td>Pre-ARV patients re-registered</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-enrollment-type"/>
+  <version value="0.1.0-test"/>
+  <name value="CSARVEnrollmentType"/>
+  <title value="CodeSystem ARV Enrollment Type"/>
+  <status value="active"/>
+  <date value="2022-02-25T20:59:17+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="Codesystem - ARV Enrollment Type"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="new"/>
+    <display value="ARV newly registered"/>
+  </concept>
+  <concept>
+    <code value="transfer-in"/>
+    <display value="ARV patient transferred in"/>
+  </concept>
+  <concept>
+    <code value="reinitiation"/>
+    <display value="ARV patient restarted"/>
+  </concept>
+  <concept>
+    <code value="pre-tranfer-in"/>
+    <display value="Pre-ARV patient transferred in"/>
+  </concept>
+  <concept>
+    <code value="pre-re-gregistered"/>
+    <display value="Pre-ARV patients re-registered"/>
+  </concept>
+</CodeSystem>

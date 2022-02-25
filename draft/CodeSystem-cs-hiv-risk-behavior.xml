@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-risk-behavior"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">pwid<a name="cs-hiv-risk-behavior-pwid"> </a></td><td>PWID</td></tr><tr><td style="white-space:nowrap">sex_partner<a name="cs-hiv-risk-behavior-sex_partner"> </a></td><td>Having sex with sex worker or sex buyer</td></tr><tr><td style="white-space:nowrap">msm<a name="cs-hiv-risk-behavior-msm"> </a></td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">smp<a name="cs-hiv-risk-behavior-smp"> </a></td><td>Having sex with multiple partners (not for money or drug)</td></tr><tr><td style="white-space:nowrap">partner_hiv<a name="cs-hiv-risk-behavior-partner_hiv"> </a></td><td>Having sex with spouse/partners who are HIV infected</td></tr><tr><td style="white-space:nowrap">other<a name="cs-hiv-risk-behavior-other"> </a></td><td>Other</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-risk-behavior"/>
+  <version value="0.1.0-test"/>
+  <name value="CSHIVRiskBehavior"/>
+  <title value="Risk Behavior"/>
+  <status value="active"/>
+  <date value="2022-02-25T20:59:17+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - Behavior associated with risk of HIV transmission"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="pwid"/>
+    <display value="PWID"/>
+  </concept>
+  <concept>
+    <code value="sex_partner"/>
+    <display value="Having sex with sex worker or sex buyer"/>
+  </concept>
+  <concept>
+    <code value="msm"/>
+    <display value="Men who have sex with men"/>
+  </concept>
+  <concept>
+    <code value="smp"/>
+    <display value="Having sex with multiple partners (not for money or drug)"/>
+  </concept>
+  <concept>
+    <code value="partner_hiv"/>
+    <display value="Having sex with spouse/partners who are HIV infected"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,65 @@
+{
+  "resourceType": "Patient",
+  "id": "test-hiv-patient",
+  "meta": {
+    "profile": [
+      "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Nguyan Van A</b> (no stated gender) 1970-01-01 ( id: ARV001)</p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-vn-ethnicity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "kinh"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://basespecs.vn/NamingSystem/ARTIdentifiers",
+      "value": "ARV001"
+    },
+    {
+      "system": "https://basespecs.vn/NamingSystem/PassportNumbers",
+      "value": "P0000012311"
+    },
+    {
+      "system": "hhttps://basespecs.vn/NamingSystem/NationalID9",
+      "value": "011100101"
+    },
+    {
+      "system": "https://basespecs.vn/NamingSystem/InsuranceNumbers",
+      "value": "NN-1232717432"
+    },
+    {
+      "system": "https://basespecs.vn/NamingSystem/NationalID",
+      "value": "01112303122"
+    }
+  ],
+  "name": [
+    {
+      "text": "Nguyan Van A"
+    }
+  ],
+  "birthDate": "1970",
+  "address": [
+    {
+      "line": [
+        "31 Tôn Thất Thiệp, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000"
+      ]
+    },
+    {
+      "line": [
+        "3c Ly Thuong Kiet Street, Phu Thanh Block, Tan Phu Ward"
+      ]
+    }
+  ]
+}
