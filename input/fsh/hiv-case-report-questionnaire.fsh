@@ -83,15 +83,10 @@ Usage: #definition
 
 
 
-//* insert Question(,title,HIV case report,display,false)
-* item[+].linkId = "title"
-* item[=].text = "HIV case report"
-* item[=].type = #display
-//* insert Question(,instructions,Reporting instructions: Monthly - applicable to each patient during the reporting period,display,false)
-* item[+].linkId = "instructions"
-* item[=].text = "Reporting instructions: Monthly - applicable to each patient during the reporting period"
-* item[=].type = #display
-
+* insert Question(,tile,HIV Case Report,display,false)
+* insert Question(,instructions,Reporting instructions: Monthly - applicable to each patient during the reporting period,display,false)
+* insert Question(,organization_unit_name,Facility ID,open-choice,false)
+* insert Question(,report_date,Date of Report,date,false)
 
 * insert Question(,mediator,From System ,choice,false)
 * item[=].answerValueSet = Canonical(vs-hiv-mediatorsys)
@@ -115,6 +110,7 @@ Usage: #definition
 * insert Question(item[=].item[=].,personal_information,Personal information,group,false)
 * insert Question(item[=].item[=].item[=].,fullname,Full name,string,false)
 * insert Question(item[=].item[=].item[=].,ethnicity,Vietnam ethnicity,choice,false)
+
 * item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-vn-ethnicity)
 
 
@@ -175,7 +171,7 @@ Usage: #definition
 * insert Question(item[=].item[=].,confirming_lab,Confirming lab,open-choice,false)
 * insert Question(item[=].item[=].,confirmation_code,Confirming code,string,false)
 * insert Question(item[=].item[=].,date_specimen_collected,Date of specimen collection,date,false)
-* insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection,open-choice,false)
+* insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection,string,false)
 
 * insert Question(item[=].,hiv_recency_test,HIV recency test,group,false)
 
@@ -216,6 +212,7 @@ Usage: #definition
 * insert Question(item[=].item[=].,place_specimen_collected,Place of specimen collection for CD4 test,open-choice,false)
 * insert Question(item[=].item[=].,date_test_performed,Date of CD4 test,date,false)
 * insert Question(item[=].item[=].,test_result,Result of CD4 test,integer,false)
+
 
 /*
 * insert Question(item[=].item[=].,test_result_other,Other outcome of CD4 test,choice,false)
@@ -389,11 +386,13 @@ Usage: #definition
 
 * insert Question(item[=].item[=].item[=].,delivery_date,Delivery date,date,true)
 * item[=].item[=].item[=].item[=].enableWhen.question = "outcome_code"
+
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 * insert Question(item[=].item[=].item[=].,gestational_age_at_delivery,Gestational age at delivery (weeks\),integer,true)
 * item[=].item[=].item[=].item[=].enableWhen.question = "outcome_code"
 * item[=].item[=].item[=].item[=].enableWhen.operator = #=
+
 * item[=].item[=].item[=].item[=].enableWhen.answerCoding = #2
 
 * insert Question(item[=].item[=].item[=].,child,Births,group,true)

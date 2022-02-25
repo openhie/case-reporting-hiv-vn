@@ -11,6 +11,12 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
+    branches: 
+      - main
+      - master
+      - draft
+      - candidate
+      - jct_updates
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
@@ -41,6 +47,13 @@ jobs:
           # Run the publisher - don't run the batch script but run the line directly
           args: java -jar ./input-cache/publisher.jar publisher -ig .
 
+      - name: Get branch names
+        id: branch-name
+        uses: tj-actions/branch-names@v4.3
+        
+      - name: Current branch name
+        run: |
+          echo "${{ steps.branch-name.outputs.current_branch }}"      
 
       - name: Deploy candidate_test
         uses: JamesIves/github-pages-deploy-action@4.1.4
@@ -55,7 +68,7 @@ jobs:
       - name: Get branch names
         id: branch-name
         uses: tj-actions/branch-names@v4.3
-      
+
 
       - name: Deploy candidate
         uses: JamesIves/github-pages-deploy-action@4.1.4
