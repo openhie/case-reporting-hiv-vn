@@ -38,6 +38,9 @@ Title: "CodeSystem Occupation"
 Description:  "CodeSystem - Occupation"
 
 
+* #sex_business "Persons work in services that are susceptible for sex work"
+* #driver "Driver"
+* #fishman "Fisherman"
 * #army "Army personnel"
 * #gov_empl "Government employee"
 * #worker "Worker"

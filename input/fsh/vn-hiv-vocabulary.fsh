@@ -46,7 +46,7 @@ Title: "Pregnancy Outcome Codes"
 Usage: #inline
 * name = "BirthDefects"
 * status = #draft
-*/
+
 
 Instance: ChildHIVStatus
 InstanceOf: ValueSet
@@ -55,7 +55,7 @@ Title: "Child HIV Status"
 Usage: #inline
 * name = "ChildHIVStatus"
 * status = #draft
-
+*/
 
 
 // Add content from here on
@@ -80,6 +80,7 @@ InstanceOf: ValueSet
 Description: "Symptoms Value Set"
 Title: "Symptoms Value Set"
 Usage: #example
+* title = "HIV Symptoms"
 * name = "HIVSymptomsCode"
 * title = "HIV Symptoms"
 * status = #draft
@@ -181,6 +182,7 @@ Description: "CodeSystem - Recency rapid test results for HIV  "
 * #recent "Recent"
 * #long_term "Long term"
 * #negative "Negative"
+* #inconclusive "Inconclusive"
 
 ValueSet: VSHIVRapidTestResults
 Id: vs-hiv-rapidtestresults
@@ -225,6 +227,7 @@ Description: "CodeSystem - Population groups - Subjects to be tested for HIV"
 * #prisoner "Prisoner"
 * #pregnant "Pregnant women"
 * #military_recruits "Young recruits for military service"
+* #partner_high_risk "Sexual partner of high risk group"
 * #other "Other"
 //* #other "Không rõ" "Unidentified"
 
@@ -287,7 +290,7 @@ Description: "Cause of death"
 * #aids "Last stage of AIDS"
 * #other-diseases "Caused by other diseases"
 * #suicide "Suicide"
-* #overdose "Drug overdose"
+* #overdose "Drug overdose shock"
 * #accident "Accident"
 * #unknown "Unknown"
 * #other "Other"
@@ -365,3 +368,101 @@ Id: vs-hiv-treatmentstopreason
 Title: "Valueset Reason to stop treatment at facility"
 Description:  "Valueset - Reason to stop treatment at facility"
 * include codes from system CSTreatmentStopReason
+
+
+//********************
+CodeSystem: CSResidenceStatus
+Id: cs-hiv-residence-status
+Title: "Codesystem ResidenceStatus"
+Description: "CodeSystem - 	ResidenceStatus"
+
+* #ltfu "LTFU"
+* #live-local "Currently live in locality"
+* #not-reality "Not in reality"
+* #in-rpison "In prison"
+* #within-provice "Move within province"
+* #other-place "Move to other places/provinces"
+* #far-from-home "Work far away from home"
+* #unknow "Unknown"
+
+ValueSet: VSCSResidenceStatus
+Id: vs-hiv-residence-status
+Title: "Valueset ResidenceStatus"
+Description:  "Valueset - ResidenceStatus"
+* include codes from system CSResidenceStatus
+
+//***********
+CodeSystem: CSMediatorSystem
+Id: cs-hiv-mediatorsys
+Title: "CodeSystem Mediator System"
+Description:  "CodeSystem - Mediator System"
+
+* #hivinfo "HIV Info"
+* #pdma "PDMA"
+* #opcassist "OPC Assist Online"
+* #htcelog "HTC e-Log"
+* #eclinica "eClinica"
+* #hivims "HIV IMS"
+* #vtshis "Viettel HIS"
+* #hmed "HMED"
+* #dieutriarv "DieutriARV"
+* #mpi "MPI"
+
+ValueSet: VSMediatorSystem
+Id: vs-hiv-mediatorsys
+Title: "MediatorSystem Value Set "
+Description:  "ValueSet - Mediator System"
+* include codes from system CSMediatorSystem
+
+CodeSystem: CSViralLoadOther
+Id: cs-viralload-result-other
+Title: "CodeSystem Viral Load Other Result"
+Description: "Codesystem - Viral Load Other Result"
+* #vl_undetectable "Undetectable"
+* #vl_200 "Below 200 copies/mL" 
+* #vl_2_1000 "From 200 to 1,000 copies/mL"
+* #vl_1000 "Above 1,000 copies/mL"
+* #vl_no "Not taken"
+
+ValueSet: VSViralLoadOther
+Id: vs-viralload-result-other
+Title: "ValueSet Viral Load Other Result"
+Description:  "Valueset - Viral Load Other Result"
+* include codes from system CSViralLoadOther
+
+//***************************************
+CodeSystem: CSARVEnrollmentType
+Id: cs-arv-enrollment-type
+Title: "CodeSystem ARV Enrollment Type"
+Description: "Codesystem - ARV Enrollment Type"
+
+* #new "ARV newly registered"
+* #transfer-in "ARV patient transferred in"
+* #reinitiation "ARV patient restarted"
+* #pre-tranfer-in "Pre-ARV patient transferred in"
+* #pre-re-gregistered "Pre-ARV patients re-registered"
+
+ValueSet: VSARVEnrollmentType
+Id: vs-arv-enrollment-type
+Title: "ValueSet ARV Enrollment Type"
+Description: "ValueSet - ARV Enrollment Type"
+* include codes from system CSARVEnrollmentType
+
+//***************************************
+CodeSystem: CSARVStatus
+Id: cs-arv-status
+Title: "CodeSystem ARV Treatment Status"
+Description: "Codesystem - ARV TreatmentStatus"
+
+* #arv "Currently on ART"
+* #death "Death"
+* #drop "Drop out/Loss-to-follow-up"
+* #transfer "Transferred out"
+* #never-art "Never on ART"
+* #unknow "Unknown"
+
+ValueSet: VSARVStatus
+Id: vs-arv-status
+Title: "ValueSet ARV Treatment Status"
+Description: "ValueSet - ARV Treatment Status"
+* include codes from system CSARVStatus
