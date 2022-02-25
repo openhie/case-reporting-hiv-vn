@@ -51,8 +51,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.20"}
-    h3,h4,h5,h6{--heading-prefix:"6.20"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.14"}
+    h3,h4,h5,h6{--heading-prefix:"6.14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -172,6 +172,7 @@
 
 
 
+
 <ul class="nav nav-tabs">
 
   <li class="active">
@@ -225,26 +226,70 @@
 
 
   <a name="root"> </a>
-  <h2 id="root">Resource Profile: HIV Treatment</h2>
+  <h2 id="root">Resource Profile:
 
-<table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-process</td></tr>
- <tr><td>Version:</td><td>0.1.0-test</td></tr>
- <tr><td>Name:</td><td>HIVTreatment</td></tr>
- <tr><td>Title:</td><td>HIV Treatment</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-10-29T13:58:33+00:00</td></tr>
- <tr><td>Definition:</td><td><p>This profile allows the exchange of a patient's treatment</p>
-</td></tr>
- <tr><td>Publisher:</td><td>OpenHIE</td></tr>
- <tr><td>Source Resource:</td><td><a href="StructureDefinition-hiv-treatment-process.profile.xml.html">XML</a> / <a href="StructureDefinition-hiv-treatment-process.profile.json.html">JSON</a> / <a href="StructureDefinition-hiv-treatment-process.profile.ttl.html">Turtle</a></td></tr>
-</tbody></table>
+    HIV Treatment
 
 
-  <p>
-  The official URL for this profile is:
-  </p>
-  <pre>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-process</pre>
+
+
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-process<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-process"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0-test<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-treatment-process|0.1.0-test"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-02-25
+          
+        
+      </td>
+
+
+      <td>
+        <i>Responsible:</i> 
+
+        <a href="http://ohie.org">OpenHIE</a>
+
+      </td>
+
+
+      <td>
+        <i>Realm:</i> <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+      </td>
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">HIVTreatment</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>This profile allows the exchange of a patient’s treatment</p>
+
+</p>
+
+
 
 <!-- insert intro if present -->
 
@@ -716,75 +761,77 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     <!--Constraints  heading in the fragment -->
     <h4>Constraints</h4>
 <table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>CarePlan</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>CarePlan</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>CarePlan</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>CarePlan</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>CarePlan</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.meta</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.implicitRules</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.language</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.text</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>CarePlan.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>CarePlan.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.identifier</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.instantiatesCanonical</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.instantiatesUri</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.basedOn</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.replaces</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.partOf</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.intent</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.category</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.title</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.description</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.subject</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.encounter</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.period</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.created</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.author</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.contributor</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.careTeam</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.addresses</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.supportingInfo</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.goal</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>cpl-3</td><td>CarePlan.activity</td><td>Provide a reference or detail, not both<br/>: detail.empty() or reference.empty()</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>CarePlan.activity.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>CarePlan.activity.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.outcomeCodeableConcept</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.outcomeReference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.progress</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.reference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>CarePlan.activity.detail.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>CarePlan.activity.detail.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.kind</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.instantiatesCanonical</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.instantiatesUri</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.code</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.reasonCode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.reasonReference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.goal</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.statusReason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.doNotPerform</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.scheduled[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.location</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.performer</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.product[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.dailyAmount</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.quantity</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.activity.detail.description</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>CarePlan.note</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>CarePlan</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>CarePlan</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>CarePlan</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>CarePlan</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>Best Practice</td><td>CarePlan</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.meta</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.implicitRules</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.language</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.text</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>CarePlan.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>CarePlan.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.identifier</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.instantiatesCanonical</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.instantiatesUri</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.basedOn</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.replaces</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.partOf</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.intent</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.category</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.title</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.description</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.subject</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.encounter</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.period</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.created</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.author</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.contributor</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.careTeam</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.addresses</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.supportingInfo</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.goal</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>cpl-3</td><td>error</td><td>CarePlan.activity</td><td>Provide a reference or detail, not both<br/>: detail.empty() or reference.empty()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>CarePlan.activity.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>CarePlan.activity.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.outcomeCodeableConcept</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.outcomeReference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.progress</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.reference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>CarePlan.activity.detail.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>CarePlan.activity.detail.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.kind</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.instantiatesCanonical</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.instantiatesUri</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.code</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.reasonCode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.reasonReference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.goal</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.statusReason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.doNotPerform</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.scheduled[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.location</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.performer</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.product[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.dailyAmount</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.quantity</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.activity.detail.description</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>CarePlan.note</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 </table>
+
+  
 
   
 
@@ -840,7 +887,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 29, 2021 13:58+0000">2021-10-29</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package openhie.vn.case-reporting.hiv#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 25, 2022 21:36+0000">2022-02-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

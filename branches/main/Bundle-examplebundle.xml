@@ -11,7 +11,7 @@
           <profile value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-condition"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href="Patient-test-hiv-patient.html">Generated Summary: id: ARV001, id: P0000012311, id: 011100101, id: NN-1232717432, id: 01112303122; Nguyan Van A; birthDate: 1970-01-01</a></p><p><b>recordedDate</b>: 2020-11-12</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "test-hiv-condition" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-condition.html">HIV Condition</a></p></div><p><b>subject</b>: <a href="Patient-test-hiv-patient.html">Patient/test-hiv-patient</a> ""</p><p><b>recordedDate</b>: 2020-11-12</p></div>
         </text>
         <subject>
           <reference value="Patient/test-hiv-patient"/>
