@@ -20,4 +20,4 @@ InstanceOf: PregnancyStatus
 
 * component[hivTestResultForChild][+].code = $LOINC#LA11882-0
 * component[hivTestResultForChild][=].valueDateTime = "2013-04-05T15:30:10+07:00"
-*/
+*/ 
