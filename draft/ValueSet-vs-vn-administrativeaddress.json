@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-vn-administrativeaddress",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-administrativeaddress",
+  "version": "0.1.0-test",
+  "name": "VSAdministrativeAddress",
+  "title": "Vietnam Administrative Address",
+  "status": "draft",
+  "date": "2022-02-25T20:52:14+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "Thông tin địa danh hành chính - Theo ban hành Danh mục Dân tộc của Tổng cục thống kê",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ]
+}

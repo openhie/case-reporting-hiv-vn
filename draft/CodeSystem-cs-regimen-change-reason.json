@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-regimen-change-reason",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">lack_of_drug<a name=\"cs-regimen-change-reason-lack_of_drug\"> </a></td><td>Lack of drug</td></tr><tr><td style=\"white-space:nowrap\">side_effects<a name=\"cs-regimen-change-reason-side_effects\"> </a></td><td>Side effects</td></tr><tr><td style=\"white-space:nowrap\">treatment_failure<a name=\"cs-regimen-change-reason-treatment_failure\"> </a></td><td>Treatment failure</td></tr><tr><td style=\"white-space:nowrap\">drug_interaction<a name=\"cs-regimen-change-reason-drug_interaction\"> </a></td><td>Drug interaction</td></tr><tr><td style=\"white-space:nowrap\">new-guidance<a name=\"cs-regimen-change-reason-new-guidance\"> </a></td><td>New regimen as national guidance</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-regimen-change-reason-other\"> </a></td><td>Other</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason",
+  "version": "0.1.0-test",
+  "name": "CSRegimenChangeReason",
+  "title": "Reason for regimen change",
+  "status": "active",
+  "date": "2022-02-25T20:52:14+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "Reason for regimen change",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 6,
+  "concept": [
+    {
+      "code": "lack_of_drug",
+      "display": "Lack of drug"
+    },
+    {
+      "code": "side_effects",
+      "display": "Side effects"
+    },
+    {
+      "code": "treatment_failure",
+      "display": "Treatment failure"
+    },
+    {
+      "code": "drug_interaction",
+      "display": "Drug interaction"
+    },
+    {
+      "code": "new-guidance",
+      "display": "New regimen as national guidance"
+    },
+    {
+      "code": "other",
+      "display": "Other"
+    }
+  ]
+}

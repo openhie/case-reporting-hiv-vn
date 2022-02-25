@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-hiv-reasonvltest",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-reasonvltest defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">routine-6<a name=\"cs-hiv-reasonvltest-routine-6\"> </a></td><td>6 months after ART initiation</td></tr><tr><td style=\"white-space:nowrap\">routine-12<a name=\"cs-hiv-reasonvltest-routine-12\"> </a></td><td>12 month routine</td></tr><tr><td style=\"white-space:nowrap\">treatment-fail<a name=\"cs-hiv-reasonvltest-treatment-fail\"> </a></td><td>Suspected treatment failure (clinical, immunological)</td></tr><tr><td style=\"white-space:nowrap\">3month-after-high<a name=\"cs-hiv-reasonvltest-3month-after-high\"> </a></td><td>3 month after high viral load</td></tr><tr><td style=\"white-space:nowrap\">pregnant<a name=\"cs-hiv-reasonvltest-pregnant\"> </a></td><td>Pregnant/Lactating woman</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-hiv-reasonvltest-other\"> </a></td><td>Other</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-reasonvltest",
+  "version": "0.1.0-test",
+  "name": "CSReasonVLTest",
+  "title": "Codesystem Reason for VL test",
+  "status": "active",
+  "date": "2022-02-25T20:52:14+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem - Reason for VL test",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 6,
+  "concept": [
+    {
+      "code": "routine-6",
+      "display": "6 months after ART initiation"
+    },
+    {
+      "code": "routine-12",
+      "display": "12 month routine"
+    },
+    {
+      "code": "treatment-fail",
+      "display": "Suspected treatment failure (clinical, immunological)"
+    },
+    {
+      "code": "3month-after-high",
+      "display": "3 month after high viral load"
+    },
+    {
+      "code": "pregnant",
+      "display": "Pregnant/Lactating woman"
+    },
+    {
+      "code": "other",
+      "display": "Other"
+    }
+  ]
+}

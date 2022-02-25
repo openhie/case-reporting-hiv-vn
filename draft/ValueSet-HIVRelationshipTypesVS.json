@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "HIVRelationshipTypesVS",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html\"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CHILD\">CHILD</a></td><td>Child</td><td>The player of the role is a child of the scoping entity.</td></tr></table></li></ul></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/HIVRelationshipTypesVS",
+  "version": "0.1.0-test",
+  "name": "HIVRelationshipTypesVS",
+  "title": "Relationship types",
+  "status": "active",
+  "date": "2022-02-25T20:52:14+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "Types of relationships between patients and related persons.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "concept": [
+          {
+            "code": "CHILD",
+            "display": "Child"
+          }
+        ]
+      }
+    ]
+  }
+}
