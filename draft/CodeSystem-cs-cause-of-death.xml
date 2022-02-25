@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-cause-of-death"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">aids<a name="cs-cause-of-death-aids"> </a></td><td>Last stage of AIDS</td></tr><tr><td style="white-space:nowrap">other-diseases<a name="cs-cause-of-death-other-diseases"> </a></td><td>Caused by other diseases</td></tr><tr><td style="white-space:nowrap">suicide<a name="cs-cause-of-death-suicide"> </a></td><td>Suicide</td></tr><tr><td style="white-space:nowrap">overdose<a name="cs-cause-of-death-overdose"> </a></td><td>Drug overdose shock</td></tr><tr><td style="white-space:nowrap">accident<a name="cs-cause-of-death-accident"> </a></td><td>Accident</td></tr><tr><td style="white-space:nowrap">unknown<a name="cs-cause-of-death-unknown"> </a></td><td>Unknown</td></tr><tr><td style="white-space:nowrap">other<a name="cs-cause-of-death-other"> </a></td><td>Other</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-cause-of-death"/>
+  <version value="0.1.0-test"/>
+  <name value="CSCauseOfDeath"/>
+  <title value="Cause of death"/>
+  <status value="active"/>
+  <date value="2022-02-25T20:43:03+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="Cause of death"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="aids"/>
+    <display value="Last stage of AIDS"/>
+  </concept>
+  <concept>
+    <code value="other-diseases"/>
+    <display value="Caused by other diseases"/>
+  </concept>
+  <concept>
+    <code value="suicide"/>
+    <display value="Suicide"/>
+  </concept>
+  <concept>
+    <code value="overdose"/>
+    <display value="Drug overdose shock"/>
+  </concept>
+  <concept>
+    <code value="accident"/>
+    <display value="Accident"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

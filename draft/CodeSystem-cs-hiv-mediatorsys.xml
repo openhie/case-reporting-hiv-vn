@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-mediatorsys"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-mediatorsys defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">hivinfo<a name="cs-hiv-mediatorsys-hivinfo"> </a></td><td>HIV Info</td></tr><tr><td style="white-space:nowrap">pdma<a name="cs-hiv-mediatorsys-pdma"> </a></td><td>PDMA</td></tr><tr><td style="white-space:nowrap">opcassist<a name="cs-hiv-mediatorsys-opcassist"> </a></td><td>OPC Assist Online</td></tr><tr><td style="white-space:nowrap">htcelog<a name="cs-hiv-mediatorsys-htcelog"> </a></td><td>HTC e-Log</td></tr><tr><td style="white-space:nowrap">eclinica<a name="cs-hiv-mediatorsys-eclinica"> </a></td><td>eClinica</td></tr><tr><td style="white-space:nowrap">hivims<a name="cs-hiv-mediatorsys-hivims"> </a></td><td>HIV IMS</td></tr><tr><td style="white-space:nowrap">vtshis<a name="cs-hiv-mediatorsys-vtshis"> </a></td><td>Viettel HIS</td></tr><tr><td style="white-space:nowrap">hmed<a name="cs-hiv-mediatorsys-hmed"> </a></td><td>HMED</td></tr><tr><td style="white-space:nowrap">dieutriarv<a name="cs-hiv-mediatorsys-dieutriarv"> </a></td><td>DieutriARV</td></tr><tr><td style="white-space:nowrap">mpi<a name="cs-hiv-mediatorsys-mpi"> </a></td><td>MPI</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-mediatorsys"/>
+  <version value="0.1.0-test"/>
+  <name value="CSMediatorSystem"/>
+  <title value="CodeSystem Mediator System"/>
+  <status value="active"/>
+  <date value="2022-02-25T20:43:03+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - Mediator System"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="hivinfo"/>
+    <display value="HIV Info"/>
+  </concept>
+  <concept>
+    <code value="pdma"/>
+    <display value="PDMA"/>
+  </concept>
+  <concept>
+    <code value="opcassist"/>
+    <display value="OPC Assist Online"/>
+  </concept>
+  <concept>
+    <code value="htcelog"/>
+    <display value="HTC e-Log"/>
+  </concept>
+  <concept>
+    <code value="eclinica"/>
+    <display value="eClinica"/>
+  </concept>
+  <concept>
+    <code value="hivims"/>
+    <display value="HIV IMS"/>
+  </concept>
+  <concept>
+    <code value="vtshis"/>
+    <display value="Viettel HIS"/>
+  </concept>
+  <concept>
+    <code value="hmed"/>
+    <display value="HMED"/>
+  </concept>
+  <concept>
+    <code value="dieutriarv"/>
+    <display value="DieutriARV"/>
+  </concept>
+  <concept>
+    <code value="mpi"/>
+    <display value="MPI"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-viralload-result-other"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-result-other defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">vl_undetectable<a name="cs-viralload-result-other-vl_undetectable"> </a></td><td>Undetectable</td></tr><tr><td style="white-space:nowrap">vl_200<a name="cs-viralload-result-other-vl_200"> </a></td><td>Below 200 copies/mL</td></tr><tr><td style="white-space:nowrap">vl_2_1000<a name="cs-viralload-result-other-vl_2_1000"> </a></td><td>From 200 to 1,000 copies/mL</td></tr><tr><td style="white-space:nowrap">vl_1000<a name="cs-viralload-result-other-vl_1000"> </a></td><td>Above 1,000 copies/mL</td></tr><tr><td style="white-space:nowrap">vl_no<a name="cs-viralload-result-other-vl_no"> </a></td><td>Not taken</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-viralload-result-other"/>
+  <version value="0.1.0-test"/>
+  <name value="CSViralLoadOther"/>
+  <title value="CodeSystem Viral Load Other Result"/>
+  <status value="active"/>
+  <date value="2022-02-25T20:43:03+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="Codesystem - Viral Load Other Result"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="vl_undetectable"/>
+    <display value="Undetectable"/>
+  </concept>
+  <concept>
+    <code value="vl_200"/>
+    <display value="Below 200 copies/mL"/>
+  </concept>
+  <concept>
+    <code value="vl_2_1000"/>
+    <display value="From 200 to 1,000 copies/mL"/>
+  </concept>
+  <concept>
+    <code value="vl_1000"/>
+    <display value="Above 1,000 copies/mL"/>
+  </concept>
+  <concept>
+    <code value="vl_no"/>
+    <display value="Not taken"/>
+  </concept>
+</CodeSystem>

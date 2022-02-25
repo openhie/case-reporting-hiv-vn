@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-vn-ethnicity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-vn-ethnicity.html"><code>http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity</code></a></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/ValueSet/vs-vn-ethnicity"/>
+  <version value="0.1.0-test"/>
+  <name value="VSVietnamEthnicity"/>
+  <title value="Valueset Vietnam Ethnicity"/>
+  <status value="active"/>
+  <date value="2022-02-25T20:43:03+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ohie.org"/>
+    </telecom>
+  </contact>
+  <description value="Valueset - Vietnam Ethnicity"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-ethnicity"/>
+    </include>
+  </compose>
+</ValueSet>
