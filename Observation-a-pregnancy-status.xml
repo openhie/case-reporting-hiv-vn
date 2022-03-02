@@ -6,7 +6,7 @@
     <profile value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/pregnancy-status"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "a-pregnancy-status" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-pregnancy-status.html">Pregnancy status</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Unborn <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cs-pregnancy-outcome.html">HIV Pregnancy Outcome</a>#unborn)</span></p><p><b>subject</b>: <a href="Patient-test-hiv-patient.html">Patient/test-hiv-patient</a> ""</p><p><b>issued</b>: Apr 5, 2013, 8:30:10 AM</p><blockquote><p><b>component</b></p><p><b>code</b>: Menstruation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#248957007)</span></p><p><b>value</b>: 2013-03-05 03:30:10+0700</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: HIV antigen test <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#31676001)</span></p><p><b>value</b>: 2013-04-05 03:30:10+0700</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: the child birth day <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cs-hiv-common.html">Common code for CS HIV</a>#birthDateOfChild)</span></p><p><b>value</b>: 2013-04-05 03:30:10+0700</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Yes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cs-arv-treatment-status.html">ARV Treatment Status</a>#yes)</span></p><p><b>value</b>: 2013-04-05 03:30:10+0700</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Detected <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LA11882-0)</span></p><p><b>value</b>: 2013-04-05 03:30:10+0700</p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "a-pregnancy-status" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-pregnancy-status.html">Pregnancy status</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Unborn <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cs-pregnancy-outcome.html">HIV Pregnancy Outcome</a>#unborn)</span></p><p><b>subject</b>: <a href="Patient-test-hiv-patient.html">Patient/test-hiv-patient</a> ""</p><p><b>issued</b>: Apr 5, 2013, 8:30:10 AM</p></div>
   </text>
   <status value="final"/>
   <code>
@@ -19,49 +19,4 @@
     <reference value="Patient/test-hiv-patient"/>
   </subject>
   <issued value="2013-04-05T15:30:10+07:00"/>
-  <component>
-    <code>
-      <coding>
-        <system value="http://snomed.info/sct"/>
-        <code value="248957007"/>
-      </coding>
-    </code>
-    <valueDateTime value="2013-03-05T15:30:10+07:00"/>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="http://snomed.info/sct"/>
-        <code value="31676001"/>
-      </coding>
-    </code>
-    <valueDateTime value="2013-04-05T15:30:10+07:00"/>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-common"/>
-        <code value="birthDateOfChild"/>
-      </coding>
-    </code>
-    <valueDateTime value="2013-04-05T15:30:10+07:00"/>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status"/>
-        <code value="yes"/>
-      </coding>
-    </code>
-    <valueDateTime value="2013-04-05T15:30:10+07:00"/>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <code value="LA11882-0"/>
-      </coding>
-    </code>
-    <valueDateTime value="2013-04-05T15:30:10+07:00"/>
-  </component>
 </Observation>

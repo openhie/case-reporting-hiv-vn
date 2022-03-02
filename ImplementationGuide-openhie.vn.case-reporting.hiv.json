@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam - candidate draft",
   "status": "draft",
   "experimental": false,
-  "date": "2022-02-25T21:36:43+00:00",
+  "date": "2022-03-02T07:06:01+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -449,18 +449,8 @@
         ],
         "reference": {
           "reference": "CodeSystem/cs-treatment-patient-category"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-recency-result"
-        }
+        },
+        "name": "Category of the patient"
       },
       {
         "extension": [
@@ -510,7 +500,8 @@
         ],
         "reference": {
           "reference": "CodeSystem/cs-arv-treatment-status"
-        }
+        },
+        "name": "ARV Treatment Status"
       },
       {
         "extension": [
@@ -588,7 +579,7 @@
           "reference": "StructureDefinition/hiv-cd4-observation"
         },
         "name": "CD4 Observation",
-        "description": "This profile allows the exchange of a patient's CD$ test and results"
+        "description": "This profile allows the exchange of a patient's CD4 test and results"
       },
       {
         "extension": [
@@ -640,7 +631,7 @@
           "reference": "StructureDefinition/hiv-diagnosis-observation"
         },
         "name": "HIV Diagnosis result",
-        "description": "This profile allows the exchange of a patient's hiv recency test"
+        "description": "This profile allows the exchange of a statement of a patient's HIV diagnosis"
       },
       {
         "extension": [
@@ -677,7 +668,8 @@
         ],
         "reference": {
           "reference": "CodeSystem/cs-hiv-common"
-        }
+        },
+        "name": "Common code for CS HIV"
       },
       {
         "extension": [
@@ -1024,7 +1016,8 @@
         ],
         "reference": {
           "reference": "CodeSystem/cs-pregnancy-outcome"
-        }
+        },
+        "name": "HIV Pregnancy Outcome"
       },
       {
         "extension": [
@@ -1064,6 +1057,17 @@
         },
         "name": "HIV Treatment",
         "description": "This profile allows the exchange of a patient's treatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProblemsObservation"
+        }
       },
       {
         "extension": [
@@ -1113,7 +1117,8 @@
         ],
         "reference": {
           "reference": "CodeSystem/cs-treatment-status"
-        }
+        },
+        "name": "Status of treatment process"
       },
       {
         "extension": [
@@ -1166,6 +1171,19 @@
         },
         "name": "Example Observation - an-aids-diagnosis-observation",
         "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/aids-diagnosis-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/RecencyRITAresult"
+        },
+        "name": "Recency RITA result",
+        "description": "CodeSystem - Recency result"
       },
       {
         "extension": [
@@ -1240,6 +1258,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/hcv-diagnosis-observation"
+        },
+        "name": "HIV Diagnosis result",
+        "description": "This profile allows the exchange of a statement of a patient's hiv diagnosis"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/hiv-key-population"
         },
         "name": "HIV key population",
@@ -1257,6 +1288,19 @@
         },
         "name": "Reason for regimen change",
         "description": "Reason for regimen change"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/HIVRelationshipTypesVS"
+        },
+        "name": "Relationship types",
+        "description": "Types of relationships between patients and related persons."
       },
       {
         "extension": [
@@ -1305,6 +1349,17 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/HIVIndexRelatedPerson"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/hiv-condition"
         },
         "name": "HIV Condition",
@@ -1335,6 +1390,17 @@
         },
         "name": "ValueSet Vietnam HIV Regimen Line ",
         "description": "ValueSet - Vietnam HIV Regimen Line"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/WeightObservation"
+        }
       },
       {
         "extension": [
@@ -1397,7 +1463,8 @@
         ],
         "reference": {
           "reference": "CodeSystem/cs-gender"
-        }
+        },
+        "name": "Gender"
       },
       {
         "extension": [
@@ -1433,6 +1500,18 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/vs-hiv-symptoms"
+        },
+        "name": "HIV Symptoms"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/vs-diagnosis-results"
         },
         "name": "VSDiagnosisResults"
@@ -1447,7 +1526,7 @@
         "reference": {
           "reference": "ValueSet/vs-recency-rtri"
         },
-        "name": "Recency RITA result",
+        "name": "Recency RITI result",
         "description": "Valueset - Recency RITI result"
       },
       {
@@ -1543,11 +1622,11 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-hiv-sympthoms"
+          "reference": "StructureDefinition/HIVChildPatient"
         }
       },
       {
@@ -1612,6 +1691,7 @@
         "reference": {
           "reference": "ValueSet/vs-common-date"
         },
+        "name": "Common event date",
         "description": "Define common event date"
       },
       {
@@ -1739,28 +1819,113 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "MyIG Home Page",
+          "title": "HIV Case Reporting - Home Page",
           "generation": "html"
         },
         {
-          "nameUrl": "references.html",
-          "title": "References",
-          "generation": "html"
+          "nameUrl": "business_input.html",
+          "title": "Business Input",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "use_cases.html",
+              "title": "Use Cases",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "personas.html",
+              "title": "User Personas",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "persona1.html",
+                  "title": "User Persona 1",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "persona2.html",
+                  "title": "User Persona 2",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "concepts.html",
+              "title": "Concepts",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "references.html",
+              "title": "References",
+              "generation": "html"
+            }
+          ]
         },
         {
-          "nameUrl": "actors.html",
-          "title": "Actors",
-          "generation": "html"
+          "nameUrl": "data_exchange.html",
+          "title": "Data Models and Exchange",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "dependencies.html",
+              "title": "Dependencies",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "actors.html",
+              "title": "Actors",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "functionalities.html",
+              "title": "Functionalities",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "patient_matching.html",
+                  "title": "Business and Functional Requirements",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "transactions.html",
+              "title": "Transactions",
+              "generation": "markdown"
+            }
+          ]
         },
         {
-          "nameUrl": "downloads.html",
-          "title": "Useful Downloads",
-          "generation": "html"
+          "nameUrl": "deployment.html",
+          "title": "Deployment",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "security_privacy.html",
+              "title": "Security and Privacy",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "testing.html",
+              "title": "Testing",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "downloads.html",
+              "title": "Useful Downloads",
+              "generation": "html"
+            }
+          ]
         },
         {
           "nameUrl": "changes.html",
           "title": "IG Change History",
           "generation": "html"
+        },
+        {
+          "nameUrl": "tooling.html",
+          "title": "Tooling",
+          "generation": "markdown"
         }
       ]
     },

@@ -15,8 +15,9 @@
   fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status"];
   fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
   fhir:CodeSystem.name [ fhir:value "ARV Treatment Status"];
+  fhir:CodeSystem.title [ fhir:value "ARV Treatment Status"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2022-02-25T21:36:43+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-03-02T07:06:01+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
