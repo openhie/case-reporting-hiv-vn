@@ -343,6 +343,13 @@
     "name": "ARVCarePlan"
   },
   {
+    "id": "hiv-case-record-model",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-case-record-model",
+    "version": "0.1.0-test",
+    "name": "HIVLongitudinalCaseRecordModel"
+  },
+  {
     "id": "hiv-cd4-observation",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/hiv-cd4-observation",
