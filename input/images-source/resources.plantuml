@@ -100,13 +100,22 @@ package "HIV Case Surveillance" as HIVCaseSurveillance {
             Patient
         }
         class "** Risk **\n** Factors **" as Risk<<TM>> {
+            |_ record_id
+              |_ unique_id
+              |_ last_update
+              |_ original_source
+            |_ Patient
             |_ Date Started     
             |_ Risk Factor  
             --
             Condition
         }
         class "** Pregnancy **" as Preg<<TM>> {
-            |_ Date Reported
+            |_ record_id
+              |_ unique_id
+              |_ last_update
+              |_ original_source
+            |_ Patient
             |_ Place Reported
             |_ Delivery 
               |_ Date
@@ -125,6 +134,11 @@ package "HIV Case Surveillance" as HIVCaseSurveillance {
             Condition
         }
         class "** HIV **\n** Diagnosis **" as Diag<<TM>> {
+            |_ record_id
+              |_ unique_id
+              |_ last_update
+              |_ original_source
+            |_ Patient
             |_ Transmission Route  
             |_ Date of Confirmation  
             |_ Confirming Lab 
@@ -135,6 +149,11 @@ package "HIV Case Surveillance" as HIVCaseSurveillance {
             Observation
         }
         class "** Recency **\n** Test **" as Rec<<TM>> {
+            |_ record_id
+              |_ unique_id
+              |_ last_update
+              |_ original_source
+            |_ Patient
             |_ Type (VL / Rapid)  
             |_ Date of Test  
             |_ Result
