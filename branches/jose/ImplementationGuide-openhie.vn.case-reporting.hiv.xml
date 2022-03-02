@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-03-02T07:06:01+00:00"/>
+  <date value="2022-03-02T18:06:48+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -749,6 +749,16 @@
       </reference>
       <name value="Reason for regimen change"/>
       <description value="Reason for regimen change"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-case-record-model"/>
+      </reference>
+      <name value="HIV Longitudinal Case Record"/>
+      <description value="HIV Longitudinal Case Record for Vietnam."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

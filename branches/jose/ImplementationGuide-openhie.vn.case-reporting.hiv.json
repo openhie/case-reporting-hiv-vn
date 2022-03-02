@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam - candidate draft",
   "status": "draft",
   "experimental": false,
-  "date": "2022-03-02T07:06:01+00:00",
+  "date": "2022-03-02T18:06:48+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -1044,6 +1044,19 @@
         },
         "name": "Reason for regimen change",
         "description": "Reason for regimen change"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-case-record-model"
+        },
+        "name": "HIV Longitudinal Case Record",
+        "description": "HIV Longitudinal Case Record for Vietnam."
       },
       {
         "extension": [
