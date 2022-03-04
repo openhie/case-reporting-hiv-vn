@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-03-02T18:06:48+00:00"/>
+  <date value="2022-03-04T08:28:51+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -275,6 +275,16 @@
       </reference>
       <name value="Patient Communication Preferences"/>
       <description value="Valueset - Patient Communication Preferences"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cr-provenance"/>
+      </reference>
+      <name value="Case Record data provenance"/>
+      <description value="Case Record data provenance."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -856,6 +866,14 @@
       </reference>
       <name value="Example Observation - an-aids-diagnosis-observation"/>
       <exampleCanonical value="http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/aids-diagnosis-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/id"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

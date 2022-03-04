@@ -315,6 +315,13 @@
     "name": "CauseOfDeath"
   },
   {
+    "id": "cr-provenance",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/cr-provenance",
+    "version": "0.1.0-test",
+    "name": "CaseRecordProvenance"
+  },
+  {
     "id": "ext-specimen-collection-place",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/ext-specimen-collection-place",

@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Provenance/id> a fhir:Provenance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "id"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"id\" </p></div><p><b>target</b>: <a href=\"Observation-a-recency-result.html\">Observation/a-recency-result</a></p><p><b>occurred</b>: 2020-10-22 02:43:23+0000</p><p><b>recorded</b>: Nov 26, 2020, 10:39:24 PM</p><p><b>reason</b>: FirstImport_UUID <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>activity</b>: create <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-DataOperation.html\">DataOperation</a>#CREATE)</span></p><blockquote><p><b>agent</b></p><p><b>type</b>: Assembler <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-provenance-participant-type.html\">Provenance participant type</a>#assembler)</span></p><p><b>who</b>: <a href=\"&quot;system1&quot;\">\"system1\"</a></p></blockquote></div>"
+  ];
+  fhir:Provenance.target [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Observation/a-recency-result>;
+     fhir:Reference.reference [ fhir:value "Observation/a-recency-result" ]
+  ];
+  fhir:Provenance.occurredDateTime [ fhir:value "2020-10-22T14:43:23.413+00:00"^^xsd:dateTime];
+  fhir:Provenance.recorded [ fhir:value "2020-11-27T08:39:24+10:00"^^xsd:dateTime];
+  fhir:Provenance.reason [
+     fhir:index 0;
+     fhir:CodeableConcept.text [ fhir:value "FirstImport_UUID" ]
+  ];
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-DataOperation" ];
+       fhir:Coding.code [ fhir:value "CREATE" ]
+     ]
+  ];
+  fhir:Provenance.agent [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "ImportFilter" ];
+     fhir:Provenance.agent.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/provenance-participant-type" ];
+         fhir:Coding.code [ fhir:value "assembler" ]
+       ]
+     ];
+     fhir:Provenance.agent.who [
+       fhir:Reference.reference [ fhir:value "\"system1\"" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/Provenance/id.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
