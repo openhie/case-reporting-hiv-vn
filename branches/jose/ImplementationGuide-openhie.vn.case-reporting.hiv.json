@@ -11,7 +11,7 @@
   "title": "HIV Case-reporting for Vietnam - candidate draft",
   "status": "draft",
   "experimental": false,
-  "date": "2022-03-02T18:06:48+00:00",
+  "date": "2022-03-04T08:28:51+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -426,6 +426,19 @@
         },
         "name": "Patient Communication Preferences",
         "description": "Valueset - Patient Communication Preferences"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cr-provenance"
+        },
+        "name": "Case Record data provenance",
+        "description": "Case Record data provenance."
       },
       {
         "extension": [
@@ -1184,6 +1197,17 @@
         },
         "name": "Example Observation - an-aids-diagnosis-observation",
         "exampleCanonical": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/StructureDefinition/aids-diagnosis-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/id"
+        }
       },
       {
         "extension": [
