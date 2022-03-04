@@ -53,12 +53,6 @@ Description:    "HIV Longitudinal Case Record for Vietnam."
     * risk_behavior 0..1 string "Risk behavior" // ValueSet = Canonical(vs-hiv-risk-behavior)
     * transmission_route 0..1 string "Transmission route" // ValueSet = Canonical(vs-hiv-transmission-route)
 
-
-  * risk_factors 0..1 BackboneElement "Risk factors"
-    * population_group 0..1 string "Population group" // ValueSet = Canonical(vs-hiv-population)
-    * risk_behavior 0..1 string "Risk behavior" // ValueSet = Canonical(vs-hiv-risk-behavior)
-    * transmission_route 0..1 string "Transmission route" // ValueSet = Canonical(vs-hiv-transmission-route)
-
   * hiv_diagnosis 0..1 BackboneElement "HIV diagnosis"
     * confirmation_date 0..1 string "Date of confirmation"
     * confirming_lab 0..1 string "Confirming lab"
@@ -101,3 +95,18 @@ Description:    "HIV Longitudinal Case Record for Vietnam."
       * place_specimen_collected 0..1 string "Place of specimen collection"
       * test_result 0..1 string "Drug resistance test result"
 
+
+Logical:        CaseRecordProvenance
+Id:             cr-provenance
+Title:          "Case Record data provenance"
+Description:    "Case Record data provenance."
+
+* processing 1..1 BackboneElement "The operation that was done - transfer, change, etc."
+  * type 1..1 Coding "The operation that was done - transfer, change, etc."
+  * sourceSystem 1..1 string "Source system"
+  * targetSystem 1..1 string "Source system"
+  * dateTime 1..1 dateTime "DateTime of change"
+
+* processedData 1..1 BackboneElement "Information about the data that was processed"
+  * subject 1..1 Reference "The subject of data operation (Patient)"
+  
