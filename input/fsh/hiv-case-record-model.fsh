@@ -103,10 +103,10 @@ Description:    "Case Record data provenance."
 
 * processing 1..1 BackboneElement "The operation that was done - transfer, change, etc."
   * type 1..1 Coding "The operation that was done - transfer, change, etc."
-  * sourceSystem 1..1 string "Source system"
-  * targetSystem 1..1 string "Source system"
-  * dateTime 1..1 dateTime "DateTime of change"
+  * sourceSystem 1..1 string "Source system, if applicable"
+  * targetSystem 1..1 string "Target system"
+  * dateTime 1..1 dateTime "DateTime of processing"
 
 * processedData 1..1 BackboneElement "Information about the data that was processed"
   * subject 1..1 Reference "The subject of data operation (Patient)"
-  
+
