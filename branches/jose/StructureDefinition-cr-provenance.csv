@@ -5,11 +5,11 @@
 "cr-provenance.processing.type","","","",1,1,"","","","Coding {[]} {[]}
 ","The operation that was done - transfer, change, etc.","The operation that was done - transfer, change, etc.","","","","","","","","","",,,,,"",,,,"cr-provenance.processing.type",1,1,"",""
 "cr-provenance.processing.sourceSystem","","","",1,1,"","","","string {[]} {[]}
-","Source system","Source system","","","","","","","","","",,,,,"",,,,"cr-provenance.processing.sourceSystem",1,1,"",""
+","Source system, if applicable","Source system, if applicable","","","","","","","","","",,,,,"",,,,"cr-provenance.processing.sourceSystem",1,1,"",""
 "cr-provenance.processing.targetSystem","","","",1,1,"","","","string {[]} {[]}
-","Source system","Source system","","","","","","","","","",,,,,"",,,,"cr-provenance.processing.targetSystem",1,1,"",""
+","Target system","Target system","","","","","","","","","",,,,,"",,,,"cr-provenance.processing.targetSystem",1,1,"",""
 "cr-provenance.processing.dateTime","","","",1,1,"","","","dateTime {[]} {[]}
-","DateTime of change","DateTime of change","","","","","","","","","",,,,,"",,,,"cr-provenance.processing.dateTime",1,1,"",""
+","DateTime of processing","DateTime of processing","","","","","","","","","",,,,,"",,,,"cr-provenance.processing.dateTime",1,1,"",""
 "cr-provenance.processedData","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","Information about the data that was processed","Information about the data that was processed","","","","","","","","","",,,,,"",,,,"cr-provenance.processedData",1,1,"",""
 "cr-provenance.processedData.subject","","","",1,1,"","","","Reference {[]} {[]}
