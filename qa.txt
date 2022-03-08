@@ -3,8 +3,8 @@
 
 err = 34, warn = 314, info = 77
 IG Publisher Version: 1.1.111
-Generated Fri Mar 04 08:38:40 UTC 2022. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
- Build Errors : 3449 / 24 / 1
+Generated Tue Mar 08 06:57:29 UTC 2022. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+ Build Errors : 3454 / 24 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-a-treatment-record : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-RecencyRITAresult : 0 / 0 / 2
@@ -154,8 +154,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-cd4-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-viral-load.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire-form.html: unexpected non-end of element null::div  at line 238 column 259
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-form.html: unexpected non-end of element null::div  at line 238 column 257
+ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire-form.html: unexpected non-end of element null::div  at line 247 column 259
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-form.html: unexpected non-end of element null::div  at line 247 column 257
 ERROR: /github/workspace/output/Bundle-examplebundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/Bundle-examplebundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Bundle-examplebundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
@@ -1266,7 +1266,7 @@ ERROR: /github/workspace/output/Provenance-id.html#/html/body/div/div/nav/div/di
 ERROR: /github/workspace/output/Provenance-id.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/Provenance-id.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/Provenance-id.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/Provenance-id.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 236, column 1151: The link '"system1"' for ""system1"" cannot be resolved
+ERROR: /github/workspace/output/Provenance-id.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 245, column 1151: The link '"system1"' for ""system1"" cannot be resolved
 ERROR: /github/workspace/output/Provenance-id.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/Provenance-id.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-id.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
@@ -3487,9 +3487,9 @@ ERROR: /github/workspace/output/actors.html#/html/body/div/div/nav/div/div/ul/li
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 196, column 64: The link 'concepts.html#case_report' for "case report" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-logo, family-nav, ig-status, top, concepts, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 198, column 100: The link 'concepts.html#case_report' for "maturity level" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-logo, family-nav, ig-status, top, concepts, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 208, column 357: The link 'expected_actions.html#transform' for "three options" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 205, column 64: The link 'concepts.html#case_report' for "case report" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-logo, family-nav, ig-status, top, concepts, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 207, column 100: The link 'concepts.html#case_report' for "maturity level" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-logo, family-nav, ig-status, top, concepts, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/div/div/div/a at Line 217, column 357: The link 'expected_actions.html#transform' for "three options" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
@@ -3510,6 +3510,11 @@ ERROR: /github/workspace/output/concepts.html#/html/body/div/div/nav/div/div/ul/
 ERROR: /github/workspace/output/concepts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/concepts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/concepts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
+ERROR: /github/workspace/output/credits.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
+ERROR: /github/workspace/output/credits.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/credits.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
+ERROR: /github/workspace/output/credits.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
+ERROR: /github/workspace/output/credits.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
 ERROR: /github/workspace/output/data_exchange.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/data_exchange.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/data_exchange.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
@@ -3540,8 +3545,8 @@ ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 280, column 12: The link 'requirements.html' for "Level II: Business Requirements" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 284, column 17: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 289, column 12: The link 'requirements.html' for "Level II: Business Requirements" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 293, column 17: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/patient_matching.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/patient_matching.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/patient_matching.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
