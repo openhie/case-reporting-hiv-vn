@@ -1,0 +1,3 @@
+This specification has been produced under the guidance and sponsoring of ...
+
+### Acknowledgements
