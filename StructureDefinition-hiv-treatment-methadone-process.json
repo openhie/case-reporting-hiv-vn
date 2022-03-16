@@ -20,7 +20,7 @@
   "name": "MethadoneTreatment",
   "title": "Methadon Treatment",
   "status": "active",
-  "date": "2022-03-08T06:55:36+00:00",
+  "date": "2022-03-16T09:10:28+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -1484,7 +1484,8 @@
             "severity": "error",
             "human": "Provide a reference or detail, not both",
             "expression": "detail.empty() or reference.empty()",
-            "xpath": "not(exists(f:detail)) or not(exists(f:reference))"
+            "xpath": "not(exists(f:detail)) or not(exists(f:reference))",
+            "source": "http://hl7.org/fhir/StructureDefinition/CarePlan"
           },
           {
             "key": "ele-1",

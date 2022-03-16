@@ -3,14 +3,14 @@
   "id": "cs-hiv-occupation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-occupation defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">sex_business<a name=\"cs-hiv-occupation-sex_business\"> </a></td><td>Persons work in services that are susceptible for sex work</td></tr><tr><td style=\"white-space:nowrap\">driver<a name=\"cs-hiv-occupation-driver\"> </a></td><td>Driver</td></tr><tr><td style=\"white-space:nowrap\">fishman<a name=\"cs-hiv-occupation-fishman\"> </a></td><td>Fisherman</td></tr><tr><td style=\"white-space:nowrap\">army<a name=\"cs-hiv-occupation-army\"> </a></td><td>Army personnel</td></tr><tr><td style=\"white-space:nowrap\">gov_empl<a name=\"cs-hiv-occupation-gov_empl\"> </a></td><td>Government employee</td></tr><tr><td style=\"white-space:nowrap\">worker<a name=\"cs-hiv-occupation-worker\"> </a></td><td>Worker</td></tr><tr><td style=\"white-space:nowrap\">student<a name=\"cs-hiv-occupation-student\"> </a></td><td>Pupil/Student</td></tr><tr><td style=\"white-space:nowrap\">free_lancer<a name=\"cs-hiv-occupation-free_lancer\"> </a></td><td>Free lancer</td></tr><tr><td style=\"white-space:nowrap\">unemployment<a name=\"cs-hiv-occupation-unemployment\"> </a></td><td>Unemployment</td></tr><tr><td style=\"white-space:nowrap\">child<a name=\"cs-hiv-occupation-child\"> </a></td><td>Children</td></tr><tr><td style=\"white-space:nowrap\">prisoner<a name=\"cs-hiv-occupation-prisoner\"> </a></td><td>Prisoner</td></tr><tr><td style=\"white-space:nowrap\">famer<a name=\"cs-hiv-occupation-famer\"> </a></td><td>Farmer</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-hiv-occupation-other\"> </a></td><td>Other</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-occupation defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">sex_business<a name=\"cs-hiv-occupation-sex_business\"> </a></td><td>Persons work in services that are susceptible for sex work</td></tr><tr><td style=\"white-space:nowrap\">driver<a name=\"cs-hiv-occupation-driver\"> </a></td><td>Driver</td></tr><tr><td style=\"white-space:nowrap\">fishman<a name=\"cs-hiv-occupation-fishman\"> </a></td><td>Fishman</td></tr><tr><td style=\"white-space:nowrap\">army<a name=\"cs-hiv-occupation-army\"> </a></td><td>Army personnel</td></tr><tr><td style=\"white-space:nowrap\">gov_empl<a name=\"cs-hiv-occupation-gov_empl\"> </a></td><td>Government employee</td></tr><tr><td style=\"white-space:nowrap\">worker<a name=\"cs-hiv-occupation-worker\"> </a></td><td>Worker</td></tr><tr><td style=\"white-space:nowrap\">student<a name=\"cs-hiv-occupation-student\"> </a></td><td>Pupil/Student</td></tr><tr><td style=\"white-space:nowrap\">free_lancer<a name=\"cs-hiv-occupation-free_lancer\"> </a></td><td>Free lancer</td></tr><tr><td style=\"white-space:nowrap\">unemployment<a name=\"cs-hiv-occupation-unemployment\"> </a></td><td>Unemployment</td></tr><tr><td style=\"white-space:nowrap\">child<a name=\"cs-hiv-occupation-child\"> </a></td><td>Children</td></tr><tr><td style=\"white-space:nowrap\">prisoner<a name=\"cs-hiv-occupation-prisoner\"> </a></td><td>Prisoner</td></tr><tr><td style=\"white-space:nowrap\">famer<a name=\"cs-hiv-occupation-famer\"> </a></td><td>Farmer</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-hiv-occupation-other\"> </a></td><td>Other</td></tr></table></div>"
   },
   "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-hiv-occupation",
   "version": "0.1.0-test",
   "name": "CSOccupation",
   "title": "CodeSystem Occupation",
   "status": "active",
-  "date": "2022-03-08T06:55:36+00:00",
+  "date": "2022-03-16T09:10:28+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -46,7 +46,7 @@
     },
     {
       "code": "fishman",
-      "display": "Fisherman"
+      "display": "Fishman"
     },
     {
       "code": "army",
