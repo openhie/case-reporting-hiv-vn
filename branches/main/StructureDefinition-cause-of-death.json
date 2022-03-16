@@ -20,7 +20,7 @@
   "name": "CauseOfDeath",
   "title": "Cause of Death for HIV case surveillance",
   "status": "active",
-  "date": "2022-02-25T21:36:43+00:00",
+  "date": "2022-03-16T09:10:28+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -1701,7 +1701,8 @@
             "severity": "error",
             "human": "Must have at least a low or a high or text",
             "expression": "low.exists() or high.exists() or text.exists()",
-            "xpath": "(exists(f:low) or exists(f:high)or exists(f:text))"
+            "xpath": "(exists(f:low) or exists(f:high)or exists(f:text))",
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
         "isModifier": false,

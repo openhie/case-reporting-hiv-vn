@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "PregnancyStatus"];
   fhir:StructureDefinition.title [ fhir:value "Pregnancy status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-02-25T21:36:43+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-16T09:10:28+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1847,7 +1847,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Must have at least a low or a high or text" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "low.exists() or high.exists() or text.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "(exists(f:low) or exists(f:high)or exists(f:text))" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "(exists(f:low) or exists(f:high)or exists(f:text))" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Observation";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+         ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];

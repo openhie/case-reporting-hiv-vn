@@ -12,7 +12,7 @@
   <title value="HIV Case-reporting for Vietnam - candidate draft"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-02-25T21:36:43+00:00"/>
+  <date value="2022-03-16T09:10:28+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -320,7 +320,7 @@
         <reference value="StructureDefinition/hiv-recency-result"/>
       </reference>
       <name value="HIV Recency result"/>
-      <description value="This profile allows the exchange of a patient&#39;s hiv recency test"/>
+      <description value="This profile allows the exchange of a patient's hiv recency test"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -398,7 +398,7 @@
         <reference value="StructureDefinition/hiv-cd4-observation"/>
       </reference>
       <name value="CD4 Observation"/>
-      <description value="This profile allows the exchange of a patient&#39;s CD$ test and results"/>
+      <description value="This profile allows the exchange of a patient's CD$ test and results"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -438,7 +438,7 @@
         <reference value="StructureDefinition/hiv-diagnosis-observation"/>
       </reference>
       <name value="HIV Diagnosis result"/>
-      <description value="This profile allows the exchange of a patient&#39;s hiv recency test"/>
+      <description value="This profile allows the exchange of a patient's hiv recency test"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -586,7 +586,7 @@
         <reference value="StructureDefinition/hiv-transmission-route"/>
       </reference>
       <name value="HIV Transmission route"/>
-      <description value="This profile allows the patient&#39;s transmission route"/>
+      <description value="This profile allows the patient's transmission route"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -762,7 +762,7 @@
         <reference value="StructureDefinition/hiv-treatment-process"/>
       </reference>
       <name value="HIV Treatment"/>
-      <description value="This profile allows the exchange of a patient&#39;s treatment"/>
+      <description value="This profile allows the exchange of a patient's treatment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -890,7 +890,7 @@
         <reference value="StructureDefinition/hiv-arv-careplan"/>
       </reference>
       <name value="ARVCarePlan"/>
-      <description value="This profile allows the exchange of a patient&#39;s ARV treatment"/>
+      <description value="This profile allows the exchange of a patient's ARV treatment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -900,7 +900,7 @@
         <reference value="StructureDefinition/hiv-key-population"/>
       </reference>
       <name value="HIV key population"/>
-      <description value="This profile allows the patient&#39;s key population"/>
+      <description value="This profile allows the patient's key population"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -950,7 +950,7 @@
         <reference value="StructureDefinition/hiv-condition"/>
       </reference>
       <name value="HIV Condition"/>
-      <description value="This profile allows the exchange of a patient&#39;s hiv diagnosis"/>
+      <description value="This profile allows the exchange of a patient's hiv diagnosis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1115,7 +1115,7 @@
         <reference value="StructureDefinition/aids-diagnosis-observation"/>
       </reference>
       <name value="AIDS Diagnosis result"/>
-      <description value="This profile allows the exchange of a patient&#39;s hiv recency test"/>
+      <description value="This profile allows the exchange of a patient's hiv recency test"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1272,7 +1272,7 @@
         <reference value="StructureDefinition/hiv-risk-behavior"/>
       </reference>
       <name value="HIV Risk Behavior"/>
-      <description value="This profile allows the exchange of patient&#39;s risk behaviors"/>
+      <description value="This profile allows the exchange of patient's risk behaviors"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

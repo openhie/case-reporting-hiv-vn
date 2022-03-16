@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVTreatment"];
   fhir:StructureDefinition.title [ fhir:value "HIV Treatment"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-02-25T21:36:43+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-16T09:10:28+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1608,7 +1608,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Provide a reference or detail, not both" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "detail.empty() or reference.empty()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:detail)) or not(exists(f:reference))" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:detail)) or not(exists(f:reference))" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/CarePlan";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CarePlan>
+         ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
