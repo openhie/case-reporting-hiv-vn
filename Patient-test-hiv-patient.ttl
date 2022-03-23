@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Nguyan Van A</b> (no stated gender) 1970-01-01 ( id: ARV001)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Nguyan Van A</b> (no stated gender), DoB: 1970-01-01 ( id: ARV001)</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
