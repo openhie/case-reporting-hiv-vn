@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-arv-treatment-status",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">yes<a name=\"cs-arv-treatment-status-yes\"> </a></td><td>Yes</td></tr><tr><td style=\"white-space:nowrap\">no<a name=\"cs-arv-treatment-status-no\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"cs-arv-treatment-status-unknown\"> </a></td><td>Unknown</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>vi</b></td></tr><tr><td>yes</td><td>Có</td></tr><tr><td>no</td><td>Không</td></tr><tr><td>unknown</td><td>Không rõ</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-arv-treatment-status",
+  "version": "0.1.0-test",
+  "name": "ARV Treatment Status",
+  "title": "ARV Treatment Status",
+  "status": "draft",
+  "date": "2022-03-23T08:06:35+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "yes",
+      "display": "Yes",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Có"
+        }
+      ]
+    },
+    {
+      "code": "no",
+      "display": "No",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Không"
+        }
+      ]
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown",
+      "designation": [
+        {
+          "language": "vi-VN",
+          "value": "Không rõ"
+        }
+      ]
+    }
+  ]
+}

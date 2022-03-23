@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-regimen-change-reason"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">lack_of_drug<a name=\"cs-regimen-change-reason-lack_of_drug\"> </a></td><td>Lack of drug</td></tr><tr><td style=\"white-space:nowrap\">side_effects<a name=\"cs-regimen-change-reason-side_effects\"> </a></td><td>Side effects</td></tr><tr><td style=\"white-space:nowrap\">treatment_failure<a name=\"cs-regimen-change-reason-treatment_failure\"> </a></td><td>Treatment failure</td></tr><tr><td style=\"white-space:nowrap\">drug_interaction<a name=\"cs-regimen-change-reason-drug_interaction\"> </a></td><td>Drug interaction</td></tr><tr><td style=\"white-space:nowrap\">new-guidance<a name=\"cs-regimen-change-reason-new-guidance\"> </a></td><td>New regimen as national guidance</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"cs-regimen-change-reason-other\"> </a></td><td>Other</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
+  fhir:CodeSystem.name [ fhir:value "CSRegimenChangeReason"];
+  fhir:CodeSystem.title [ fhir:value "Reason for regimen change"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-03-23T08:06:35+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Reason for regimen change"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "lack_of_drug" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lack of drug" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "side_effects" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Side effects" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "treatment_failure" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Treatment failure" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "drug_interaction" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Drug interaction" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "new-guidance" ];
+     fhir:CodeSystem.concept.display [ fhir:value "New regimen as national guidance" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-regimen-change-reason.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

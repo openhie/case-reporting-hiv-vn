@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-vn-whostage",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-whostage defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">stage1<a name=\"cs-vn-whostage-stage1\"> </a></td><td>WHO Stage 1</td></tr><tr><td style=\"white-space:nowrap\">stage2<a name=\"cs-vn-whostage-stage2\"> </a></td><td>WHO Stage 2</td></tr><tr><td style=\"white-space:nowrap\">stage3<a name=\"cs-vn-whostage-stage3\"> </a></td><td>WHO Stage 3</td></tr><tr><td style=\"white-space:nowrap\">stage4<a name=\"cs-vn-whostage-stage4\"> </a></td><td>WHO Stage 4</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-vn-whostage",
+  "version": "0.1.0-test",
+  "name": "CSWhoStage",
+  "title": "CodeSystem WHO stage ",
+  "status": "active",
+  "date": "2022-03-23T08:06:35+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem - WHO Stage",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "stage1",
+      "display": "WHO Stage 1"
+    },
+    {
+      "code": "stage2",
+      "display": "WHO Stage 2"
+    },
+    {
+      "code": "stage3",
+      "display": "WHO Stage 3"
+    },
+    {
+      "code": "stage4",
+      "display": "WHO Stage 4"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-patient-gender",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-patient-gender defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"cs-patient-gender-male\"> </a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"cs-patient-gender-female\"> </a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style=\"white-space:nowrap\">unidentified<a name=\"cs-patient-gender-unidentified\"> </a></td><td>Unidentified</td><td/></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/openhie.vn.case-reporting.hiv/CodeSystem/cs-patient-gender",
+  "version": "0.1.0-test",
+  "name": "CSPatientGender",
+  "title": "Patient Gender",
+  "status": "active",
+  "date": "2022-03-23T08:06:35+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ohie.org"
+        }
+      ]
+    }
+  ],
+  "description": "The genders for patients",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "male",
+      "display": "Male",
+      "definition": "Client identifies as female"
+    },
+    {
+      "code": "female",
+      "display": "Female",
+      "definition": "Client identifies as male"
+    },
+    {
+      "code": "unidentified",
+      "display": "Unidentified"
+    }
+  ]
+}
