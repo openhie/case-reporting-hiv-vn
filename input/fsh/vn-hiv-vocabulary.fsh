@@ -11,8 +11,7 @@ InstanceOf: NamingSystem
 * uniqueId[=].value = "https://basespecs.vn/NamingSystem/NationalID9"
 * uniqueId[=].preferred = true
 
-
-
+ 
 Instance: PregnancyOutcomeCodes
 InstanceOf: ValueSet
 Description: "Pregnancy Outcome Codes"
