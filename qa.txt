@@ -3,7 +3,7 @@
 
 err = 34, warn = 314, info = 77
 IG Publisher Version: 1.1.113
-Generated Fri Mar 25 09:08:22 UTC 2022. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
+Generated Tue Mar 29 15:33:00 UTC 2022. FHIR version 4.0.1 for openhie.vn.case-reporting.hiv#0.1.0-test (canonical = http://openhie.org/fhir/openhie.vn.case-reporting.hiv)
  Build Errors : 3454 / 24 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-a-treatment-record : 0 / 0 / 1
@@ -154,8 +154,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-diagnosis-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-cd4-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/a-hiv-viral-load.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire-form.html: unexpected non-end of element null::div  at line 247 column 259
-ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-form.html: unexpected non-end of element null::div  at line 247 column 257
+ERROR: /github/workspace/output/Questionnaire-vn-hiv-csv-import-questionnaire-form.html: Unable to read attribute on <div> at line 238 column 71
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-form.html: Unable to read attribute on <div> at line 238 column 71
 ERROR: /github/workspace/output/Bundle-examplebundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/Bundle-examplebundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Bundle-examplebundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'dictionary.html' for "Data Dictionary" cannot be resolved
